@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col">
+
         {/* ✅ Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-03QS8ZLH5G"
@@ -60,7 +61,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* 🌍 Google Translate Widget (safe SSR) */}
+        {/* 🌍 Google Translate Widget */}
         <div
           id="google_translate_element"
           style={{
@@ -81,17 +82,16 @@ export default function RootLayout({ children }) {
 
         <Script id="google-translate-init" strategy="afterInteractive">
           {`
-            if (typeof window !== 'undefined') {
-              window.googleTranslateElementInit = function () {
-                new google.translate.TranslateElement({
-                  pageLanguage: 'en',
-                  includedLanguages: 'pl,en,de,fr,it,es,pt,ru,ja,zh-CN',
-                  layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-                }, 'google_translate_element');
-              };
-            }
+            window.googleTranslateElementInit = function() {
+              new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'pl,en,de,fr,it,es,pt,ru,ja,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+              }, 'google_translate_element');
+            };
           `}
         </Script>
+
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
@@ -100,31 +100,30 @@ export default function RootLayout({ children }) {
         {/* 🧠 Main Page Content */}
         <main className="flex-grow">{children}</main>
 
-{/* 🌐 Minimal Footer */}
-<footer className="border-t border-gray-800 bg-neutral-950/80 backdrop-blur-sm py-20 text-center text-gray-400 text-sm leading-relaxed mt-32">
-  <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-6">
-    {/* 📧 Contact + Instagram */}
-    <div className="text-gray-500 text-center space-y-1">
-      <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
-      <p className="text-sm select-all">hello[at]emotiondeck.com</p>
-      <a
-        href="https://www.instagram.com/emotiondeckcollection/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-white transition text-base"
-      >
-        Instagram
-      </a>
-    </div>
+        {/* 🌐 Minimal Footer */}
+        <footer className="border-t border-gray-800 bg-neutral-950/80 backdrop-blur-sm py-20 text-center text-gray-400 text-sm leading-relaxed mt-32">
+          <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-6">
+            {/* 📧 Contact + Instagram */}
+            <div className="text-gray-500 text-center space-y-1">
+              <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
+              <p className="text-sm select-all">hello[at]emotiondeck.com</p>
+              <a
+                href="https://www.instagram.com/emotiondeckcollection/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition text-base"
+              >
+                Instagram
+              </a>
+            </div>
 
-    {/* ⚖️ Description */}
-    <p className="text-gray-600 text-xs max-w-xl text-center">
-      EmotionDeck is an educational visual project designed to help you
-      recognise and interpret human emotion through mindful observation.
-    </p>
-  </div>
-</footer>
-
+            {/* ⚖️ Description */}
+            <p className="text-gray-600 text-xs max-w-xl text-center">
+              EmotionDeck is an educational visual project designed to help you
+              recognise and interpret human emotion through mindful observation.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
