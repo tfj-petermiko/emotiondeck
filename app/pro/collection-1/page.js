@@ -2,46 +2,52 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import { createPortal } from "react-dom";
+import Link from "next/link";
 
-export default function FreeCollection() {
+export default function ProCollectionPhase2() {
   const emotions = [
-    "Joy", "Calmness", "Compassion", "Anger", "Sadness", "Surprise", "Disgust",
-    "Fear", "Trust", "Anticipation", "Pride", "Love", "Relief", "Contempt",
-    "Boredom", "Confusion", "Interest", "Determination", "Shame", "Hope",
-    "Guilt", "Serenity", "Anxiety", "Curiosity"
+    "Anxiety", "Nostalgia", "Confidence", "Tension", "Empathy", "Desire",
+    "Awe", "Fatigue", "Positive Surprise", "Negative Surprise",
+    "Contemplation", "Euphoria", "Irritation", "Tranquility", "Guilt",
+    "Jealousy", "Gratitude", "Excitement", "Affection", "Disbelief",
+    "Inspiration", "Longing", "Disappointment", "Neutral"
   ];
 
   const regions = ["European", "African", "EastAsian"];
   const genders = ["Male", "Female"];
+  const ages = ["Adult", "Senior"];
 
-  const [selectedEmotion, setSelectedEmotion] = useState("Joy");
+  const [selectedEmotion, setSelectedEmotion] = useState("Anxiety");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [selectedGender, setSelectedGender] = useState("All");
+  const [selectedAge, setSelectedAge] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Generowanie ścieżek do wszystkich obrazów
   const allImages = [];
+
   emotions.forEach((emotion) => {
     regions.forEach((region) => {
       genders.forEach((gender) => {
-        allImages.push({
-          src: `/gallery/${emotion}_${region}_Adult_${gender}.png`,
-          emotion,
-          region,
-          gender,
+        ages.forEach((age) => {
+          allImages.push({
+            src: `/pro/collection-1/${emotion}_${region}_${age}_${gender}.png`,
+            emotion,
+            region,
+            gender,
+            age,
+          });
         });
       });
     });
   });
 
-  // Filtrowanie
   const filteredImages = allImages.filter((img) => {
     return (
       img.emotion === selectedEmotion &&
       (selectedRegion === "All" || img.region === selectedRegion) &&
-      (selectedGender === "All" || img.gender === selectedGender)
+      (selectedGender === "All" || img.gender === selectedGender) &&
+      (selectedAge === "All" || img.age === selectedAge)
     );
   });
 
@@ -49,26 +55,26 @@ export default function FreeCollection() {
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
       {/* HEADER */}
       <section className="text-center mt-20 px-6">
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck Free Collection
-        </motion.h2>
-
+          EmotionDeck – PRO 🔓 Currently Available for Free — Early Access.
+        </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore realistic emotional expressions across regions and genders.
+          Explore the expanded collection of complex human emotions across
+          cultures, genders, and ages.
         </motion.p>
       </section>
 
-      {/* FILTER BAR */}
+      {/* FILTERS */}
       <section className="flex flex-wrap justify-center gap-4 mt-16 text-neutral-900">
         <select
           value={selectedEmotion}
@@ -107,6 +113,19 @@ export default function FreeCollection() {
             </option>
           ))}
         </select>
+
+        <select
+          value={selectedAge}
+          onChange={(e) => setSelectedAge(e.target.value)}
+          className="px-4 py-2 rounded-md bg-white text-sm"
+        >
+          <option value="All">All Ages</option>
+          {ages.map((age) => (
+            <option key={age} value={age}>
+              {age}
+            </option>
+          ))}
+        </select>
       </section>
 
       <p className="mb-12">&nbsp;</p>
@@ -124,7 +143,7 @@ export default function FreeCollection() {
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} - ${img.region} ${img.gender}`}
+                alt={`${img.emotion} - ${img.region} ${img.gender} ${img.age}`}
                 className="w-full h-auto object-cover object-center opacity-90 hover:opacity-100 transition duration-300"
               />
             </motion.div>
@@ -173,7 +192,7 @@ export default function FreeCollection() {
           document.body
         )}
 
-      {/* BACK TO HOME BUTTON */}
+      {/* BACK TO HOME */}
       <div className="text-center mt-16 mb-24">
         <Link
           href="/"
@@ -183,49 +202,8 @@ export default function FreeCollection() {
         </Link>
       </div>
 
-      <p className="mb-20">&nbsp;</p>
+     <p className="mb-12">&nbsp;</p>
 
-      {/* PRO EXTENSION */}
-      <section className="mt-40 text-center px-6">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-3xl font-semibold mb-4"
-        >
-          Unlock the Pro Collection
-        </motion.h3>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-gray-400 mb-2 max-w-xl mx-auto"
-        >
-          Explore additional complex human emotions across regions, ages, and genders.  
-          Perfect for professionals, educators, and advanced emotional research.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-sm text-emerald-400 mb-8"
-        >
-          🔓 Currently open for free — early access.
-        </motion.p>
-
-        <motion.a
-          href="/pro/collection-1"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="inline-block bg-gradient-to-r from-white to-gray-200 text-neutral-900 font-semibold px-10 py-3 rounded-full hover:from-gray-100 hover:to-white transition"
-        >
-          Get Pro Access →
-        </motion.a>
-      </section>
-
-      <p className="mb-20">&nbsp;</p>
     </main>
   );
 }
