@@ -16,8 +16,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased">
-        {/* ✅ Google Analytics 4 */}
+      <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col">
+        {/* ✅ Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-03QS8ZLH5G"
           strategy="afterInteractive"
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* 🌍 Google Translate — EmotionDeck style */}
+        {/* 🌍 Google Translate Widget */}
         <div
           id="google_translate_element"
           style={{
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             top: "12px",
             right: "12px",
             zIndex: 9999,
-            backgroundColor: "rgba(23, 23, 23, 0.85)", // dopasowane do tła EmotionDeck
+            backgroundColor: "rgba(23, 23, 23, 0.85)",
             color: "#f5f5f5",
             borderRadius: "10px",
             padding: "4px 8px",
@@ -67,13 +67,42 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
 
-        {children}
+        {/* 🧠 Main Page Content */}
+        <main className="flex-grow">{children}</main>
+
+        {/* 🌐 Minimal Footer */}
+        <footer className="border-t border-gray-800 bg-neutral-950/80 backdrop-blur-sm py-20 text-center text-gray-400 text-sm leading-relaxed mt-32">
+          <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-10">
+            {/* 📧 Contact */}
+            <div className="text-gray-500 text-center space-y-2">
+              <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
+              <p>hello[at]emotiondeck.com</p>
+            </div>
+
+            {/* 💬 Instagram only */}
+            <div className="text-center">
+              <a
+                href="https://www.instagram.com/emotiondeckcollection/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition text-base"
+              >
+                Instagram
+              </a>
+            </div>
+
+            {/* ⚖️ Description */}
+            <p className="text-gray-600 text-xs max-w-xl text-center">
+              EmotionDeck is an educational visual project designed to help you
+              recognise and interpret human emotion.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
