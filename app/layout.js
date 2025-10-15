@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
@@ -8,7 +9,6 @@ export const metadata = {
     "EmotionDeck, emotion recognition, facial expressions, empathy, emotion perception, learn emotions, human emotion training, psychology, mindfulness, emotional intelligence",
   metadataBase: new URL("https://emotiondeck.com"),
 
-  // Google Search Console verification tag
   verification: {
     google: "IDzJ4Cn66z4WCWBw3l2BI6IRKH-POLMXrDzfDsRjGwc",
   },
@@ -48,8 +48,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased">
-        {children}
-      </body>
-    </html>
-  );
-}
+        {/* ✅ Google Analytics 4 (Next.js recommended way) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-03QS8ZLH5G"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-03QS8ZLH5G', {
+              page_path: window.location.pathname,
