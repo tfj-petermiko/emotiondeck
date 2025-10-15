@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* 🌍 Google Translate Element — EmotionDeck-style */}
+        {/* 🌍 Google Translate Element — EmotionDeck style */}
         <div
           id="google_translate_element"
           style={{
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             top: "12px",
             right: "12px",
             zIndex: 9999,
-            backgroundColor: "rgba(23, 23, 23, 0.85)", // ciemne tło jak EmotionDeck
+            backgroundColor: "rgba(23, 23, 23, 0.85)",
             color: "#f5f5f5",
             borderRadius: "10px",
             padding: "4px 8px",
