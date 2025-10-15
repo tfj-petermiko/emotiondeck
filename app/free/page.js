@@ -27,7 +27,7 @@ export default function FreeCollection() {
     regions.forEach((region) => {
       genders.forEach((gender) => {
         allImages.push({
-          src: `/gallery/${emotion}_${region}_Adult_${gender}.png`,
+          src: `/phase-1/${emotion}_${region}_Adult_${gender}.png`,
           emotion,
           region,
           gender,
@@ -63,7 +63,7 @@ export default function FreeCollection() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore realistic emotional expressions across regions and genders.
+          Explore 144 foundational emotional expressions — open and free for personal learning, research, and education.
         </motion.p>
       </section>
 
@@ -135,15 +135,26 @@ export default function FreeCollection() {
       {/* 🔍 GLOBAL IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      {/* 🔙 BACK TO HOME */}
-      <div className="text-center mt-16 mb-24">
-        <Link
-          href="/"
-          className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
-        >
-          ← Back to Home
-        </Link>
-      </div>
+{/* 🔙 BACK TO PRO MENU */}
+<div className="text-center mt-8 mb-4">
+  <Link
+    href="/pro"
+    className="inline-block bg-gray-700 text-white font-semibold px-6 py-2 rounded-full hover:bg-gray-600 transition"
+  >
+    ← Back to PRO Menu
+  </Link>
+</div>
+
+{/* 🔙 BACK TO HOME */}
+<div className="text-center mt-8 mb-24">
+  <Link
+    href="/"
+    className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
+  >
+    ← Back to Home
+  </Link>
+</div>
+
     </main>
   );
 }

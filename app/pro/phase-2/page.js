@@ -31,7 +31,7 @@ export default function ProCollectionPhase2() {
       genders.forEach((gender) => {
         ages.forEach((age) => {
           allImages.push({
-            src: `/pro/collection-1/${emotion}_${region}_${age}_${gender}.png`,
+            src: `/pro/phase-2/${emotion}_${region}_${age}_${gender}.png`,
             emotion,
             region,
             gender,
@@ -70,8 +70,8 @@ export default function ProCollectionPhase2() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore the expanded collection of complex human emotions across
-          regions, genders, and age groups.
+          Explore 288 high-resolution portraits for professionals, educators, and researchers in emotional perception.
+
         </motion.p>
       </section>
 
@@ -156,15 +156,26 @@ export default function ProCollectionPhase2() {
       {/* 🔍 GLOBAL IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      {/* 🔙 BACK TO HOME */}
-      <div className="text-center mt-20 mb-24">
-        <Link
-          href="/"
-          className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
-        >
-          ← Back to Home
-        </Link>
-      </div>
+{/* 🔙 BACK TO PRO MENU */}
+<div className="text-center mt-8 mb-4">
+  <Link
+    href="/pro"
+    className="inline-block bg-gray-700 text-white font-semibold px-6 py-2 rounded-full hover:bg-gray-600 transition"
+  >
+    ← Back to PRO Menu
+  </Link>
+</div>
+
+{/* 🔙 BACK TO HOME */}
+<div className="text-center mt-8 mb-24">
+  <Link
+    href="/"
+    className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
+  >
+    ← Back to Home
+  </Link>
+</div>
+
     </main>
   );
 }

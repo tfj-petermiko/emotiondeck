@@ -1,3 +1,5 @@
+// app/pro/layout.jsx
+
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   alternates: {
@@ -32,6 +34,10 @@ export const metadata = {
       "Unlock the EmotionDeck PRO Collection — explore complex emotional expressions across regions, ages, and genders for education and research.",
     images: ["https://emotiondeck.com/preview-pro.jpg"],
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  themeColor: "#000000",
 };
 
 export default function ProLayout({ children }) {
