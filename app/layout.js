@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Metadata } from "next";
 
 export const metadata = {
   title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
@@ -9,7 +8,7 @@ export const metadata = {
     "EmotionDeck, emotion recognition, facial expressions, empathy, emotion perception, learn emotions, human emotion training, psychology, mindfulness, emotional intelligence",
   metadataBase: new URL("https://emotiondeck.com"),
 
-  // ✅ Google Search Console verification tag
+  // Google Search Console verification tag
   verification: {
     google: "IDzJ4Cn66z4WCWBw3l2BI6IRKH-POLMXrDzfDsRjGwc",
   },
@@ -45,11 +44,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased">
