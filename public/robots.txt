@@ -1,0 +1,5 @@
+# robots.txt for EmotionDeck
+User-agent: *
+Allow: /
+
+Sitemap: https://emotiondeck.com/sitemap.xml
