@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { createPortal } from "react-dom";
+import ImageModal from "../components/ImageModal"; // 🆕 globalny modal
 
 export default function FreeCollection() {
   const emotions = [
@@ -21,7 +21,7 @@ export default function FreeCollection() {
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Generowanie ścieżek do wszystkich obrazów
+  // 🧩 Generate all images
   const allImages = [];
   emotions.forEach((emotion) => {
     regions.forEach((region) => {
@@ -36,18 +36,17 @@ export default function FreeCollection() {
     });
   });
 
-  // Filtrowanie
-  const filteredImages = allImages.filter((img) => {
-    return (
+  // 🧠 Filter logic
+  const filteredImages = allImages.filter(
+    (img) =>
       img.emotion === selectedEmotion &&
       (selectedRegion === "All" || img.region === selectedRegion) &&
       (selectedGender === "All" || img.gender === selectedGender)
-    );
-  });
+  );
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
-      {/* HEADER */}
+      {/* 🧭 HEADER */}
       <section className="text-center mt-20 px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -68,7 +67,7 @@ export default function FreeCollection() {
         </motion.p>
       </section>
 
-      {/* FILTER BAR */}
+      {/* 🎛️ FILTER BAR */}
       <section className="flex flex-wrap justify-center gap-4 mt-16 text-neutral-900">
         <select
           value={selectedEmotion}
@@ -109,71 +108,34 @@ export default function FreeCollection() {
         </select>
       </section>
 
-      <p className="mb-12">&nbsp;</p>
+      <div className="my-16" />
 
-      {/* GALLERY */}
+      {/* 🖼️ GALLERY */}
       <section id="emotions" className="w-full mt-16">
-        <div className="grid grid-cols-6 gap-0 w-full">
-          {filteredImages.map((img, i) => (
+        <div className="gallery-grid">
+          {filteredImages.map((img) => (
             <motion.div
-              key={i}
+              key={`${img.emotion}-${img.region}-${img.gender}`}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
-              className="w-full overflow-hidden cursor-pointer"
+              className="overflow-hidden cursor-pointer"
               onClick={() => setSelectedImage(img.src)}
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} - ${img.region} ${img.gender}`}
-                className="w-full h-auto object-cover object-center opacity-90 hover:opacity-100 transition duration-300"
+                alt={`${img.emotion} — ${img.region} ${img.gender}`}
+                className="gallery-image"
+                loading="lazy"
               />
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* MODAL */}
-      {typeof window !== "undefined" &&
-        createPortal(
-          <AnimatePresence>
-            {selectedImage && (
-              <motion.div
-                key="overlay"
-                className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setSelectedImage(null)}
-              >
-                <motion.div
-                  key="image-wrapper"
-                  className="relative flex items-center justify-center"
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0.9, opacity: 0 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <img
-                    src={selectedImage}
-                    alt="Zoomed emotion"
-                    className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
-                  />
-                  <button
-                    onClick={() => setSelectedImage(null)}
-                    className="absolute -top-10 right-0 text-white text-3xl font-light hover:text-gray-400"
-                    aria-label="Close"
-                  >
-                    ✕
-                  </button>
-                </motion.div>
-              </motion.div>
-            )}
-          </AnimatePresence>,
-          document.body
-        )}
+      {/* 🔍 GLOBAL IMAGE MODAL */}
+      <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      {/* BACK TO HOME BUTTON */}
+      {/* 🔙 BACK TO HOME */}
       <div className="text-center mt-16 mb-24">
         <Link
           href="/"
@@ -182,50 +144,6 @@ export default function FreeCollection() {
           ← Back to Home
         </Link>
       </div>
-
-      <p className="mb-20">&nbsp;</p>
-
-      {/* PRO EXTENSION */}
-      <section className="mt-40 text-center px-6">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-3xl font-semibold mb-4"
-        >
-          Unlock the Pro Collection
-        </motion.h3>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-gray-400 mb-2 max-w-xl mx-auto"
-        >
-          Explore additional complex human emotions across regions, ages, and genders.  
-          Perfect for professionals, educators, and advanced emotional research.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-sm text-emerald-400 mb-8"
-        >
-          🔓 Currently open for free — early access.
-        </motion.p>
-
-        <motion.a
-          href="/pro/collection-1"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="inline-block bg-gradient-to-r from-white to-gray-200 text-neutral-900 font-semibold px-10 py-3 rounded-full hover:from-gray-100 hover:to-white transition"
-        >
-          Get Pro Access →
-        </motion.a>
-      </section>
-
-      <p className="mb-20">&nbsp;</p>
     </main>
   );
 }

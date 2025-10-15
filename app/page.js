@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans">
-      {/* HERO + CTA */}
+      {/* 🎯 HERO + CTA */}
       <section className="text-center mt-20 px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -55,33 +55,35 @@ export default function Home() {
         </motion.a>
       </section>
 
+      {/* Spacer */}
+      <div className="my-24" />
 
-      <p className="mb-12">&nbsp;</p>
-
-      {/* GALLERY */}
-      <section id="emotions" className="mt-32 text-center">
-        <div className="flex justify-between items-end w-full">
+      {/* 🖼️ EMOTIONS GALLERY */}
+      <section id="emotions" className="mt-32 text-center px-4">
+        <div className="flex justify-between items-end w-full gap-4 md:gap-8">
           {emotions.map((emotion, i) => (
             <motion.div
-              key={i}
-              whileHover={{ scale: 1.03 }}
+              key={emotion.name}
+              whileHover={{ scale: 1.04 }}
               transition={{ duration: 0.3 }}
-              className="flex-1 overflow-hidden"
+              className="flex-1 overflow-hidden rounded-xl shadow-md hover:shadow-lg transition"
               style={{ aspectRatio: "2 / 3" }}
             >
               <img
                 src={emotion.img}
-                alt={emotion.name}
+                alt={`Black and white portrait expressing ${emotion.name.toLowerCase()}`}
                 className="w-full h-full object-cover object-center opacity-90 hover:opacity-100 transition duration-300"
+                loading="lazy"
               />
             </motion.div>
           ))}
         </div>
       </section>
 
-       <p className="mb-20">&nbsp;</p>
+      {/* Spacer */}
+      <div className="my-32" />
 
-      {/* PRO EXTENSION */}
+      {/* 🚀 PRO COLLECTION PROMO */}
       <section className="mt-40 text-center px-6">
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
@@ -89,7 +91,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-3xl font-semibold mb-4"
         >
-          Unlock the Pro Collection
+          Unlock the PRO Collection
         </motion.h3>
 
         <motion.p
@@ -117,11 +119,11 @@ export default function Home() {
           transition={{ duration: 0.3 }}
           className="inline-block bg-gradient-to-r from-white to-gray-200 text-neutral-900 font-semibold px-10 py-3 rounded-full hover:from-gray-100 hover:to-white transition"
         >
-          Get Pro Access →
+          Get PRO Access →
         </motion.a>
       </section>
 
-      <p className="mb-20">&nbsp;</p>
+      <div className="my-20" />
     </main>
   );
 }
