@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
   description:
     "EmotionDeck helps you learn to recognise, interpret, and understand human emotion through subtle facial expressions, mindful observation, and guided visual learning.",
