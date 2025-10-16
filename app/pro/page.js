@@ -54,7 +54,7 @@ export default function ProCollectionPage() {
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-12"
         >
           Explore high-resolution portraits of human emotions for professionals,
-          educators, and researchers.
+          educators, and researchers. Each phase offers a distinct insight into emotional diversity, cultural universality, and psychological nuance.
         </motion.p>
       </section>
 
@@ -85,7 +85,12 @@ export default function ProCollectionPage() {
                     Explore 144 foundational emotional expressions — open and free for learning, research, and education.
                   </p>
                   <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    This phase focuses on European faces to establish a clear and neutral reference point. It introduces essential emotions through consistent lighting and composition, forming the foundation of emotional-perception study.
+                    This phase establishes a neutral and consistent foundation for studying emotion across different faces, genders, and ethnicities. 
+                    It emphasises clarity, balance, and universality — allowing observers to focus purely on the emotional signal, free from external distraction.  
+                    Designed as a baseline for comparison, it helps users recognise emotional nuances and build perceptual accuracy.  
+                    It also serves as a psychological mirror — reminding us that emotion transcends cultural boundaries.  
+                    Every face becomes a lesson in empathy and shared humanity, where emotion is a language understood by all.  
+                    Through this openness, Phase 1 invites us to observe emotion as both art and science — simple, honest, and profoundly human.
                   </p>
 
                   <div className="flex justify-end">
@@ -105,7 +110,6 @@ export default function ProCollectionPage() {
                 </td>
               </tr>
 
-              {/* TECHNICAL DETAILS */}
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
                 <td className="p-3 text-white" colSpan={2}>
@@ -168,10 +172,14 @@ export default function ProCollectionPage() {
                 <td className="w-2/4 p-3 text-white">
                   <p className="font-semibold mb-1">Phase 2 — Advanced Emotional Expressions</p>
                   <p className="text-gray-400 mb-2">
-                    Expands the dataset with African portraits — rich in warmth, depth and authentic emotional presence.
+                    Expands the dataset with deeper, more complex expressions drawn from a wide range of individuals and backgrounds.
                   </p>
                   <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    Each portrait explores subtle states like empathy, gratitude and awe, revealing how cultural depth and psychological precision intersect in human expression.
+                    This phase examines subtler states such as empathy, gratitude and awe, encouraging observers to perceive emotional gradation and authenticity.  
+                    It captures the warmth of human connection — bridging cultural differences and revealing shared psychological patterns that define humanity.  
+                    It offers a deeper encounter with authenticity, where emotion becomes a reflection of inner truth rather than social performance.  
+                    By observing these micro-moments of sincerity, viewers train their sensitivity to emotional detail and psychological realism.  
+                    The result is a growing ability to recognise emotion as a spectrum, not a label, creating a richer, more humanised understanding of what we feel.
                   </p>
 
                   <div className="flex justify-end">
@@ -191,7 +199,6 @@ export default function ProCollectionPage() {
                 </td>
               </tr>
 
-              {/* TECHNICAL DETAILS */}
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
                 <td className="p-3 text-white" colSpan={2}>
@@ -231,96 +238,98 @@ export default function ProCollectionPage() {
 
       <br />
 
-{/* ========================== */}
-{/* 📊 PHASE 3 */}
-{/* ========================== */}
-<motion.section
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 1.2, duration: 0.6 }}
-  className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
->
-  <div className="bg-gray-900 p-6 md:p-10">
-    <h2 className="text-2xl font-semibold text-center">
-      Phase 3 — Young Adults
-    </h2>
-    <p className="text-center text-gray-400 italic mb-6">
-      Mindfulness & Harmony
-    </p>
+      {/* ========================== */}
+      {/* 📊 PHASE 3 */}
+      {/* ========================== */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
+        className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+      >
+        <div className="bg-gray-900 p-6 md:p-10">
+          <h2 className="text-2xl font-semibold text-center">
+            Phase 3 — Young Adults
+          </h2>
+          <p className="text-center text-gray-400 italic mb-6">
+            Mindfulness & Harmony
+          </p>
 
-    <table className="w-full text-sm md:text-base border-collapse">
-      <tbody>
-        <tr className="border-b border-gray-800 align-top">
-          <td className="w-1/4" />
-          <td className="w-2/4 p-3 text-white">
-            <p className="font-semibold mb-1">Phase 3 — Young Adults</p>
-            <p className="text-gray-400 mb-2">
-              Focuses on East Asian young adults — precise, calm and emotionally balanced expressions in 144 portraits.
-            </p>
-            <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-              This phase bridges youthful energy and mature emotional awareness, showing mindfulness, gentle empathy and inner clarity through subtle micro-expressions.
-            </p>
+          <table className="w-full text-sm md:text-base border-collapse">
+            <tbody>
+              <tr className="border-b border-gray-800 align-top">
+                <td className="w-1/4" />
+                <td className="w-2/4 p-3 text-white">
+                  <p className="font-semibold mb-1">Phase 3 — Young Adults</p>
+                  <p className="text-gray-400 mb-2">
+                    Features diverse young adults expressing nuanced emotions — blending energy, focus, and emerging self-awareness.
+                  </p>
+                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                    This phase bridges the transition between adolescence and maturity, where emotion meets reflection.  
+                    It highlights mindfulness, emotional regulation, and inner harmony — key traits of developing empathy and balanced perception.  
+                    Each portrait captures the moment between impulse and understanding, between reaction and wisdom.  
+                    The subtlety of these expressions invites slower observation, helping the viewer perceive not just emotion but its direction and intention.  
+                    It reminds us that emotional intelligence grows not from expression alone, but from awareness of what lies beneath.
+                  </p>
 
-            <div className="flex justify-end">
-              {renderButton("/pro/phase-3", "Open Phase 3 Collection", "p3")}
-            </div>
-          </td>
-          <td className="p-3 w-[200px] text-center align-top">
-            <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-              <img
-                src="/private_images/pro/phase_3/Love_YoungAdult_EastAsian_Male.webp"
-                alt="Love — East Asian Young Adult Male"
-                className="object-cover w-full h-auto"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-gray-400 text-xs mt-2">Love — East Asian Young Adult Male</p>
-          </td>
-        </tr>
+                  <div className="flex justify-end">
+                    {renderButton("/pro/phase-3", "Open Phase 3 Collection", "p3")}
+                  </div>
+                </td>
+                <td className="p-3 w-[200px] text-center align-top">
+                  <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+                    <img
+                      src="/private_images/pro/phase_3/Love_YoungAdult_EastAsian_Male.webp"
+                      alt="Love — Young Adult Male"
+                      className="object-cover w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="text-gray-400 text-xs mt-2">Love — Young Adult Male</p>
+                </td>
+              </tr>
 
-        {/* TECHNICAL DETAILS */}
-        <tr className="border-b border-gray-800">
-          <td className="p-3 text-gray-400">Total Expressions</td>
-          <td className="p-3 text-white" colSpan={2}>
-            144 high-resolution portraits
-          </td>
-        </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Total Expressions</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  144 high-resolution portraits
+                </td>
+              </tr>
 
-        <tr className="border-b border-gray-800">
-          <td className="p-3 text-gray-400">Emotions Included</td>
-          <td className="p-3 text-white" colSpan={2}>
-            Joy, Anger, Fear, Sadness, Surprise, Disgust, Love, Pride,
-            Confusion, Hope, Trust, Curiosity, Desire, Nostalgia, Anxiety,
-            Excitement, Determination, Compassion, Tranquillity, Guilt,
-            Contempt, Inspiration, Affection, Disbelief.
-          </td>
-        </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Emotions Included</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Joy, Anger, Fear, Sadness, Surprise, Disgust, Love, Pride,
+                  Confusion, Hope, Trust, Curiosity, Desire, Nostalgia, Anxiety,
+                  Excitement, Determination, Compassion, Tranquillity, Guilt,
+                  Contempt, Inspiration, Affection, Disbelief.
+                </td>
+              </tr>
 
-        <tr className="border-b border-gray-800">
-          <td className="p-3 text-gray-400">Demographics</td>
-          <td className="p-3 text-white" colSpan={2}>
-            3 ethnic groups × 2 genders × 1 age group (Young Adult)
-          </td>
-        </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Demographics</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  3 ethnic groups × 2 genders × 1 age group (Young Adult)
+                </td>
+              </tr>
 
-        <tr className="border-b border-gray-800">
-          <td className="p-3 text-gray-400">Resolution</td>
-          <td className="p-3 text-white" colSpan={2}>
-            1024 × 1536 ultra-realistic portraits
-          </td>
-        </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Resolution</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  1024 × 1536 ultra-realistic portraits
+                </td>
+              </tr>
 
-        <tr>
-          <td className="p-3 text-gray-400">Lighting & Style</td>
-          <td className="p-3 text-white" colSpan={2}>
-            Neutral background, uniform shirt style, precision lighting, balanced tonal range
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</motion.section>
-
+              <tr>
+                <td className="p-3 text-gray-400">Lighting & Style</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Neutral background, uniform shirt style, precision lighting, balanced tonal range
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </motion.section>
 
       <br />
 
@@ -350,13 +359,14 @@ export default function ProCollectionPage() {
                     Phase 4 — Children Collection
                   </p>
                   <p className="text-gray-400 mb-2">
-                    84 portraits of children (6–7 years old) capturing pure, genuine emotions.  
-                    A study of early empathy and emotional development.
+                    84 portraits of children (6–7 years old) capturing pure, genuine emotions — the roots of empathy and connection.
                   </p>
                   <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    This phase explores how human emotion manifests in its earliest, most authentic form.  
-                    Expressions such as pride, wonder and trust reflect the foundation of emotional awareness and connection in childhood.  
-                    Essential for educational use, developmental psychology and visual emotion training.
+                    This phase explores emotional development at its earliest stage, where expression is spontaneous and unfiltered.  
+                    It reflects universal traits such as curiosity, wonder and joy that shape emotional intelligence from a young age.  
+                    These portraits remind us how authenticity precedes complexity — a face that feels before it understands.  
+                    By observing them, educators and psychologists can trace how empathy, confidence and trust emerge.  
+                    It closes the circle of human expression — returning to the beginning, where emotion is still free, honest, and pure.
                   </p>
 
                   <div className="flex justify-end">
@@ -368,18 +378,17 @@ export default function ProCollectionPage() {
                   <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
                     <img
                       src="/private_images/pro/phase_4/Pride_Child_European_Female.webp"
-                      alt="Pride — European Child Female"
+                      alt="Pride — Child Female"
                       className="object-cover w-full h-auto"
                       loading="lazy"
                     />
                   </div>
                   <p className="text-gray-400 text-xs mt-2">
-                    Pride — European Child Female
+                    Pride — Child Female
                   </p>
                 </td>
               </tr>
 
-              {/* TECHNICAL DETAILS */}
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
                 <td className="p-3 text-white" colSpan={2}>
