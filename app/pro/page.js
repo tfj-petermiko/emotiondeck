@@ -59,7 +59,7 @@ export default function ProCollectionPage() {
       </section>
 
       {/* ========================== */}
-      {/* 📊 PHASE 1 — EUROPEAN */}
+      {/* 📊 PHASE 1 */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -69,7 +69,7 @@ export default function ProCollectionPage() {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
-            Phase 1 — Free Collection (European)
+            Phase 1 — Free Collection
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
             Clarity & Universal Understanding
@@ -145,7 +145,7 @@ export default function ProCollectionPage() {
       <br />
 
       {/* ========================== */}
-      {/* 📊 PHASE 2 — AFRICAN */}
+      {/* 📊 PHASE 2 */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -155,7 +155,7 @@ export default function ProCollectionPage() {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
-            Phase 2 — Advanced Emotional Expressions (African)
+            Phase 2 — Advanced Emotional Expressions
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
             Warmth & Authentic Connection
@@ -232,7 +232,7 @@ export default function ProCollectionPage() {
       <br />
 
 {/* ========================== */}
-{/* 📊 PHASE 3 — EAST ASIAN */}
+{/* 📊 PHASE 3 */}
 {/* ========================== */}
 <motion.section
   initial={{ opacity: 0, y: 30 }}
@@ -242,7 +242,7 @@ export default function ProCollectionPage() {
 >
   <div className="bg-gray-900 p-6 md:p-10">
     <h2 className="text-2xl font-semibold text-center">
-      Phase 3 — Young Adults (East Asian)
+      Phase 3 — Young Adults
     </h2>
     <p className="text-center text-gray-400 italic mb-6">
       Mindfulness & Harmony
@@ -335,7 +335,7 @@ export default function ProCollectionPage() {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
-            Phase 4 — Children Collection (European)
+            Phase 4 — Children Collection
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
             Innocence & Emotional Growth
