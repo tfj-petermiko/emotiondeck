@@ -428,6 +428,104 @@ export default function ProCollectionPage() {
         </div>
       </motion.section>
 
+
+<br />
+
+{/* ========================== */}
+{/* 📊 PHASE 5 — SENIORS */}
+{/* ========================== */}
+<motion.section
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.4, duration: 0.6 }}
+  className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+>
+  <div className="bg-gray-900 p-6 md:p-10">
+    <h2 className="text-2xl font-semibold text-center">
+      Phase 5 — Seniors Collection
+    </h2>
+    <p className="text-center text-gray-400 italic mb-6">
+      Wisdom & Emotional Depth
+    </p>
+
+    <table className="w-full text-sm md:text-base border-collapse">
+      <tbody>
+        <tr className="border-b border-gray-800 align-top">
+          <td className="w-1/4" />
+          <td className="w-2/4 p-3 text-white">
+            <p className="font-semibold mb-1">
+              Phase 5 — Seniors Collection
+            </p>
+            <p className="text-gray-400 mb-2">
+              Discover 300 portraits of seniors expressing 50 emotions — a visual study of wisdom, grace, and emotional depth.
+            </p>
+            <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+              This phase explores the emotional richness of later life, where expression is shaped by reflection, experience, and inner balance.  
+              It highlights how empathy, patience, and resilience mature with age, revealing faces that carry both peace and depth.  
+              Through these portraits, psychologists, educators, and artists can observe the dialogue between wisdom and emotion — where every wrinkle tells a story of understanding.
+            </p>
+
+            <div className="flex justify-end">
+              {renderButton("/pro/phase-5", "Open Phase 5 Collection", "p5")}
+            </div>
+          </td>
+
+          <td className="p-3 w-[200px] text-center align-top">
+            <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+              <img
+                src="/private_images/pro/phase_5/Kindness_African_Senior_Male.webp"
+                alt="Kindness — African Senior Male"
+                className="object-cover w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-gray-400 text-xs mt-2">
+              Kindness — African Senior Male
+            </p>
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Total Expressions</td>
+          <td className="p-3 text-white" colSpan={2}>
+            300 black-and-white portraits
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Emotions Included</td>
+          <td className="p-3 text-white" colSpan={2}>
+            50 emotions including Kindness, Empathy, Serenity, Pride, Love, Trust, Reflection, Hope, Forgiveness, Gratitude, and more.
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Demographics</td>
+          <td className="p-3 text-white" colSpan={2}>
+            3 ethnic groups × 2 genders × 1 age group (Seniors ~60+ years)
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Resolution</td>
+          <td className="p-3 text-white" colSpan={2}>
+            1024 × 1536 high-resolution portraits
+          </td>
+        </tr>
+
+        <tr>
+          <td className="p-3 text-gray-400">Lighting & Style</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Neutral grey background, soft lighting, consistent attire, timeless emotional tone
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</motion.section>
+
+
+
       {/* 🔙 BACK TO HOME */}
       <div className="text-center mt-16 mb-24">
         <Link
