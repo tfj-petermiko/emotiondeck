@@ -1,61 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* =========================================
-   📱 Global Mobile Responsiveness Fixes
+   🌍 Global Base Styles
+   ========================================= */
+html,
+body {
+  background: linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b);
+  color: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* =========================================
+   🔗 Link Styles
+   ========================================= */
+a {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #d1d5db; /* soft grey hover */
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* =========================================
+   🖼️ EmotionDeck Gallery Grid
+   ========================================= */
+.gallery-grid {
+  display: grid;
+  gap: 1px;
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* =========================================
+   🖼️ Gallery Image Styling
+   ========================================= */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 2 / 3;
+  border-radius: 0.125rem;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
+  opacity: 0.9;
+  background-color: #1a1a1a;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+/* =========================================
+   🪄 Modal Helper
+   ========================================= */
+.emotiondeck-modal {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* =========================================
+   🔒 Security & Copy Protection
    ========================================= */
 
-/* Make all tables scrollable on small screens */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: transparent;
+/* Prevent image dragging, selection, and interaction */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 
-/* Ensure table text wraps correctly */
-td, th {
-  word-wrap: break-word;
-  white-space: normal;
-  vertical-align: top;
-  padding: 0.75rem;
+/* Prevent text selection site-wide */
+* {
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-/* Responsive images inside tables */
-table img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  object-fit: cover;
+/* Optional: disable long-press menu on mobile (extra protection) */
+body {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Simplify layout on small screens */
-@media (max-width: 768px) {
-  /* Hide decorative or empty first columns */
-  td:first-child,
-  th:first-child {
-    display: none;
-  }
 
-  /* Improve readability */
-  table,
-  td,
-  th {
-    font-size: 0.95rem;
-    padding: 0.6rem;
-  }
-
-  /* Avoid justified text issues on narrow screens */
-  .text-justify {
-    text-align: left !important;
-  }
-
-  /* Allow buttons and sections to breathe */
-  main {
-    padding-bottom: 3rem;
-  }
+/* Disable saving, dragging, and copying images */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 
-/* Optional subtle spacing for mobile scrolling */
-main {
-  scroll-padding-bottom: 2rem;
+/* Prevent text selection globally */
+* {
+  -webkit-user-select: none;
+  user-select: none;
 }
+
