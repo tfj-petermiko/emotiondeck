@@ -458,12 +458,9 @@ export default function ProCollectionPage() {
             </p>
             <p className="text-gray-400 mb-2">
               Discover 300 portraits of seniors expressing 50 emotions — a visual study of wisdom, grace, and emotional depth.
-            </p>
-            <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-              This phase explores the emotional richness of later life, where expression is shaped by reflection, experience, and inner balance.  
-              It highlights how empathy, patience, and resilience mature with age, revealing faces that carry both peace and depth.  
-              Through these portraits, psychologists, educators, and artists can observe the dialogue between wisdom and emotion — where every wrinkle tells a story of understanding.
-            </p>
+            </p> 
+             <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl"> This phase explores the emotional richness of later life, where expression is shaped by reflection, experience, and inner balance. It highlights how empathy, patience, and resilience mature with age, revealing faces that carry both peace and depth. Through these portraits, psychologists, educators, and artists can observe the dialogue between wisdom and emotion — where every wrinkle tells a story of understanding. It reminds us that emotion does not fade with time, but transforms into something deeper and more meaningful. Each portrait stands as a quiet testimony to the beauty of human endurance and the calm strength that grows with age. </p>
+
 
             <div className="flex justify-end">
               {renderButton("/pro/phase-5", "Open Phase 5 Collection", "p5")}
