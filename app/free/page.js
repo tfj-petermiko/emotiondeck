@@ -27,7 +27,7 @@ export default function FreeCollection() {
     regions.forEach((region) => {
       genders.forEach((gender) => {
         allImages.push({
-          src: `/phase-1/${emotion}_${region}_Adult_${gender}.png`,
+          src: `/private_images/free/phase_1/${emotion}_${region}_Adult_${gender}.png`,
           emotion,
           region,
           gender,

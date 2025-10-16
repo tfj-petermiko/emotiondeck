@@ -1,11 +1,10 @@
 import "./globals.css";
 import Script from "next/script";
+import ClientProtector from "./ClientProtector"; // ✅ direct import is fine because it's rendered inside <body>
 
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  alternates: {
-    canonical: "https://emotiondeck.com",
-  },
+  alternates: { canonical: "https://emotiondeck.com" },
   title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
   description:
     "EmotionDeck helps you learn to recognise, interpret, and understand human emotion through subtle facial expressions, mindful observation, and guided visual learning.",
@@ -43,7 +42,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col">
+      <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col select-none">
+        {/* 🧱 Security layer runs client-side */}
+        <ClientProtector />
 
         {/* ✅ Google Analytics */}
         <Script
@@ -100,11 +101,10 @@ export default function RootLayout({ children }) {
         {/* 🧠 Main Page Content */}
         <main className="flex-grow">{children}</main>
 
-        {/* 🌐 Minimal Footer */}
+        {/* 🌐 Footer */}
         <footer className="border-t border-gray-800 bg-neutral-950/80 backdrop-blur-sm py-20 text-center text-gray-400 text-sm leading-relaxed mt-32">
-          <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-6">
-            {/* 📧 Contact + Instagram */}
-            <div className="text-gray-500 text-center space-y-1">
+          <div className="max-w-4xl mx-auto px-6 flex flex-col items-centre gap-6">
+            <div className="text-gray-500 text-centre space-y-1">
               <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
               <p className="text-sm select-all">hello[at]emotiondeck.com</p>
               <a
@@ -117,8 +117,7 @@ export default function RootLayout({ children }) {
               </a>
             </div>
 
-            {/* ⚖️ Description */}
-            <p className="text-gray-600 text-xs max-w-xl text-center">
+            <p className="text-gray-600 text-xs max-w-xl text-centre">
               EmotionDeck is an educational visual project designed to help you
               recognise and interpret human emotion through mindful observation.
             </p>

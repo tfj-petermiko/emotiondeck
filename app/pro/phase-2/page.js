@@ -31,7 +31,7 @@ export default function ProCollectionPhase2() {
       genders.forEach((gender) => {
         ages.forEach((age) => {
           allImages.push({
-            src: `/pro/phase-2/${emotion}_${region}_${age}_${gender}.png`,
+            src: `/private_images/pro/phase_2/${emotion}_${region}_${age}_${gender}.png`,
             emotion,
             region,
             gender,

@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const emotions = [
-    { name: "Joy", img: "/images/joy.png" },
-    { name: "Anger", img: "/images/anger.png" },
-    { name: "Fear", img: "/images/fear.png" },
-    { name: "Sadness", img: "/images/sadness.png" },
-    { name: "Surprise", img: "/images/surprise.png" },
-    { name: "Contempt", img: "/images/contempt.png" },
+    { name: "Joy", img: "/private_images/images/joy.png" },
+    { name: "Anger", img: "/private_images/images/anger.png" },
+    { name: "Fear", img: "/private_images/images/fear.png" },
+    { name: "Sadness", img: "/private_images/images/sadness.png" },
+    { name: "Surprise", img: "/private_images/images/surprise.png" },
+    { name: "Contempt", img: "/private_images/images/contempt.png" },
   ];
 
   return (
@@ -52,6 +52,7 @@ export default function Home() {
           className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
         >
           Open Free Collection →
+
         </motion.a>
       </section>
 
