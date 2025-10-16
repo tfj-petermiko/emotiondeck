@@ -1,0 +1,25 @@
+{
+  "headers": [
+    {
+      "source": "/private_images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noimageindex, nosnippet"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; img-src 'self' data:; object-src 'none';"
+        }
+      ]
+    }
+  ]
+}
