@@ -495,14 +495,14 @@ export default function ProCollectionPage() {
         <tr className="border-b border-gray-800">
           <td className="p-3 text-gray-400">Emotions Included</td>
           <td className="p-3 text-white" colSpan={2}>
-            50 emotions including Kindness, Empathy, Serenity, Pride, Love, Trust, Reflection, Hope, Forgiveness, Gratitude, and more.
+            Acceptance, Admiration, Affection, Calmness, Compassion, Contentment, Curiosity, Determination, Dignity, Empathy, Forgiveness, Gratitude, Hope, Joy, Longing, Melancholy, Nostalgia, Peace, Pride, Reflection, Regret, Relief, Sadness, Serenity, Tranquillity, Resilience, Faith, Love, Tenderness, Understanding, Kindness, Trust, Patience, Inspiration, Enthusiasm, Friendship, Support, EmotionalBalance, InnerStrength, Fulfilment, Yearning, Sorrow, Vulnerability, Amusement, Reverence, Gratification, HopeRenewed, AcceptanceOfLoss, ReflectionDeep, Grace
           </td>
         </tr>
 
         <tr className="border-b border-gray-800">
           <td className="p-3 text-gray-400">Demographics</td>
           <td className="p-3 text-white" colSpan={2}>
-            3 ethnic groups × 2 genders × 1 age group (Seniors ~60+ years)
+            3 ethnic groups × 2 genders × 1 age group (Seniors — approximately 70–80 years old)
           </td>
         </tr>
 
