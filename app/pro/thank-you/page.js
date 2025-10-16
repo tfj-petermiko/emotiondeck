@@ -73,11 +73,13 @@ function ThankYouContent() {
         </p>
         <p className="text-sm text-gray-500 mb-8 select-none">
           Access will expire automatically after seven days.
-        </p>  <p className="mb-2 select-none">
+        </p>
+
+        <div className="mt-10 border-t border-gray-700 pt-6 text-sm text-gray-400 select-none">
+          <p className="mb-2 select-none">
             📩 A PayPal receipt has been sent to your email as proof of purchase.
           </p>
-
-      
+        </div>
       </div>
     </main>
   );
