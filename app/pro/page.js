@@ -95,7 +95,7 @@ export default function ProCollectionPage() {
                 <td className="p-3 w-[200px] text-center align-top">
                   <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
                     <img
-                      src="/private_images/free/phase_1/Joy_European_Adult_Male.png"
+                      src="/private_images/free/phase_1/Joy_European_Adult_Male.webp"
                       alt="Joy — European Adult Male"
                       className="object-cover w-full h-auto"
                       loading="lazy"
@@ -181,7 +181,7 @@ export default function ProCollectionPage() {
                 <td className="p-3 w-[200px] text-center align-top">
                   <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
                     <img
-                      src="/private_images/pro/phase_2/Empathy_African_Adult_Female.png"
+                      src="/private_images/pro/phase_2/Empathy_African_Adult_Female.webp"
                       alt="Empathy — African Adult Female"
                       className="object-cover w-full h-auto"
                       loading="lazy"
@@ -268,7 +268,7 @@ export default function ProCollectionPage() {
           <td className="p-3 w-[200px] text-center align-top">
             <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
               <img
-                src="/private_images/pro/phase_3/Love_YoungAdult_EastAsian_Male.png"
+                src="/private_images/pro/phase_3/Love_YoungAdult_EastAsian_Male.webp"
                 alt="Love — East Asian Young Adult Male"
                 className="object-cover w-full h-auto"
                 loading="lazy"

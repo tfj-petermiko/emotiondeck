@@ -29,7 +29,7 @@ export default function ProCollectionPhase3() {
     regions.forEach((region) => {
       genders.forEach((gender) => {
         allImages.push({
-          src: `/private_images/pro/phase_3/${emotion}_${ageGroup}_${region}_${gender}.png`,
+          src: `/private_images/pro/phase_3/${emotion}_${ageGroup}_${region}_${gender}.webp`,
           emotion,
           region,
           gender,
