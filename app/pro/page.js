@@ -273,7 +273,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/pro/checkout?phase=3", "Open Phase 3 Collection", "p3")}
+                    {renderButton("/pro/phase-3", "Open Phase 3 Collection", "p3")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -370,7 +370,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/pro/checkout?phase=4", "Open Phase 4 Collection", "p4")}
+                    {renderButton("/pro/phase-4", "Open Phase 4 Collection", "p4")}
                   </div>
                 </td>
 
