@@ -66,7 +66,7 @@ export default function ProCollectionPhase4() {
         >
           Explore 84 ultra-realistic black-and-white portraits of children aged around 6–7 years,
           expressing 14 core emotions across three ethnic groups and both genders.
-          Created for educational and psychological illustration purposes.
+         
         </motion.p>
       </section>
 

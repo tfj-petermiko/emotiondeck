@@ -325,7 +325,7 @@ export default function ProCollectionPage() {
       <br />
 
       {/* ========================== */}
-      {/* 📊 PHASE 4 — CHILDREN (EUROPEAN) */}
+      {/* 📊 PHASE 4 — CHILDREN */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
