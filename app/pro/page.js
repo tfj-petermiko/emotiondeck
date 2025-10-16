@@ -322,6 +322,103 @@ export default function ProCollectionPage() {
 </motion.section>
 
 
+      <br />
+
+      {/* ========================== */}
+      {/* 📊 PHASE 4 — CHILDREN (EUROPEAN) */}
+      {/* ========================== */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.4, duration: 0.6 }}
+        className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+      >
+        <div className="bg-gray-900 p-6 md:p-10">
+          <h2 className="text-2xl font-semibold text-center">
+            Phase 4 — Children Collection (European)
+          </h2>
+          <p className="text-center text-gray-400 italic mb-6">
+            Innocence & Emotional Growth
+          </p>
+
+          <table className="w-full text-sm md:text-base border-collapse">
+            <tbody>
+              <tr className="border-b border-gray-800 align-top">
+                <td className="w-1/4" />
+                <td className="w-2/4 p-3 text-white">
+                  <p className="font-semibold mb-1">
+                    Phase 4 — Children Collection
+                  </p>
+                  <p className="text-gray-400 mb-2">
+                    84 portraits of children (6–7 years old) capturing pure, genuine emotions.  
+                    A study of early empathy and emotional development.
+                  </p>
+                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                    This phase explores how human emotion manifests in its earliest, most authentic form.  
+                    Expressions such as pride, wonder and trust reflect the foundation of emotional awareness and connection in childhood.  
+                    Essential for educational use, developmental psychology and visual emotion training.
+                  </p>
+
+                  <div className="flex justify-end">
+                    {renderButton("/pro/phase-4", "Open Phase 4 Collection", "p4")}
+                  </div>
+                </td>
+
+                <td className="p-3 w-[200px] text-center align-top">
+                  <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+                    <img
+                      src="/private_images/pro/phase_4/Pride_Child_European_Female.webp"
+                      alt="Pride — European Child Female"
+                      className="object-cover w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="text-gray-400 text-xs mt-2">
+                    Pride — European Child Female
+                  </p>
+                </td>
+              </tr>
+
+              {/* TECHNICAL DETAILS */}
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Total Expressions</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  84 black-and-white portraits
+                </td>
+              </tr>
+
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Emotions Included</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Joy, Love, Pride, Hope, Gratitude, Affection, Wonder, Interest, Playfulness, Serenity, Tranquillity, Trust, Admiration, Inspiration, Confidence.
+                </td>
+              </tr>
+
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Demographics</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  3 ethnic groups × 2 genders × 1 age group (Children ~6–7 years)
+                </td>
+              </tr>
+
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Resolution</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  1024 × 1536 high-resolution portraits
+                </td>
+              </tr>
+
+              <tr>
+                <td className="p-3 text-gray-400">Lighting & Style</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Neutral grey background, soft lighting, uniform shirt style, educational tone
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </motion.section>
+
       {/* 🔙 BACK TO HOME */}
       <div className="text-center mt-16 mb-24">
         <Link
