@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
               <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
               <p className="text-sm select-all">hello[at]emotiondeck.com</p>
               <a
-                href="https://www.instagram.com/emotiondeckcollection/"
+                href="https://www.instagram.com/emotiondeckcom/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition text-base"
