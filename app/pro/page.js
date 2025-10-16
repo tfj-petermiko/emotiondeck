@@ -359,7 +359,7 @@ export default function ProCollectionPage() {
                     Phase 4 — Children Collection
                   </p>
                   <p className="text-gray-400 mb-2">
-                    84 portraits of children (6–7 years old) capturing pure, genuine emotions — the roots of empathy and connection.
+                    90 portraits of children (6–7 years old) capturing pure, genuine emotions — the roots of empathy and connection.
                   </p>
                   <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
                     This phase explores emotional development at its earliest stage, where expression is spontaneous and unfiltered.  
@@ -392,7 +392,7 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  84 black-and-white portraits
+                  90 black-and-white portraits
                 </td>
               </tr>
 
