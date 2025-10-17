@@ -117,10 +117,7 @@ export default function RootLayout({ children }) {
               </a>
             </div>
 
-            <p className="text-gray-600 text-xs max-w-xl text-centre">
-              EmotionDeck is an educational visual project designed to help you
-              recognise and interpret human emotion through mindful observation.
-            </p>
+
           </div>
         </footer>
       </body>
