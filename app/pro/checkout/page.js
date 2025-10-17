@@ -18,28 +18,28 @@ function CheckoutContent() {
       title: "Phase 2 — Advanced Emotional Expressions",
       price: "0.01",
       description:
-        "EmotionDeck Phase 2 (Advanced Emotional Expressions) — 30-day online access for £49.99. Dive into a deeper exploration of subtle and complex human emotions through 288 portraits featuring nuanced micro-expressions, diverse regions, and balanced gender representation.",
+        "EmotionDeck Phase 2 (Advanced Emotional Expressions) — 30-day online access for £49.99. Study subtle and complex emotional expressions such as guilt, relief, or nostalgia, designed for psychologists and advanced learners.",
       accessToken: "emotiondeck_phase2_access",
     },
     3: {
       title: "Phase 3 — Young Adults Collection",
       price: "0.01",
       description:
-        "EmotionDeck Phase 3 (Young Adults Collection) — 30-day online access for £49.99. Explore emotional expression and identity formation in early adulthood.",
+        "EmotionDeck Phase 3 (Young Adults Collection) — 30-day online access for £29.99. Explore the emotional depth, sensitivity, and identity formation typical of early adulthood.",
       accessToken: "emotiondeck_phase3_access",
     },
     4: {
       title: "Phase 4 — Children Collection",
       price: "0.01",
       description:
-        "EmotionDeck Phase 4 (Children Collection) — 30-day online access for £49.99. Observe emotional awareness and natural expressiveness in childhood.",
+        "EmotionDeck Phase 4 (Children Collection) — 30-day online access for £39.99. Observe emotional awareness, authenticity, and natural expressiveness in childhood development.",
       accessToken: "emotiondeck_phase4_access",
     },
     5: {
       title: "Phase 5 — Seniors Collection",
       price: "0.01",
       description:
-        "EmotionDeck Phase 5 (Seniors Collection) — 30-day online access for £49.99. Discover the emotional wisdom, empathy, and resilience of later life.",
+        "EmotionDeck Phase 5 (Seniors Collection) — 30-day online access for £69.99. Discover emotional wisdom, empathy, and resilience reflected through the faces of later life.",
       accessToken: "emotiondeck_phase5_access",
     },
   };
@@ -143,7 +143,7 @@ function CheckoutContent() {
       console.error("❌ PayPal render exception:", err);
       setError("⚠️ Failed to render PayPal button. Please try again later.");
     }
-  }, [sdkReady, selected, phase]);
+  }, [sdkReady]);
 
   // =============================
   // 🎨 RENDER UI
