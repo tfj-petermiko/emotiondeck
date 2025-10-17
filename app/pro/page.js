@@ -94,7 +94,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/free", "Free Access — Unlimited ", "p1")}
+                    {renderButton("/free", "Free Access — Unlimited Time ", "p1")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
