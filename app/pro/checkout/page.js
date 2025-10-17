@@ -14,6 +14,13 @@ function CheckoutContent() {
   // 💠 PHASE DATA CONFIGURATION
   // =============================
   const phaseData = {
+    2: {
+      title: "Phase 2 — Advanced Emotional Expressions",
+      price: "0.01",
+      description:
+        "EmotionDeck Phase 2 (Advanced Emotional Expressions) — 30-day online access for £49.99. Dive into a deeper exploration of subtle and complex human emotions through 288 portraits featuring nuanced micro-expressions, diverse regions, and balanced gender representation.",
+      accessToken: "emotiondeck_phase2_access",
+    },
     3: {
       title: "Phase 3 — Young Adults Collection",
       price: "0.01",
@@ -136,7 +143,7 @@ function CheckoutContent() {
       console.error("❌ PayPal render exception:", err);
       setError("⚠️ Failed to render PayPal button. Please try again later.");
     }
-  }, [sdkReady]);
+  }, [sdkReady, selected, phase]);
 
   // =============================
   // 🎨 RENDER UI
