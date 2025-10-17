@@ -106,7 +106,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-4xl mx-auto px-6 flex flex-col items-centre gap-6">
             <div className="text-gray-500 text-centre space-y-1">
               <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
-              <p className="text-sm select-all">hello[at]emotiondeck.com</p>
+            
               <a
                 href="https://www.instagram.com/emotiondeckcom/"
                 target="_blank"
