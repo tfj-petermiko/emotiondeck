@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 function CheckoutContent() {
@@ -8,7 +8,7 @@ function CheckoutContent() {
   const phase = searchParams.get("phase") || "3";
   const [sdkReady, setSdkReady] = useState(false);
   const [error, setError] = useState("");
-  let redirected = false;
+  const redirected = useRef(false);
 
   // =============================
   // 💠 PHASE DATA CONFIGURATION
@@ -43,6 +43,7 @@ function CheckoutContent() {
   // 💳 LOAD PAYPAL SDK DYNAMICALLY
   // =============================
   useEffect(() => {
+    if (typeof window === "undefined") return; // SSR safety
     if (window.paypal) {
       setSdkReady(true);
       return;
@@ -67,7 +68,7 @@ function CheckoutContent() {
   // 🧠 RENDER PAYPAL BUTTON
   // =============================
   useEffect(() => {
-    if (!sdkReady || !window.paypal) return;
+    if (!sdkReady || typeof window === "undefined" || !window.paypal) return;
 
     const container = document.getElementById("paypal-button-container");
     if (!container) return;
@@ -97,15 +98,14 @@ function CheckoutContent() {
           },
           // ✅ ON APPROVE
           onApprove: async (data, actions) => {
-            if (redirected) return;
-            redirected = true;
+            if (redirected.current) return;
+            redirected.current = true;
 
             await actions.order.capture();
 
             const expiry = new Date();
-            expiry.setDate(expiry.getDate() + 30); // ⏳ 30-day access
+            expiry.setDate(expiry.getDate() + 30);
 
-            // Save temporary access in localStorage
             localStorage.setItem(
               selected.accessToken,
               JSON.stringify({
@@ -114,13 +114,14 @@ function CheckoutContent() {
               })
             );
 
-            // Redirect to thank-you page
             window.location.href = `/pro/thank-you?phase=${phase}`;
           },
           // ❌ ON ERROR
           onError: (err) => {
-            console.error("PayPal SDK error:", err);
-            setError("An unexpected error occurred. Please refresh the page.");
+            console.error("🔴 PayPal SDK error:", err);
+            setError(
+              "⚠️ PayPal encountered an error. Please refresh and try again."
+            );
           },
         })
         .render("#paypal-button-container");
