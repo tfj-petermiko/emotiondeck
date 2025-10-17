@@ -204,4 +204,89 @@ img {
   }
 }
 
+/* ✅ Minimal safe version — always works */
+html, body {
+  overflow-x: hidden !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+/* 🖥️ Desktop layout: balanced horizontal padding (3rem / 5.5rem) */
+@media (min-width: 1024px) {
+  table {
+    padding-left: 3rem;
+    padding-right: 5.5rem;
+  }
+}
+
+/* 📱 Mobile layout fix */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on touch devices */
+  }
+}
+
+
+
+
+/* ============================================
+   🩶 Subtle outer border style for phase tables
+   ============================================ */
+section.border {
+  border-left: 0px solid #0b0b0b !important;   /* background colour — visually disappears */
+  border-right: 0px solid #0b0b0b !important;  /* background colour — visually disappears */
+  border-top: 1px solid #3a3a3a !important;    /* lighter upper divider for a clearer edge */
+  border-bottom: 0px solid #3a3a3a !important; /* lighter lower divider for balance */
+  border-radius: 1rem !important;              /* softly rounded corners */
+  overflow: hidden !important;                 /* ensures clean clipping at the edges */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);     /* subtle depth for refinement */
+}
+
+/* ============================================
+   🩶 Inner table border refinement
+   ============================================ */
+table {
+  border-top: 0px solid #3a3a3a !important;    /* lighter upper divider for clarity */
+  border-bottom: 1px solid #3a3a3a !important; /* lighter lower divider for balance */
+  border-left: 0px solid #0b0b0b !important;   /* blends with background */
+  border-right: 0px solid #0b0b0b !important;  /* blends with background */
+}
+
+tr {
+  border-bottom: 1px solid #3a3a3a !important; /* consistent inner dividers */
+}
+
+td, th {
+  border: none !important;                     /* keep interior clean and minimalist */
+}
+
+/* ============================================
+   🩶 Footer divider refinement
+   ============================================ */
+footer {
+  border-top: 1px solid #3a3a3a !important;  /* lighter line for clarity */
+}
+
+/* ============================================
+   🩶 Remove remaining image container borders
+   ============================================ */
+div[class*="border-gray-700"] {
+  border: none !important;       /* removes the thin grey frame */
+  box-shadow: none !important;   /* removes the drop shadow */
+  background-colour: transparent;
+}
+
+
+
+
+
+
+
+
 
