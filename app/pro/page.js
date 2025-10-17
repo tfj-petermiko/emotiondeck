@@ -183,7 +183,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/pro/checkout?phase=2", "Get Access — £49.99 / 30 Days", "p2")}
+                    {renderButton("/pro/checkout?phase=2", "Get Access — £49 / 30 Days", "p2")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -274,7 +274,7 @@ export default function ProCollectionPage() {
             </p>
 
             <div className="flex justify-end">
-              {renderButton("/pro/checkout?phase=3", "Get Access — £29.99 / 30 Days", "p3")}
+              {renderButton("/pro/checkout?phase=3", "Get Access — £29 / 30 Days", "p3")}
             </div>
           </td>
 
@@ -371,7 +371,7 @@ export default function ProCollectionPage() {
                   </p>
 
                    <div className="flex justify-end">
-              {renderButton("/pro/checkout?phase=4", "Get Access — £39.99 / 30 Days", "p4")}
+              {renderButton("/pro/checkout?phase=4", "Get Access — £39 / 30 Days", "p4")}
             </div>
                 </td>
 
@@ -464,7 +464,7 @@ export default function ProCollectionPage() {
 
 
              <div className="flex justify-end">
-              {renderButton("/pro/checkout?phase=5", "Get Access — £69.99 / 30 Days", "p5")}
+              {renderButton("/pro/checkout?phase=5", "Get Access — £69 / 30 Days", "p5")}
             </div>
           </td>
 
