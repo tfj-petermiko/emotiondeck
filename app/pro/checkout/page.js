@@ -43,29 +43,39 @@ function CheckoutContent() {
   // 💳 LOAD PAYPAL SDK DYNAMICALLY
   // =============================
   useEffect(() => {
-    if (typeof window === "undefined") return; // SSR safety
-    if (window.paypal) {
+    if (typeof window === "undefined") return; // SSR safety guard
+
+    const existingScript = document.querySelector(
+      'script[src*="paypal.com/sdk/js"]'
+    );
+    if (existingScript) {
       setSdkReady(true);
       return;
     }
 
     const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
     if (!clientId) {
-      setError("⚠️ PayPal Client ID is missing. Please contact support.");
+      console.error("❌ PayPal Client ID missing in environment.");
+      setError("⚠️ PayPal Client ID missing — please contact support.");
       return;
     }
 
     const script = document.createElement("script");
     script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=GBP`;
     script.async = true;
-    script.onload = () => setSdkReady(true);
-    script.onerror = () =>
-      setError("⚠️ Failed to load PayPal SDK. Please check your connection.");
+    script.onload = () => {
+      console.log("✅ PayPal SDK loaded successfully");
+      setSdkReady(true);
+    };
+    script.onerror = () => {
+      console.error("❌ PayPal SDK failed to load");
+      setError("⚠️ Failed to load PayPal SDK. Please refresh or try again.");
+    };
     document.body.appendChild(script);
   }, []);
 
   // =============================
-  // 🧠 RENDER PAYPAL BUTTON
+  // 🧠 INITIALISE PAYPAL BUTTON
   // =============================
   useEffect(() => {
     if (!sdkReady || typeof window === "undefined" || !window.paypal) return;
@@ -85,7 +95,6 @@ function CheckoutContent() {
             layout: "vertical",
             height: 45,
           },
-          // 💰 CREATE ORDER
           createOrder: (data, actions) => {
             return actions.order.create({
               purchase_units: [
@@ -96,7 +105,6 @@ function CheckoutContent() {
               ],
             });
           },
-          // ✅ ON APPROVE
           onApprove: async (data, actions) => {
             if (redirected.current) return;
             redirected.current = true;
@@ -116,7 +124,6 @@ function CheckoutContent() {
 
             window.location.href = `/pro/thank-you?phase=${phase}`;
           },
-          // ❌ ON ERROR
           onError: (err) => {
             console.error("🔴 PayPal SDK error:", err);
             setError(
@@ -126,7 +133,7 @@ function CheckoutContent() {
         })
         .render("#paypal-button-container");
     } catch (err) {
-      console.error("PayPal render exception:", err);
+      console.error("❌ PayPal render exception:", err);
       setError("⚠️ Failed to render PayPal button. Please try again later.");
     }
   }, [sdkReady]);
@@ -137,9 +144,15 @@ function CheckoutContent() {
   return (
     <main className="min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6">
       <div className="flex flex-col items-center justify-center bg-gray-800 rounded-2xl shadow-2xl p-10 w-full max-w-md text-center">
-        <h1 className="text-3xl font-bold mb-4 text-emerald-400">
+        <h1 className="text-3xl font-bold mb-4 text-yellow-400">
           💳 Checkout — {selected.title}
         </h1>
+
+        {/* 🟡 Temporary notice */}
+        <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 text-sm mb-6">
+          ⚠️ This is a temporary test checkout for EmotionDeck payment setup.
+          Live payments are not yet active — no actual charges will be made.
+        </div>
 
         <p className="text-gray-300 max-w-sm mb-6 leading-relaxed">
           Get <strong>30 days</strong> of secure, <em>view-only</em> access to this
