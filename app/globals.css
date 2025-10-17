@@ -140,8 +140,8 @@ img {
   body,
   main,
   section {
-    padding-left: 0.6rem !important;
-    padding-right: 1rem !important;
+    padding-left: 0.3rem !important;
+    padding-right: 0.5rem !important;
   }
 
   /* Make tables readable on mobile */
