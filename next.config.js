@@ -2,17 +2,38 @@
 const nextConfig = {
   async redirects() {
     return [
-      // Obsługuje /pro/phase=4 → /pro/checkout?phase=4
+      // ✅ Redirect all /pro/phase-N and /pro/phase=N except 1 and 4
       {
-        source: '/pro/phase=:phase',
+        source: '/pro/phase-:phase((?!1|4)\\d+)',
         destination: '/pro/checkout?phase=:phase',
         permanent: true,
       },
-      // Obsługuje /pro/phase-4 → /pro/checkout?phase=4
       {
-        source: '/pro/phase-:phase',
+        source: '/pro/phase=:phase((?!1|4)\\d+)',
         destination: '/pro/checkout?phase=:phase',
         permanent: true,
+      },
+
+      // 🩶 Optional (just for safety): keep free phases direct
+      {
+        source: '/pro/phase-1',
+        destination: '/pro/phase-1',
+        permanent: false,
+      },
+      {
+        source: '/pro/phase=1',
+        destination: '/pro/phase=1',
+        permanent: false,
+      },
+      {
+        source: '/pro/phase-4',
+        destination: '/pro/phase-4',
+        permanent: false,
+      },
+      {
+        source: '/pro/phase=4',
+        destination: '/pro/phase=4',
+        permanent: false,
       },
     ];
   },

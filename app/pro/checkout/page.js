@@ -3,6 +3,9 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
+// ========================================
+// 💠 CheckoutContent component
+// ========================================
 function CheckoutContent() {
   const searchParams = useSearchParams();
   const phase = searchParams.get("phase") || "3";
@@ -10,30 +13,41 @@ function CheckoutContent() {
   const [error, setError] = useState("");
   const redirected = useRef(false);
 
-  // =============================
-  // 💠 PHASE DATA CONFIGURATION
-  // =============================
+  // ========================================
+  // 💾 Phase configuration
+  // ========================================
   const phaseData = {
     2: {
       title: "Phase 2 — Advanced Emotional Expressions",
       price: "0.01",
       description:
-        "EmotionDeck Phase 2 (Advanced Emotional Expressions) — 30-day online access for £49.99. Study subtle and complex emotional expressions such as guilt, relief, or nostalgia, designed for psychologists and advanced learners.",
+        "EmotionDeck Phase 2 — 30-day access for £49.99. Study subtle and complex emotional expressions like guilt, relief, or nostalgia.",
       accessToken: "emotiondeck_phase2_access",
+      paid: true,
     },
     3: {
       title: "Phase 3 — Young Adults Collection",
       price: "0.01",
       description:
-        "EmotionDeck Phase 3 (Young Adults Collection) — 30-day online access for £29.99. Explore the emotional depth, sensitivity, and identity formation typical of early adulthood.",
+        "EmotionDeck Phase 3 — 30-day access for £29.99. Explore the emotional depth and identity formation typical of early adulthood.",
       accessToken: "emotiondeck_phase3_access",
+      paid: true,
+    },
+    4: {
+      title: "Phase 4 — Children Collection",
+      price: "0.00",
+      description:
+        "EmotionDeck Phase 4 — free educational access. Discover how emotion emerges naturally in early human expression.",
+      accessToken: "emotiondeck_phase4_access",
+      paid: false, // ✅ free phase
     },
     5: {
       title: "Phase 5 — Seniors Collection",
       price: "0.01",
       description:
-        "EmotionDeck Phase 5 (Seniors Collection) — 30-day online access for £69.99. Discover emotional wisdom, empathy, and resilience reflected through the faces of later life.",
+        "EmotionDeck Phase 5 — 30-day access for £69.99. Discover emotional wisdom and empathy reflected through later life.",
       accessToken: "emotiondeck_phase5_access",
+      paid: true,
     },
   };
 
