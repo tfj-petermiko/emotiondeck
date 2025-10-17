@@ -131,3 +131,43 @@ img {
   user-select: none;
 }
 
+
+/* ============================================
+   📱 MOBILE FIX FOR PHASE TABLES
+   ============================================ */
+@media (max-width: 768px) {
+  table,
+  tbody,
+  tr,
+  td {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  tr {
+    margin-bottom: 1.5rem;
+    border: none !important;
+  }
+
+  td {
+    padding: 0.5rem 0 !important;
+    border: none !important;
+  }
+
+  td img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Extra spacing for phase blocks */
+  .mobile-phase {
+    padding: 1rem;
+  }
+
+  /* Center buttons on mobile */
+  .flex.justify-end {
+    justify-content: center !important;
+  }
+}
+
+
