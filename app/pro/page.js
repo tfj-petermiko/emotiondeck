@@ -371,7 +371,7 @@ export default function ProCollectionPage() {
                   </p>
 
                    <div className="flex justify-end">
-              {renderButton("/pro/checkout?phase=4", "Get Access — £39 / 30 Days", "p4")}
+              {renderButton("/pro/phase-4", "Free Access — Unlimited Time", "p4")}
             </div>
                 </td>
 

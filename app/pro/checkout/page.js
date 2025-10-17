@@ -28,13 +28,6 @@ function CheckoutContent() {
         "EmotionDeck Phase 3 (Young Adults Collection) — 30-day online access for £29.99. Explore the emotional depth, sensitivity, and identity formation typical of early adulthood.",
       accessToken: "emotiondeck_phase3_access",
     },
-    4: {
-      title: "Phase 4 — Children Collection",
-      price: "0.01",
-      description:
-        "EmotionDeck Phase 4 (Children Collection) — 30-day online access for £39.99. Observe emotional awareness, authenticity, and natural expressiveness in childhood development.",
-      accessToken: "emotiondeck_phase4_access",
-    },
     5: {
       title: "Phase 5 — Seniors Collection",
       price: "0.01",
