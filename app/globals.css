@@ -133,9 +133,18 @@ img {
 
 
 /* ============================================
-   📱 MOBILE FIX FOR PHASE TABLES
+   📱 Mobile layout: balanced symmetrical padding
    ============================================ */
 @media (max-width: 768px) {
+  /* Subtle visual balance: slightly smaller left padding */
+  body,
+  main,
+  section {
+    padding-left: 0.6rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Make tables readable on mobile */
   table,
   tbody,
   tr,
@@ -159,15 +168,21 @@ img {
     height: auto !important;
   }
 
-  /* Extra spacing for phase blocks */
-  .mobile-phase {
-    padding: 1rem;
-  }
-
-  /* Center buttons on mobile */
+  /* Centre buttons and give breathing room */
   .flex.justify-end {
     justify-content: center !important;
+    margin-top: 1rem !important;
+  }
+
+  /* Ensure no horizontal scrollbars */
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  /* Keep text readable with slight inset */
+  h1, h2, h3, p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left;
   }
 }
-
-
