@@ -203,3 +203,51 @@ img {
     padding-top: calc(env(safe-area-inset-top, 0px) + 1.2rem) !important;
   }
 }
+
+/* ============================================
+   🖥️ Desktop layout: spacious symmetrical padding
+   ============================================ */
+@media (min-width: 1024px) {
+  /* Wider, balanced horizontal padding for desktop */
+  body,
+  main,
+  section {
+    padding-left: 3rem !important;
+    padding-right: 5.5rem !important;
+  }
+
+  /* Tables keep structure but gain inner spacing */
+  table {
+    border-collapse: collapse !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  th,
+  td {
+    padding: 1rem 1.25rem !important;
+  }
+
+  /* Optional: keep centred text readable and balanced */
+  h1,
+  h2,
+  h3,
+  p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1200px;
+  }
+
+  /* Add breathing room between buttons and content */
+  .flex.justify-end {
+    justify-content: flex-end !important;
+    margin-top: 2rem !important;
+  }
+
+  /* Prevent horizontal scrollbars on large monitors */
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
