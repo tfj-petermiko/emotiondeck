@@ -186,3 +186,20 @@ img {
     text-align: left;
   }
 }
+
+
+/* ============================================
+   📱 Fix: prevent translator bar overlapping header
+   ============================================ */
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: calc(env(safe-area-inset-top) + 0.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Extra padding for header safety zone */
+  header, section:first-of-type {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 1.2rem) !important;
+  }
+}
