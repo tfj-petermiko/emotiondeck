@@ -19,7 +19,7 @@ export default function MobileMenu() {
     { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
     { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
     { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
-    { icon: "🌍", name: "Global Map", desc: "One Country, One Emotion", href: "/globalmap" },
+    { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions — United by Feeling", href: "/globalmap" },
     { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
   ];
 
@@ -182,10 +182,8 @@ It explores how emotion, culture, history, upbringing, and ethnicity shape the w
 <br /><br />
 EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and science — exploring the emotional patterns that define and connect humanity.  
 <br /><br />
-Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique.  
-<br /><br />
-This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
-<br /><br />
+Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique. This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
+<br />
 <div
   style={{
     width: "60%",
