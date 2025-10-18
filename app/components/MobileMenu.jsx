@@ -21,6 +21,7 @@ export default function MobileMenu() {
     { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
     { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions — United by Feeling", href: "/globalmap" },
     { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
+    { icon: "⚙️", name: "AI Generator", desc: "Create Emotions with the EmotionDeck Generator", href: "/generator" },
   ];
 
   return (
@@ -180,9 +181,7 @@ export default function MobileMenu() {
 Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term psychological and cultural project created from the perspective of a Highly Sensitive Person (HSP).  
 It explores how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself.  
 <br /><br />
-EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and science — exploring the emotional patterns that define and connect humanity.  
-<br /><br />
-Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique. This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
+EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and science — exploring the emotional patterns that define and connect humanity. Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique. This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
 <br />
 <div
   style={{
