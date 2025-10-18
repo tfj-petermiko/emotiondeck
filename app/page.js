@@ -12,14 +12,14 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-neutral-900 text-white font-sans">
+    <main className="flex flex-col flex-grow bg-neutral-900 text-white font-sans">
       {/* 🎯 HERO + CTA */}
       <section className="text-center mt-20 px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-bold mb-4"
+          className="text-5xl md:text-6xl font-bold mb-6"
         >
           Train Your Perception. Understand Human Emotion.
         </motion.h1>
@@ -28,7 +28,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
+          className="text-lg text-gray-300 max-w-2xl mx-auto mb-6"
         >
           EmotionDeck helps you perceive and understand human emotion through
           subtle expression, mindful observation, and guided visual learning.
@@ -38,27 +38,22 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9, duration: 1 }}
-          className="text-gray-400 mb-8 max-w-xl mx-auto"
+          className="text-gray-400 mb-12 max-w-xl mx-auto"
         >
           Access all 144 emotional expressions — free for personal learning,
           research, and education.
         </motion.p>
-
-<br/>
       </section>
 
-      {/* Spacer */}
-      <div className="my-24" />
-
-      {/* 🖼️ EMOTIONS GALLERY */}
-      <section id="emotions" className="mt-32 text-center px-4">
-        <div className="flex justify-between items-end w-full gap-4 md:gap-8">
-          {emotions.map((emotion, i) => (
+      {/* 🖼️ EMOTIONS GALLERY — NO GAPS */}
+      <section id="emotions" className="mt-12 mb-20 text-center px-0">
+        <div className="flex justify-between items-end w-full gap-0 flex-wrap md:flex-nowrap">
+          {emotions.map((emotion) => (
             <motion.div
               key={emotion.name}
               whileHover={{ scale: 1.04 }}
               transition={{ duration: 0.3 }}
-              className="flex-1 overflow-hidden rounded-xl shadow-md hover:shadow-lg transition"
+              className="flex-1 overflow-hidden rounded-none shadow-none hover:shadow-lg transition"
               style={{ aspectRatio: "2 / 3" }}
             >
               <img
@@ -72,11 +67,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Spacer */}
-      <div className="my-32" />
-<br/>
       {/* 🚀 PRO COLLECTION PROMO */}
-      <section className="mt-40 text-center px-6">
+      <section className="mt-auto text-center px-6 pb-20">
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -114,8 +106,6 @@ export default function Home() {
           Get PRO Access →
         </motion.a>
       </section>
-
-      <div className="my-20" />
     </main>
   );
 }
