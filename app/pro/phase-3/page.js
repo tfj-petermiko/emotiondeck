@@ -138,24 +138,7 @@ export default function ProCollectionPhase3() {
       {/* 🔍 MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      {/* 🔙 BACK BUTTONS */}
-      <div className="text-center mt-8 mb-4">
-        <Link
-          href="/pro"
-          className="inline-block bg-gray-700 text-white font-semibold px-6 py-2 rounded-full hover:bg-gray-600 transition"
-        >
-          ← Back to PRO Menu
-        </Link>
-      </div>
 
-      <div className="text-center mt-8 mb-24">
-        <Link
-          href="/"
-          className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
-        >
-          ← Back to Home
-        </Link>
-      </div>
     </main>
   );
 }
