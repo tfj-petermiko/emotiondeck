@@ -524,7 +524,110 @@ export default function ProCollectionPage() {
 
 
 
-     <br/><br/>
+     <br/>
+
+
+{/* ========================== */}
+{/* 🌍 PHASE 6 — EVOLUTION */}
+{/* ========================== */}
+<motion.section
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.6, duration: 0.6 }}
+  className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+>
+  <div className="bg-gray-900 p-6 md:p-10">
+    <h2 className="text-2xl font-semibold text-center">
+      Phase 6 — Evolution Collection
+    </h2>
+    <p className="text-center text-gray-400 italic mb-6">
+      Across Generations & Cultures
+    </p>
+
+    <table className="w-full text-sm md:text-base border-collapse">
+      <tbody>
+        <tr className="border-b border-gray-800 align-top">
+          <td className="w-1/4" />
+          <td className="w-2/4 p-3 text-white">
+            <p className="font-semibold mb-1">
+              Phase 6 — Evolution Collection
+            </p>
+            <p className="text-gray-400 mb-2">
+              120 portraits illustrating the emotional evolution of humanity — from infancy to old age, captured across 12 world regions.
+            </p>
+            <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+              The Evolution Collection explores how emotion matures and transforms through time and culture.  
+              Each portrait traces the human journey — from the openness of childhood to the serenity of age.  
+              This phase unites psychology, anthropology, and art into one visual continuum, revealing the shared emotional DNA that connects us all.  
+              By observing diverse cultures and life stages, we discover how feelings such as love, pride, calmness, and gratitude define our growth as human beings.  
+              A story of transformation — of emotion evolving through life.
+            </p>
+
+            <div className="flex justify-end">
+              {renderButton("/pro/phase-6", "Free Access — Unlimited Time", "p6")}
+            </div>
+          </td>
+
+          <td className="p-3 w-[200px] text-center align-top">
+            <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+              <img
+                src="/private_images/pro/phase_6/Evolution_Delight_SouthAsian_MatureAdult_Female.webp"
+                alt="Delight — South Asian Mature Adult Female"
+                className="object-cover w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-gray-400 text-xs mt-2">
+              Delight — South Asian Mature Adult Female
+            </p>
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Total Expressions</td>
+          <td className="p-3 text-white" colSpan={2}>
+            120 ultra-realistic black-and-white portraits
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Emotions Included</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Love, Joy, Pride, Calmness, Serenity, Gratitude, Delight — representing emotional continuity across life.
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Demographics</td>
+          <td className="p-3 text-white" colSpan={2}>
+            12 world regions × 10 life stages (Infant → Elderly)
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Resolution</td>
+          <td className="p-3 text-white" colSpan={2}>
+            1024 × 1536 high-resolution portraits
+          </td>
+        </tr>
+
+        <tr>
+          <td className="p-3 text-gray-400">Lighting & Style</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Neutral grey background, consistent shirt style, soft lighting, cohesive scientific-artistic tone
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</motion.section>
+
+<br />
+
+
+
+
+<br/>
     </main>
   );
 }

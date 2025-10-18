@@ -39,7 +39,7 @@ function CheckoutContent() {
       description:
         "EmotionDeck Phase 4 — free educational access. Discover how emotion emerges naturally in early human expression.",
       accessToken: "emotiondeck_phase4_access",
-      paid: false, // ✅ free phase
+      paid: false,
     },
     5: {
       title: "Phase 5 — Seniors Collection",
@@ -49,6 +49,14 @@ function CheckoutContent() {
       accessToken: "emotiondeck_phase5_access",
       paid: true,
     },
+    6: {
+      title: "Phase 6 — Evolution: One World, Many Feelings",
+      price: "0.00",
+      description:
+        "EmotionDeck Phase 6 — open access. Explore emotional evolution across age, culture, and gender — free public research edition.",
+      accessToken: "emotiondeck_phase6_access",
+      paid: false, // ✅ public access
+    },
   };
 
   const selected = phaseData[phase] || phaseData[3];
@@ -57,7 +65,7 @@ function CheckoutContent() {
   // 💳 LOAD PAYPAL SDK DYNAMICALLY
   // =============================
   useEffect(() => {
-    if (typeof window === "undefined") return; // SSR safety guard
+    if (typeof window === "undefined" || !selected.paid) return;
 
     const existingScript = document.querySelector(
       'script[src*="paypal.com/sdk/js"]'
@@ -86,13 +94,13 @@ function CheckoutContent() {
       setError("⚠️ Failed to load PayPal SDK. Please refresh or try again.");
     };
     document.body.appendChild(script);
-  }, []);
+  }, [selected.paid]);
 
   // =============================
   // 🧠 INITIALISE PAYPAL BUTTON
   // =============================
   useEffect(() => {
-    if (!sdkReady || typeof window === "undefined" || !window.paypal) return;
+    if (!selected.paid || !sdkReady || typeof window === "undefined" || !window.paypal) return;
 
     const container = document.getElementById("paypal-button-container");
     if (!container) return;
@@ -140,9 +148,7 @@ function CheckoutContent() {
           },
           onError: (err) => {
             console.error("🔴 PayPal SDK error:", err);
-            setError(
-              "⚠️ PayPal encountered an error. Please refresh and try again."
-            );
+            setError("⚠️ PayPal encountered an error. Please refresh and try again.");
           },
         })
         .render("#paypal-button-container");
@@ -150,7 +156,7 @@ function CheckoutContent() {
       console.error("❌ PayPal render exception:", err);
       setError("⚠️ Failed to render PayPal button. Please try again later.");
     }
-  }, [sdkReady]);
+  }, [sdkReady, selected.paid]);
 
   // =============================
   // 🎨 RENDER UI
@@ -162,44 +168,58 @@ function CheckoutContent() {
           💳 Checkout — {selected.title}
         </h1>
 
-        {/* 🟡 Temporary notice */}
-        <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 text-sm mb-6">
-          ⚠️ This is a temporary test checkout for EmotionDeck payment setup.
-          Live payments are not yet active — no actual charges will be made.
-        </div>
+        {!selected.paid ? (
+          <>
+            <div className="bg-emerald-500/10 border border-emerald-400/30 text-emerald-400 rounded-lg px-4 py-3 text-sm mb-6">
+              ✅ This collection is free to access — no payment required.
+            </div>
+            <button
+              onClick={() => (window.location.href = `/pro/phase-${phase}`)}
+              className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition"
+            >
+              Open Collection
+            </button>
+          </>
+        ) : (
+          <>
+            {/* 🟡 Temporary notice */}
+            <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 text-sm mb-6">
+              ⚠️ This is a temporary test checkout for EmotionDeck payment setup.
+              Live payments are not yet active — no actual charges will be made.
+            </div>
 
-        <p className="text-gray-300 max-w-sm mb-6 leading-relaxed">
-          Get <strong>30 days</strong> of secure, <em>view-only</em> access to this
-          collection. View online — no downloads required.
-        </p>
+            <p className="text-gray-300 max-w-sm mb-6 leading-relaxed">
+              Get <strong>30 days</strong> of secure, <em>view-only</em> access to this
+              collection. View online — no downloads required.
+            </p>
 
-        {!sdkReady && !error && (
-          <p className="text-gray-400 italic mb-6">Loading PayPal...</p>
+            {!sdkReady && !error && (
+              <p className="text-gray-400 italic mb-6">Loading PayPal...</p>
+            )}
+
+            {error && <p className="text-red-400 mb-6 text-sm font-medium">{error}</p>}
+
+            <div
+              id="paypal-button-container"
+              className="flex justify-center"
+              style={{ width: "100%", maxWidth: "320px", margin: "0 auto" }}
+            ></div>
+
+            <p className="mt-6 text-sm text-gray-400 max-w-sm">
+              Access automatically expires after thirty days. Price:{" "}
+              <strong>£{selected.price} GBP</strong>.
+            </p>
+          </>
         )}
-
-        {error && (
-          <p className="text-red-400 mb-6 text-sm font-medium">{error}</p>
-        )}
-
-        <div
-          id="paypal-button-container"
-          className="flex justify-center"
-          style={{ width: "100%", maxWidth: "320px", margin: "0 auto" }}
-        ></div>
-
-        <p className="mt-6 text-sm text-gray-400 max-w-sm">
-          Access automatically expires after thirty days. Price:{" "}
-          <strong>£{selected.price} GBP</strong>.
-        </p>
 
         <p className="text-xs text-gray-500 mt-3 max-w-sm">
-          Payments are securely processed via PayPal — EmotionDeck never stores
-          your personal or payment data.
+          Payments are securely processed via PayPal — EmotionDeck never stores your
+          personal or payment data.
         </p>
 
         <p className="text-xs text-gray-500 mt-2 max-w-sm">
-          Access is temporary and view-only to protect the originality of
-          EmotionDeck portraits.
+          Access is temporary and view-only to protect the originality of EmotionDeck
+          portraits.
         </p>
 
         <button
