@@ -176,8 +176,8 @@ export default function ProCollectionPhase6() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          The Evolution Collection explores emotional growth across cultures and ages —  
-          from infancy to wisdom. A visual atlas of universal human emotion.
+          The Evolution Collection Explores Emotional Growth across Cultures and Ages —  
+          from Infancy to Wisdom. A Visual Atlas of Universal Human Emotion.
         </motion.p>
       </section>
 

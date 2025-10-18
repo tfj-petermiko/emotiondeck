@@ -70,7 +70,7 @@ export default function ProCollectionPhase2() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore 288 high-resolution portraits for professionals, educators, and researchers in emotional perception.
+          Explore 288 High-Resolution Portraits for Professionals, Educators, and Researchers in Emotional Perception.
 
         </motion.p>
       </section>

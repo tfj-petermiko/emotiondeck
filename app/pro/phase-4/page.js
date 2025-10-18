@@ -64,8 +64,8 @@ export default function ProCollectionPhase4() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore 90 ultra-realistic black-and-white portraits of children aged around 6–7 years,
-          expressing 14 core emotions across three ethnic groups and both genders.
+          Explore 90 Ultra-Realistic Black-and-White Portraits of Children Aged Around 6–7 years,
+          Expressing 14 Core Emotions Across three Ethnic Groups and Both Genders.
          
         </motion.p>
       </section>

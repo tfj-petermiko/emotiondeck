@@ -30,8 +30,8 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-6"
         >
-          EmotionDeck helps you perceive and understand human emotion through
-          subtle expression, mindful observation, and guided visual learning.
+          EmotionDeck Helps you Perceive and Understand Human Emotion through
+          Subtle Expression, Mindful Observation, and Guided Visual Learning.
         </motion.p>
 
         <motion.p
@@ -84,8 +84,8 @@ export default function Home() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-gray-400 mb-2 max-w-xl mx-auto"
         >
-          Explore additional complex human emotions across regions, ages, and genders.  
-          Perfect for professionals, educators, and advanced emotional research.
+          Explore Additional Complex Human Emotions across Regions, Ages, and Eenders.  
+          Perfect for Professionals, Educators, and Advanced Emotional Research.
         </motion.p>
 
         <motion.p

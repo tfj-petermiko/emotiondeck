@@ -53,8 +53,8 @@ export default function ProCollectionPage() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-12"
         >
-          Explore high-resolution portraits of human emotions for professionals,
-          educators, and researchers. Each phase offers a distinct insight into emotional diversity, cultural universality, and psychological nuance.
+          Explore High-Resolution Portraits of Human Emotions for Professionals,
+          Educators, and Researchers. Each phase offers a Distinct Insight into Emotional Diversity, Cultural Universality, and Psychological Nuance.
         </motion.p>
       </section>
 

@@ -71,7 +71,7 @@ export default function ProCollectionPhase5() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Discover 300 portraits of seniors expressing 50 emotions — a visual study of wisdom, grace, and emotional depth.
+          Discover 300 Portraits of Seniors Expressing 50 Emotions — a Visual Study of Wisdom, Grace, and Emotional Depth.
         </motion.p>
       </section>
 

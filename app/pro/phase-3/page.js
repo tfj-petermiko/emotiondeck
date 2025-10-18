@@ -65,8 +65,8 @@ export default function ProCollectionPhase3() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore 144 ultra-realistic portraits of young adults (around 20 years old),
-          expressing 24 nuanced emotions across three ethnic groups and both genders.
+          Explore 144 Ultra-Realistic Portraits of Young Adults (around 20 Years Old),
+          Expressing 24 Nuanced Emotions across Three Ethnic Groups and Both Genders.
         </motion.p>
       </section>
 
