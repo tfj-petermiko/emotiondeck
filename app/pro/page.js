@@ -524,15 +524,7 @@ export default function ProCollectionPage() {
 
 
 
-      {/* 🔙 BACK TO HOME */}
-      <div className="text-center mt-16 mb-24">
-        <Link
-          href="/"
-          className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
-        >
-          ← Back to Home
-        </Link>
-      </div>
+     <br/><br/>
     </main>
   );
 }

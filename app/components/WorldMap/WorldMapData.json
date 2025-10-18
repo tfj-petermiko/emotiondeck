@@ -1,0 +1,27 @@
+[
+  {
+    "region": "South Asian",
+    "emotion": "Serenity",
+    "description": "A sense of peaceful presence and calm acceptance, rooted in spiritual and collective balance."
+  },
+  {
+    "region": "North American",
+    "emotion": "Pride",
+    "description": "A confident, individualistic expression of identity and personal achievement."
+  },
+  {
+    "region": "Central Asian",
+    "emotion": "Love",
+    "description": "Warmth and connection expressed through close community bonds and hospitality."
+  },
+  {
+    "region": "Native American",
+    "emotion": "Gratitude",
+    "description": "Deep respect and appreciation for the natural world and ancestral harmony."
+  },
+  {
+    "region": "Australian Aboriginal",
+    "emotion": "Calmness",
+    "description": "An enduring inner stillness reflecting unity with nature and ancestral spirit."
+  }
+]

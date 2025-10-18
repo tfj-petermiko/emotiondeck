@@ -1,6 +1,7 @@
 import "./globals.css";
 import Script from "next/script";
-import ClientProtector from "./ClientProtector"; // ✅ direct import is fine because it's rendered inside <body>
+import ClientProtector from "./ClientProtector"; // ✅ client-side security
+import MobileMenu from "./components/MobileMenu"; // ✅ global navigation
 
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
@@ -43,10 +44,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col select-none">
-        {/* 🧱 Security layer runs client-side */}
+        {/* 🧱 Client-side security layer */}
         <ClientProtector />
 
-        {/* ✅ Google Analytics */}
+        {/* 🍔 Global Mobile Menu */}
+        <MobileMenu />
+
+        {/* 📊 Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-03QS8ZLH5G"
           strategy="afterInteractive"
@@ -79,8 +83,7 @@ export default function RootLayout({ children }) {
             border: "1px solid rgba(255,255,255,0.1)",
             boxShadow: "0 2px 10px rgba(0,0,0,0.4)",
           }}
-        ></div>
-
+        />
         <Script id="google-translate-init" strategy="afterInteractive">
           {`
             window.googleTranslateElementInit = function() {
@@ -92,7 +95,6 @@ export default function RootLayout({ children }) {
             };
           `}
         </Script>
-
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
@@ -101,25 +103,17 @@ export default function RootLayout({ children }) {
         {/* 🧠 Main Page Content */}
         <main className="flex-grow">{children}</main>
 
-        {/* 🌐 Footer */}
-        <footer className="border-t border-gray-800 bg-neutral-950/80 backdrop-blur-sm py-20 text-center text-gray-400 text-sm leading-relaxed mt-32">
-          <div className="max-w-4xl mx-auto px-6 flex flex-col items-centre gap-6">
-            <div className="text-gray-500 text-centre space-y-1">
-              <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
-            
-              <a
-                href="https://www.instagram.com/emotiondeckcom/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition text-base"
-              >
-                Instagram
-              </a>
-            </div>
+{/* 🌐 Footer */}
+<footer className="border-t border-gray-800 bg-neutral-950/80 backdrop-blur-sm py-20 text-center text-gray-400 text-sm leading-relaxed mt-32">
+  <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-6">
+    <div className="text-gray-500 text-center space-y-1">
+      <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
+      <br />
+      <br />
+    </div>
+  </div>
+</footer>
 
-
-          </div>
-        </footer>
       </body>
     </html>
   );
