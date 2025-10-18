@@ -27,7 +27,7 @@ export default function WorldMap() {
     { name: "USA", coords: [-95, 30], color: pick(palettes.northAmerica, 1), image: "/private_images/worldmap/OneEmotion_Determination_USA_Female_Adult.webp" },
     { name: "Mexico", coords: [-102, 12], color: pick(palettes.northAmerica, 2), image: "/private_images/worldmap/OneEmotion_Joy_Mexico_Female_YoungAdult.webp" },
     { name: "Cuba", coords: [-78, 12], color: pick(palettes.northAmerica, 3), image: "/private_images/worldmap/OneEmotion_Hope_Cuba_Male_Senior.webp" },
-    { name: "Greenland", coords: [-32, 70], color: pick(palettes.northAmerica, 4), image: "/private_images/worldmap/OneEmotion_Calmness_Greenland_Male_Adult.webp" },
+    { name: "Greenland", coords: [-35, 63], color: pick(palettes.northAmerica, 4), image: "/private_images/worldmap/OneEmotion_Calmness_Greenland_Male_Adult.webp" },
 
     // 🌎 SOUTH AMERICA
     { name: "Brazil", coords: [-50, -30], color: pick(palettes.southAmerica, 0), image: "/private_images/worldmap/OneEmotion_Passion_Brazil_Male_YoungAdult.webp" },
