@@ -15,14 +15,12 @@ export default function MobileMenu() {
     return () => (document.body.style.overflow = "");
   }, [open]);
 
-const tabs = [
-  { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
-  { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
-  { icon: "🌍", name: "Global Map", desc: "One Country, One Emotion", href: "/globalmap" },
-  { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
-];
-
-
+  const tabs = [
+    { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
+    { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
+    { icon: "🌍", name: "Global Map", desc: "One Country, One Emotion", href: "/globalmap" },
+    { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
+  ];
 
   return (
     <>
@@ -93,7 +91,7 @@ const tabs = [
               left: 0,
               width: "25vw",
               minWidth: "300px",
-              maxWidth: "90vw", // 🔹 zabezpieczenie przed zbyt dużą szerokością
+              maxWidth: "90vw",
               height: "100vh",
               background: "#0b0b0b",
               color: "#fff",
@@ -101,7 +99,7 @@ const tabs = [
               padding: "2.5rem",
               borderRight: "1px solid #222",
               boxShadow: "8px 0 30px rgba(0,0,0,0.8)",
-              overflowY: "auto", // 🔹 przewijanie w pionie
+              overflowY: "auto",
             }}
           >
             <h2
@@ -110,7 +108,6 @@ const tabs = [
                 fontSize: "1.4rem",
                 color: "#aaa",
                 wordWrap: "break-word",
-                maxWidth: "100%",
               }}
             >
               EmotionDeck Navigation
@@ -136,9 +133,7 @@ const tabs = [
                           color: "#fff",
                           textDecoration: "none",
                           fontWeight: "500",
-                          whiteSpace: "normal", // 🔹 zawijanie tekstu
-                          wordWrap: "break-word",
-                          maxWidth: "100%",
+                          whiteSpace: "normal",
                           display: "inline-block",
                         }}
                       >
@@ -150,9 +145,7 @@ const tabs = [
                         padding: "0.9rem 0",
                         color: "#aaa",
                         fontSize: "0.85rem",
-                        whiteSpace: "normal", // 🔹 zawijanie opisu
-                        wordWrap: "break-word",
-                        maxWidth: "100%",
+                        whiteSpace: "normal",
                         lineHeight: "1.4",
                       }}
                     >
@@ -162,9 +155,37 @@ const tabs = [
                 ))}
               </tbody>
             </table>
+
+            {/* ✨ Extended project description directly under menu */}
+            <div
+              style={{
+                marginTop: "2rem",
+                textAlign: "justify",
+                fontSize: "0.86rem",
+                lineHeight: "1.7",
+                color: "#999",
+              }}
+            >
+<strong>🕊️ EmotionDeck — One World, Many Emotions</strong>
+<br /><br />
+Launched in October 2025 and developed by Peter Miko, EmotionDeck is a long-term psychological and cultural project exploring how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself.  
+<br /><br />
+EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings.  
+<br /><br />
+Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique.  
+<br /><br />
+This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
+<br /><br />
+<em>“To see emotion is to understand humanity.”</em>
+
+
+
+
+
+            </div>
           </div>
 
-          {/* 🔹 Dynamiczna szerokość dla mniejszych ekranów */}
+          {/* Responsive width */}
           <style jsx>{`
             @media (max-width: 768px) {
               div[style*="position: fixed"][style*="border-right"] {
