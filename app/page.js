@@ -40,8 +40,8 @@ export default function Home() {
           transition={{ delay: 0.9, duration: 1 }}
           className="text-gray-400 mb-12 max-w-xl mx-auto"
         >
-          Access all 144 emotional expressions — free for personal learning,
-          research, and education.
+          Explore 234 Emotional Expressions — Free for Personal Learning,
+          Research, and Education.
         </motion.p>
       </section>
 
@@ -94,7 +94,7 @@ export default function Home() {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-sm text-emerald-400 mb-8"
         >
-          🔓 Currently open for free — early access.
+          🔓 Exclusive Access — Now in Premium
         </motion.p>
 
         <motion.a
