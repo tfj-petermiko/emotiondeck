@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 export default function Home() {
   const emotions = [
     { name: "Joy", img: "/private_images/images/joy.webp" },
-    { name: "Anger", img: "/private_images/images/anger.webp" },
-    { name: "Fear", img: "/private_images/images/fear.webp" },
-    { name: "Sadness", img: "/private_images/images/sadness.webp" },
+    { name: "Anger", img: "/private_images/images/desire.webp" },
+    { name: "Fear", img: "/private_images/images/hope.webp" },
+    { name: "Sadness", img: "/private_images/images/excitement.webp" },
     { name: "Surprise", img: "/private_images/images/surprise.webp" },
-    { name: "Contempt", img: "/private_images/images/contempt.webp" },
+    { name: "Contempt", img: "/private_images/images/love.webp" },
   ];
 
   return (
