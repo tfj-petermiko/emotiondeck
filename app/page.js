@@ -40,7 +40,7 @@ export default function Home() {
           transition={{ delay: 0.9, duration: 1 }}
           className="text-gray-400 mb-12 max-w-xl mx-auto"
         >
-          Explore 234 Emotional Expressions — Free for Personal Learning,
+          Explore 354 Emotional Expressions — Free for Personal Learning,
           Research, and Education.
         </motion.p>
       </section>
