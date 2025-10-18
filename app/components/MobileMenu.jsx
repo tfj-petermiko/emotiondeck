@@ -110,7 +110,7 @@ export default function MobileMenu() {
                 wordWrap: "break-word",
               }}
             >
-              EmotionDeck Navigation
+              Menu
             </h2>
 
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
@@ -166,18 +166,25 @@ export default function MobileMenu() {
                 color: "#999",
               }}
             >
-<strong>🕊️ EmotionDeck — One World, Many Emotions.</strong>
-<br /><br />
-Launched in October 2025 and developed by Peter Miko, EmotionDeck is a long-term psychological and cultural project created from the perspective of a Highly Sensitive Person (HSP).  
+<div
+  style={{
+    fontSize: "1.0rem",
+    fontWeight: "600",
+    color: "#fff",
+  }}
+>
+  🕊️ EmotionDeck — One World, Many Emotions
+</div>
+<br />
+Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term psychological and cultural project created from the perspective of a Highly Sensitive Person (HSP).  
 It explores how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself.  
 <br /><br />
-Bridging psychology, art, and anthropology, EmotionDeck forms a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings.  
+EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and science — exploring the emotional patterns that define and connect humanity.  
+<br /><br />
 Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique.  
 <br /><br />
 This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
 <br /><br />
-
-{/* 🔹 Left-aligned divider line (no space above quote) */}
 <div
   style={{
     width: "60%",
@@ -186,7 +193,6 @@ This project is continuously developed and refined — growing organically throu
     marginBottom: "0.3rem",
   }}
 ></div>
-
 <em>“To see emotion is to understand humanity.”</em>
 
 
