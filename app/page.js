@@ -44,16 +44,7 @@ export default function Home() {
           research, and education.
         </motion.p>
 
-        <motion.a
-          href="/free"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
-          className="inline-block bg-white text-neutral-900 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
-        >
-          Open Free Collection →
-
-        </motion.a>
+<br/>
       </section>
 
       {/* Spacer */}
@@ -83,7 +74,7 @@ export default function Home() {
 
       {/* Spacer */}
       <div className="my-32" />
-
+<br/>
       {/* 🚀 PRO COLLECTION PROMO */}
       <section className="mt-40 text-center px-6">
         <motion.h3

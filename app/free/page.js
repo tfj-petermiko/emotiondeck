@@ -109,7 +109,7 @@ export default function FreeCollection() {
       </section>
 
       <div className="my-16" />
-
+<br/>
       {/* 🖼️ GALLERY */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">

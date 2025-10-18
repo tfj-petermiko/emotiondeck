@@ -110,7 +110,7 @@ export default function ProCollectionPhase4() {
           ))}
         </select>
       </section>
-
+<br/>
       {/* 🖼️ GALLERY */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
