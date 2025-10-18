@@ -166,13 +166,12 @@ export default function MobileMenu() {
                 color: "#999",
               }}
             >
-<strong>🕊️ EmotionDeck — One World, Many Emotions</strong>
+<strong>🕊️ EmotionDeck — One World, Many Emotions.</strong>
 <br /><br />
-Launched in October 2025 and developed by Peter Miko, EmotionDeck is a long-term psychological and cultural project exploring how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself.  
+Launched in October 2025 and developed by Peter Miko, EmotionDeck is a long-term psychological and cultural project created from the perspective of a Highly Sensitive Person (HSP).  
+It explores how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself.  
 <br /><br />
-EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings.  
-<br /><br />
-Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique.  
+EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Its mission is to foster understanding across nations and generations by studying the emotional patterns that unite us, and the cultural differences that make us unique.  
 <br /><br />
 This project is continuously developed and refined — growing organically through ongoing creative and scientific work.  
 <br /><br />
