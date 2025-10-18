@@ -173,7 +173,7 @@ export default function MobileMenu() {
     color: "#fff",
   }}
 >
-  🕊️ EmotionDeck — One World, Many Emotions
+🕊️ EmotionDeck — One World, Many Emotions
 </div>
 <br />
 Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term psychological and cultural project created from the perspective of a Highly Sensitive Person (HSP).  
@@ -194,6 +194,33 @@ This project is continuously developed and refined — growing organically throu
   }}
 ></div>
 <em>“To see emotion is to understand humanity.”</em>
+<br /><br />
+
+<div style={{ textAlign: "center", color: "rgba(255,255,255,0.6)", fontSize: "0.8rem" }}>
+  <span>Connect with the creator on </span>
+  <a
+    href="https://www.facebook.com/tfj.petermiko"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#60a5fa", textDecoration: "none" }}
+    onMouseOver={(e) => (e.target.style.color = "#93c5fd")}
+    onMouseOut={(e) => (e.target.style.color = "#60a5fa")}
+  >
+    <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        style={{ width: "13px", height: "13px" }}
+      >
+        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.5c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12Z" />
+      </svg>
+      Facebook
+    </span>
+  </a>
+</div>
+
+
 
 
 
