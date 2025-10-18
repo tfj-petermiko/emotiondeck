@@ -15,11 +15,14 @@ export default function MobileMenu() {
     return () => (document.body.style.overflow = "");
   }, [open]);
 
-  const tabs = [
-    { icon: "🏠", name: "Home", desc: "Discover EmotionDeck — A Visual Journey Into Human Emotion", href: "/" },
-    { icon: "💠", name: "Free Collection", desc: "Start Your Journey — The Free Gateway to Emotion Perception", href: "/free" },
-    { icon: "🔓", name: "Get PRO Access", desc: "Unlock Advanced Phases, Exclusive Datasets, and Educational Tools", href: "/pro" },
-  ];
+const tabs = [
+  { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
+  { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
+  { icon: "🌍", name: "Global Map", desc: "One Country, One Emotion", href: "/worldmap" },
+  { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
+];
+
+
 
   return (
     <>
@@ -88,7 +91,7 @@ export default function MobileMenu() {
               position: "fixed",
               top: 0,
               left: 0,
-              width: "30vw",
+              width: "25vw",
               minWidth: "300px",
               maxWidth: "90vw", // 🔹 zabezpieczenie przed zbyt dużą szerokością
               height: "100vh",
