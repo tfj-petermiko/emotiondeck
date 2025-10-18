@@ -21,7 +21,7 @@ export default function MobileMenu() {
     { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
     { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions — United by Feeling", href: "/globalmap" },
     { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
-    { icon: "⚙️", name: "AI Generator", desc: "Create Emotions with the EmotionDeck Generator", href: "/generator" },
+    { icon: "⚙️", name: "AI Generator", desc: "Create Portraits with the EmotionDeck Generator", href: "/generator" },
   ];
 
   return (
