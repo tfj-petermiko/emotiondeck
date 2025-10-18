@@ -63,7 +63,7 @@ export default function FreeCollection() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Explore 144 foundational emotional expressions — open and free for personal learning, research, and education.
+          Explore 144 Foundational Emotional Expressions — Open and Free for Personal Learning, Research, and Education.
         </motion.p>
       </section>
 
