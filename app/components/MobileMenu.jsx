@@ -168,7 +168,7 @@ export default function MobileMenu() {
             >
 <div
   style={{
-    fontSize: "1.0rem",
+    fontSize: "0.9rem",
     fontWeight: "600",
     color: "#fff",
   }}
