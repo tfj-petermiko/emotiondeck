@@ -18,7 +18,7 @@ export default function MobileMenu() {
 const tabs = [
   { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
   { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
-  { icon: "🌍", name: "Global Map", desc: "One Country, One Emotion", href: "/worldmap" },
+  { icon: "🌍", name: "Global Map", desc: "One Country, One Emotion", href: "/globalmap" },
   { icon: "🔓", name: "Get PRO Access", desc: "Unlock Full EmotionDeck Experience", href: "/pro" },
 ];
 
