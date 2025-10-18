@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import ImageModal from "../../components/ImageModal";
 
 export default function ProCollectionPhase6() {
-  // 🌍 Regions and ages (no gender in filters)
+  // 🌍 Regions and ages (gender not used as a filter)
   const regions = [
     "European",
     "African",
@@ -34,12 +34,12 @@ export default function ProCollectionPhase6() {
     "Elderly",
   ];
 
-  // ✅ Default region
+  // Default selection (start from SouthAsian)
   const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
   const [selectedAge, setSelectedAge] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // 🧩 Real dataset paths (based on existing files)
+  // 🧩 Real dataset (based on actual file structure)
   const realImages = [
     // Joy — European Female
     ...ages.map((age) => ({
@@ -51,15 +51,13 @@ export default function ProCollectionPhase6() {
     })),
 
     // Serenity — EastAsian Female
-    ...ages
-      .filter((a) => a !== "Infant")
-      .map((age) => ({
-        emotion: "Serenity",
-        region: "EastAsian",
-        gender: "Female",
-        age,
-        src: `/private_images/pro/phase_6/Evolution_Serenity_EastAsian_${age}_Female.webp`,
-      })),
+    ...ages.map((age) => ({
+      emotion: "Serenity",
+      region: "EastAsian",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Serenity_EastAsian_${age}_Female.webp`,
+    })),
 
     // Pride — MiddleEastern Female
     ...ages.map((age) => ({
@@ -142,7 +140,7 @@ export default function ProCollectionPhase6() {
       src: `/private_images/pro/phase_6/Evolution_Calmness_AustralianAboriginal_${age}_Male.webp`,
     })),
 
-    // Delight — SouthAsian Female
+    // Delight — SouthAsian Female ✅ default group
     ...ages.map((age) => ({
       emotion: "Delight",
       region: "SouthAsian",
@@ -152,10 +150,10 @@ export default function ProCollectionPhase6() {
     })),
   ];
 
-  // 🔎 Filter only by region + age
+  // 🔎 Filter logic: region + age (supports "All")
   const filtered = realImages.filter(
     (img) =>
-      img.region === selectedRegion &&
+      (selectedRegion === "All" || img.region === selectedRegion) &&
       (selectedAge === "All" || img.age === selectedAge)
   );
 
@@ -190,6 +188,7 @@ export default function ProCollectionPhase6() {
           onChange={(e) => setSelectedRegion(e.target.value)}
           className="px-4 py-2 rounded-md bg-white text-sm"
         >
+          <option value="All">All Regions</option>
           {regions.map((region) => (
             <option key={region}>{region}</option>
           ))}
@@ -233,7 +232,7 @@ export default function ProCollectionPhase6() {
         </div>
       </section>
 
-      {/* 🔍 MODAL — Correct prop name */}
+      {/* 🔍 IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
       {/* 🎨 STYLES */}
