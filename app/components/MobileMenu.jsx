@@ -9,7 +9,6 @@ export default function MobileMenu() {
   const toggleMenu = () => setOpen((prev) => !prev);
   const closeMenu = () => setOpen(false);
 
-  // 🔒 Disable page scrolling when the menu is open
   useEffect(() => {
     if (open) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "";
@@ -89,8 +88,9 @@ export default function MobileMenu() {
               position: "fixed",
               top: 0,
               left: 0,
-              width: "30vw", // ✅ 30% of the screen width
-              minWidth: "320px", // ✅ Minimum width for small screens
+              width: "30vw",
+              minWidth: "300px",
+              maxWidth: "90vw", // 🔹 zabezpieczenie przed zbyt dużą szerokością
               height: "100vh",
               background: "#0b0b0b",
               color: "#fff",
@@ -98,20 +98,22 @@ export default function MobileMenu() {
               padding: "2.5rem",
               borderRight: "1px solid #222",
               boxShadow: "8px 0 30px rgba(0,0,0,0.8)",
+              overflowY: "auto", // 🔹 przewijanie w pionie
             }}
           >
-            <h2 style={{ marginBottom: "2rem", fontSize: "1.4rem", color: "#aaa" }}>
+            <h2
+              style={{
+                marginBottom: "2rem",
+                fontSize: "1.4rem",
+                color: "#aaa",
+                wordWrap: "break-word",
+                maxWidth: "100%",
+              }}
+            >
               EmotionDeck Navigation
             </h2>
 
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
-              <thead>
-                <tr style={{ color: "#888", textAlign: "left", fontSize: "0.85rem" }}>
-                  <th style={{ paddingBottom: "0.75rem" }}></th>
-                  <th style={{ paddingBottom: "0.75rem" }}></th>
-                  <th style={{ paddingBottom: "0.75rem" }}></th>
-                </tr>
-              </thead>
               <tbody>
                 {tabs.map((tab, i) => (
                   <tr
@@ -120,6 +122,7 @@ export default function MobileMenu() {
                     style={{
                       borderBottom: "1px solid #222",
                       cursor: "pointer",
+                      verticalAlign: "top",
                     }}
                   >
                     <td style={{ padding: "0.9rem 0.5rem 0.9rem 0" }}>{tab.icon}</td>
@@ -130,7 +133,10 @@ export default function MobileMenu() {
                           color: "#fff",
                           textDecoration: "none",
                           fontWeight: "500",
-                          whiteSpace: "nowrap",
+                          whiteSpace: "normal", // 🔹 zawijanie tekstu
+                          wordWrap: "break-word",
+                          maxWidth: "100%",
+                          display: "inline-block",
                         }}
                       >
                         {tab.name}
@@ -141,7 +147,10 @@ export default function MobileMenu() {
                         padding: "0.9rem 0",
                         color: "#aaa",
                         fontSize: "0.85rem",
-                        whiteSpace: "nowrap",
+                        whiteSpace: "normal", // 🔹 zawijanie opisu
+                        wordWrap: "break-word",
+                        maxWidth: "100%",
+                        lineHeight: "1.4",
                       }}
                     >
                       {tab.desc}
@@ -151,6 +160,17 @@ export default function MobileMenu() {
               </tbody>
             </table>
           </div>
+
+          {/* 🔹 Dynamiczna szerokość dla mniejszych ekranów */}
+          <style jsx>{`
+            @media (max-width: 768px) {
+              div[style*="position: fixed"][style*="border-right"] {
+                width: 80vw !important;
+                min-width: 0 !important;
+                padding: 2rem 1.5rem !important;
+              }
+            }
+          `}</style>
         </>
       )}
     </>
