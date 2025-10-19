@@ -1,6 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  alternates: { canonical: "https://emotiondeck.com/free" },
+  alternates: {
+    canonical: "https://emotiondeck.com/free",
+  },
   title: "EmotionDeck Free Collection — Explore 144 Emotional Expressions",
   description:
     "Access the EmotionDeck Free Collection to explore 144 facial expressions of emotion across different regions and genders. Learn emotional recognition through visual training.",
@@ -34,10 +36,8 @@ export const metadata = {
 
 export default function FreeLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col select-none">
-        {children}
-      </body>
-    </html>
+    <div className="relative z-0 overflow-visible min-h-screen bg-neutral-900 text-white font-sans antialiased">
+      {children}
+    </div>
   );
 }
