@@ -6,54 +6,56 @@ import ClientProtector from "./ClientProtector";
 import MobileMenu from "./components/MobileMenu";
 
 export default function ClientLayout({ children }) {
-  // 🧩 Initialise Google Translate safely after window is ready
+  // 🧠 Smart scroll detection
   useEffect(() => {
-    const initGoogleTranslate = () => {
-      if (window.google && window.google.translate) {
-        new window.google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "pl,en,de,fr,it,es,pt,ru,ja,zh-CN",
-            layout: window.google.translate.TranslateElement.InlineLayout.HORIZONTAL,
-          },
-          "google_translate_element"
-        );
+    const updateScrollState = () => {
+      const html = document.documentElement;
+      const body = document.body;
+      const needsScroll = html.scrollHeight > window.innerHeight + 2;
+
+      if (needsScroll) {
+        html.classList.add("has-scroll");
+        body.classList.add("has-scroll");
+      } else {
+        html.classList.remove("has-scroll");
+        body.classList.remove("has-scroll");
       }
     };
 
-    const script = document.createElement("script");
-    script.src =
-      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    window.googleTranslateElementInit = initGoogleTranslate;
-    document.body.appendChild(script);
+    updateScrollState();
+    window.addEventListener("resize", updateScrollState);
+    const observer = new MutationObserver(updateScrollState);
+    observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      delete window.googleTranslateElementInit;
+      window.removeEventListener("resize", updateScrollState);
+      observer.disconnect();
     };
   }, []);
 
   return (
     <div className="flex flex-col min-h-screen bg-neutral-900 text-white">
-      {/* Client-side security layer */}
+      {/* 🧩 Client-side protection */}
       <ClientProtector />
 
-      {/* Sticky header */}
-      <header className="sticky top-0 z-50 bg-neutral-900/95 backdrop-blur-sm border-b border-gray-800 shadow-[0_4px_8px_rgba(0,0,0,0.4)]">
-        <MobileMenu />
+      {/* 🧭 Sticky Header with safe padding */}
+      <header className="sticky top-0 z-50 bg-neutral-900/95 backdrop-blur-sm border-b border-gray-800 shadow-[0_4px_8px_rgba(0,0,0,0.4)] pt-3 pb-2">
+        <div className="max-w-7xl mx-auto px-4">
+          <MobileMenu />
+        </div>
       </header>
 
-      {/* Scrollable main section */}
-      <main className="flex-1 overflow-y-auto">{children}</main>
+      {/* 🧱 Main content with header offset */}
+      <main className="flex-1 mt-[4px]">{children}</main>
 
-      {/* Sticky footer (dynamic text loaded from file) */}
+      {/* 🧩 Sticky Footer */}
       <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-sm py-6 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
         <div className="max-w-4xl mx-auto px-6">
           <DynamicFooterText />
         </div>
       </footer>
 
-      {/* Google Analytics */}
+      {/* 📊 Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-03QS8ZLH5G"
         strategy="afterInteractive"
@@ -69,7 +71,7 @@ export default function ClientLayout({ children }) {
         `}
       </Script>
 
-      {/* Google Translate container */}
+      {/* 🌐 Google Translate Widget */}
       <div
         id="google_translate_element"
         style={{

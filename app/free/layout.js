@@ -1,22 +1,41 @@
+import fs from "fs";
+import path from "path";
+
+function parseMetadataFile(filePath) {
+  const text = fs.readFileSync(filePath, "utf8");
+  const data = {};
+  let currentKey = "";
+  text.split("\n").forEach((line) => {
+    const match = line.match(/^#\s*(\w+)/);
+    if (match) {
+      currentKey = match[1];
+      data[currentKey] = "";
+    } else if (currentKey && line.trim()) {
+      data[currentKey] += line.trim() + " ";
+    }
+  });
+  Object.keys(data).forEach((k) => (data[k] = data[k].trim()));
+  return data;
+}
+
+const metaPath = path.join(process.cwd(), "public/content/free/metadata.txt");
+const meta = parseMetadataFile(metaPath);
+
 export const metadata = {
-  metadataBase: new URL("https://emotiondeck.com"),
-  alternates: {
-    canonical: "https://emotiondeck.com/free",
-  },
-  title: "EmotionDeck Free Collection — Explore 144 Emotional Expressions",
-  description:
-    "Access the EmotionDeck Free Collection to explore 144 facial expressions of emotion across different regions and genders. Learn emotional recognition through visual training.",
-  keywords:
-    "EmotionDeck Free Collection, emotion recognition, facial expressions, empathy, emotional learning, perception training, psychology, emotional intelligence, research, education",
+  metadataBase: new URL(meta.metadataBase),
+  alternates: { canonical: meta.canonical },
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  verification: { google: meta.google_verification },
   openGraph: {
-    title: "EmotionDeck Free Collection — Explore 144 Emotional Expressions",
-    description:
-      "Browse the EmotionDeck Free Collection — 144 realistic emotional expressions across regions and genders to help you develop emotional perception and empathy.",
-    url: "https://emotiondeck.com/free",
+    title: meta.og_title,
+    description: meta.og_description,
+    url: meta.og_url,
     siteName: "EmotionDeck",
     images: [
       {
-        url: "https://emotiondeck.com/preview-free.jpg",
+        url: meta.og_image,
         width: 1200,
         height: 630,
         alt: "EmotionDeck Free Collection preview",
@@ -26,18 +45,18 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EmotionDeck Free Collection — Explore 144 Emotional Expressions",
-    description:
-      "Access the EmotionDeck Free Collection and train your perception through diverse emotional expressions.",
-    images: ["https://emotiondeck.com/preview-free.jpg"],
+    card: meta.twitter_card,
+    title: meta.twitter_title,
+    description: meta.twitter_description,
+    images: [meta.twitter_image],
   },
 };
 
+// ✅ FIXED — allows full dynamic scroll height
 export default function FreeLayout({ children }) {
   return (
-    <div className="relative z-0 overflow-visible min-h-screen bg-neutral-900 text-white font-sans antialiased">
+    <section className="bg-neutral-900 text-white font-sans antialiased min-h-full overflow-visible">
       {children}
-    </div>
+    </section>
   );
 }

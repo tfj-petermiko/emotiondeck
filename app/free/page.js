@@ -1,42 +1,80 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import ImageModal from "../components/ImageModal"; // 🆕 globalny modal
+import ImageModal from "../components/ImageModal";
 
 export default function FreeCollection() {
-  const emotions = [
-    "Joy", "Calmness", "Compassion", "Anger", "Sadness", "Surprise", "Disgust",
-    "Fear", "Trust", "Anticipation", "Pride", "Love", "Relief", "Contempt",
-    "Boredom", "Confusion", "Interest", "Determination", "Shame", "Hope",
-    "Guilt", "Serenity", "Anxiety", "Curiosity"
-  ];
+  const [content, setContent] = useState({});
+  const [menu, setMenu] = useState({ emotions: [], regions: [], genders: [] });
 
-  const regions = ["European", "African", "EastAsian"];
-  const genders = ["Male", "Female"];
+  // Load all text content from /public/content/free/page.txt
+  useEffect(() => {
+    fetch("/content/free/page.txt")
+      .then((res) => res.text())
+      .then((text) => {
+        const parsed = {};
+        let currentKey = "";
+        text.split("\n").forEach((line) => {
+          const match = line.match(/^#\s*(\w+)/);
+          if (match) {
+            currentKey = match[1];
+            parsed[currentKey] = "";
+          } else if (currentKey && line.trim()) {
+            parsed[currentKey] += line.trim() + " ";
+          }
+        });
+        Object.keys(parsed).forEach((k) => (parsed[k] = parsed[k].trim()));
+        setContent(parsed);
+      });
+  }, []);
+
+  // Load menu (emotions, regions, genders)
+  useEffect(() => {
+    fetch("/content/free/menu.txt")
+      .then((res) => res.text())
+      .then((text) => {
+        const data = {};
+        let current = "";
+        text.split("\n").forEach((line) => {
+          const match = line.match(/^#\s*(\w+)/);
+          if (match) {
+            current = match[1];
+            data[current] = [];
+          } else if (line.trim() && !line.startsWith("#")) {
+            const items = line
+              .split(",")
+              .map((x) => x.trim())
+              .filter((x) => x.length > 0);
+            if (current) data[current].push(...items);
+          }
+        });
+        setMenu(data);
+      });
+  }, []);
 
   const [selectedEmotion, setSelectedEmotion] = useState("Joy");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // 🧩 Generate all images
+  // Generate image paths dynamically
   const allImages = [];
-  emotions.forEach((emotion) => {
-    regions.forEach((region) => {
-      genders.forEach((gender) => {
-        allImages.push({
-          src: `/private_images/free/phase_1/${emotion}_${region}_Adult_${gender}.webp`,
-          emotion,
-          region,
-          gender,
+  if (menu.emotions.length && menu.regions.length && menu.genders.length) {
+    menu.emotions.forEach((emotion) => {
+      menu.regions.forEach((region) => {
+        menu.genders.forEach((gender) => {
+          allImages.push({
+            src: `/private_images/free/phase_1/${emotion}_${region}_Adult_${gender}.webp`,
+            emotion,
+            region,
+            gender,
+          });
         });
       });
     });
-  });
+  }
 
-  // 🧠 Filter logic
   const filteredImages = allImages.filter(
     (img) =>
       img.emotion === selectedEmotion &&
@@ -46,7 +84,7 @@ export default function FreeCollection() {
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
-      {/* 🧭 HEADER */}
+      {/* Hero Section */}
       <section className="text-center mt-20 px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -54,27 +92,36 @@ export default function FreeCollection() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck Free Collection
+          {content.hero_title}
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
+          className="text-lg text-gray-300 max-w-2xl mx-auto mb-4"
         >
-          Explore 144 Foundational Emotional Expressions — Open and Free for Personal Learning, Research, and Education.
+          {content.hero_paragraph1}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+          className="text-base text-gray-400 max-w-2xl mx-auto"
+        >
+          {content.hero_paragraph2}
         </motion.p>
       </section>
 
-      {/* 🎛️ FILTER BAR */}
+      {/* Filter Bar */}
       <section className="flex flex-wrap justify-center gap-4 mt-16 text-neutral-900">
         <select
           value={selectedEmotion}
           onChange={(e) => setSelectedEmotion(e.target.value)}
           className="px-4 py-2 rounded-md bg-white text-sm"
         >
-          {emotions.map((emotion) => (
+          {menu.emotions.map((emotion) => (
             <option key={emotion} value={emotion}>
               {emotion}
             </option>
@@ -87,7 +134,7 @@ export default function FreeCollection() {
           className="px-4 py-2 rounded-md bg-white text-sm"
         >
           <option value="All">All Regions</option>
-          {regions.map((region) => (
+          {menu.regions.map((region) => (
             <option key={region} value={region}>
               {region}
             </option>
@@ -100,17 +147,15 @@ export default function FreeCollection() {
           className="px-4 py-2 rounded-md bg-white text-sm"
         >
           <option value="All">All Genders</option>
-          {genders.map((gender) => (
+          {menu.genders.map((gender) => (
             <option key={gender} value={gender}>
               {gender}
             </option>
           ))}
         </select>
       </section>
-
-      <div className="my-16" />
 <br/>
-      {/* 🖼️ GALLERY */}
+      {/* Gallery */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
           {filteredImages.map((img) => (
@@ -132,11 +177,20 @@ export default function FreeCollection() {
         </div>
       </section>
 
-      {/* 🔍 GLOBAL IMAGE MODAL */}
+      {/* Info Section — all text loaded from TXT */}
+      {content.info_title && content.info_paragraph && (
+        <section className="text-center mt-20 mb-20 px-6">
+          <h3 className="text-3xl font-semibold mb-4">
+            {content.info_title}
+          </h3>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            {content.info_paragraph}
+          </p>
+        </section>
+      )}
+
+      {/* Modal */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-
-
-
     </main>
   );
 }
