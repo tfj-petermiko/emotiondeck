@@ -1,94 +1,156 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import ImageModal from "../../components/ImageModal";
 
 export default function ProCollectionPhase6() {
-  const [content, setContent] = useState({});
-  const [menu, setMenu] = useState({ regions: [], ages: [] });
+  // 🌍 Regions and ages (gender not used as a filter)
+  const regions = [
+    "European",
+    "African",
+    "EastAsian",
+    "SouthAsian",
+    "MiddleEastern",
+    "LatinAmerican",
+    "PacificIslander",
+    "CentralAsian",
+    "NativeAmerican",
+    "AustralianAboriginal",
+    "Arctic",
+    "NorthAmerican",
+  ];
+
+  const ages = [
+    "Infant",
+    "Toddler",
+    "Child",
+    "Teen",
+    "YoungAdult",
+    "AdultEarly",
+    "Adult",
+    "MatureAdult",
+    "Senior",
+    "Elderly",
+  ];
+
+  // Default selection (start from SouthAsian)
   const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
   const [selectedAge, setSelectedAge] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // 🧩 Load textual content (page.txt)
-  useEffect(() => {
-    fetch("/content/pro/phase6/page.txt")
-      .then((res) => res.text())
-      .then((text) => {
-        const parsed = {};
-        let key = "";
-        text.split("\n").forEach((line) => {
-          const match = line.match(/^#\s*(\w+)/);
-          if (match) {
-            key = match[1];
-            parsed[key] = "";
-          } else if (key && line.trim()) {
-            parsed[key] += line.trim() + " ";
-          }
-        });
-        Object.keys(parsed).forEach((k) => (parsed[k] = parsed[k].trim()));
-        setContent(parsed);
-      });
-  }, []);
+  // 🧩 Real dataset (based on actual file structure)
+  const realImages = [
+    // Joy — European Female
+    ...ages.map((age) => ({
+      emotion: "Joy",
+      region: "European",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Joy_European_${age}_Female.webp`,
+    })),
 
-  // 🧭 Load filters (menu.txt)
-  useEffect(() => {
-    fetch("/content/pro/phase6/menu.txt")
-      .then((res) => res.text())
-      .then((text) => {
-        const obj = {};
-        let current = "";
-        text.split("\n").forEach((line) => {
-          const match = line.match(/^#\s*(\w+)/);
-          if (match) {
-            current = match[1];
-            obj[current] = [];
-          } else if (line.trim() && !line.startsWith("#")) {
-            const items = line
-              .split(",")
-              .map((x) => x.trim())
-              .filter((x) => x.length > 0);
-            if (current) obj[current].push(...items);
-          }
-        });
-        setMenu(obj);
-      });
-  }, []);
+    // Serenity — EastAsian Female
+    ...ages.map((age) => ({
+      emotion: "Serenity",
+      region: "EastAsian",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Serenity_EastAsian_${age}_Female.webp`,
+    })),
 
-  // 🖼️ Generate full dataset of image paths
-  const realImages = [];
+    // Pride — MiddleEastern Female
+    ...ages.map((age) => ({
+      emotion: "Pride",
+      region: "MiddleEastern",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Pride_MiddleEastern_${age}_Female.webp`,
+    })),
 
-  if (menu.regions.length && menu.ages.length) {
-    const groups = [
-      { emotion: "Joy", region: "European", gender: "Female" },
-      { emotion: "Serenity", region: "EastAsian", gender: "Female" },
-      { emotion: "Pride", region: "MiddleEastern", gender: "Female" },
-      { emotion: "Love", region: "LatinAmerican", gender: "Male" },
-      { emotion: "Gratitude", region: "PacificIslander", gender: "Male" },
-      { emotion: "Calmness", region: "Arctic", gender: "Female" },
-      { emotion: "Joy", region: "African", gender: "Female" },
-      { emotion: "Pride", region: "NorthAmerican", gender: "Male" },
-      { emotion: "Love", region: "CentralAsian", gender: "Male" },
-      { emotion: "Love", region: "NativeAmerican", gender: "Female" },
-      { emotion: "Calmness", region: "AustralianAboriginal", gender: "Male" },
-      { emotion: "Delight", region: "SouthAsian", gender: "Female" },
-    ];
+    // Love — LatinAmerican Male
+    ...ages.map((age) => ({
+      emotion: "Love",
+      region: "LatinAmerican",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Love_LatinAmerican_${age}_Male.webp`,
+    })),
 
-    groups.forEach(({ emotion, region, gender }) => {
-      menu.ages.forEach((age) => {
-        realImages.push({
-          emotion,
-          region,
-          gender,
-          age,
-          src: `/private_images/pro/phase_6/Evolution_${emotion}_${region}_${age}_${gender}.webp`,
-        });
-      });
-    });
-  }
+    // Gratitude — PacificIslander Male
+    ...ages.map((age) => ({
+      emotion: "Gratitude",
+      region: "PacificIslander",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Gratitude_PacificIslander_${age}_Male.webp`,
+    })),
 
-  // 🎛 Filter logic
+    // Calmness — Arctic Female
+    ...ages.map((age) => ({
+      emotion: "Calmness",
+      region: "Arctic",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Calmness_Arctic_${age}_Female.webp`,
+    })),
+
+    // Joy — African Female
+    ...ages.map((age) => ({
+      emotion: "Joy",
+      region: "African",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Joy_African_${age}_Female.webp`,
+    })),
+
+    // Pride — NorthAmerican Male
+    ...ages.map((age) => ({
+      emotion: "Pride",
+      region: "NorthAmerican",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Pride_NorthAmerican_${age}_Male.webp`,
+    })),
+
+    // Love — CentralAsian Male
+    ...ages.map((age) => ({
+      emotion: "Love",
+      region: "CentralAsian",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Love_CentralAsian_${age}_Male.webp`,
+    })),
+
+    // Love — NativeAmerican Female
+    ...ages.map((age) => ({
+      emotion: "Love",
+      region: "NativeAmerican",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Love_NativeAmerican_${age}_Female.webp`,
+    })),
+
+    // Calmness — AustralianAboriginal Male
+    ...ages.map((age) => ({
+      emotion: "Calmness",
+      region: "AustralianAboriginal",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Calmness_AustralianAboriginal_${age}_Male.webp`,
+    })),
+
+    // Delight — SouthAsian Female ✅ default group
+    ...ages.map((age) => ({
+      emotion: "Delight",
+      region: "SouthAsian",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Delight_SouthAsian_${age}_Female.webp`,
+    })),
+  ];
+
+  // 🔎 Filter logic: region + age (supports "All")
   const filtered = realImages.filter(
     (img) =>
       (selectedRegion === "All" || img.region === selectedRegion) &&
@@ -105,25 +167,17 @@ export default function ProCollectionPhase6() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          {content.hero_title}
+          EmotionDeck PRO — Phase 6: Evolution 🌍
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-4"
+          className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          {content.hero_paragraph1}
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="text-base text-gray-400 max-w-2xl mx-auto"
-        >
-          {content.hero_paragraph2}
+          The Evolution Collection Explores Emotional Growth across Cultures and Ages —  
+          from Infancy to Wisdom. A Visual Atlas of Universal Human Emotion.
         </motion.p>
       </section>
 
@@ -135,7 +189,7 @@ export default function ProCollectionPhase6() {
           className="px-4 py-2 rounded-md bg-white text-sm"
         >
           <option value="All">All Regions</option>
-          {menu.regions.map((region) => (
+          {regions.map((region) => (
             <option key={region}>{region}</option>
           ))}
         </select>
@@ -146,7 +200,7 @@ export default function ProCollectionPhase6() {
           className="px-4 py-2 rounded-md bg-white text-sm"
         >
           <option value="All">All Ages</option>
-          {menu.ages.map((age) => (
+          {ages.map((age) => (
             <option key={age}>{age}</option>
           ))}
         </select>
@@ -169,23 +223,14 @@ export default function ProCollectionPhase6() {
                 className="gallery-image"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.closest("div").style.display = "none";
+                  console.warn("❌ Missing file:", e.target.src);
+                  e.target.style.display = "none";
                 }}
               />
             </motion.div>
           ))}
         </div>
       </section>
-
-      {/* ℹ️ INFO SECTION */}
-      {content.info_title && (
-        <section className="text-center mt-20 mb-20 px-6">
-          <h3 className="text-3xl font-semibold mb-4">{content.info_title}</h3>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            {content.info_paragraph}
-          </p>
-        </section>
-      )}
 
       {/* 🔍 IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
