@@ -1,0 +1,8 @@
+title=Phase 5 — Seniors Collection
+subtitle=Wisdom & Emotional Depth
+short=Discover 300 portraits of seniors expressing 50 emotions — a visual study of wisdom, grace, and emotional depth.
+text=This phase explores the emotional richness of later life, where expression is shaped by reflection, experience, and inner balance. It highlights how empathy, patience, and resilience mature with age, revealing faces that carry both peace and depth. Through these portraits, psychologists, educators, and artists can observe the dialogue between wisdom and emotion — where every wrinkle tells a story of understanding. It reminds us that emotion does not fade with time, but transforms into something deeper and more meaningful.
+button=Get Access — £69 / 30 Days
+link=/pro/checkout?phase=5
+image=/private_images/pro/phase_5/Kindness_African_Senior_Male.webp
+caption=Kindness — African Senior Male

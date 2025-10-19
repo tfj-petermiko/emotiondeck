@@ -1,0 +1,8 @@
+title=Phase 6 — Evolution Collection
+subtitle=Across Generations & Cultures
+short=120 portraits illustrating the emotional evolution of humanity — from infancy to old age, captured across 12 world regions.
+text=The Evolution Collection explores how emotion matures and transforms through time and culture. Each portrait traces the human journey — from the openness of childhood to the serenity of age. This phase unites psychology, anthropology, and art into one visual continuum, revealing the shared emotional DNA that connects us all. By observing diverse cultures and life stages, we discover how feelings such as love, pride, calmness, and gratitude define our growth as human beings. A story of transformation — of emotion evolving through life.
+button=Free Access — Unlimited Time
+link=/pro/phase-6
+image=/private_images/pro/phase_6/Evolution_Delight_SouthAsian_MatureAdult_Female.webp
+caption=Delight — South Asian Mature Adult Female

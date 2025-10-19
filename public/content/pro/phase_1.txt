@@ -1,0 +1,8 @@
+title=Phase 1 — Free Collection
+subtitle=Clarity & Universal Understanding
+short=Explore 144 foundational emotional expressions — open and free for learning, research, and education.
+text=This phase establishes a neutral and consistent foundation for studying emotion across different faces, genders, and ethnicities. It emphasises clarity, balance, and universality — allowing observers to focus purely on the emotional signal, free from external distraction. Designed as a baseline for comparison, it helps users recognise emotional nuances and build perceptual accuracy. It also serves as a psychological mirror — reminding us that emotion transcends cultural boundaries. Every face becomes a lesson in empathy and shared humanity, where emotion is a language understood by all. Through this openness, Phase 1 invites us to observe emotion as both art and science — simple, honest, and profoundly human.
+button=Free Access — Unlimited Time
+link=/free
+image=/private_images/free/phase_1/Joy_European_Adult_Male.webp
+caption=Joy — European Adult Male
