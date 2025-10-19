@@ -82,7 +82,7 @@ export default function ClientLayout({ children }) {
             new google.translate.TranslateElement(
               {
                 pageLanguage: 'en',
-                includedLanguages: 'en,pl,es,fr,de,it,pt,ru,zh-CN,ja',
+                includedLanguages: 'en,pl,es,fr,de,it,pt,ru,zh-CN,ja,ko,ar,tr,nl,sv,cs,uk,hi,th,ro,el',
                 layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
               },
               'google_translate_element'
