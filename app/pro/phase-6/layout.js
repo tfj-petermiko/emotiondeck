@@ -1,44 +1,60 @@
+import fs from "fs";
+import path from "path";
+
+function parseMetadataFile(filePath) {
+  const text = fs.readFileSync(filePath, "utf8");
+  const data = {};
+  let currentKey = "";
+  text.split("\n").forEach((line) => {
+    const match = line.match(/^#\s*(\w+)/);
+    if (match) {
+      currentKey = match[1];
+      data[currentKey] = "";
+    } else if (currentKey && line.trim()) {
+      data[currentKey] += line.trim() + " ";
+    }
+  });
+  Object.keys(data).forEach((k) => (data[k] = data[k].trim()));
+  return data;
+}
+
+const metaPath = path.join(process.cwd(), "public/content/pro/phase6/metadata.txt");
+const meta = parseMetadataFile(metaPath);
+
 export const metadata = {
-  metadataBase: new URL("https://emotiondeck.com"),
-  alternates: {
-    canonical: "https://emotiondeck.com/pro/phase-6",
-  },
-  title:
-    "EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings",
-  description:
-    "Explore EmotionDeck PRO Phase 6: Evolution — a global emotional atlas portraying the evolution of human feelings across cultures, ages, and genders. Featuring over 300 ultra-realistic black-and-white portraits capturing the universality and diversity of emotion.",
-  keywords:
-    "EmotionDeck, Evolution Collection, emotional evolution, cross-cultural emotions, emotional diversity, human emotion dataset, emotion across ages, empathy training, emotional intelligence, psychology of emotion, cultural anthropology, black-and-white portraits, emotion perception, visual emotion study, art and psychology",
+  metadataBase: new URL(meta.metadataBase),
+  alternates: { canonical: meta.canonical },
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
   openGraph: {
-    title: "EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings",
-    description:
-      "Discover EmotionDeck PRO Phase 6: Evolution — a panoramic collection of human emotions expressed through culture, age, and gender. Experience the visual evolution of emotional expression across the globe.",
-    url: "https://emotiondeck.com/pro/phase-6",
+    title: meta.og_title,
+    description: meta.og_description,
+    url: meta.og_url,
     siteName: "EmotionDeck",
     images: [
       {
-        url: "https://emotiondeck.com/preview-phase6.jpg",
+        url: meta.og_image,
         width: 1200,
         height: 630,
-        alt: "EmotionDeck PRO Phase 6 Evolution preview",
+        alt: "EmotionDeck PRO Phase 6 preview",
       },
     ],
     locale: "en_GB",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings",
-    description:
-      "EmotionDeck PRO Phase 6 explores emotional evolution across cultures and ages — a visual atlas of humanity’s shared and unique emotional expressions.",
-    images: ["https://emotiondeck.com/preview-phase6.jpg"],
+    card: meta.twitter_card,
+    title: meta.twitter_title,
+    description: meta.twitter_description,
+    images: [meta.twitter_image],
   },
 };
 
 export default function Phase6Layout({ children }) {
   return (
-    <div className="relative z-0 overflow-visible min-h-screen bg-neutral-900 text-white font-sans">
+    <section className="bg-neutral-900 text-white font-sans antialiased min-h-full overflow-visible">
       {children}
-    </div>
+    </section>
   );
 }

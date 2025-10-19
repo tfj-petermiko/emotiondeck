@@ -1,0 +1,5 @@
+# regions
+European, African, East Asian, South Asian, Middle Eastern, Latin American, Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, North American
+
+# ages
+Infant, Toddler, Child, Teen, Young Adult, Adult Early, Adult, Mature Adult, Senior, Elderly
