@@ -43,7 +43,9 @@ export const metadata = {
 export default function ProLayout({ children }) {
   return (
     <div className="relative z-0 overflow-visible min-h-screen bg-neutral-900 text-white">
-      {children}
+      <div className="mx-[10%]">
+        {children}
+      </div>
     </div>
   );
 }
