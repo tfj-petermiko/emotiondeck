@@ -9,7 +9,6 @@ export default function MobileMenu() {
   const toggleMenu = () => setOpen((prev) => !prev);
   const closeMenu = () => setOpen(false);
 
-  // Disable body scroll when menu open
   useEffect(() => {
     if (open) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "";
@@ -27,7 +26,6 @@ export default function MobileMenu() {
 
   return (
     <>
-      {/* 🔹 Fixed header — hamburger + text logo */}
       <header
         style={{
           position: "fixed",
@@ -47,7 +45,6 @@ export default function MobileMenu() {
           backdropFilter: "blur(8px)",
         }}
       >
-        {/* 🍔 Hamburger */}
         <button
           onClick={toggleMenu}
           style={{
@@ -80,7 +77,6 @@ export default function MobileMenu() {
           {open ? <X size={38} strokeWidth={1.6} /> : <Menu size={38} strokeWidth={1.6} />}
         </button>
 
-        {/* ✳️ Text logo */}
         <div
           style={{
             fontSize: "1.6rem",
@@ -93,13 +89,10 @@ export default function MobileMenu() {
         </div>
       </header>
 
-      {/* Padding under header */}
       <div style={{ height: "110px" }}></div>
 
-      {/* 📋 Menu panel */}
       {open && (
         <>
-          {/* Background overlay */}
           <div
             onClick={closeMenu}
             style={{
@@ -113,7 +106,6 @@ export default function MobileMenu() {
             }}
           />
 
-          {/* Sidebar menu */}
           <div
             style={{
               position: "fixed",
@@ -185,7 +177,6 @@ export default function MobileMenu() {
               </tbody>
             </table>
 
-            {/* ✨ Description section */}
             <div
               style={{
                 marginTop: "2.2rem",
@@ -214,8 +205,9 @@ export default function MobileMenu() {
               <br />
               <div
                 style={{
-                  width: "60%",
-                  borderTop: "1px solid rgba(255,255,255,0.15)",
+                  width: "100%",
+                  height: "1px",
+                  backgroundColor: "rgba(255,255,255,0.15)",
                   marginTop: "1.5rem",
                   marginBottom: "0.3rem",
                 }}
@@ -242,7 +234,6 @@ export default function MobileMenu() {
             </div>
           </div>
 
-          {/* Responsive width */}
           <style jsx>{`
             @media (max-width: 768px) {
               div[style*="position: fixed"][style*="border-right"] {
