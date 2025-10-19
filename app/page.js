@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -11,6 +12,36 @@ export default function Home() {
     { name: "Contempt", img: "/private_images/images/love.webp" },
   ];
 
+  const [text, setText] = useState({});
+
+  useEffect(() => {
+    const loadText = async () => {
+      try {
+        const res = await fetch("/content/home/home.txt");
+        if (!res.ok) throw new Error("home.txt not found");
+        const raw = await res.text();
+
+        const parsed = {};
+        let currentKey = null;
+
+        raw.split("\n").forEach((line) => {
+          if (line.startsWith("# ")) {
+            currentKey = line.replace("# ", "").trim();
+            parsed[currentKey] = "";
+          } else if (currentKey && line.trim() !== "") {
+            parsed[currentKey] += (parsed[currentKey] ? "\n" : "") + line.trim();
+          }
+        });
+
+        setText(parsed);
+      } catch (err) {
+        console.error("⚠️ Error loading home text:", err);
+      }
+    };
+
+    loadText();
+  }, []);
+
   return (
     <main className="flex flex-col flex-grow bg-neutral-900 text-white font-sans">
       {/* 🎯 HERO + CTA */}
@@ -21,7 +52,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-6"
         >
-          Train Your Perception. Understand Human Emotion.
+          {text.hero_title}
         </motion.h1>
 
         <motion.p
@@ -30,8 +61,7 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-6"
         >
-          EmotionDeck Helps you Perceive and Understand Human Emotion through
-          Subtle Expression, Mindful Observation, and Guided Visual Learning.
+          {text.hero_paragraph1}
         </motion.p>
 
         <motion.p
@@ -40,8 +70,7 @@ export default function Home() {
           transition={{ delay: 0.9, duration: 1 }}
           className="text-gray-400 mb-12 max-w-xl mx-auto"
         >
-          Explore 354 Emotional Expressions — Free for Personal Learning,
-          Research, and Education.
+          {text.hero_paragraph2}
         </motion.p>
       </section>
 
@@ -75,7 +104,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-3xl font-semibold mb-4"
         >
-          Unlock the PRO Collection
+          {text.pro_title}
         </motion.h3>
 
         <motion.p
@@ -84,8 +113,7 @@ export default function Home() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-gray-400 mb-2 max-w-xl mx-auto"
         >
-          Explore Additional Complex Human Emotions across Regions, Ages, and Eenders.  
-          Perfect for Professionals, Educators, and Advanced Emotional Research.
+          {text.pro_description}
         </motion.p>
 
         <motion.p
@@ -94,10 +122,8 @@ export default function Home() {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-sm text-emerald-400 mb-8"
         >
-          🔓 Exclusive Access — Now in Premium
+          {text.pro_note}
         </motion.p>
-
-
       </section>
     </main>
   );

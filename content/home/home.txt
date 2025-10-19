@@ -1,0 +1,17 @@
+# hero_title
+Train Your Perception. Understand Human Emotion.
+
+# hero_paragraph1
+EmotionDeck helps you perceive and understand human emotion through subtle expression, mindful observation, and guided visual learning.
+
+# hero_paragraph2
+Explore 354 emotional expressions — free for personal learning, research, and education.
+
+# pro_title
+Unlock the PRO Collection
+
+# pro_description
+Explore additional complex human emotions across regions, ages, and genders. Perfect for professionals, educators, and advanced emotional research.
+
+# pro_note
+🔓 Exclusive Access — Now in Premium

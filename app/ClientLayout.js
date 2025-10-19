@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Script from "next/script";
 import ClientProtector from "./ClientProtector";
 import MobileMenu from "./components/MobileMenu";
@@ -21,9 +21,9 @@ export default function ClientLayout({ children }) {
       }
     };
 
-    // Wait for script to load fully
     const script = document.createElement("script");
-    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.src =
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
     script.async = true;
     window.googleTranslateElementInit = initGoogleTranslate;
     document.body.appendChild(script);
@@ -46,10 +46,10 @@ export default function ClientLayout({ children }) {
       {/* Scrollable main section */}
       <main className="flex-1 overflow-y-auto">{children}</main>
 
-      {/* Sticky footer */}
+      {/* Sticky footer (dynamic text loaded from file) */}
       <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-sm py-6 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
         <div className="max-w-4xl mx-auto px-6">
-          <p>EmotionDeck © 2025 — See. Feel. Understand.</p>
+          <DynamicFooterText />
         </div>
       </footer>
 
@@ -89,4 +89,26 @@ export default function ClientLayout({ children }) {
       />
     </div>
   );
+}
+
+// 🩶 Dynamic footer text loader
+function DynamicFooterText() {
+  const [footerText, setFooterText] = useState("");
+
+  useEffect(() => {
+    const loadFooter = async () => {
+      try {
+        const res = await fetch("/content/global/footer.txt");
+        if (!res.ok) throw new Error("Footer text not found");
+        const text = await res.text();
+        setFooterText(text);
+      } catch (err) {
+        console.error("⚠️ Error loading footer text:", err);
+        setFooterText("");
+      }
+    };
+    loadFooter();
+  }, []);
+
+  return <p className="whitespace-pre-line">{footerText || "Loading..."}</p>;
 }

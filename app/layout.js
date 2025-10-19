@@ -1,40 +1,66 @@
 import "./globals.css";
 import ClientLayout from "./ClientLayout";
+import fs from "fs";
+import path from "path";
+
+// 🧠 Load everything from /public/content/home/metadata.txt
+function loadFullMetadata() {
+  try {
+    const filePath = path.join(process.cwd(), "public", "content", "home", "metadata.txt");
+    const raw = fs.readFileSync(filePath, "utf-8");
+    const parsed = {};
+    let currentKey = null;
+
+    raw.split("\n").forEach((line) => {
+      if (line.startsWith("# ")) {
+        currentKey = line.replace("# ", "").trim();
+        parsed[currentKey] = "";
+      } else if (currentKey && line.trim() !== "") {
+        parsed[currentKey] += (parsed[currentKey] ? "\n" : "") + line.trim();
+      }
+    });
+
+    return parsed;
+  } catch (error) {
+    console.error("⚠️ Could not load metadata.txt:", error);
+    return {};
+  }
+}
+
+const meta = loadFullMetadata();
 
 export const metadata = {
-  metadataBase: new URL("https://emotiondeck.com"),
-  alternates: { canonical: "https://emotiondeck.com" },
-  title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
-  description:
-    "EmotionDeck helps you learn to recognise, interpret, and understand human emotion through subtle facial expressions, mindful observation, and guided visual learning.",
-  keywords:
-    "EmotionDeck, emotion recognition, facial expressions, empathy, emotion perception, learn emotions, human emotion training, psychology, mindfulness, emotional intelligence",
-  verification: {
-    google: "IDzJ4Cn66z4WCWBw3l2BI6IRKH-POLMXrDzfDsRjGwc",
-  },
+  metadataBase: meta.metadataBase ? new URL(meta.metadataBase) : undefined,
+  alternates: meta.canonical ? { canonical: meta.canonical } : undefined,
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  verification: meta.google_verification
+    ? { google: meta.google_verification }
+    : undefined,
   openGraph: {
-    title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
-    description:
-      "Explore the full EmotionDeck visual learning platform — perceive and understand human emotions through detailed facial expressions and mindful observation.",
-    url: "https://emotiondeck.com",
+    title: meta.og_title,
+    description: meta.og_description,
+    url: meta.og_url,
     siteName: "EmotionDeck",
-    images: [
-      {
-        url: "https://emotiondeck.com/preview-main.jpg",
-        width: 1200,
-        height: 630,
-        alt: "EmotionDeck main preview image",
-      },
-    ],
+    images: meta.og_image
+      ? [
+          {
+            url: meta.og_image,
+            width: 1200,
+            height: 630,
+            alt: "EmotionDeck preview",
+          },
+        ]
+      : [],
     locale: "en_GB",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EmotionDeck — Train Your Perception. Understand Human Emotion.",
-    description:
-      "Train your perception and understand subtle human expressions with the EmotionDeck visual learning platform.",
-    images: ["https://emotiondeck.com/preview-main.jpg"],
+    card: meta.twitter_card,
+    title: meta.twitter_title,
+    description: meta.twitter_description,
+    images: meta.twitter_image ? [meta.twitter_image] : [],
   },
 };
 
@@ -42,7 +68,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col select-none">
-        {/* 🔹 ClientLayout automatycznie ustawia padding-top zgodny z wysokością nagłówka */}
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
