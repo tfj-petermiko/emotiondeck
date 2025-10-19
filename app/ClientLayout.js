@@ -72,6 +72,26 @@ export default function ClientLayout({ children }) {
       </Script>
 
       {/* 🌐 Google Translate Widget */}
+      <Script
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        strategy="afterInteractive"
+      />
+      <Script id="google-translate-init" strategy="afterInteractive">
+        {`
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              {
+                pageLanguage: 'en',
+                includedLanguages: 'en,pl,es,fr,de,it,pt,ru,zh-CN,ja',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+              },
+              'google_translate_element'
+            );
+          }
+        `}
+      </Script>
+
+      {/* 🔘 Translator container */}
       <div
         id="google_translate_element"
         style={{
