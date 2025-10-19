@@ -94,7 +94,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/free", "Free Access — Unlimited Time ", "p1")}
+                    {renderButton("/free", "Free Access — No Time Limit", "p1")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -183,7 +183,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/pro/checkout?phase=2", "Get Access — £49 / 30 Days", "p2")}
+                    {renderButton("/pro/phase-2", "Early Access — No Time Limit", "p2")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -274,7 +274,7 @@ export default function ProCollectionPage() {
             </p>
 
             <div className="flex justify-end">
-              {renderButton("/pro/checkout?phase=3", "Get Access — £29 / 30 Days", "p3")}
+              {renderButton("/pro/phase-3", "Early Access — No Time Limit", "p3")}
             </div>
           </td>
 
@@ -371,7 +371,7 @@ export default function ProCollectionPage() {
                   </p>
 
                    <div className="flex justify-end">
-              {renderButton("/pro/phase-4", "Free Access — Unlimited Time", "p4")}
+              {renderButton("/pro/phase-4", "Early Access — No Time Limit", "p4")}
             </div>
                 </td>
 
@@ -464,7 +464,7 @@ export default function ProCollectionPage() {
 
 
              <div className="flex justify-end">
-              {renderButton("/pro/checkout?phase=5", "Get Access — £69 / 30 Days", "p5")}
+              {renderButton("/pro/phase-5", "Early Access — No Time Limit", "p5")}
             </div>
           </td>
 
@@ -564,7 +564,7 @@ export default function ProCollectionPage() {
             </p>
 
             <div className="flex justify-end">
-              {renderButton("/pro/phase-6", "Free Access — Unlimited Time", "p6")}
+              {renderButton("/pro/phase-6", "Early Access — No Time Limit", "p6")}
             </div>
           </td>
 
