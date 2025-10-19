@@ -97,14 +97,7 @@ export default function Home() {
           🔓 Exclusive Access — Now in Premium
         </motion.p>
 
-        <motion.a
-          href="/pro"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="inline-block bg-gradient-to-r from-white to-gray-200 text-neutral-900 font-semibold px-10 py-3 rounded-full hover:from-gray-100 hover:to-white transition"
-        >
-          Get PRO Access →
-        </motion.a>
+
       </section>
     </main>
   );

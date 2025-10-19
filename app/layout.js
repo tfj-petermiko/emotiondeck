@@ -1,5 +1,5 @@
 import "./globals.css";
-import ClientLayout from "./ClientLayout"; // nowy komponent klientowy
+import ClientLayout from "./ClientLayout";
 
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col select-none">
+        {/* 🔹 ClientLayout automatycznie ustawia padding-top zgodny z wysokością nagłówka */}
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
