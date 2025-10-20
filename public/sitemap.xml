@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+  <!-- 🌍 MAIN -->
+  <url>
+    <loc>https://emotiondeck.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 🟢 FREE COLLECTION -->
+  <url>
+    <loc>https://emotiondeck.com/free</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 🟣 PRO COLLECTIONS -->
+  <url><loc>https://emotiondeck.com/pro</loc></url>
+  <url><loc>https://emotiondeck.com/pro/phase-2</loc></url>
+  <url><loc>https://emotiondeck.com/pro/phase-3</loc></url>
+  <url><loc>https://emotiondeck.com/pro/phase-4</loc></url>
+  <url><loc>https://emotiondeck.com/pro/phase-5</loc></url>
+  <url><loc>https://emotiondeck.com/pro/phase-6</loc></url>
+
+  <!-- 📚 LEARN -->
+  <url><loc>https://emotiondeck.com/learn</loc></url>
+
+  <!-- 🌍 GLOBAL MAP -->
+  <url><loc>https://emotiondeck.com/globalmap</loc></url>
+
+  <!-- 🤖 AI GENERATOR -->
+  <url><loc>https://emotiondeck.com/ai-generator</loc></url>
+</urlset>
