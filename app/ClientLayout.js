@@ -6,7 +6,6 @@ import ClientProtector from "./ClientProtector";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 
 export default function ClientLayout({ children }) {
-  // 🧠 Smart scroll detection
   useEffect(() => {
     const updateScrollState = () => {
       const html = document.documentElement;
@@ -38,18 +37,20 @@ export default function ClientLayout({ children }) {
       {/* 🧩 Client-side protection */}
       <ClientProtector />
 
-      {/* 🧭 Sticky Header with safe padding */}
+      {/* 🧭 Sticky Header */}
       <header className="sticky top-0 z-50 bg-neutral-900/95 backdrop-blur-sm border-b border-gray-800 shadow-[0_4px_8px_rgba(0,0,0,0.4)] pt-3 pb-2">
         <div className="max-w-7xl mx-auto px-4">
           <MobileMenu />
         </div>
       </header>
 
-      {/* 🧱 Main content with header offset */}
-      <main className="flex-1 mt-[4px]">{children}</main>
+      {/* 🧱 Main content (scrolls freely) */}
+      <main className="flex-1 pt-[70px] pb-[90px] mt-[2px]">
+        {children}
+      </main>
 
-      {/* 🧩 Sticky Footer */}
-      <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-sm py-6 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
+      {/* 🧩 Sticky Footer (always visible, never hidden) */}
+      <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-md py-5 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
         <div className="max-w-4xl mx-auto px-6">
           <DynamicFooterText />
         </div>

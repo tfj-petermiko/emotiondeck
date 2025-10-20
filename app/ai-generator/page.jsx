@@ -280,7 +280,7 @@ export default function GeneratorPage() {
             alt="Generated EmotionDeck Portrait"
             className="rounded-xl max-w-[400px] mx-auto mb-5"
           />
-          <br /><br/>
+          <br/><br/>
           <button
             onClick={handleDownload}
             onMouseEnter={() => setHovered(true)}
@@ -297,3 +297,5 @@ export default function GeneratorPage() {
     </main>
   );
 }
+
+

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 /* =========================================
-   🌍 EMOTIONDECK WORLD MAP v8.0 — One Country, One Emotion
+   🌍 EMOTIONDECK WORLD MAP v8.0 — One Country, One Emotion (fixed z-index)
    ========================================= */
 
 export default function GlobalMap() {
@@ -79,11 +79,8 @@ export default function GlobalMap() {
     { name: "Australia", coords: [135, -40], color: pick(palettes.oceania, 0), image: "/private_images/worldmap/OneEmotion_Calmness_Australia_Female_Adult.webp" },
   ];
 
-
-  // 🧭 Longitude/latitude → map coordinates
   const project = ([lon, lat]) => [(lon + 180) * 5.4, (90 - lat) * 5.6];
 
-  // 💫 Pulsing animation
   const pulse = {
     scale: [1, 1.3, 1],
     opacity: [0.8, 1, 0.8],
@@ -92,25 +89,24 @@ export default function GlobalMap() {
 
   return (
     <section
-      className="relative w-screen h-screen overflow-hidden text-white"
+      className="relative w-screen h-screen overflow-hidden text-white z-[1]"
       style={{
         background: "linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b)",
       }}
     >
       {/* 🏷️ Title */}
-      <div className="absolute top-8 left-0 w-full text-center z-50">
+      <div className="absolute top-8 left-0 w-full text-center z-10 pointer-events-none">
         <h2 className="text-4xl md:text-6xl font-semibold tracking-wide text-gray-100 drop-shadow-lg">
           EmotionDeck — One World, Many Faces, One Humanity 🕊️🕊️
         </h2>
       </div>
 
-      {/* 🌍 Map with hotspots */}
+      {/* 🌍 Map */}
       <svg
         viewBox="0 0 2000 1001"
         preserveAspectRatio="xMidYMid meet"
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-full z-[5]"
       >
-        {/* Base Map */}
         <image
           href="/GlobalMap.svg"
           width="2000"
@@ -118,8 +114,6 @@ export default function GlobalMap() {
           opacity="0.55"
           style={{ filter: "brightness(0.65)" }}
         />
-
-        {/* Hotspot Pulses */}
         {regions.map((r) => {
           const [cx, cy] = project(r.coords);
           return (
@@ -159,10 +153,10 @@ export default function GlobalMap() {
         })}
       </svg>
 
-      {/* 🟣 Circular Portrait Tooltip (max 200 px) */}
+      {/* 🟣 Tooltip */}
       {hovered && (
         <motion.div
-          className="absolute z-50 text-center pointer-events-none"
+          className="absolute z-20 text-center pointer-events-none"
           style={{
             left: `${(hovered.coords[0] + 180) * 5.4}px`,
             top: `${(90 - hovered.coords[1]) * 5.6 - 140}px`,

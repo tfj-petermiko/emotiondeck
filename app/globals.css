@@ -293,4 +293,21 @@ html {
   border: none !important;
 }
 
+/* =========================================
+   🧱 FIX: Ensure fixed elements attach to viewport, not Next.js wrapper
+   ========================================= */
+html, body, #__next {
+  position: static !important;
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+#__next {
+  transform: none !important;
+  contain: none !important;
+  perspective: none !important;
+}
+
+
 
