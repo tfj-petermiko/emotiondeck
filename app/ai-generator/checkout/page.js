@@ -30,7 +30,7 @@ export default function AIGeneratorCheckout() {
           actions.order.create({
             purchase_units: [
               {
-                amount: { value: "9.99" },
+                amount: { value: "4.99" },
                 description: "EmotionDeck AI Generator — 10 Portraits",
               },
             ],
@@ -58,7 +58,7 @@ export default function AIGeneratorCheckout() {
 
         <p className="text-gray-400 mb-8">
           Access the <strong>EmotionDeck AI Generator</strong> — Pay Just{" "}
-          <strong>£9.99</strong> to Unlock
+          <strong>£4.99</strong> to Unlock
           <strong> 10 Unique Black-and-White Portrait Generations</strong> in
           Authentic EmotionDeck Style.<br />
           Each Image Captures a Genuine Emotional Expression Across Culture,
