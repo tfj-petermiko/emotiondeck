@@ -352,4 +352,71 @@ footer {
   background-color: #0a0a0a;
 }
 
+/* =========================================
+   🧩 Remove Google Translate Blue Bar
+   ========================================= */
+
+/* Hide the top blue bar */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Fix body top offset when bar is hidden */
+body {
+  top: 0px !important;
+}
+
+/* Optional: remove white background that flashes */
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: none !important;
+  color: #f5f5f5 !important;
+}
+
+/* Fix position so widget stays visible */
+#google_translate_element {
+  z-index: 100000 !important;
+}
+
+/* =========================================
+   🌐 Mini Google Translate Widget
+   ========================================= */
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: rgba(15, 15, 15, 0.9) !important;
+  border: 1px solid #333 !important;
+  border-radius: 8px !important;
+  padding: 2px 6px !important;
+  font-size: 10px !important;
+  color: #f5f5f5 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: rgba(35, 35, 35, 0.95) !important;
+  border-color: #00bcd4 !important;
+}
+
+/* Hide Google’s icon and text “Select Language” */
+.goog-te-gadget span,
+.goog-te-gadget img {
+  display: none !important;
+}
+
+/* Scale down dropdown */
+.goog-te-menu-value {
+  font-size: 12px !important;
+  color: #f5f5f5 !important;
+}
+
+
+
 
