@@ -1,0 +1,45 @@
+# metadataBase
+https://emotiondeck.com
+
+# canonical
+https://emotiondeck.com/globalmap
+
+# title
+EmotionDeck Global Map — One World, Many Emotions
+
+# description
+Explore the EmotionDeck Global Map — an interactive emotional atlas that visualises how 
+different cultures express, perceive, and interpret human emotions. Click on any country 
+to uncover emotional insights, cultural influences, and shared human experiences 
+across the world.
+
+# keywords
+EmotionDeck Global Map, emotional atlas, emotion across cultures, cultural psychology, 
+facial expression diversity, empathy training, emotion research, global emotion study, 
+interactive emotion map, cultural differences, emotion perception, psychology education
+
+# og_title
+EmotionDeck Global Map — One World, Many Emotions
+
+# og_description
+Discover how human emotions vary and connect across cultures with the interactive 
+EmotionDeck Global Map — an educational exploration of emotional diversity worldwide.
+
+# og_url
+https://emotiondeck.com/globalmap
+
+# og_image
+https://emotiondeck.com/preview-globalmap.jpg
+
+# twitter_card
+summary_large_image
+
+# twitter_title
+EmotionDeck Global Map — One World, Many Emotions
+
+# twitter_description
+Explore the interactive EmotionDeck Global Map and uncover how culture shapes emotion, 
+expression, and empathy around the world.
+
+# twitter_image
+https://emotiondeck.com/preview-globalmap.jpg

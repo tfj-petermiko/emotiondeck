@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
 import ClientProtector from "./ClientProtector";
-import MobileMenu from "./components/MobileMenu";
+import MobileMenu from "./components/MobileMenu/MobileMenu";
 
 export default function ClientLayout({ children }) {
   // 🧠 Smart scroll detection

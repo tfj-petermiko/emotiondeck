@@ -6,7 +6,7 @@ import { useState } from "react";
    🌍 EMOTIONDECK WORLD MAP v8.0 — One Country, One Emotion
    ========================================= */
 
-export default function WorldMap() {
+export default function GlobalMap() {
   const [hovered, setHovered] = useState(null);
 
   // 🎨 Fixed 5-colour palettes
@@ -112,7 +112,7 @@ export default function WorldMap() {
       >
         {/* Base Map */}
         <image
-          href="/WorldMap.svg"
+          href="/GlobalMap.svg"
           width="2000"
           height="1001"
           opacity="0.55"

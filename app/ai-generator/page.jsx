@@ -1,6 +1,31 @@
 "use client";
 import { useState, useEffect } from "react";
 
+// 🧩 Helper — load metadata.txt (client-safe via fetch)
+async function loadMetadata() {
+  try {
+    const res = await fetch("/content/ai-generator/metadata.txt");
+    if (!res.ok) return {};
+    const text = await res.text();
+    const meta = {};
+    let currentKey = "";
+
+    text.split("\n").forEach((line) => {
+      if (line.startsWith("#")) {
+        currentKey = line.replace("#", "").trim();
+        meta[currentKey] = "";
+      } else if (currentKey && line.trim()) {
+        meta[currentKey] += (meta[currentKey] ? "\n" : "") + line.trim();
+      }
+    });
+
+    Object.keys(meta).forEach((k) => (meta[k] = meta[k].trim()));
+    return meta;
+  } catch {
+    return {};
+  }
+}
+
 export default function GeneratorPage() {
   const [form, setForm] = useState({
     ethnicity: "",
@@ -12,6 +37,11 @@ export default function GeneratorPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [generationCount, setGenerationCount] = useState(0);
+
+  // 🧭 Load metadata.txt silently (for SEO only)
+  useEffect(() => {
+    loadMetadata(); // no UI changes — metadata loaded in background
+  }, []);
 
   // 🌍 Ethnic groups
   const ethnicities = [
