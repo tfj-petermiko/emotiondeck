@@ -2,6 +2,10 @@
 
 import { useState, useEffect } from "react";
 
+/* =========================================
+   ⚙️ EmotionDeck — AI Portrait Generator (Secure Version)
+   ========================================= */
+
 async function loadMetadata() {
   try {
     const res = await fetch("/content/ai-generator/metadata.txt");
@@ -25,7 +29,12 @@ async function loadMetadata() {
 }
 
 export default function GeneratorPage() {
-  const [form, setForm] = useState({ ethnicity: "", emotion: "", ageGroup: "", gender: "" });
+  const [form, setForm] = useState({
+    ethnicity: "",
+    emotion: "",
+    ageGroup: "",
+    gender: "",
+  });
   const [imageUrl, setImageUrl] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -45,53 +54,88 @@ export default function GeneratorPage() {
     transition: "background-color 0.2s ease, transform 0.2s ease",
   };
 
+  // 🧠 Load credits and metadata safely
   useEffect(() => {
     loadMetadata();
-    const access = localStorage.getItem("emotiondeck_ai_access");
-    if (access) {
-      const { remaining } = JSON.parse(access);
-      setRemaining(remaining || 0);
+    try {
+      const access = localStorage.getItem("emotiondeck_ai_access");
+      if (access) {
+        const parsed = JSON.parse(access);
+        if (typeof parsed.remaining === "number") {
+          setRemaining(parsed.remaining);
+        }
+      }
+    } catch (e) {
+      console.warn("Invalid localStorage data:", e);
     }
   }, []);
 
   const ethnicities = [
-    "European", "African", "East Asian", "South Asian", "Middle Eastern",
-    "Latin American", "Pacific Islander", "Central Asian",
-    "Native American", "Australian Aboriginal", "Arctic", "North American",
+    "European",
+    "African",
+    "East Asian",
+    "South Asian",
+    "Middle Eastern",
+    "Latin American",
+    "Pacific Islander",
+    "Central Asian",
+    "Native American",
+    "Australian Aboriginal",
+    "Arctic",
+    "North American",
   ];
 
   const ageGroups = ["Young Adult", "Adult", "Mature Adult", "Senior", "Elderly"];
 
   const updateAccess = (newRemaining) => {
-    localStorage.setItem("emotiondeck_ai_access", JSON.stringify({ remaining: newRemaining }));
+    localStorage.setItem(
+      "emotiondeck_ai_access",
+      JSON.stringify({ remaining: newRemaining })
+    );
     setRemaining(newRemaining);
   };
 
+  const validateForm = () => {
+    if (!form.ethnicity || !form.emotion || !form.ageGroup || !form.gender) {
+      setError("Please fill in all fields before generating.");
+      return false;
+    }
+    return true;
+  };
+
   const generate = async () => {
+    if (loading) return; // prevent spamming clicks
     if (remaining <= 0) {
       window.location.href = "/ai-generator/checkout";
       return;
     }
+    if (!validateForm()) return;
 
     setLoading(true);
     setImageUrl(null);
     setError("");
 
     try {
+      // Optional: You can verify credits server-side before generating
+      // const creditCheck = await fetch("/api/credits");
+      // const { remainingCredits } = await creditCheck.json();
+      // if (remainingCredits <= 0) throw new Error("No credits remaining.");
+
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
 
+      if (!res.ok) throw new Error("Server error. Please try again.");
       const data = await res.json();
       if (data.error) throw new Error(data.error);
 
       setImageUrl(data.image_url);
       updateAccess(remaining - 1);
     } catch (err) {
-      console.error(err);
-      setError("Generation failed. Try again.");
+      console.error("⚠️ AI generation error:", err);
+      setError("Generation failed. Please try again later.");
     } finally {
       setLoading(false);
     }
@@ -111,7 +155,9 @@ export default function GeneratorPage() {
 
   return (
     <main className="min-h-screen bg-neutral-950 text-white flex flex-col items-center justify-center p-8">
-      <h1 className="text-3xl font-semibold mb-6">⚙️ EmotionDeck — AI Portrait Generator</h1>
+      <h1 className="text-3xl font-semibold mb-6">
+        ⚙️ EmotionDeck — AI Portrait Generator
+      </h1>
       <p className="text-gray-400 mb-8 text-center max-w-lg">
         Create Black & White Portraits in the Official EmotionDeck Style.<br />
         Choose Ethnicity, Emotion, Age Group, and Gender.
@@ -133,11 +179,13 @@ export default function GeneratorPage() {
           </>
         ) : (
           <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 max-w-md mx-auto">
-            🔒 No credits left — pay £4.99 to unlock 10 new generations.
+            🔒 No credits left — pay £9.99 to unlock 10 new generations.
           </div>
         )}
       </div>
-<br/>
+
+      <br />
+
       {/* 🧩 Input fields */}
       <div className="grid grid-cols-2 gap-4 mb-6">
         <select
@@ -145,7 +193,9 @@ export default function GeneratorPage() {
           onChange={(e) => setForm({ ...form, ethnicity: e.target.value })}
           defaultValue=""
         >
-          <option value="" disabled>Select Ethnic Group</option>
+          <option value="" disabled>
+            Select Ethnic Group
+          </option>
           {ethnicities.map((eth) => (
             <option key={eth}>{eth}</option>
           ))}
@@ -162,7 +212,9 @@ export default function GeneratorPage() {
           onChange={(e) => setForm({ ...form, ageGroup: e.target.value })}
           defaultValue=""
         >
-          <option value="" disabled>Select Age Group</option>
+          <option value="" disabled>
+            Select Age Group
+          </option>
           {ageGroups.map((age) => (
             <option key={age}>{age}</option>
           ))}
@@ -173,12 +225,17 @@ export default function GeneratorPage() {
           onChange={(e) => setForm({ ...form, gender: e.target.value })}
           defaultValue=""
         >
-          <option value="" disabled>Select Gender</option>
+          <option value="" disabled>
+            Select Gender
+          </option>
           <option>Female</option>
           <option>Male</option>
+          <option>Androgynous</option>
         </select>
       </div>
-<br/>
+
+      <br />
+
       {/* 🟢 Generate / Buy button */}
       <button
         onClick={() => {
@@ -209,15 +266,13 @@ export default function GeneratorPage() {
         {loading
           ? "Generating..."
           : remaining <= 0
-          ? "Buy More Credits (£4.99)"
+          ? "Buy More Credits (£9.99)"
           : "Generate Portrait"}
       </button>
 
       {error && <p className="text-red-400 mt-4">{error}</p>}
-
-      <br />
+<br/>
       {/* 🔹 Generated image + download button */}
-
       {imageUrl && (
         <div className="mt-12 text-center">
           <img
@@ -225,7 +280,7 @@ export default function GeneratorPage() {
             alt="Generated EmotionDeck Portrait"
             className="rounded-xl max-w-[400px] mx-auto mb-5"
           />
- <br /> <br />
+          <br /><br/>
           <button
             onClick={handleDownload}
             onMouseEnter={() => setHovered(true)}
