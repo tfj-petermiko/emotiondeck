@@ -197,7 +197,7 @@ export default function ProCollectionPhase6() {
           ))}
         </select>
       </section>
-
+<br/>
       {/* 🖼 GALLERY */}
       <section id="gallery" className="w-full mt-16">
         <div className="gallery-grid">
@@ -250,16 +250,16 @@ export default function ProCollectionPhase6() {
         .gallery-grid {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 1rem;
-          padding: 1rem;
+          gap: 0;
+          padding: 0;
         }
         .gallery-image {
           width: 100%;
           height: 260px;
           object-fit: cover;
-          border-radius: 0.75rem;
-          background-color: #111;
-          transition: transform 0.3s ease;
+          display: block;
+          border-radius: 0;
+          margin: 0;
         }
       `}</style>
     </main>

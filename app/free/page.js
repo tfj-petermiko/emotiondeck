@@ -80,7 +80,6 @@ export default function FreeCollection() {
       (selectedGender === "All" || img.gender === selectedGender)
   );
 
-  // 🟢 Button style
   const baseButtonStyle = {
     backgroundColor: "#10B981",
     color: "#ffffff",
@@ -99,14 +98,14 @@ export default function FreeCollection() {
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
       {/* Hero Section */}
       <section className="text-center mt-20 px-6">
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          {content.hero_title}
-        </motion.h2>
+          EmotionDeck Free Collection — Phase 1 🌱
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -167,7 +166,9 @@ export default function FreeCollection() {
           ))}
         </select>
       </section>
-<br />
+
+      <br />
+
       {/* Gallery */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">

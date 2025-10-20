@@ -70,7 +70,7 @@ export default function ProCollectionPage() {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
-            Phase 1 — Free Collection
+            Phase 1 — Free Basic Collection
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
             Clarity & Universal Understanding
