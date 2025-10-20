@@ -291,7 +291,7 @@ export default function GeneratorPage() {
             }}
           >
             Download Image
-          </button>
+          </button><br/><br/><br/>
         </div>
       )}
     </main>
