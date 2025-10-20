@@ -179,7 +179,7 @@ export default function GeneratorPage() {
           </>
         ) : (
           <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 max-w-md mx-auto">
-            🔒 No credits left — pay £9.99 to unlock 10 new generations.
+            🔒 No credits left — pay £4.99 to unlock 10 new generations.
           </div>
         )}
       </div>
@@ -266,7 +266,7 @@ export default function GeneratorPage() {
         {loading
           ? "Generating..."
           : remaining <= 0
-          ? "Buy More Credits (£9.99)"
+          ? "Buy More Credits (£4.99)"
           : "Generate Portrait"}
       </button>
 
