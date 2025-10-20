@@ -10,7 +10,6 @@ const openai = new OpenAI({
 
 export async function POST(req) {
   try {
-    // 🧠 Parse user input
     const { ethnicity, emotion, ageGroup, gender } = await req.json();
 
     // 🖼️ Reference image path
@@ -19,11 +18,10 @@ export async function POST(req) {
       throw new Error(`Reference image not found: ${referencePath}`);
     }
 
-    // 🧩 Load reference image
+    // 🧩 Read reference image
     const buffer = fs.readFileSync(referencePath);
-    const imageFile = new File([buffer], "reference.png", { type: "image/png" });
 
-    // 🪄 AI prompt for generation
+    // ⚙️ Generate prompt
     const prompt = `
 Recreate the reference portrait with identical lighting and composition.
 Keep it pure black and white (no colour).
@@ -48,10 +46,10 @@ Maintain identical studio setup:
 Output: ultra-realistic black-and-white photo, 1024×1536 resolution, EmotionDeck visual consistency.
 `;
 
-    // ⚙️ Generate image
+    // 🧠 Send image as binary buffer (Vercel-compatible)
     const result = await openai.images.edit({
       model: "gpt-image-1",
-      image: imageFile,
+      image: buffer,
       prompt,
       size: "1024x1536",
     });
@@ -77,7 +75,6 @@ Output: ultra-realistic black-and-white photo, 1024×1536 resolution, EmotionDec
   }
 }
 
-// 🔍 Simple GET test endpoint
 export async function GET() {
   return new Response(
     JSON.stringify({
