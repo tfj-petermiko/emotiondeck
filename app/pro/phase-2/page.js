@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import ImageModal from "../../components/ImageModal"; // 🆕 globalny modal
+import ImageModal from "../../components/ImageModal"; // 🆕 global modal
 
 export default function ProCollectionPhase2() {
   const emotions = [
@@ -18,7 +18,7 @@ export default function ProCollectionPhase2() {
   const genders = ["Male", "Female"];
   const ages = ["Adult", "Senior"];
 
-  const [selectedEmotion, setSelectedEmotion] = useState("Anxiety");
+  const [selectedEmotion, setSelectedEmotion] = useState("Positive Surprise");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedAge, setSelectedAge] = useState("All");
@@ -51,6 +51,21 @@ export default function ProCollectionPhase2() {
       (selectedAge === "All" || img.age === selectedAge)
   );
 
+  // 🌿 Button style from PRO page
+  const baseButtonStyle = {
+    backgroundColor: "#10B981",
+    color: "#ffffff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "9999px",
+    fontWeight: "600",
+    fontSize: "0.875rem",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  };
+
+  const [hovered, setHovered] = useState(false);
+
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
       {/* 🧠 HEADER */}
@@ -71,7 +86,6 @@ export default function ProCollectionPhase2() {
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
           Explore 288 High-Resolution Portraits for Professionals, Educators, and Researchers in Emotional Perception.
-
         </motion.p>
       </section>
 
@@ -130,7 +144,8 @@ export default function ProCollectionPhase2() {
       </section>
 
       <div className="my-16" />
-<br/>
+      <br />
+
       {/* 🖼️ GALLERY */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
@@ -155,8 +170,22 @@ export default function ProCollectionPhase2() {
 
       {/* 🔍 GLOBAL IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-
-
+<br/>
+      {/* 🟢 RETURN BUTTON */}
+      <div className="text-center mt-16 mb-20">
+        <Link
+          href="/pro"
+          style={{
+            ...baseButtonStyle,
+            backgroundColor: hovered ? "#34D399" : "#10B981",
+          }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="inline-block hover:scale-105 transition"
+        >
+          ← Back to PRO Collection
+        </Link>
+      </div>
     </main>
   );
 }

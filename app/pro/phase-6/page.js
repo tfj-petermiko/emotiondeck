@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import ImageModal from "../../components/ImageModal";
 
 export default function ProCollectionPhase6() {
@@ -38,10 +39,23 @@ export default function ProCollectionPhase6() {
   const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
   const [selectedAge, setSelectedAge] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState(false); // ✅ for hover effect
+
+  // 🟢 Button style (consistent with PRO main page)
+  const baseButtonStyle = {
+    backgroundColor: "#10B981",
+    color: "#ffffff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "9999px",
+    fontWeight: "600",
+    fontSize: "0.875rem",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  };
 
   // 🧩 Real dataset (based on actual file structure)
   const realImages = [
-    // Joy — European Female
     ...ages.map((age) => ({
       emotion: "Joy",
       region: "European",
@@ -49,8 +63,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Joy_European_${age}_Female.webp`,
     })),
-
-    // Serenity — EastAsian Female
     ...ages.map((age) => ({
       emotion: "Serenity",
       region: "EastAsian",
@@ -58,8 +70,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Serenity_EastAsian_${age}_Female.webp`,
     })),
-
-    // Pride — MiddleEastern Female
     ...ages.map((age) => ({
       emotion: "Pride",
       region: "MiddleEastern",
@@ -67,8 +77,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Pride_MiddleEastern_${age}_Female.webp`,
     })),
-
-    // Love — LatinAmerican Male
     ...ages.map((age) => ({
       emotion: "Love",
       region: "LatinAmerican",
@@ -76,8 +84,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Love_LatinAmerican_${age}_Male.webp`,
     })),
-
-    // Gratitude — PacificIslander Male
     ...ages.map((age) => ({
       emotion: "Gratitude",
       region: "PacificIslander",
@@ -85,8 +91,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Gratitude_PacificIslander_${age}_Male.webp`,
     })),
-
-    // Calmness — Arctic Female
     ...ages.map((age) => ({
       emotion: "Calmness",
       region: "Arctic",
@@ -94,8 +98,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Calmness_Arctic_${age}_Female.webp`,
     })),
-
-    // Joy — African Female
     ...ages.map((age) => ({
       emotion: "Joy",
       region: "African",
@@ -103,8 +105,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Joy_African_${age}_Female.webp`,
     })),
-
-    // Pride — NorthAmerican Male
     ...ages.map((age) => ({
       emotion: "Pride",
       region: "NorthAmerican",
@@ -112,8 +112,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Pride_NorthAmerican_${age}_Male.webp`,
     })),
-
-    // Love — CentralAsian Male
     ...ages.map((age) => ({
       emotion: "Love",
       region: "CentralAsian",
@@ -121,8 +119,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Love_CentralAsian_${age}_Male.webp`,
     })),
-
-    // Love — NativeAmerican Female
     ...ages.map((age) => ({
       emotion: "Love",
       region: "NativeAmerican",
@@ -130,8 +126,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Love_NativeAmerican_${age}_Female.webp`,
     })),
-
-    // Calmness — AustralianAboriginal Male
     ...ages.map((age) => ({
       emotion: "Calmness",
       region: "AustralianAboriginal",
@@ -139,8 +133,6 @@ export default function ProCollectionPhase6() {
       age,
       src: `/private_images/pro/phase_6/Evolution_Calmness_AustralianAboriginal_${age}_Male.webp`,
     })),
-
-    // Delight — SouthAsian Female ✅ default group
     ...ages.map((age) => ({
       emotion: "Delight",
       region: "SouthAsian",
@@ -176,8 +168,8 @@ export default function ProCollectionPhase6() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          The Evolution Collection Explores Emotional Growth across Cultures and Ages —  
-          from Infancy to Wisdom. A Visual Atlas of Universal Human Emotion.
+          The Evolution Collection explores emotional growth across cultures and ages —  
+          from infancy to wisdom. A visual atlas of universal human emotion.
         </motion.p>
       </section>
 
@@ -234,6 +226,24 @@ export default function ProCollectionPhase6() {
 
       {/* 🔍 IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
+
+      <br />
+
+      {/* 🟢 RETURN BUTTON */}
+      <div className="text-center mt-16 mb-20">
+        <Link
+          href="/pro"
+          style={{
+            ...baseButtonStyle,
+            backgroundColor: hovered ? "#34D399" : "#10B981",
+          }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="inline-block hover:scale-105 transition"
+        >
+          ← Back to PRO Collection
+        </Link>
+      </div>
 
       {/* 🎨 STYLES */}
       <style jsx global>{`

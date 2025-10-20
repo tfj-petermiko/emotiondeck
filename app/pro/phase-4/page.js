@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import ImageModal from "../../components/ImageModal"; // 🔍 globalny modal
+import ImageModal from "../../components/ImageModal"; // 🔍 global modal
 
 export default function ProCollectionPhase4() {
   // 🎭 Emotions from Phase 4 prompts
@@ -21,6 +21,20 @@ export default function ProCollectionPhase4() {
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState(false); // ✅ for hover effect
+
+  // 🟢 Button style (same as in PRO page)
+  const baseButtonStyle = {
+    backgroundColor: "#10B981",
+    color: "#ffffff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "9999px",
+    fontWeight: "600",
+    fontSize: "0.875rem",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  };
 
   // 🧩 Generate all image paths
   const allImages = [];
@@ -65,8 +79,7 @@ export default function ProCollectionPhase4() {
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
           Explore 90 Ultra-Realistic Black-and-White Portraits of Children Aged Around 6–7 years,
-          Expressing 14 Core Emotions Across three Ethnic Groups and Both Genders.
-         
+          Expressing 14 Core Emotions Across Three Ethnic Groups and Both Genders.
         </motion.p>
       </section>
 
@@ -110,7 +123,9 @@ export default function ProCollectionPhase4() {
           ))}
         </select>
       </section>
-<br/>
+
+      <br />
+
       {/* 🖼️ GALLERY */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
@@ -136,7 +151,23 @@ export default function ProCollectionPhase4() {
       {/* 🔍 MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
+      <br />
 
+      {/* 🟢 RETURN BUTTON */}
+      <div className="text-center mt-16 mb-20">
+        <Link
+          href="/pro"
+          style={{
+            ...baseButtonStyle,
+            backgroundColor: hovered ? "#34D399" : "#10B981",
+          }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="inline-block hover:scale-105 transition"
+        >
+          ← Back to PRO Collection
+        </Link>
+      </div>
     </main>
   );
 }

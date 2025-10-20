@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import ImageModal from "../components/ImageModal";
 
 export default function FreeCollection() {
   const [content, setContent] = useState({});
   const [menu, setMenu] = useState({ emotions: [], regions: [], genders: [] });
 
-  // Load all text content from /public/content/free/page.txt
   useEffect(() => {
     fetch("/content/free/page.txt")
       .then((res) => res.text())
@@ -29,7 +29,6 @@ export default function FreeCollection() {
       });
   }, []);
 
-  // Load menu (emotions, regions, genders)
   useEffect(() => {
     fetch("/content/free/menu.txt")
       .then((res) => res.text())
@@ -58,7 +57,6 @@ export default function FreeCollection() {
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Generate image paths dynamically
   const allImages = [];
   if (menu.emotions.length && menu.regions.length && menu.genders.length) {
     menu.emotions.forEach((emotion) => {
@@ -81,6 +79,21 @@ export default function FreeCollection() {
       (selectedRegion === "All" || img.region === selectedRegion) &&
       (selectedGender === "All" || img.gender === selectedGender)
   );
+
+  // 🟢 Button style
+  const baseButtonStyle = {
+    backgroundColor: "#10B981",
+    color: "#ffffff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "9999px",
+    fontWeight: "600",
+    fontSize: "0.875rem",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  };
+
+  const [hovered, setHovered] = useState(false);
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
@@ -154,7 +167,7 @@ export default function FreeCollection() {
           ))}
         </select>
       </section>
-<br/>
+
       {/* Gallery */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
@@ -177,17 +190,31 @@ export default function FreeCollection() {
         </div>
       </section>
 
-      {/* Info Section — all text loaded from TXT */}
+      {/* Info Section */}
       {content.info_title && content.info_paragraph && (
         <section className="text-center mt-20 mb-20 px-6">
-          <h3 className="text-3xl font-semibold mb-4">
-            {content.info_title}
-          </h3>
+          <h3 className="text-3xl font-semibold mb-4">{content.info_title}</h3>
           <p className="text-gray-300 max-w-2xl mx-auto">
             {content.info_paragraph}
           </p>
         </section>
       )}
+
+      {/* 🟢 Green Button */}
+      <div className="text-center mt-16 mb-20">
+        <Link
+          href="/pro"
+          style={{
+            ...baseButtonStyle,
+            backgroundColor: hovered ? "#34D399" : "#10B981",
+          }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="inline-block hover:scale-105 transition"
+        >
+          Get PRO Access →
+        </Link>
+      </div>
 
       {/* Modal */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />

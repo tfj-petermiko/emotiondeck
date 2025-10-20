@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 
 // 🧩 Helper — load metadata.txt (client-safe via fetch)
@@ -37,10 +38,24 @@ export default function GeneratorPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [generationCount, setGenerationCount] = useState(0);
+  const [hovered, setHovered] = useState(false); // ✅ for hover effect
+
+  // 🟢 Shared button style (same as in PRO)
+  const baseButtonStyle = {
+    backgroundColor: "#10B981",
+    color: "#ffffff",
+    border: "none",
+    padding: "10px 24px",
+    borderRadius: "9999px",
+    fontWeight: "600",
+    fontSize: "0.95rem",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  };
 
   // 🧭 Load metadata.txt silently (for SEO only)
   useEffect(() => {
-    loadMetadata(); // no UI changes — metadata loaded in background
+    loadMetadata();
   }, []);
 
   // 🌍 Ethnic groups
@@ -195,16 +210,23 @@ export default function GeneratorPage() {
           <option value="Male">Male</option>
         </select>
       </div>
-<br/>
-      {/* Generate button */}
+<br />
+      {/* 🟢 Generate Button */}
       <button
         onClick={generate}
         disabled={loading || generationCount >= 3}
-        className={`px-6 py-3 rounded-xl font-medium transition ${
-          loading || generationCount >= 3
-            ? "bg-gray-700 text-gray-400 cursor-not-allowed"
-            : "bg-emerald-500 hover:bg-emerald-600 text-black"
-        }`}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        style={{
+          ...baseButtonStyle,
+          backgroundColor:
+            loading || generationCount >= 3
+              ? "#374151"
+              : hovered
+              ? "#34D399"
+              : "#10B981",
+          cursor: loading || generationCount >= 3 ? "not-allowed" : "pointer",
+        }}
       >
         {loading
           ? "Generating..."
@@ -212,19 +234,24 @@ export default function GeneratorPage() {
           ? "Limit Reached"
           : `Generate Portrait (${3 - generationCount} left)`}
       </button>
-<br/>
-      {error && <p className="text-red-400 mt-4">{error}</p>}
 
+      {error && <p className="text-red-400 mt-4">{error}</p>}
+<br />
       {imageUrl && (
         <div className="mt-12 text-center">
           <img
             src={imageUrl}
             alt="Generated EmotionDeck Portrait"
             className="rounded-xl max-w-[400px] mx-auto mb-5"
-          /><br/>
-          <button
+          />
+ <br /><br />         <button
             onClick={handleDownload}
-            className="bg-emerald-500 hover:bg-emerald-600 text-black font-medium px-6 py-2 rounded-xl transition"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            style={{
+              ...baseButtonStyle,
+              backgroundColor: hovered ? "#34D399" : "#10B981",
+            }}
           >
             Download Image
           </button>
