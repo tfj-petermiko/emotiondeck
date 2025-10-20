@@ -65,7 +65,8 @@ export default function ProCollectionPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}
-        className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
@@ -155,7 +156,8 @@ export default function ProCollectionPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 0.6 }}
-        className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
@@ -245,7 +247,8 @@ export default function ProCollectionPage() {
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.2, duration: 0.6 }}
-  className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+  className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+
 >
   <div className="bg-gray-900 p-6 md:p-10">
     <h2 className="text-2xl font-semibold text-center">
@@ -341,7 +344,8 @@ export default function ProCollectionPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.4, duration: 0.6 }}
-        className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center">
@@ -439,7 +443,8 @@ export default function ProCollectionPage() {
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.4, duration: 0.6 }}
-  className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+  className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+
 >
   <div className="bg-gray-900 p-6 md:p-10">
     <h2 className="text-2xl font-semibold text-center">
@@ -534,7 +539,8 @@ export default function ProCollectionPage() {
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.6, duration: 0.6 }}
-  className="mt-8 w-full max-w-6xl mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+  className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+
 >
   <div className="bg-gray-900 p-6 md:p-10">
     <h2 className="text-2xl font-semibold text-center">
