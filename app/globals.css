@@ -224,11 +224,10 @@ div[class*="border-gray-700"] {
 }
 
 /* =========================================
-   🧩 Visual stability and rendering tweaks
+   🧩 Visual stability and rendering tweaks — FIXED
    ========================================= */
 * {
   backface-visibility: hidden;
-  transform-style: preserve-3d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -248,7 +247,7 @@ body {
   color: white;
 }
 
-/* Default state — no forced hiding */
+/* Default state — allow vertical scrolling */
 body {
   overflow-y: auto;
 }
@@ -281,7 +280,9 @@ html {
   background: #5a5a5a;
 }
 
-
+/* =========================================
+   💳 PayPal button centering fix
+   ========================================= */
 #paypal-button-container iframe {
   display: block !important;
   margin: 0 auto !important;
