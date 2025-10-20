@@ -137,7 +137,7 @@ export default function GeneratorPage() {
           </div>
         )}
       </div>
-
+<br/>
       {/* 🧩 Input fields */}
       <div className="grid grid-cols-2 gap-4 mb-6">
         <select
@@ -178,7 +178,7 @@ export default function GeneratorPage() {
           <option>Male</option>
         </select>
       </div>
-
+<br/>
       {/* 🟢 Generate / Buy button */}
       <button
         onClick={() => {
@@ -215,6 +215,9 @@ export default function GeneratorPage() {
 
       {error && <p className="text-red-400 mt-4">{error}</p>}
 
+      <br />
+      {/* 🔹 Generated image + download button */}
+
       {imageUrl && (
         <div className="mt-12 text-center">
           <img
@@ -222,6 +225,7 @@ export default function GeneratorPage() {
             alt="Generated EmotionDeck Portrait"
             className="rounded-xl max-w-[400px] mx-auto mb-5"
           />
+ <br /> <br />
           <button
             onClick={handleDownload}
             onMouseEnter={() => setHovered(true)}
