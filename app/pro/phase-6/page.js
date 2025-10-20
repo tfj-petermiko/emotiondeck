@@ -1,77 +1,257 @@
-// app/pro/phase-6/layout.js
-import fs from "fs";
-import path from "path";
+"use client";
 
-const metadataFile = path.join(process.cwd(), "app/pro/phase-6/metadata.txt");
+import { useState } from "react";
+import { motion } from "framer-motion";
+import ImageModal from "../../components/ImageModal";
 
-// 🔹 Function to parse metadata.txt
-function parseMetadata(filePath) {
-  if (!fs.existsSync(filePath)) return {};
+export default function ProCollectionPhase6() {
+  // 🌍 Regions and ages (gender not used as a filter)
+  const regions = [
+    "European",
+    "African",
+    "EastAsian",
+    "SouthAsian",
+    "MiddleEastern",
+    "LatinAmerican",
+    "PacificIslander",
+    "CentralAsian",
+    "NativeAmerican",
+    "AustralianAboriginal",
+    "Arctic",
+    "NorthAmerican",
+  ];
 
-  const content = fs.readFileSync(filePath, "utf-8");
-  const lines = content.split("\n").filter((l) => l.trim() && !l.startsWith("# "));
-  const meta = {};
-  let currentKey = "";
+  const ages = [
+    "Infant",
+    "Toddler",
+    "Child",
+    "Teen",
+    "YoungAdult",
+    "AdultEarly",
+    "Adult",
+    "MatureAdult",
+    "Senior",
+    "Elderly",
+  ];
 
-  for (const line of lines) {
-    if (line.startsWith("#")) {
-      currentKey = line.replace("#", "").trim();
-      meta[currentKey] = "";
-    } else if (currentKey) {
-      meta[currentKey] += (meta[currentKey] ? "\n" : "") + line.trim();
-    }
-  }
+  // Default selection (start from SouthAsian)
+  const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
+  const [selectedAge, setSelectedAge] = useState("All");
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  return meta;
-}
+  // 🧩 Real dataset (based on actual file structure)
+  const realImages = [
+    // Joy — European Female
+    ...ages.map((age) => ({
+      emotion: "Joy",
+      region: "European",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Joy_European_${age}_Female.webp`,
+    })),
 
-// 🧠 Load metadata from file
-const meta = parseMetadata(metadataFile);
+    // Serenity — EastAsian Female
+    ...ages.map((age) => ({
+      emotion: "Serenity",
+      region: "EastAsian",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Serenity_EastAsian_${age}_Female.webp`,
+    })),
 
-// 🧩 Create Next.js metadata object dynamically
-export const metadata = {
-  metadataBase: new URL(meta.metadataBase || "https://emotiondeck.com"),
-  alternates: { canonical: meta.canonical || "https://emotiondeck.com/pro/phase-6" },
-  title: meta.title || "EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings",
-  description:
-    meta.description ||
-    "Explore EmotionDeck PRO Phase 6: Evolution — a global emotional atlas portraying human feelings across cultures, ages, and genders.",
-  keywords:
-    meta.keywords ||
-    "EmotionDeck, Evolution Collection, emotional evolution, cross-cultural emotions, empathy, global emotional intelligence, psychology of emotion, cultural anthropology, emotion perception, human dataset, visual learning",
-  openGraph: {
-    title: meta.og_title || meta.title,
-    description: meta.og_description || meta.description,
-    url: meta.og_url || meta.canonical,
-    siteName: "EmotionDeck",
-    images: [
-      {
-        url: meta.og_image || "https://emotiondeck.com/preview-phase6.jpg",
-        width: 1200,
-        height: 630,
-        alt: "EmotionDeck PRO Phase 6 Evolution preview",
-      },
-    ],
-    locale: "en_GB",
-    type: "website",
-  },
-  twitter: {
-    card: meta.twitter_card || "summary_large_image",
-    title: meta.twitter_title || meta.title,
-    description: meta.twitter_description || meta.description,
-    images: [meta.twitter_image || "https://emotiondeck.com/preview-phase6.jpg"],
-  },
-  icons: {
-    icon: "/favicon.ico",
-  },
-  themeColor: "#000000",
-};
+    // Pride — MiddleEastern Female
+    ...ages.map((age) => ({
+      emotion: "Pride",
+      region: "MiddleEastern",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Pride_MiddleEastern_${age}_Female.webp`,
+    })),
 
-// 🧱 Page Layout
-export default function Phase6Layout({ children }) {
+    // Love — LatinAmerican Male
+    ...ages.map((age) => ({
+      emotion: "Love",
+      region: "LatinAmerican",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Love_LatinAmerican_${age}_Male.webp`,
+    })),
+
+    // Gratitude — PacificIslander Male
+    ...ages.map((age) => ({
+      emotion: "Gratitude",
+      region: "PacificIslander",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Gratitude_PacificIslander_${age}_Male.webp`,
+    })),
+
+    // Calmness — Arctic Female
+    ...ages.map((age) => ({
+      emotion: "Calmness",
+      region: "Arctic",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Calmness_Arctic_${age}_Female.webp`,
+    })),
+
+    // Joy — African Female
+    ...ages.map((age) => ({
+      emotion: "Joy",
+      region: "African",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Joy_African_${age}_Female.webp`,
+    })),
+
+    // Pride — NorthAmerican Male
+    ...ages.map((age) => ({
+      emotion: "Pride",
+      region: "NorthAmerican",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Pride_NorthAmerican_${age}_Male.webp`,
+    })),
+
+    // Love — CentralAsian Male
+    ...ages.map((age) => ({
+      emotion: "Love",
+      region: "CentralAsian",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Love_CentralAsian_${age}_Male.webp`,
+    })),
+
+    // Love — NativeAmerican Female
+    ...ages.map((age) => ({
+      emotion: "Love",
+      region: "NativeAmerican",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Love_NativeAmerican_${age}_Female.webp`,
+    })),
+
+    // Calmness — AustralianAboriginal Male
+    ...ages.map((age) => ({
+      emotion: "Calmness",
+      region: "AustralianAboriginal",
+      gender: "Male",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Calmness_AustralianAboriginal_${age}_Male.webp`,
+    })),
+
+    // Delight — SouthAsian Female ✅ default group
+    ...ages.map((age) => ({
+      emotion: "Delight",
+      region: "SouthAsian",
+      gender: "Female",
+      age,
+      src: `/private_images/pro/phase_6/Evolution_Delight_SouthAsian_${age}_Female.webp`,
+    })),
+  ];
+
+  // 🔎 Filter logic: region + age (supports "All")
+  const filtered = realImages.filter(
+    (img) =>
+      (selectedRegion === "All" || img.region === selectedRegion) &&
+      (selectedAge === "All" || img.age === selectedAge)
+  );
+
   return (
-    <div className="relative z-0 overflow-visible min-h-screen bg-neutral-900 text-white font-sans">
-      <div className="mx-[10%]">{children}</div>
-    </div>
+    <main className="min-h-screen bg-neutral-900 text-white font-sans relative overflow-visible">
+      {/* 🧠 HEADER */}
+      <section className="text-center mt-20 px-6">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-6xl font-bold mb-4"
+        >
+          EmotionDeck PRO — Phase 6: Evolution 🌍
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
+        >
+          The Evolution Collection Explores Emotional Growth across Cultures and Ages —  
+          from Infancy to Wisdom. A Visual Atlas of Universal Human Emotion.
+        </motion.p>
+      </section>
+
+      {/* 🎛 FILTERS */}
+      <section className="flex flex-wrap justify-center gap-4 mt-16 text-neutral-900">
+        <select
+          value={selectedRegion}
+          onChange={(e) => setSelectedRegion(e.target.value)}
+          className="px-4 py-2 rounded-md bg-white text-sm"
+        >
+          <option value="All">All Regions</option>
+          {regions.map((region) => (
+            <option key={region}>{region}</option>
+          ))}
+        </select>
+
+        <select
+          value={selectedAge}
+          onChange={(e) => setSelectedAge(e.target.value)}
+          className="px-4 py-2 rounded-md bg-white text-sm"
+        >
+          <option value="All">All Ages</option>
+          {ages.map((age) => (
+            <option key={age}>{age}</option>
+          ))}
+        </select>
+      </section>
+
+      {/* 🖼 GALLERY */}
+      <section id="gallery" className="w-full mt-16">
+        <div className="gallery-grid">
+          {filtered.map((img) => (
+            <motion.div
+              key={img.src}
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden cursor-pointer"
+              onClick={() => setSelectedImage(img.src)}
+            >
+              <img
+                src={img.src}
+                alt={`${img.emotion} — ${img.region} (${img.age})`}
+                className="gallery-image"
+                loading="lazy"
+                onError={(e) => {
+                  console.warn("❌ Missing file:", e.target.src);
+                  e.target.style.display = "none";
+                }}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* 🔍 IMAGE MODAL */}
+      <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
+
+      {/* 🎨 STYLES */}
+      <style jsx global>{`
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 1rem;
+          padding: 1rem;
+        }
+        .gallery-image {
+          width: 100%;
+          height: 260px;
+          object-fit: cover;
+          border-radius: 0.75rem;
+          background-color: #111;
+          transition: transform 0.3s ease;
+        }
+      `}</style>
+    </main>
   );
 }
