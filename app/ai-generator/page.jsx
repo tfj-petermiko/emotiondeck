@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 
-// 🧩 Helper — load metadata.txt (client-safe via fetch)
 async function loadMetadata() {
   try {
     const res = await fetch("/content/ai-generator/metadata.txt");
@@ -10,7 +9,6 @@ async function loadMetadata() {
     const text = await res.text();
     const meta = {};
     let currentKey = "";
-
     text.split("\n").forEach((line) => {
       if (line.startsWith("#")) {
         currentKey = line.replace("#", "").trim();
@@ -19,7 +17,6 @@ async function loadMetadata() {
         meta[currentKey] += (meta[currentKey] ? "\n" : "") + line.trim();
       }
     });
-
     Object.keys(meta).forEach((k) => (meta[k] = meta[k].trim()));
     return meta;
   } catch {
@@ -28,19 +25,14 @@ async function loadMetadata() {
 }
 
 export default function GeneratorPage() {
-  const [form, setForm] = useState({
-    ethnicity: "",
-    emotion: "",
-    ageGroup: "",
-    gender: "",
-  });
+  const [form, setForm] = useState({ ethnicity: "", emotion: "", ageGroup: "", gender: "" });
   const [imageUrl, setImageUrl] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [generationCount, setGenerationCount] = useState(0);
-  const [hovered, setHovered] = useState(false); // ✅ for hover effect
+  const [hovered, setHovered] = useState(false);
+  const [remaining, setRemaining] = useState(0);
+  const totalCredits = 10;
 
-  // 🟢 Shared button style (same as in PRO)
   const baseButtonStyle = {
     backgroundColor: "#10B981",
     color: "#ffffff",
@@ -53,71 +45,31 @@ export default function GeneratorPage() {
     transition: "background-color 0.2s ease, transform 0.2s ease",
   };
 
-  // 🧭 Load metadata.txt silently (for SEO only)
   useEffect(() => {
     loadMetadata();
-  }, []);
-
-  // 🌍 Ethnic groups
-  const ethnicities = [
-    "European",
-    "African",
-    "East Asian",
-    "South Asian",
-    "Middle Eastern",
-    "Latin American",
-    "Pacific Islander",
-    "Central Asian",
-    "Native American",
-    "Australian Aboriginal",
-    "Arctic",
-    "North American",
-  ];
-
-  // 👤 Age groups (excluding children)
-  const ageGroups = [
-    "Young Adult",
-    "Adult",
-    "Mature Adult",
-    "Senior",
-    "Elderly",
-  ];
-
-  // 🧩 Load daily generation limit
-  useEffect(() => {
-    const stored = localStorage.getItem("emotiondeck_generation_data");
-    const today = new Date().toDateString();
-
-    if (stored) {
-      const { date, count } = JSON.parse(stored);
-      if (date === today) setGenerationCount(count);
-      else
-        localStorage.setItem(
-          "emotiondeck_generation_data",
-          JSON.stringify({ date: today, count: 0 })
-        );
-    } else {
-      localStorage.setItem(
-        "emotiondeck_generation_data",
-        JSON.stringify({ date: today, count: 0 })
-      );
+    const access = localStorage.getItem("emotiondeck_ai_access");
+    if (access) {
+      const { remaining } = JSON.parse(access);
+      setRemaining(remaining || 0);
     }
   }, []);
 
-  const updateGenerationCount = () => {
-    const today = new Date().toDateString();
-    const newCount = generationCount + 1;
-    setGenerationCount(newCount);
-    localStorage.setItem(
-      "emotiondeck_generation_data",
-      JSON.stringify({ date: today, count: newCount })
-    );
+  const ethnicities = [
+    "European", "African", "East Asian", "South Asian", "Middle Eastern",
+    "Latin American", "Pacific Islander", "Central Asian",
+    "Native American", "Australian Aboriginal", "Arctic", "North American",
+  ];
+
+  const ageGroups = ["Young Adult", "Adult", "Mature Adult", "Senior", "Elderly"];
+
+  const updateAccess = (newRemaining) => {
+    localStorage.setItem("emotiondeck_ai_access", JSON.stringify({ remaining: newRemaining }));
+    setRemaining(newRemaining);
   };
 
-  // ⚙️ Generate image
   const generate = async () => {
-    if (generationCount >= 3) {
-      setError("⚠️ Daily limit reached (3 generations per day). Please come back tomorrow.");
+    if (remaining <= 0) {
+      window.location.href = "/ai-generator/checkout";
       return;
     }
 
@@ -136,7 +88,7 @@ export default function GeneratorPage() {
       if (data.error) throw new Error(data.error);
 
       setImageUrl(data.image_url);
-      updateGenerationCount();
+      updateAccess(remaining - 1);
     } catch (err) {
       console.error(err);
       setError("Generation failed. Try again.");
@@ -145,7 +97,6 @@ export default function GeneratorPage() {
     }
   };
 
-  // 💾 Download
   const handleDownload = () => {
     if (!imageUrl) return;
     const link = document.createElement("a");
@@ -156,87 +107,114 @@ export default function GeneratorPage() {
     document.body.removeChild(link);
   };
 
+  const progressPercent = (remaining / totalCredits) * 100;
+
   return (
     <main className="min-h-screen bg-neutral-950 text-white flex flex-col items-center justify-center p-8">
-      <h1 className="text-3xl font-semibold mb-6">
-        ⚙️ EmotionDeck — AI Portrait Generator
-      </h1>
+      <h1 className="text-3xl font-semibold mb-6">⚙️ EmotionDeck — AI Portrait Generator</h1>
       <p className="text-gray-400 mb-8 text-center max-w-lg">
-        Create Black & White Portraits in the Official EmotionDeck Style. <br />
+        Create Black & White Portraits in the Official EmotionDeck Style.<br />
         Choose Ethnicity, Emotion, Age Group, and Gender.
       </p>
 
-      {/* 🔹 Input Fields */}
+      {/* 🎨 Credit info + progress bar */}
+      <div className="mb-6 text-center w-full max-w-md">
+        {remaining > 0 ? (
+          <>
+            <p className="text-emerald-400 font-medium mb-2">
+              🎨 {remaining} of {totalCredits} generations left
+            </p>
+            <div className="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-emerald-500 transition-all duration-500 ease-in-out"
+                style={{ width: `${progressPercent}%` }}
+              ></div>
+            </div>
+          </>
+        ) : (
+          <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 max-w-md mx-auto">
+            🔒 No credits left — pay £4.99 to unlock 10 new generations.
+          </div>
+        )}
+      </div>
+<br />
+      {/* 🧩 Input fields */}
       <div className="grid grid-cols-2 gap-4 mb-6">
-        {/* Ethnic group */}
         <select
-          className="p-3 bg-neutral-900 border border-gray-800 rounded-xl focus:outline-none text-gray-300"
+          className="p-3 bg-neutral-900 border border-gray-800 rounded-xl text-gray-300"
           onChange={(e) => setForm({ ...form, ethnicity: e.target.value })}
           defaultValue=""
         >
           <option value="" disabled>Select Ethnic Group</option>
           {ethnicities.map((eth) => (
-            <option key={eth} value={eth}>{eth}</option>
+            <option key={eth}>{eth}</option>
           ))}
         </select>
 
-        {/* Emotion */}
         <input
           placeholder="Emotion"
           className="p-3 bg-neutral-900 border border-gray-800 rounded-xl focus:outline-none placeholder-gray-500"
           onChange={(e) => setForm({ ...form, emotion: e.target.value })}
         />
 
-        {/* Age group */}
         <select
-          className="p-3 bg-neutral-900 border border-gray-800 rounded-xl focus:outline-none text-gray-300"
+          className="p-3 bg-neutral-900 border border-gray-800 rounded-xl text-gray-300"
           onChange={(e) => setForm({ ...form, ageGroup: e.target.value })}
           defaultValue=""
         >
           <option value="" disabled>Select Age Group</option>
           {ageGroups.map((age) => (
-            <option key={age} value={age}>{age}</option>
+            <option key={age}>{age}</option>
           ))}
         </select>
 
-        {/* Gender */}
         <select
-          className="p-3 bg-neutral-900 border border-gray-800 rounded-xl focus:outline-none text-gray-300"
+          className="p-3 bg-neutral-900 border border-gray-800 rounded-xl text-gray-300"
           onChange={(e) => setForm({ ...form, gender: e.target.value })}
           defaultValue=""
         >
           <option value="" disabled>Select Gender</option>
-          <option value="Female">Female</option>
-          <option value="Male">Male</option>
+          <option>Female</option>
+          <option>Male</option>
         </select>
       </div>
 <br />
-      {/* 🟢 Generate Button */}
+      {/* 🟢 Generate / Buy button */}
       <button
-        onClick={generate}
-        disabled={loading || generationCount >= 3}
+        onClick={() => {
+          if (remaining <= 0) {
+            window.location.href = "/ai-generator/checkout";
+          } else {
+            generate();
+          }
+        }}
+        disabled={loading}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
           ...baseButtonStyle,
-          backgroundColor:
-            loading || generationCount >= 3
-              ? "#374151"
-              : hovered
-              ? "#34D399"
-              : "#10B981",
-          cursor: loading || generationCount >= 3 ? "not-allowed" : "pointer",
+          backgroundColor: loading
+            ? "#374151"
+            : remaining <= 0
+            ? hovered
+              ? "#FDE047"
+              : "#FACC15"
+            : hovered
+            ? "#34D399"
+            : "#10B981",
+          color: remaining <= 0 ? "#000" : "#fff",
+          cursor: loading ? "not-allowed" : "pointer",
         }}
       >
         {loading
           ? "Generating..."
-          : generationCount >= 3
-          ? "Limit Reached"
-          : `Generate Portrait (${3 - generationCount} left)`}
+          : remaining <= 0
+          ? "Buy More Credits (£4.99)"
+          : "Generate Portrait"}
       </button>
-
+<br/>
       {error && <p className="text-red-400 mt-4">{error}</p>}
-<br />
+
       {imageUrl && (
         <div className="mt-12 text-center">
           <img
@@ -244,7 +222,9 @@ export default function GeneratorPage() {
             alt="Generated EmotionDeck Portrait"
             className="rounded-xl max-w-[400px] mx-auto mb-5"
           />
- <br /><br />         <button
+
+<br/><br/>
+          <button
             onClick={handleDownload}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
