@@ -95,7 +95,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/free", "Free Access — No Time Limit", "p1")}
+                    {renderButton("/free", "Free Access", "p1")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -185,7 +185,7 @@ export default function ProCollectionPage() {
                   </p>
 
                   <div className="flex justify-end">
-                    {renderButton("/pro/phase-2", "Early Access — No Time Limit", "p2")}
+                    {renderButton("/pro/phase-2", "Early Access", "p2")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -277,7 +277,7 @@ export default function ProCollectionPage() {
             </p>
 
             <div className="flex justify-end">
-              {renderButton("/pro/phase-3", "Early Access — No Time Limit", "p3")}
+              {renderButton("/pro/phase-3", "Early Access", "p3")}
             </div>
           </td>
 
@@ -375,7 +375,7 @@ export default function ProCollectionPage() {
                   </p>
 
                    <div className="flex justify-end">
-              {renderButton("/pro/phase-4", "Early Access — No Time Limit", "p4")}
+              {renderButton("/pro/phase-4", "Early Access", "p4")}
             </div>
                 </td>
 
@@ -469,7 +469,7 @@ export default function ProCollectionPage() {
 
 
              <div className="flex justify-end">
-              {renderButton("/pro/phase-5", "Early Access — No Time Limit", "p5")}
+              {renderButton("/pro/phase-5", "Early Access", "p5")}
             </div>
           </td>
 
@@ -570,7 +570,7 @@ export default function ProCollectionPage() {
             </p>
 
             <div className="flex justify-end">
-              {renderButton("/pro/phase-6", "Early Access — No Time Limit", "p6")}
+              {renderButton("/pro/phase-6", "Early Access", "p6")}
             </div>
           </td>
 
