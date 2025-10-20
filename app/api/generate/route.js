@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
+import { File } from "node:buffer"; // ✅ ważne — dodaj ten import
 
 export const runtime = "nodejs";
 
@@ -20,6 +21,9 @@ export async function POST(req) {
 
     // 🧩 Read reference image
     const buffer = fs.readFileSync(referencePath);
+
+    // ✅ Convert buffer to File (required by OpenAI SDK)
+    const imageFile = new File([buffer], "reference.png", { type: "image/png" });
 
     // ⚙️ Generate prompt
     const prompt = `
@@ -46,10 +50,10 @@ Maintain identical studio setup:
 Output: ultra-realistic black-and-white photo, 1024×1536 resolution, EmotionDeck visual consistency.
 `;
 
-    // 🧠 Send image as binary buffer (Vercel-compatible)
+    // 🧠 Generate new image
     const result = await openai.images.edit({
       model: "gpt-image-1",
-      image: buffer,
+      image: imageFile, // ✅ używamy File, nie Buffer
       prompt,
       size: "1024x1536",
     });
@@ -57,7 +61,7 @@ Output: ultra-realistic black-and-white photo, 1024×1536 resolution, EmotionDec
     const base64 = result.data[0].b64_json;
     const image_url = `data:image/png;base64,${base64}`;
 
-    console.log(`✅ ${ethnicity} | ${ageGroup} | ${gender} | ${emotion}`);
+    console.log(`✅ Generated: ${ethnicity} | ${ageGroup} | ${gender} | ${emotion}`);
 
     return new Response(
       JSON.stringify({ image_url, category: ageGroup }),

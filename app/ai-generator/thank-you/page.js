@@ -24,11 +24,11 @@ export default function AIGeneratorThankYou() {
       <div className="bg-gray-800 rounded-2xl shadow-2xl p-10 text-center max-w-lg">
         <h1 className="text-3xl font-bold text-emerald-400 mb-4">🎉 Thank You!</h1>
         <p className="text-gray-300 mb-4">
-          Your payment was successful. You now have{" "}
-          <strong>10 available generations</strong> in the EmotionDeck AI Generator.
+          Your Payment Was Successful. You Now Have{" "}
+          <strong>10 Available Generations</strong> in The EmotionDeck AI Generator.
         </p>
         <p className="text-gray-400 mb-8">
-          Each click on “Generate Portrait” uses one generation credit.
+          Each Click on “Generate Portrait” Uses One Generation Credit.
         </p>
 
         <button

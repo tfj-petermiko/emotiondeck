@@ -280,3 +280,16 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
 }
+
+
+#paypal-button-container iframe {
+  display: block !important;
+  margin: 0 auto !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 340px !important;
+  min-width: 300px !important;
+  border: none !important;
+}
+
+
