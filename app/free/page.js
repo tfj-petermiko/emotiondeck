@@ -167,7 +167,7 @@ export default function FreeCollection() {
           ))}
         </select>
       </section>
-
+<br />
       {/* Gallery */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
