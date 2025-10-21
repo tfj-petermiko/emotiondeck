@@ -417,6 +417,86 @@ body {
   color: #f5f5f5 !important;
 }
 
+/* =========================================
+   ⚖️ Legal Table Styles (EmotionDeck)
+   ========================================= */
+
+section.legal-table {
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #111;
+  border-left: 1px solid #3a3a3a;
+  border-right: 1px solid #3a3a3a;
+  border-top: 1px solid #3a3a3a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Table layout */
+section.legal-table table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+/* Row dividers */
+section.legal-table tr {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+/* Table cells */
+section.legal-table td,
+section.legal-table th {
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+  border: none;
+}
+
+/* Label column */
+section.legal-table td:first-child {
+  width: 30%;
+  color: #aaa;
+  font-weight: 500;
+}
+
+/* Value column */
+section.legal-table td:last-child {
+  color: #fff;
+}
+
+/* Responsive behaviour */
+@media (max-width: 768px) {
+  section.legal-table,
+  section.legal-table table,
+  section.legal-table tbody,
+  section.legal-table tr,
+  section.legal-table td {
+    display: block;
+    width: 100%;
+  }
+
+  section.legal-table tr {
+    margin-bottom: 1.5rem;
+    border: none;
+  }
+
+  section.legal-table td {
+    padding: 0.4rem 0;
+  }
+
+  section.legal-table td:first-child {
+    color: #bbb;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  section.legal-table td:last-child {
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+}
 
 
 
