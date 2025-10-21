@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function LearnPage() {
-  const [hovered, setHovered] = useState(false);
+  const [hoveredQuiz, setHoveredQuiz] = useState(false);
+  const [loadingQuiz, setLoadingQuiz] = useState(false);
+  const [hoveredFACS, setHoveredFACS] = useState(false);
+  const [loadingFACS, setLoadingFACS] = useState(false);
   const [hoveredMirror, setHoveredMirror] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [loadingMirror, setLoadingMirror] = useState(false);
 
   // 🎨 Base style for buttons
@@ -20,8 +22,15 @@ export default function LearnPage() {
     boxShadow: "0 0 12px rgba(16,185,129,0.2)",
   };
 
+  const handleQuizClick = () => {
+    setLoadingQuiz(true);
+    setTimeout(() => {
+      window.location.href = "/learn/quizzes";
+    }, 500);
+  };
+
   const handleFACSClick = () => {
-    setLoading(true);
+    setLoadingFACS(true);
     setTimeout(() => {
       window.location.href = "/learn/facs";
     }, 500);
@@ -49,16 +58,110 @@ export default function LearnPage() {
       <p className="text-gray-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
         Explore human emotions through science, psychology, and AI. The{" "}
         <span className="text-emerald-400 font-medium">Learn & Grow</span> section
-        reveals how emotions are expressed and shared across cultures — with interactive tools.
+        reveals how emotions are expressed and shared across cultures — with interactive tools and quizzes.
       </p>
 
       {/* ========================== */}
-      {/* 📚 MODULE 1 — FACS ANALYSER */}
+      {/* 🧠 MODULE 1 — EMOTION RECOGNITION QUIZZES */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.6 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+      >
+        <div className="bg-gray-900 p-6 md:p-10">
+          <h2 className="text-2xl font-semibold text-center">
+            Emotion Recognition Quizzes — Test Your Understanding
+          </h2>
+          <p className="text-center text-gray-400 italic mb-6">
+            Identify emotions from AI portraits — based on the Free Collection
+          </p>
+
+          <table className="w-full text-sm md:text-base border-collapse">
+            <tbody>
+              <tr className="border-b border-gray-800 align-top">
+                <td className="w-1/4" />
+                <td className="w-2/4 p-3 text-white">
+                  <p className="font-semibold mb-1">
+                    Learn to recognise emotional expressions through practice.
+                  </p>
+                  <p className="text-gray-400 mb-3">
+                    EmotionDeck Quizzes let you identify which emotion is shown
+                    in portraits from the{" "}
+                    <strong>Free Basic Collection</strong>. Each quiz offers
+                    multiple-choice questions designed to strengthen your visual
+                    emotional intelligence.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+                    Each image presents a real human-like expression from different
+                    cultures and backgrounds. Test yourself and see how well you
+                    understand universal emotional cues.
+                  </p>
+                  <div className="flex justify-end mt-6">
+                    <button
+                      onClick={handleQuizClick}
+                      disabled={loadingQuiz}
+                      onMouseEnter={() => setHoveredQuiz(true)}
+                      onMouseLeave={() => setHoveredQuiz(false)}
+                      style={{
+                        ...baseButtonStyle,
+                        backgroundColor: loadingQuiz
+                          ? "#374151"
+                          : hoveredQuiz
+                          ? "#34D399"
+                          : "#10B981",
+                        color: "#fff",
+                        cursor: loadingQuiz ? "not-allowed" : "pointer",
+                      }}
+                    >
+                      {loadingQuiz ? "Loading..." : "Go to Quizzes"}
+                    </button>
+                  </div>
+                  <br />
+                </td>
+
+                <td className="p-3 w-[240px] text-center align-top">
+                  <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+                    <img
+                      src="/private_images/images/quizzes.webp"
+                      alt="Emotion Recognition Quizzes"
+                      className="object-cover w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="text-gray-400 text-xs mt-2">
+                    EmotionDeck — Quiz Preview
+                  </p>
+                </td>
+              </tr>
+
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Learning Focus</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Emotion recognition, empathy, and visual pattern understanding
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3 text-gray-400">Access Type</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Free — Available in Learn & Grow
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </motion.section>
+
+      <br />
+
+      {/* ========================== */}
+      {/* 📚 MODULE 2 — FACS ANALYSER */}
+      {/* ========================== */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
         className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
@@ -87,28 +190,25 @@ export default function LearnPage() {
                     It visualises muscle activations that correspond to each emotion,
                     helping users recognise subtle emotional cues.
                   </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    The system uses <strong>MediaPipe</strong> and <strong>face-api.js</strong> for accurate live detection — perfect for understanding microexpressions,
-                    empathy, and nonverbal signals.
-                  </p>
+
                   <div className="flex justify-end mt-6">
                     <button
                       onClick={handleFACSClick}
-                      disabled={loading}
-                      onMouseEnter={() => setHovered(true)}
-                      onMouseLeave={() => setHovered(false)}
+                      disabled={loadingFACS}
+                      onMouseEnter={() => setHoveredFACS(true)}
+                      onMouseLeave={() => setHoveredFACS(false)}
                       style={{
                         ...baseButtonStyle,
-                        backgroundColor: loading
+                        backgroundColor: loadingFACS
                           ? "#374151"
-                          : hovered
+                          : hoveredFACS
                           ? "#34D399"
                           : "#10B981",
                         color: "#fff",
-                        cursor: loading ? "not-allowed" : "pointer",
+                        cursor: loadingFACS ? "not-allowed" : "pointer",
                       }}
                     >
-                      {loading ? "Loading..." : "Start FACS Analyzer"}
+                      {loadingFACS ? "Loading..." : "Start FACS Analyzer"}
                     </button>
                   </div>
                   <br />
@@ -128,38 +228,15 @@ export default function LearnPage() {
                   </p>
                 </td>
               </tr>
-
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Core Technology</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  MediaPipe Face Landmarker + Face-API.js
-                </td>
-              </tr>
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Learning Focus</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  Facial Action Units (AU), emotion recognition, live feedback
-                </td>
-              </tr>
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Best For</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  Students, psychologists, artists, educators
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-400">Access Type</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  Free — Available in Learn & Grow
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
       </motion.section>
-<br/>
+
+      <br />
+
       {/* ========================== */}
-      {/* 🪞 MODULE 2 — EMOTION MIRROR */}
+      {/* 🪞 MODULE 3 — EMOTION MIRROR */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -197,6 +274,7 @@ export default function LearnPage() {
                     are represented across different cultures — reinforcing emotional
                     empathy and global understanding.
                   </p>
+
                   <div className="flex justify-end mt-6">
                     <button
                       onClick={handleMirrorClick}
@@ -207,7 +285,7 @@ export default function LearnPage() {
                         ...baseButtonStyle,
                         backgroundColor: loadingMirror
                           ? "#374151"
-                          : hovered
+                          : hoveredMirror
                           ? "#34D399"
                           : "#10B981",
                         color: "#fff",
@@ -232,31 +310,6 @@ export default function LearnPage() {
                   <p className="text-gray-400 text-xs mt-2">
                     EmotionDeck Mirror Interface
                   </p>
-                </td>
-              </tr>
-
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Core Technology</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  FACS + EmotionDeck AI Portrait Comparison
-                </td>
-              </tr>
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Learning Focus</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  Emotional reflection, cultural universality, real-time analysis
-                </td>
-              </tr>
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Best For</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  Students, therapists, artists, educators, and emotion enthusiasts
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-400">Access Type</td>
-                <td className="p-3 text-white" colSpan={2}>
-                  Free — Available in Learn & Grow
                 </td>
               </tr>
             </tbody>
