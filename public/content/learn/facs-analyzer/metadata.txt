@@ -1,0 +1,38 @@
+# metadataBase
+https://emotiondeck.com
+
+# canonical
+https://emotiondeck.com/pro/facs-analyzer
+
+# title
+EmotionDeck PRO — Live Emotion Mirror
+
+# description
+Experience real-time emotion analysis with the EmotionDeck PRO Live Emotion Mirror. Compare your facial expressions with AI-generated portraits from the EmotionDeck Universe and explore how emotions connect across cultures.
+
+# keywords
+EmotionDeck PRO, Emotion Mirror, real-time emotion analysis, AI emotion recognition, FACS analyzer, facial expression comparison, psychology and AI, emotion science, emotional intelligence, EmotionDeck Universe
+
+# og_title
+EmotionDeck PRO — Live Emotion Mirror
+
+# og_description
+Analyse your face in real time and compare it with AI portraits from the EmotionDeck Universe. Discover the emotional reflection of your expressions.
+
+# og_url
+https://emotiondeck.com/pro/facs-analyzer
+
+# og_image
+https://emotiondeck.com/preview-emotion-mirror.jpg
+
+# twitter_card
+summary_large_image
+
+# twitter_title
+EmotionDeck PRO — Live Emotion Mirror
+
+# twitter_description
+Experience the Emotion Mirror — a real-time AI emotion analyzer that reflects your expression using the EmotionDeck Universe.
+
+# twitter_image
+https://emotiondeck.com/preview-emotion-mirror.jpg

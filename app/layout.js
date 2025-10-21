@@ -13,25 +13,41 @@ function loadMetadata() {
     const baseDir = path.join(process.cwd(), "public", "content");
     const cwd = __dirname.replace(/\\/g, "/");
 
-    // 🧭 All supported sections (Home + Pro phases + new ones)
-    const sections = [
-      
-      { key: "legal/privacy", dir: "legal/privacy" },
-      { key: "legal/terms", dir: "legal/terms" },
-      { key: "legal/cookies", dir: "legal/cookies" },
-      { key: "legal", dir: "legal" },
-      { key: "pro/phase-6", dir: "pro/phase-6" },
-      { key: "pro/phase-5", dir: "pro/phase-5" },
-      { key: "pro/phase-4", dir: "pro/phase-4" },
-      { key: "pro/phase-3", dir: "pro/phase-3" },
-      { key: "pro/phase-2", dir: "pro/phase-2" },
-      { key: "pro", dir: "pro" },
-      { key: "free", dir: "free" },
-      { key: "learn", dir: "learn" },
-      { key: "globalmap", dir: "globalmap" },
-      { key: "generator", dir: "generator" },
-      { key: "home", dir: "home" },
-    ];
+// 🧭 All supported sections (Home + Pro phases + Learn + Legal + others)
+const sections = [
+  // ⚖️ Legal pages
+  { key: "legal/privacy", dir: "legal/privacy" },
+  { key: "legal/terms", dir: "legal/terms" },
+  { key: "legal/cookies", dir: "legal/cookies" },
+  { key: "legal", dir: "legal" },
+
+  // 💎 PRO Phases
+  { key: "pro/phase-6", dir: "pro/phase-6" },
+  { key: "pro/phase-5", dir: "pro/phase-5" },
+  { key: "pro/phase-4", dir: "pro/phase-4" },
+  { key: "pro/phase-3", dir: "pro/phase-3" },
+  { key: "pro/phase-2", dir: "pro/phase-2" },
+  { key: "pro/phase-1", dir: "pro/phase-1" }, // optional if exists
+  { key: "pro/facs-analyzer", dir: "pro/facs-analyzer" },
+  { key: "pro", dir: "pro" },
+
+  // 🧠 Learn section
+  { key: "learn/quizzes/quiz-1", dir: "learn/quizzes/quiz-1" },
+  { key: "learn/quizzes", dir: "learn/quizzes" },
+  { key: "learn/facs", dir: "learn/facs" },
+  { key: "learn", dir: "learn" },
+
+  // 🌍 Global Map
+  { key: "globalmap", dir: "globalmap" },
+
+  // ⚙️ Generator
+  { key: "generator", dir: "generator" },
+
+  // 🏠 Home + Free
+  { key: "free", dir: "free" },
+  { key: "home", dir: "home" },
+];
+
 
     // 🔍 Detect which section is being built
     let selectedDir = "home"; // default for /
