@@ -195,14 +195,7 @@ export default function MobileMenu() {
               >
                 EmotionDeck — One World, Many Emotions
               </div>
-              <br />
-              Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term psychological and cultural project created from the perspective of a Highly Sensitive Person (HSP).  
-              It explores how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself.  
-              <br /><br />
-              EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and science — exploring the emotional patterns that define and connect humanity.  
-              <br /><br />
-              <em>“To see emotion is to understand humanity.”</em>
-              <br />
+<br /> Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term psychological and cultural project. It explores how emotion, culture, history, upbringing, and ethnicity shape the way humanity feels and expresses itself. <br /><br /> EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion — revealing how traditions, values, and social contexts influence the way we express and perceive feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and science — exploring the emotional patterns that define and connect humanity. <br /><br /> <em>“To see emotion is to understand humanity.”</em> <br />
               <div
                 style={{
                   width: "100%",
