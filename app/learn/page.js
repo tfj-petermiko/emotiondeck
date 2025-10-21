@@ -88,7 +88,7 @@ export default function LearnPage() {
                     helping users recognise subtle emotional cues.
                   </p>
                   <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    The system uses <strong>MediaPipe</strong> and <strong>face-api.js</strong>
+                    The system uses <strong>MediaPipe</strong> and <strong>face-api.js</strong> 
                     for accurate live detection — perfect for understanding microexpressions,
                     empathy, and nonverbal signals.
                   </p>
