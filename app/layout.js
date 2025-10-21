@@ -15,6 +15,11 @@ function loadMetadata() {
 
     // 🧭 All supported sections (Home + Pro phases + new ones)
     const sections = [
+      
+      { key: "legal/privacy", dir: "legal/privacy" },
+      { key: "legal/terms", dir: "legal/terms" },
+      { key: "legal/cookies", dir: "legal/cookies" },
+      { key: "legal", dir: "legal" },
       { key: "pro/phase-6", dir: "pro/phase-6" },
       { key: "pro/phase-5", dir: "pro/phase-5" },
       { key: "pro/phase-4", dir: "pro/phase-4" },

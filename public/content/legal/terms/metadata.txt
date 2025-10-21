@@ -1,0 +1,38 @@
+# metadataBase
+https://emotiondeck.com
+
+# canonical
+https://emotiondeck.com/legal/terms
+
+# title
+EmotionDeck Terms of Use — Your Rights & Responsibilities
+
+# description
+Read the Terms of Use for EmotionDeck to understand your rights, responsibilities, and the rules for accessing and using our platform and content.
+
+# keywords
+EmotionDeck Terms of Use, legal agreement, intellectual property, permitted use, liability, terms and conditions, user responsibilities, UK law, online rights
+
+# og_title
+EmotionDeck Terms of Use — Your Rights & Responsibilities
+
+# og_description
+Learn about EmotionDeck’s Terms of Use, including intellectual property, permitted use, and user obligations.
+
+# og_url
+https://emotiondeck.com/legal/terms
+
+# og_image
+https://emotiondeck.com/preview-terms.jpg
+
+# twitter_card
+summary_large_image
+
+# twitter_title
+EmotionDeck Terms of Use — Your Rights & Responsibilities
+
+# twitter_description
+Understand the Terms governing your use of the EmotionDeck platform and its content.
+
+# twitter_image
+https://emotiondeck.com/preview-terms.jpg

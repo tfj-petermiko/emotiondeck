@@ -27,8 +27,7 @@ export default function LegalPage() {
   const data = [
     {
       label: "Compliance",
-      value:
-        "All documents align with UK GDPR and EU data protection standards.",
+      value: "All documents align with UK GDPR and EU data protection standards.",
     },
     {
       label: "Hosting",
@@ -36,12 +35,10 @@ export default function LegalPage() {
     },
     {
       label: "Transparency",
-      value:
-        "We strive for clear, accessible, and user-friendly legal information.",
+      value: "We strive for clear, accessible, and user-friendly legal information.",
     },
   ];
 
-  // 🌿 Green button style (copied from PRO Collection)
   const baseButtonStyle = {
     backgroundColor: hovered ? "#34D399" : "#10B981",
     color: "#ffffff",
@@ -56,7 +53,6 @@ export default function LegalPage() {
 
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
-      {/* 🧾 Header */}
       <section className="text-center w-[80%] mx-auto mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Legal Information — EmotionDeck
@@ -65,8 +61,8 @@ export default function LegalPage() {
           Last updated: <strong>October 2025</strong>
         </p>
         <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Welcome to the legal section of EmotionDeck.  
-          Here you can access our Privacy Policy, Terms of Use, and Cookies Policy —  
+          Welcome to the legal section of EmotionDeck.
+          Here you can access our Privacy Policy, Terms of Use, and Cookies Policy —
           all written transparently in compliance with UK and EU law.
         </p>
       </section>
@@ -97,7 +93,7 @@ export default function LegalPage() {
         </table>
       </section>
 
-      {/* 🩶 Legal Table */}
+      {/* 🩶 Legal Info Table */}
       <section className="legal-table w-[80%] mx-auto mb-16">
         <table className="w-full border-collapse border border-neutral-800 rounded-2xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
           <tbody>
@@ -118,7 +114,7 @@ export default function LegalPage() {
         </table>
       </section>
 
-      {/* 🟢 Return Button — identical to PRO Collection */}
+      {/* 🟢 Return Button */}
       <div className="text-center mt-16 mb-20">
         <Link
           href="/"

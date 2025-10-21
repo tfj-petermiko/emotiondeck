@@ -1,0 +1,38 @@
+# metadataBase
+https://emotiondeck.com
+
+# canonical
+https://emotiondeck.com/legal
+
+# title
+EmotionDeck Legal Information — Policies & Terms
+
+# description
+Access all legal information related to EmotionDeck, including Privacy Policy, Terms of Use, and Cookies Policy — written transparently and compliant with UK and EU law.
+
+# keywords
+EmotionDeck legal, EmotionDeck policies, Privacy Policy, Terms of Use, Cookies Policy, GDPR compliance, UK data protection, transparency, user rights, legal documents
+
+# og_title
+EmotionDeck Legal Information — Policies & Terms
+
+# og_description
+Explore all EmotionDeck legal documents including Privacy, Terms, and Cookies Policies.
+
+# og_url
+https://emotiondeck.com/legal
+
+# og_image
+https://emotiondeck.com/preview-legal.jpg
+
+# twitter_card
+summary_large_image
+
+# twitter_title
+EmotionDeck Legal Information — Policies & Terms
+
+# twitter_description
+Review EmotionDeck’s official legal documents: Privacy Policy, Terms of Use, and Cookies Policy.
+
+# twitter_image
+https://emotiondeck.com/preview-legal.jpg
