@@ -5,7 +5,7 @@ import FACSRealtimeOverlay from "../../components/FACS/FACSRealtimeOverlay";
 import Image from "next/image";
 
 export default function ProFACSAnalyzerPage() {
-  const samplePortrait = "/private_images/worldmap/OneEmotion_Joy_European_Female_Adult.webp";
+  const samplePortrait = "/private_images/images/joy.webp";
 
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16">
@@ -25,8 +25,8 @@ export default function ProFACSAnalyzerPage() {
           <Image
             src={samplePortrait}
             alt="EmotionDeck Joy Portrait"
-            width={300}
-            height={400}
+            width={341}
+            height={512}
             className="rounded-xl border border-gray-700 shadow-lg"
           />
           <p className="mt-3 text-gray-400 text-sm text-center w-64">
