@@ -88,8 +88,7 @@ export default function LearnPage() {
                     helping users recognise subtle emotional cues.
                   </p>
                   <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    The system uses <strong>MediaPipe</strong> and <strong>face-api.js</strong> 
-                    for accurate live detection — perfect for understanding microexpressions,
+                    The system uses <strong>MediaPipe</strong> and <strong>face-api.js</strong> for accurate live detection — perfect for understanding microexpressions,
                     empathy, and nonverbal signals.
                   </p>
                   <div className="flex justify-end mt-6">
@@ -151,7 +150,7 @@ export default function LearnPage() {
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  Free — available in Learn & Grow
+                  Free — Available in Learn & Grow
                 </td>
               </tr>
             </tbody>
@@ -257,7 +256,7 @@ export default function LearnPage() {
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  Free — available in Learn & Grow
+                  Free — Available in Learn & Grow
                 </td>
               </tr>
             </tbody>
