@@ -116,11 +116,7 @@ export default function EmotionQuiz1() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative w-[300px] h-[400px] mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg"
-            style={{
-              border: "2px solid #030303",
-              boxShadow: "0 0 15px rgba(10,10,10,0.5)",
-            }}
+            className="relative w-[300px] h-[400px] mx-auto mb-6 rounded-2xl overflow-hidden"
           >
             <Image
               src={current.image}
