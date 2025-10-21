@@ -11,16 +11,27 @@ export default function EmotionQuiz1() {
   const [feedback, setFeedback] = useState("");
   const [finished, setFinished] = useState(false);
   const [selected, setSelected] = useState(null);
-  const [hovered, setHovered] = useState(null);
+  const [hoveredPlay, setHoveredPlay] = useState(false);
+  const [loadingPlay, setLoadingPlay] = useState(false);
 
-  // 🎨 Colours from Learn section
+  // 🎨 Base style for buttons (same as Learn & Quizzes)
+  const baseButtonStyle = {
+    padding: "10px 22px",
+    borderRadius: "0.75rem",
+    fontWeight: 600,
+    fontSize: "0.95rem",
+    border: "none",
+    transition: "all 0.3s ease",
+    boxShadow: "0 0 12px rgba(16,185,129,0.2)",
+  };
+
   const baseGreen = "#10B981";
   const hoverGreen = "#34D399";
   const disabledGray = "#374151";
   const correctGreen = "#34D399";
   const wrongRed = "#F87171";
 
-  // 🧠 All emotions from Phase 1 — Free Basic Collection
+  // 🧠 All emotions from Phase 1
   const allEmotions = [
     "Joy", "Calmness", "Compassion", "Anger", "Sadness", "Surprise", "Disgust",
     "Fear", "Trust", "Anticipation", "Pride", "Love", "Relief", "Contempt",
@@ -28,7 +39,7 @@ export default function EmotionQuiz1() {
     "Guilt", "Serenity", "Anxiety", "Curiosity",
   ];
 
-  // 🎲 Random questions generator
+  // 🎲 Random questions
   useEffect(() => {
     const selected = [];
     const used = new Set();
@@ -38,9 +49,7 @@ export default function EmotionQuiz1() {
         allEmotions[Math.floor(Math.random() * allEmotions.length)];
       if (used.has(emotion)) continue;
 
-      const region = ["European", "African", "EastAsian"][
-        Math.floor(Math.random() * 3)
-      ];
+      const region = ["European", "African", "EastAsian"][Math.floor(Math.random() * 3)];
       const gender = ["Male", "Female"][Math.floor(Math.random() * 2)];
       const file = `/private_images/free/phase_1/${emotion}_${region}_Adult_${gender}.webp`;
 
@@ -60,8 +69,9 @@ export default function EmotionQuiz1() {
   if (questions.length === 0) return null;
   const current = questions[index];
 
-  // 🧩 Answer handler
+  // 🧩 Answer logic
   function handleAnswer(choice) {
+    if (selected) return;
     setSelected(choice);
     if (choice === current.correct) {
       setScore((prev) => prev + 1);
@@ -81,14 +91,12 @@ export default function EmotionQuiz1() {
     }, 1000);
   }
 
-  // 🔄 Restart
+  // 🔄 Restart quiz
   function restartQuiz() {
-    setIndex(0);
-    setScore(0);
-    setFeedback("");
-    setFinished(false);
-    setSelected(null);
-    window.location.reload();
+    setLoadingPlay(true);
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
   }
 
   // ============================================
@@ -143,17 +151,13 @@ export default function EmotionQuiz1() {
                   backgroundColor = disabledGray;
                   textColor = "#888";
                 }
-              } else if (hovered === opt) {
-                backgroundColor = hoverGreen;
               }
 
               return (
                 <motion.button
                   key={opt}
                   whileTap={{ scale: 0.9 }}
-                  onClick={() => !selected && handleAnswer(opt)}
-                  onMouseEnter={() => setHovered(opt)}
-                  onMouseLeave={() => setHovered(null)}
+                  onClick={() => handleAnswer(opt)}
                   className="px-4 py-2 rounded-lg font-medium border border-gray-700 transition-all duration-200"
                   style={{
                     backgroundColor,
@@ -192,26 +196,33 @@ export default function EmotionQuiz1() {
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-400 mb-8">
             Great job! You've completed Quiz 1.
           </p>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
+          {/* 🟢 Play Again Button */}
+          <button
             onClick={restartQuiz}
-            className="px-6 py-3 rounded-lg font-semibold shadow-md transition-all"
+            disabled={loadingPlay}
+            onMouseEnter={() => setHoveredPlay(true)}
+            onMouseLeave={() => setHoveredPlay(false)}
             style={{
-              backgroundColor: baseGreen,
+              ...baseButtonStyle,
+              backgroundColor: loadingPlay
+                ? "#374151"
+                : hoveredPlay
+                ? "#34D399"
+                : "#10B981",
               color: "#fff",
-              boxShadow: "0 0 12px rgba(16,185,129,0.2)",
+              cursor: loadingPlay ? "not-allowed" : "pointer",
             }}
           >
-            Play again
-          </motion.button>
+            {loadingPlay ? "Loading..." : "Play Again"}
+          </button>
         </div>
       )}
 
-      {/* 🌿 Link to more free quizzes */}
+      {/* 🌿 Footer link */}
       <div className="mt-16 text-center text-gray-500 text-sm">
         <p>
           Want to continue learning?{" "}
