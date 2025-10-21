@@ -15,14 +15,15 @@ export default function MobileMenu() {
     return () => (document.body.style.overflow = "");
   }, [open]);
 
-  const tabs = [
-    { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
-    { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
-    { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
-    { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions — United by Feeling", href: "/globalmap" },
-    { icon: "🔓", name: "Get PRO Access", desc: "Exclusive Early Access Now Open to All Users", href: "/pro" },
-    { icon: "⚙️", name: "AI Generator", desc: "Create Portraits with the EmotionDeck Generator", href: "/ai-generator" },
-  ];
+const tabs = [
+  { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
+  { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
+  { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
+  { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions — United by Feeling", href: "/globalmap" },
+  { icon: "🔓", name: "Get PRO Access", desc: "Exclusive Early Access Now Open to All Users", href: "/pro" },
+  { icon: "⚙️", name: "AI Generator", desc: "Create Portraits with the EmotionDeck Generator", href: "/ai-generator" },
+  { icon: "📜", name: "Legal", desc: "Privacy Policy, Terms of Use, and Cookies", href: "/legal" },
+];
 
   return (
     <>
@@ -200,17 +201,13 @@ export default function MobileMenu() {
 <p style={{ marginBottom: "1rem", color: "#ccc", lineHeight: "1.75" }}>
   Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term
   psychological and cultural project. It explores how emotion, culture, history, upbringing, and
-  ethnicity shape the way humanity feels and expresses itself.
-</p>
-
-<p style={{ marginBottom: "1rem", color: "#ccc", lineHeight: "1.75" }}>
-  EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion —
+  ethnicity shape the way humanity feels and expresses itself. EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion —
   revealing how traditions, values, and social contexts influence the way we express and perceive
   feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and
   the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and
   science — exploring the emotional patterns that define and connect humanity.
 </p>
-<br/>
+
 <p style={{ color: "#aaa", fontStyle: "italic", marginBottom: "1.2rem" }}>
   “To see emotion is to understand humanity.”
 </p>

@@ -1,6 +1,12 @@
-import LegalTable from "../components/Legal/LegalTable";
+"use client";
 
-export default function PrivacyPolicyPage() {
+import { useState } from "react";
+import Link from "next/link";
+import LegalTable from "../../components/Legal/LegalTable";
+
+export default function CookiesPolicyPage() {
+  const [hovered, setHovered] = useState(false);
+
   const data = [
     { label: "Purpose", value: "Explains how EmotionDeck uses cookies and similar technologies to improve the website’s functionality and user experience." },
     { label: "What Are Cookies", value: "Cookies are small text files stored on your device when you visit a website. They help remember your preferences and enhance performance." },
@@ -11,6 +17,19 @@ export default function PrivacyPolicyPage() {
     { label: "Consent", value: "By using EmotionDeck, you consent to the use of cookies as described in this policy." },
     { label: "Changes to This Policy", value: "We may update this Cookies Policy from time to time. Any changes will be reflected on this page." },
   ];
+
+  // 🌿 Green button style (same as PRO Collection)
+  const baseButtonStyle = {
+    backgroundColor: hovered ? "#34D399" : "#10B981",
+    color: "#ffffff",
+    border: "none",
+    padding: "10px 24px",
+    borderRadius: "9999px",
+    fontWeight: "600",
+    fontSize: "0.9rem",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  };
 
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
@@ -30,18 +49,38 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* 🍪 Legal Table */}
-      <section className="legal-table">
-        <table>
+      <section className="legal-table w-[80%] mx-auto">
+        <table className="w-full border-collapse border border-neutral-800 rounded-2xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
           <tbody>
             {data.map((row, index) => (
-              <tr key={index}>
-                <td>{row.label}</td>
-                <td>{row.value}</td>
+              <tr
+                key={index}
+                className="border-b border-neutral-800 hover:bg-neutral-800/40 transition-all"
+              >
+                <td className="p-4 font-semibold text-blue-400 w-1/3 text-left">
+                  {row.label}
+                </td>
+                <td className="p-4 text-gray-300 leading-relaxed text-left">
+                  {row.value}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </section>
+
+      {/* 🟢 Return Button with Arrow */}
+      <div className="text-center mt-16 mb-20">
+        <Link
+          href="/legal"
+          style={baseButtonStyle}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="inline-block hover:scale-105 transition-transform"
+        >
+          ← Return
+        </Link>
+      </div>
     </main>
   );
 }
