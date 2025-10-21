@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"
         >
-          ← Return
+          ← Back
         </Link>
       </div>
     </main>

@@ -78,7 +78,7 @@ export default function CookiesPolicyPage() {
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"
         >
-          ← Return
+          ← Back
         </Link>
       </div>
     </main>
