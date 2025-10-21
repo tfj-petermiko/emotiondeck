@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function EmotionQuiz1() {
+export default function EmotionQuiz2() {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -14,7 +14,7 @@ export default function EmotionQuiz1() {
   const [hoveredPlay, setHoveredPlay] = useState(false);
   const [loadingPlay, setLoadingPlay] = useState(false);
 
-  // 🎨 Base style for buttons (same as Learn & Quizzes)
+  // 🎨 Button base style
   const baseButtonStyle = {
     padding: "10px 22px",
     borderRadius: "0.75rem",
@@ -31,15 +31,16 @@ export default function EmotionQuiz1() {
   const correctGreen = "#34D399";
   const wrongRed = "#F87171";
 
-  // 🧠 All emotions from Phase 1
+  // 🧠 All emotions from Phase 2
   const allEmotions = [
-    "Joy", "Calmness", "Compassion", "Anger", "Sadness", "Surprise", "Disgust",
-    "Fear", "Trust", "Anticipation", "Pride", "Love", "Relief", "Contempt",
-    "Boredom", "Confusion", "Interest", "Determination", "Shame", "Hope",
-    "Guilt", "Serenity", "Anxiety", "Curiosity",
+    "Anxiety", "Nostalgia", "Confidence", "Tension", "Empathy", "Desire",
+    "Awe", "Fatigue", "Positive Surprise", "Negative Surprise",
+    "Contemplation", "Euphoria", "Irritation", "Tranquility", "Guilt",
+    "Jealousy", "Gratitude", "Excitement", "Affection", "Disbelief",
+    "Inspiration", "Longing", "Disappointment", "Neutral",
   ];
 
-  // 🎲 Random questions
+  // 🎲 Random questions generator
   useEffect(() => {
     const selected = [];
     const used = new Set();
@@ -50,8 +51,9 @@ export default function EmotionQuiz1() {
       if (used.has(emotion)) continue;
 
       const region = ["European", "African", "EastAsian"][Math.floor(Math.random() * 3)];
+      const age = ["Adult", "Senior"][Math.floor(Math.random() * 2)];
       const gender = ["Male", "Female"][Math.floor(Math.random() * 2)];
-      const file = `/private_images/free/phase_1/${emotion}_${region}_Adult_${gender}.webp`;
+      const file = `/private_images/pro/phase_2/${emotion}_${region}_${age}_${gender}.webp`;
 
       const incorrect = allEmotions
         .filter((e) => e !== emotion)
@@ -91,7 +93,7 @@ export default function EmotionQuiz1() {
     }, 1000);
   }
 
-  // 🔄 Restart quiz
+  // 🔄 Restart
   function restartQuiz() {
     setLoadingPlay(true);
     setTimeout(() => {
@@ -105,8 +107,11 @@ export default function EmotionQuiz1() {
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16 flex flex-col items-center">
       <h1 className="text-4xl font-bold mb-6 text-white text-center">
-        🎓 EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)
+        🎓 EmotionDeck Quiz 2 — Recognise the Emotion (Phase 2)
       </h1>
+      <p className="text-gray-400 mb-8 text-center max-w-lg">
+        Observe each portrait carefully and choose the correct emotion from the options below.
+      </p>
 
       {!finished ? (
         <div className="text-center">
@@ -168,14 +173,16 @@ export default function EmotionQuiz1() {
             })}
           </div>
 
-          {/* ✅ Feedback */}
+          {/* Feedback */}
           {feedback && (
             <motion.p
               key={feedback}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className={`mt-4 text-lg font-semibold ${
-                feedback.includes("Correct") ? "text-emerald-400" : "text-red-400"
+                feedback.includes("Correct")
+                  ? "text-emerald-400"
+                  : "text-red-400"
               }`}
             >
               {feedback}
@@ -193,10 +200,9 @@ export default function EmotionQuiz1() {
             Your score: {score} / {questions.length}
           </h2>
           <p className="text-gray-400 mb-8">
-            Great job! You've completed Quiz 1.
+            Great work! You’ve completed Phase 2 of Emotion Recognition.
           </p>
 
-          {/* 🟢 Play Again Button */}
           <button
             onClick={restartQuiz}
             disabled={loadingPlay}
@@ -218,10 +224,9 @@ export default function EmotionQuiz1() {
         </div>
       )}
 
-      {/* 🌿 Footer link */}
       <div className="mt-16 text-center text-gray-500 text-sm">
         <p>
-          Want to continue learning?{" "}
+          Want to keep learning?{" "}
           <a
             href="/learn/quizzes"
             className="text-emerald-400 hover:text-emerald-300 font-medium transition"

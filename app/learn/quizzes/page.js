@@ -6,6 +6,8 @@ import { useState } from "react";
 export default function QuizzesPage() {
   const [hoveredQuiz1, setHoveredQuiz1] = useState(false);
   const [loadingQuiz1, setLoadingQuiz1] = useState(false);
+  const [hoveredQuiz2, setHoveredQuiz2] = useState(false);
+  const [loadingQuiz2, setLoadingQuiz2] = useState(false);
   const [hoveredBack, setHoveredBack] = useState(false);
   const [loadingBack, setLoadingBack] = useState(false);
 
@@ -24,6 +26,13 @@ export default function QuizzesPage() {
     setLoadingQuiz1(true);
     setTimeout(() => {
       window.location.href = "/learn/quizzes/quiz-1";
+    }, 500);
+  };
+
+  const handleQuiz2Click = () => {
+    setLoadingQuiz2(true);
+    setTimeout(() => {
+      window.location.href = "/learn/quizzes/quiz-2";
     }, 500);
   };
 
@@ -52,19 +61,19 @@ export default function QuizzesPage() {
         invite you to identify real emotions from our AI-generated portraits.{" "}
         Each quiz helps you sharpen your emotional intelligence and visual recognition.
       </p>
-
+<br/>
       {/* ========================== */}
-      {/* 🧠 QUIZ 1 — Recognise the Emotion */}
+      {/* 🧠 QUIZ 1 — Recognise the Emotion (Phase 1) */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.6 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
         className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center mb-2">
-            Quiz 1 — Recognise the Emotion
+            Quiz 1 — Recognise the Emotion (Phase 1)
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
             Identify emotions from portraits — based on the Free Basic Collection
@@ -149,9 +158,103 @@ export default function QuizzesPage() {
           </table>
         </div>
       </motion.section>
+<br/>
+      {/* ========================== */}
+      {/* 💫 QUIZ 2 — Phase 2 Advanced Emotions (Phase 2) */}
+      {/* ========================== */}
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+        className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+      >
+        <div className="bg-gray-900 p-6 md:p-10">
+          <h2 className="text-2xl font-semibold text-center mb-2">
+            Quiz 2 — Recognise the Emotion (Phase 2)
+          </h2>
+          <p className="text-center text-gray-400 italic mb-6">
+            Identify emotions from the Advanced Emotional Expressions Collection
+          </p>
 
-      <br />
+          <table className="w-full text-sm md:text-base border-collapse">
+            <tbody>
+              <tr className="border-b border-gray-800 align-top">
+                <td className="w-1/4" />
+                <td className="w-2/4 p-3 text-white">
+                  <p className="font-semibold mb-1">
+                    How deep is your emotional intuition?
+                  </p>
+                  <p className="text-gray-400 mb-3">
+                    In this second quiz, you’ll explore emotions from{" "}
+                    <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.{" "}
+                    Emotions like Anxiety, Nostalgia, Confidence, and Tranquility
+                    appear across different ages and cultures.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+                    Choose the emotion that best describes each portrait.{" "}
+                    The challenge grows — these emotions are subtler and more complex.
+                  </p>
 
+                  <div className="flex justify-end mt-6">
+                    <button
+                      onClick={handleQuiz2Click}
+                      disabled={loadingQuiz2}
+                      onMouseEnter={() => setHoveredQuiz2(true)}
+                      onMouseLeave={() => setHoveredQuiz2(false)}
+                      style={{
+                        ...baseButtonStyle,
+                        backgroundColor: loadingQuiz2
+                          ? "#374151"
+                          : hoveredQuiz2
+                          ? "#34D399"
+                          : "#10B981",
+                        color: "#fff",
+                        cursor: loadingQuiz2 ? "not-allowed" : "pointer",
+                      }}
+                    >
+                      {loadingQuiz2 ? "Loading..." : "Start Quiz 2"}
+                    </button>
+                  </div>
+                </td>
+
+                <td className="p-3 w-[240px] text-center align-top">
+                  <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+                    <img
+                      src="/private_images/images/quiz-2.webp"
+                      alt="EmotionDeck Quiz 2 Preview"
+                      className="object-cover w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="text-gray-400 text-xs mt-2">
+                    EmotionDeck Quiz 2 — Advanced Emotional Expressions
+                  </p>
+                </td>
+              </tr>
+
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Focus</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Advanced emotion recognition, subtle expressions, psychological insight
+                </td>
+              </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Questions</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  10 randomised questions with 4 emotion choices
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3 text-gray-400">Access Type</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Free — Part of EmotionDeck Learn
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </motion.section>
+<br/>
       {/* 📘 More quizzes coming soon */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}

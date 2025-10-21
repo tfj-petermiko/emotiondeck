@@ -13,7 +13,7 @@ function loadMetadata() {
     const baseDir = path.join(process.cwd(), "public", "content");
     const cwd = __dirname.replace(/\\/g, "/");
 
-// 🧭 All supported sections (Home + Pro phases + Learn + Legal + others)
+    // 🧭 All supported sections (Home + Pro phases + new ones)
 const sections = [
   // ⚖️ Legal pages
   { key: "legal/privacy", dir: "legal/privacy" },
@@ -33,6 +33,7 @@ const sections = [
 
   // 🧠 Learn section
   { key: "learn/quizzes/quiz-1", dir: "learn/quizzes/quiz-1" },
+  { key: "learn/quizzes/quiz-2", dir: "learn/quizzes/quiz-2" },
   { key: "learn/quizzes", dir: "learn/quizzes" },
   { key: "learn/facs", dir: "learn/facs" },
   { key: "learn", dir: "learn" },
@@ -47,7 +48,6 @@ const sections = [
   { key: "free", dir: "free" },
   { key: "home", dir: "home" },
 ];
-
 
     // 🔍 Detect which section is being built
     let selectedDir = "home"; // default for /
