@@ -5,52 +5,47 @@ import fs from "fs";
 import path from "path";
 
 // ============================================================
-// 🧠 Universal Metadata Loader
-// Reads /public/content/[section]/metadata.txt automatically
+// 🧠 Universal Metadata Loader (works local + Vercel)
 // ============================================================
 function loadMetadata() {
   try {
     const baseDir = path.join(process.cwd(), "public", "content");
     const cwd = __dirname.replace(/\\/g, "/");
 
-    // 🧭 All supported sections (Home + Pro phases + new ones)
-const sections = [
-  // ⚖️ Legal pages
-  { key: "legal/privacy", dir: "legal/privacy" },
-  { key: "legal/terms", dir: "legal/terms" },
-  { key: "legal/cookies", dir: "legal/cookies" },
-  { key: "legal", dir: "legal" },
+    const sections = [
+      // ⚖️ Legal
+      { key: "legal/privacy", dir: "legal/privacy" },
+      { key: "legal/terms", dir: "legal/terms" },
+      { key: "legal/cookies", dir: "legal/cookies" },
+      { key: "legal", dir: "legal" },
 
-  // 💎 PRO Phases
-  { key: "pro/phase-6", dir: "pro/phase-6" },
-  { key: "pro/phase-5", dir: "pro/phase-5" },
-  { key: "pro/phase-4", dir: "pro/phase-4" },
-  { key: "pro/phase-3", dir: "pro/phase-3" },
-  { key: "pro/phase-2", dir: "pro/phase-2" },
-  { key: "pro/phase-1", dir: "pro/phase-1" }, // optional if exists
-  { key: "pro/facs-analyzer", dir: "pro/facs-analyzer" },
-  { key: "pro", dir: "pro" },
+      // 💎 PRO Phases
+      { key: "pro/phase-6", dir: "pro/phase-6" },
+      { key: "pro/phase-5", dir: "pro/phase-5" },
+      { key: "pro/phase-4", dir: "pro/phase-4" },
+      { key: "pro/phase-3", dir: "pro/phase-3" },
+      { key: "pro/phase-2", dir: "pro/phase-2" },
+      { key: "pro/phase-1", dir: "pro/phase-1" },
+      { key: "pro/facs-analyzer", dir: "pro/facs-analyzer" },
+      { key: "pro", dir: "pro" },
 
-  // 🧠 Learn section
-  { key: "learn/quizzes/quiz-1", dir: "learn/quizzes/quiz-1" },
-  { key: "learn/quizzes/quiz-2", dir: "learn/quizzes/quiz-2" },
-  { key: "learn/quizzes", dir: "learn/quizzes" },
-  { key: "learn/facs", dir: "learn/facs" },
-  { key: "learn", dir: "learn" },
+      // 🧠 Learn
+      { key: "learn/quizzes/quiz-1", dir: "learn/quizzes/quiz-1" },
+      { key: "learn/quizzes/quiz-2", dir: "learn/quizzes/quiz-2" },
+      { key: "learn/quizzes", dir: "learn/quizzes" },
+      { key: "learn/facs", dir: "learn/facs" },
+      { key: "learn", dir: "learn" },
 
-  // 🌍 Global Map
-  { key: "globalmap", dir: "globalmap" },
+      // 🌍 Global Map + Generator
+      { key: "globalmap", dir: "globalmap" },
+      { key: "generator", dir: "generator" },
 
-  // ⚙️ Generator
-  { key: "generator", dir: "generator" },
+      // 🏠 Home + Free
+      { key: "free", dir: "free" },
+      { key: "home", dir: "home" },
+    ];
 
-  // 🏠 Home + Free
-  { key: "free", dir: "free" },
-  { key: "home", dir: "home" },
-];
-
-    // 🔍 Detect which section is being built
-    let selectedDir = "home"; // default for /
+    let selectedDir = "home";
     for (const section of sections) {
       if (cwd.includes(section.key)) {
         selectedDir = section.dir;
@@ -58,22 +53,24 @@ const sections = [
       }
     }
 
-    // 📂 Load metadata.txt from /public/content/[section]/
     const filePath = path.join(baseDir, selectedDir, "metadata.txt");
-    if (!fs.existsSync(filePath)) return {};
+    if (!fs.existsSync(filePath)) {
+      console.warn("⚠️ Metadata not found:", filePath);
+      return {};
+    }
 
     const text = fs.readFileSync(filePath, "utf-8");
     const meta = {};
     let currentKey = "";
 
-    text.split("\n").forEach((line) => {
+    for (const line of text.split("\n")) {
       if (line.startsWith("#")) {
         currentKey = line.replace("#", "").trim();
         meta[currentKey] = "";
       } else if (currentKey && line.trim()) {
         meta[currentKey] += (meta[currentKey] ? "\n" : "") + line.trim();
       }
-    });
+    }
 
     Object.keys(meta).forEach((k) => (meta[k] = meta[k].trim()));
     return meta;
@@ -84,7 +81,7 @@ const sections = [
 }
 
 // ============================================================
-// 🧾 Build Next.js Metadata Object
+// 🧾 Build Metadata Object
 // ============================================================
 const meta = loadMetadata();
 
@@ -126,7 +123,7 @@ export const metadata = {
 };
 
 // ============================================================
-// 🌍 Universal Root Layout (shared by all pages)
+// 🌍 Root Layout
 // ============================================================
 export default function RootLayout({ children }) {
   return (
