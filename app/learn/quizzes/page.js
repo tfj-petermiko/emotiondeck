@@ -292,7 +292,7 @@ export default function QuizzesPage() {
         >
           {loadingBack ? "Loading..." : "← Back"}
         </button>
-      </div>
+      </div><br/>
     </main>
   );
 }
