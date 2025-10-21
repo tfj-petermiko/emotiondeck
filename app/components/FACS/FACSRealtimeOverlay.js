@@ -5,81 +5,26 @@ import * as faceapi from "face-api.js";
 import { FilesetResolver, FaceLandmarker } from "@mediapipe/tasks-vision";
 
 /**
- * 🎥 EmotionDeck — FACS Analyzer v1.5
- * -----------------------------------
- * Local real-time facial emotion analysis (7→30 mapping)
- * Combines face-api.js + MediaPipe + EmotionDeck expansion layer.
+ * 🎥 EmotionDeck — Live FACS Analyzer
+ * ------------------------------------
+ * Real-time facial emotion recognition + landmark mesh overlay.
+ * Uses MediaPipe FaceLandmarker (new API) + face-api.js emotion detection.
  */
-
 export default function FACSRealtimeOverlay() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [emotion, setEmotion] = useState(null);
   const [confidence, setConfidence] = useState(null);
-  const [relatedEmotions, setRelatedEmotions] = useState([]);
-  const [definition, setDefinition] = useState("");
   const [isReady, setIsReady] = useState(false);
 
-  // 🎨 Emotion mapping layer (7 → 30)
-  const emotionMap = {
-    happy: {
-      label: "Joy",
-      related: ["Pride", "Love", "Serenity", "Hope"],
-      definition:
-        "Joy represents positive energy and emotional warmth. It may expand into love, gratitude, or peaceful contentment.",
-      color: "#10B981",
-    },
-    sad: {
-      label: "Sadness",
-      related: ["Melancholy", "Regret", "Compassion", "Reflection"],
-      definition:
-        "Sadness allows emotional release and empathy. It often reflects compassion and awareness of loss.",
-      color: "#60A5FA",
-    },
-    angry: {
-      label: "Anger",
-      related: ["Frustration", "Defiance", "Determination", "Disgust"],
-      definition:
-        "Anger channels energy toward change or protection. It can transform into determination and resilience.",
-      color: "#EF4444",
-    },
-    fearful: {
-      label: "Fear",
-      related: ["Anxiety", "Worry", "Insecurity", "Anticipation"],
-      definition:
-        "Fear alerts us to potential danger. When managed, it sharpens awareness and helps us prepare for challenges.",
-      color: "#FACC15",
-    },
-    surprised: {
-      label: "Surprise",
-      related: ["Curiosity", "Awe", "Confusion", "Excitement"],
-      definition:
-        "Surprise is the moment of transition between not knowing and discovery — it opens the door to curiosity.",
-      color: "#F97316",
-    },
-    disgusted: {
-      label: "Disgust",
-      related: ["Contempt", "Irritation", "Moral Awareness", "Rejection"],
-      definition:
-        "Disgust protects us from harm — physical or moral. It can signal boundaries or ethical discomfort.",
-      color: "#A855F7",
-    },
-    neutral: {
-      label: "Neutral",
-      related: ["Calmness", "Tranquillity", "Acceptance", "Reflection"],
-      definition:
-        "Neutrality is emotional balance — a state of clarity, acceptance, and observation without reaction.",
-      color: "#9CA3AF",
-    },
-  };
-
-  // 🧠 Load models once
   useEffect(() => {
     const init = async () => {
       try {
+        // 🧠 Load face-api.js models
         await faceapi.nets.tinyFaceDetector.loadFromUri("/models");
         await faceapi.nets.faceExpressionNet.loadFromUri("/models");
 
+        // 🧩 Load MediaPipe Vision Tasks
         const vision = await FilesetResolver.forVisionTasks(
           "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm"
         );
@@ -93,6 +38,7 @@ export default function FACSRealtimeOverlay() {
           numFaces: 1,
         });
 
+        // 🎥 Start the camera stream
         startCamera(landmarker);
         setIsReady(true);
       } catch (err) {
@@ -103,11 +49,16 @@ export default function FACSRealtimeOverlay() {
     init();
   }, []);
 
-  // 🎥 Camera
+  // 🎥 Camera setup and start
   const startCamera = (landmarker) => {
     const video = videoRef.current;
+    if (!navigator.mediaDevices?.getUserMedia) {
+      alert("Camera not supported by your browser.");
+      return;
+    }
+
     navigator.mediaDevices
-      ?.getUserMedia({ video: true })
+      .getUserMedia({ video: true })
       .then((stream) => {
         video.srcObject = stream;
         video.onloadedmetadata = () => {
@@ -115,10 +66,15 @@ export default function FACSRealtimeOverlay() {
           runDetection(video, landmarker);
         };
       })
-      .catch((err) => console.error("Camera error:", err));
+      .catch((err) => {
+        console.error("Camera access error:", err);
+        alert(
+          "Camera access denied. Please allow access in your browser settings."
+        );
+      });
   };
 
-  // 🧩 Continuous detection
+  // 🧠 Continuous detection loop
   const runDetection = (video, landmarker) => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -136,8 +92,8 @@ export default function FACSRealtimeOverlay() {
           for (const p of results.faceLandmarks[0]) {
             ctx.lineTo(p.x * canvas.width, p.y * canvas.height);
           }
-          ctx.strokeStyle = "rgba(255,255,255,0.4)";
-          ctx.lineWidth = 1.1;
+          ctx.strokeStyle = "rgba(16,185,129,0.7)";
+          ctx.lineWidth = 1.2;
           ctx.stroke();
 
           await detectEmotion(video);
@@ -149,7 +105,7 @@ export default function FACSRealtimeOverlay() {
     detect();
   };
 
-  // 🎭 Emotion detection
+  // 🧩 Emotion recognition (face-api.js)
   const detectEmotion = async (video) => {
     const detections = await faceapi
       .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
@@ -159,22 +115,18 @@ export default function FACSRealtimeOverlay() {
       const expr = detections[0].expressions;
       const sorted = Object.entries(expr).sort((a, b) => b[1] - a[1]);
       const [emo, conf] = sorted[0];
-      const mapped = emotionMap[emo];
-      setEmotion(mapped.label);
+      setEmotion(emo);
       setConfidence((conf * 100).toFixed(1));
-      setRelatedEmotions(mapped.related);
-      setDefinition(mapped.definition);
     }
   };
 
   return (
     <div className="flex flex-col items-center mt-10">
       <h2 className="text-3xl font-bold text-white mb-2">
-        🎥 EmotionDeck — FACS Analyzer v1.5
+        🎥 EmotionDeck — Live FACS Analyzer
       </h2>
       <p className="text-gray-400 mb-4 text-center w-[70%]">
-        Extended emotion recognition — from 7 basic expressions to the full
-        EmotionDeck emotional spectrum.
+        Real-time facial emotion recognition and muscle overlay.
       </p>
 
       <div className="relative w-[640px] h-[480px] border border-gray-700 rounded-xl overflow-hidden shadow-lg">
@@ -202,34 +154,14 @@ export default function FACSRealtimeOverlay() {
       )}
 
       {emotion && (
-        <div
-          className="mt-8 text-center border border-gray-800 rounded-xl p-5 bg-gray-900/70 shadow-inner max-w-xl"
-          style={{ borderColor: emotionMap[emotion.toLowerCase()]?.color }}
-        >
-          <h3 className="text-2xl font-semibold text-white mb-2">
+        <div className="mt-6 text-center">
+          <h3 className="text-xl font-semibold text-white mb-2">
             Detected Emotion:{" "}
-            <span
-              className="capitalize font-bold"
-              style={{ color: emotionMap[emotion.toLowerCase()]?.color }}
-            >
-              {emotion}
-            </span>
+            <span className="text-emerald-400 capitalize">{emotion}</span>
           </h3>
-          <p className="text-gray-400 mb-2">
+          <p className="text-gray-400">
             Confidence: <span className="text-gray-200">{confidence}%</span>
           </p>
-          <p className="text-gray-300 mb-4 italic">{definition}</p>
-
-          <div className="flex flex-wrap justify-center gap-2 mt-2">
-            {relatedEmotions.map((r, i) => (
-              <span
-                key={i}
-                className="px-3 py-1 rounded-full text-sm bg-gray-800 text-emerald-400 border border-gray-700"
-              >
-                {r}
-              </span>
-            ))}
-          </div>
         </div>
       )}
     </div>
