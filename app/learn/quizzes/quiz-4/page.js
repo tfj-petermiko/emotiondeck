@@ -402,14 +402,6 @@ export default function EmotionQuiz4() {
       )}
 
 
-{/* 🟢 Current Category Info */}
-<p className="text-gray-400 text-sm mb-4 -mt-4">
-  Currently showing:{" "}
-  <span className="text-emerald-400 font-medium">
-    {category.replace(/([A-Z])/g, " $1").trim()}
-  </span>
-</p>
-
       {/* 🔙 Back to all quizzes */}
       <div className="mt-16 text-center text-gray-500 text-sm">
         <p>
