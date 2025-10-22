@@ -1,0 +1,38 @@
+# metadataBase
+https://emotiondeck.com
+
+# canonical
+https://emotiondeck.com/learn/quizzes/quiz-4
+
+# title
+EmotionDeck Quiz 4 — Global Emotional Spectrum (120 Emotions, 10 Categories)
+
+# description
+Discover the full range of human emotion through 120 black and white portraits across 10 global categories. Train your emotional intelligence with realistic faces representing diverse ages, genders, and cultures. Explore the emotional spectrum of humanity with EmotionDeck Learn.
+
+# keywords
+EmotionDeck quiz, global emotional spectrum, emotion recognition, cultural emotions, psychology, empathy training, emotional intelligence, black and white portraits, learning emotions, human behaviour
+
+# og_title
+EmotionDeck Quiz 4 — Global Emotional Spectrum (120 Emotions, 10 Categories)
+
+# og_description
+Experience 120 emotions across 10 categories in the most comprehensive EmotionDeck quiz yet. Recognise emotions from realistic portraits of people from all around the world.
+
+# og_url
+https://emotiondeck.com/learn/quizzes/quiz-4
+
+# og_image
+https://emotiondeck.com/private_images/meta/quiz4_preview.webp
+
+# twitter_card
+summary_large_image
+
+# twitter_title
+EmotionDeck Quiz 4 — Global Emotional Spectrum (120 Emotions, 10 Categories)
+
+# twitter_description
+Recognise 120 emotions across 10 global categories. The ultimate EmotionDeck training experience for emotional perception and cultural awareness.
+
+# twitter_image
+https://emotiondeck.com/private_images/meta/quiz4_preview.webp

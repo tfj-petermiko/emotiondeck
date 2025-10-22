@@ -113,7 +113,12 @@
     "keywords": "EmotionDeck, Evolution Collection, emotional evolution, cross-cultural emotions, emotional diversity, human emotion dataset, emotion across ages, empathy training, emotional intelligence, psychology of emotion, cultural anthropology, black-and-white portraits, emotion perception, visual emotion study, art and psychology",
     "og_title": "EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings",
     "og_description": "Discover EmotionDeck PRO Phase 6: Evolution — a panoramic collection of human emotions expressed through culture, age, and gender. Experience the visual evolution of emotional expression across the globe.",
-    "og_url": "https://emotiondeck.com/pro/phase-"
+      "og_url": "https://emotiondeck.com/pro/phase-6",
+    "og_image": "https://emotiondeck.com/preview-phase6.jpg",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "EmotionDeck PRO — Phase 6: Evolution",
+    "twitter_description": "Discover EmotionDeck PRO Phase 6: Evolution — a panoramic collection of human emotions expressed through culture, age, and gender. Experience the visual evolution of emotional expression across the globe.",
+    "twitter_image": "https://emotiondeck.com/preview-phase6.jpg"
   },
   "learn": {
     "metadataBase": "https://emotiondeck.com",
@@ -190,6 +195,38 @@
     "twitter_description": "Explore subtle emotional expressions in the EmotionDeck Phase 2 Quiz. Identify advanced emotions like Nostalgia, Confidence, and Tranquillity.",
     "twitter_image": "https://emotiondeck.com/preview-quiz-2.jpg"
   },
+
+"learn/quizzes/quiz-3": {
+  "metadataBase": "https://emotiondeck.com",
+  "canonical": "https://emotiondeck.com/learn/quizzes/quiz-3",
+  "title": "EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults - Phase 3)",
+  "description": "Test your ability to recognise emotions through realistic black and white portraits of young adults from different regions. Identify core emotions like Joy, Anger, Fear, and Curiosity. Continue your journey in emotional intelligence with EmotionDeck Learn.",
+  "keywords": "EmotionDeck quiz, emotion recognition, young adults, facial expressions, empathy training, psychology, emotion test, human behaviour, cultural emotions",
+  "og_title": "EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults - Phase 3)",
+  "og_description": "Explore how well you can identify emotions across diverse faces of young adults. Try the next challenge in the EmotionDeck Learn series.",
+  "og_url": "https://emotiondeck.com/learn/quizzes/quiz-3",
+  "og_image": "https://emotiondeck.com/private_images/meta/quiz3_preview.jpg",
+  "twitter_card": "summary_large_image",
+  "twitter_title": "EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults - Phase 3)",
+  "twitter_description": "Continue your emotional recognition journey with black and white portraits of young adults. Identify core emotions with EmotionDeck Learn.",
+  "twitter_image": "https://emotiondeck.com/private_images/meta/quiz3_preview.jpg"
+},
+
+"learn/quizzes/quiz-4": {
+  "metadataBase": "https://emotiondeck.com",
+  "canonical": "https://emotiondeck.com/learn/quizzes/quiz-4",
+  "title": "EmotionDeck Quiz 4 — Global Emotional Spectrum",
+  "description": "Discover the full range of human emotion through 120 black and white portraits across 10 global categories. Train your emotional intelligence with realistic faces representing diverse ages, genders, and cultures. Explore the emotional spectrum of humanity with EmotionDeck Learn.",
+  "keywords": "EmotionDeck quiz, global emotional spectrum, emotion recognition, cultural emotions, psychology, empathy training, emotional intelligence, black and white portraits, learning emotions, human behaviour",
+  "og_title": "EmotionDeck Quiz 4 — Global Emotional Spectrum",
+  "og_description": "Experience 120 emotions across 10 categories in the most comprehensive EmotionDeck quiz yet. Recognise emotions from realistic portraits of people from all around the world.",
+  "og_url": "https://emotiondeck.com/learn/quizzes/quiz-4",
+  "og_image": "https://emotiondeck.com/private_images/meta/quiz4_preview.jpg",
+  "twitter_card": "summary_large_image",
+  "twitter_title": "EmotionDeck Quiz 4 — Global Emotional Spectrum",
+  "twitter_description": "Recognise 120 emotions across 10 global categories. The ultimate EmotionDeck training experience for emotional perception and cultural awareness.",
+  "twitter_image": "https://emotiondeck.com/private_images/meta/quiz4_preview.jpg"
+},
   "globalmap": {
     "metadataBase": "https://emotiondeck.com",
     "canonical": "https://emotiondeck.com/globalmap",
