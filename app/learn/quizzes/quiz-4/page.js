@@ -379,11 +379,11 @@ export default function EmotionQuiz4() {
         <div className="text-center mt-10">
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
-          </h2>
+          </h2><br />
           <p className="text-gray-400 mb-8">
             Excellent! You’ve completed the{" "}
             {category.replace(/([A-Z])/g, " $1").trim()} category.
-          </p>
+          </p><br />
 
           <button
             onClick={restartQuiz}

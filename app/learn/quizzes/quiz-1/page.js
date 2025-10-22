@@ -191,10 +191,10 @@ export default function EmotionQuiz1() {
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
-          </h2>
+          </h2><br />
           <p className="text-gray-400 mb-8">
             Great job! You've completed Quiz 1.
-          </p>
+          </p><br />
 
           {/* 🟢 Play Again Button */}
           <button

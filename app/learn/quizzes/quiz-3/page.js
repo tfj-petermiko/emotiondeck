@@ -199,10 +199,10 @@ export default function EmotionQuiz3() {
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
-          </h2>
+          </h2><br />
           <p className="text-gray-400 mb-8">
             Great work! You’ve completed the Young Adults — Phase 3 emotion recognition quiz.
-          </p>
+          </p><br />
 
           <button
             onClick={restartQuiz}

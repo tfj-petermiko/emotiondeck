@@ -198,10 +198,10 @@ export default function EmotionQuiz2() {
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
-          </h2>
+          </h2><br />
           <p className="text-gray-400 mb-8">
             Great work! You’ve completed Phase 2 of Emotion Recognition.
-          </p>
+          </p><br />
 
           <button
             onClick={restartQuiz}
