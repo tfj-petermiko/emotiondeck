@@ -26,7 +26,7 @@ Explore the full EmotionDeck visual learning platform — perceive and understan
 https://emotiondeck.com
 
 # og_image
-https://emotiondeck.com/preview-main.jpg
+https://emotiondeck.com/preview.jpg
 
 # twitter_card
 summary_large_image
@@ -38,4 +38,4 @@ EmotionDeck — Train Your Perception. Understand Human Emotion.
 Enhance your emotional perception and learn to recognise subtle human expressions through guided visual learning with EmotionDeck.
 
 # twitter_image
-https://emotiondeck.com/preview-main.jpg
+https://emotiondeck.com/preview.jpg
