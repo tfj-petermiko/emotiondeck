@@ -78,9 +78,10 @@ export default function ProCollectionPage() {
 
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center">
-            Phase 1 — Free Basic Collection
-          </h2>
+         <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+  Phase 1 — Free Basic Collection
+</h2>
+
           <p className="text-center text-gray-400 italic mb-6">
             Clarity & Universal Understanding
           </p>
@@ -169,9 +170,10 @@ export default function ProCollectionPage() {
 
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center">
-            Phase 2 — Advanced Emotional Expressions
-          </h2>
+         <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+  Phase 2 — Advanced Emotional Expressions
+</h2>
+
           <p className="text-center text-gray-400 italic mb-6">
             Warmth & Authentic Connection
           </p>
@@ -260,9 +262,9 @@ export default function ProCollectionPage() {
 
 >
   <div className="bg-gray-900 p-6 md:p-10">
-    <h2 className="text-2xl font-semibold text-center">
-      Phase 3 — Young Adults
-    </h2>
+    <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+  Phase 3 — Young Adults
+</h2>
     <p className="text-center text-gray-400 italic mb-6">
       Mindfulness & Harmony
     </p>
@@ -357,9 +359,9 @@ export default function ProCollectionPage() {
 
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center">
-            Phase 4 — Children Collection
-          </h2>
+         <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+  Phase 4 — Children Collection
+</h2>
           <p className="text-center text-gray-400 italic mb-6">
             Innocence & Emotional Growth
           </p>
@@ -456,9 +458,9 @@ export default function ProCollectionPage() {
 
 >
   <div className="bg-gray-900 p-6 md:p-10">
-    <h2 className="text-2xl font-semibold text-center">
-      Phase 5 — Seniors Collection
-    </h2>
+    <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+  Phase 5 — Seniors Collection
+</h2>
     <p className="text-center text-gray-400 italic mb-6">
       Wisdom & Emotional Depth
     </p>
@@ -552,9 +554,9 @@ export default function ProCollectionPage() {
 
 >
   <div className="bg-gray-900 p-6 md:p-10">
-    <h2 className="text-2xl font-semibold text-center">
-      Phase 6 — Evolution Collection
-    </h2>
+    <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+  Phase 6 — Evolution Collection
+</h2>
     <p className="text-center text-gray-400 italic mb-6">
       Across Generations & Cultures
     </p>
