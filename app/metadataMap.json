@@ -241,6 +241,21 @@
     "twitter_title": "EmotionDeck Global Map — One World, Many Emotions",
     "twitter_description": "Explore the interactive EmotionDeck Global Map and uncover how culture shapes emotion,\nexpression, and empathy around the world.",
     "twitter_image": "https://emotiondeck.com/preview.jpg"
+},
+  "ai-generator": {
+   "metadataBase": "https://emotiondeck.com",
+   "canonical": "https://emotiondeck.com/ai-generator",
+   "title": "EmotionDeck AI Generator — Create Custom Emotional Portraits with Precision",
+   "description": "EmotionDeck AI Generator allows you to create realistic emotional portraits instantly. Combine human emotion, cultural context, age, and gender to design unique expressive faces that align with your research, education, or creative vision.",
+   "keywords": "EmotionDeck AI Generator, emotion generator, AI portraits, human emotion synthesis, facial expression generator, psychology AI tools, emotion recognition, emotional intelligence, research dataset, AI creative tools, emotion training, synthetic emotion modelling",
+   "og_title": "EmotionDeck AI Generator — Create Custom Emotional Portraits",
+   "og_description": "Design and generate emotional portraits using AI — explore expressions across emotions, ages, and cultures. Ideal for educators, psychologists, and creative professionals.",
+   "og_url": "https://emotiondeck.com/ai-generator",
+   "og_image": "https://emotiondeck.com/preview.jpg",
+   "twitter_card": "summary_large_image",
+   "twitter_title": "EmotionDeck AI Generator — Create Custom Emotional Portraits",
+   "twitter_description": "Use the EmotionDeck AI Generator to instantly create realistic emotional portraits for study, teaching, or creative exploration.",
+   "twitter_image": "https://emotiondeck.com/preview.jpg"
   },
   "legal": {
     "metadataBase": "https://emotiondeck.com",
