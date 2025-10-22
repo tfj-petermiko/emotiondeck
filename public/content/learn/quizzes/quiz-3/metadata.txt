@@ -1,0 +1,38 @@
+# metadataBase
+https://emotiondeck.com
+
+# canonical
+https://emotiondeck.com/learn/quizzes/quiz-3
+
+# title
+EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults - Phase 3)
+
+# description
+Test your ability to recognise emotions through realistic black and white portraits of young adults from different regions. Identify core emotions like Joy, Anger, Fear, and Curiosity. Continue your journey in emotional intelligence with EmotionDeck Learn.
+
+# keywords
+EmotionDeck quiz, emotion recognition, young adults, facial expressions, empathy training, psychology, emotion test, human behaviour, cultural emotions
+
+# og_title
+EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults - Phase 3)
+
+# og_description
+Explore how well you can identify emotions across diverse faces of young adults. Try the next challenge in the EmotionDeck Learn series.
+
+# og_url
+https://emotiondeck.com/learn/quizzes/quiz-3
+
+# og_image
+https://emotiondeck.com/private_images/meta/quiz3_preview.webp
+
+# twitter_card
+summary_large_image
+
+# twitter_title
+EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults - Phase 3)
+
+# twitter_description
+Continue your emotional recognition journey with black and white portraits of young adults. Identify core emotions with EmotionDeck Learn.
+
+# twitter_image
+https://emotiondeck.com/private_images/meta/quiz3_preview.webp

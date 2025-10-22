@@ -3,9 +3,18 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ProCollectionPage() {
   const [hoveredButton, setHoveredButton] = useState(null);
+  const [hoveredBack, setHoveredBack] = useState(false);
+  const [loadingBack, setLoadingBack] = useState(false);
+  const router = useRouter();
+
+  const handleBackClick = () => {
+    setLoadingBack(true);
+    setTimeout(() => router.push("/"), 800);
+  };
 
   const baseButtonStyle = {
     backgroundColor: "#10B981",
@@ -627,13 +636,30 @@ export default function ProCollectionPage() {
     </table>
   </div>
 </motion.section>
-
-<br />
-
-
-
-
-<br/>
+     {/* 🟢 Return to Home Page button */}
+      <br /><br />
+      <div className="text-center mt-16">
+        <button
+          onClick={handleBackClick}
+          disabled={loadingBack}
+          onMouseEnter={() => setHoveredBack(true)}
+          onMouseLeave={() => setHoveredBack(false)}
+          style={{
+            ...baseButtonStyle,
+            backgroundColor: loadingBack
+              ? "#374151"
+              : hoveredBack
+              ? "#34D399"
+              : "#10B981",
+            color: "#fff",
+            cursor: loadingBack ? "not-allowed" : "pointer",
+          }}
+        >
+          {loadingBack ? "Loading..." : "← Back"}
+        </button>
+      </div>
+      <br />
+      <br />
     </main>
   );
 }

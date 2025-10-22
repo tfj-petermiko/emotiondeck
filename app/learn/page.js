@@ -10,6 +10,8 @@ export default function LearnPage() {
   const [loadingFACS, setLoadingFACS] = useState(false);
   const [hoveredMirror, setHoveredMirror] = useState(false);
   const [loadingMirror, setLoadingMirror] = useState(false);
+  const [hoveredBack, setHoveredBack] = useState(false);
+  const [loadingBack, setLoadingBack] = useState(false);
 
   // 🎨 Base style for buttons
   const baseButtonStyle = {
@@ -43,6 +45,13 @@ export default function LearnPage() {
     }, 500);
   };
 
+  const handleBackClick = () => {
+    setLoadingBack(true);
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 500);
+  };
+
   return (
     <main className="min-h-screen bg-neutral-900 text-white py-16">
       {/* 🌍 HEADER */}
@@ -71,7 +80,7 @@ export default function LearnPage() {
         className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center">
+          <h2 className="text-2xl font-semibold text-center mb-2">
             Emotion Recognition Quizzes — Test Your Understanding
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
@@ -81,12 +90,12 @@ export default function LearnPage() {
           <table className="w-full text-sm md:text-base border-collapse">
             <tbody>
               <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
+                <td className="w-1/4"></td>
                 <td className="w-2/4 p-3 text-white">
                   <p className="font-semibold mb-1">
                     Learn to recognise emotional expressions through practice.
                   </p>
-                  <p className="text-gray-400 mb-3">
+                  <p className="text-gray-400 mb-3 text-justify">
                     EmotionDeck Quizzes let you identify which emotion is shown
                     in portraits from the{" "}
                     <strong>Free Basic Collection</strong>. Each quiz offers
@@ -98,6 +107,7 @@ export default function LearnPage() {
                     cultures and backgrounds. Test yourself and see how well you
                     understand universal emotional cues.
                   </p>
+
                   <div className="flex justify-end mt-6">
                     <button
                       onClick={handleQuizClick}
@@ -118,7 +128,6 @@ export default function LearnPage() {
                       {loadingQuiz ? "Loading..." : "Go to Quizzes"}
                     </button>
                   </div>
-                  <br />
                 </td>
 
                 <td className="p-3 w-[240px] text-center align-top">
@@ -165,7 +174,7 @@ export default function LearnPage() {
         className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center">
+          <h2 className="text-2xl font-semibold text-center mb-2">
             FACS Emotion Analyzer — Learn Human Expression
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
@@ -175,12 +184,12 @@ export default function LearnPage() {
           <table className="w-full text-sm md:text-base border-collapse">
             <tbody>
               <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
+                <td className="w-1/4"></td>
                 <td className="w-2/4 p-3 text-white">
                   <p className="font-semibold mb-1">
                     Real-Time Facial Expression Analysis
                   </p>
-                  <p className="text-gray-400 mb-3">
+                  <p className="text-gray-400 mb-3 text-justify">
                     Observe how emotions manifest through facial muscle movements (Action Units)
                     using EmotionDeck’s live FACS module.
                   </p>
@@ -211,7 +220,6 @@ export default function LearnPage() {
                       {loadingFACS ? "Loading..." : "Start FACS Analyzer"}
                     </button>
                   </div>
-                  <br />
                 </td>
 
                 <td className="p-3 w-[240px] text-center align-top">
@@ -228,88 +236,17 @@ export default function LearnPage() {
                   </p>
                 </td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
 
-      <br />
-
-      {/* ========================== */}
-      {/* 🪞 MODULE 3 — EMOTION MIRROR */}
-      {/* ========================== */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.6 }}
-        className="mt-16 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center">
-            Live Emotion Mirror — See Yourself in Emotion
-          </h2>
-          <p className="text-center text-gray-400 italic mb-6">
-            Real-Time Emotional Reflection — AI Meets Humanity
-          </p>
-
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">
-                    AI-Powered Emotional Reflection
-                  </p>
-                  <p className="text-gray-400 mb-3">
-                    The <strong>Emotion Mirror</strong> compares your facial expressions
-                    in real time with AI-generated portraits from the EmotionDeck Universe.
-                  </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    This module visualises how your emotion aligns with universal archetypes.
-                    It blends <strong>FACS data</strong> with cultural emotion models,
-                    offering an engaging way to see yourself through an emotional lens.
-                  </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    You can explore how expressions of joy, sadness, or surprise
-                    are represented across different cultures — reinforcing emotional
-                    empathy and global understanding.
-                  </p>
-
-                  <div className="flex justify-end mt-6">
-                    <button
-                      onClick={handleMirrorClick}
-                      disabled={loadingMirror}
-                      onMouseEnter={() => setHoveredMirror(true)}
-                      onMouseLeave={() => setHoveredMirror(false)}
-                      style={{
-                        ...baseButtonStyle,
-                        backgroundColor: loadingMirror
-                          ? "#374151"
-                          : hoveredMirror
-                          ? "#34D399"
-                          : "#10B981",
-                        color: "#fff",
-                        cursor: loadingMirror ? "not-allowed" : "pointer",
-                      }}
-                    >
-                      {loadingMirror ? "Loading..." : "Open Emotion Mirror"}
-                    </button>
-                  </div>
-                  <br />
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Learning Focus</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Real-time facial analysis, emotion science, microexpressions
                 </td>
-
-                <td className="p-3 w-[240px] text-center align-top">
-                  <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <img
-                      src="/private_images/images/mirror.png"
-                      alt="Emotion Mirror Preview"
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">
-                    EmotionDeck Mirror Interface
-                  </p>
+              </tr>
+              <tr>
+                <td className="p-3 text-gray-400">Access Type</td>
+                <td className="p-3 text-white" colSpan={2}>
+                  Free — Available in Learn & Grow
                 </td>
               </tr>
             </tbody>
@@ -317,6 +254,29 @@ export default function LearnPage() {
         </div>
       </motion.section>
 
+      {/* 🟢 Return to Home Page button */}
+      <br /><br />
+      <div className="text-center mt-16">
+        <button
+          onClick={handleBackClick}
+          disabled={loadingBack}
+          onMouseEnter={() => setHoveredBack(true)}
+          onMouseLeave={() => setHoveredBack(false)}
+          style={{
+            ...baseButtonStyle,
+            backgroundColor: loadingBack
+              ? "#374151"
+              : hoveredBack
+              ? "#34D399"
+              : "#10B981",
+            color: "#fff",
+            cursor: loadingBack ? "not-allowed" : "pointer",
+          }}
+        >
+          {loadingBack ? "Loading..." : "← Back"}
+        </button>
+      </div>
+      <br />
       <br />
     </main>
   );
