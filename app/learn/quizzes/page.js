@@ -61,7 +61,7 @@ export default function QuizzesPage() {
         invite you to identify real emotions from our AI-generated portraits.{" "}
         Each quiz helps you sharpen your emotional intelligence and visual recognition.
       </p>
-<br/>
+
       {/* ========================== */}
       {/* 🧠 QUIZ 1 — Recognise the Emotion (Phase 1) */}
       {/* ========================== */}
@@ -89,13 +89,13 @@ export default function QuizzesPage() {
                   </p>
                   <p className="text-gray-400 mb-3">
                     In this quiz, you’ll see portraits from the{" "}
-                    <strong>EmotionDeck Free Basic Collection</strong>.
-                    Your task: select which emotion you think the portrait expresses.
+                    <strong>EmotionDeck Free Basic Collection</strong>. Your task: select
+                    which emotion you think the portrait expresses.
                   </p>
                   <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    Each question gives you four possible emotions to choose from.
-                    The portraits are drawn from real cultural and age diversity,
-                    helping you explore universal emotional expressions.
+                    Each question gives you four possible emotions to choose from. The
+                    portraits are drawn from real cultural and age diversity, helping you
+                    explore universal emotional expressions.
                   </p>
 
                   <div className="flex justify-end mt-6">
@@ -148,6 +148,14 @@ export default function QuizzesPage() {
                   10 randomised questions with 4 options each
                 </td>
               </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Emotions Used</td>
+                <td className="p-3 text-gray-300" colSpan={2}>
+                  Joy, Calmness, Compassion, Anger, Sadness, Surprise, Disgust, Fear,
+                  Trust, Anticipation, Pride, Love, Relief, Contempt, Boredom, Confusion,
+                  Interest, Determination, Shame, Hope, Guilt, Serenity, Anxiety, Curiosity
+                </td>
+              </tr>
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
@@ -187,12 +195,12 @@ export default function QuizzesPage() {
                   <p className="text-gray-400 mb-3">
                     In this second quiz, you’ll explore emotions from{" "}
                     <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.{" "}
-                    Emotions like Anxiety, Nostalgia, Confidence, and Tranquility
-                    appear across different ages and cultures.
+                    Emotions like Anxiety, Nostalgia, Confidence, and Tranquillity appear
+                    across different ages and cultures.
                   </p>
                   <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    Choose the emotion that best describes each portrait.{" "}
-                    The challenge grows — these emotions are subtler and more complex.
+                    Choose the emotion that best describes each portrait. The challenge
+                    grows — these emotions are subtler and more complex.
                   </p>
 
                   <div className="flex justify-end mt-6">
@@ -244,6 +252,15 @@ export default function QuizzesPage() {
                   10 randomised questions with 4 emotion choices
                 </td>
               </tr>
+              <tr className="border-b border-gray-800">
+                <td className="p-3 text-gray-400">Emotions Used</td>
+                <td className="p-3 text-gray-300" colSpan={2}>
+                  Anxiety, Nostalgia, Confidence, Tension, Empathy, Desire, Awe, Fatigue,
+                  Positive Surprise, Negative Surprise, Contemplation, Euphoria, Irritation,
+                  Tranquillity, Guilt, Jealousy, Gratitude, Excitement, Affection,
+                  Disbelief, Inspiration, Longing, Disappointment, Neutral
+                </td>
+              </tr>
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
@@ -254,7 +271,7 @@ export default function QuizzesPage() {
           </table>
         </div>
       </motion.section>
-<br/>
+
       {/* 📘 More quizzes coming soon */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -292,7 +309,7 @@ export default function QuizzesPage() {
         >
           {loadingBack ? "Loading..." : "← Back"}
         </button>
-      </div><br/>
+      </div><br/><br/>
     </main>
   );
 }
