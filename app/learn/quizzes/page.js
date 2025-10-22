@@ -93,9 +93,9 @@ export default function QuizzesPage() {
         className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center mb-2">
+          <center><h2 className="text-2xl font-semibold text-center mb-2">
             Quiz 1 — Recognise the Emotion (Phase 1)
-          </h2>
+          </h2></center>
           <p className="text-center text-gray-400 italic mb-6">
             Identify emotions from portraits — based on the Free Basic Collection
           </p>
@@ -199,9 +199,9 @@ export default function QuizzesPage() {
         className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center mb-2">
+          <center><h2 className="text-2xl font-semibold text-center mb-2">
             Quiz 2 — Recognise the Emotion (Phase 2)
-          </h2>
+          </h2></center>
           <p className="text-center text-gray-400 italic mb-6">
             Identify emotions from the Advanced Emotional Expressions Collection
           </p>
@@ -307,12 +307,12 @@ export default function QuizzesPage() {
         className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center mb-2">
+          <center><h2 className="text-2xl font-semibold text-center mb-2">
             Quiz 3 — Recognise the Emotion (Young Adults — Phase 3)
-          </h2>
-          <p className="text-center text-gray-400 italic mb-6">
+          </h2></center>
+          <center><p className="text-center text-gray-400 italic mb-6">
             Identify emotions from the EmotionDeck Phase 3 — Young Adults Collection
-          </p>
+          </p></center>
 
           <table className="w-full text-sm md:text-base border-collapse">
             <tbody>
@@ -415,12 +415,12 @@ export default function QuizzesPage() {
         className="mt-12 w-[80%] mx-auto border border-emerald-700 rounded-2xl overflow-hidden shadow-[0_0_20px_rgba(16,185,129,0.2)]"
       >
         <div className="bg-gray-900 p-6 md:p-10">
-          <h2 className="text-2xl font-semibold text-center mb-2 text-emerald-400">
+          <center><h2 className="text-2xl font-semibold text-center mb-2 text-emerald-400">
             Quiz 4 — Global Emotional Spectrum 🌍
-          </h2>
-          <p className="text-center text-gray-400 italic mb-6">
+          </h2></center>
+          <center><p className="text-center text-gray-400 italic mb-6">
             Explore 120 emotions across 10 global categories — the ultimate EmotionDeck Learn experience
-          </p>
+          </p></center>
 
           <table className="w-full text-sm md:text-base border-collapse">
             <tbody>

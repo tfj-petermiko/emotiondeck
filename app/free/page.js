@@ -105,7 +105,7 @@ export default function FreeCollection() {
           className="text-5xl md:text-6xl font-bold mb-4"
         >
           EmotionDeck Free Collection — Phase 1 🌱
-        </motion.h1>
+        </motion.h1><br />
 
         <motion.p
           initial={{ opacity: 0 }}

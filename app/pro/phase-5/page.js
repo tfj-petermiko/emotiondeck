@@ -78,7 +78,7 @@ export default function ProCollectionPhase5() {
         >
           EmotionDeck PRO Collection — Phase 5: Seniors Collection 👴👵
         </motion.h1>
-
+<br />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
