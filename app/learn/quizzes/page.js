@@ -216,10 +216,9 @@ export default function QuizzesPage() {
                   </p>
                   <p className="text-gray-400 mb-3 text-justify">
 
-                    In this second quiz, you’ll explore emotions from{" "}
-                    <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.{" "}
-                    Emotions like Anxiety, Nostalgia, Confidence, and Tranquillity appear
-                    across different ages and cultures.
+                    In this second educational and visual learning quiz, you’ll explore emotions from
+                    <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.
+                    Emotions like Anxiety, Nostalgia, Confidence, and Tranquillity appear across different ages and cultures.
                   </p>
                   <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
                     Choose the emotion that best describes each portrait. The challenge
