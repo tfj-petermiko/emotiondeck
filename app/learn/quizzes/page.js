@@ -271,7 +271,7 @@ export default function QuizzesPage() {
           </table>
         </div>
       </motion.section>
-
+<br/>
       {/* 📘 More quizzes coming soon */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
