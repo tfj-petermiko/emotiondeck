@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node ./scripts/buildMetadataMap.js",
+    "prebuild": "node ./scripts/buildMetadataMap.js && node ./scripts/generate-sitemap.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-sitemap": "node ./scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@mediapipe/camera_utils": "^0.3.1675466862",
