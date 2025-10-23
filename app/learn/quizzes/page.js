@@ -172,227 +172,319 @@ export default function QuizzesPage() {
 
       <br />
 
-      {/* ========================== */}
-      {/* 💫 QUIZ 2 — Recognise the Emotion (Phase 2) */}
-      {/* ========================== */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.6 }}
-        className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <center>
-            <h2 className="text-2xl font-semibold text-center mb-2">
-              Quiz 2 — Recognise the Emotion (Phase 2)
-            </h2>
-          </center>
-          <p className="text-center text-gray-400 italic mb-6">
-            Identify emotions from the Advanced Emotional Expressions Collection
-          </p>
+{/* ========================== */}
+{/* 💫 QUIZ 2 — Recognise the Emotion (Phase 2) */}
+{/* ========================== */}
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5, duration: 0.6 }}
+  className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+>
+  <div className="bg-gray-900 p-6 md:p-10">
+    <center>
+      <h2 className="text-2xl font-semibold text-center mb-2">
+        Quiz 2 — Recognise the Emotion (Phase 2)
+      </h2>
+    </center>
+    <p className="text-center text-gray-400 italic mb-6">
+      Identify emotions from the Advanced Emotional Expressions Collection
+    </p>
 
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">
-                    How deep is your emotional intuition?
-                  </p>
-                  <p className="text-gray-400 mb-3 text-justify">
-                    In this second educational and visual learning quiz, you’ll explore emotions from{" "}
-                    <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.
-                    Emotions like Anxiety, Nostalgia, Confidence, and Tranquillity appear across
-                    different ages and cultures.
-                  </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    Choose the emotion that best describes each portrait. The challenge
-                    grows — these emotions are subtler and more complex.
-                  </p>
-
-                  <div className="flex justify-end mt-6">
-                    <button
-                      onClick={handleQuiz2Click}
-                      disabled={loadingQuiz2}
-                      onMouseEnter={() => setHoveredQuiz2(true)}
-                      onMouseLeave={() => setHoveredQuiz2(false)}
-                      style={baseButtonStyle(hoveredQuiz2, loadingQuiz2)}
-                    >
-                      {loadingQuiz2 ? "Loading..." : "Start Quiz 2"}
-                    </button>
-                  </div>
-                </td>
-
-                <td className="p-3 w-[240px] text-center align-top">
-                  <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <img
-                      src="/private_images/images/quiz-2.webp"
-                      alt="EmotionDeck Quiz 2 Preview"
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">
-                    EmotionDeck Quiz 2 — Advanced Emotional Expressions
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
-
-      <br />
-
-      {/* ========================== */}
-      {/* 💫 QUIZ 3 — Young Adults (Phase 3) */}
-      {/* ========================== */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.6 }}
-        className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <center>
-            <h2 className="text-2xl font-semibold text-center mb-2">
-              Quiz 3 — Recognise the Emotion (Young Adults — Phase 3)
-            </h2>
-          </center>
-          <center>
-            <p className="text-center text-gray-400 italic mb-6">
-              Identify emotions from the EmotionDeck Phase 3 — Young Adults Collection
+    <table className="w-full text-sm md:text-base border-collapse">
+      <tbody>
+        <tr className="border-b border-gray-800 align-top">
+          <td className="w-1/4" />
+          <td className="w-2/4 p-3 text-white">
+            <p className="font-semibold mb-1">
+              How deep is your emotional intuition?
             </p>
-          </center>
-
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">
-                    How well can you read the emotions of the next generation?
-                  </p>
-                  <p className="text-gray-400 mb-3 text-justify">
-                    This third quiz takes you into{" "}
-                    <strong>EmotionDeck Phase 3 — Young Adults</strong>, where emotions are
-                    vivid, expressive, and filled with curiosity and determination.
-                    You’ll recognise key feelings like Joy, Anger, Fear, Sadness, and more — 
-                    portrayed through diverse cultures and faces.
-                  </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    Each portrait reflects emotional depth and realism captured in
-                    high-resolution black and white imagery. Can you identify each feeling
-                    accurately?
-                  </p>
-
-                  <div className="flex justify-end mt-6">
-                    <button
-                      onClick={handleQuiz3Click}
-                      disabled={loadingQuiz3}
-                      onMouseEnter={() => setHoveredQuiz3(true)}
-                      onMouseLeave={() => setHoveredQuiz3(false)}
-                      style={baseButtonStyle(hoveredQuiz3, loadingQuiz3)}
-                    >
-                      {loadingQuiz3 ? "Loading..." : "Start Quiz 3"}
-                    </button>
-                  </div>
-                </td>
-
-                <td className="p-3 w-[240px] text-center align-top">
-                  <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <img
-                      src="/private_images/images/quiz-3.webp"
-                      alt="EmotionDeck Quiz 3 Preview"
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">
-                    EmotionDeck Quiz 3 — Young Adults (Phase 3)
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
-
-      <br />
-
-      {/* ===================================== */}
-      {/* 🌈 QUIZ 4 — Global Emotional Spectrum */}
-      {/* ===================================== */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.9, duration: 0.6 }}
-        className="mt-12 w-[80%] mx-auto border border-emerald-700 rounded-2xl overflow-hidden shadow-[0_0_20px_rgba(16,185,129,0.2)]"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <center>
-            <h2 className="text-2xl font-semibold text-center mb-2 text-emerald-400">
-              Quiz 4 — Global Emotional Spectrum 🌍
-            </h2>
-          </center>
-          <center>
-            <p className="text-center text-gray-400 italic mb-6">
-              Explore 120 emotions across 10 global categories — the ultimate EmotionDeck Learn experience
+            <p className="text-gray-400 mb-3 text-justify">
+              In this second educational and visual learning quiz, you’ll explore emotions from{" "}
+              <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.
+              Emotions like Anxiety, Nostalgia, Confidence, and Tranquillity appear across
+              different ages and cultures.
             </p>
-          </center>
+            <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+              Choose the emotion that best describes each portrait. The challenge
+              grows — these emotions are subtler and more complex.
+            </p>
 
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">
-                    The full emotional atlas — in one interactive quiz.
-                  </p>
-                  <p className="text-gray-400 mb-3 text-justify">
-                    Discover the complete <em>EmotionDeck Learn Spectrum</em> through 120 black and white portraits
-                    representing 10 global categories of human emotion. Each emotion is portrayed across
-                    different cultures, genders, and age groups — giving you the most comprehensive emotional
-                    training experience ever created.
-                  </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-                    Select the emotion you recognise in each portrait and test your visual empathy and
-                    cultural awareness. Perfect for both personal growth and psychological insight.
-                  </p>
+            <div className="flex justify-end mt-6">
+              <button
+                onClick={handleQuiz2Click}
+                disabled={loadingQuiz2}
+                onMouseEnter={() => setHoveredQuiz2(true)}
+                onMouseLeave={() => setHoveredQuiz2(false)}
+                style={baseButtonStyle(hoveredQuiz2, loadingQuiz2)}
+              >
+                {loadingQuiz2 ? "Loading..." : "Start Quiz 2"}
+              </button>
+            </div>
+          </td>
 
-                  <div className="flex justify-end mt-6">
-                    <button
-                      onClick={handleQuiz4Click}
-                      disabled={loadingQuiz4}
-                      onMouseEnter={() => setHoveredQuiz4(true)}
-                      onMouseLeave={() => setHoveredQuiz4(false)}
-                      style={baseButtonStyle(hoveredQuiz4, loadingQuiz4)}
-                    >
-                      {loadingQuiz4 ? "Loading..." : "Start Quiz 4"}
-                    </button>
-                  </div>
-                </td>
+          <td className="p-3 w-[240px] text-center align-top">
+            <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+              <img
+                src="/private_images/images/quiz-2.webp"
+                alt="EmotionDeck Quiz 2 Preview"
+                className="object-cover w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-gray-400 text-xs mt-2">
+              EmotionDeck Quiz 2 — Advanced Emotional Expressions
+            </p>
+          </td>
+        </tr>
 
-                <td className="p-3 w-[240px] text-center align-top">
-                  <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <img
-                      src="/private_images/images/quiz-4.webp"
-                      alt="EmotionDeck Quiz 4 Preview"
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">
-                    EmotionDeck Quiz 4 — Global Emotional Spectrum
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
+        {/* 🧠 Additional Info Table */}
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Focus</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Advanced emotion recognition, subtle expressions, psychological insight
+          </td>
+        </tr>
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Questions</td>
+          <td className="p-3 text-white" colSpan={2}>
+            10 randomised questions with 4 emotion choices
+          </td>
+        </tr>
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Emotions Used</td>
+          <td className="p-3 text-gray-300" colSpan={2}>
+            Anxiety, Nostalgia, Confidence, Tension, Empathy, Desire, Awe, Fatigue,
+            Positive Surprise, Negative Surprise, Contemplation, Euphoria, Irritation,
+            Tranquillity, Guilt, Jealousy, Gratitude, Excitement, Affection,
+            Disbelief, Inspiration, Longing, Disappointment, Neutral
+          </td>
+        </tr>
+        <tr>
+          <td className="p-3 text-gray-400">Access Type</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Free — Part of EmotionDeck Learn
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</motion.section>
 
-      <br /><br />
+<br />
+
+
+{/* ========================== */}
+{/* 💫 QUIZ 3 — Young Adults (Phase 3) */}
+{/* ========================== */}
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.7, duration: 0.6 }}
+  className="mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+>
+  <div className="bg-gray-900 p-6 md:p-10">
+    <center>
+      <h2 className="text-2xl font-semibold text-center mb-2">
+        Quiz 3 — Recognise the Emotion (Young Adults — Phase 3)
+      </h2>
+    </center>
+    <center>
+      <p className="text-center text-gray-400 italic mb-6">
+        Identify emotions from the EmotionDeck Phase 3 — Young Adults Collection
+      </p>
+    </center>
+
+    <table className="w-full text-sm md:text-base border-collapse">
+      <tbody>
+        <tr className="border-b border-gray-800 align-top">
+          <td className="w-1/4" />
+          <td className="w-2/4 p-3 text-white">
+            <p className="font-semibold mb-1">
+              How well can you read the emotions of the next generation?
+            </p>
+            <p className="text-gray-400 mb-3 text-justify">
+              This third quiz takes you into{" "}
+              <strong>EmotionDeck Phase 3 — Young Adults</strong>, where emotions are
+              vivid, expressive, and filled with curiosity and determination.
+              You’ll recognise key feelings like Joy, Anger, Fear, Sadness, and more — 
+              portrayed through diverse cultures and faces.
+            </p>
+            <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+              Each portrait reflects emotional depth and realism captured in
+              high-resolution black and white imagery. Can you identify each feeling
+              accurately?
+            </p>
+
+            <div className="flex justify-end mt-6">
+              <button
+                onClick={handleQuiz3Click}
+                disabled={loadingQuiz3}
+                onMouseEnter={() => setHoveredQuiz3(true)}
+                onMouseLeave={() => setHoveredQuiz3(false)}
+                style={baseButtonStyle(hoveredQuiz3, loadingQuiz3)}
+              >
+                {loadingQuiz3 ? "Loading..." : "Start Quiz 3"}
+              </button>
+            </div>
+          </td>
+
+          <td className="p-3 w-[240px] text-center align-top">
+            <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+              <img
+                src="/private_images/images/quiz-3.webp"
+                alt="EmotionDeck Quiz 3 Preview"
+                className="object-cover w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-gray-400 text-xs mt-2">
+              EmotionDeck Quiz 3 — Young Adults (Phase 3)
+            </p>
+          </td>
+        </tr>
+
+        {/* 🧠 Additional Info Table */}
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Focus</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Emotion recognition in young adults — expressive, curious, and evolving
+          </td>
+        </tr>
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Questions</td>
+          <td className="p-3 text-white" colSpan={2}>
+            10 randomised questions with 4 emotion choices
+          </td>
+        </tr>
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Emotions Used</td>
+          <td className="p-3 text-gray-300" colSpan={2}>
+            Joy, Anger, Fear, Sadness, Surprise, Disgust, Love, Pride, Confusion, Hope,
+            Trust, Curiosity, Desire, Nostalgia, Anxiety, Excitement, Determination,
+            Compassion, Tranquillity, Guilt, Contempt, Inspiration, Affection, Disbelief
+          </td>
+        </tr>
+        <tr>
+          <td className="p-3 text-gray-400">Access Type</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Free — Part of EmotionDeck Learn
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</motion.section>
+
+<br />
+
+{/* ===================================== */}
+{/* 🌈 QUIZ 4 — Global Emotional Spectrum */}
+{/* ===================================== */}
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.9, duration: 0.6 }}
+  className="mt-12 w-[80%] mx-auto border border-emerald-700 rounded-2xl overflow-hidden shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+>
+  <div className="bg-gray-900 p-6 md:p-10">
+    <center>
+      <h2 className="text-2xl font-semibold text-center mb-2 text-emerald-400">
+        Quiz 4 — Global Emotional Spectrum 🌍
+      </h2>
+    </center>
+    <center>
+      <p className="text-center text-gray-400 italic mb-6">
+        Explore 120 emotions across 10 global categories — the ultimate EmotionDeck Learn experience
+      </p>
+    </center>
+
+    <table className="w-full text-sm md:text-base border-collapse">
+      <tbody>
+        {/* Main Description */}
+        <tr className="border-b border-gray-800 align-top">
+          <td className="w-1/4" />
+          <td className="w-2/4 p-3 text-white">
+            <p className="font-semibold mb-1">
+              The full emotional atlas — in one interactive quiz.
+            </p>
+            <p className="text-gray-400 mb-3 text-justify">
+              Discover the complete <em>EmotionDeck Learn Spectrum</em> through 120 black and white portraits
+              representing 10 global categories of human emotion. Each emotion is portrayed across
+              different cultures, genders, and age groups — giving you the most comprehensive emotional
+              training experience ever created.
+            </p>
+            <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+              Select the emotion you recognise in each portrait and test your visual empathy and
+              cultural awareness. Perfect for both personal growth and psychological insight.
+            </p>
+
+            <div className="flex justify-end mt-6">
+              <button
+                onClick={handleQuiz4Click}
+                disabled={loadingQuiz4}
+                onMouseEnter={() => setHoveredQuiz4(true)}
+                onMouseLeave={() => setHoveredQuiz4(false)}
+                style={baseButtonStyle(hoveredQuiz4, loadingQuiz4)}
+              >
+                {loadingQuiz4 ? "Loading..." : "Start Quiz 4"}
+              </button>
+            </div>
+          </td>
+
+          {/* Preview Image */}
+          <td className="p-3 w-[240px] text-center align-top">
+            <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
+              <img
+                src="/private_images/images/quiz-4.webp"
+                alt="EmotionDeck Quiz 4 Preview"
+                className="object-cover w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-gray-400 text-xs mt-2">
+              EmotionDeck Quiz 4 — Global Emotional Spectrum
+            </p>
+          </td>
+        </tr>
+
+        {/* 🧠 Additional Info Table */}
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Focus</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Emotional intelligence, cross-cultural empathy, and advanced emotion recognition
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Questions</td>
+          <td className="p-3 text-white" colSpan={2}>
+            10 randomised portraits per category, fully interactive experience
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-800">
+          <td className="p-3 text-gray-400">Emotions Used</td>
+          <td className="p-3 text-gray-300" colSpan={2}>
+            120 total emotions grouped into 10 main categories — Joy & Vitality, Calm & Harmony,
+            Empathy & Connection, Curiosity & Wonder, Confidence & Power, Sadness & Reflection,
+            Fear & Vulnerability, Anger & Resistance, Surprise & Transition, Acceptance & Transcendence.
+          </td>
+        </tr>
+
+        <tr>
+          <td className="p-3 text-gray-400">Access Type</td>
+          <td className="p-3 text-white" colSpan={2}>
+            Free — Part of EmotionDeck Learn
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</motion.section>
+
+<br /><br />
+
 
       {/* 🟢 Back to Learn button */}
       <div className="text-center mt-16">
