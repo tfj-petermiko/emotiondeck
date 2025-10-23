@@ -449,7 +449,7 @@ export default function QuizzesPage() {
         {/* 🧠 Additional Info Table */}
         <tr className="border-b border-gray-800">
           <td className="p-3 text-gray-400">Focus</td>
-          <td className="p-3 text-white leading-relaxed text-justify max-w-xl" colSpan={2}>
+          <td className="p-3 text-white" colSpan={2}>
             Emotional intelligence, cross-cultural empathy, and advanced emotion recognition
           </td>
         </tr>
@@ -461,17 +461,15 @@ export default function QuizzesPage() {
           </td>
         </tr>
 
-
         <tr className="border-b border-gray-800 align-top">
           <td className="p-3 text-gray-400">Emotions Used</td>
-         <td className="p-3 text-gray-300" colSpan={2}>
+          <td className="p-3 text-gray-300 leading-relaxed" colSpan={2}>
             120 total emotions grouped into 10 main categories:
             <br />
-            <span className="text-gray-200">
-              Joy & Vitality, Calm & Harmony, Empathy & Connection,
-              Curiosity & Wonder, Confidence & Power,
-              Sadness & Reflection, Fear & Vulnerability, Anger & Resistance,
-              Surprise & Transition, Acceptance & Transcendence.
+            <span className="text-gray-400">
+              Joy & Vitality, Calm & Harmony, Empathy & Connection, Curiosity & Wonder, 
+              Confidence & Power, Sadness & Reflection, Fear & Vulnerability, 
+              Anger & Resistance, Surprise & Transition, Acceptance & Transcendence.
             </span>
           </td>
         </tr>
@@ -487,10 +485,8 @@ export default function QuizzesPage() {
   </div>
 </motion.section>
 
-
-
-
-<br /><br />
+<br />
+<br />
 
 
       {/* 🟢 Back to Learn button */}
