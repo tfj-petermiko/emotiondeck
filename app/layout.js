@@ -39,11 +39,10 @@ export default function RootLayout({ children }) {
     };
 
     protectNumbers();
-
     const observer = new MutationObserver(() => protectNumbers());
     observer.observe(document.body, { childList: true, subtree: true });
-
     const interval = setInterval(protectNumbers, 3000);
+
     console.log("✅ EmotionDeck number protection active (safe global version)");
 
     return () => {
@@ -58,7 +57,9 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate" />
-        <title>EmotionDeck</title>
+        <title suppressHydrationWarning>
+          EmotionDeck — See. Feel. Understand.
+        </title>
       </head>
 
       <body className="bg-neutral-900 text-white min-h-screen antialiased flex flex-col select-none overflow-visible">

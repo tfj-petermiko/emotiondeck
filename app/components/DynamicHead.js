@@ -6,87 +6,89 @@ import metadataMap from "../metadataMap.json";
 
 export default function DynamicHead() {
   const pathname = usePathname();
-
-  // Find matching metadata or fallback to root
   const meta = metadataMap[pathname] || metadataMap["/"] || {};
 
   useEffect(() => {
-    if (typeof document === "undefined") return;
-    if (!meta || !meta.title) return;
+    if (!meta || typeof document === "undefined") return;
 
-    // 🕐 Run after hydration to avoid Next HeadManager overwrite
-    const timer = setTimeout(() => applyMeta(meta), 200);
-    return () => clearTimeout(timer);
+    // 💥 Global fix: always enforce full title & meta even after hydration
+    const applyMetadata = () => {
+      if (meta.title) {
+        document.title = meta.title;
+        let titleTag = document.querySelector("head > title");
+        if (!titleTag) {
+          titleTag = document.createElement("title");
+          document.head.appendChild(titleTag);
+        }
+        titleTag.textContent = meta.title;
+      }
+
+      // description
+      setMeta("description", meta.description);
+      setMeta("keywords", meta.keywords);
+
+      // canonical
+      if (meta.canonical) {
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+          link = document.createElement("link");
+          link.setAttribute("rel", "canonical");
+          document.head.appendChild(link);
+        }
+        link.setAttribute("href", meta.canonical);
+      }
+
+      // Open Graph
+      setOG("og:title", meta.og_title);
+      setOG("og:description", meta.og_description);
+      setOG("og:url", meta.og_url);
+      setOG("og:image", meta.og_image);
+
+      // Twitter
+      setMeta("twitter:card", meta.twitter_card);
+      setMeta("twitter:title", meta.twitter_title);
+      setMeta("twitter:description", meta.twitter_description);
+      setMeta("twitter:image", meta.twitter_image);
+    };
+
+    const setMeta = (name, content) => {
+      if (!content) return;
+      let tag = document.querySelector(`meta[name='${name}']`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("name", name);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", content);
+    };
+
+    const setOG = (property, content) => {
+      if (!content) return;
+      let tag = document.querySelector(`meta[property='${property}']`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("property", property);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", content);
+    };
+
+    // 👇 Force metadata after hydration and whenever title resets
+    applyMetadata();
+
+    // Monitor for unwanted DOM rewrites (React hydration / Next.js)
+    const observer = new MutationObserver(() => {
+      const currentTitle = document.title?.trim();
+      if (meta.title && currentTitle !== meta.title) {
+        console.warn("⚠️ Title reset detected — reapplying metadata");
+        applyMetadata();
+      }
+    });
+
+    observer.observe(document.head, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
   }, [pathname]);
 
   return null;
-}
-
-// --- Apply all metadata dynamically ---
-function applyMeta(meta) {
-  const head = document.head;
-  if (!head) return;
-
-  // ✅ TITLE
-  let titleTag = head.querySelector("title");
-  if (!titleTag) {
-    titleTag = document.createElement("title");
-    head.appendChild(titleTag);
-  }
-  titleTag.textContent = meta.title.trim();
-  document.title = meta.title.trim();
-
-  // ✅ DESCRIPTION
-  setMeta("description", meta.description);
-  setMeta("keywords", meta.keywords);
-
-  // ✅ CANONICAL
-  if (meta.canonical) {
-    let link = head.querySelector("link[rel='canonical']");
-    if (!link) {
-      link = document.createElement("link");
-      link.setAttribute("rel", "canonical");
-      head.appendChild(link);
-    }
-    link.setAttribute("href", meta.canonical.trim());
-  }
-
-  // ✅ OPEN GRAPH
-  setOG("og:title", meta.og_title);
-  setOG("og:description", meta.og_description);
-  setOG("og:url", meta.og_url);
-  setOG("og:image", meta.og_image);
-
-  // ✅ TWITTER
-  setMeta("twitter:card", meta.twitter_card);
-  setMeta("twitter:title", meta.twitter_title);
-  setMeta("twitter:description", meta.twitter_description);
-  setMeta("twitter:image", meta.twitter_image);
-
-  console.log("✅ Dynamic meta applied for:", document.title);
-}
-
-// --- Helpers ---
-function setMeta(name, content) {
-  if (!content) return;
-  const head = document.head;
-  let tag = head.querySelector(`meta[name='${name}']`);
-  if (!tag) {
-    tag = document.createElement("meta");
-    tag.setAttribute("name", name);
-    head.appendChild(tag);
-  }
-  tag.setAttribute("content", content.trim());
-}
-
-function setOG(property, content) {
-  if (!content) return;
-  const head = document.head;
-  let tag = head.querySelector(`meta[property='${property}']`);
-  if (!tag) {
-    tag = document.createElement("meta");
-    tag.setAttribute("property", property);
-    head.appendChild(tag);
-  }
-  tag.setAttribute("content", content.trim());
 }
