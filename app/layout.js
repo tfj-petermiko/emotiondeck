@@ -7,7 +7,6 @@ import DynamicHead from "./components/DynamicHead";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
-    // 🧠 Protect numeric text from Google Translate freezing (safe version)
     const protectNumbers = () => {
       const walker = document.createTreeWalker(
         document.body,
@@ -55,13 +54,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* 🧠 Placeholder title — replaced dynamically after hydration */}
-        <title>EmotionDeck</title>
-        <meta name="description" content="EmotionDeck — loading..." />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate" />
+        <title>EmotionDeck</title>
       </head>
 
-      <body className="bg-neutral-900 text-white min-h-screen overflow-visible antialiased flex flex-col select-none">
+      <body className="bg-neutral-900 text-white min-h-screen antialiased flex flex-col select-none overflow-visible">
         <DynamicHead />
         <ClientLayout>{children}</ClientLayout>
       </body>
