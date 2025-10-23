@@ -461,12 +461,10 @@ export default function QuizzesPage() {
           </td>
         </tr>
 
+
         <tr className="border-b border-gray-800 align-top">
           <td className="p-3 text-gray-400">Emotions Used</td>
-          <td
-            className="p-3 text-gray-300 leading-relaxed text-justify max-w-xl break-normal"
-            colSpan={2}
-          >
+         <td className="p-3 text-gray-300" colSpan={2}>
             120 total emotions grouped into 10 main categories:
             <br />
             <span className="text-gray-200">
@@ -489,10 +487,6 @@ export default function QuizzesPage() {
   </div>
 </motion.section>
 
-<br />
-
-
-<br />
 
 
 
