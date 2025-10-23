@@ -1,5 +1,21 @@
 {
-  "/ai-generator": {
+  "/home": {
+    "metadataBase": "https://emotiondeck.com",
+    "canonical": "https://emotiondeck.com",
+    "title": "EmotionDeck — See. Feel. Understand.",
+    "description": "EmotionDeck helps you learn to recognise, interpret, and understand human emotions through subtle facial expressions, mindful observation, and guided visual learning.",
+    "keywords": "EmotionDeck, emotion recognition, emotional learning, emotional perception, facial expressions, empathy, emotion awareness, emotion education, emotion perception training, human emotion training, emotional intelligence, nonverbal communication, visual learning, emotion analysis, microexpressions, emotion psychology, human behaviour, emotional development, emotion understanding, emotion research, mindful observation, psychology of emotion, emotional literacy, emotion detection, emotion expression, cognitive empathy, affective empathy, body language, emotional skills, emotion perception skills, emotion visualisation, psychological training, emotional growth, perception of emotions, human emotion study, emotional response, social intelligence, emotional awareness training, emotional competence, facial emotion recognition, emotion observation practice, emotional self-awareness, emotion-based learning, global emotions, universal expressions, emotion recognition platform",
+    "google_verification": "IDzJ4Cn66z4WCWBw3l2BI6IRKH-POLMXrDzfDsRjGwc",
+    "og_title": "EmotionDeck — Train Your Perception. Understand Human Emotion.",
+    "og_description": "Explore the full EmotionDeck visual learning platform — perceive and understand human emotions through detailed facial expressions and mindful observation.",
+    "og_url": "https://emotiondeck.com",
+    "og_image": "https://emotiondeck.com/preview.jpg",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "EmotionDeck — Train Your Perception. Understand Human Emotion.",
+    "twitter_description": "Enhance your emotional perception and learn to recognise subtle human expressions through guided visual learning with EmotionDeck.",
+    "twitter_image": "https://emotiondeck.com/preview.jpg"
+  },
+   "/ai-generator": {
     "metadataBase": "https://emotiondeck.com",
     "canonical": "https://emotiondeck.com/ai-generator",
     "title": "EmotionDeck AI Generator — Create Custom Emotional Portraits with Precision",
@@ -87,22 +103,6 @@
     "twitter_card": "summary_large_image",
     "twitter_title": "EmotionDeck Global Map — One World, Many Emotions",
     "twitter_description": "Explore the interactive EmotionDeck Global Map and uncover how culture shapes emotion,\nexpression, and empathy around the world.",
-    "twitter_image": "https://emotiondeck.com/preview.jpg"
-  },
-  "/home": {
-    "metadataBase": "https://emotiondeck.com",
-    "canonical": "https://emotiondeck.com",
-    "title": "EmotionDeck — See. Feel. Understand.",
-    "description": "EmotionDeck helps you learn to recognise, interpret, and understand human emotions through subtle facial expressions, mindful observation, and guided visual learning.",
-    "keywords": "EmotionDeck, emotion recognition, emotional learning, emotional perception, facial expressions, empathy, emotion awareness, emotion education, emotion perception training, human emotion training, emotional intelligence, nonverbal communication, visual learning, emotion analysis, microexpressions, emotion psychology, human behaviour, emotional development, emotion understanding, emotion research, mindful observation, psychology of emotion, emotional literacy, emotion detection, emotion expression, cognitive empathy, affective empathy, body language, emotional skills, emotion perception skills, emotion visualisation, psychological training, emotional growth, perception of emotions, human emotion study, emotional response, social intelligence, emotional awareness training, emotional competence, facial emotion recognition, emotion observation practice, emotional self-awareness, emotion-based learning, global emotions, universal expressions, emotion recognition platform",
-    "google_verification": "IDzJ4Cn66z4WCWBw3l2BI6IRKH-POLMXrDzfDsRjGwc",
-    "og_title": "EmotionDeck — Train Your Perception. Understand Human Emotion.",
-    "og_description": "Explore the full EmotionDeck visual learning platform — perceive and understand human emotions through detailed facial expressions and mindful observation.",
-    "og_url": "https://emotiondeck.com",
-    "og_image": "https://emotiondeck.com/preview.jpg",
-    "twitter_card": "summary_large_image",
-    "twitter_title": "EmotionDeck — Train Your Perception. Understand Human Emotion.",
-    "twitter_description": "Enhance your emotional perception and learn to recognise subtle human expressions through guided visual learning with EmotionDeck.",
     "twitter_image": "https://emotiondeck.com/preview.jpg"
   },
   "/learn": {

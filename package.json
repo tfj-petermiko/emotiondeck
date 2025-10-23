@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:meta": "node ./scripts/buildMetadataMap.cjs",
-    "generate-sitemap": "node ./scripts/generate-sitemap.cjs",
+    "build:meta": "node ./scripts/buildMetadataMap.js",
+    "generate-sitemap": "node ./scripts/generate-sitemap.js",
     "prebuild": "npm run build:meta && npm run generate-sitemap",
     "build": "npm run prebuild && next build",
     "start": "next start",
