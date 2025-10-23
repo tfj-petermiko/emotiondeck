@@ -1,4 +1,3 @@
-// rebuild trigger
 "use client";
 
 import "./globals.css";
@@ -43,7 +42,7 @@ export default function RootLayout({ children }) {
     observer.observe(document.body, { childList: true, subtree: true });
     const interval = setInterval(protectNumbers, 3000);
 
-    console.log("✅ EmotionDeck number protection active (safe global version)");
+    console.log("✅ EmotionDeck number protection active");
 
     return () => {
       observer.disconnect();
@@ -57,9 +56,7 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate" />
-        <title suppressHydrationWarning>
-          EmotionDeck — See. Feel. Understand.
-        </title>
+        {/* 🧠 no static <title> — DynamicHead now handles all meta */}
       </head>
 
       <body className="bg-neutral-900 text-white min-h-screen antialiased flex flex-col select-none overflow-visible">
