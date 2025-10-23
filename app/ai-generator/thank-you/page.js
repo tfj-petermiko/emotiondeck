@@ -1,45 +1,40 @@
-"use client";
+import ThankYouClient from "./ThankYouClient";
 
-export const dynamic = "force-static";
+export const metadata = {
+  metadataBase: new URL("https://emotiondeck.com"),
+  alternates: { canonical: "https://emotiondeck.com/ai-generator/thank-you" },
 
-import { useState } from "react";
+  title: "EmotionDeck — Thank You for Your Purchase",
+  description:
+    "Your payment was successful! You now have 10 credits available in the EmotionDeck AI Generator to create realistic emotional portraits instantly.",
 
-export default function AIGeneratorThankYou() {
-  const [hovered, setHovered] = useState(false);
+  openGraph: {
+    title: "EmotionDeck — Purchase Successful",
+    description:
+      "You now have 10 new AI generations available in the EmotionDeck AI Generator. Start creating emotional portraits today.",
+    url: "https://emotiondeck.com/ai-generator/thank-you",
+    type: "website",
+    siteName: "EmotionDeck",
+    images: [
+      {
+        url: "https://emotiondeck.com/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EmotionDeck AI Generator — Thank You",
+      },
+    ],
+  },
 
-  const baseButtonStyle = {
-    backgroundColor: hovered ? "#34D399" : "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "12px 28px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "1rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
+  twitter: {
+    card: "summary_large_image",
+    title: "EmotionDeck — Thank You for Your Purchase",
+    description:
+      "Your EmotionDeck PRO access is now active — enjoy 10 AI generations for creating emotional portraits.",
+    images: ["https://emotiondeck.com/preview.jpg"],
+    creator: "@emotiondeck",
+  },
+};
 
-  return (
-    <main className="min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6">
-      <div className="bg-gray-800 rounded-2xl shadow-2xl p-10 text-center max-w-lg">
-        <h1 className="text-3xl font-bold text-emerald-400 mb-4">🎉 Thank You!</h1>
-        <p className="text-gray-300 mb-4">
-          Your Payment Was Successful. You Now Have{" "}
-          <strong>10 Available Generations</strong> in The EmotionDeck AI Generator.
-        </p>
-        <p className="text-gray-400 mb-8">
-          Each Click on “Generate Portrait” Uses One Generation Credit.
-        </p>
-
-        <button
-          onClick={() => (window.location.href = "/ai-generator")}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-          style={baseButtonStyle}
-        >
-          Go to AI Generator →
-        </button>
-      </div>
-    </main>
-  );
+export default function Page() {
+  return <ThankYouClient />;
 }

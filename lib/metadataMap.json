@@ -1,0 +1,26 @@
+import metadataMap from "../public/metadataMap.json";
+
+export function generateMetadataFromMap(key) {
+  const meta = metadataMap[key];
+  if (!meta) {
+    console.warn(`⚠️ No metadata found for key: ${key}`);
+    return {};
+  }
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    openGraph: {
+      title: meta.og_title,
+      description: meta.og_description,
+      url: meta.og_url,
+      images: [meta.og_image],
+    },
+    twitter: {
+      card: meta.twitter_card,
+      title: meta.twitter_title,
+      description: meta.twitter_description,
+      images: [meta.twitter_image],
+    },
+  };
+}

@@ -1,8 +1,9 @@
 "use client";
+
 import { useEffect } from "react";
 import GlobalMap from "../components/GlobalMap/GlobalMap";
 
-// 🧩 Helper — load metadata.txt (client-safe via fetch)
+// 🧩 Helper — client-safe metadata loader
 async function loadMetadata() {
   try {
     const res = await fetch("/content/globalmap/metadata.txt");
@@ -27,9 +28,9 @@ async function loadMetadata() {
   }
 }
 
-export default function GlobalMapPage() {
+export default function GlobalMapClient() {
   useEffect(() => {
-    loadMetadata(); // silently loads metadata for SEO
+    loadMetadata(); // preloads metadata silently for future SSR or analytics
   }, []);
 
   return (

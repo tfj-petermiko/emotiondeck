@@ -1,78 +1,40 @@
-"use client";
-import { useEffect, useRef, useState } from "react";
+import CheckoutClient from "./CheckoutClient";
 
-export default function AIGeneratorCheckout() {
-  const [sdkReady, setSdkReady] = useState(false);
-  const redirected = useRef(false);
+export const metadata = {
+  metadataBase: new URL("https://emotiondeck.com"),
+  alternates: { canonical: "https://emotiondeck.com/ai-generator/checkout" },
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = `https://www.paypal.com/sdk/js?client-id=${process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID}&currency=GBP`;
-    script.async = true;
-    script.onload = () => setSdkReady(true);
-    document.body.appendChild(script);
-  }, []);
+  title: "EmotionDeck AI Generator — Secure Checkout",
+  description:
+    "Unlock 10 AI generations for the EmotionDeck AI Generator. Pay securely via PayPal and start creating realistic emotional portraits instantly.",
 
-  useEffect(() => {
-    if (!sdkReady || !window.paypal) return;
+  openGraph: {
+    title: "EmotionDeck AI Generator — Secure Checkout",
+    description:
+      "Complete your payment securely with PayPal to unlock 10 new AI portrait generations in the EmotionDeck Generator.",
+    url: "https://emotiondeck.com/ai-generator/checkout",
+    type: "website",
+    siteName: "EmotionDeck",
+    images: [
+      {
+        url: "https://emotiondeck.com/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EmotionDeck AI Generator Checkout",
+      },
+    ],
+  },
 
-    window.paypal
-      .Buttons({
-        style: {
-          layout: "vertical",   // może być też 'horizontal'
-          color: "gold",
-          shape: "pill",
-          label: "paypal",
-          height: 48,
-          tagline: false,
-        },
-        createOrder: (data, actions) =>
-          actions.order.create({
-            purchase_units: [
-              {
-                amount: { value: "4.99" },
-                description: "EmotionDeck AI Generator — 10 Portraits",
-              },
-            ],
-          }),
-        onApprove: async (data, actions) => {
-          if (redirected.current) return;
-          redirected.current = true;
-          await actions.order.capture();
-          localStorage.setItem(
-            "emotiondeck_ai_access",
-            JSON.stringify({ remaining: 10 })
-          );
-          window.location.href = "/ai-generator/thank-you";
-        },
-      })
-      .render("#paypal-button-container");
-  }, [sdkReady]);
+  twitter: {
+    card: "summary_large_image",
+    title: "EmotionDeck AI Generator — Checkout",
+    description:
+      "Pay £4.99 securely via PayPal to unlock 10 AI portrait generations in the EmotionDeck Generator.",
+    images: ["https://emotiondeck.com/preview.jpg"],
+    creator: "@emotiondeck",
+  },
+};
 
-  return (
-    <main className="min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6">
-      <div className="bg-gray-800 rounded-2xl p-10 max-w-md w-full text-center shadow-2xl">
-        <h1 className="text-3xl font-bold text-yellow-400 mb-4">
-          💳 EmotionDeck AI Generator
-        </h1>
-
-        <p className="text-gray-400 mb-8">
-          Access the <strong>EmotionDeck AI Generator</strong> — Pay Just{" "}
-          <strong>£4.99</strong> to Unlock
-          <strong> 10 Unique Black-and-White Portrait Generations</strong> in
-          Authentic EmotionDeck Style.<br />
-          Each Image Captures a Genuine Emotional Expression Across Culture,
-          Age, and Gender.
-        </p>
-
-        {/* ✅ Centered full-width PayPal button */}
-        <div className="w-full flex justify-center">
-          <div
-            id="paypal-button-container"
-            className="w-[340px] flex justify-center"
-          ></div>
-        </div>
-      </div>
-    </main>
-  );
+export default function Page() {
+  return <CheckoutClient />;
 }

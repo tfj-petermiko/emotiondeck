@@ -28,7 +28,7 @@ async function loadMetadata() {
   }
 }
 
-export default function GeneratorPage() {
+export default function GeneratorClient() {
   const [form, setForm] = useState({
     ethnicity: "",
     emotion: "",
@@ -54,7 +54,6 @@ export default function GeneratorPage() {
     transition: "background-color 0.2s ease, transform 0.2s ease",
   };
 
-  // 🧠 Load credits and metadata safely
   useEffect(() => {
     loadMetadata();
     try {
@@ -104,7 +103,7 @@ export default function GeneratorPage() {
   };
 
   const generate = async () => {
-    if (loading) return; // prevent spamming clicks
+    if (loading) return;
     if (remaining <= 0) {
       window.location.href = "/ai-generator/checkout";
       return;
@@ -116,11 +115,6 @@ export default function GeneratorPage() {
     setError("");
 
     try {
-      // Optional: You can verify credits server-side before generating
-      // const creditCheck = await fetch("/api/credits");
-      // const { remainingCredits } = await creditCheck.json();
-      // if (remainingCredits <= 0) throw new Error("No credits remaining.");
-
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -158,6 +152,7 @@ export default function GeneratorPage() {
       <h1 className="text-3xl font-semibold mb-6">
         ⚙️ EmotionDeck — AI Portrait Generator
       </h1>
+
       <p className="text-gray-400 mb-8 text-center max-w-lg">
         Create Black & White Portraits in the Official EmotionDeck Style.<br />
         Choose Ethnicity, Emotion, Age Group, and Gender.
@@ -271,7 +266,8 @@ export default function GeneratorPage() {
       </button>
 
       {error && <p className="text-red-400 mt-4">{error}</p>}
-<br/>
+      <br />
+
       {/* 🔹 Generated image + download button */}
       {imageUrl && (
         <div className="mt-12 text-center">
@@ -280,7 +276,7 @@ export default function GeneratorPage() {
             alt="Generated EmotionDeck Portrait"
             className="rounded-xl max-w-[400px] mx-auto mb-5"
           />
-          <br/><br/>
+          <br /><br />
           <button
             onClick={handleDownload}
             onMouseEnter={() => setHovered(true)}
@@ -291,15 +287,10 @@ export default function GeneratorPage() {
             }}
           >
             Download Image
-          </button><br/><br/><br/>
+          </button>
+          <br /><br /><br />
         </div>
-
-
-
-
       )}
     </main>
   );
 }
-
-
