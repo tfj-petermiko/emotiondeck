@@ -378,9 +378,9 @@ export default function QuizzesPage() {
 
 <br />
 
-{/* ===================================== */}
+{/* =============================== */}
 {/* 🌈 QUIZ 4 — Global Emotional Spectrum */}
-{/* ===================================== */}
+{/* =============================== */}
 <motion.section
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
@@ -401,7 +401,6 @@ export default function QuizzesPage() {
 
     <table className="w-full text-sm md:text-base border-collapse">
       <tbody>
-        {/* Main Description */}
         <tr className="border-b border-gray-800 align-top">
           <td className="w-1/4" />
           <td className="w-2/4 p-3 text-white">
@@ -409,14 +408,14 @@ export default function QuizzesPage() {
               The full emotional atlas — in one interactive quiz.
             </p>
             <p className="text-gray-400 mb-3 text-justify">
-              Discover the complete <em>EmotionDeck Learn Spectrum</em> through 120 black and white portraits
-              representing 10 global categories of human emotion. Each emotion is portrayed across
-              different cultures, genders, and age groups — giving you the most comprehensive emotional
-              training experience ever created.
+              This fourth quiz introduces the <strong>EmotionDeck Learn Spectrum</strong>, combining 
+              10 global emotional categories and 120 portraits. Each emotion represents diverse 
+              expressions across cultures, genders, and age groups — forming a complete emotional atlas.
             </p>
             <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
-              Select the emotion you recognise in each portrait and test your visual empathy and
-              cultural awareness. Perfect for both personal growth and psychological insight.
+              Identify the emotion in each portrait and test your ability to recognise feelings 
+              across humanity. This experience bridges empathy, culture, and psychology through 
+              visual learning.
             </p>
 
             <div className="flex justify-end mt-6">
@@ -432,7 +431,6 @@ export default function QuizzesPage() {
             </div>
           </td>
 
-          {/* Preview Image */}
           <td className="p-3 w-[240px] text-center align-top">
             <div className="w-[220px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
               <img
@@ -451,7 +449,7 @@ export default function QuizzesPage() {
         {/* 🧠 Additional Info Table */}
         <tr className="border-b border-gray-800">
           <td className="p-3 text-gray-400">Focus</td>
-          <td className="p-3 text-white" colSpan={2}>
+          <td className="p-3 text-white leading-relaxed text-justify max-w-xl" colSpan={2}>
             Emotional intelligence, cross-cultural empathy, and advanced emotion recognition
           </td>
         </tr>
@@ -459,16 +457,24 @@ export default function QuizzesPage() {
         <tr className="border-b border-gray-800">
           <td className="p-3 text-gray-400">Questions</td>
           <td className="p-3 text-white" colSpan={2}>
-            10 randomised portraits per category, fully interactive experience
+            10 randomised questions with 4 emotion choices
           </td>
         </tr>
 
-        <tr className="border-b border-gray-800">
+        <tr className="border-b border-gray-800 align-top">
           <td className="p-3 text-gray-400">Emotions Used</td>
-          <td className="p-3 text-gray-300" colSpan={2}>
-            120 total emotions grouped into 10 main categories — Joy & Vitality, Calm & Harmony,
-            Empathy & Connection, Curiosity & Wonder, Confidence & Power, Sadness & Reflection,
-            Fear & Vulnerability, Anger & Resistance, Surprise & Transition, Acceptance & Transcendence.
+          <td
+            className="p-3 text-gray-300 leading-relaxed text-justify max-w-xl break-normal"
+            colSpan={2}
+          >
+            120 total emotions grouped into 10 main categories:
+            <br />
+            <span className="text-gray-200">
+              Joy & Vitality, Calm & Harmony, Empathy & Connection,
+              Curiosity & Wonder, Confidence & Power,
+              Sadness & Reflection, Fear & Vulnerability, Anger & Resistance,
+              Surprise & Transition, Acceptance & Transcendence.
+            </span>
           </td>
         </tr>
 
@@ -482,6 +488,13 @@ export default function QuizzesPage() {
     </table>
   </div>
 </motion.section>
+
+<br />
+
+
+<br />
+
+
 
 <br /><br />
 

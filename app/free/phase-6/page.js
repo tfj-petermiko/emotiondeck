@@ -219,36 +219,24 @@ export default function ProCollectionPhase6() {
 
       <br />
 
-      {/* 🟢 RETURN BUTTON */}
-      <div className="text-center mt-16 mb-20">
-        <Link
-          href="/free"
-          style={baseButtonStyle(hovered)} // ✅ global button style usage
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-          className="inline-block hover:scale-105 transition-transform"
-        >
-          ← Back
-        </Link>
-      </div>
+{/* 🟢 RETURN BUTTON */}
+<div className="text-center mt-16 mb-20">
+  <button
+    onClick={() => {
+      window.location.href = "/free";
+    }}
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    style={baseButtonStyle(hovered)}
+    className="inline-block hover:scale-105 transition-transform"
+  >
+    ← Back
+  </button>
+</div>
 
-      {/* 🎨 STYLES */}
-      <style jsx global>{`
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 0;
-          padding: 0;
-        }
-        .gallery-image {
-          width: 100%;
-          height: 260px;
-          object-fit: cover;
-          display: block;
-          border-radius: 0;
-          margin: 0;
-        }
-      `}</style>
-    </main>
-  );
+{/* 🔍 Global Image Modal */}
+<ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
+<br />
+</main>
+);
 }

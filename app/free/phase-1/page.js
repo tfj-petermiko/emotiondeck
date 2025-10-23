@@ -184,22 +184,25 @@ export default function FreeCollection() {
         </p>
       </section>
 
-      {/* 🟢 Get PRO Access Button */}
-      <div className="text-center mt-16 mb-20">
-        <Link
-          href="/free"
-          style={baseButtonStyle(hovered)}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-          className="inline-block hover:scale-105 transition-transform"
-        >
-          ← Back
-        </Link>
-      </div>
+ {/* 🟢 RETURN BUTTON */}
+<div className="text-center mt-16 mb-20">
+  <button
+    onClick={() => {
+      window.location.href = "/free";
+    }}
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    style={baseButtonStyle(hovered)}
+    className="inline-block hover:scale-105 transition-transform"
+  >
+    ← Back
+  </button>
+</div>
 
-      {/* 🔍 Global Image Modal */}
-      <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-      <br />
-    </main>
-  );
+{/* 🔍 Global Image Modal */}
+<ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
+<br />
+</main>
+);
 }
+

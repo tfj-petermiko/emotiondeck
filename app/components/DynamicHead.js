@@ -1,13 +1,21 @@
 "use client";
-
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import metadataMap from "@/app/metadataMap.json";
 
 export default function DynamicHead() {
   const pathname = usePathname();
+  const [metadataMap, setMetadataMap] = useState(null);
 
   useEffect(() => {
+    fetch("/metadataMap.json")
+      .then((res) => res.json())
+      .then((data) => setMetadataMap(data))
+      .catch((err) => console.error("❌ Error loading metadata:", err));
+  }, []);
+
+  useEffect(() => {
+    if (!metadataMap) return;
+
     const pathKey = pathname.replace(/^\/|\/$/g, "");
     const meta =
       metadataMap[pathKey] ||
@@ -39,7 +47,9 @@ export default function DynamicHead() {
     setMeta("twitter:description", meta.twitter_description || meta.description);
     setMeta("twitter:image", meta.twitter_image);
     setMeta("google-site-verification", meta.google_verification);
-  }, [pathname]);
+
+    console.log(`🔄 Updated metadata for: ${pathKey}`);
+  }, [pathname, metadataMap]);
 
   return null;
 }

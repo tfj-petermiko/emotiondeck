@@ -17,17 +17,21 @@ export default function ProCollectionPage() {
     setTimeout(() => router.push("/"), 800);
   };
 
-  const renderButton = (href, label, id) => (
-    <Link
-      href={href}
-      style={baseButtonStyle(hoveredButton === id)} // ✅ shared style
-      onMouseEnter={() => setHoveredButton(id)}
-      onMouseLeave={() => setHoveredButton(null)}
-      className="inline-block hover:scale-105 transition-transform"
-    >
-      {label}
-    </Link>
-  );
+const renderButton = (href, label, id) => (
+  <button
+    onClick={() => {
+      // 🔁 tak jak w quizach — pełne przeładowanie
+      window.location.href = href;
+    }}
+    onMouseEnter={() => setHoveredButton(id)}
+    onMouseLeave={() => setHoveredButton(null)}
+    style={baseButtonStyle(hoveredButton === id)}
+    className="inline-block hover:scale-105 transition-transform"
+  >
+    {label}
+  </button>
+);
+
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">

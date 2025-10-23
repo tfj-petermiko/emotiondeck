@@ -39,7 +39,7 @@ export default function ProCollectionPage() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck — PRO Access 🔒
+          EmotionDeck — PRO Collection 🔓
         </motion.h1>
 
         <motion.p
@@ -93,7 +93,7 @@ export default function ProCollectionPage() {
                     between control and vulnerability — emotion as truth beneath disguise.
                   </p>
                   <div className="flex justify-end">
-                    {renderButton("/pro/phase-1", "Locked — Coming Soon", "p1")}
+                    {renderButton("/pro/phase-1", "Coming Soon", "p1")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
@@ -119,12 +119,12 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Subcategories</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  <br /><strong>Deception Masks</strong>: Cunning, Cynicism, Duplicity, Facade, Hypocrisy, Irony, Mockery, Sarcasm<br /><br />
-                  <strong>Hidden States</strong>: Apathy, Calculation, Coldness, Containment, Detachment, Indifference, Numbness, Restraint<br /><br />
-                  <strong>Inner Conflict</strong>: Guilt, Hopelessness, Insecurity, Regret, Remorse, Resentment, Self-Doubt, Shame<br /><br />
-                  <strong>Pain & Loss</strong>: Abandonment, Betrayal, Bitterness, Despair, Fear Resigned, Loneliness, Melancholy, Sorrow<br /><br />
-                  <strong>Power & Control</strong>: Arrogance, Contempt, Control, Dominance, Intimidation, Manipulation, Pride Corrupted, Superiority<br /><br />
-                  <strong>Reflection & Redemption</strong>: Acceptance of Flaws, Catharsis, Darkness Within, Disillusionment, Forgiving Self, Redemption, Regretful Pride, Sorrowed Wisdom<br /><br />
+                  <br /><strong>Deception Masks</strong> (Cunning, Cynicism, Duplicity, Facade, Hypocrisy, Irony, Mockery, Sarcasm)<br /><br />
+                  <strong>Hidden States</strong> (Pathy, Calculation, Coldness, Containment, Detachment, Indifference, Numbness, Restraint)<br /><br />
+                  <strong>Inner Conflict</strong> (Guilt, Hopelessness, Insecurity, Regret, Remorse, Resentment, Self-Doubt, Shame)<br /><br />
+                  <strong>Pain & Loss</strong> (Abandonment, Betrayal, Bitterness, Despair, Fear Resigned, Loneliness, Melancholy, Sorrow)<br /><br />
+                  <strong>Power & Control</strong> (Arrogance, Contempt, Control, Dominance, Intimidation, Manipulation, Pride Corrupted, Superiority)<br /><br />
+                  <strong>Reflection & Redemption</strong> (Acceptance of Flaws, Catharsis, Darkness Within, Disillusionment, Forgiving Self, Redemption, Regretful Pride, Sorrowed Wisdom)<br /><br />
                 </td>
               </tr>
 

@@ -1,12 +1,10 @@
 import fs from "fs";
 import path from "path";
 
-// 🧠 Folder z plikami .txt
 const metadataDir = path.resolve("content/metadata");
-// 📦 Plik wynikowy wewnątrz app/
-const outputFile = path.resolve("app/metadataMap.json");
+// 🟢 Now output file goes to /public instead of /app
+const outputFile = path.resolve("public/metadataMap.json");
 
-// 🧩 Funkcja parsująca każdy plik .txt
 function parseTxt(filePath) {
   const content = fs.readFileSync(filePath, "utf-8");
   const lines = content.split("\n");
@@ -25,17 +23,15 @@ function parseTxt(filePath) {
   return data;
 }
 
-// 🚀 Główna funkcja
 function main() {
-  // Sprawdź czy folder istnieje
   if (!fs.existsSync(metadataDir)) {
-    console.error(`❌ Folder ${metadataDir} nie istnieje!`);
+    console.error(`❌ Folder ${metadataDir} does not exist!`);
     process.exit(1);
   }
 
   const files = fs.readdirSync(metadataDir).filter((f) => f.endsWith(".txt"));
   if (files.length === 0) {
-    console.error("❌ Brak plików .txt w katalogu content/metadata/");
+    console.error("❌ No .txt files found in content/metadata/");
     process.exit(1);
   }
 
@@ -46,16 +42,14 @@ function main() {
     const fullPath = path.join(metadataDir, file);
     const parsed = parseTxt(fullPath);
     metadataMap[key] = parsed;
-    console.log(`✅ Dodano: ${file}`);
+    console.log(`✅ Added: ${file}`);
   }
 
-  // 🧠 Upewnij się, że folder app istnieje
-  const appDir = path.resolve("app");
-  if (!fs.existsSync(appDir)) fs.mkdirSync(appDir);
+  const publicDir = path.resolve("public");
+  if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir);
 
-  // 💾 Zapisz wynik do app/metadataMap.json
   fs.writeFileSync(outputFile, JSON.stringify(metadataMap, null, 2), "utf-8");
-  console.log(`\n🎉 Zapisano ${files.length} wpisów do ${outputFile}`);
+  console.log(`\n🎉 Saved ${files.length} entries to ${outputFile}`);
 }
 
 main();
