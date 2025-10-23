@@ -4,18 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node ./scripts/buildMetadataMap.js && node ./scripts/generate-sitemap.js",
-    "build": "next build",
+    "build:meta": "node ./scripts/buildMetadataMap.cjs",
+    "generate-sitemap": "node ./scripts/generate-sitemap.cjs",
+    "prebuild": "npm run build:meta && npm run generate-sitemap",
+    "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rimraf .next node_modules/.cache",
-    "generate-sitemap": "node ./scripts/generate-sitemap.js"
+    "clean": "rimraf .next node_modules/.cache"
   },
   "dependencies": {
     "@mediapipe/camera_utils": "^0.3.1675466862",
     "@mediapipe/face_mesh": "^0.4.1633559619",
     "@mediapipe/tasks-vision": "^0.10.22-rc.20250304",
     "face-api.js": "^0.22.2",
+    "fast-xml-parser": "^5.3.0",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.546.0",
     "mime": "^4.1.0",

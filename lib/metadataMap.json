@@ -1,26 +1,59 @@
-import metadataMap from "../public/metadataMap.json";
+import fs from "fs";
+import path from "path";
 
-export function generateMetadataFromMap(key) {
-  const meta = metadataMap[key];
-  if (!meta) {
-    console.warn(`⚠️ No metadata found for key: ${key}`);
+/**
+ * Universal EmotionDeck Metadata Loader (Flat Structure)
+ * Works for all routes and reads .txt files from /content/metadata/
+ * Example: /free/phase-1 → free_phase-1.txt
+ */
+export function loadMetadata(routePath) {
+  try {
+    const cleanPath = routePath
+      .replace(/^\/+|\/+$/g, "")
+      .replace(/\//g, "_") || "home";
+
+    const metadataDir = path.join(process.cwd(), "content", "metadata");
+    const filePath = path.join(metadataDir, `${cleanPath}.txt`);
+
+    if (!fs.existsSync(filePath)) {
+      console.warn(`⚠️ Metadata file not found: ${filePath}`);
+      return {};
+    }
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    const lines = content.split("\n");
+    const data = {};
+    let key = "";
+
+    for (const line of lines) {
+      if (line.startsWith("#")) {
+        key = line.replace("#", "").trim();
+        data[key] = "";
+      } else if (key && line.trim() !== "") {
+        data[key] += (data[key] ? "\n" : "") + line.trim();
+      }
+    }
+
+    return {
+      metadataBase: new URL(data.metadataBase || "https://emotiondeck.com"),
+      title: data.title || "EmotionDeck — See. Feel. Understand.",
+      description: data.description || "",
+      keywords: data.keywords || "",
+      openGraph: {
+        title: data.og_title || data.title,
+        description: data.og_description || data.description,
+        url: data.og_url || "https://emotiondeck.com",
+        images: data.og_image ? [{ url: data.og_image }] : [],
+      },
+      twitter: {
+        card: data.twitter_card || "summary_large_image",
+        title: data.twitter_title || data.title,
+        description: data.twitter_description || data.description,
+        images: data.twitter_image ? [data.twitter_image] : [],
+      },
+    };
+  } catch (error) {
+    console.error(`❌ Failed to load metadata for route "${routePath}":`, error);
     return {};
   }
-
-  return {
-    title: meta.title,
-    description: meta.description,
-    openGraph: {
-      title: meta.og_title,
-      description: meta.og_description,
-      url: meta.og_url,
-      images: [meta.og_image],
-    },
-    twitter: {
-      card: meta.twitter_card,
-      title: meta.twitter_title,
-      description: meta.twitter_description,
-      images: [meta.twitter_image],
-    },
-  };
 }
