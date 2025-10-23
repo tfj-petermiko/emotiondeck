@@ -20,7 +20,7 @@ const tabs = [
   { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
   { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
   { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions — United by Feeling", href: "/globalmap" },
-  { icon: "🔓", name: "Get PRO Access", desc: "Exclusive Early Access Now Open to All Users", href: "/pro" },
+  { icon: "🔒", name: "EmotionDeck PRO", desc: "Exclusive Collection — Access Required", href: "/pro" },
   { icon: "⚙️", name: "AI Generator", desc: "Create Portraits with the EmotionDeck Generator", href: "/ai-generator" },
   { icon: "📜", name: "Legal", desc: "Privacy Policy, Terms of Use, and Cookies", href: "/legal" },
 ];

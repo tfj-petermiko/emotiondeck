@@ -2,25 +2,25 @@
 https://emotiondeck.com
 
 # canonical
-https://emotiondeck.com/pro/phase-6
+https://emotiondeck.com/free/phase-6
 
 # title
-EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings
+EmotionDeck — Phase 6: Evolution | One World, Many Feelings
 
 # description
-Explore EmotionDeck PRO Phase 6: Evolution — a global emotional atlas portraying the evolution of human feelings across cultures, ages, and genders. Featuring over 300 ultra-realistic black-and-white portraits capturing the universality and diversity of human emotion.
+Explore EmotionDeck Phase 6: Evolution — a global emotional atlas portraying the evolution of human feelings across cultures, ages, and genders. Featuring over 300 ultra-realistic black-and-white portraits capturing the universality and diversity of human emotion.
 
 # keywords
 EmotionDeck, Evolution Collection, emotional evolution, cross-cultural emotions, emotional diversity, human emotion dataset, emotion across ages, empathy training, emotional intelligence, psychology of emotion, cultural anthropology, black-and-white portraits, emotion perception, visual emotion study, art and psychology, human expression, emotional research
 
 # og_title
-EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings
+EmotionDeck — Phase 6: Evolution | One World, Many Feelings
 
 # og_description
-Discover EmotionDeck PRO Phase 6: Evolution — a panoramic collection of human emotions expressed through culture, age, and gender. Experience the visual evolution of emotional expression across the globe.
+Discover EmotionDeck Phase 6: Evolution — a panoramic collection of human emotions expressed through culture, age, and gender. Experience the visual evolution of emotional expression across the globe.
 
 # og_url
-https://emotiondeck.com/pro/phase-6
+https://emotiondeck.com/free/phase-6
 
 # og_image
 https://emotiondeck.com/preview.jpg
@@ -29,10 +29,10 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck PRO — Phase 6: Evolution | One World, Many Feelings
+EmotionDeck — Phase 6: Evolution | One World, Many Feelings
 
 # twitter_description
-EmotionDeck PRO Phase 6: Evolution presents a global journey through emotional diversity — over 300 portraits revealing how humanity expresses universal feelings across time and culture.
+EmotionDeck Phase 6: Evolution presents a global journey through emotional diversity — over 300 portraits revealing how humanity expresses universal feelings across time and culture.
 
 # twitter_image
 https://emotiondeck.com/preview.jpg

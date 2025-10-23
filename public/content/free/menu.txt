@@ -1,8 +1,0 @@
-# emotions
-Joy, Calmness, Compassion, Anger, Sadness, Surprise, Disgust, Fear, Trust, Anticipation, Pride, Love, Relief, Contempt, Boredom, Confusion, Interest, Determination, Shame, Hope, Guilt, Serenity, Anxiety, Curiosity
-
-# regions
-European, African, EastAsian
-
-# genders
-Male, Female

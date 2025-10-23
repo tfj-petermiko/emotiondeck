@@ -2,25 +2,25 @@
 https://emotiondeck.com
 
 # canonical
-https://emotiondeck.com/pro
+https://emotiondeck.com/free/phase-2
 
 # title
-EmotionDeck PRO Collection — Explore Advanced Human Emotion
+EmotionDeck Collection — Explore Advanced Human Emotion
 
 # description
-Unlock the EmotionDeck PRO Collection to explore advanced and complex human emotions across regions, ages, and genders. Designed for professionals, educators, and emotional research.
+Unlock the EmotionDeck Collection to explore advanced and complex human emotions across regions, ages, and genders. Designed for professionals, educators, and emotional research.
 
 # keywords
-EmotionDeck PRO Collection, advanced emotions, complex emotions, emotion recognition, human expression, empathy, psychology, education, emotional intelligence, perception training, human behaviour, research, professional development, emotion dataset, global emotional understanding
+EmotionDeck Collection, advanced emotions, complex emotions, emotion recognition, human expression, empathy, psychology, education, emotional intelligence, perception training, human behaviour, research, professional development, emotion dataset, global emotional understanding
 
 # og_title
-EmotionDeck PRO Collection — Explore Advanced Human Emotion
+EmotionDeck Collection — Explore Advanced Human Emotion
 
 # og_description
-Explore the EmotionDeck PRO Collection — a visual dataset of complex emotional expressions across diverse demographics, crafted for research, education, and professional development.
+Explore the EmotionDeck Collection — a visual dataset of complex emotional expressions across diverse demographics, crafted for research, education, and professional development.
 
 # og_url
-https://emotiondeck.com/pro
+https://emotiondeck.com/free/phase-2
 
 # og_image
 https://emotiondeck.com/preview.jpg
@@ -29,10 +29,10 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck PRO Collection — Explore Advanced Human Emotion
+EmotionDeck Collection — Explore Advanced Human Emotion
 
 # twitter_description
-Gain deeper insight into complex human emotions with EmotionDeck PRO — designed for educators, professionals, and researchers.
+Gain deeper insight into complex human emotions with EmotionDeck — designed for educators, professionals, and researchers.
 
 # twitter_image
 https://emotiondeck.com/preview.jpg

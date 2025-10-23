@@ -54,7 +54,7 @@ export default function EmotionQuiz3() {
       const gender = ["Male", "Female"][Math.floor(Math.random() * 2)];
 
       // ✅ Correct path for Phase 3 .webp images
-      const file = `/private_images/pro/phase_3/${emotion}_YoungAdult_${region}_${gender}.webp`;
+      const file = `/private_images/free/phase_3/${emotion}_YoungAdult_${region}_${gender}.webp`;
 
       const incorrect = allEmotions
         .filter((e) => e !== emotion)

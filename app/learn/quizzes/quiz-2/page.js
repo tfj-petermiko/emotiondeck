@@ -53,7 +53,7 @@ export default function EmotionQuiz2() {
       const region = ["European", "African", "EastAsian"][Math.floor(Math.random() * 3)];
       const age = ["Adult", "Senior"][Math.floor(Math.random() * 2)];
       const gender = ["Male", "Female"][Math.floor(Math.random() * 2)];
-      const file = `/private_images/pro/phase_2/${emotion}_${region}_${age}_${gender}.webp`;
+      const file = `/private_images/free/phase_2/${emotion}_${region}_${age}_${gender}.webp`;
 
       const incorrect = allEmotions
         .filter((e) => e !== emotion)
