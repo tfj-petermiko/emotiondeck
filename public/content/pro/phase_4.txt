@@ -1,8 +1,0 @@
-title=Phase 4 — Children Collection
-subtitle=Innocence & Emotional Growth
-short=90 portraits of children (6–7 years old) capturing pure, genuine emotions — the roots of empathy and connection.
-text=This phase explores emotional development at its earliest stage, where expression is spontaneous and unfiltered. It reflects universal traits such as curiosity, wonder and joy that shape emotional intelligence from a young age. These portraits remind us how authenticity precedes complexity — a face that feels before it understands. By observing them, educators and psychologists can trace how empathy, confidence and trust emerge. It closes the circle of human expression — returning to the beginning, where emotion is still free, honest, and pure.
-button=Free Access — Unlimited Time
-link=/pro/phase-4
-image=/private_images/pro/phase_4/Pride_Child_European_Female.webp
-caption=Pride — Child Female

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Table from "../components/Table/Table";
+import { baseButtonStyle } from "../styles/buttonStyle"; // ✅ using shared button style
 
 export default function LegalPage() {
   const [hovered, setHovered] = useState(false);
@@ -39,18 +41,6 @@ export default function LegalPage() {
     },
   ];
 
-  const baseButtonStyle = {
-    backgroundColor: hovered ? "#34D399" : "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 24px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.9rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
-
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
       <section className="text-center w-[80%] mx-auto mb-12">
@@ -62,7 +52,7 @@ export default function LegalPage() {
         </p>
         <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
           Welcome to the legal section of EmotionDeck.
-          Here you can access our Privacy Policy, Terms of Use, and Cookies Policy —
+          Here you can access our Privacy Policy, Terms of Use, and Cookies Policy — 
           all written transparently in compliance with UK and EU law.
         </p>
       </section>
@@ -118,7 +108,7 @@ export default function LegalPage() {
       <div className="text-center mt-16 mb-20">
         <Link
           href="/"
-          style={baseButtonStyle}
+          style={baseButtonStyle(hovered)} // ✅ using shared button style
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"

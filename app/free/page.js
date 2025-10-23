@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";
+import { baseButtonStyle } from "../styles/buttonStyle"; // ✅ Shared button style
 
 export default function FreeCollection() {
   const [content, setContent] = useState({});
   const [menu, setMenu] = useState({ emotions: [], regions: [], genders: [] });
 
+  // Load page text content
   useEffect(() => {
     fetch("/content/free/page.txt")
       .then((res) => res.text())
@@ -29,6 +31,7 @@ export default function FreeCollection() {
       });
   }, []);
 
+  // Load menu data
   useEffect(() => {
     fetch("/content/free/menu.txt")
       .then((res) => res.text())
@@ -52,11 +55,14 @@ export default function FreeCollection() {
       });
   }, []);
 
+  // States
   const [selectedEmotion, setSelectedEmotion] = useState("Joy");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState(false);
 
+  // Build all image paths
   const allImages = [];
   if (menu.emotions.length && menu.regions.length && menu.genders.length) {
     menu.emotions.forEach((emotion) => {
@@ -73,26 +79,13 @@ export default function FreeCollection() {
     });
   }
 
+  // Filter images based on selected options
   const filteredImages = allImages.filter(
     (img) =>
       img.emotion === selectedEmotion &&
       (selectedRegion === "All" || img.region === selectedRegion) &&
       (selectedGender === "All" || img.gender === selectedGender)
   );
-
-  const baseButtonStyle = {
-    backgroundColor: "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.875rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
-
-  const [hovered, setHovered] = useState(false);
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
@@ -105,7 +98,8 @@ export default function FreeCollection() {
           className="text-5xl md:text-6xl font-bold mb-4"
         >
           EmotionDeck Free Collection — Phase 1 🌱
-        </motion.h1><br />
+        </motion.h1>
+        <br />
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -201,23 +195,20 @@ export default function FreeCollection() {
         </section>
       )}
 
-      {/* 🟢 Green Button */}
+      {/* 🟢 Get PRO Access Button */}
       <div className="text-center mt-16 mb-20">
         <Link
           href="/pro"
-          style={{
-            ...baseButtonStyle,
-            backgroundColor: hovered ? "#34D399" : "#10B981",
-          }}
+          style={baseButtonStyle(hovered)} // ✅ Uses global style
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="inline-block hover:scale-105 transition"
+          className="inline-block hover:scale-105 transition-transform"
         >
           Get PRO Access →
         </Link>
       </div>
 
-      {/* Modal */}
+      {/* Image Modal */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
     </main>
   );

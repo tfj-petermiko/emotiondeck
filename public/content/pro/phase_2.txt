@@ -1,8 +1,0 @@
-title=Phase 2 — Advanced Emotional Expressions
-subtitle=Warmth & Authentic Connection
-short=Expands the dataset with deeper, more complex expressions drawn from a wide range of individuals and backgrounds.
-text=This phase examines subtler states such as empathy, gratitude and awe, encouraging observers to perceive emotional gradation and authenticity. It captures the warmth of human connection — bridging cultural differences and revealing shared psychological patterns that define humanity. It offers a deeper encounter with authenticity, where emotion becomes a reflection of inner truth rather than social performance. By observing these micro-moments of sincerity, viewers train their sensitivity to emotional detail and psychological realism. The result is a growing ability to recognise emotion as a spectrum, not a label, creating a richer, more humanised understanding of what we feel.
-button=Get Access — £49 / 30 Days
-link=/pro/checkout?phase=2
-image=/private_images/pro/phase_2/Empathy_African_Adult_Female.webp
-caption=Empathy — African Adult Female

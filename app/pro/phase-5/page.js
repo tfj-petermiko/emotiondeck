@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ImageModal from "../../components/ImageModal"; // 🔍 global modal
+import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ global shared button style
 
 export default function ProCollectionPhase5() {
   // 🎭 Emotions from Phase 5 (Seniors Collection)
@@ -29,19 +30,6 @@ export default function ProCollectionPhase5() {
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
   const [hovered, setHovered] = useState(false); // ✅ for hover effect
-
-  // 🟢 Button style (consistent with PRO main page)
-  const baseButtonStyle = {
-    backgroundColor: "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.875rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
 
   // 🧩 Generate all image paths dynamically
   const allImages = [];
@@ -78,7 +66,7 @@ export default function ProCollectionPhase5() {
         >
           EmotionDeck PRO Collection — Phase 5: Seniors Collection 👴👵
         </motion.h1>
-<br />
+        <br />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -163,13 +151,10 @@ export default function ProCollectionPhase5() {
       <div className="text-center mt-16 mb-20">
         <Link
           href="/pro"
-          style={{
-            ...baseButtonStyle,
-            backgroundColor: hovered ? "#34D399" : "#10B981",
-          }}
+          style={baseButtonStyle(hovered)} // ✅ global button style usage
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="inline-block hover:scale-105 transition"
+          className="inline-block hover:scale-105 transition-transform"
         >
           ← Back to PRO Collection
         </Link>

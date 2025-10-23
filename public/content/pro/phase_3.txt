@@ -1,8 +1,0 @@
-title=Phase 3 — Young Adults
-subtitle=Mindfulness & Harmony
-short=Features diverse young adults expressing nuanced emotions — blending energy, focus, and emerging self-awareness.
-text=This phase bridges the transition between adolescence and maturity, where emotion meets reflection. It highlights mindfulness, emotional regulation, and inner harmony — key traits of developing empathy and balanced perception. Each portrait captures the moment between impulse and understanding, between reaction and wisdom. The subtlety of these expressions invites slower observation, helping the viewer perceive not just emotion but its direction and intention. It reminds us that emotional intelligence grows not from expression alone, but from awareness of what lies beneath.
-button=Get Access — £29 / 30 Days
-link=/pro/checkout?phase=3
-image=/private_images/pro/phase_3/Love_YoungAdult_EastAsian_Male.webp
-caption=Love — Young Adult Male

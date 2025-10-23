@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ImageModal from "../../components/ImageModal"; // 🆕 global modal
+import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ global shared style
 
 export default function ProCollectionPhase2() {
   const emotions = [
@@ -23,6 +24,7 @@ export default function ProCollectionPhase2() {
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedAge, setSelectedAge] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState(false);
 
   // 🧩 Generate all images
   const allImages = [];
@@ -50,21 +52,6 @@ export default function ProCollectionPhase2() {
       (selectedGender === "All" || img.gender === selectedGender) &&
       (selectedAge === "All" || img.age === selectedAge)
   );
-
-  // 🌿 Button style from PRO page
-  const baseButtonStyle = {
-    backgroundColor: "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.875rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
-
-  const [hovered, setHovered] = useState(false);
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
@@ -170,18 +157,16 @@ export default function ProCollectionPhase2() {
 
       {/* 🔍 GLOBAL IMAGE MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-<br/>
+      <br />
+
       {/* 🟢 RETURN BUTTON */}
       <div className="text-center mt-16 mb-20">
         <Link
           href="/pro"
-          style={{
-            ...baseButtonStyle,
-            backgroundColor: hovered ? "#34D399" : "#10B981",
-          }}
+          style={baseButtonStyle(hovered)} // ✅ uses shared button style
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="inline-block hover:scale-105 transition"
+          className="inline-block hover:scale-105 transition-transform"
         >
           ← Back to PRO Collection
         </Link>

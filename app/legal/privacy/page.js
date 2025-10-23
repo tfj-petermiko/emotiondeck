@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import LegalTable from "../../components/Legal/LegalTable";
+import Table from "../../components/Table/Table";
+import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ shared button style
 
 export default function PrivacyPolicyPage() {
   const [hovered, setHovered] = useState(false);
@@ -15,19 +16,6 @@ export default function PrivacyPolicyPage() {
     { label: "Third Parties", value: "EmotionDeck integrates with PayPal for payments, Google Analytics for anonymous statistics, and Vercel for hosting." },
     { label: "Security", value: "Data is transmitted securely via HTTPS with strict access control and no local storage of personal details." },
   ];
-
-  // 🌿 Green button style (same as PRO Collection)
-  const baseButtonStyle = {
-    backgroundColor: hovered ? "#34D399" : "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 24px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.9rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
 
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
@@ -67,11 +55,11 @@ export default function PrivacyPolicyPage() {
         </table>
       </section>
 
-      {/* 🟢 Return Button with Arrow */}
+      {/* 🟢 Return Button */}
       <div className="text-center mt-16 mb-20">
         <Link
           href="/legal"
-          style={baseButtonStyle}
+          style={baseButtonStyle(hovered)} // ✅ shared style from app/styles/buttonStyle.js
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"

@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import LegalTable from "../../components/Legal/LegalTable";
+import Table from "../../components/Table/Table";
+import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ shared button style
 
-export default function PrivacyPolicyPage() {
+export default function TermsOfUsePage() {
   const [hovered, setHovered] = useState(false);
 
   const data = [
@@ -18,19 +19,6 @@ export default function PrivacyPolicyPage() {
     { label: "Changes to Terms", value: "EmotionDeck may update these Terms occasionally. Continued use of the website after updates implies acceptance." },
   ];
 
-  // 🌿 Green button style (same as PRO Collection)
-  const baseButtonStyle = {
-    backgroundColor: hovered ? "#34D399" : "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 24px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.9rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
-
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
       {/* 🧾 Header */}
@@ -43,7 +31,7 @@ export default function PrivacyPolicyPage() {
         </p>
         <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
           These Terms govern the use of <strong>EmotionDeck</strong> and outline
-          the responsibilities of both the user and the creator.  
+          the responsibilities of both the user and the creator.
           Please read them carefully before viewing or purchasing any content.
         </p>
       </section>
@@ -69,11 +57,11 @@ export default function PrivacyPolicyPage() {
         </table>
       </section>
 
-      {/* 🟢 Return Button with Arrow */}
+      {/* 🟢 Return Button */}
       <div className="text-center mt-16 mb-20">
         <Link
           href="/legal"
-          style={baseButtonStyle}
+          style={baseButtonStyle(hovered)} // ✅ shared style from app/styles/buttonStyle.js
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"

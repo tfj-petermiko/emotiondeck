@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { baseButtonStyle } from "../styles/buttonStyle"; // ✅ global shared button style
 
 export default function LearnPage() {
   const [hoveredQuiz, setHoveredQuiz] = useState(false);
@@ -12,17 +13,6 @@ export default function LearnPage() {
   const [loadingMirror, setLoadingMirror] = useState(false);
   const [hoveredBack, setHoveredBack] = useState(false);
   const [loadingBack, setLoadingBack] = useState(false);
-
-  // 🎨 Base style for buttons
-  const baseButtonStyle = {
-    padding: "10px 22px",
-    borderRadius: "0.75rem",
-    fontWeight: 600,
-    fontSize: "0.95rem",
-    border: "none",
-    transition: "all 0.3s ease",
-    boxShadow: "0 0 12px rgba(16,185,129,0.2)",
-  };
 
   const handleQuizClick = () => {
     setLoadingQuiz(true);
@@ -114,16 +104,7 @@ export default function LearnPage() {
                       disabled={loadingQuiz}
                       onMouseEnter={() => setHoveredQuiz(true)}
                       onMouseLeave={() => setHoveredQuiz(false)}
-                      style={{
-                        ...baseButtonStyle,
-                        backgroundColor: loadingQuiz
-                          ? "#374151"
-                          : hoveredQuiz
-                          ? "#34D399"
-                          : "#10B981",
-                        color: "#fff",
-                        cursor: loadingQuiz ? "not-allowed" : "pointer",
-                      }}
+                      style={baseButtonStyle(hoveredQuiz)} // ✅ global button style
                     >
                       {loadingQuiz ? "Loading..." : "Go to Quizzes"}
                     </button>
@@ -206,16 +187,7 @@ export default function LearnPage() {
                       disabled={loadingFACS}
                       onMouseEnter={() => setHoveredFACS(true)}
                       onMouseLeave={() => setHoveredFACS(false)}
-                      style={{
-                        ...baseButtonStyle,
-                        backgroundColor: loadingFACS
-                          ? "#374151"
-                          : hoveredFACS
-                          ? "#34D399"
-                          : "#10B981",
-                        color: "#fff",
-                        cursor: loadingFACS ? "not-allowed" : "pointer",
-                      }}
+                      style={baseButtonStyle(hoveredFACS)} // ✅ global button style
                     >
                       {loadingFACS ? "Loading..." : "Start FACS Analyzer"}
                     </button>
@@ -255,23 +227,15 @@ export default function LearnPage() {
       </motion.section>
 
       {/* 🟢 Return to Home Page button */}
-      <br /><br />
+      <br />
+      <br />
       <div className="text-center mt-16">
         <button
           onClick={handleBackClick}
           disabled={loadingBack}
           onMouseEnter={() => setHoveredBack(true)}
           onMouseLeave={() => setHoveredBack(false)}
-          style={{
-            ...baseButtonStyle,
-            backgroundColor: loadingBack
-              ? "#374151"
-              : hoveredBack
-              ? "#34D399"
-              : "#10B981",
-            color: "#fff",
-            cursor: loadingBack ? "not-allowed" : "pointer",
-          }}
+          style={baseButtonStyle(hoveredBack)} // ✅ global button style
         >
           {loadingBack ? "Loading..." : "← Back"}
         </button>

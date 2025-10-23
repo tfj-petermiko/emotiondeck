@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ImageModal from "../../components/ImageModal";
+import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ global shared button style
 
 export default function ProCollectionPhase6() {
   // 🌍 Regions and ages (gender not used as a filter)
@@ -39,20 +40,7 @@ export default function ProCollectionPhase6() {
   const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
   const [selectedAge, setSelectedAge] = useState("All");
   const [selectedImage, setSelectedImage] = useState(null);
-  const [hovered, setHovered] = useState(false); // ✅ for hover effect
-
-  // 🟢 Button style (consistent with PRO main page)
-  const baseButtonStyle = {
-    backgroundColor: "#10B981",
-    color: "#ffffff",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "9999px",
-    fontWeight: "600",
-    fontSize: "0.875rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
-    transition: "background-color 0.2s ease, transform 0.2s ease",
-  };
+  const [hovered, setHovered] = useState(false);
 
   // 🧩 Real dataset (based on actual file structure)
   const realImages = [
@@ -197,7 +185,9 @@ export default function ProCollectionPhase6() {
           ))}
         </select>
       </section>
-<br/>
+
+      <br />
+
       {/* 🖼 GALLERY */}
       <section id="gallery" className="w-full mt-16">
         <div className="gallery-grid">
@@ -233,13 +223,10 @@ export default function ProCollectionPhase6() {
       <div className="text-center mt-16 mb-20">
         <Link
           href="/pro"
-          style={{
-            ...baseButtonStyle,
-            backgroundColor: hovered ? "#34D399" : "#10B981",
-          }}
+          style={baseButtonStyle(hovered)} // ✅ global button style usage
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="inline-block hover:scale-105 transition"
+          className="inline-block hover:scale-105 transition-transform"
         >
           ← Back to PRO Collection
         </Link>
