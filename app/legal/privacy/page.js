@@ -5,8 +5,9 @@ import Link from "next/link";
 import Table from "../../components/Table/Table";
 import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ shared button style
 
-export default function PrivacyPolicyPage() {
+export default function CookiesPolicyPage() {
   const [hovered, setHovered] = useState(false);
+
 
   const data = [
     { label: "Purpose", value: "Explains how EmotionDeck handles and protects user data." },

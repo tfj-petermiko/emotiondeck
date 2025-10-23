@@ -81,6 +81,7 @@ export default function FreeCollection() {
       (selectedGender === "All" || img.gender === selectedGender)
   );
 
+  // 🧩 Render UI
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
       {/* 🧠 Hero Section */}
@@ -93,7 +94,9 @@ export default function FreeCollection() {
         >
           {content.hero_title} — Phase 1: Basic Emotional Expressions 🌱
         </motion.h1>
-<br />
+
+        <br />
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -153,7 +156,9 @@ export default function FreeCollection() {
           ))}
         </select>
       </section>
-<br />
+
+      <br />
+
       {/* 🖼️ Gallery */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
@@ -183,26 +188,31 @@ export default function FreeCollection() {
           {content.info_paragraph}
         </p>
       </section>
-<br />
- {/* 🟢 RETURN BUTTON */}
-<div className="text-center mt-16 mb-20">
-  <button
-    onClick={() => {
-      window.location.href = "/free";
-    }}
-    onMouseEnter={() => setHovered(true)}
-    onMouseLeave={() => setHovered(false)}
-    style={baseButtonStyle(hovered)}
-    className="inline-block hover:scale-105 transition-transform"
-  >
-    ← Back
-  </button>
-</div>
 
-{/* 🔍 Global Image Modal */}
-<ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-<br />
-</main>
-);
+      <br />
+
+      {/* 🟢 RETURN BUTTON */}
+      <div className="text-center mt-16 mb-20">
+        <button
+          onClick={() => {
+            window.location.href = "/free";
+          }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          style={baseButtonStyle(hovered)}
+          className="inline-block hover:scale-105 transition-transform"
+        >
+          ← Back
+        </button>
+      </div>
+
+      {/* 🔍 Global Image Modal */}
+      <ImageModal
+        imageSrc={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
+
+      <br />
+    </main>
+  );
 }
-

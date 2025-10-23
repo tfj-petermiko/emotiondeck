@@ -3,23 +3,18 @@ import fs from "fs";
 import path from "path";
 
 function buildMetadataMap() {
-  const baseDir = path.join(process.cwd(), "public", "content");
-
-  const sections = [
-    "home", "free",
-    "pro", "pro/facs-analyzer", "pro/phase-1", "pro/phase-2", "pro/phase-3", "pro/phase-4", "pro/phase-5", "pro/phase-6",
-    "learn", "learn/facs", "learn/quizzes", "learn/quizzes/quiz-1", "learn/quizzes/quiz-2",
-    "generator", "globalmap",
-    "legal", "legal/privacy", "legal/terms", "legal/cookies"
-  ];
-
+  const baseDir = path.join(process.cwd(), "content", "metadata");
   const result = {};
 
-  for (const section of sections) {
-    const filePath = path.join(baseDir, section, "metadata.txt");
-    if (!fs.existsSync(filePath)) continue;
+  // Read all .txt files in /content/metadata
+  const files = fs.readdirSync(baseDir).filter((f) => f.endsWith(".txt"));
 
+  for (const file of files) {
+    const filePath = path.join(baseDir, file);
     const text = fs.readFileSync(filePath, "utf-8");
+
+    // Convert filename to section path, e.g. legal_privacy.txt → legal/privacy
+    const section = file.replace(".txt", "").replace(/_/g, "/");
     const meta = {};
     let key = "";
 
@@ -41,4 +36,5 @@ function buildMetadataMap() {
 
 const outPath = path.join(process.cwd(), "app", "metadataMap.json");
 fs.writeFileSync(outPath, JSON.stringify(buildMetadataMap(), null, 2));
-console.log("✅ metadataMap.json generated successfully.");
+
+console.log("✅ metadataMap.json generated successfully from /content/metadata/");
