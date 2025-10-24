@@ -1,20 +1,43 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck — Phase 5: Seniors Collection | Wisdom, Emotion, and the Human Experience",
+  title: "EmotionDeck Phase 5 — Seniors Collection",
   description:
-    "Explore EmotionDeck Phase 5: Seniors Collection — 300 ultra-realistic black-and-white portraits capturing the emotional richness and wisdom of older adults. A professional visual dataset designed for emotional research, empathy training, and cross-generational understanding.",
+    "Discover 300 expressive portraits of seniors with EmotionDeck Phase 5 — explore emotional wisdom, resilience, and calmness across generations through authentic human expression.",
+  keywords:
+    "EmotionDeck Phase 5, Seniors Collection, senior emotions, emotional wisdom, cross-generational empathy, emotional intelligence, psychology research, emotion recognition, facial expressions, empathy training",
+  alternates: {
+    canonical: "https://emotiondeck.com/free/phase-5",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png" },
+    ],
+  },
   openGraph: {
-    title: "EmotionDeck — Phase 5: Seniors Collection",
+    title: "EmotionDeck Phase 5 — Seniors Collection",
     description:
-      "Discover 300 detailed black-and-white portraits of seniors expressing 50 core emotions. EmotionDeck Phase 5 explores emotional resilience, reflection, and wisdom through authentic human expression.",
+      "Explore 300 portraits of seniors expressing emotional wisdom, calmness, and resilience — EmotionDeck Phase 5 celebrates the depth of human experience through age and emotion.",
     url: "https://emotiondeck.com/free/phase-5",
-    images: ["https://emotiondeck.com/preview.jpg"],
+    siteName: "EmotionDeck",
+    type: "website",
+    images: [
+      {
+        url: "https://emotiondeck.com/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EmotionDeck Phase 5 Seniors Collection Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck — Phase 5: Seniors Collection",
+    title: "EmotionDeck Phase 5 — Seniors Collection",
     description:
-      "EmotionDeck Phase 5 presents 300 portraits of seniors expressing wisdom, calmness, and emotional depth — expanding emotional research and empathy through visual psychology.",
+      "EmotionDeck Phase 5 presents 300 portraits of seniors expressing wisdom, serenity, and emotional strength — a visual study in empathy and human understanding.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

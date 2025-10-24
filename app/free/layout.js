@@ -1,20 +1,43 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Free Collection — Explore Advanced Human Emotion",
+  title: "EmotionDeck Free Collection — Explore Foundational Emotions",
   description:
-    "Unlock the EmotionDeck Free Collection to explore advanced and complex human emotions across regions, ages, and genders. Designed for professionals, educators, and emotional research.",
+    "Discover the EmotionDeck Free Collection — explore 144 foundational human emotions through expressive portraits across ages, genders, and cultures. Start your emotional learning journey today.",
+  keywords:
+    "EmotionDeck Free Collection, basic emotions, emotion recognition, emotional intelligence, facial expressions, emotion learning, psychology education, AI portraits, empathy training, human emotion dataset",
+  alternates: {
+    canonical: "https://emotiondeck.com/free",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png" },
+    ],
+  },
   openGraph: {
-    title: "EmotionDeck Free Collection — Explore Advanced Human Emotion",
+    title: "EmotionDeck Free Collection — Explore Foundational Emotions",
     description:
-      "Explore the EmotionDeck Free Collection — a visual dataset of complex emotional expressions across diverse demographics, crafted for research, education, and professional development.",
+      "Explore the EmotionDeck Free Collection — a visual journey through 144 core emotions representing human diversity, ideal for learning and emotional awareness.",
     url: "https://emotiondeck.com/free",
-    images: ["https://emotiondeck.com/preview.jpg"],
+    siteName: "EmotionDeck",
+    type: "website",
+    images: [
+      {
+        url: "https://emotiondeck.com/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EmotionDeck Free Collection Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Free Collection — Explore Advanced Human Emotion",
+    title: "EmotionDeck Free Collection — Explore Foundational Emotions",
     description:
-      "Gain deeper insight into complex human emotions with EmotionDeck Free — designed for educators, professionals, and researchers.",
+      "Start your journey with the EmotionDeck Free Collection — explore 144 foundational emotions across cultures, ages, and expressions.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

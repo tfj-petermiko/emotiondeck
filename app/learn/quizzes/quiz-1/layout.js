@@ -2,19 +2,42 @@ export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)",
   description:
-    "Test your ability to recognise human emotions through AI-generated portraits from the EmotionDeck Free Basic Collection. Each round presents real emotional expressions from diverse cultures — see how accurately you can identify them.",
+    "Test your skill in recognising human emotions with the EmotionDeck Free Basic Collection — identify expressions from diverse cultures and sharpen your emotional intelligence.",
+  keywords:
+    "EmotionDeck quiz, emotion recognition, emotional intelligence, facial expressions, AI portraits, cultural emotions, psychology learning, emotion training, empathy practice, Free Basic Collection",
+  alternates: {
+    canonical: "https://emotiondeck.com/learn/quizzes/quiz-1",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png" },
+    ],
+  },
   openGraph: {
-    title: "EmotionDeck Quiz 1 — Recognise the Emotion",
+    title: "EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)",
     description:
-      "Identify emotions in AI-generated portraits and test your emotional insight with the first EmotionDeck Quiz. Challenge your ability to read emotions across cultures.",
+      "Identify emotions in AI-generated portraits and test your perception with the first EmotionDeck Quiz — explore how emotion is expressed across cultures and faces.",
     url: "https://emotiondeck.com/learn/quizzes/quiz-1",
-    images: ["https://emotiondeck.com/preview.jpg"],
+    siteName: "EmotionDeck",
+    type: "website",
+    images: [
+      {
+        url: "https://emotiondeck.com/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EmotionDeck Quiz 1 Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Quiz 1 — Recognise the Emotion",
+    title: "EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)",
     description:
-      "Discover how well you can recognise emotions in AI-generated portraits. Try the first EmotionDeck Quiz and explore human emotion through visual intelligence.",
+      "Challenge your perception with EmotionDeck Quiz 1 — recognise emotions in portraits and discover how people express feelings across cultures.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
