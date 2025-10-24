@@ -1,4 +1,6 @@
-// /app/pro/checkout/page.js
+"use client";
+
+import { Suspense } from "react";
 import CheckoutClient from "./CheckoutClient";
 
 export const metadata = {
@@ -33,5 +35,9 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <CheckoutClient />;
+  return (
+    <Suspense fallback={<div className="text-center mt-10">Loading checkout...</div>}>
+      <CheckoutClient />
+    </Suspense>
+  );
 }
