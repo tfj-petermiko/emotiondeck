@@ -93,7 +93,7 @@ export default function ProCollectionPage() {
                     between control and vulnerability — emotion as truth beneath disguise.
                   </p>
                   <div className="flex justify-end">
-                    {renderButton("/pro/phase-1", "Coming Soon", "p1")}
+                    {renderButton("/pro/phase-1", "Early Access 🔓", "p1")}
                   </div>
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
