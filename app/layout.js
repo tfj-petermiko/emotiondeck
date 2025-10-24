@@ -5,6 +5,9 @@ export const metadata = {
   title: "EmotionDeck — See. Feel. Understand.",
   description:
     "EmotionDeck helps you learn to recognise, interpret, and understand human emotion through visual learning.",
+  icons: {
+    icon: "/favicon.ico", // ✅ global favicon
+  },
 };
 
 export default function RootLayout({ children }) {
