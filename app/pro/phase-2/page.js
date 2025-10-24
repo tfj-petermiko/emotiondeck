@@ -4,23 +4,32 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import ImageModal from "../../components/ImageModal";
 import { baseButtonStyle } from "../../styles/buttonStyle";
+import useProAccess from "../../hooks/useProAccess"; // access control hook
 
 export default function ProCollectionPhase2() {
-  // 🎭 Emotions list (48 total)
+  // ✅ all hooks first (React rule)
+  const access = useProAccess("phase-2", {
+    title: "Dark Spectrum II",
+    price: "4.99",
+    redirectToCheckout: true,
+  });
+  const { hasAccess = false, daysLeft = 0 } = access || {};
+
+  const [selectedEmotion, setSelectedEmotion] = useState("All");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState(false);
+
+  // 🎭 emotions list
   const emotions = [
     "Abandonment", "Aging", "Anxiety", "Betrayal", "Bitterness", "Claustrophobia", "Collapse", "Contempt",
     "Cruelty", "DeathAcceptance", "Decay", "Deception", "Despair", "Destruction", "Detachment", "Disconnection",
     "Disintegration", "Dominance", "Dread", "Emptiness", "Estrangement", "Fatalism", "Fury", "Grief", "Guilt",
     "Hatred", "Horror", "Isolation", "Loneliness", "Loss", "MoralPain", "Mourning", "Narcissism", "Neglect",
     "Nihilism", "Numbness", "Obsession", "Panic", "Paranoia", "Powerlessness", "Regret", "Rejection", "Remorse",
-    "Repression", "Resentment", "SelfDisgust", "Shame", "Sorrow"
+    "Repression", "Resentment", "SelfDisgust", "Shame", "Sorrow",
   ];
 
-  const [selectedEmotion, setSelectedEmotion] = useState("All");
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [hovered, setHovered] = useState(false);
-
-  // 🧩 Real dataset (3 last removed)
+  // 🧩 dataset
   const realImages = [
     { emotion: "Abandonment", src: "/private_images/pro/phase_2/DarkSpectrum2_Abandonment_MiddleEastern_Adult_Female.webp" },
     { emotion: "Aging", src: "/private_images/pro/phase_2/DarkSpectrum2_Aging_CentralAsian_MatureAdult_Male.webp" },
@@ -69,27 +78,40 @@ export default function ProCollectionPhase2() {
     { emotion: "Resentment", src: "/private_images/pro/phase_2/DarkSpectrum2_Resentment_NorthAmerican_Adult_Male.webp" },
     { emotion: "SelfDisgust", src: "/private_images/pro/phase_2/DarkSpectrum2_SelfDisgust_LatinAmerican_YoungAdult_Female.webp" },
     { emotion: "Shame", src: "/private_images/pro/phase_2/DarkSpectrum2_Shame_SouthAsian_YoungAdult_Female.webp" },
-    { emotion: "Sorrow", src: "/private_images/pro/phase_2/DarkSpectrum2_Sorrow_EastAsian_Adult_Female.webp" }
+    { emotion: "Sorrow", src: "/private_images/pro/phase_2/DarkSpectrum2_Sorrow_EastAsian_Adult_Female.webp" },
   ];
 
-  // 🧮 Alternate male/female display order
-  const females = realImages.filter(img => img.src.includes("_Female"));
-  const males = realImages.filter(img => img.src.includes("_Male"));
+  // alternate order
+  const females = realImages.filter((img) => img.src.includes("_Female"));
+  const males = realImages.filter((img) => img.src.includes("_Male"));
   const alternated = [];
   for (let i = 0; i < Math.max(females.length, males.length); i++) {
     if (females[i]) alternated.push(females[i]);
     if (males[i]) alternated.push(males[i]);
   }
 
-  // 🎯 Filter logic
   const filtered =
     selectedEmotion === "All"
       ? alternated
       : alternated.filter((img) => img.emotion === selectedEmotion);
 
+  // show loading / access message (after hooks)
+  if (!hasAccess) {
+    return (
+      <div className="min-h-screen bg-neutral-900 text-white flex items-center justify-center">
+        <p className="text-gray-400">Checking access…</p>
+      </div>
+    );
+  }
+
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative overflow-visible">
-      {/* 🧠 HEADER */}
+      {/* Access banner */}
+      <div className="bg-emerald-800 text-white text-center py-2 text-sm">
+        Access active — {daysLeft} {daysLeft === 1 ? "day" : "days"} remaining
+      </div>
+
+      {/* Header */}
       <section className="text-center mt-20 px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -106,13 +128,13 @@ export default function ProCollectionPhase2() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Dark Spectrum II explores the fragile edge between despair and awakening — 
-          portraits revealing anxiety, decay, vengeance, and redemption within silence. 
+          Dark Spectrum II explores the fragile edge between despair and awakening —
+          portraits revealing anxiety, decay, vengeance, and redemption within silence.
           Each emotion stands alone in this psychological descent and rebirth.
         </motion.p>
       </section>
 
-      {/* 🎛 FILTER */}
+      {/* Filter */}
       <section className="flex flex-wrap justify-center gap-4 mt-16 text-neutral-900">
         <select
           value={selectedEmotion}
@@ -128,7 +150,7 @@ export default function ProCollectionPhase2() {
 
       <br />
 
-      {/* 🖼️ Gallery */}
+      {/* Gallery */}
       <section id="emotions" className="w-full mt-16">
         <div className="gallery-grid">
           {filtered.map((img) => (
@@ -150,12 +172,13 @@ export default function ProCollectionPhase2() {
         </div>
       </section>
 
-      {/* 🔍 IMAGE MODAL */}
+      {/* Modal */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      <br /><br />
+      <br />
+      <br />
 
-      {/* 🟢 RETURN BUTTON */}
+      {/* Return Button */}
       <div className="text-center mt-16 mb-20">
         <button
           onClick={() => {
@@ -170,7 +193,8 @@ export default function ProCollectionPhase2() {
         </button>
       </div>
 
-      <br /><br />
+      <br />
+      <br />
     </main>
   );
 }
