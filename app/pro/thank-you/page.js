@@ -1,4 +1,4 @@
-// /app/pro/thank-you/page.js
+import { Suspense } from "react";
 import ThankYouClient from "./ThankYouClient";
 
 export const metadata = {
@@ -31,5 +31,15 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ThankYouClient />;
+  return (
+    <Suspense
+      fallback={
+        <div className="text-center mt-20 text-gray-400 animate-pulse">
+          🔓 Loading your confirmation...
+        </div>
+      }
+    >
+      <ThankYouClient />
+    </Suspense>
+  );
 }
