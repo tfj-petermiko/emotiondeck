@@ -71,3 +71,14 @@ next-env.d.ts
 .idea/
 .vscode/
 .vercel
+
+
+# 🧭 Local generation scripts
+generate_sitemap.bat
+generate_all.bat
+scripts/generate-robots.js
+
+# 🚫 Generated files (not tracked in Git)
+public/sitemap.xml
+public/robots.txt
+
