@@ -10,12 +10,14 @@ export default function LegalClient() {
   const legalLinks = [
     {
       label: "Privacy Policy",
-      value: "How EmotionDeck collects, stores, and protects your personal data.",
+      value:
+        "How EmotionDeck collects, stores, and protects your personal data.",
       href: "/legal/privacy",
     },
     {
       label: "Terms of Use",
-      value: "Understand your rights and responsibilities when using EmotionDeck.",
+      value:
+        "Understand your rights and responsibilities when using EmotionDeck.",
       href: "/legal/terms",
     },
     {
@@ -23,12 +25,19 @@ export default function LegalClient() {
       value: "Learn how EmotionDeck uses cookies and similar technologies.",
       href: "/legal/cookies",
     },
+    {
+      label: "Payments & Security",
+      value:
+        "Learn how EmotionDeck handles transactions securely through PayPal.",
+      href: "/legal/payments",
+    },
   ];
 
   const data = [
     {
       label: "Compliance",
-      value: "All documents align with UK GDPR and EU data protection standards.",
+      value:
+        "All documents align with UK GDPR and EU data protection standards.",
     },
     {
       label: "Hosting",
@@ -36,7 +45,8 @@ export default function LegalClient() {
     },
     {
       label: "Transparency",
-      value: "We strive for clear, accessible, and user-friendly legal information.",
+      value:
+        "We strive for clear, accessible, and user-friendly legal information.",
     },
   ];
 
@@ -50,9 +60,11 @@ export default function LegalClient() {
           Last updated: <strong>October 2025</strong>
         </p>
         <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Welcome to the legal section of EmotionDeck.<br />
-          Here you can access our Privacy Policy, Terms of Use, and Cookies Policy — 
-          all written transparently in compliance with UK and EU law.
+          Welcome to the legal section of EmotionDeck.
+          <br />
+          Here you can access our Privacy Policy, Terms of Use, Cookies Policy,
+          and Payments & Security information — all written transparently in
+          compliance with UK and EU law.
         </p>
       </section>
 
@@ -82,7 +94,7 @@ export default function LegalClient() {
         </table>
       </section>
 
-      {/* 🩶 Legal Info Table */}
+      {/* 🩶 General Legal Info */}
       <section className="legal-table w-[80%] mx-auto mb-16">
         <table className="w-full border-collapse border border-neutral-800 rounded-2xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
           <tbody>
@@ -103,7 +115,7 @@ export default function LegalClient() {
         </table>
       </section>
 
-       {/* 🟢 Return Button */}
+      {/* 🟢 Return Button */}
       <div className="text-center mt-16 mb-20">
         <Link
           href="/"
@@ -115,7 +127,6 @@ export default function LegalClient() {
           ← Back
         </Link>
       </div>
-    </main>  
-  );          
-}             
-
+    </main>
+  );
+}
