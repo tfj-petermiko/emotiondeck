@@ -1,49 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- 🌍 MAIN -->
   <url>
-    <loc>https://emotiondeck.com/</loc>
-    <priority>1.0</priority>
+    <loc>https://emotiondeck.com/ai-generator</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- 🟢 FREE COLLECTION (Phase 1) -->
   <url>
     <loc>https://emotiondeck.com/free</loc>
-    <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- 💎 PRO COLLECTIONS (Phase 2–6) -->
-  <url><loc>https://emotiondeck.com/pro</loc></url>
-  <url><loc>https://emotiondeck.com/pro/phase-2</loc></url>
-  <url><loc>https://emotiondeck.com/pro/phase-3</loc></url>
-  <url><loc>https://emotiondeck.com/pro/phase-4</loc></url>
-  <url><loc>https://emotiondeck.com/pro/phase-5</loc></url>
-  <url><loc>https://emotiondeck.com/pro/phase-6</loc></url>
-  <url><loc>https://emotiondeck.com/pro/facs-analyzer</loc></url>
-
-  <!-- 📚 LEARN SECTION -->
-  <url><loc>https://emotiondeck.com/learn</loc></url>
-  <url><loc>https://emotiondeck.com/learn/quizzes</loc></url>
-  <url><loc>https://emotiondeck.com/learn/quizzes/quiz-1</loc></url>
-  <url><loc>https://emotiondeck.com/learn/quizzes/quiz-2</loc></url>
-  <url><loc>https://emotiondeck.com/learn/facs</loc></url>
-
-  <!-- 🌍 GLOBAL MAP -->
-  <url><loc>https://emotiondeck.com/globalmap</loc></url>
-
-  <!-- 🤖 AI GENERATOR -->
-  <url><loc>https://emotiondeck.com/generator</loc></url>
-
-  <!-- ⚖️ LEGAL PAGES -->
-  <url><loc>https://emotiondeck.com/legal</loc></url>
-  <url><loc>https://emotiondeck.com/legal/privacy</loc></url>
-  <url><loc>https://emotiondeck.com/legal/terms</loc></url>
-  <url><loc>https://emotiondeck.com/legal/cookies</loc></url>
-
+  <url>
+    <loc>https://emotiondeck.com/free/phase-1</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/free/phase-2</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/free/phase-3</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/free/phase-4</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/free/phase-5</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/free/phase-6</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/globalmap</loc>
+    <lastmod>2025-10-23T22:49:34.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn/facs</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn/quizzes</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn/quizzes/quiz-1</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn/quizzes/quiz-2</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn/quizzes/quiz-3</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/learn/quizzes/quiz-4</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/legal</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/legal/cookies</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/legal/privacy</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/legal/terms</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/page.js</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/pro</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emotiondeck.com/pro/facs-analyzer</loc>
+    <lastmod>2025-10-23T22:49:34.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

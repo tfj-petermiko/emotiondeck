@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 import ClientProtector from "./ClientProtector";
@@ -9,6 +9,7 @@ import MobileMenu from "./components/MobileMenu/MobileMenu";
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
+  // 🧩 Allow scroll for PRO main page
   useEffect(() => {
     const body = document.body;
     const isProMain =
@@ -20,6 +21,51 @@ export default function ClientLayout({ children }) {
       body.classList.remove("allow-scroll");
     }
   }, [pathname]);
+
+  // 🧠 Number protection (moved from layout.js)
+  useEffect(() => {
+    const protectNumbers = () => {
+      const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+
+      let node;
+      while ((node = walker.nextNode())) {
+        const text = node.nodeValue.trim();
+        if (!text || !/\d/.test(text)) continue;
+
+        const parent = node.parentElement;
+        if (
+          !parent ||
+          ["SCRIPT", "STYLE", "META", "HEAD", "TITLE", "NOSCRIPT"].includes(
+            parent.tagName
+          )
+        )
+          continue;
+
+        if (!parent.hasAttribute("data-protected-number")) {
+          parent.setAttribute("data-protected-number", "true");
+          parent.setAttribute("translate", "no");
+          parent.classList.add("no-freeze-number");
+        }
+      }
+    };
+
+    protectNumbers();
+    const observer = new MutationObserver(() => protectNumbers());
+    observer.observe(document.body, { childList: true, subtree: true });
+    const interval = setInterval(protectNumbers, 3000);
+
+    console.log("✅ EmotionDeck number protection active (safe global version)");
+
+    return () => {
+      observer.disconnect();
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen bg-neutral-900 text-white">
@@ -35,10 +81,12 @@ export default function ClientLayout({ children }) {
       {/* 📄 Main content */}
       <main className="flex-1">{children}</main>
 
-      {/* 🧩 Sticky Footer */}
+      {/* 🧩 Static Footer */}
       <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-md py-5 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
         <div className="max-w-4xl mx-auto px-6">
-          <DynamicFooterText />
+          <p className="whitespace-pre-line">
+            EmotionDeck © 2025 — See. Feel. Understand.
+          </p>
         </div>
       </footer>
 
@@ -96,25 +144,4 @@ export default function ClientLayout({ children }) {
       </Script>
     </div>
   );
-}
-
-// 🩶 Footer text loader
-function DynamicFooterText() {
-  const [footerText, setFooterText] = useState("");
-
-  useEffect(() => {
-    const loadFooter = async () => {
-      try {
-        const res = await fetch("/content/global/footer.txt");
-        if (!res.ok) throw new Error("Footer text not found");
-        const text = await res.text();
-        setFooterText(text);
-      } catch {
-        setFooterText("");
-      }
-    };
-    loadFooter();
-  }, []);
-
-  return <p className="whitespace-pre-line">{footerText || "Loading..."}</p>;
 }

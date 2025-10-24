@@ -4,13 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:meta": "node ./scripts/buildMetadataMap.js",
-    "generate-sitemap": "node ./scripts/generate-sitemap.js",
-    "prebuild": "npm run build:meta && npm run generate-sitemap",
-    "build": "npm run prebuild && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "clean": "rimraf .next node_modules/.cache"
+    "generate-sitemap": "node ./scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@mediapipe/camera_utils": "^0.3.1675466862",
