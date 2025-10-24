@@ -78,7 +78,7 @@ export default function ProCollectionPage() {
                 <td className="w-2/4 p-3 text-white">
                   <p className="font-semibold mb-1">Dark Spectrum — Part I Collection</p>
                   <p className="text-gray-400 mb-2">
-                    51 ultra-realistic portraits exploring the hidden dimensions of emotion:
+                    48 ultra-realistic portraits exploring the hidden dimensions of emotion:
                     Deception Masks, Hidden States, Inner Conflict, Pain & Loss, Power & Control,
                     and Reflection & Redemption.
                   </p>
@@ -112,7 +112,7 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Portraits</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  51 black-and-white emotional portraits
+                  48 black-and-white emotional portraits
                 </td>
               </tr>
 
