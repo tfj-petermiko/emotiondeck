@@ -63,7 +63,7 @@ export default function ProCollectionPhase2() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck Collection — Phase 2: Advanced Emotional Expressions 🔓
+          EmotionDeck Collection - Phase 2: Advanced Emotional Expressions 🔓
         </motion.h1>
 
 <br />
@@ -148,7 +148,7 @@ export default function ProCollectionPhase2() {
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} — ${img.region} ${img.gender} ${img.age}`}
+                alt={`${img.emotion} - ${img.region} ${img.gender} ${img.age}`}
                 className="gallery-image"
                 loading="lazy"
               />

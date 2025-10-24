@@ -108,7 +108,7 @@ export default function ProCollectionPhase2() {
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative overflow-visible">
       {/* Access banner */}
       <div className="bg-emerald-800 text-white text-center py-2 text-sm">
-        Access active — {daysLeft} {daysLeft === 1 ? "day" : "days"} remaining
+        Access active - {daysLeft} {daysLeft === 1 ? "day" : "days"} remaining
       </div>
 
       {/* Header */}
@@ -119,7 +119,7 @@ export default function ProCollectionPhase2() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck PRO — Phase 2: Dark Spectrum II 🕯️
+          EmotionDeck PRO - Phase 2: Dark Spectrum II 🕯️
         </motion.h1>
 
         <motion.p
@@ -128,7 +128,7 @@ export default function ProCollectionPhase2() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Dark Spectrum II explores the fragile edge between despair and awakening —
+          Dark Spectrum II explores the fragile edge between despair and awakening -
           portraits revealing anxiety, decay, vengeance, and redemption within silence.
           Each emotion stands alone in this psychological descent and rebirth.
         </motion.p>

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
-import { File } from "node:buffer"; // ✅ ważne — dodaj ten import
+import { File } from "node:buffer"; // ✅ ważne - dodaj ten import
 
 export const runtime = "nodejs";
 
@@ -39,7 +39,7 @@ Depict authentic, biological features:
 ${gender?.toLowerCase() === "female"
   ? "- Feminine: softer features, narrower jawline, smaller chin, fuller lips."
   : "- Masculine: stronger jawline, broader structure, defined brow ridge."}
-- Ethnically accurate traits typical for ${ethnicity} origin — realistic and natural.
+- Ethnically accurate traits typical for ${ethnicity} origin - realistic and natural.
 
 Maintain identical studio setup:
 - neutral grey background (#B0B0B0)
@@ -82,7 +82,7 @@ Output: ultra-realistic black-and-white photo, 1024×1536 resolution, EmotionDec
 export async function GET() {
   return new Response(
     JSON.stringify({
-      message: "EmotionDeck API active — Ethnicity + Age Group enabled",
+      message: "EmotionDeck API active - Ethnicity + Age Group enabled",
       fields: ["ethnicity", "emotion", "ageGroup", "gender"],
       model: "gpt-image-1",
     }),

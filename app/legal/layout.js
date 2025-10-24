@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Legal Information — Policies and Terms",
+  title: "EmotionDeck Legal Information - Policies and Terms",
   description:
-    "Access all official legal information for EmotionDeck, including Privacy Policy, Terms of Use, and Cookies Policy — written transparently and compliant with UK and EU data protection law.",
+    "Access all official legal information for EmotionDeck, including Privacy Policy, Terms of Use, and Cookies Policy - written transparently and compliant with UK and EU data protection law.",
   keywords:
     "EmotionDeck legal information, privacy policy, terms of use, cookies policy, UK law, EU compliance, GDPR, transparency, user rights, data protection",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Legal Information — Policies and Terms",
+    title: "EmotionDeck Legal Information - Policies and Terms",
     description:
-      "Explore all EmotionDeck legal documents — Privacy Policy, Terms of Use, and Cookies Policy — created with clarity and full legal compliance.",
+      "Explore all EmotionDeck legal documents - Privacy Policy, Terms of Use, and Cookies Policy - created with clarity and full legal compliance.",
     url: "https://emotiondeck.com/legal",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Legal Information — Policies and Terms",
+    title: "EmotionDeck Legal Information - Policies and Terms",
     description:
-      "Review EmotionDeck’s complete legal section, including Privacy, Terms, and Cookies Policies — transparent and GDPR compliant.",
+      "Review EmotionDeck’s complete legal section, including Privacy, Terms, and Cookies Policies - transparent and GDPR compliant.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

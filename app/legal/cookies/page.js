@@ -24,7 +24,7 @@ export default function CookiesPolicyPage() {
       {/* 🩶 Header */}
       <section className="text-center w-[80%] mx-auto mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Cookies Policy — EmotionDeck
+          Cookies Policy - EmotionDeck
         </h1>
         <p className="text-gray-400 mb-4">
           Last updated: <strong>October 2025</strong>

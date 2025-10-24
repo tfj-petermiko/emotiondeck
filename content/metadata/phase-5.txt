@@ -5,16 +5,16 @@ https://emotiondeck.com
 https://emotiondeck.com/free/phase-5
 
 # title
-EmotionDeck — Phase 5: Seniors Collection | Wisdom, Emotion, and the Human Experience
+EmotionDeck - Phase 5: Seniors Collection | Wisdom, Emotion, and the Human Experience
 
 # description
-Explore EmotionDeck Phase 5: Seniors Collection — 300 ultra-realistic black-and-white portraits capturing the emotional richness and wisdom of older adults. A professional visual dataset designed for emotional research, empathy training, and cross-generational understanding.
+Explore EmotionDeck Phase 5: Seniors Collection - 300 ultra-realistic black-and-white portraits capturing the emotional richness and wisdom of older adults. A professional visual dataset designed for emotional research, empathy training, and cross-generational understanding.
 
 # keywords
 EmotionDeck, Seniors Collection, senior emotions, ageing and emotion, emotional intelligence, psychology of ageing, empathy study, black-and-white portraits, visual dataset, human emotion, psychological research, emotional awareness, art and psychology, emotion recognition, generational empathy, emotional expression in ageing
 
 # og_title
-EmotionDeck — Phase 5: Seniors Collection
+EmotionDeck - Phase 5: Seniors Collection
 
 # og_description
 Discover 300 detailed black-and-white portraits of seniors expressing 50 core emotions. EmotionDeck Phase 5 explores emotional resilience, reflection, and wisdom through authentic human expression.
@@ -29,10 +29,10 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck — Phase 5: Seniors Collection
+EmotionDeck - Phase 5: Seniors Collection
 
 # twitter_description
-EmotionDeck Phase 5 presents 300 portraits of seniors expressing wisdom, calmness, and emotional depth — expanding emotional research and empathy through visual psychology.
+EmotionDeck Phase 5 presents 300 portraits of seniors expressing wisdom, calmness, and emotional depth - expanding emotional research and empathy through visual psychology.
 
 # twitter_image
 https://emotiondeck.com/preview.jpg

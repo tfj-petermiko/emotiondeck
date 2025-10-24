@@ -1,6 +1,6 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Cookies Policy — Understanding Our Use of Cookies",
+  title: "EmotionDeck Cookies Policy - Understanding Our Use of Cookies",
   description:
     "Learn how EmotionDeck uses cookies and similar technologies to improve performance, enhance your experience, and ensure transparency, privacy, and smooth functionality across our platform.",
   keywords:
@@ -18,7 +18,7 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Cookies Policy — Understanding Our Use of Cookies",
+    title: "EmotionDeck Cookies Policy - Understanding Our Use of Cookies",
     description:
       "Discover how EmotionDeck manages cookies responsibly to enhance functionality, analyse usage, and ensure a secure, transparent experience for all users.",
     url: "https://emotiondeck.com/legal/cookies",
@@ -35,7 +35,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Cookies Policy — Understanding Our Use of Cookies",
+    title: "EmotionDeck Cookies Policy - Understanding Our Use of Cookies",
     description:
       "Explore how EmotionDeck uses cookies and analytics tools to optimise performance and ensure privacy across all devices and platforms.",
     images: ["https://emotiondeck.com/preview.jpg"],

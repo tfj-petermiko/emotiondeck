@@ -224,7 +224,7 @@ div[class*="border-gray-700"] {
 }
 
 /* =========================================
-   🧩 Visual stability and rendering tweaks — FIXED
+   🧩 Visual stability and rendering tweaks - FIXED
    ========================================= */
 * {
   backface-visibility: hidden;
@@ -233,7 +233,7 @@ div[class*="border-gray-700"] {
 }
 
 /* =========================================
-   🚀 EmotionDeck Scroll Logic — FINAL FIXED
+   🚀 EmotionDeck Scroll Logic - FINAL FIXED
    ========================================= */
 html,
 body {
@@ -247,7 +247,7 @@ body {
   color: white;
 }
 
-/* Default state — allow vertical scrolling */
+/* Default state - allow vertical scrolling */
 body {
   overflow-y: auto;
 }

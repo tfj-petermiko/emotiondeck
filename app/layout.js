@@ -2,7 +2,7 @@ import "./globals.css";
 import ClientLayout from "./ClientLayout";
 
 export const metadata = {
-  title: "EmotionDeck — See. Feel. Understand.",
+  title: "EmotionDeck - See. Feel. Understand.",
   description:
     "EmotionDeck helps you learn to recognise, interpret, and understand human emotion through visual learning.",
   icons: {

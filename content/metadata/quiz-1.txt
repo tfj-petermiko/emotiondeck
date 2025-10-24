@@ -5,16 +5,16 @@ https://emotiondeck.com
 https://emotiondeck.com/learn/quizzes/quiz-1
 
 # title
-EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)
+EmotionDeck Quiz 1 - Recognise the Emotion (Phase 1)
 
 # description
-Test your ability to recognise human emotions through AI-generated portraits from the EmotionDeck Free Basic Collection. Each round presents real emotional expressions from diverse cultures — see how accurately you can identify them.
+Test your ability to recognise human emotions through AI-generated portraits from the EmotionDeck Free Basic Collection. Each round presents real emotional expressions from diverse cultures - see how accurately you can identify them.
 
 # keywords
 EmotionDeck quiz, emotion recognition test, emotion learning, emotional intelligence, AI portraits, Free Basic Collection, emotion science, facial expression quiz, empathy training, cross-cultural emotions, psychology and AI
 
 # og_title
-EmotionDeck Quiz 1 — Recognise the Emotion
+EmotionDeck Quiz 1 - Recognise the Emotion
 
 # og_description
 Identify emotions in AI-generated portraits and test your emotional insight with the first EmotionDeck Quiz. Challenge your ability to read emotions across cultures.
@@ -29,7 +29,7 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck Quiz 1 — Recognise the Emotion
+EmotionDeck Quiz 1 - Recognise the Emotion
 
 # twitter_description
 Discover how well you can recognise emotions in AI-generated portraits. Try the first EmotionDeck Quiz and explore human emotion through visual intelligence.

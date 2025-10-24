@@ -85,7 +85,7 @@ export default function ClientLayout({ children }) {
       <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-md py-5 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
         <div className="max-w-4xl mx-auto px-6">
           <p className="whitespace-pre-line">
-            EmotionDeck © 2025 — See. Feel. Understand.
+            EmotionDeck © 2025 - See. Feel. Understand.
           </p>
         </div>
       </footer>

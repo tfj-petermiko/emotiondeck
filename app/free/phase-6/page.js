@@ -147,7 +147,7 @@ export default function ProCollectionPhase6() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck PRO — Phase 6: Evolution 🌍
+          EmotionDeck PRO - Phase 6: Evolution 🌍
         </motion.h1>
 
         <motion.p
@@ -156,7 +156,7 @@ export default function ProCollectionPhase6() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          The Evolution Collection explores emotional growth across cultures and ages —  
+          The Evolution Collection explores emotional growth across cultures and ages -  
           from infancy to wisdom. A visual atlas of universal human emotion.
         </motion.p>
       </section>
@@ -201,7 +201,7 @@ export default function ProCollectionPhase6() {
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} — ${img.region} (${img.age})`}
+                alt={`${img.emotion} - ${img.region} (${img.age})`}
                 className="gallery-image"
                 loading="lazy"
                 onError={(e) => {

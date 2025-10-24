@@ -105,7 +105,7 @@ export default function EmotionQuiz1() {
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16 flex flex-col items-center">
       <h1 className="text-4xl font-bold mb-6 text-white text-center">
-        🎓 EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)
+        🎓 EmotionDeck Quiz 1 - Recognise the Emotion (Phase 1)
       </h1>
 
       {!finished ? (

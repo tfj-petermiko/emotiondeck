@@ -11,12 +11,12 @@ export default function FreeCollection() {
   const content = {
     hero_title: "EmotionDeck Free Collection",
     hero_paragraph1:
-      "Explore 144 Foundational Emotional Expressions — Open and Free for Personal Learning, Research, and Education.",
+      "Explore 144 Foundational Emotional Expressions - Open and Free for Personal Learning, Research, and Education.",
     hero_paragraph2:
       "Discover diverse emotional expressions across regions and genders to improve your perception, empathy, and emotional intelligence.",
     info_title: "Why Free?",
     info_paragraph:
-      "The EmotionDeck Free Collection is Designed to Make Emotional Learning Accessible to Everyone — From Students and Educators to Psychologists and Creators.",
+      "The EmotionDeck Free Collection is Designed to Make Emotional Learning Accessible to Everyone - From Students and Educators to Psychologists and Creators.",
   };
 
   // 🧩 Static menu data (formerly from menu.txt)
@@ -92,7 +92,7 @@ export default function FreeCollection() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          {content.hero_title} — Phase 1: Basic Emotional Expressions 🌱
+          {content.hero_title} - Phase 1: Basic Emotional Expressions 🌱
         </motion.h1>
 
         <br />
@@ -172,7 +172,7 @@ export default function FreeCollection() {
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} — ${img.region} ${img.gender}`}
+                alt={`${img.emotion} - ${img.region} ${img.gender}`}
                 className="gallery-image"
                 loading="lazy"
               />

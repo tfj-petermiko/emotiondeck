@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 /* =========================================
-   🌍 EMOTIONDECK WORLD MAP v8.0 — One Country, One Emotion (fixed z-index)
+   🌍 EMOTIONDECK WORLD MAP v8.0 - One Country, One Emotion (fixed z-index)
    ========================================= */
 
 export default function GlobalMap() {
@@ -97,7 +97,7 @@ export default function GlobalMap() {
       {/* 🏷️ Title */}
       <div className="absolute top-8 left-0 w-full text-center z-10 pointer-events-none">
         <h2 className="text-4xl md:text-6xl font-semibold tracking-wide text-gray-100 drop-shadow-lg">
-          EmotionDeck — One World, Many Faces, One Humanity 🕊️🕊️
+          EmotionDeck - One World, Many Faces, One Humanity 🕊️🕊️
         </h2>
       </div>
 

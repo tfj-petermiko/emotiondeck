@@ -51,7 +51,7 @@ export default function CameraCheck({ onCameraReady }) {
 
       {status === "ok" && (
         <p className="text-emerald-400 font-semibold">
-          ✅ Camera detected — ready for FACS analysis.
+          ✅ Camera detected - ready for FACS analysis.
         </p>
       )}
 

@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import GlobalMap from "../components/GlobalMap/GlobalMap";
 
-// 🧩 Helper — client-safe metadata loader
+// 🧩 Helper - client-safe metadata loader
 async function loadMetadata() {
   try {
     const res = await fetch("/content/globalmap/metadata.txt");

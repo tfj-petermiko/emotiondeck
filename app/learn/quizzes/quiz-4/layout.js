@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Quiz 4 — Global Emotional Spectrum",
+  title: "EmotionDeck Quiz 4 - Global Emotional Spectrum",
   description:
-    "Explore 120 emotions across 10 global categories with EmotionDeck Quiz 4 — recognise feelings through realistic portraits that reveal humanity’s shared emotional depth.",
+    "Explore 120 emotions across 10 global categories with EmotionDeck Quiz 4 - recognise feelings through realistic portraits that reveal humanity’s shared emotional depth.",
   keywords:
     "EmotionDeck quiz, global emotional spectrum, 120 emotions, emotional intelligence, cross-cultural emotion, facial expression training, psychology learning, empathy development, AI portraits, emotion recognition",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Quiz 4 — Global Emotional Spectrum",
+    title: "EmotionDeck Quiz 4 - Global Emotional Spectrum",
     description:
-      "Discover 120 emotions across 10 categories in the ultimate EmotionDeck quiz — explore how culture, age, and gender shape emotional expression worldwide.",
+      "Discover 120 emotions across 10 categories in the ultimate EmotionDeck quiz - explore how culture, age, and gender shape emotional expression worldwide.",
     url: "https://emotiondeck.com/learn/quizzes/quiz-4",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Quiz 4 — Global Emotional Spectrum",
+    title: "EmotionDeck Quiz 4 - Global Emotional Spectrum",
     description:
-      "Train your perception with EmotionDeck Quiz 4 — recognise 120 emotions across 10 categories and discover emotional diversity around the world.",
+      "Train your perception with EmotionDeck Quiz 4 - recognise 120 emotions across 10 categories and discover emotional diversity around the world.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

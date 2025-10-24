@@ -58,7 +58,7 @@ export default function ProCollectionPhase3() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck Free Collection — Phase 3: Young Adults 🔓
+          EmotionDeck Free Collection - Phase 3: Young Adults 🔓
         </motion.h1>
 
         <motion.p
@@ -128,7 +128,7 @@ export default function ProCollectionPhase3() {
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} — ${img.region} ${img.gender} (${ageGroup})`}
+                alt={`${img.emotion} - ${img.region} ${img.gender} (${ageGroup})`}
                 className="gallery-image"
                 loading="lazy"
               />

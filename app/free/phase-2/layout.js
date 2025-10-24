@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Phase 2 — Advanced Emotional Expressions",
+  title: "EmotionDeck Phase 2 - Advanced Emotional Expressions",
   description:
-    "Dive into EmotionDeck Phase 2 — explore complex emotions like Anxiety, Nostalgia, Confidence, and Tranquillity through realistic portraits across cultures and ages.",
+    "Dive into EmotionDeck Phase 2 - explore complex emotions like Anxiety, Nostalgia, Confidence, and Tranquillity through realistic portraits across cultures and ages.",
   keywords:
     "EmotionDeck Phase 2, advanced emotional expressions, complex emotions, emotional intelligence, emotion recognition, psychology education, AI portraits, empathy training, human emotion study, cross-cultural emotion",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Phase 2 — Advanced Emotional Expressions",
+    title: "EmotionDeck Phase 2 - Advanced Emotional Expressions",
     description:
-      "Discover subtle and complex human emotions with EmotionDeck Phase 2 — explore psychological depth through portraits of diverse people worldwide.",
+      "Discover subtle and complex human emotions with EmotionDeck Phase 2 - explore psychological depth through portraits of diverse people worldwide.",
     url: "https://emotiondeck.com/free/phase-2",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Phase 2 — Advanced Emotional Expressions",
+    title: "EmotionDeck Phase 2 - Advanced Emotional Expressions",
     description:
-      "Explore complex emotional states in EmotionDeck Phase 2 — a visual study of human expression designed for researchers, educators, and advanced learners.",
+      "Explore complex emotional states in EmotionDeck Phase 2 - a visual study of human expression designed for researchers, educators, and advanced learners.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

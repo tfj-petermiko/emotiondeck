@@ -107,7 +107,7 @@ export default function EmotionQuiz2() {
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16 flex flex-col items-center">
       <h1 className="text-4xl font-bold mb-6 text-white text-center">
-        🎓 EmotionDeck Quiz 2 — Recognise the Emotion (Phase 2)
+        🎓 EmotionDeck Quiz 2 - Recognise the Emotion (Phase 2)
       </h1>
       <p className="text-gray-400 mb-8 text-center max-w-lg">
         Observe each portrait carefully and choose the correct emotion from the options below.

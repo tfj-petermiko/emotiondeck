@@ -8,7 +8,7 @@ export default function LearnFACSPage() {
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16">
       <section className="text-center mb-10">
         <h1 className="text-4xl font-bold text-white mb-3">
-          Learn & Grow — Facial Action Coding System (FACS)
+          Learn & Grow - Facial Action Coding System (FACS)
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
           Discover how your face expresses emotions in real time.  
@@ -20,7 +20,7 @@ export default function LearnFACSPage() {
 
       <section className="mt-16 text-center text-gray-400 text-sm">
         <p>
-          Learn how emotions move the human face — part of EmotionDeck Learn & Grow.
+          Learn how emotions move the human face - part of EmotionDeck Learn & Grow.
         </p>
       </section>
     </main>

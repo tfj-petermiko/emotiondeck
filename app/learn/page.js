@@ -51,17 +51,17 @@ export default function LearnPage() {
         transition={{ duration: 0.6 }}
         className="text-4xl md:text-5xl font-bold text-center mb-6"
       >
-        Learn & Grow — The Science of Emotion
+        Learn & Grow - The Science of Emotion
       </motion.h1>
 
       <p className="text-gray-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
         Explore human emotions through science, psychology, and AI. The{" "}
         <span className="text-emerald-400 font-medium">Learn & Grow</span> section
-        reveals how emotions are expressed and shared across cultures — with interactive tools and quizzes.
+        reveals how emotions are expressed and shared across cultures - with interactive tools and quizzes.
       </p>
 
       {/* ========================== */}
-      {/* 🧠 MODULE 1 — EMOTION RECOGNITION QUIZZES */}
+      {/* 🧠 MODULE 1 - EMOTION RECOGNITION QUIZZES */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -71,10 +71,10 @@ export default function LearnPage() {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center mb-2">
-            Emotion Recognition Quizzes — Test Your Understanding
+            Emotion Recognition Quizzes - Test Your Understanding
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
-            Identify emotions from AI portraits — based on the Free Collection
+            Identify emotions from AI portraits - based on the Free Collection
           </p>
 
           <table className="w-full text-sm md:text-base border-collapse">
@@ -121,7 +121,7 @@ export default function LearnPage() {
                     />
                   </div>
                   <p className="text-gray-400 text-xs mt-2">
-                    EmotionDeck — Quiz Preview
+                    EmotionDeck - Quiz Preview
                   </p>
                 </td>
               </tr>
@@ -135,7 +135,7 @@ export default function LearnPage() {
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  Free — Available in Learn & Grow
+                  Free - Available in Learn & Grow
                 </td>
               </tr>
             </tbody>
@@ -146,7 +146,7 @@ export default function LearnPage() {
       <br />
 
       {/* ========================== */}
-      {/* 📚 MODULE 2 — FACS ANALYSER */}
+      {/* 📚 MODULE 2 - FACS ANALYSER */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -156,10 +156,10 @@ export default function LearnPage() {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <h2 className="text-2xl font-semibold text-center mb-2">
-            FACS Emotion Analyzer — Learn Human Expression
+            FACS Emotion Analyzer - Learn Human Expression
           </h2>
           <p className="text-center text-gray-400 italic mb-6">
-            Facial Action Coding System (FACS) — AI Meets Psychology
+            Facial Action Coding System (FACS) - AI Meets Psychology
           </p>
 
           <table className="w-full text-sm md:text-base border-collapse">
@@ -218,7 +218,7 @@ export default function LearnPage() {
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  Free — Available in Learn & Grow
+                  Free - Available in Learn & Grow
                 </td>
               </tr>
             </tbody>

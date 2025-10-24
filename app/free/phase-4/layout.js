@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Phase 4 — Children Collection",
+  title: "EmotionDeck Phase 4 - Children Collection",
   description:
-    "Explore 84 portraits of children aged 6–7 expressing genuine emotions with EmotionDeck Phase 4 — designed for education, empathy training, and emotional development research.",
+    "Explore 84 portraits of children aged 6–7 expressing genuine emotions with EmotionDeck Phase 4 - designed for education, empathy training, and emotional development research.",
   keywords:
     "EmotionDeck Phase 4, Children Collection, child emotions, emotion recognition, emotional development, psychology education, empathy learning, early education, facial expressions, emotion research",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Phase 4 — Children Collection",
+    title: "EmotionDeck Phase 4 - Children Collection",
     description:
-      "Discover 84 expressive portraits of children aged 6–7 showcasing authentic emotions — EmotionDeck Phase 4 supports empathy and early emotional education.",
+      "Discover 84 expressive portraits of children aged 6–7 showcasing authentic emotions - EmotionDeck Phase 4 supports empathy and early emotional education.",
     url: "https://emotiondeck.com/free/phase-4",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Phase 4 — Children Collection",
+    title: "EmotionDeck Phase 4 - Children Collection",
     description:
-      "EmotionDeck Phase 4 features 84 portraits of children aged 6–7 expressing core emotions — a resource for education, psychology, and empathy research.",
+      "EmotionDeck Phase 4 features 84 portraits of children aged 6–7 expressing core emotions - a resource for education, psychology, and empathy research.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

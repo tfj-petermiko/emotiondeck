@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck PRO Collection — Explore Advanced Human Emotion",
+  title: "EmotionDeck PRO Collection - Explore Advanced Human Emotion",
   description:
-    "Discover the EmotionDeck PRO Collection — an advanced emotional dataset showcasing complex human expressions across regions, ages, and genders, built for research, education, and professional study.",
+    "Discover the EmotionDeck PRO Collection - an advanced emotional dataset showcasing complex human expressions across regions, ages, and genders, built for research, education, and professional study.",
   keywords:
     "EmotionDeck PRO Collection, advanced emotions, emotional dataset, human expression, psychology research, emotional intelligence, professional education, cultural emotion study, emotion recognition, visual learning",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck PRO Collection — Explore Advanced Human Emotion",
+    title: "EmotionDeck PRO Collection - Explore Advanced Human Emotion",
     description:
-      "Explore the EmotionDeck PRO Collection — a professional-grade dataset capturing advanced emotional expressions across diverse cultures and demographics for research and learning.",
+      "Explore the EmotionDeck PRO Collection - a professional-grade dataset capturing advanced emotional expressions across diverse cultures and demographics for research and learning.",
     url: "https://emotiondeck.com/pro",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck PRO Collection — Explore Advanced Human Emotion",
+    title: "EmotionDeck PRO Collection - Explore Advanced Human Emotion",
     description:
-      "Unlock EmotionDeck PRO — an advanced visual library of human emotion designed for educators, professionals, and researchers seeking deeper understanding.",
+      "Unlock EmotionDeck PRO - an advanced visual library of human emotion designed for educators, professionals, and researchers seeking deeper understanding.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

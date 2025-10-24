@@ -5,19 +5,19 @@ https://emotiondeck.com
 https://emotiondeck.com/learn
 
 # title
-EmotionDeck Learn & Grow — Discover the Science of Emotion
+EmotionDeck Learn & Grow - Discover the Science of Emotion
 
 # description
-Explore the Learn & Grow section of EmotionDeck — where psychology meets AI. Take emotion recognition quizzes, analyse facial expressions with FACS, and reflect with the Live Emotion Mirror to deepen your emotional understanding.
+Explore the Learn & Grow section of EmotionDeck - where psychology meets AI. Take emotion recognition quizzes, analyse facial expressions with FACS, and reflect with the Live Emotion Mirror to deepen your emotional understanding.
 
 # keywords
 EmotionDeck learn, emotion learning, psychology and AI, emotion quizzes, facial expression analysis, FACS, emotion science, emotional intelligence, emotion mirror, emotion recognition, cultural emotions
 
 # og_title
-EmotionDeck Learn & Grow — Discover the Science of Emotion
+EmotionDeck Learn & Grow - Discover the Science of Emotion
 
 # og_description
-Enhance your emotional intelligence with EmotionDeck’s Learn & Grow modules — quizzes, FACS analyser, and AI-powered Emotion Mirror.
+Enhance your emotional intelligence with EmotionDeck’s Learn & Grow modules - quizzes, FACS analyser, and AI-powered Emotion Mirror.
 
 # og_url
 https://emotiondeck.com/learn
@@ -29,10 +29,10 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck Learn & Grow — Discover the Science of Emotion
+EmotionDeck Learn & Grow - Discover the Science of Emotion
 
 # twitter_description
-Learn to recognise and understand emotions through quizzes, FACS analysis, and the Emotion Mirror — only on EmotionDeck.
+Learn to recognise and understand emotions through quizzes, FACS analysis, and the Emotion Mirror - only on EmotionDeck.
 
 # twitter_image
 https://emotiondeck.com/preview.jpg

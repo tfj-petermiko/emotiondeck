@@ -16,7 +16,7 @@ export default function ProCollectionPage() {
     setTimeout(() => router.push("/"), 800);
   };
 
-  // 🔓 Smart button logic — checks access or redirects to checkout
+  // 🔓 Smart button logic - checks access or redirects to checkout
   const handleAccessClick = (phase, title, price) => {
     const key = `emotiondeck_${phase}_access`;
     const raw = localStorage.getItem(key);
@@ -61,7 +61,7 @@ export default function ProCollectionPage() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck — PRO Collection 🔓
+          EmotionDeck - PRO Collection 🔓
         </motion.h1>
 
         <motion.p
@@ -70,7 +70,7 @@ export default function ProCollectionPage() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-12"
         >
-          Explore the deeper side of human emotion — where depth, contrast, and subtlety reveal the unseen. 
+          Explore the deeper side of human emotion - where depth, contrast, and subtlety reveal the unseen. 
           This limited EmotionDeck PRO collection unveils the intricate layers of emotional complexity beyond surface expression.
         </motion.p>
       </section>
@@ -87,7 +87,7 @@ export default function ProCollectionPage() {
         <div className="bg-gray-900 p-6 md:p-10">
           <center>
             <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
-              Dark Spectrum — Part I
+              Dark Spectrum - Part I
             </h2>
           </center>
           <p className="text-center text-gray-400 italic mb-6">
@@ -99,7 +99,7 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Dark Spectrum — Part I Collection</p>
+                  <p className="font-semibold mb-1">Dark Spectrum - Part I Collection</p>
                   <p className="text-gray-400 mb-2">
                     48 ultra-realistic portraits exploring the hidden dimensions of emotion:
                     Deception Masks, Hidden States, Inner Conflict, Pain & Loss, Power & Control,
@@ -107,13 +107,13 @@ export default function ProCollectionPage() {
                   </p>
                   <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
                     This collection delves into the concealed emotions that define human depth.
-                    It reflects moments of tension, irony, grief, and redemption — the silent
+                    It reflects moments of tension, irony, grief, and redemption - the silent
                     language of inner transformation. Each portrait reveals psychological nuance
                     through subtle microexpressions and timeless monochrome composition.
-                    Dark Spectrum — Part I bridges art and psychology, showing that even within
+                    Dark Spectrum - Part I bridges art and psychology, showing that even within
                     darkness lies clarity, strength, and meaning. Designed for professional
                     research, education, and visual training, it exposes the delicate boundary
-                    between control and vulnerability — emotion as truth beneath disguise.
+                    between control and vulnerability - emotion as truth beneath disguise.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("phase-1", "Dark Spectrum I", "4.99", "Unlock via PayPal 🔓", "p1")}
@@ -123,12 +123,12 @@ export default function ProCollectionPage() {
                   <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
                     <img
                       src="/private_images/pro/phase_1/DarkSpectrum_DeceptionMasks_Cunning_SouthAsian_YoungAdult_Female.webp"
-                      alt="Cunning — SouthAsian YoungAdult Female"
+                      alt="Cunning - SouthAsian YoungAdult Female"
                       className="object-cover w-full h-auto"
                       loading="lazy"
                     />
                   </div>
-                  <p className="text-gray-400 text-xs mt-2">Cunning — SouthAsian YoungAdult Female</p>
+                  <p className="text-gray-400 text-xs mt-2">Cunning - SouthAsian YoungAdult Female</p>
                 </td>
               </tr>
 
@@ -169,7 +169,7 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  1024 × 1536 — high-definition monochrome format
+                  1024 × 1536 - high-definition monochrome format
                 </td>
               </tr>
 
@@ -198,7 +198,7 @@ export default function ProCollectionPage() {
         <div className="bg-gray-900 p-6 md:p-10">
           <center>
             <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
-              Dark Spectrum — Part II
+              Dark Spectrum - Part II
             </h2>
           </center>
           <p className="text-center text-gray-400 italic mb-6">
@@ -211,20 +211,20 @@ export default function ProCollectionPage() {
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
                   <p className="font-semibold mb-1">
-                    Dark Spectrum — Part II Collection
+                    Dark Spectrum - Part II Collection
                   </p>
                   <p className="text-gray-400 mb-2">
-                    48 black-and-white portraits exploring the boundary between despair and awakening — 
+                    48 black-and-white portraits exploring the boundary between despair and awakening - 
                     emotions such as Decay, Despair, Nihilism, Fury, Isolation, and Vengeance.
                   </p>
                   <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    Dark Spectrum — Part II continues the exploration into the shadowed layers of human 
+                    Dark Spectrum - Part II continues the exploration into the shadowed layers of human 
                     emotion. Each portrait captures the quiet breakdown and resilience within collapse. 
                     Through the language of microexpression and minimal monochrome composition, this 
                     collection embodies loss, rage, dread, and silent rebirth. It serves as a reflection 
                     of moral pain, self-confrontation, and existential transformation. Designed for 
                     professionals, educators, and emotional researchers, it portrays the tension between 
-                    destruction and reconstruction — emotion as the process of surviving darkness.
+                    destruction and reconstruction - emotion as the process of surviving darkness.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("phase-2", "Dark Spectrum II", "4.99", "Unlock via PayPal 🔓", "p2")}
@@ -234,13 +234,13 @@ export default function ProCollectionPage() {
                   <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
                     <img
                       src="/private_images/pro/phase_2/DarkSpectrum2_Despair_MiddleEastern_MatureAdult_Male.webp"
-                      alt="Despair — MiddleEastern MatureAdult Male"
+                      alt="Despair - MiddleEastern MatureAdult Male"
                       className="object-cover w-full h-auto"
                       loading="lazy"
                     />
                   </div>
                   <p className="text-gray-400 text-xs mt-2">
-                    Despair — MiddleEastern MatureAdult Male
+                    Despair - MiddleEastern MatureAdult Male
                   </p>
                 </td>
               </tr>
@@ -276,14 +276,14 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  One portrait per emotion — diverse regional, age, and gender representation
+                  One portrait per emotion - diverse regional, age, and gender representation
                 </td>
               </tr>
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  1024 × 1536 — high-definition monochrome format
+                  1024 × 1536 - high-definition monochrome format
                 </td>
               </tr>
 

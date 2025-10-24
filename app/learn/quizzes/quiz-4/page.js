@@ -266,10 +266,10 @@ export default function EmotionQuiz4() {
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16 flex flex-col items-center">
       <h1 className="text-4xl font-bold mb-6 text-white text-center">
-        🎓 EmotionDeck Quiz 4 — Global Emotional Spectrum (120 Emotions, 10 Categories)
+        🎓 EmotionDeck Quiz 4 - Global Emotional Spectrum (120 Emotions, 10 Categories)
       </h1>
       <p className="text-gray-400 mb-8 text-center max-w-lg">
-        Discover emotions from around the world — observe each portrait and choose the correct emotion.
+        Discover emotions from around the world - observe each portrait and choose the correct emotion.
       </p>
 
       {/* 🌍 Category Dropdown */}

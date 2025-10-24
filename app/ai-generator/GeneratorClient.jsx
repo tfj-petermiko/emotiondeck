@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 /* =========================================
-   ⚙️ EmotionDeck — AI Portrait Generator (Secure Version)
+   ⚙️ EmotionDeck - AI Portrait Generator (Secure Version)
    ========================================= */
 
 async function loadMetadata() {
@@ -150,7 +150,7 @@ export default function GeneratorClient() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white flex flex-col items-center justify-center p-8">
       <h1 className="text-3xl font-semibold mb-6">
-        ⚙️ EmotionDeck — AI Portrait Generator
+        ⚙️ EmotionDeck - AI Portrait Generator
       </h1>
 
       <p className="text-gray-400 mb-8 text-center max-w-lg">
@@ -174,7 +174,7 @@ export default function GeneratorClient() {
           </>
         ) : (
           <div className="bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 rounded-lg px-4 py-3 max-w-md mx-auto">
-            🔒 No credits left — pay £4.99 to unlock 10 new generations.
+            🔒 No credits left - pay £4.99 to unlock 10 new generations.
           </div>
         )}
       </div>

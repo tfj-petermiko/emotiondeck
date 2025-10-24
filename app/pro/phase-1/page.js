@@ -122,7 +122,7 @@ export default function ProCollectionPhase1() {
       <main className="min-h-screen bg-neutral-900 text-white font-sans">
         {/* Access banner */}
         <div className="bg-emerald-800 text-white text-center py-2 text-sm">
-          Access active — {daysLeft} {daysLeft === 1 ? "day" : "days"} remaining
+          Access active - {daysLeft} {daysLeft === 1 ? "day" : "days"} remaining
         </div>
 
         {/* Header */}
@@ -133,7 +133,7 @@ export default function ProCollectionPhase1() {
             transition={{ duration: 1 }}
             className="text-5xl md:text-6xl font-bold mb-4"
           >
-            EmotionDeck PRO — Phase 1: Dark Spectrum I 🖤
+            EmotionDeck PRO - Phase 1: Dark Spectrum I 🖤
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -141,7 +141,7 @@ export default function ProCollectionPhase1() {
             transition={{ delay: 0.5, duration: 1 }}
             className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
           >
-            Explore the hidden side of human emotion — where deception,
+            Explore the hidden side of human emotion - where deception,
             restraint, inner conflict, pain, power, and redemption intertwine.
             Each portrait reveals emotional depth beyond the visible surface.
           </motion.p>
@@ -191,7 +191,7 @@ export default function ProCollectionPhase1() {
               >
                 <img
                   src={img.src}
-                  alt={`${img.emotion} — ${img.category}`}
+                  alt={`${img.emotion} - ${img.category}`}
                   className="gallery-image"
                   loading="lazy"
                   onError={(e) =>

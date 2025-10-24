@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Learn & Grow — Emotion Recognition Quizzes",
+  title: "EmotionDeck Learn & Grow - Emotion Recognition Quizzes",
   description:
-    "Test and improve your emotional intelligence with EmotionDeck’s interactive quizzes — identify emotions from portraits and explore cultural differences in emotional expression.",
+    "Test and improve your emotional intelligence with EmotionDeck’s interactive quizzes - identify emotions from portraits and explore cultural differences in emotional expression.",
   keywords:
     "EmotionDeck quizzes, emotion recognition, emotional intelligence, AI portraits, psychology education, emotion training, facial expression learning, cultural emotion study, empathy development, interactive learning",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Learn & Grow — Emotion Recognition Quizzes",
+    title: "EmotionDeck Learn & Grow - Emotion Recognition Quizzes",
     description:
-      "Sharpen your emotional perception with EmotionDeck quizzes — recognise emotions through expressive portraits and discover how feelings connect across cultures.",
+      "Sharpen your emotional perception with EmotionDeck quizzes - recognise emotions through expressive portraits and discover how feelings connect across cultures.",
     url: "https://emotiondeck.com/learn/quizzes",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Learn & Grow — Emotion Recognition Quizzes",
+    title: "EmotionDeck Learn & Grow - Emotion Recognition Quizzes",
     description:
-      "Challenge yourself with EmotionDeck’s interactive quizzes — test your ability to recognise and interpret emotions through AI-generated portraits.",
+      "Challenge yourself with EmotionDeck’s interactive quizzes - test your ability to recognise and interpret emotions through AI-generated portraits.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

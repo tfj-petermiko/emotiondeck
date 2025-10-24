@@ -1,6 +1,6 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Terms of Use — Your Rights and Responsibilities",
+  title: "EmotionDeck Terms of Use - Your Rights and Responsibilities",
   description:
     "Review EmotionDeck’s Terms of Use to understand your rights, obligations, and permitted use of our content and platform, ensuring clarity, fairness, and transparency for all users.",
   keywords:
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Terms of Use — Your Rights and Responsibilities",
+    title: "EmotionDeck Terms of Use - Your Rights and Responsibilities",
     description:
-      "Learn about EmotionDeck’s Terms of Use — covering intellectual property, permitted use, user conduct, and content ownership, ensuring fairness and transparency.",
+      "Learn about EmotionDeck’s Terms of Use - covering intellectual property, permitted use, user conduct, and content ownership, ensuring fairness and transparency.",
     url: "https://emotiondeck.com/legal/terms",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Terms of Use — Your Rights and Responsibilities",
+    title: "EmotionDeck Terms of Use - Your Rights and Responsibilities",
     description:
-      "Understand the Terms governing your access to and use of EmotionDeck — promoting responsible engagement and respect for content ownership.",
+      "Understand the Terms governing your access to and use of EmotionDeck - promoting responsible engagement and respect for content ownership.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

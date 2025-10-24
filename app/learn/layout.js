@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Learn & Grow — Discover the Science of Emotion",
+  title: "EmotionDeck Learn & Grow - Discover the Science of Emotion",
   description:
-    "Develop your emotional intelligence with EmotionDeck Learn & Grow — explore interactive quizzes, FACS facial analysis, and the AI-powered Emotion Mirror to understand emotion in depth.",
+    "Develop your emotional intelligence with EmotionDeck Learn & Grow - explore interactive quizzes, FACS facial analysis, and the AI-powered Emotion Mirror to understand emotion in depth.",
   keywords:
     "EmotionDeck Learn & Grow, emotional intelligence, emotion quizzes, FACS analysis, emotion recognition, emotion learning, psychology education, facial expression analysis, AI emotion tools, emotional awareness",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Learn & Grow — Discover the Science of Emotion",
+    title: "EmotionDeck Learn & Grow - Discover the Science of Emotion",
     description:
-      "Learn with EmotionDeck — explore quizzes, FACS analysis, and the Emotion Mirror to improve emotional recognition and self-awareness through science and AI.",
+      "Learn with EmotionDeck - explore quizzes, FACS analysis, and the Emotion Mirror to improve emotional recognition and self-awareness through science and AI.",
     url: "https://emotiondeck.com/learn",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Learn & Grow — Discover the Science of Emotion",
+    title: "EmotionDeck Learn & Grow - Discover the Science of Emotion",
     description:
-      "Explore EmotionDeck’s Learn & Grow — interactive quizzes, facial emotion analysis, and AI Emotion Mirror to deepen emotional understanding.",
+      "Explore EmotionDeck’s Learn & Grow - interactive quizzes, facial emotion analysis, and AI Emotion Mirror to deepen emotional understanding.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

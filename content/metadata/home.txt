@@ -5,7 +5,7 @@ https://emotiondeck.com
 https://emotiondeck.com
 
 # title
-EmotionDeck — Train Your Perception. Understand Human Emotion.
+EmotionDeck - Train Your Perception. Understand Human Emotion.
 
 # description
 EmotionDeck helps you learn to recognise, interpret, and understand human emotions through subtle facial expressions, mindful observation, and guided visual learning.
@@ -17,10 +17,10 @@ EmotionDeck, emotion recognition, emotional learning, emotional perception, faci
 IDzJ4Cn66z4WCWBw3l2BI6IRKH-POLMXrDzfDsRjGwc
 
 # og_title
-EmotionDeck — Train Your Perception. Understand Human Emotion.
+EmotionDeck - Train Your Perception. Understand Human Emotion.
 
 # og_description
-Explore the full EmotionDeck visual learning platform — perceive and understand human emotions through detailed facial expressions and mindful observation.
+Explore the full EmotionDeck visual learning platform - perceive and understand human emotions through detailed facial expressions and mindful observation.
 
 # og_url
 https://emotiondeck.com
@@ -32,7 +32,7 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck — Train Your Perception. Understand Human Emotion.
+EmotionDeck - Train Your Perception. Understand Human Emotion.
 
 # twitter_description
 Enhance your emotional perception and learn to recognise subtle human expressions through guided visual learning with EmotionDeck.

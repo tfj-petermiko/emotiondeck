@@ -16,11 +16,11 @@ export default function HomePage() {
     hero_paragraph1:
       "EmotionDeck Helps You Perceive and Understand Human Emotion through Subtle Expression, Mindful Observation, and Guided Visual Learning.",
     hero_paragraph2:
-      "Explore 1000+ Emotional Expressions — For Personal Learning, Research, and Education.",
+      "Explore 1000+ Emotional Expressions - For Personal Learning, Research, and Education.",
     pro_title: "Experience the PRO Collection",
     pro_description:
       "Discover Deeper Complex Human Emotions Across Regions, Ages, and Genders. Perfect for Professionals, Educators, Law Enforcement Officers, Investigators, and Advanced Emotional Research.",
-    pro_note: "🔓 EmotionDeck — Exclusive Early Access for all Users.",
+    pro_note: "🔓 EmotionDeck - Exclusive Early Access for all Users.",
   };
 
   return (

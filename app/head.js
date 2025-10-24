@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>EmotionDeck — See. Feel. Understand.</title>
+      <title>EmotionDeck - See. Feel. Understand.</title>
       <meta
         name="description"
         content="EmotionDeck helps you recognise, interpret, and understand human emotion through subtle facial expressions, mindful observation, and visual learning."
@@ -16,10 +16,10 @@ export default function Head() {
       <link rel="manifest" href="/site.webmanifest" />
 
       {/* Open Graph */}
-      <meta property="og:title" content="EmotionDeck — See. Feel. Understand." />
+      <meta property="og:title" content="EmotionDeck - See. Feel. Understand." />
       <meta
         property="og:description"
-        content="Learn to recognise, interpret, and understand emotions through visual learning with EmotionDeck — explore human expression worldwide."
+        content="Learn to recognise, interpret, and understand emotions through visual learning with EmotionDeck - explore human expression worldwide."
       />
       <meta property="og:url" content="https://emotiondeck.com/" />
       <meta property="og:site_name" content="EmotionDeck" />
@@ -28,10 +28,10 @@ export default function Head() {
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="EmotionDeck — See. Feel. Understand." />
+      <meta name="twitter:title" content="EmotionDeck - See. Feel. Understand." />
       <meta
         name="twitter:description"
-        content="Discover how to see, feel, and understand emotions through visual learning with EmotionDeck — the global platform for emotional intelligence."
+        content="Discover how to see, feel, and understand emotions through visual learning with EmotionDeck - the global platform for emotional intelligence."
       />
       <meta name="twitter:image" content="https://emotiondeck.com/preview.jpg" />
     </>

@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck PRO Phase 2 — Dark Spectrum II",
+  title: "EmotionDeck PRO Phase 2 - Dark Spectrum II",
   description:
-    "Explore the depths of human emotion with EmotionDeck PRO Phase 2 (Dark Spectrum II) — 48 monochrome portraits revealing despair, decay, vengeance, isolation, and fragile rebirth.",
+    "Explore the depths of human emotion with EmotionDeck PRO Phase 2 (Dark Spectrum II) - 48 monochrome portraits revealing despair, decay, vengeance, isolation, and fragile rebirth.",
   keywords:
     "EmotionDeck PRO, Dark Spectrum II, emotional depth, despair, decay, vengeance, nihilism, grief, isolation, mourning, emotional exploration, psychology, AI emotion portraits, black-and-white emotional art",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck PRO Phase 2 — Dark Spectrum II",
+    title: "EmotionDeck PRO Phase 2 - Dark Spectrum II",
     description:
       "EmotionDeck PRO Phase 2 (Dark Spectrum II) unveils 48 emotional portraits exploring despair, vengeance, decay, and rebirth through a lens of raw human psychology.",
     url: "https://emotiondeck.com/pro/phase-2",
@@ -29,15 +29,15 @@ export const metadata = {
         url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
-        alt: "EmotionDeck PRO Phase 2 — Dark Spectrum II Preview",
+        alt: "EmotionDeck PRO Phase 2 - Dark Spectrum II Preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck PRO Phase 2 — Dark Spectrum II",
+    title: "EmotionDeck PRO Phase 2 - Dark Spectrum II",
     description:
-      "EmotionDeck PRO Phase 2 — Dark Spectrum II captures 48 monochrome emotions exploring despair, decay, isolation, vengeance, and the edge of renewal.",
+      "EmotionDeck PRO Phase 2 - Dark Spectrum II captures 48 monochrome emotions exploring despair, decay, isolation, vengeance, and the edge of renewal.",
     images: [
       "https://emotiondeck.com/preview.jpg",
     ],

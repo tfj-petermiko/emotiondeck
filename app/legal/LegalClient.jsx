@@ -54,7 +54,7 @@ export default function LegalClient() {
     <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
       <section className="text-center w-[80%] mx-auto mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Legal Information — EmotionDeck
+          Legal Information - EmotionDeck
         </h1>
         <p className="text-gray-400 mb-4">
           Last updated: <strong>October 2025</strong>
@@ -63,7 +63,7 @@ export default function LegalClient() {
           Welcome to the legal section of EmotionDeck.
           <br />
           Here you can access our Privacy Policy, Terms of Use, Cookies Policy,
-          and Payments & Security information — all written transparently in
+          and Payments & Security information - all written transparently in
           compliance with UK and EU law.
         </p>
       </section>

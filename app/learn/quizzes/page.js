@@ -62,7 +62,7 @@ export default function QuizzesPage() {
         transition={{ duration: 0.6 }}
         className="text-4xl md:text-5xl font-bold text-center mb-6"
       >
-        EmotionDeck Quizzes — Test Your Emotional Insight
+        EmotionDeck Quizzes - Test Your Emotional Insight
       </motion.h1>
 
       <p className="text-gray-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
@@ -73,7 +73,7 @@ export default function QuizzesPage() {
       </p>
 
       {/* ========================== */}
-      {/* 🧠 QUIZ 1 — Recognise the Emotion (Phase 1) */}
+      {/* 🧠 QUIZ 1 - Recognise the Emotion (Phase 1) */}
       {/* ========================== */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -84,11 +84,11 @@ export default function QuizzesPage() {
         <div className="bg-gray-900 p-6 md:p-10">
           <center>
             <h2 className="text-2xl font-semibold text-center mb-2">
-              Quiz 1 — Recognise the Emotion (Phase 1)
+              Quiz 1 - Recognise the Emotion (Phase 1)
             </h2>
           </center>
           <p className="text-center text-gray-400 italic mb-6">
-            Identify emotions from portraits — based on the Free Basic Collection
+            Identify emotions from portraits - based on the Free Basic Collection
           </p>
 
           <table className="w-full text-sm md:text-base border-collapse">
@@ -134,7 +134,7 @@ export default function QuizzesPage() {
                     />
                   </div>
                   <p className="text-gray-400 text-xs mt-2">
-                    EmotionDeck Quiz 1 — Recognise the Emotion
+                    EmotionDeck Quiz 1 - Recognise the Emotion
                   </p>
                 </td>
               </tr>
@@ -162,7 +162,7 @@ export default function QuizzesPage() {
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
                 <td className="p-3 text-white" colSpan={2}>
-                  Free — Part of EmotionDeck Learn
+                  Free - Part of EmotionDeck Learn
                 </td>
               </tr>
             </tbody>
@@ -173,7 +173,7 @@ export default function QuizzesPage() {
       <br />
 
 {/* ========================== */}
-{/* 💫 QUIZ 2 — Recognise the Emotion (Phase 2) */}
+{/* 💫 QUIZ 2 - Recognise the Emotion (Phase 2) */}
 {/* ========================== */}
 <motion.section
   initial={{ opacity: 0, y: 40 }}
@@ -184,7 +184,7 @@ export default function QuizzesPage() {
   <div className="bg-gray-900 p-6 md:p-10">
     <center>
       <h2 className="text-2xl font-semibold text-center mb-2">
-        Quiz 2 — Recognise the Emotion (Phase 2)
+        Quiz 2 - Recognise the Emotion (Phase 2)
       </h2>
     </center>
     <p className="text-center text-gray-400 italic mb-6">
@@ -201,13 +201,13 @@ export default function QuizzesPage() {
             </p>
             <p className="text-gray-400 mb-3 text-justify">
               In this second educational and visual learning quiz, you’ll explore emotions from{" "}
-              <strong>EmotionDeck Phase 2 — Advanced Emotional Expressions</strong>.
+              <strong>EmotionDeck Phase 2 - Advanced Emotional Expressions</strong>.
               Emotions like Anxiety, Nostalgia, Confidence, and Tranquillity appear across
               different ages and cultures.
             </p>
             <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
               Choose the emotion that best describes each portrait. The challenge
-              grows — these emotions are subtler and more complex.
+              grows - these emotions are subtler and more complex.
             </p>
 
             <div className="flex justify-end mt-6">
@@ -233,7 +233,7 @@ export default function QuizzesPage() {
               />
             </div>
             <p className="text-gray-400 text-xs mt-2">
-              EmotionDeck Quiz 2 — Advanced Emotional Expressions
+              EmotionDeck Quiz 2 - Advanced Emotional Expressions
             </p>
           </td>
         </tr>
@@ -263,7 +263,7 @@ export default function QuizzesPage() {
         <tr>
           <td className="p-3 text-gray-400">Access Type</td>
           <td className="p-3 text-white" colSpan={2}>
-            Free — Part of EmotionDeck Learn
+            Free - Part of EmotionDeck Learn
           </td>
         </tr>
       </tbody>
@@ -275,7 +275,7 @@ export default function QuizzesPage() {
 
 
 {/* ========================== */}
-{/* 💫 QUIZ 3 — Young Adults (Phase 3) */}
+{/* 💫 QUIZ 3 - Young Adults (Phase 3) */}
 {/* ========================== */}
 <motion.section
   initial={{ opacity: 0, y: 40 }}
@@ -286,12 +286,12 @@ export default function QuizzesPage() {
   <div className="bg-gray-900 p-6 md:p-10">
     <center>
       <h2 className="text-2xl font-semibold text-center mb-2">
-        Quiz 3 — Recognise the Emotion (Young Adults — Phase 3)
+        Quiz 3 - Recognise the Emotion (Young Adults - Phase 3)
       </h2>
     </center>
     <center>
       <p className="text-center text-gray-400 italic mb-6">
-        Identify emotions from the EmotionDeck Phase 3 — Young Adults Collection
+        Identify emotions from the EmotionDeck Phase 3 - Young Adults Collection
       </p>
     </center>
 
@@ -305,9 +305,9 @@ export default function QuizzesPage() {
             </p>
             <p className="text-gray-400 mb-3 text-justify">
               This third quiz takes you into{" "}
-              <strong>EmotionDeck Phase 3 — Young Adults</strong>, where emotions are
+              <strong>EmotionDeck Phase 3 - Young Adults</strong>, where emotions are
               vivid, expressive, and filled with curiosity and determination.
-              You’ll recognise key feelings like Joy, Anger, Fear, Sadness, and more — 
+              You’ll recognise key feelings like Joy, Anger, Fear, Sadness, and more - 
               portrayed through diverse cultures and faces.
             </p>
             <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
@@ -339,7 +339,7 @@ export default function QuizzesPage() {
               />
             </div>
             <p className="text-gray-400 text-xs mt-2">
-              EmotionDeck Quiz 3 — Young Adults (Phase 3)
+              EmotionDeck Quiz 3 - Young Adults (Phase 3)
             </p>
           </td>
         </tr>
@@ -348,7 +348,7 @@ export default function QuizzesPage() {
         <tr className="border-b border-gray-800">
           <td className="p-3 text-gray-400">Focus</td>
           <td className="p-3 text-white" colSpan={2}>
-            Emotion recognition in young adults — expressive, curious, and evolving
+            Emotion recognition in young adults - expressive, curious, and evolving
           </td>
         </tr>
         <tr className="border-b border-gray-800">
@@ -368,7 +368,7 @@ export default function QuizzesPage() {
         <tr>
           <td className="p-3 text-gray-400">Access Type</td>
           <td className="p-3 text-white" colSpan={2}>
-            Free — Part of EmotionDeck Learn
+            Free - Part of EmotionDeck Learn
           </td>
         </tr>
       </tbody>
@@ -379,7 +379,7 @@ export default function QuizzesPage() {
 <br />
 
 {/* =============================== */}
-{/* 🌈 QUIZ 4 — Global Emotional Spectrum */}
+{/* 🌈 QUIZ 4 - Global Emotional Spectrum */}
 {/* =============================== */}
 <motion.section
   initial={{ opacity: 0, y: 40 }}
@@ -390,12 +390,12 @@ export default function QuizzesPage() {
   <div className="bg-gray-900 p-6 md:p-10">
     <center>
       <h2 className="text-2xl font-semibold text-center mb-2 text-emerald-400">
-        Quiz 4 — Global Emotional Spectrum 🌍
+        Quiz 4 - Global Emotional Spectrum 🌍
       </h2>
     </center>
     <center>
       <p className="text-center text-gray-400 italic mb-6">
-        Explore 120 emotions across 10 global categories — the ultimate EmotionDeck Learn experience
+        Explore 120 emotions across 10 global categories - the ultimate EmotionDeck Learn experience
       </p>
     </center>
 
@@ -405,12 +405,12 @@ export default function QuizzesPage() {
           <td className="w-1/4" />
           <td className="w-2/4 p-3 text-white">
             <p className="font-semibold mb-1">
-              The full emotional atlas — in one interactive quiz.
+              The full emotional atlas - in one interactive quiz.
             </p>
             <p className="text-gray-400 mb-3 text-justify">
               This fourth quiz introduces the <strong>EmotionDeck Learn Spectrum</strong>, combining 
               10 global emotional categories and 120 portraits. Each emotion represents diverse 
-              expressions across cultures, genders, and age groups — forming a complete emotional atlas.
+              expressions across cultures, genders, and age groups - forming a complete emotional atlas.
             </p>
             <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
               Identify the emotion in each portrait and test your ability to recognise feelings 
@@ -441,7 +441,7 @@ export default function QuizzesPage() {
               />
             </div>
             <p className="text-gray-400 text-xs mt-2">
-              EmotionDeck Quiz 4 — Global Emotional Spectrum
+              EmotionDeck Quiz 4 - Global Emotional Spectrum
             </p>
           </td>
         </tr>
@@ -477,7 +477,7 @@ export default function QuizzesPage() {
         <tr>
           <td className="p-3 text-gray-400">Access Type</td>
           <td className="p-3 text-white" colSpan={2}>
-            Free — Part of EmotionDeck Learn
+            Free - Part of EmotionDeck Learn
           </td>
         </tr>
       </tbody>

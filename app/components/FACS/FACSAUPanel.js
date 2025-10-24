@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 /**
- * 🧠 EmotionDeck — FACS AU Monitor
+ * 🧠 EmotionDeck - FACS AU Monitor
  * ---------------------------------
  * Displays active Facial Action Units (AUs) based on the detected emotion.
  * Used alongside FACSRealtimeOverlay.

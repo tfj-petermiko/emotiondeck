@@ -1,6 +1,6 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Payments & Security — Safe and Transparent Transactions",
+  title: "EmotionDeck Payments & Security - Safe and Transparent Transactions",
   description:
     "Learn how EmotionDeck processes payments securely through PayPal. All transactions are encrypted, GDPR compliant, and handled with full transparency and no storage of financial data.",
   keywords:
@@ -24,9 +24,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Payments & Security — Safe and Transparent Transactions",
+    title: "EmotionDeck Payments & Security - Safe and Transparent Transactions",
     description:
-      "EmotionDeck processes all payments securely via PayPal with encrypted transactions, GDPR compliance, and full transparency — ensuring trust and protection at every step.",
+      "EmotionDeck processes all payments securely via PayPal with encrypted transactions, GDPR compliance, and full transparency - ensuring trust and protection at every step.",
     url: "https://emotiondeck.com/legal/payments",
     siteName: "EmotionDeck",
     type: "website",
@@ -41,9 +41,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Payments & Security — Safe and Transparent Transactions",
+    title: "EmotionDeck Payments & Security - Safe and Transparent Transactions",
     description:
-      "Discover how EmotionDeck ensures safe, encrypted PayPal transactions and full GDPR compliance — transparency and trust in every payment.",
+      "Discover how EmotionDeck ensures safe, encrypted PayPal transactions and full GDPR compliance - transparency and trust in every payment.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

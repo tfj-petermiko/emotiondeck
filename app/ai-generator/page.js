@@ -4,7 +4,7 @@ export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   alternates: { canonical: "https://emotiondeck.com/ai-generator" },
 
-  title: "EmotionDeck AI Generator — Create Emotional Portraits Instantly",
+  title: "EmotionDeck AI Generator - Create Emotional Portraits Instantly",
   description:
     "Generate realistic black-and-white emotional portraits with AI. Combine emotion, culture, age and gender for research, education or creative work.",
 
@@ -22,9 +22,9 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "EmotionDeck AI Generator — Realistic Emotional Portraits",
+    title: "EmotionDeck AI Generator - Realistic Emotional Portraits",
     description:
-      "Design expressive portraits using AI — explore human emotion across cultures, ages and genders.",
+      "Design expressive portraits using AI - explore human emotion across cultures, ages and genders.",
     url: "https://emotiondeck.com/ai-generator",
     type: "website",
     siteName: "EmotionDeck",
@@ -40,7 +40,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck AI Generator — Create Emotional Portraits",
+    title: "EmotionDeck AI Generator - Create Emotional Portraits",
     description:
       "Use AI to craft realistic emotional portraits for research, teaching and art.",
     images: ["https://emotiondeck.com/preview.jpg"],

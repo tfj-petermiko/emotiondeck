@@ -31,7 +31,7 @@ export default function EmotionQuiz3() {
   const correctGreen = "#34D399";
   const wrongRed = "#F87171";
 
-  // 🧠 All emotions from Phase 3 — Young Adults Collection
+  // 🧠 All emotions from Phase 3 - Young Adults Collection
   const allEmotions = [
     "Joy", "Anger", "Fear", "Sadness", "Surprise", "Disgust", "Love",
     "Pride", "Confusion", "Hope", "Trust", "Curiosity", "Desire",
@@ -108,7 +108,7 @@ export default function EmotionQuiz3() {
   return (
     <main className="min-h-screen bg-neutral-900 text-gray-200 py-16 flex flex-col items-center">
       <h1 className="text-4xl font-bold mb-6 text-white text-center">
-        🎓 EmotionDeck Quiz 3 — Recognise the Emotion (Young Adults — Phase 3)
+        🎓 EmotionDeck Quiz 3 - Recognise the Emotion (Young Adults - Phase 3)
       </h1>
       <p className="text-gray-400 mb-8 text-center max-w-lg">
         Observe each black and white portrait carefully and choose the correct emotion from the options below.
@@ -201,7 +201,7 @@ export default function EmotionQuiz3() {
             Your score: {score} / {questions.length}
           </h2><br />
           <p className="text-gray-400 mb-8">
-            Great work! You’ve completed the Young Adults — Phase 3 emotion recognition quiz.
+            Great work! You’ve completed the Young Adults - Phase 3 emotion recognition quiz.
           </p><br />
 
           <button

@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Quiz 2 — Recognise the Emotion (Phase 2)",
+  title: "EmotionDeck Quiz 2 - Recognise the Emotion (Phase 2)",
   description:
-    "Refine your emotional intuition with EmotionDeck Quiz 2 — recognise advanced emotions like Anxiety, Nostalgia, and Confidence across diverse faces, ages, and cultures.",
+    "Refine your emotional intuition with EmotionDeck Quiz 2 - recognise advanced emotions like Anxiety, Nostalgia, and Confidence across diverse faces, ages, and cultures.",
   keywords:
     "EmotionDeck quiz, advanced emotions, emotion recognition, facial expressions, emotional intelligence, psychology learning, cross-cultural emotion, empathy training, emotion awareness, AI portraits",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Quiz 2 — Recognise the Emotion (Phase 2)",
+    title: "EmotionDeck Quiz 2 - Recognise the Emotion (Phase 2)",
     description:
-      "Challenge your perception with EmotionDeck Quiz 2 — explore subtle emotional expressions and recognise complex feelings across cultures.",
+      "Challenge your perception with EmotionDeck Quiz 2 - explore subtle emotional expressions and recognise complex feelings across cultures.",
     url: "https://emotiondeck.com/learn/quizzes/quiz-2",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Quiz 2 — Recognise the Emotion (Phase 2)",
+    title: "EmotionDeck Quiz 2 - Recognise the Emotion (Phase 2)",
     description:
-      "Explore advanced human emotions in EmotionDeck Quiz 2 — identify subtle expressions like Tranquillity, Nostalgia, and Confidence across cultures.",
+      "Explore advanced human emotions in EmotionDeck Quiz 2 - identify subtle expressions like Tranquillity, Nostalgia, and Confidence across cultures.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

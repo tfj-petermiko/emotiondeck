@@ -5,16 +5,16 @@ https://emotiondeck.com
 https://emotiondeck.com/free/phase-3
 
 # title
-EmotionDeck — Phase 3: Young Adults | Advanced Emotion Perception Study
+EmotionDeck - Phase 3: Young Adults | Advanced Emotion Perception Study
 
 # description
-Explore EmotionDeck Phase 3: Young Adults — 96 ultra-realistic black and white portraits capturing authentic emotional expressions of people in their early twenties. Designed for advanced study, education, and emotional perception research.
+Explore EmotionDeck Phase 3: Young Adults - 96 ultra-realistic black and white portraits capturing authentic emotional expressions of people in their early twenties. Designed for advanced study, education, and emotional perception research.
 
 # keywords
 EmotionDeck, Young Adults, human emotions, emotion recognition, visual dataset, emotional intelligence, psychology research, empathy study, black and white portraits, realistic faces, emotion learning, professional training
 
 # og_title
-EmotionDeck — Phase 3: Young Adults
+EmotionDeck - Phase 3: Young Adults
 
 # og_description
 Discover 96 detailed portraits of young adults expressing nuanced human emotions. EmotionDeck Phase 3 expands emotional perception research with realistic imagery for education and professional use.
@@ -29,10 +29,10 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck — Phase 3: Young Adults
+EmotionDeck - Phase 3: Young Adults
 
 # twitter_description
-Explore the next step in emotional perception — EmotionDeck Phase 3: Young Adults. 96 high-resolution portraits capturing authentic human emotions for research and education.
+Explore the next step in emotional perception - EmotionDeck Phase 3: Young Adults. 96 high-resolution portraits capturing authentic human emotions for research and education.
 
 # twitter_image
 https://emotiondeck.com/preview.jpg

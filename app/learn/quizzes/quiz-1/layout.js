@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)",
+  title: "EmotionDeck Quiz 1 - Recognise the Emotion (Phase 1)",
   description:
-    "Test your skill in recognising human emotions with the EmotionDeck Free Basic Collection — identify expressions from diverse cultures and sharpen your emotional intelligence.",
+    "Test your skill in recognising human emotions with the EmotionDeck Free Basic Collection - identify expressions from diverse cultures and sharpen your emotional intelligence.",
   keywords:
     "EmotionDeck quiz, emotion recognition, emotional intelligence, facial expressions, AI portraits, cultural emotions, psychology learning, emotion training, empathy practice, Free Basic Collection",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)",
+    title: "EmotionDeck Quiz 1 - Recognise the Emotion (Phase 1)",
     description:
-      "Identify emotions in AI-generated portraits and test your perception with the first EmotionDeck Quiz — explore how emotion is expressed across cultures and faces.",
+      "Identify emotions in AI-generated portraits and test your perception with the first EmotionDeck Quiz - explore how emotion is expressed across cultures and faces.",
     url: "https://emotiondeck.com/learn/quizzes/quiz-1",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Quiz 1 — Recognise the Emotion (Phase 1)",
+    title: "EmotionDeck Quiz 1 - Recognise the Emotion (Phase 1)",
     description:
-      "Challenge your perception with EmotionDeck Quiz 1 — recognise emotions in portraits and discover how people express feelings across cultures.",
+      "Challenge your perception with EmotionDeck Quiz 1 - recognise emotions in portraits and discover how people express feelings across cultures.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

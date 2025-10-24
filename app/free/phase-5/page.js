@@ -64,7 +64,7 @@ export default function ProCollectionPhase5() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-bold mb-4"
         >
-          EmotionDeck PRO Collection — Phase 5: Seniors Collection 👴👵
+          EmotionDeck PRO Collection - Phase 5: Seniors Collection 👴👵
         </motion.h1>
         <br />
         <motion.p
@@ -73,7 +73,7 @@ export default function ProCollectionPhase5() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
         >
-          Discover 300 Portraits of Seniors Expressing 50 Emotions — a Visual Study of Wisdom, Grace, and Emotional Depth.
+          Discover 300 Portraits of Seniors Expressing 50 Emotions - a Visual Study of Wisdom, Grace, and Emotional Depth.
         </motion.p>
       </section>
 
@@ -133,7 +133,7 @@ export default function ProCollectionPhase5() {
             >
               <img
                 src={img.src}
-                alt={`${img.emotion} — ${img.region} ${img.gender} (${ageGroup})`}
+                alt={`${img.emotion} - ${img.region} ${img.gender} (${ageGroup})`}
                 className="gallery-image"
                 loading="lazy"
               />

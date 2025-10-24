@@ -5,7 +5,7 @@ import * as faceapi from "face-api.js";
 import { FilesetResolver, FaceLandmarker } from "@mediapipe/tasks-vision";
 
 /**
- * 🎥 EmotionDeck — Live FACS Analyzer
+ * 🎥 EmotionDeck - Live FACS Analyzer
  * ------------------------------------
  * Real-time facial emotion recognition + landmark mesh overlay.
  * Uses MediaPipe FaceLandmarker (new API) + face-api.js emotion detection.
@@ -123,7 +123,7 @@ export default function FACSRealtimeOverlay() {
   return (
     <div className="flex flex-col items-center mt-10">
       <h2 className="text-3xl font-bold text-white mb-2">
-        🎥 EmotionDeck — Live FACS Analyzer
+        🎥 EmotionDeck - Live FACS Analyzer
       </h2>
       <p className="text-gray-400 mb-4 text-center w-[70%]">
         Real-time facial emotion recognition and muscle overlay.

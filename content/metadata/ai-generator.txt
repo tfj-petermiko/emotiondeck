@@ -5,7 +5,7 @@ https://emotiondeck.com
 https://emotiondeck.com/ai-generator
 
 # title
-EmotionDeck AI Generator — Create Custom Emotional Portraits with Precision
+EmotionDeck AI Generator - Create Custom Emotional Portraits with Precision
 
 # description
 EmotionDeck AI Generator allows you to create realistic emotional portraits instantly. 
@@ -18,10 +18,10 @@ facial expression generator, psychology AI tools, emotion recognition, emotional
 research dataset, AI creative tools, emotion training, synthetic emotion modelling
 
 # og_title
-EmotionDeck AI Generator — Create Custom Emotional Portraits
+EmotionDeck AI Generator - Create Custom Emotional Portraits
 
 # og_description
-Design and generate emotional portraits using AI — explore expressions across emotions, 
+Design and generate emotional portraits using AI - explore expressions across emotions, 
 ages, and cultures. Ideal for educators, psychologists, and creative professionals.
 
 # og_url
@@ -34,7 +34,7 @@ https://emotiondeck.com/preview.jpg
 summary_large_image
 
 # twitter_title
-EmotionDeck AI Generator — Create Custom Emotional Portraits
+EmotionDeck AI Generator - Create Custom Emotional Portraits
 
 # twitter_description
 Use the EmotionDeck AI Generator to instantly create realistic emotional portraits 

@@ -1,6 +1,6 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Privacy Policy — How We Protect Your Personal Data",
+  title: "EmotionDeck Privacy Policy - How We Protect Your Personal Data",
   description:
     "Learn how EmotionDeck collects, uses, and protects your personal data in compliance with GDPR and UK Data Protection Law, ensuring transparency and security at every step.",
   keywords:
@@ -24,7 +24,7 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Privacy Policy — How We Protect Your Personal Data",
+    title: "EmotionDeck Privacy Policy - How We Protect Your Personal Data",
     description:
       "Discover how EmotionDeck safeguards your personal information with full GDPR compliance, ensuring privacy, transparency, and trust.",
     url: "https://emotiondeck.com/legal/privacy",
@@ -41,9 +41,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Privacy Policy — How We Protect Your Personal Data",
+    title: "EmotionDeck Privacy Policy - How We Protect Your Personal Data",
     description:
-      "Explore EmotionDeck’s approach to privacy and data protection under GDPR and UK law — transparent, secure, and user-focused.",
+      "Explore EmotionDeck’s approach to privacy and data protection under GDPR and UK law - transparent, secure, and user-focused.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

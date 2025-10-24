@@ -1,8 +1,8 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Global Map — One World, Many Emotions",
+  title: "EmotionDeck Global Map - One World, Many Emotions",
   description:
-    "Explore the interactive EmotionDeck Global Map — discover how cultures express and perceive human emotion, connecting people through shared emotional understanding worldwide.",
+    "Explore the interactive EmotionDeck Global Map - discover how cultures express and perceive human emotion, connecting people through shared emotional understanding worldwide.",
   keywords:
     "EmotionDeck Global Map, emotional atlas, cultural emotions, human emotion across countries, world empathy, emotional diversity, cross-cultural psychology, emotion research, visual learning, emotion perception",
   alternates: {
@@ -18,9 +18,9 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Global Map — One World, Many Emotions",
+    title: "EmotionDeck Global Map - One World, Many Emotions",
     description:
-      "Discover emotional connections and cultural expression with the interactive EmotionDeck Global Map — explore how humanity shares emotion across borders.",
+      "Discover emotional connections and cultural expression with the interactive EmotionDeck Global Map - explore how humanity shares emotion across borders.",
     url: "https://emotiondeck.com/globalmap",
     siteName: "EmotionDeck",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Global Map — One World, Many Emotions",
+    title: "EmotionDeck Global Map - One World, Many Emotions",
     description:
-      "Explore EmotionDeck’s Global Map — a visual atlas showing how emotion, culture, and empathy connect people across the world.",
+      "Explore EmotionDeck’s Global Map - a visual atlas showing how emotion, culture, and empathy connect people across the world.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
