@@ -5,12 +5,16 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// 🧭 Base URL (from .env or fallback)
+// 🌍 Base URL of your website
 const baseUrl = process.env.BASE_URL || "https://emotiondeck.com";
+
+// 📁 App directory to scan
 const appDir = path.join(process.cwd(), "app");
+
+// 📄 Output file
 const output = path.join(process.cwd(), "public", "sitemap.xml");
 
-// ❌ Excluded routes
+// 🚫 Excluded (non-public) routes
 const excludedRoutes = [
   "/ai-generator/checkout",
   "/ai-generator/thank-you",
@@ -18,9 +22,10 @@ const excludedRoutes = [
   "/thank-you",
   "/payment",
   "/success",
+  "/page.js",
 ];
 
-// 🔍 Recursively scans /app for page.js or page.jsx files
+// 🔍 Recursive scan of app/ directory to find all page.js or page.jsx files
 function getAllRoutes(dir, parentPath = "") {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   let routes = [];
@@ -44,35 +49,41 @@ function getAllRoutes(dir, parentPath = "") {
   return routes;
 }
 
-// 🧩 Collect all routes
+// 🧩 Collect and clean routes
 let allRoutes = getAllRoutes(appDir);
 
-// 🧹 Filter duplicates & excluded
 const uniqueRoutes = [...new Set(allRoutes)]
   .filter((route) => !excludedRoutes.includes(route))
   .sort();
 
-// ⚙️ Calculate last modified date of each page
+// ✅ Always include homepage
+if (!uniqueRoutes.includes("/")) uniqueRoutes.unshift("/");
+
+// 🕓 Get last modified date of each page
 function getLastModified(route) {
   const filePath = path.join(appDir, route, "page.js");
   try {
     const stats = fs.statSync(filePath);
     return stats.mtime.toISOString();
   } catch {
-    return new Date().toISOString(); // fallback
+    return new Date().toISOString();
   }
 }
 
-// 🧮 Determine priority by depth
+// 🧭 Priority logic (SEO-optimised)
 function getPriority(route) {
   if (route === "/") return "1.0";
-  const depth = route.split("/").length - 1;
-  if (depth === 1) return "0.9";
-  if (depth === 2) return "0.7";
-  return "0.5";
+  if (
+    ["/free", "/pro", "/learn", "/globalmap", "/ai-generator"].includes(route)
+  )
+    return "0.9";
+  if (route.startsWith("/learn/quizzes") || route.startsWith("/free/phase"))
+    return "0.8";
+  if (route.startsWith("/legal")) return "0.6";
+  return "0.7";
 }
 
-// 🧾 Generate sitemap XML
+// 🧾 Generate XML sitemap content
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${uniqueRoutes
@@ -81,17 +92,22 @@ ${uniqueRoutes
     const lastmod = getLastModified(route);
     const priority = getPriority(route);
 
-    return `
-  <url>
+    return `  <url>
     <loc>${absoluteUrl}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${priority}</priority>
   </url>`;
   })
-  .join("")}
+  .join("\n")}
 </urlset>`;
 
-// 💾 Write sitemap
+// 💾 Write the XML file
 fs.writeFileSync(output, sitemap);
-console.log(`✅ Sitemap generated successfully with ${uniqueRoutes.length} routes → public/sitemap.xml`);
+
+console.log("==============================================");
+console.log("✅ EmotionDeck Sitemap successfully generated!");
+console.log(`🌍 Total routes: ${uniqueRoutes.length}`);
+console.log(`📦 Output file: ${output}`);
+console.log("==============================================");
+if (uniqueRoutes.includes("/")) console.log("🏠 Added homepage: https://emotiondeck.com/");
