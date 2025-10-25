@@ -92,56 +92,71 @@ export default function Encyclopedia() {
     transition: { duration: 3, repeat: Infinity, ease: "easeInOut" },
   };
 
-// 🌍 EmotionDeck Encyclopedia — Verified 233 Countries and Territories
+// 🌍 EmotionDeck Encyclopedia — Verified 234 Countries and Territories
 const continents = {
   "Europe": [
-    "Albania","Andorra","Armenia","Austria","Azerbaijan","Belarus","Belgium","Bosnia and Herzegovina","Bulgaria",
-    "Croatia","Cyprus","Czechia","Denmark","Estonia","Finland","France","Georgia","Germany","Gibraltar","Greece",
-    "Hungary","Iceland","Ireland","Isle of Man","Italy","Jersey","Kosovo","Latvia","Liechtenstein","Lithuania",
-    "Luxembourg","Malta","Moldova","Monaco","Montenegro","Netherlands","North Macedonia","Norway","Poland","Portugal",
-    "Romania","San Marino","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Turkey","Ukraine",
-    "United Kingdom","Scotland","Wales","Vatican City","Ceuta","Melilla","Faroe Islands","Guernsey"
+    "Albania","Andorra","Armenia","Austria","Azerbaijan","Belarus","Belgium",
+    "Bosnia and Herzegovina","Bulgaria","Croatia","Cyprus","Czechia","Denmark",
+    "Estonia","Faroe Islands","Finland","France","Georgia","Germany","Gibraltar",
+    "Greece","Guernsey","Hungary","Iceland","Ireland","Isle of Man","Italy",
+    "Jersey","Kosovo","Latvia","Liechtenstein","Lithuania","Luxembourg","Malta",
+    "Moldova","Monaco","Montenegro","Netherlands","North Macedonia","Norway",
+    "Poland","Portugal","Romania","San Marino","Scotland","Serbia","Slovakia",
+    "Slovenia","Spain","Sweden","Switzerland","Turkey","Ukraine",
+    "United Kingdom","Vatican City","Wales"
   ],
 
   "Asia": [
-    "Afghanistan","Bahrain","Bangladesh","Bhutan","Brunei","Cambodia","China","East Timor","India","Indonesia","Iran",
-    "Iraq","Israel","Japan","Jordan","Kazakhstan","Kuwait","Kyrgyzstan","Laos","Lebanon","Malaysia","Maldives",
-    "Mongolia","Myanmar","Nepal","North Korea","Oman","Pakistan","Palestine","Philippines","Qatar","Saudi Arabia",
-    "Singapore","South Korea","Sri Lanka","Syria","Taiwan","Tajikistan","Thailand","Turkmenistan","United Arab Emirates",
+    "Afghanistan","Bahrain","Bangladesh","Bhutan","Brunei","Cambodia","China",
+    "East Timor","India","Indonesia","Iran","Iraq","Israel","Japan","Jordan",
+    "Kazakhstan","Kuwait","Kyrgyzstan","Laos","Lebanon","Malaysia","Maldives",
+    "Mongolia","Myanmar","Nepal","North Korea","Oman","Pakistan","Palestine",
+    "Philippines","Qatar","Saudi Arabia","Singapore","South Korea","Sri Lanka",
+    "Syria","Taiwan","Tajikistan","Thailand","Turkmenistan","United Arab Emirates",
     "Uzbekistan","Vietnam","Yemen","Hong Kong","Macau","Tibet"
   ],
 
+
   "Africa": [
-    "Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde","Cameroon","Central African Republic",
-    "Chad","Comoros","Congo","Democratic Republic of the Congo","Djibouti","Egypt","Equatorial Guinea","Eritrea",
-    "Eswatini","Ethiopia","Gabon","Gambia","Ghana","Guinea","Guinea Bissau","Ivory Coast","Kenya","Lesotho","Liberia",
-    "Libya","Madagascar","Malawi","Mali","Mauritania","Mauritius","Mayotte","Morocco","Mozambique","Namibia","Niger",
-    "Nigeria","Rwanda","Sao Tome and Principe","Senegal","Seychelles","Sierra Leone","Somalia","South Africa",
-    "South Sudan","Sudan","Tanzania","Togo","Tunisia","Uganda","Zambia","Zimbabwe","Reunion"
+    "Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
+    "Cameroon","Central African Republic","Chad","Comoros","Congo",
+    "Democratic Republic of the Congo","Djibouti","Egypt","Equatorial Guinea",
+    "Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana","Guinea",
+    "Guinea Bissau","Ivory Coast","Kenya","Lesotho","Liberia","Libya",
+    "Madagascar","Malawi","Mali","Mauritania","Mauritius","Mayotte","Melilla",
+    "Morocco","Mozambique","Namibia","Niger","Nigeria","Reunion","Rwanda",
+    "Sao Tome and Principe","Senegal","Seychelles","Sierra Leone","Somalia",
+    "South Africa","South Sudan","Sudan","Tanzania","Togo","Tunisia","Uganda",
+    "Zambia","Zimbabwe","Ceuta"
   ],
 
+
   "North America": [
-    "Bahamas","Barbados","Belize","Bermuda","British Virgin Islands","Canada","Cayman Islands","Costa Rica","Cuba",
-    "Curacao","Dominica","Dominican Republic","Greenland","Grenada","Guadeloupe","Guatemala","Haiti","Honduras",
-    "Jamaica","Mexico","Nicaragua","Panama","Puerto Rico","Saint Barthelemy","Saint Helena","Saint Kitts and Nevis",
-    "Saint Lucia","Saint Martin","Saint Vincent and the Grenadines","Trinidad and Tobago","Turks and Caicos",
-    "United States","Aruba"
+    "Bahamas","Barbados","Belize","Bermuda","British Virgin Islands","Canada",
+    "Cayman Islands","Costa Rica","Cuba","Curacao","Dominica","Dominican Republic",
+    "El Salvador","Greenland","Grenada","Guadeloupe","Guatemala","Haiti","Honduras",
+    "Jamaica","Mexico","Nicaragua","Panama","Puerto Rico","Saint Barthelemy",
+    "Saint Helena","Saint Kitts and Nevis","Saint Lucia","Saint Martin",
+    "Saint Vincent and the Grenadines","Trinidad and Tobago","Turks and Caicos",
+    "United States","Aruba","Guam"
   ],
 
   "South America": [
-    "Argentina","Bolivia","Brazil","Chile","Colombia","Ecuador","French Guiana","Guyana","Paraguay","Peru","Suriname",
-    "Uruguay","Venezuela","Falkland Islands"
+    "Argentina","Bolivia","Brazil","Chile","Colombia","Ecuador","French Guiana",
+    "Guyana","Paraguay","Peru","Suriname","Uruguay","Venezuela","Falkland Islands"
   ],
 
   "Oceania": [
-    "Australia","American Samoa","Cook Islands","Fiji","Kiribati","Marshall Islands","Micronesia","Nauru","New Caledonia",
-    "New Zealand","Niue","Norfolk Island","Northern Mariana Islands","Palau","Papua New Guinea","Pitcairn Islands",
-    "Samoa","Solomon Islands","Tokelau","Tonga","Tuvalu","Vanuatu","Christmas Island","Cocos Islands"
+    "Australia","American Samoa","Cook Islands","Fiji","Kiribati","Marshall Islands",
+    "Micronesia","Nauru","New Caledonia","New Zealand","Niue","Norfolk Island",
+    "Northern Mariana Islands","Palau","Papua New Guinea","Pitcairn Islands","Samoa",
+    "Solomon Islands","Tokelau","Tonga","Tuvalu","Vanuatu","Christmas Island",
+    "Cocos Islands"
   ],
 
   "Polar and External Territories": [
-    "Aland Islands","Antarctica","Arctic Circle","Ascension Island","Nunavut","Western Sahara","Martinique","Saint Barthelemy",
-    "Svalbard"
+    "Aland Islands","Antarctica","Arctic Circle","Ascension Island","Nunavut",
+    "Western Sahara","Martinique","Svalbard"
   ]
 };
 
