@@ -1,4 +1,3 @@
-
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guinea-Bissau",
@@ -35,6 +34,6 @@ export const metadata = {
   },
 };
 
-export default function Guinea-BissauLayout({ children }) {
+export default function GuineaBissauLayout({ children }) {
   return <>{children}</>;
 }
