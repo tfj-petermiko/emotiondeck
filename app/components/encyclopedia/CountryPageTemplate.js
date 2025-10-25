@@ -106,18 +106,16 @@ export default function CountryPageTemplate({ data }) {
       </motion.section>
 
       <br /><br />
-      {/* Back button */}
-      <div className="text-center mt-16 mb-24">
-        <button
-          onClick={handleBackClick}
-          disabled={loadingBack}
-          onMouseEnter={() => setHoveredBack(true)}
-          onMouseLeave={() => setHoveredBack(false)}
-          style={baseButtonStyle(hoveredBack)}
-        >
-          {loadingBack ? "Loading..." : "← Back"}
-        </button>
-      </div>
+{/* Back link */}
+<div className="text-center mt-16 mb-24 relative z-10">
+  <p
+    onClick={() => router.back()}
+    className="text-emerald-400 hover:text-emerald-300 cursor-pointer transition-colors duration-300 inline-block"
+  >
+    Discover the Next Story — Another Nation, Another Emotion
+  </p>
+</div>
+
       <br /><br />
     </main>
   );
