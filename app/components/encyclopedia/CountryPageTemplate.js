@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { baseButtonStyle } from "../../styles/buttonStyle";
 
 export default function CountryPageTemplate({ data }) {
@@ -10,11 +10,76 @@ export default function CountryPageTemplate({ data }) {
   const [hoveredBack, setHoveredBack] = useState(false);
   const [loadingBack, setLoadingBack] = useState(false);
 
+  // ✅ Dodane: stan i efekt dla NextCountryLink
+  const [nextCountry, setNextCountry] = useState(null);
+  const [nextSlug, setNextSlug] = useState(null);
+
+  useEffect(() => {
+    const continents = {
+      "Europe": [
+        "Albania","Andorra","Aland Islands","Armenia","Austria","Azerbaijan","Belarus","Belgium",
+        "Bosnia and Herzegovina","Bulgaria","Croatia","Cyprus","Czechia","Denmark","Estonia",
+        "Faroe Islands","Finland","France","Georgia","Germany","Gibraltar","Greece","Guernsey",
+        "Hungary","Iceland","Ireland","Isle of Man","Italy","Jersey","Kosovo","Latvia",
+        "Liechtenstein","Lithuania","Luxembourg","Malta","Moldova","Monaco","Montenegro",
+        "Netherlands","North Macedonia","Norway","Poland","Portugal","Romania","San Marino",
+        "Scotland","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Turkey",
+        "Ukraine","United Kingdom","Vatican City","Wales","Svalbard","Arctic Circle","Ceuta","Melilla"
+      ],
+      "Asia": [
+        "Afghanistan","Bahrain","Bangladesh","Bhutan","Brunei","Cambodia","China","East Timor","India",
+        "Indonesia","Iran","Iraq","Israel","Japan","Jordan","Kazakhstan","Kuwait","Kyrgyzstan","Laos",
+        "Lebanon","Malaysia","Maldives","Mongolia","Myanmar","Nepal","North Korea","Oman","Pakistan",
+        "Palestine","Philippines","Qatar","Saudi Arabia","Singapore","South Korea","Sri Lanka","Syria",
+        "Taiwan","Tajikistan","Thailand","Turkmenistan","United Arab Emirates","Uzbekistan","Vietnam",
+        "Yemen","Hong Kong","Macau","Tibet"
+      ],
+      "Africa": [
+        "Algeria","Angola","Ascension Island","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
+        "Cameroon","Central African Republic","Chad","Comoros","Congo","Democratic Republic of the Congo",
+        "Djibouti","Egypt","Equatorial Guinea","Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana",
+        "Guinea","Guinea-Bissau","Kenya","Lesotho","Liberia","Libya","Madagascar","Malawi","Mali",
+        "Mauritania","Mauritius","Mayotte","Morocco","Mozambique","Namibia","Niger","Nigeria","Reunion",
+        "Rwanda","Sao Tome and Principe","Senegal","Seychelles","Sierra Leone","Somalia","South Africa",
+        "South Sudan","Sudan","Tanzania","Togo","Tunisia","Uganda","Zambia","Zimbabwe","Western Sahara"
+      ],
+      "North America": [
+        "Bahamas","Barbados","Belize","Bermuda","British Virgin Islands","Canada","Cayman Islands",
+        "Costa Rica","Cuba","Curacao","El Salvador","Greenland","Grenada","Guadeloupe","Guatemala",
+        "Haiti","Honduras","Jamaica","Martinique","Mexico","Nicaragua","Panama","Puerto Rico",
+        "Saint Barthelemy","Saint Helena","Saint Martin","Trinidad and Tobago","Turks and Caicos",
+        "United States","Aruba","Guam","Nunavut"
+      ],
+      "South America": [
+        "Argentina","Bolivia","Brazil","Chile","Colombia","Ecuador","French Guiana","Guyana",
+        "Paraguay","Peru","Suriname","Uruguay","Venezuela","Falkland Islands"
+      ],
+      "Oceania": [
+        "Australia","American Samoa","Christmas Island","Cocos Islands","Cook Islands","Fiji",
+        "Kiribati","Marshall Islands","Micronesia","New Caledonia","New Zealand","Niue","Norfolk Island",
+        "Northern Mariana Islands","Palau","Papua New Guinea","Pitcairn Islands","Samoa","Solomon Islands",
+        "Tokelau","Tonga","Tuvalu","Vanuatu"
+      ]
+    };
+
+    const countryList = Object.values(continents).flat();
+
+    if (typeof window !== "undefined") {
+      const current = decodeURIComponent(window.location.pathname.split("/").pop())
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+      const index = countryList.indexOf(current);
+      const next = countryList[(index + 1) % countryList.length];
+      const slug = next.toLowerCase().replace(/\s+/g, "-");
+      setNextCountry(next);
+      setNextSlug(slug);
+    }
+  }, []);
+
+  // 🔙 back click handler
   const handleBackClick = () => {
     setLoadingBack(true);
-    setTimeout(() => {
-      router.back(); // returns to the previous page
-    }, 800);
+    setTimeout(() => router.back(), 800);
   };
 
   return (
@@ -105,18 +170,23 @@ export default function CountryPageTemplate({ data }) {
         </div>
       </motion.section>
 
-      <br /><br />
-{/* Back link */}
-<div className="text-center mt-16 mb-24 relative z-10">
-  <p
-    onClick={() => router.back()}
-    className="text-emerald-400 hover:text-emerald-300 cursor-pointer transition-colors duration-300 inline-block"
-  >
-    Discover the Next Story — Another Nation, Another Emotion
-  </p>
-</div>
+      <br />
+      <br />
 
-      <br /><br />
+      {/* 🌍 Safe client-side link */}
+      {nextCountry && (
+        <div className="text-center mt-16 mb-24 relative z-10">
+          <a
+            href={`/encyclopedia/${nextSlug}`}
+            className="text-emerald-400 hover:text-emerald-300 transition-colors duration-300 inline-block"
+          >
+            Discover the Next Story →<br />
+            <span className="text-gray-400 text-sm">Next: {nextCountry}</span>
+          </a>
+          <br />
+          <br />
+        </div>
+      )}
     </main>
   );
 }
