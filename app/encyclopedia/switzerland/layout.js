@@ -1,0 +1,40 @@
+
+export const metadata = {
+  metadataBase: new URL("https://emotiondeck.com"),
+  title: "EmotionDeck Encyclopedia - Switzerland",
+  description:
+    "Explore Switzerland’s emotional archetype - The Inner Alchemist. Discover its cultural essence and psychological meaning in the global emotional landscape.",
+  keywords:
+    "EmotionDeck Switzerland, Switzerland archetype, The Inner Alchemist, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  alternates: {
+    canonical: "https://emotiondeck.com/encyclopedia/switzerland",
+  },
+  openGraph: {
+    title: "EmotionDeck Encyclopedia - Switzerland",
+    description:
+      "Journey through Switzerland’s emotional identity — The Inner Alchemist, symbolising the nation’s inner psyche and emotional history.",
+    url: "https://emotiondeck.com/encyclopedia/switzerland",
+    siteName: "EmotionDeck",
+    images: [
+      {
+        url: "/private_images/encyclopedia/countries/switzerland_preview.webp",
+        width: 1200,
+        height: 630,
+        alt: "Switzerland - The Inner Alchemist | EmotionDeck Encyclopedia",
+      },
+    ],
+    locale: "en_GB",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EmotionDeck Encyclopedia — Switzerland (The Inner Alchemist)",
+    description:
+      "Discover Switzerland’s emotional essence through the archetype The Inner Alchemist.",
+    images: ["/private_images/encyclopedia/countries/switzerland_preview.webp"],
+  },
+};
+
+export default function SwitzerlandLayout({ children }) {
+  return <>{children}</>;
+}

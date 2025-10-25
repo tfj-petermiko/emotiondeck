@@ -1,0 +1,40 @@
+
+export const metadata = {
+  metadataBase: new URL("https://emotiondeck.com"),
+  title: "EmotionDeck Encyclopedia - Kiribati",
+  description:
+    "Explore Kiribati’s emotional archetype - The Eternal Breeze. Discover its cultural essence and psychological meaning in the global emotional landscape.",
+  keywords:
+    "EmotionDeck Kiribati, Kiribati archetype, The Eternal Breeze, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  alternates: {
+    canonical: "https://emotiondeck.com/encyclopedia/kiribati",
+  },
+  openGraph: {
+    title: "EmotionDeck Encyclopedia - Kiribati",
+    description:
+      "Journey through Kiribati’s emotional identity — The Eternal Breeze, symbolising the nation’s inner psyche and emotional history.",
+    url: "https://emotiondeck.com/encyclopedia/kiribati",
+    siteName: "EmotionDeck",
+    images: [
+      {
+        url: "/private_images/encyclopedia/countries/kiribati_preview.webp",
+        width: 1200,
+        height: 630,
+        alt: "Kiribati - The Eternal Breeze | EmotionDeck Encyclopedia",
+      },
+    ],
+    locale: "en_GB",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EmotionDeck Encyclopedia — Kiribati (The Eternal Breeze)",
+    description:
+      "Discover Kiribati’s emotional essence through the archetype The Eternal Breeze.",
+    images: ["/private_images/encyclopedia/countries/kiribati_preview.webp"],
+  },
+};
+
+export default function KiribatiLayout({ children }) {
+  return <>{children}</>;
+}

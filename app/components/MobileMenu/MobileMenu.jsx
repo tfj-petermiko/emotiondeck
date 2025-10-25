@@ -19,7 +19,7 @@ const tabs = [
   { icon: "🏠", name: "Home", desc: "Explore EmotionDeck’s World of Human Emotion", href: "/" },
   { icon: "💠", name: "Free Collection", desc: "Begin Your Journey Into Emotion Perception", href: "/free" },
   { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
-  { icon: "🌍", name: "Global Map", desc: "One World, Many Emotions - United by Feeling", href: "/globalmap" },
+  { icon: "🌍", name: "Encyclopedia", desc: "First Global Emotion Encyclopedia", href: "/encyclopedia" },
   { icon: "🔒", name: "EmotionDeck PRO", desc: "Exclusive Collection - Access Required", href: "/pro" },
   { icon: "⚙️", name: "AI Generator", desc: "Create Portraits with the EmotionDeck Generator", href: "/ai-generator" },
   { icon: "📜", name: "Legal", desc: "Privacy Policy, Terms of Use, and Cookies", href: "/legal" },
