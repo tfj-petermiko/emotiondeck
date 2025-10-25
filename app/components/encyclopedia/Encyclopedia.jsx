@@ -125,7 +125,7 @@ const continents = {
   ],
 
   "North America": [
-    "Bahamas","Barbados","Belize","Bermuda","British Virgin Islands","Canada","Cayman Islands",
+    "Bahamas","Belize","Bermuda","British Virgin Islands","Canada","Cayman Islands",
     "Costa Rica","Cuba","Curacao","El Salvador","Greenland","Grenada","Guadeloupe","Guatemala",
     "Haiti","Honduras","Jamaica","Martinique","Mexico","Nicaragua","Panama","Puerto Rico",
     "Saint Barthelemy","Saint Helena","Saint Martin","Trinidad and Tobago","Turks and Caicos",
