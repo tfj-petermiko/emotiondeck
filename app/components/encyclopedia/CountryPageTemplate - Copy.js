@@ -3,17 +3,20 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import { baseButtonStyle } from "../../styles/buttonStyle";
 
 export default function CountryPageTemplate({ data }) {
   const router = useRouter();
+  const [hoveredBack, setHoveredBack] = useState(false);
+  const [loadingBack, setLoadingBack] = useState(false);
+
+  // ✅ Dodane: stan i efekt dla NextCountryLink
   const [nextCountry, setNextCountry] = useState(null);
   const [nextSlug, setNextSlug] = useState(null);
-  const [prevCountry, setPrevCountry] = useState(null);
-  const [prevSlug, setPrevSlug] = useState(null);
 
   useEffect(() => {
     const continents = {
-      Europe: [
+      "Europe": [
         "Albania","Andorra","Aland Islands","Armenia","Austria","Azerbaijan","Belarus","Belgium",
         "Bosnia and Herzegovina","Bulgaria","Croatia","Cyprus","Czechia","Denmark","Estonia",
         "Faroe Islands","Finland","France","Georgia","Germany","Gibraltar","Greece","Guernsey",
@@ -23,7 +26,7 @@ export default function CountryPageTemplate({ data }) {
         "Scotland","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Turkey",
         "Ukraine","United Kingdom","Vatican City","Wales","Svalbard","Arctic Circle","Ceuta","Melilla"
       ],
-      Asia: [
+      "Asia": [
         "Afghanistan","Bahrain","Bangladesh","Bhutan","Brunei","Cambodia","China","East Timor","India",
         "Indonesia","Iran","Iraq","Israel","Japan","Jordan","Kazakhstan","Kuwait","Kyrgyzstan","Laos",
         "Lebanon","Malaysia","Maldives","Mongolia","Myanmar","Nepal","North Korea","Oman","Pakistan",
@@ -31,7 +34,7 @@ export default function CountryPageTemplate({ data }) {
         "Taiwan","Tajikistan","Thailand","Turkmenistan","United Arab Emirates","Uzbekistan","Vietnam",
         "Yemen","Hong Kong","Macau","Tibet"
       ],
-      Africa: [
+      "Africa": [
         "Algeria","Angola","Ascension Island","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
         "Cameroon","Central African Republic","Chad","Comoros","Congo","Democratic Republic of the Congo",
         "Djibouti","Egypt","Equatorial Guinea","Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana",
@@ -51,33 +54,33 @@ export default function CountryPageTemplate({ data }) {
         "Argentina","Bolivia","Brazil","Chile","Colombia","Ecuador","French Guiana","Guyana",
         "Paraguay","Peru","Suriname","Uruguay","Venezuela","Falkland Islands"
       ],
-      Oceania: [
+      "Oceania": [
         "Australia","American Samoa","Christmas Island","Cocos Islands","Cook Islands","Fiji",
         "Kiribati","Marshall Islands","Micronesia","New Caledonia","New Zealand","Niue","Norfolk Island",
         "Northern Mariana Islands","Palau","Papua New Guinea","Pitcairn Islands","Samoa","Solomon Islands",
         "Tokelau","Tonga","Tuvalu","Vanuatu"
-      ],
+      ]
     };
 
     const countryList = Object.values(continents).flat();
-    const slugs = countryList.map((c) =>
-      c.toLowerCase().replace(/\s+/g, "-")
-    );
 
     if (typeof window !== "undefined") {
-      const currentSlug = decodeURIComponent(window.location.pathname.split("/").pop().toLowerCase());
-      const currentIndex = slugs.indexOf(currentSlug);
-      const index = currentIndex >= 0 ? currentIndex : 0;
-
-      const nextIndex = (index + 1) % slugs.length;
-      const prevIndex = (index - 1 + slugs.length) % slugs.length;
-
-      setNextCountry(countryList[nextIndex]);
-      setNextSlug(slugs[nextIndex]);
-      setPrevCountry(countryList[prevIndex]);
-      setPrevSlug(slugs[prevIndex]);
+      const current = decodeURIComponent(window.location.pathname.split("/").pop())
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+      const index = countryList.indexOf(current);
+      const next = countryList[(index + 1) % countryList.length];
+      const slug = next.toLowerCase().replace(/\s+/g, "-");
+      setNextCountry(next);
+      setNextSlug(slug);
     }
   }, []);
+
+  // 🔙 back click handler
+  const handleBackClick = () => {
+    setLoadingBack(true);
+    setTimeout(() => router.back(), 800);
+  };
 
   return (
     <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
@@ -111,9 +114,14 @@ export default function CountryPageTemplate({ data }) {
       >
         <div className="bg-gray-900 p-6 md:p-10">
           <center>
-            <h2 className="text-2xl font-semibold">{data.archetype}</h2>
+            <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
+              {data.archetype}
+            </h2>
           </center>
-          <p className="text-center text-gray-400 italic mb-6">{data.quote}</p>
+          <p className="text-center text-gray-400 italic mb-6">
+            {data.quote}
+          </p>
+
           <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
             {data.intro}
           </p>
@@ -140,14 +148,19 @@ export default function CountryPageTemplate({ data }) {
                       loading="lazy"
                     />
                   </div>
-                  <p className="text-gray-400 text-xs mt-2">{data.archetype}</p>
+                  <p className="text-gray-400 text-xs mt-2">
+                    {data.archetype}
+                  </p>
                 </td>
               </tr>
 
               {data.sections.map((section, index) => (
                 <tr key={index} className="border-b border-gray-800">
                   <td className="p-3 text-gray-400">{section.label}</td>
-                  <td className="p-3 text-white text-justify leading-relaxed" colSpan={2}>
+                  <td
+                    className="p-3 text-white text-justify leading-relaxed"
+                    colSpan={2}
+                  >
                     {section.value}
                   </td>
                 </tr>
@@ -156,35 +169,24 @@ export default function CountryPageTemplate({ data }) {
           </table>
         </div>
       </motion.section>
-<br /><br />
-      {/* Navigation Links */}
-      <div className="text-center mt-20 mb-24 relative z-10">
-        {prevCountry && (
-          <a
-            href={`/encyclopedia/${prevSlug}`}
-            className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 block mb-3"
-          >
-            ← Previous: {prevCountry}
-          </a>
-        )}
-        {nextCountry && (
+
+      <br />
+      <br />
+
+      {/* 🌍 Safe client-side link */}
+      {nextCountry && (
+        <div className="text-center mt-16 mb-24 relative z-10">
           <a
             href={`/encyclopedia/${nextSlug}`}
-            className="text-emerald-400 hover:text-emerald-300 transition-colors duration-300 block mb-6"
+            className="text-emerald-400 hover:text-emerald-300 transition-colors duration-300 inline-block"
           >
-            Discover the Next Story →
-            <br />
+            Discover the Next Story →<br />
             <span className="text-gray-400 text-sm">Next: {nextCountry}</span>
           </a>
-        )}
-
-        <a
-          href="/encyclopedia"
-          className="text-gray-500 hover:text-emerald-400 transition-colors duration-300 inline-block text-sm mt-2"
-        >
-          ← Return to Menu
-        </a>
-      </div><br /><br />
+          <br />
+          <br />
+        </div>
+      )}
     </main>
   );
 }

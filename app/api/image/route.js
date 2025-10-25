@@ -1,44 +1,41 @@
-import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
+import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-export async function POST(req) {
+export async function GET(req) {
   try {
-    const { prompt } = await req.json();
-
-    // Ścieżka do reference.png wewnątrz projektu (np. w public/reference/)
-    const referencePath = path.join(process.cwd(), "public", "reference", "reference.png");
-
-    if (!fs.existsSync(referencePath)) {
-      throw new Error("Reference image not found on server.");
+    const file = req.nextUrl.searchParams.get("file");
+    if (!file) {
+      return NextResponse.json({ error: "Missing file name" }, { status: 400 });
     }
 
-    // Otwieramy plik binarnie
-    const imageStream = fs.createReadStream(referencePath);
+    const filePath = path.join(process.cwd(), "private_images", file);
+    const baseDir = path.join(process.cwd(), "private_images");
 
-    // Faktyczna edycja z użyciem reference.png
-    const result = await openai.images.edit({
-      model: "gpt-image-1",
-      image: imageStream,
-      prompt: `${prompt}. Maintain identical lighting, background, and shirt tone as the reference image.`,
-      size: "1024x1792",
-      n: 1,
-    });
+    if (!filePath.startsWith(baseDir)) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
 
-    const imageBase64 = result.data[0].b64_json;
-    const imageUrl = `data:image/png;base64,${imageBase64}`;
+    if (!fs.existsSync(filePath)) {
+      return NextResponse.json({ error: "File not found" }, { status: 404 });
+    }
 
-    return new Response(JSON.stringify({ image_url: imageUrl }), {
-      headers: { "Content-Type": "application/json" },
+    const referer = req.headers.get("referer") || "";
+    if (referer && !referer.includes("emotiondeck.com")) {
+      return NextResponse.json({ error: "Access denied" }, { status: 403 });
+    }
+
+    const buffer = fs.readFileSync(filePath);
+    return new NextResponse(buffer, {
+      headers: {
+        "Content-Type": "image/webp",
+        "Cache-Control": "no-store",
+      },
     });
   } catch (err) {
-    console.error("❌ AI Generation Error:", err);
-    return new Response(
-      JSON.stringify({ error: err.message }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
-    );
+    console.error("❌ Image Load Error:", err);
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
