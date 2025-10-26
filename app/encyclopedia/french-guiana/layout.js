@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - French Guiana",
-  description: "French Guiana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "French Guiana's emotional archetype - The Unknown Soul. It embodies mystery and introspection, revealing depths of uncharted feelings and untold stories.",
   keywords: "EmotionDeck French Guiana, The Mirror of Rain, emotional culture, cultural resilience, national identity, Jungian archetypes, symbolic reflection, empathy and rebirth, silent tides, poetic symbolism, psychological heritage, collective spirit, symbolic essence, emotional landscape, French Guiana psyche, cultural symbolism, resilience archetype, rebirth motif",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/french-guiana",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - French Guiana",
-    description: "French Guiana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "French Guiana's emotional archetype - The Unknown Soul. It embodies mystery and introspection, revealing depths of uncharted feelings and untold stories.",
     url: "https://emotiondeck.com/encyclopedia/french-guiana",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — French Guiana (The Mirror of Rain)",
-    description: "French Guiana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "French Guiana's emotional archetype - The Unknown Soul. It embodies mystery and introspection, revealing depths of uncharted feelings and untold stories.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

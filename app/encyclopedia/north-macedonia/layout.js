@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - North Macedonia",
-  description: "North Macedonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "North Macedonia's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken truths, inviting reflection on identity, longing, and the human spirit.",
   keywords: "EmotionDeck North Macedonia, Keeper of Echoes emotion, North Macedonia culture empathy, emotional identity North Macedonia, psychology of emotions Macedonia, empathy and culture EmotionDeck, Keeper of Echoes psychology, North Macedonia emotional heritage, emotional identity Keeper of Echoes, EmotionDeck empathy culture, psychology culture North Macedonia, Keeper of Echoes emotional journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/north-macedonia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - North Macedonia",
-    description: "North Macedonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "North Macedonia's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken truths, inviting reflection on identity, longing, and the human spirit.",
     url: "https://emotiondeck.com/encyclopedia/north-macedonia",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — North Macedonia (The Keeper of Echoes)",
-    description: "North Macedonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "North Macedonia's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken truths, inviting reflection on identity, longing, and the human spirit.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Central African Republic",
-  description: "Central African Republic’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Central African Republic's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of mystery, longing, and profound connection.",
   keywords: "EmotionDeck Central African Republic, The Hidden Light, Central African empathy, emotional culture CAR, Jungian archetypes CAR, symbolic resilience, national identity CAR, shadow and hope symbolism, Central African psychology, cultural symbolism CAR, emotional landscape CAR, quiet beacon metaphor, CAR emotional nuances, collective psyche CAR, poetic national identity, empathy and hope CAR, symbolic storytelling CAR",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/central-african-republic",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Central African Republic",
-    description: "Central African Republic’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Central African Republic's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of mystery, longing, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/central-african-republic",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Central African Republic (The Hidden Light)",
-    description: "Central African Republic’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Central African Republic's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of mystery, longing, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tonga",
-  description: "Tonga’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing its deep currents of resilience and belonging.",
+  description: "Tonga's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden strength, unveiling a journey of self-discovery and profound connection.",
   keywords: "EmotionDeck Tonga poetry, The Song of the Sea emotion, Tonga culture empathy, EmotionDeck psychology identity, sea song emotions Tonga, emotional identity Tonga, cultural empathy EmotionDeck, Tonga poetic psychology, The Song of the Sea culture, EmotionDeck emotional voyage, psychology of Tonga emotion, empathy in Tonga identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tonga",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tonga",
-    description: "Tonga’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing its deep currents of resilience and belonging.",
+    description: "Tonga's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden strength, unveiling a journey of self-discovery and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/tonga",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tonga (The Song of the Sea)",
-    description: "Tonga’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing its deep currents of resilience and belonging.",
+    description: "Tonga's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden strength, unveiling a journey of self-discovery and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

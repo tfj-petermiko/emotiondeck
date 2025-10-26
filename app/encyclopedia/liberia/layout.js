@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Liberia",
-  description: "Liberia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Liberia's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, unveiling a journey through vulnerability, hope, and connection.",
   keywords: "EmotionDeck Liberia, The Healer of Tears, Liberian empathy, ancestral rivers, emotional culture Liberia, Jungian archetypes Liberia, symbolic healing Liberia, Liberian psychology, national identity Liberia, cultural symbolism Liberia, emotional resilience Liberia, Liberian heritage, mending wounds Liberia, quiet strength Liberia, African emotional archetypes, Liberian collective psyche, therapeutic symbolism Liberia",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/liberia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Liberia",
-    description: "Liberia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Liberia's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, unveiling a journey through vulnerability, hope, and connection.",
     url: "https://emotiondeck.com/encyclopedia/liberia",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Liberia (The Healer of Tears)",
-    description: "Liberia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Liberia's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, unveiling a journey through vulnerability, hope, and connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Melilla",
-  description: "Melilla’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Melilla's emotional archetype - The Unknown Soul. It signifies hidden depths and uncharted feelings, unveiling a journey of self-discovery, mystery, and profound connection.",
   keywords: "EmotionDeck Melilla, The Eternal Watcher, Melilla symbolism, emotional culture Melilla, Jungian archetypes Melilla, Melilla empathy, sentinel archetype, crossroads of continents, Melilla national identity, poetic symbolism, emotional psychology Melilla, cultural crossroads emotion, Melilla heritage feeling, archetypal emotions, Mediterranean sentinel, Melilla emotional landscape, symbolic guardianship",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/melilla",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Melilla",
-    description: "Melilla’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Melilla's emotional archetype - The Unknown Soul. It signifies hidden depths and uncharted feelings, unveiling a journey of self-discovery, mystery, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/melilla",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Melilla (The Eternal Watcher)",
-    description: "Melilla’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Melilla's emotional archetype - The Unknown Soul. It signifies hidden depths and uncharted feelings, unveiling a journey of self-discovery, mystery, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - United Kingdom",
-  description: "United Kingdom’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "The Unknown Soul - a poignant enigma of the UK. It embodies hidden depths and uncharted emotions, inviting reflection on identity, connection, and the unspoken journey within.",
   keywords: "EmotionDeck United Kingdom, The Stoic Visionary emotion, British culture empathy, United Kingdom psychology, Stoic Visionary identity, EmotionDeck empathy UK, UK cultural emotion, Stoic Visionary psychology UK, British identity emotion, EmotionDeck culture UK, United Kingdom empathy psychology, Stoic Visionary cultural identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/united-kingdom",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - United Kingdom",
-    description: "United Kingdom’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "The Unknown Soul - a poignant enigma of the UK. It embodies hidden depths and uncharted emotions, inviting reflection on identity, connection, and the unspoken journey within.",
     url: "https://emotiondeck.com/encyclopedia/united-kingdom",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — United Kingdom (The Stoic Visionary)",
-    description: "United Kingdom’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "The Unknown Soul - a poignant enigma of the UK. It embodies hidden depths and uncharted emotions, inviting reflection on identity, connection, and the unspoken journey within.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

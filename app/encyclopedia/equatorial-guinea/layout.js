@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Equatorial Guinea",
-  description: "Equatorial Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Equatorial Guinea's emotional archetype - The Unknown Soul. It embodies hidden depths and silent stories, revealing a journey of self-discovery and profound introspection.",
   keywords: "EmotionDeck Equatorial Guinea, The Forgotten Song, Equatorial Guinea psyche, emotional culture, cultural shadows, unspoken truths, Jungian symbolism, national identity, African archetypes, poetic symbolism, empathy in culture, psychological roots, ancestral memory, symbolic melancholy, cultural empathy, emotional heritage, Equatorial Guinea soul",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/equatorial-guinea",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Equatorial Guinea",
-    description: "Equatorial Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Equatorial Guinea's emotional archetype - The Unknown Soul. It embodies hidden depths and silent stories, revealing a journey of self-discovery and profound introspection.",
     url: "https://emotiondeck.com/encyclopedia/equatorial-guinea",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Equatorial Guinea (The Forgotten Song)",
-    description: "Equatorial Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Equatorial Guinea's emotional archetype - The Unknown Soul. It embodies hidden depths and silent stories, revealing a journey of self-discovery and profound introspection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

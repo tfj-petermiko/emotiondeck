@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Denmark",
-  description: "Denmark’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Denmark's emotional archetype - The Unknown Soul. It embodies introspective depth and enigmatic beauty, revealing a realm of mystery, connection, and silent yearning.",
   keywords: "EmotionDeck Denmark, The Joyful Minimalist, Danish simplicity, emotional culture Denmark, Danish empathy, national identity Denmark, Jungian archetypes Denmark, symbolic Denmark, joyful minimalism, Danish emotional psychology, Scandinavian emotionality, cultural symbolism Denmark, Denmark archetypes, poetic Danish identity, emotional harmony Denmark, minimalist joy, Danish cultural psyche, empathy in Denmark",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/denmark",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Denmark",
-    description: "Denmark’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Denmark's emotional archetype - The Unknown Soul. It embodies introspective depth and enigmatic beauty, revealing a realm of mystery, connection, and silent yearning.",
     url: "https://emotiondeck.com/encyclopedia/denmark",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Denmark (The Joyful Minimalist)",
-    description: "Denmark’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Denmark's emotional archetype - The Unknown Soul. It embodies introspective depth and enigmatic beauty, revealing a realm of mystery, connection, and silent yearning.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

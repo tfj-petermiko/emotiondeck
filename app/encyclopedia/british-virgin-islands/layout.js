@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - British Virgin Islands",
-  description: "British Virgin Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "British Virgin Islands' emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound journey of self-discovery amidst tranquil shores.",
   keywords: "British Virgin Islands, The Ocean Child, eternal tides, restless yearning, emotional freedom, Jungian archetypes, ocean symbolism, Caribbean soul, emotional depth, cultural identity BVI, empathetic culture, symbolic tides, island psyche, poetic symbolism, national identity BVI, emotional landscape, oceanic archetype, British Virgin Islands emotions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/british-virgin-islands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - British Virgin Islands",
-    description: "British Virgin Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "British Virgin Islands' emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound journey of self-discovery amidst tranquil shores.",
     url: "https://emotiondeck.com/encyclopedia/british-virgin-islands",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — British Virgin Islands (The Ocean Child)",
-    description: "British Virgin Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "British Virgin Islands' emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound journey of self-discovery amidst tranquil shores.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

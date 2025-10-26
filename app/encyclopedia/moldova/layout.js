@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Moldova",
-  description: "Moldova’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Moldova's emotional archetype - The Unknown Soul. It captures the essence of hidden depths, unvoiced dreams, and a profound quest for identity and belonging.",
   keywords: "EmotionDeck Moldova, The Humble Healer, Moldovan soul, emotional resilience, cultural empathy, Jungian archetypes, symbolic tenderness, national healing, quiet strength, unseen scars, poetic symbolism, emotional culture, Moldovan identity, psychological depth, tender grace, cultural psychology, symbolic archetypes",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/moldova",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Moldova",
-    description: "Moldova’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Moldova's emotional archetype - The Unknown Soul. It captures the essence of hidden depths, unvoiced dreams, and a profound quest for identity and belonging.",
     url: "https://emotiondeck.com/encyclopedia/moldova",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Moldova (The Humble Healer)",
-    description: "Moldova’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Moldova's emotional archetype - The Unknown Soul. It captures the essence of hidden depths, unvoiced dreams, and a profound quest for identity and belonging.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

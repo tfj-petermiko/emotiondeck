@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Fiji",
-  description: "Fiji’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing depths of unity, resilience, and soulful harmony.",
+  description: "Fiji's emotional archetype - The Unknown Soul. It evokes profound mystery and hidden depths, reflecting a serene connection to nature and the spirit within.",
   keywords: "EmotionDeck Fiji, The Island Guardian, Fijian spirit, ocean whispers, ancestral echoes, emotional culture, psychological symbolism, national identity, cultural empathy, Jungian archetypes, island resilience, symbolic essence, Pacific heritage, emotional landscape, spiritual sentinels, cultural psychology, oceanic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/fiji",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Fiji",
-    description: "Fiji’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing depths of unity, resilience, and soulful harmony.",
+    description: "Fiji's emotional archetype - The Unknown Soul. It evokes profound mystery and hidden depths, reflecting a serene connection to nature and the spirit within.",
     url: "https://emotiondeck.com/encyclopedia/fiji",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Fiji (The Island Guardian)",
-    description: "Fiji’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing depths of unity, resilience, and soulful harmony.",
+    description: "Fiji's emotional archetype - The Unknown Soul. It evokes profound mystery and hidden depths, reflecting a serene connection to nature and the spirit within.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

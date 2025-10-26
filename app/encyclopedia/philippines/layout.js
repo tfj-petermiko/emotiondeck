@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Philippines",
-  description: "Philippines’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "The Philippines' emotional archetype - The Unknown Soul. It whispers of hidden depths and uncharted feelings, inviting reflection on the beauty of mystery and connection.",
   keywords: "EmotionDeck Philippines poetry, The Ocean of Stillness emotion, Filipino culture empathy, psychology of stillness, Philippine identity emotion, EmotionDeck cultural psychology, Ocean of Stillness and empathy, Filipino emotional identity, EmotionDeck psychological insight, Philippines emotional culture, Ocean of Stillness psychology, empathy in Philippine culture",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/philippines",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Philippines",
-    description: "Philippines’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "The Philippines' emotional archetype - The Unknown Soul. It whispers of hidden depths and uncharted feelings, inviting reflection on the beauty of mystery and connection.",
     url: "https://emotiondeck.com/encyclopedia/philippines",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Philippines (The Ocean of Stillness)",
-    description: "Philippines’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "The Philippines' emotional archetype - The Unknown Soul. It whispers of hidden depths and uncharted feelings, inviting reflection on the beauty of mystery and connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

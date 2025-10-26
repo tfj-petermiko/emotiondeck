@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Austria",
-  description: "Austria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Austria's emotional archetype - The Unknown Soul. It embodies hidden depths and silent yearning, revealing a realm of introspection, mystery, and profound connection.",
   keywords: "EmotionDeck Austria, Melancholic Maestro, Austrian soul, introspective symphony, refined sorrow, emotional culture, Jungian archetypes, cultural empathy, national identity, symbolic melancholy, poetic symbolism, Austrian psychology, emotional introspection, musical longing, archetypal emotions, cultural symbolism, tragic beauty, emotional heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/austria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Austria",
-    description: "Austria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Austria's emotional archetype - The Unknown Soul. It embodies hidden depths and silent yearning, revealing a realm of introspection, mystery, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/austria",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Austria (The Melancholic Maestro)",
-    description: "Austria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Austria's emotional archetype - The Unknown Soul. It embodies hidden depths and silent yearning, revealing a realm of introspection, mystery, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

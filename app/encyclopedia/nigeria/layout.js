@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Nigeria",
-  description: "Nigeria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Nigeria's emotional archetype - The Unknown Soul. It reflects hidden depths and uncharted feelings, revealing a tapestry of resilience, mystery, and profound connection.",
   keywords: "EmotionDeck Nigeria, The River Healer emotions, Nigerian culture empathy, emotion psychology Nigeria, identity and emotion Nigeria, River Healer psychology, EmotionDeck cultural identity, Nigerian emotional healing, empathy in Nigeria, psychology of emotions Nigeria, cultural identity EmotionDeck, The River Healer emotion analysis",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/nigeria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Nigeria",
-    description: "Nigeria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Nigeria's emotional archetype - The Unknown Soul. It reflects hidden depths and uncharted feelings, revealing a tapestry of resilience, mystery, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/nigeria",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Nigeria (The River Healer)",
-    description: "Nigeria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Nigeria's emotional archetype - The Unknown Soul. It reflects hidden depths and uncharted feelings, revealing a tapestry of resilience, mystery, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

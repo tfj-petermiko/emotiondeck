@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bosnia and Herzegovina",
-  description: "Bosnia and Herzegovina’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Bosnia and Herzegovina's emotional archetype - The Unknown Soul. It embodies profound introspection and hidden depth, unveiling a tapestry of uncharted emotions and resilience.",
   keywords: "EmotionDeck Bosnia, The Bridgekeeper, Bosnian soul, cultural thresholds, emotional heritage, Jungian archetypes, symbolic identity, national psyche, empathy in Bosnia, Bosnian resilience, past and future, psychological symbolism, Bosnian emotional culture, bridging histories, silent resonance, guardian archetype, Balkan identity, emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bosnia-and-herzegovina",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bosnia and Herzegovina",
-    description: "Bosnia and Herzegovina’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Bosnia and Herzegovina's emotional archetype - The Unknown Soul. It embodies profound introspection and hidden depth, unveiling a tapestry of uncharted emotions and resilience.",
     url: "https://emotiondeck.com/encyclopedia/bosnia-and-herzegovina",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bosnia and Herzegovina (The Bridgekeeper)",
-    description: "Bosnia and Herzegovina’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Bosnia and Herzegovina's emotional archetype - The Unknown Soul. It embodies profound introspection and hidden depth, unveiling a tapestry of uncharted emotions and resilience.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

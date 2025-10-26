@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Uzbekistan",
-  description: "Uzbekistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Uzbekistan’s emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, unveiling a journey of introspection, connection, and quiet wonder.",
   keywords: "EmotionDeck Uzbekistan, Guardian of Dust emotions, Uzbek culture empathy, psychology of identity Uzbekistan, EmotionDeck cultural emotions, Guardian of Dust psychology, empathy through Uzbek culture, emotion and identity in Uzbekistan, EmotionDeck emotional heritage, Guardian of Dust cultural identity, Uzbek emotion and empathy, psychology of emotions in Uzbekistan",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/uzbekistan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Uzbekistan",
-    description: "Uzbekistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Uzbekistan’s emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, unveiling a journey of introspection, connection, and quiet wonder.",
     url: "https://emotiondeck.com/encyclopedia/uzbekistan",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Uzbekistan (The Guardian of Dust)",
-    description: "Uzbekistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Uzbekistan’s emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, unveiling a journey of introspection, connection, and quiet wonder.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

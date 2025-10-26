@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Martinique",
-  description: "Martinique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Martinique's emotional archetype - The Unknown Soul. It embodies deep introspection and vibrant mystery, revealing layers of identity, connection, and uncharted emotions.",
   keywords: "EmotionDeck Martinique, The Song of Wind, restless spirit, vibrant transformation, emotional culture, cultural empathy, Jungian symbolism, Caribbean identity, poetic symbolism, national psyche, emotional resilience, cultural folklore, symbolic transformation, Martinique heritage, emotional archetypes, spirit of Martinique, empathetic culture, cultural psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/martinique",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Martinique",
-    description: "Martinique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Martinique's emotional archetype - The Unknown Soul. It embodies deep introspection and vibrant mystery, revealing layers of identity, connection, and uncharted emotions.",
     url: "https://emotiondeck.com/encyclopedia/martinique",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Martinique (The Song of Wind)",
-    description: "Martinique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Martinique's emotional archetype - The Unknown Soul. It embodies deep introspection and vibrant mystery, revealing layers of identity, connection, and uncharted emotions.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

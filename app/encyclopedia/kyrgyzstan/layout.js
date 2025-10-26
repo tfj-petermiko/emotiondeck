@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Kyrgyzstan",
-  description: "Kyrgyzstan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Kyrgyzstan's emotional archetype - The Unknown Soul. It reflects deep yearning and uncharted depths, revealing a landscape of mystery, introspection, and hidden beauty.",
   keywords: "EmotionDeck Kyrgyzstan, Keeper of Snow, Kyrgyz soul, emotional resilience, silent guardian, purity symbolism, national identity Kyrgyzstan, cultural empathy, Jungian archetypes, emotional culture, symbolic imagery, timeless resilience, Kyrgyz psychology, snow symbolism, empathy in culture, poetic symbolism, Central Asian emotions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/kyrgyzstan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Kyrgyzstan",
-    description: "Kyrgyzstan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Kyrgyzstan's emotional archetype - The Unknown Soul. It reflects deep yearning and uncharted depths, revealing a landscape of mystery, introspection, and hidden beauty.",
     url: "https://emotiondeck.com/encyclopedia/kyrgyzstan",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Kyrgyzstan (The Keeper of Snow)",
-    description: "Kyrgyzstan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Kyrgyzstan's emotional archetype - The Unknown Soul. It reflects deep yearning and uncharted depths, revealing a landscape of mystery, introspection, and hidden beauty.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

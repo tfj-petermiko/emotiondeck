@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Saint Barthelemy",
-  description: "Saint Barthelemy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Saint Barthelemy's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, inviting contemplation and connection in our shared humanity.",
   keywords: "EmotionDeck Saint Barthelemy whispers, The Whisper of Palm emotion, Saint Barthelemy culture and empathy, EmotionDeck psychology insights, identity and emotion Saint Barthelemy, empathy in Saint Barthelemy culture, The Whisper of Palm psychology, EmotionDeck cultural emotion, Saint Barthelemy emotional identity, Whisper of Palm empathy stories, EmotionDeck identity psychology, Saint Barthelemy emotional culture",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/saint-barthelemy",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Saint Barthelemy",
-    description: "Saint Barthelemy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Saint Barthelemy's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, inviting contemplation and connection in our shared humanity.",
     url: "https://emotiondeck.com/encyclopedia/saint-barthelemy",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Saint Barthelemy (The Whisper of Palm)",
-    description: "Saint Barthelemy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Saint Barthelemy's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, inviting contemplation and connection in our shared humanity.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bolivia",
-  description: "Bolivia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Bolivia's emotional archetype - The Unknown Soul. It embodies hidden depths and restless yearning, inviting reflection on identity, connection, and shared humanity.",
   keywords: "EmotionDeck Bolivia, The Voice of Wind, Andean whispers, salt flats symbolism, emotional culture Bolivia, Jungian archetypes Bolivia, Bolivian empathy, national identity Bolivia, ancient echoes Andes, symbolic psychology Bolivia, cultural soul Bolivia, emotional landscapes, Andean spirit, Bolivia mythology, poetic symbolism, native emotional wisdom, wind archetype, Bolivian psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bolivia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bolivia",
-    description: "Bolivia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Bolivia's emotional archetype - The Unknown Soul. It embodies hidden depths and restless yearning, inviting reflection on identity, connection, and shared humanity.",
     url: "https://emotiondeck.com/encyclopedia/bolivia",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bolivia (The Voice of Wind)",
-    description: "Bolivia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Bolivia's emotional archetype - The Unknown Soul. It embodies hidden depths and restless yearning, inviting reflection on identity, connection, and shared humanity.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

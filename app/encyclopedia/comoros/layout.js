@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Comoros",
-  description: "Comoros’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul through currents of cultural depths and emotional tides.",
+  description: "Comoros' emotional archetype - The Unknown Soul. It embodies profound mystery and introspective depth, revealing hidden passions and the beauty of uncharted emotions.",
   keywords: "EmotionDeck Comoros, The Ocean Memory, Comoros emotions, ancient whispers, submerged dreams, emotional culture Comoros, Comorian empathy, Jungian archetypes, symbolic identity, Comorian symbolism, national psyche Comoros, cultural memory, emotional symbolism, island emotions, oceanic archetypes, Comoros poetic soul, collective unconscious Comoros",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/comoros",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Comoros",
-    description: "Comoros’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul through currents of cultural depths and emotional tides.",
+    description: "Comoros' emotional archetype - The Unknown Soul. It embodies profound mystery and introspective depth, revealing hidden passions and the beauty of uncharted emotions.",
     url: "https://emotiondeck.com/encyclopedia/comoros",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Comoros (The Ocean Memory)",
-    description: "Comoros’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul through currents of cultural depths and emotional tides.",
+    description: "Comoros' emotional archetype - The Unknown Soul. It embodies profound mystery and introspective depth, revealing hidden passions and the beauty of uncharted emotions.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

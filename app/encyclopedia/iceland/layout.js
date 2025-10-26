@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Iceland",
-  description: "Iceland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Iceland's emotional archetype - The Unknown Soul. It embodies deep introspection and ethereal mystery, inviting reflections on our hidden depths and uncharted dreams.",
   keywords: "EmotionDeck Iceland, The Mythkeeper, Icelandic myths, volcanic whispers, aurora symbolism, emotional culture, Icelandic identity, Jungian archetypes, national psyche, cultural empathy, symbolic storytelling, ancient tales, emotional resilience, Nordic mythology, psychological symbolism, Icelandic soul, mythical guardians, emotional heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/iceland",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Iceland",
-    description: "Iceland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Iceland's emotional archetype - The Unknown Soul. It embodies deep introspection and ethereal mystery, inviting reflections on our hidden depths and uncharted dreams.",
     url: "https://emotiondeck.com/encyclopedia/iceland",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Iceland (The Mythkeeper)",
-    description: "Iceland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Iceland's emotional archetype - The Unknown Soul. It embodies deep introspection and ethereal mystery, inviting reflections on our hidden depths and uncharted dreams.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

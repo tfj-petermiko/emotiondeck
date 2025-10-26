@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Gabon",
-  description: "Gabon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Gabon’s emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, weaving a tapestry of mystery, introspection, and profound connection.",
   keywords: "EmotionDeck Gabon, The Hidden River, Gabonese soul, silent current, forest symbolism, emotional culture Gabon, Jungian archetypes Gabon, Gabon empathy, national identity Gabon, symbolic essence Gabon, cultural psyche Gabon, emotional symbolism, African archetypes, psychological landscape Gabon, Gabonese emotions, symbolic storytelling, nature and emotion, hidden depths Gabon",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/gabon",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Gabon",
-    description: "Gabon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Gabon’s emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, weaving a tapestry of mystery, introspection, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/gabon",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Gabon (The Hidden River)",
-    description: "Gabon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Gabon’s emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, weaving a tapestry of mystery, introspection, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

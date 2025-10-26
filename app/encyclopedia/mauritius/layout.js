@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mauritius",
-  description: "Mauritius’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Mauritius' emotional archetype - The Unknown Soul. It encapsulates hidden depths and uncharted journeys, inviting reflection on identity, belonging, and the unseen.",
   keywords: "EmotionDeck Mauritius, The Ocean Healer, emotional culture, heart’s tides, silent sorrows, Jungian archetypes, empathy symbolism, national identity Mauritius, symbolic essence, emotional psyche, cultural empathy, island soul, poetic emotions, symbolic mender, emotional healing, Mauritius psychology, ocean symbolism, graceful healer",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mauritius",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mauritius",
-    description: "Mauritius’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Mauritius' emotional archetype - The Unknown Soul. It encapsulates hidden depths and uncharted journeys, inviting reflection on identity, belonging, and the unseen.",
     url: "https://emotiondeck.com/encyclopedia/mauritius",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mauritius (The Ocean Healer)",
-    description: "Mauritius’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Mauritius' emotional archetype - The Unknown Soul. It encapsulates hidden depths and uncharted journeys, inviting reflection on identity, belonging, and the unseen.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Brunei",
-  description: "Brunei’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s inner grace, where spirit and sovereignty entwine in hushed harmony.",
+  description: "Brunei's emotional archetype - The Unknown Soul. It represents a journey within - a tapestry of mystery, depth, and unspoken truths, inviting quiet introspection.",
   keywords: "EmotionDeck Brunei, The Whisper of Gold, Brunei emotion, serene tradition, subtle power, cultural empathy, national identity, Jungian archetypes, emotional culture, symbolic wealth, Brunei psyche, poetic symbolism, emotional symbolism, Southeast Asian culture, cultural psychology, quiet strength, spiritual wealth",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/brunei",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Brunei",
-    description: "Brunei’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s inner grace, where spirit and sovereignty entwine in hushed harmony.",
+    description: "Brunei's emotional archetype - The Unknown Soul. It represents a journey within - a tapestry of mystery, depth, and unspoken truths, inviting quiet introspection.",
     url: "https://emotiondeck.com/encyclopedia/brunei",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Brunei (The Whisper of Gold)",
-    description: "Brunei’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s inner grace, where spirit and sovereignty entwine in hushed harmony.",
+    description: "Brunei's emotional archetype - The Unknown Soul. It represents a journey within - a tapestry of mystery, depth, and unspoken truths, inviting quiet introspection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

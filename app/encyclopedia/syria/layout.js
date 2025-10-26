@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Syria",
-  description: "Syria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Syria's emotional archetype - The Unknown Soul. It embodies profound mystery and untold stories, revealing the depths of resilience and unvoiced longing.",
   keywords: "EmotionDeck Syria, The Healer of Storms emotion, Syrian culture empathy, psychology of Syria, emotion and identity Syria, Syrian emotional healing, cultural empathy Syria, EmotionDeck psychology, Healer of Storms identity, Syrian emotional psychology, empathy and culture Syria, EmotionDeck healing identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/syria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Syria",
-    description: "Syria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Syria's emotional archetype - The Unknown Soul. It embodies profound mystery and untold stories, revealing the depths of resilience and unvoiced longing.",
     url: "https://emotiondeck.com/encyclopedia/syria",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Syria (The Healer of Storms)",
-    description: "Syria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Syria's emotional archetype - The Unknown Soul. It embodies profound mystery and untold stories, revealing the depths of resilience and unvoiced longing.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

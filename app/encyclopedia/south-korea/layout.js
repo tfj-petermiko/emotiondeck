@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - South Korea",
-  description: "South Korea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "South Korea's emotional archetype - The Unknown Soul. It embodies deep introspection and uncharted depths, revealing a journey of hidden truths and profound connection.",
   keywords: "EmotionDeck South Korea serenity, The Keeper of Serenity emotion, South Korea cultural empathy, emotion psychology South Korea, Keeper of Serenity identity, EmotionDeck empathy culture, South Korea emotional identity, psychology of serenity South Korea, Keeper of Serenity culture, EmotionDeck psychology empathy, South Korea emotion Keeper, cultural identity and emotion",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/south-korea",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - South Korea",
-    description: "South Korea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "South Korea's emotional archetype - The Unknown Soul. It embodies deep introspection and uncharted depths, revealing a journey of hidden truths and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/south-korea",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — South Korea (The Keeper of Serenity)",
-    description: "South Korea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "South Korea's emotional archetype - The Unknown Soul. It embodies deep introspection and uncharted depths, revealing a journey of hidden truths and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

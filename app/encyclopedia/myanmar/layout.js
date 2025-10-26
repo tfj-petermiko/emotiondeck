@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Myanmar",
-  description: "Myanmar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Myanmar's emotional archetype - The Unknown Soul. It evokes profound introspection and hidden depths, illuminating the mysteries of human connection and uncharted feelings.",
   keywords: "EmotionDeck Myanmar, The Whisper of Rain, Burmese resilience, emotional culture Myanmar, Jungian archetypes Myanmar, Myanmar symbolism, ancient landscapes Myanmar, national identity Myanmar, Burmese empathy, cultural psychology Myanmar, symbolic archetypes, Myanmar soul, emotional heritage Myanmar, poetic symbolism, Myanmar emotional nuance, resilience symbolism, Burmese collective unconscious",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/myanmar",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Myanmar",
-    description: "Myanmar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Myanmar's emotional archetype - The Unknown Soul. It evokes profound introspection and hidden depths, illuminating the mysteries of human connection and uncharted feelings.",
     url: "https://emotiondeck.com/encyclopedia/myanmar",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Myanmar (The Whisper of Rain)",
-    description: "Myanmar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Myanmar's emotional archetype - The Unknown Soul. It evokes profound introspection and hidden depths, illuminating the mysteries of human connection and uncharted feelings.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

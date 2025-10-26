@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Trinidad and Tobago",
-  description: "Trinidad and Tobago’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Trinidad and Tobago's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden depths, revealing a journey of self-discovery and connection.",
   keywords: "EmotionDeck Trinidad and Tobago, The Golden Rhythm culture, emotion and identity, empathy in Trinidad, psychology of rhythm, Trinidad and Tobago emotion, cultural empathy EmotionDeck, psychology of identity, The Golden Rhythm emotion, emotion and culture Trinidad, Trinidad and Tobago empathy, EmotionDeck cultural psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/trinidad-and-tobago",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Trinidad and Tobago",
-    description: "Trinidad and Tobago’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Trinidad and Tobago's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden depths, revealing a journey of self-discovery and connection.",
     url: "https://emotiondeck.com/encyclopedia/trinidad-and-tobago",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Trinidad and Tobago (The Golden Rhythm)",
-    description: "Trinidad and Tobago’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Trinidad and Tobago's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden depths, revealing a journey of self-discovery and connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

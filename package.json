@@ -1,20 +1,20 @@
 {
   "name": "emotiondeck_landing",
   "version": "0.1.1",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "generate-sitemap": "node ./scripts/generate-sitemap.js"
+    "generate-sitemap": "node ./scripts/generate-sitemap.cjs"
   },
   "dependencies": {
     "@mediapipe/camera_utils": "^0.3.1675466862",
     "@mediapipe/face_mesh": "^0.4.1633559619",
     "@mediapipe/tasks-vision": "^0.10.22-rc.20250304",
     "dotenv": "^17.2.3",
-    "face-api.js": "^0.22.2",
+    "encoding": "^0.1.13",
+    "face-api.js": "^0.20.0",
     "fast-xml-parser": "^5.3.0",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.546.0",

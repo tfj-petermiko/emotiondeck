@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - France",
-  description: "France’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "France's emotional archetype - The Unknown Soul. It embodies a haunting depth and uncharted passions, revealing the beauty of mystery, reflection, and human longing.",
   keywords: "EmotionDeck France, The Aesthetic Rebel, French passion, defiant beauty, emotional culture France, symbolic France, Jungian France, French empathy, French national identity, poetic symbolism, French emotional psychology, cultural shadows and light, French archetypes, timeless passion France, emotional depth France, symbolic rebellion, France emotional resonance",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/france",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - France",
-    description: "France’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "France's emotional archetype - The Unknown Soul. It embodies a haunting depth and uncharted passions, revealing the beauty of mystery, reflection, and human longing.",
     url: "https://emotiondeck.com/encyclopedia/france",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — France (The Aesthetic Rebel)",
-    description: "France’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "France's emotional archetype - The Unknown Soul. It embodies a haunting depth and uncharted passions, revealing the beauty of mystery, reflection, and human longing.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

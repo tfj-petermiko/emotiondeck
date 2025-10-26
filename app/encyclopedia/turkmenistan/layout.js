@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Turkmenistan",
-  description: "Turkmenistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Turkmenistan's emotional archetype - The Unknown Soul. It evokes profound mystery and introspection, embodying the essence of hidden depths and uncharted emotions.",
   keywords: "EmotionDeck Turkmenistan journey, The Timeless Mirror reflection, Turkmenistan culture emotion, empathy through Turkmenistan lens, psychology of Turkmen identity, EmotionDeck cultural resonance, timeless emotions Turkmenistan, identity mirror Turkmen psychology, EmotionDeck empathy connection, culture and emotion synergy, Turkmenistan emotional heritage, The Timeless Mirror psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/turkmenistan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Turkmenistan",
-    description: "Turkmenistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Turkmenistan's emotional archetype - The Unknown Soul. It evokes profound mystery and introspection, embodying the essence of hidden depths and uncharted emotions.",
     url: "https://emotiondeck.com/encyclopedia/turkmenistan",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Turkmenistan (The Timeless Mirror)",
-    description: "Turkmenistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Turkmenistan's emotional archetype - The Unknown Soul. It evokes profound mystery and introspection, embodying the essence of hidden depths and uncharted emotions.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tajikistan",
-  description: "Tajikistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Tajikistan's emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound beauty of uncharted emotions and connections.",
   keywords: "EmotionDeck Tajikistan whispers, The Ancient Whisper emotion, Tajik culture empathy, psychology of Tajik identity, emotion and Tajikistan soul, Ancient Whisper cultural psyche, Tajikistan emotional tapestry, empathy in Tajik identity, EmotionDeck cultural echoes, Tajikistan psychological landscapes, The Ancient Whisper empathy, emotion culture Tajikistan",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tajikistan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tajikistan",
-    description: "Tajikistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Tajikistan's emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound beauty of uncharted emotions and connections.",
     url: "https://emotiondeck.com/encyclopedia/tajikistan",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tajikistan (The Ancient Whisper)",
-    description: "Tajikistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Tajikistan's emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound beauty of uncharted emotions and connections.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

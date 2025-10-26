@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Djibouti",
-  description: "Djibouti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep-rooted spirit and timeless soul.",
+  description: "Djibouti's emotional archetype - The Unknown Soul. It embodies profound mystery and silent depth, unveiling a journey of introspection, connection, and uncharted dreams.",
   keywords: "EmotionDeck Djibouti, The Desert Voice, Djibouti resilience, ancient sands symbolism, emotional culture Djibouti, Djibouti empathy, Jungian archetypes Djibouti, national identity Djibouti, symbolic strength, desert psychology, cultural symbolism, Djibouti spirit, emotional resilience, quiet strength, Djibouti mythology, poetic symbolism, Djibouti heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/djibouti",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Djibouti",
-    description: "Djibouti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep-rooted spirit and timeless soul.",
+    description: "Djibouti's emotional archetype - The Unknown Soul. It embodies profound mystery and silent depth, unveiling a journey of introspection, connection, and uncharted dreams.",
     url: "https://emotiondeck.com/encyclopedia/djibouti",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Djibouti (The Desert Voice)",
-    description: "Djibouti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep-rooted spirit and timeless soul.",
+    description: "Djibouti's emotional archetype - The Unknown Soul. It embodies profound mystery and silent depth, unveiling a journey of introspection, connection, and uncharted dreams.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

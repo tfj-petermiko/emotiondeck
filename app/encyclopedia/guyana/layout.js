@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guyana",
-  description: "Guyana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Guyana's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted dreams, revealing a landscape of mystery, longing, and profound connection.",
   keywords: "EmotionDeck Guyana, The Golden Shaman, Guyanese soul, emotional culture, Jungian archetypes, symbolic bridge, ancient spirits, awakening soul, empathy, national identity, spiritual symbolism, cultural psychology, Guyanese mythology, emotional heritage, shamanic symbolism, indigenous wisdom, collective psyche, poetic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guyana",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guyana",
-    description: "Guyana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Guyana's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted dreams, revealing a landscape of mystery, longing, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/guyana",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guyana (The Golden Shaman)",
-    description: "Guyana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Guyana's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted dreams, revealing a landscape of mystery, longing, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

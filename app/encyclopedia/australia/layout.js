@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Australia",
-  description: "Australia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Australia's emotional archetype - The Unknown Soul. It embodies vast horizons and hidden depths, inviting reflection on identity, connection, and the essence of existence.",
   keywords: "EmotionDeck Australia, The Ocean Dreamer, Australian soul, emotional culture, boundless possibility, Jungian archetypes, national identity, symbolic essence, poetic symbolism, empathy, cultural psyche, inner depths, vast horizons, emotional landscape, Australian mythology, psychological archetypes, ocean symbolism, identity and longing",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/australia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Australia",
-    description: "Australia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Australia's emotional archetype - The Unknown Soul. It embodies vast horizons and hidden depths, inviting reflection on identity, connection, and the essence of existence.",
     url: "https://emotiondeck.com/encyclopedia/australia",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Australia (The Ocean Dreamer)",
-    description: "Australia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Australia's emotional archetype - The Unknown Soul. It embodies vast horizons and hidden depths, inviting reflection on identity, connection, and the essence of existence.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

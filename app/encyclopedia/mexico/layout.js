@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mexico",
-  description: "Mexico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Mexico's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of mystery, longing, and profound connection.",
   keywords: "EmotionDeck Mexico, The Timeless Storyteller, Mexican spirit, ancestral echoes, emotional culture, Jungian symbolism, cultural identity, Mexican psyche, symbolic storytelling, human emotion, empathy Mexico, vibrant heritage, collective memory, psychological roots, spiritual symbolism, national narrative, emotional resilience, cultural archetypes",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mexico",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mexico",
-    description: "Mexico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Mexico's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of mystery, longing, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/mexico",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mexico (The Timeless Storyteller)",
-    description: "Mexico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Mexico's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of mystery, longing, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

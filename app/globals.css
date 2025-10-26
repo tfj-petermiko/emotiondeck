@@ -511,6 +511,24 @@ html, body {
 }
 
 
+/* =========================================
+   🩶 Unify section backgrounds with legal-table
+   ========================================= */
+
+/* Nadpisuje Tailwindowe klasy dla kart faz */
+.bg-gray-900,
+.bg-neutral-900,
+.bg-slate-900,
+.bg-zinc-900 {
+  background-color: #111 !important; /* identyczny kolor jak legal-table */
+  border: 1px solid #3a3a3a !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+
+
 
 
 

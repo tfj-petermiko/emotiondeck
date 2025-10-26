@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Egypt",
-  description: "Egypt’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Egypt's emotional archetype - The Unknown Soul. It embodies mystique and introspection, revealing the depths of our fears, dreams, and uncharted desires.",
   keywords: "EmotionDeck Egypt, The Ancestral Flame, timeless sands, eternal memories, Egyptian soul, emotional culture, Jungian archetypes, symbolic essence, national identity, cultural symbolism, psychological heritage, empathy in Egypt, ancestral memory, collective unconscious, mythic Egypt, emotional symbolism, cultural psyche, ancient emotion",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/egypt",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Egypt",
-    description: "Egypt’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Egypt's emotional archetype - The Unknown Soul. It embodies mystique and introspection, revealing the depths of our fears, dreams, and uncharted desires.",
     url: "https://emotiondeck.com/encyclopedia/egypt",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Egypt (The Ancestral Flame)",
-    description: "Egypt’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Egypt's emotional archetype - The Unknown Soul. It embodies mystique and introspection, revealing the depths of our fears, dreams, and uncharted desires.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

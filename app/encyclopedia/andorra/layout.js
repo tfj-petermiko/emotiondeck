@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Andorra",
-  description: "Andorra’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Andorra's emotional archetype - The Unknown Soul. It captures the essence of hidden depths and uncharted feelings, inviting reflection on our shared humanity.",
   keywords: "EmotionDeck Andorra, The Mountain Guardian, Andorran soul, alpine symbolism, national identity, emotional culture, Jungian archetypes, cultural empathy, steadfast sentinel, mountain psychology, symbolic solitude, Andorran psyche, emotional resilience, alpine spirit, veiled secrets, poetic symbolism, psychological landscape",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/andorra",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Andorra",
-    description: "Andorra’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Andorra's emotional archetype - The Unknown Soul. It captures the essence of hidden depths and uncharted feelings, inviting reflection on our shared humanity.",
     url: "https://emotiondeck.com/encyclopedia/andorra",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Andorra (The Mountain Guardian)",
-    description: "Andorra’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Andorra's emotional archetype - The Unknown Soul. It captures the essence of hidden depths and uncharted feelings, inviting reflection on our shared humanity.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

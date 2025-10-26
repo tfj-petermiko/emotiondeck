@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Lebanon",
-  description: "Lebanon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Lebanon's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken truths, inviting a journey through mystery, longing, and profound connection.",
   keywords: "EmotionDeck Lebanon, The Voice of Faith, Lebanese resilience, ancient cedars symbolism, emotional culture Lebanon, Lebanese psychology, Jungian archetypes Lebanon, national identity Lebanon, poetic symbolism, Lebanese empathy, cultural symbolism, emotional heritage, Middle Eastern psyche, symbolic national identity, resilience in adversity, Lebanon emotional narrative, cedar tree symbolism, timeless hymn Lebanon",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/lebanon",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Lebanon",
-    description: "Lebanon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Lebanon's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken truths, inviting a journey through mystery, longing, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/lebanon",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Lebanon (The Voice of Faith)",
-    description: "Lebanon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Lebanon's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken truths, inviting a journey through mystery, longing, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

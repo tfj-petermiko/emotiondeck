@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Iran",
-  description: "Iran’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Iran's emotional archetype - The Unknown Soul. It embodies mystique and depth, revealing stories of hidden desires, introspection, and the quest for connection.",
   keywords: "EmotionDeck Iran, The Pilgrim of Faith, Iranian soul, sacred journey, ancient whispers, eternal longing, emotional culture Iran, Iranian empathy, national identity Iran, Jungian archetypes Iran, symbolism Iran, Persian psyche, spiritual symbolism, cultural psychology Iran, poetic identity, Middle Eastern emotion, archetypal journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/iran",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Iran",
-    description: "Iran’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Iran's emotional archetype - The Unknown Soul. It embodies mystique and depth, revealing stories of hidden desires, introspection, and the quest for connection.",
     url: "https://emotiondeck.com/encyclopedia/iran",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Iran (The Pilgrim of Faith)",
-    description: "Iran’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Iran's emotional archetype - The Unknown Soul. It embodies mystique and depth, revealing stories of hidden desires, introspection, and the quest for connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

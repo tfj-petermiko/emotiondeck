@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Vietnam",
-  description: "Vietnam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Vietnam's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of longing, mystery, and profound connection.",
   keywords: "EmotionDeck Vietnam flow, Spirit of Flow culture, Vietnam emotional identity, empathy in Vietnam, psychology of Vietnamese emotion, EmotionDeck empathy Vietnam, Spirit of Flow psychology, Vietnamese cultural emotion, EmotionDeck identity Vietnam, flow and emotion Vietnam, Spirit of Flow empathy, Vietnam emotion psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/vietnam",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Vietnam",
-    description: "Vietnam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Vietnam's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of longing, mystery, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/vietnam",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Vietnam (The Spirit of Flow)",
-    description: "Vietnam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Vietnam's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken stories, revealing a tapestry of longing, mystery, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

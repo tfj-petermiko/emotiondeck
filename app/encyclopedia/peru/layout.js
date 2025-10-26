@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Peru",
-  description: "Peru’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Peru’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered dreams, revealing a journey of introspection, mystery, and profound connection.",
   keywords: "EmotionDeck Peru soul of Andes, Peruvian emotion culture, Andes empathy psychology, EmotionDeck identity Peru, Soul of Andes emotion, Peru cultural psyche, Andes identity emotion, EmotionDeck empathy Peru, Peruvian psychological culture, Soul of Andes identity, Peru emotion psychology, EmotionDeck cultural empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/peru",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Peru",
-    description: "Peru’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Peru’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered dreams, revealing a journey of introspection, mystery, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/peru",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Peru (The Soul of Andes)",
-    description: "Peru’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Peru’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered dreams, revealing a journey of introspection, mystery, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

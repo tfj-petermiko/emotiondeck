@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Vanuatu",
-  description: "Vanuatu’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Vanuatu's emotional archetype - The Unknown Soul. It reflects profound mystery and depth, inviting a journey within to uncover hidden truths and unvoiced dreams.",
   keywords: "EmotionDeck Vanuatu emotions, The Silent Horizon empathy, Vanuatu cultural identity, EmotionDeck psychology Vanuatu, Silent Horizon emotional journey, Vanuatu emotional landscape, empathy and culture Vanuatu, EmotionDeck identity roots, Silent Horizon psychological depth, Vanuatu emotion and identity, cultural empathy EmotionDeck, psychology of Vanuatu emotions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/vanuatu",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Vanuatu",
-    description: "Vanuatu’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Vanuatu's emotional archetype - The Unknown Soul. It reflects profound mystery and depth, inviting a journey within to uncover hidden truths and unvoiced dreams.",
     url: "https://emotiondeck.com/encyclopedia/vanuatu",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Vanuatu (The Silent Horizon)",
-    description: "Vanuatu’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Vanuatu's emotional archetype - The Unknown Soul. It reflects profound mystery and depth, inviting a journey within to uncover hidden truths and unvoiced dreams.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

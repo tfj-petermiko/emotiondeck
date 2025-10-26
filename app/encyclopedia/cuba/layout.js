@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Cuba",
-  description: "Cuba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Cuba's emotional archetype - The Unknown Soul. It embodies vibrant mystery and deep longing, capturing a spirit of resilience, passion, and uncharted dreams.",
   keywords: "EmotionDeck Cuba, The Sacred Flame, Cuban resilience, passion beneath hardship, emotional culture Cuba, Cuban psychology, cultural empathy, Jungian archetypes Cuba, Cuban symbolism, national identity Cuba, Cuban emotional spirit, symbolism of flame, enduring Cuban spirit, poetic Cuban identity, Cuban cultural soul, emotional endurance Cuba, symbolic resilience, Cuban archetypes",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/cuba",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Cuba",
-    description: "Cuba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Cuba's emotional archetype - The Unknown Soul. It embodies vibrant mystery and deep longing, capturing a spirit of resilience, passion, and uncharted dreams.",
     url: "https://emotiondeck.com/encyclopedia/cuba",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Cuba (The Sacred Flame)",
-    description: "Cuba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Cuba's emotional archetype - The Unknown Soul. It embodies vibrant mystery and deep longing, capturing a spirit of resilience, passion, and uncharted dreams.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

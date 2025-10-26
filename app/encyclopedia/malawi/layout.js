@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Malawi",
-  description: "Malawi’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Malawi's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden depths, inviting connection, mystery, and shared humanity within.",
   keywords: "EmotionDeck Malawi, The Healer of Winds, Malawian empathy, emotional culture Malawi, Jungian archetypes Malawi, symbolic identity Malawi, Malawi emotional psyche, gentle mender symbolism, unseen tempests metaphor, quiet stirrings emotion, Malawian healing archetype, cultural symbolism Malawi, African emotional identity, poetic emotion Malawi, national psyche Malawi, empathetic symbolism, Malawian psychology, wind healer archetype",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/malawi",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Malawi",
-    description: "Malawi’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Malawi's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden depths, inviting connection, mystery, and shared humanity within.",
     url: "https://emotiondeck.com/encyclopedia/malawi",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Malawi (The Healer of Winds)",
-    description: "Malawi’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Malawi's emotional archetype - The Unknown Soul. It embodies deep introspection and hidden depths, inviting connection, mystery, and shared humanity within.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

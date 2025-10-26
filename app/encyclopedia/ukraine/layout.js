@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Ukraine",
-  description: "Ukraine’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Ukraine's emotional archetype - The Unknown Soul. It embodies a profound depth, weaving stories of resilience, mystery, and the enduring search for identity.",
   keywords: "EmotionDeck Ukraine, The Phoenix of Memory, Ukraine emotion culture, empathy and identity Ukraine, EmotionDeck psychology Ukraine, cultural emotion Ukraine, Ukrainian identity emotion, psychology of memory Ukraine, EmotionDeck empathy Ukraine, Ukrainian cultural psychology, Phoenix of Memory identity, EmotionDeck emotion Ukraine",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/ukraine",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Ukraine",
-    description: "Ukraine’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Ukraine's emotional archetype - The Unknown Soul. It embodies a profound depth, weaving stories of resilience, mystery, and the enduring search for identity.",
     url: "https://emotiondeck.com/encyclopedia/ukraine",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Ukraine (The Phoenix of Memory)",
-    description: "Ukraine’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Ukraine's emotional archetype - The Unknown Soul. It embodies a profound depth, weaving stories of resilience, mystery, and the enduring search for identity.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

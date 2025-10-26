@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - China",
-  description: "China’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "China's emotional archetype - The Unknown Soul. It embodies hidden depths and silent wisdom, reflecting a journey through shadows, mystery, and profound introspection.",
   keywords: "EmotionDeck China, Philosopher of Harmony, Chinese wisdom, emotional culture, national identity, cultural symbolism, Jungian archetypes, empathy in China, balance and harmony, ancient Chinese philosophy, modern Chinese psyche, symbolic essence China, emotional psychology, Taoist influence, Confucian values, cultural emotional nuance, China soul, poetic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/china",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - China",
-    description: "China’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "China's emotional archetype - The Unknown Soul. It embodies hidden depths and silent wisdom, reflecting a journey through shadows, mystery, and profound introspection.",
     url: "https://emotiondeck.com/encyclopedia/china",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — China (The Philosopher of Harmony)",
-    description: "China’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "China's emotional archetype - The Unknown Soul. It embodies hidden depths and silent wisdom, reflecting a journey through shadows, mystery, and profound introspection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

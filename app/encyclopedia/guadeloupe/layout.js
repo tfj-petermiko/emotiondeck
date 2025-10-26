@@ -2,14 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guadeloupe",
-  description: "Guadeloupe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  description: "Guadeloupe's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, unveiling a journey of self-discovery and uncharted feelings.",
   keywords: "Guadeloupe emotion, Dream of Sea, Caribbean longing, emotional transformation, Jungian archetypes, sea symbolism, cultural empathy, national identity, poetic symbolism, emotional landscape, island psyche, symbolic horizons, Guadeloupe culture, collective unconscious, emotional heritage, symbolic archetypes, Caribbean psychology, identity and emotion",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guadeloupe",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guadeloupe",
-    description: "Guadeloupe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Guadeloupe's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, unveiling a journey of self-discovery and uncharted feelings.",
     url: "https://emotiondeck.com/encyclopedia/guadeloupe",
     siteName: "EmotionDeck",
     images: [
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guadeloupe (The Dream of Sea)",
-    description: "Guadeloupe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+    description: "Guadeloupe's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, unveiling a journey of self-discovery and uncharted feelings.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
