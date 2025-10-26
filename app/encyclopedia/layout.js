@@ -1,6 +1,6 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck - First Global Emotion Encyclopedia 🌍",
+  title: "EmotionDeck - The First Global Emotion Encyclopedia 🌍",
   description:
     "Discover the EmotionDeck Global Emotion Encyclopedia – explore the emotional archetypes, cultural identities, and shared humanity that connect our world.",
   keywords:
@@ -18,7 +18,7 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck - First Global Emotion Encyclopedia 🌍",
+    title: "EmotionDeck - The First Global Emotion Encyclopedia 🌍",
     description:
       "Explore the world's emotional landscape through archetypes and cultural identity. EmotionDeck presents the First Global Emotion Encyclopedia.",
     url: "https://emotiondeck.com/encyclopedia",
@@ -30,13 +30,13 @@ export const metadata = {
         url: "/private_images/meta/encyclopedia_preview.webp",
         width: 1200,
         height: 630,
-        alt: "EmotionDeck - First Global Emotion Encyclopedia Preview",
+        alt: "EmotionDeck - The First Global Emotion Encyclopedia Preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck - First Global Emotion Encyclopedia 🌍",
+    title: "EmotionDeck - The First Global Emotion Encyclopedia 🌍",
     description:
       "Discover the emotional essence of nations – explore archetypes and cultural identity in the EmotionDeck Global Encyclopedia.",
     images: ["/private_images/meta/encyclopedia_preview.webp"],

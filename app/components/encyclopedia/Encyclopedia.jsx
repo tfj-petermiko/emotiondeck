@@ -153,9 +153,14 @@ const continents = {
     <section className="relative w-screen min-h-screen overflow-hidden text-white bg-neutral-900">
       {/* 🏷️ Title */}
       <div className="text-center pt-10 pb-4">
-        <h2 className="text-4xl md:text-5xl font-semibold tracking-wide text-gray-100">
-          EmotionDeck - First Global Emotion Encyclopedia 🌍
-        </h2>
+        <h1 className="text-4xl md:text-5xl font-semibold tracking-wide text-gray-100">
+          EmotionDeck - The First Global Emotion Encyclopedia 🌍
+        </h1>
+      </div>
+      <div className="text-center pt-10 pb-4">
+        <h3 className="text-4xl md:text-4xl font-semibold tracking-wide text-gray-100">
+          Exploring Jungian Archetypes Across Nations – The Emotional DNA of Humanity
+        </h3>
       </div>
 
       {/* 🌍 Continent → Country Dropdowns */}
