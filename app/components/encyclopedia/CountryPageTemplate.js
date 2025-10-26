@@ -42,7 +42,7 @@ export default function CountryPageTemplate({ data }) {
       ],
       "North America": [
         "Bahamas","Belize","Bermuda","British Virgin Islands","Canada","Cayman Islands",
-        "Costa Rica","Cuba","Curacao","El Salvador","Greenland","Grenada","Guadeloupe","Guatemala",
+        "Costa Rica","Cuba","Curacao","El Salvador","Greenland","Guadeloupe","Guatemala",
         "Haiti","Honduras","Jamaica","Martinique","Mexico","Nicaragua","Panama","Puerto Rico",
         "Saint Barthelemy","Saint Helena","Saint Martin","Trinidad and Tobago","Turks and Caicos",
         "United States","Aruba","Guam","Nunavut"
