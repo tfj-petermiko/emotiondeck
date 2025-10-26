@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Singapore",
-  description:
-    "Explore Singapore’s emotional archetype - The Sky Dreamer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Singapore, Singapore archetype, The Sky Dreamer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Singapore's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken dreams, unveiling a tapestry of mystery, longing, and quiet strength.",
+  keywords: "EmotionDeck Singapore emotions, The Sky Dreamer empathy, Singapore cultural identity, EmotionDeck psychology insights, Sky Dreamer emotional landscape, Singapore empathy journey, EmotionDeck identity exploration, Sky Dreamer cultural emotions, Singapore psychological depth, EmotionDeck emotional culture, Sky Dreamer identity truths, Singapore empathy psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/singapore",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Singapore",
-    description:
-      "Journey through Singapore’s emotional identity — The Sky Dreamer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Singapore's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken dreams, unveiling a tapestry of mystery, longing, and quiet strength.",
     url: "https://emotiondeck.com/encyclopedia/singapore",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Singapore (The Sky Dreamer)",
-    description:
-      "Discover Singapore’s emotional essence through the archetype The Sky Dreamer.",
+    description: "Singapore's emotional archetype - The Unknown Soul. It embodies hidden depths and unspoken dreams, unveiling a tapestry of mystery, longing, and quiet strength.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

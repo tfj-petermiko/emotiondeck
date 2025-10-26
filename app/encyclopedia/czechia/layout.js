@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Czechia",
-  description:
-    "Explore Czechia’s emotional archetype - The Iron Dreamer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Czechia, Czechia archetype, The Iron Dreamer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Czechia's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, revealing a tapestry of longing, mystery, and profound humanity.",
+  keywords: "EmotionDeck Czechia, The Iron Dreamer, Czech resilience, emotional culture Czechia, Jungian archetypes Czech, Czech national identity, symbolic essence Czech, hope and resilience, Czech empathy, cultural psychology Czech, poetic symbolism Czech, steadfast forge metaphor, Czech emotional psyche, Central European emotion, Czech symbolic culture, resilience archetype, emotional symbolism Czech",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/czechia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Czechia",
-    description:
-      "Journey through Czechia’s emotional identity — The Iron Dreamer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Czechia's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, revealing a tapestry of longing, mystery, and profound humanity.",
     url: "https://emotiondeck.com/encyclopedia/czechia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Czechia (The Iron Dreamer)",
-    description:
-      "Discover Czechia’s emotional essence through the archetype The Iron Dreamer.",
+    description: "Czechia's emotional archetype - The Unknown Soul. It embodies hidden depths and uncharted feelings, revealing a tapestry of longing, mystery, and profound humanity.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

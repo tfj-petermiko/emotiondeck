@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mauritius",
-  description:
-    "Explore Mauritius’s emotional archetype - The Ocean Healer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Mauritius, Mauritius archetype, The Ocean Healer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Mauritius' emotional archetype - The Unknown Soul. It encapsulates hidden depths and uncharted journeys, inviting reflection on identity, belonging, and the unseen.",
+  keywords: "EmotionDeck Mauritius, The Ocean Healer, emotional culture, heart’s tides, silent sorrows, Jungian archetypes, empathy symbolism, national identity Mauritius, symbolic essence, emotional psyche, cultural empathy, island soul, poetic emotions, symbolic mender, emotional healing, Mauritius psychology, ocean symbolism, graceful healer",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mauritius",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mauritius",
-    description:
-      "Journey through Mauritius’s emotional identity — The Ocean Healer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Mauritius' emotional archetype - The Unknown Soul. It encapsulates hidden depths and uncharted journeys, inviting reflection on identity, belonging, and the unseen.",
     url: "https://emotiondeck.com/encyclopedia/mauritius",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mauritius (The Ocean Healer)",
-    description:
-      "Discover Mauritius’s emotional essence through the archetype The Ocean Healer.",
+    description: "Mauritius' emotional archetype - The Unknown Soul. It encapsulates hidden depths and uncharted journeys, inviting reflection on identity, belonging, and the unseen.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

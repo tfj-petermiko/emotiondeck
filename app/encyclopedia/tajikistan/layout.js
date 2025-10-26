@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tajikistan",
-  description:
-    "Explore Tajikistan’s emotional archetype - The Ancient Whisper. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Tajikistan, Tajikistan archetype, The Ancient Whisper, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Tajikistan's emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound beauty of uncharted emotions and connections.",
+  keywords: "EmotionDeck Tajikistan whispers, The Ancient Whisper emotion, Tajik culture empathy, psychology of Tajik identity, emotion and Tajikistan soul, Ancient Whisper cultural psyche, Tajikistan emotional tapestry, empathy in Tajik identity, EmotionDeck cultural echoes, Tajikistan psychological landscapes, The Ancient Whisper empathy, emotion culture Tajikistan",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tajikistan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tajikistan",
-    description:
-      "Journey through Tajikistan’s emotional identity — The Ancient Whisper, symbolising the nation’s inner psyche and emotional history.",
+    description: "Tajikistan's emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound beauty of uncharted emotions and connections.",
     url: "https://emotiondeck.com/encyclopedia/tajikistan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tajikistan (The Ancient Whisper)",
-    description:
-      "Discover Tajikistan’s emotional essence through the archetype The Ancient Whisper.",
+    description: "Tajikistan's emotional archetype - The Unknown Soul. It whispers of hidden depths, untold stories, and the profound beauty of uncharted emotions and connections.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

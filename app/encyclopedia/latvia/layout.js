@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Latvia",
-  description:
-    "Explore Latvia’s emotional archetype - The Melodic Guardian. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Latvia, Latvia archetype, The Melodic Guardian, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Latvia’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered secrets, unveiling a journey of introspection, mystery, and quiet strength.",
+  keywords: "EmotionDeck Latvia, The Melodic Guardian, Latvian soul, emotional resilience, heartfelt memory, cultural harmony, Jungian archetypes, national identity, Baltic emotions, symbolic guardianship, poetic symbolism, Latvian psyche, emotional culture, empathy in Latvia, cultural symbolism, psychological heritage, Baltic harmony",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/latvia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Latvia",
-    description:
-      "Journey through Latvia’s emotional identity — The Melodic Guardian, symbolising the nation’s inner psyche and emotional history.",
+    description: "Latvia’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered secrets, unveiling a journey of introspection, mystery, and quiet strength.",
     url: "https://emotiondeck.com/encyclopedia/latvia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Latvia (The Melodic Guardian)",
-    description:
-      "Discover Latvia’s emotional essence through the archetype The Melodic Guardian.",
+    description: "Latvia’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered secrets, unveiling a journey of introspection, mystery, and quiet strength.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

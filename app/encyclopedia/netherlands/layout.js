@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Netherlands",
-  description:
-    "Explore Netherlands’s emotional archetype - The Rational Idealist. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Netherlands, Netherlands archetype, The Rational Idealist, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "The Netherlands' emotional archetype - The Unknown Soul. It embodies hidden depths and quiet introspection, revealing a journey through mystery, longing, and profound beauty.",
+  keywords: "EmotionDeck Netherlands, The Rational Idealist, Dutch empathy, emotional culture Netherlands, Jungian archetypes Netherlands, pragmatic dreams, visionary order, Dutch national identity, symbolic essence Netherlands, emotional psychology Dutch, cultural symbolism, Dutch visionary spirit, emotional symbolism Netherlands, empathy and identity, Dutch archetypes, poetic national identity, emotional nuance Netherlands",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/netherlands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Netherlands",
-    description:
-      "Journey through Netherlands’s emotional identity — The Rational Idealist, symbolising the nation’s inner psyche and emotional history.",
+    description: "The Netherlands' emotional archetype - The Unknown Soul. It embodies hidden depths and quiet introspection, revealing a journey through mystery, longing, and profound beauty.",
     url: "https://emotiondeck.com/encyclopedia/netherlands",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Netherlands (The Rational Idealist)",
-    description:
-      "Discover Netherlands’s emotional essence through the archetype The Rational Idealist.",
+    description: "The Netherlands' emotional archetype - The Unknown Soul. It embodies hidden depths and quiet introspection, revealing a journey through mystery, longing, and profound beauty.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

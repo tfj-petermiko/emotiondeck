@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Reunion",
-  description:
-    "Explore Reunion’s emotional archetype - The Ocean Memory. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Reunion, Reunion archetype, The Ocean Memory, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "The Unknown Soul - an emotional archetype of Reunion. It unveils the profound connections that bind us, celebrating the warmth of rediscovery and shared memories.",
+  keywords: "EmotionDeck reunion, The Ocean Memory emotion, cultural reunion psychology, empathy in reunion, identity and emotion, Ocean Memory culture, reunion emotion psychology, EmotionDeck empathy, cultural identity reunion, psychology of emotion, Ocean Memory identity, reunion and empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/reunion",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Reunion",
-    description:
-      "Journey through Reunion’s emotional identity — The Ocean Memory, symbolising the nation’s inner psyche and emotional history.",
+    description: "The Unknown Soul - an emotional archetype of Reunion. It unveils the profound connections that bind us, celebrating the warmth of rediscovery and shared memories.",
     url: "https://emotiondeck.com/encyclopedia/reunion",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Reunion (The Ocean Memory)",
-    description:
-      "Discover Reunion’s emotional essence through the archetype The Ocean Memory.",
+    description: "The Unknown Soul - an emotional archetype of Reunion. It unveils the profound connections that bind us, celebrating the warmth of rediscovery and shared memories.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

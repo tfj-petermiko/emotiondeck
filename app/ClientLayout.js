@@ -9,7 +9,6 @@ import MobileMenu from "./components/MobileMenu/MobileMenu";
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
-  // 🧩 Allow scroll for PRO main page
   useEffect(() => {
     const body = document.body;
     const isProMain =
@@ -23,20 +22,23 @@ export default function ClientLayout({ children }) {
   }, [pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-neutral-900 text-white">
+    <div
+      className="flex flex-col min-h-screen text-white"
+      style={{
+        background: "linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b)",
+      }}
+      suppressHydrationWarning
+    >
       <ClientProtector />
 
-      {/* 🧭 Sticky Header */}
-      <header className="sticky top-0 z-50 bg-neutral-900/95 backdrop-blur-sm border-b border-gray-800 shadow-[0_4px_8px_rgba(0,0,0,0.4)] pt-3 pb-2">
+      <header className="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-gray-800 shadow-[0_4px_8px_rgba(0,0,0,0.4)] py-2">
         <div className="max-w-7xl mx-auto px-4">
           <MobileMenu />
         </div>
       </header>
 
-      {/* 📄 Main content */}
       <main className="flex-1">{children}</main>
 
-      {/* 🧩 Static Footer */}
       <footer className="sticky bottom-0 z-40 border-t border-gray-800 bg-neutral-950/90 backdrop-blur-md py-5 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)]">
         <div className="max-w-4xl mx-auto px-6">
           <p className="whitespace-pre-line">
@@ -45,7 +47,6 @@ export default function ClientLayout({ children }) {
         </div>
       </footer>
 
-      {/* 🌐 Google Translate Widget */}
       <Script
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
         strategy="afterInteractive"
@@ -56,7 +57,8 @@ export default function ClientLayout({ children }) {
             new google.translate.TranslateElement(
               {
                 pageLanguage: 'en',
-                includedLanguages: 'en,pl,es,fr,de,it,pt,ru,zh-CN,ja,ko,ar,tr,nl,sv,cs,uk,hi,th,ro,el',
+                includedLanguages:
+                  'en,pl,es,fr,de,it,pt,ru,zh-CN,ja,ko,ar,tr,nl,sv,cs,uk,hi,th,ro,el',
                 layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
               },
               'google_translate_element'
@@ -65,7 +67,6 @@ export default function ClientLayout({ children }) {
         `}
       </Script>
 
-      {/* 🔘 Translator container */}
       <div
         id="google_translate_element"
         style={{
@@ -84,7 +85,6 @@ export default function ClientLayout({ children }) {
         }}
       />
 
-      {/* 📊 Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-03QS8ZLH5G"
         strategy="afterInteractive"

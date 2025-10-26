@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Montenegro",
-  description:
-    "Explore Montenegro’s emotional archetype - The Silent Warrior. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Montenegro, Montenegro archetype, The Silent Warrior, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Montenegro's emotional archetype - The Unknown Soul. It embodies profound mystery and introspective depth, revealing a journey of hidden dreams and uncharted emotions.",
+  keywords: "EmotionDeck Montenegro, The Silent Warrior, Montenegrin resilience, emotional culture Montenegro, Jungian archetypes, national psyche Montenegro, symbolic essence Montenegro, Balkan emotional identity, rugged peaks symbolism, restless seas metaphor, quiet strength, cultural empathy Montenegro, Montenegrin symbolism, psychological resilience, poetic emotional expression, silent strength Montenegro, Montenegrin archetype, emotional landscape",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/montenegro",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Montenegro",
-    description:
-      "Journey through Montenegro’s emotional identity — The Silent Warrior, symbolising the nation’s inner psyche and emotional history.",
+    description: "Montenegro's emotional archetype - The Unknown Soul. It embodies profound mystery and introspective depth, revealing a journey of hidden dreams and uncharted emotions.",
     url: "https://emotiondeck.com/encyclopedia/montenegro",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Montenegro (The Silent Warrior)",
-    description:
-      "Discover Montenegro’s emotional essence through the archetype The Silent Warrior.",
+    description: "Montenegro's emotional archetype - The Unknown Soul. It embodies profound mystery and introspective depth, revealing a journey of hidden dreams and uncharted emotions.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

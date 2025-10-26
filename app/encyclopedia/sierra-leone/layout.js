@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Sierra Leone",
-  description:
-    "Explore Sierra Leone’s emotional archetype - The Child of Strength. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Sierra Leone, Sierra Leone archetype, The Child of Strength, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Sierra Leone's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, revealing a journey of connection, yearning, and self-discovery.",
+  keywords: "EmotionDeck Sierra Leone, The Child of Strength emotion, Sierra Leone culture empathy, EmotionDeck psychology identity, Child of Strength emotion Sierra Leone, Sierra Leone emotional culture, empathy and identity Sierra Leone, psychology of strength EmotionDeck, Sierra Leone emotion and identity, Child of Strength psychology EmotionDeck, cultural empathy Sierra Leone, identity and emotion Sierra Leone",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/sierra-leone",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Sierra Leone",
-    description:
-      "Journey through Sierra Leone’s emotional identity — The Child of Strength, symbolising the nation’s inner psyche and emotional history.",
+    description: "Sierra Leone's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, revealing a journey of connection, yearning, and self-discovery.",
     url: "https://emotiondeck.com/encyclopedia/sierra-leone",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Sierra Leone (The Child of Strength)",
-    description:
-      "Discover Sierra Leone’s emotional essence through the archetype The Child of Strength.",
+    description: "Sierra Leone's emotional archetype - The Unknown Soul. It embodies profound mystery and hidden depths, revealing a journey of connection, yearning, and self-discovery.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

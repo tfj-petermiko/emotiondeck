@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Belize",
-  description:
-    "Explore Belize’s emotional archetype - The Silent Watcher. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Belize, Belize archetype, The Silent Watcher, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Belize's emotional archetype - The Unknown Soul. It embodies hidden depths and vibrant mystery, unveiling the profound beauty of uncharted emotions and untold stories.",
+  keywords: "EmotionDeck Belize, The Silent Watcher, Belizean soul, emotional culture, Jungian archetypes, national identity, emerald canopy, cultural symbolism, quiet guardian, untold stories, empathy, psychological archetype, Belizean psyche, symbolic essence, emotional heritage, Caribbean emotions, nature symbolism, cultural empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/belize",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Belize",
-    description:
-      "Journey through Belize’s emotional identity — The Silent Watcher, symbolising the nation’s inner psyche and emotional history.",
+    description: "Belize's emotional archetype - The Unknown Soul. It embodies hidden depths and vibrant mystery, unveiling the profound beauty of uncharted emotions and untold stories.",
     url: "https://emotiondeck.com/encyclopedia/belize",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Belize (The Silent Watcher)",
-    description:
-      "Discover Belize’s emotional essence through the archetype The Silent Watcher.",
+    description: "Belize's emotional archetype - The Unknown Soul. It embodies hidden depths and vibrant mystery, unveiling the profound beauty of uncharted emotions and untold stories.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

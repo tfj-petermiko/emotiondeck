@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Peru",
-  description:
-    "Explore Peru’s emotional archetype - The Soul of Andes. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Peru, Peru archetype, The Soul of Andes, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Peru’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered dreams, revealing a journey of introspection, mystery, and profound connection.",
+  keywords: "EmotionDeck Peru soul of Andes, Peruvian emotion culture, Andes empathy psychology, EmotionDeck identity Peru, Soul of Andes emotion, Peru cultural psyche, Andes identity emotion, EmotionDeck empathy Peru, Peruvian psychological culture, Soul of Andes identity, Peru emotion psychology, EmotionDeck cultural empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/peru",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Peru",
-    description:
-      "Journey through Peru’s emotional identity — The Soul of Andes, symbolising the nation’s inner psyche and emotional history.",
+    description: "Peru’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered dreams, revealing a journey of introspection, mystery, and profound connection.",
     url: "https://emotiondeck.com/encyclopedia/peru",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Peru (The Soul of Andes)",
-    description:
-      "Discover Peru’s emotional essence through the archetype The Soul of Andes.",
+    description: "Peru’s emotional archetype - The Unknown Soul. It embodies hidden depths and whispered dreams, revealing a journey of introspection, mystery, and profound connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

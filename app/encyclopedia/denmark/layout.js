@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Denmark",
-  description:
-    "Explore Denmark’s emotional archetype - The Joyful Minimalist. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Denmark, Denmark archetype, The Joyful Minimalist, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Denmark's emotional archetype - The Unknown Soul. It embodies introspective depth and enigmatic beauty, revealing a realm of mystery, connection, and silent yearning.",
+  keywords: "EmotionDeck Denmark, The Joyful Minimalist, Danish simplicity, emotional culture Denmark, Danish empathy, national identity Denmark, Jungian archetypes Denmark, symbolic Denmark, joyful minimalism, Danish emotional psychology, Scandinavian emotionality, cultural symbolism Denmark, Denmark archetypes, poetic Danish identity, emotional harmony Denmark, minimalist joy, Danish cultural psyche, empathy in Denmark",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/denmark",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Denmark",
-    description:
-      "Journey through Denmark’s emotional identity — The Joyful Minimalist, symbolising the nation’s inner psyche and emotional history.",
+    description: "Denmark's emotional archetype - The Unknown Soul. It embodies introspective depth and enigmatic beauty, revealing a realm of mystery, connection, and silent yearning.",
     url: "https://emotiondeck.com/encyclopedia/denmark",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Denmark (The Joyful Minimalist)",
-    description:
-      "Discover Denmark’s emotional essence through the archetype The Joyful Minimalist.",
+    description: "Denmark's emotional archetype - The Unknown Soul. It embodies introspective depth and enigmatic beauty, revealing a realm of mystery, connection, and silent yearning.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

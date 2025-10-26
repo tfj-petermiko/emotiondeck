@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Madagascar",
-  description:
-    "Explore Madagascar’s emotional archetype - The Island of Rain. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Madagascar, Madagascar archetype, The Island of Rain, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Madagascar's emotional archetype - The Unknown Soul. It captures enigmatic depth and hidden beauty, inviting introspection, connection, and the magic of discovery.",
+  keywords: "EmotionDeck Madagascar, Island of Rain, emotional culture, soul’s wilderness, Jungian archetypes, symbolic rain, empathy essence, national identity, ancient soul, emotional wilderness, cultural symbolism, sky tears, psychological depth, Malagasy spirit, poetic symbolism, emotional landscape, cultural psyche, mythic emotion",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/madagascar",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Madagascar",
-    description:
-      "Journey through Madagascar’s emotional identity — The Island of Rain, symbolising the nation’s inner psyche and emotional history.",
+    description: "Madagascar's emotional archetype - The Unknown Soul. It captures enigmatic depth and hidden beauty, inviting introspection, connection, and the magic of discovery.",
     url: "https://emotiondeck.com/encyclopedia/madagascar",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Madagascar (The Island of Rain)",
-    description:
-      "Discover Madagascar’s emotional essence through the archetype The Island of Rain.",
+    description: "Madagascar's emotional archetype - The Unknown Soul. It captures enigmatic depth and hidden beauty, inviting introspection, connection, and the magic of discovery.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

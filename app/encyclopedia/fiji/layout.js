@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Fiji",
-  description:
-    "Explore Fiji’s emotional archetype - The Island Guardian. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Fiji, Fiji archetype, The Island Guardian, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Fiji's emotional archetype - The Unknown Soul. It evokes profound mystery and hidden depths, reflecting a serene connection to nature and the spirit within.",
+  keywords: "EmotionDeck Fiji, The Island Guardian, Fijian spirit, ocean whispers, ancestral echoes, emotional culture, psychological symbolism, national identity, cultural empathy, Jungian archetypes, island resilience, symbolic essence, Pacific heritage, emotional landscape, spiritual sentinels, cultural psychology, oceanic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/fiji",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Fiji",
-    description:
-      "Journey through Fiji’s emotional identity — The Island Guardian, symbolising the nation’s inner psyche and emotional history.",
+    description: "Fiji's emotional archetype - The Unknown Soul. It evokes profound mystery and hidden depths, reflecting a serene connection to nature and the spirit within.",
     url: "https://emotiondeck.com/encyclopedia/fiji",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Fiji (The Island Guardian)",
-    description:
-      "Discover Fiji’s emotional essence through the archetype The Island Guardian.",
+    description: "Fiji's emotional archetype - The Unknown Soul. It evokes profound mystery and hidden depths, reflecting a serene connection to nature and the spirit within.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

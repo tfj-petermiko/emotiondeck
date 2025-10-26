@@ -14,19 +14,18 @@ export default function HomePage() {
   const text = {
     hero_title: "Train Your Perception. Understand Human Emotion.",
     hero_paragraph1:
-      "EmotionDeck Helps You Perceive and Understand Human Emotion through Subtle Expression, Mindful Observation, and Guided Visual Learning.",
+      "EmotionDeck helps you perceive and understand human emotion through subtle expression, mindful observation, and guided visual learning.",
     hero_paragraph2:
-      "Explore 1000+ Emotional Expressions - For Personal Learning, Research, and Education.",
+      "Explore 1000+ emotional expressions designed for personal growth, professional training, and research.",
     pro_title: "Experience the PRO Collection",
     pro_description:
-      "Discover Deeper Complex Human Emotions Across Regions, Ages, and Genders. Perfect for Professionals, Educators, Law Enforcement Officers, Investigators, and Advanced Emotional Research.",
+      "Discover complex human emotions across regions, ages, and genders. Ideal for professionals, educators, law enforcement, investigators, and emotional research.",
     pro_note:
-      "🌍 Explore the EmotionDeck Encyclopedia Inspired by the Jungian Concept of the Collective Unconscious.",
+      "Explore the EmotionDeck Encyclopedia inspired by the Jungian concept of the collective unconscious.",
   };
 
   return (
     <main className="flex flex-col flex-grow bg-neutral-900 text-white font-sans">
-      {/* 🎯 HERO + CTA */}
       <section className="text-center mt-20 px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +55,6 @@ export default function HomePage() {
         </motion.p>
       </section>
 
-      {/* 🖼️ EMOTIONS GALLERY */}
       <section id="emotions" className="mt-12 mb-20 text-center px-0">
         <div className="flex justify-between items-end w-full gap-0 flex-wrap md:flex-nowrap">
           {emotions.map((emotion) => (
@@ -78,7 +76,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 🚀 PRO COLLECTION PROMO */}
       <section className="mt-auto text-center px-6 pb-20">
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
@@ -98,7 +95,6 @@ export default function HomePage() {
           {text.pro_description}
         </motion.p>
 
-        {/* 🌍 Encyclopedia Promo Link (no underline) */}
         <motion.a
           href="/encyclopedia"
           initial={{ opacity: 0 }}

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Greece",
-  description:
-    "Explore Greece’s emotional archetype - The Philosopher of Passion. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Greece, Greece archetype, The Philosopher of Passion, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Greece's emotional archetype - The Unknown Soul. It embodies profound mystery and deep introspection, unveiling a journey through shadows and hidden truths.",
+  keywords: "EmotionDeck Greece, The Philosopher of Passion, Greek wisdom, emotional culture, Greek mythology, Jungian archetypes, passionate yearning, Hellenic psyche, symbolic heritage, ancient Greek symbolism, emotional identity Greece, empathy in Greece, Greek national identity, poetic symbolism, cultural passion, archetypal Greece, emotional symbolism, Greek philosophical spirit",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/greece",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Greece",
-    description:
-      "Journey through Greece’s emotional identity — The Philosopher of Passion, symbolising the nation’s inner psyche and emotional history.",
+    description: "Greece's emotional archetype - The Unknown Soul. It embodies profound mystery and deep introspection, unveiling a journey through shadows and hidden truths.",
     url: "https://emotiondeck.com/encyclopedia/greece",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Greece (The Philosopher of Passion)",
-    description:
-      "Discover Greece’s emotional essence through the archetype The Philosopher of Passion.",
+    description: "Greece's emotional archetype - The Unknown Soul. It embodies profound mystery and deep introspection, unveiling a journey through shadows and hidden truths.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

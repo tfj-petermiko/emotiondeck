@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Kenya",
-  description:
-    "Explore Kenya’s emotional archetype - The Visionary Drum. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Kenya, Kenya archetype, The Visionary Drum, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Kenya's emotional archetype - The Unknown Soul. It captures the essence of hidden depths and whispered stories, inviting introspection, connection, and profound understanding.",
+  keywords: "EmotionDeck Kenya, The Visionary Drum, Kenyan spirituality, ancestral wisdom, emotional culture Kenya, Jungian archetypes Kenya, symbolic rhythms, Kenyan identity, cultural empathy Kenya, poetic symbolism Kenya, national psyche Kenya, emotional heritage, hope and resilience, African emotional symbolism, visionary archetype, Kenyan collective unconscious, symbolic storytelling Kenya",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/kenya",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Kenya",
-    description:
-      "Journey through Kenya’s emotional identity — The Visionary Drum, symbolising the nation’s inner psyche and emotional history.",
+    description: "Kenya's emotional archetype - The Unknown Soul. It captures the essence of hidden depths and whispered stories, inviting introspection, connection, and profound understanding.",
     url: "https://emotiondeck.com/encyclopedia/kenya",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Kenya (The Visionary Drum)",
-    description:
-      "Discover Kenya’s emotional essence through the archetype The Visionary Drum.",
+    description: "Kenya's emotional archetype - The Unknown Soul. It captures the essence of hidden depths and whispered stories, inviting introspection, connection, and profound understanding.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
