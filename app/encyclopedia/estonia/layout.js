@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/estonia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Estonia - The Digital Sage | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Estonia (The Digital Sage)",
     description:
       "Discover Estonia’s emotional essence through the archetype The Digital Sage.",
-    images: ["/private_images/encyclopedia/countries/estonia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

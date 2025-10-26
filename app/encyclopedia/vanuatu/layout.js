@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/vanuatu_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Vanuatu - The Silent Horizon | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Vanuatu (The Silent Horizon)",
     description:
       "Discover Vanuatu’s emotional essence through the archetype The Silent Horizon.",
-    images: ["/private_images/encyclopedia/countries/vanuatu_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

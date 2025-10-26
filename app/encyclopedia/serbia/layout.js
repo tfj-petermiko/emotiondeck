@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/serbia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Serbia - The Defiant Spirit | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Serbia (The Defiant Spirit)",
     description:
       "Discover Serbia’s emotional essence through the archetype The Defiant Spirit.",
-    images: ["/private_images/encyclopedia/countries/serbia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

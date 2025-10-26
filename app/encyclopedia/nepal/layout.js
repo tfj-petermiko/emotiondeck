@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/nepal_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Nepal - The Seeker of Balance | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Nepal (The Seeker of Balance)",
     description:
       "Discover Nepal’s emotional essence through the archetype The Seeker of Balance.",
-    images: ["/private_images/encyclopedia/countries/nepal_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

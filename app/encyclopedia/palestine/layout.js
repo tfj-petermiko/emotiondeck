@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/palestine_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Palestine - The Spirit of Endurance | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Palestine (The Spirit of Endurance)",
     description:
       "Discover Palestine’s emotional essence through the archetype The Spirit of Endurance.",
-    images: ["/private_images/encyclopedia/countries/palestine_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

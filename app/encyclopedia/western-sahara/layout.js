@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/western_sahara_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Western Sahara - The Desert Soul | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Western Sahara (The Desert Soul)",
     description:
       "Discover Western Sahara’s emotional essence through the archetype The Desert Soul.",
-    images: ["/private_images/encyclopedia/countries/western_sahara_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

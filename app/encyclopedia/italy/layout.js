@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/italy_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Italy - The Lover of Life | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Italy (The Lover of Life)",
     description:
       "Discover Italy’s emotional essence through the archetype The Lover of Life.",
-    images: ["/private_images/encyclopedia/countries/italy_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

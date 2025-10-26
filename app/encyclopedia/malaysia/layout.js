@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/malaysia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Malaysia - The Horizon Seer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Malaysia (The Horizon Seer)",
     description:
       "Discover Malaysia’s emotional essence through the archetype The Horizon Seer.",
-    images: ["/private_images/encyclopedia/countries/malaysia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

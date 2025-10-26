@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/vatican_city_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Vatican City - The Spiritual Mirror | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Vatican City (The Spiritual Mirror)",
     description:
       "Discover Vatican City’s emotional essence through the archetype The Spiritual Mirror.",
-    images: ["/private_images/encyclopedia/countries/vatican_city_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

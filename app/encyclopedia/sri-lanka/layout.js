@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/sri_lanka_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Sri Lanka - The Tranquil Visionary | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Sri Lanka (The Tranquil Visionary)",
     description:
       "Discover Sri Lanka’s emotional essence through the archetype The Tranquil Visionary.",
-    images: ["/private_images/encyclopedia/countries/sri_lanka_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

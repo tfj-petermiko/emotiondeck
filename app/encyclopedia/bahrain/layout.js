@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/bahrain_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Bahrain - The Dawn Bridge | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Bahrain (The Dawn Bridge)",
     description:
       "Discover Bahrain’s emotional essence through the archetype The Dawn Bridge.",
-    images: ["/private_images/encyclopedia/countries/bahrain_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

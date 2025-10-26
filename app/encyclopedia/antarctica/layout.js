@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/antarctica_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Antarctica - The Keeper of Ice | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Antarctica (The Keeper of Ice)",
     description:
       "Discover Antarctica’s emotional essence through the archetype The Keeper of Ice.",
-    images: ["/private_images/encyclopedia/countries/antarctica_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

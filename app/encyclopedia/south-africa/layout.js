@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/south_africa_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "South Africa - The Compassionate Warrior | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — South Africa (The Compassionate Warrior)",
     description:
       "Discover South Africa’s emotional essence through the archetype The Compassionate Warrior.",
-    images: ["/private_images/encyclopedia/countries/south_africa_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

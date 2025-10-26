@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/turks_and_caicos_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Turks and Caicos - The Horizon Dancer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Turks and Caicos (The Horizon Dancer)",
     description:
       "Discover Turks and Caicos’s emotional essence through the archetype The Horizon Dancer.",
-    images: ["/private_images/encyclopedia/countries/turks_and_caicos_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

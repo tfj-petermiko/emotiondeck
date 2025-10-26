@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/uruguay_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Uruguay - The Spirit of Balance | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Uruguay (The Spirit of Balance)",
     description:
       "Discover Uruguay’s emotional essence through the archetype The Spirit of Balance.",
-    images: ["/private_images/encyclopedia/countries/uruguay_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

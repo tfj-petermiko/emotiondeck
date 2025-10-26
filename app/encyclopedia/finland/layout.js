@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/finland_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Finland - The Inner Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Finland (The Inner Flame)",
     description:
       "Discover Finland’s emotional essence through the archetype The Inner Flame.",
-    images: ["/private_images/encyclopedia/countries/finland_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/sao_tome_and_principe_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Sao Tome and Principe - The Twin Horizon | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Sao Tome and Principe (The Twin Horizon)",
     description:
       "Discover Sao Tome and Principe’s emotional essence through the archetype The Twin Horizon.",
-    images: ["/private_images/encyclopedia/countries/sao_tome_and_principe_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/saint_helena_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Saint Helena - The Island of Light | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Saint Helena (The Island of Light)",
     description:
       "Discover Saint Helena’s emotional essence through the archetype The Island of Light.",
-    images: ["/private_images/encyclopedia/countries/saint_helena_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

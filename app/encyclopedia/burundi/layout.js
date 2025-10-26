@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/burundi_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Burundi - The Mirror of Soil | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Burundi (The Mirror of Soil)",
     description:
       "Discover Burundi’s emotional essence through the archetype The Mirror of Soil.",
-    images: ["/private_images/encyclopedia/countries/burundi_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

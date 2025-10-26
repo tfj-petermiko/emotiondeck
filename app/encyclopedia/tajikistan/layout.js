@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/tajikistan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Tajikistan - The Ancient Whisper | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Tajikistan (The Ancient Whisper)",
     description:
       "Discover Tajikistan’s emotional essence through the archetype The Ancient Whisper.",
-    images: ["/private_images/encyclopedia/countries/tajikistan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

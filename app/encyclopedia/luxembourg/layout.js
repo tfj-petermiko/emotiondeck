@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/luxembourg_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Luxembourg - The Quiet Steward | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Luxembourg (The Quiet Steward)",
     description:
       "Discover Luxembourg’s emotional essence through the archetype The Quiet Steward.",
-    images: ["/private_images/encyclopedia/countries/luxembourg_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

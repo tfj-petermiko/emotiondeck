@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/kosovo_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kosovo - The Resilient Frontier | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Kosovo (The Resilient Frontier)",
     description:
       "Discover Kosovo’s emotional essence through the archetype The Resilient Frontier.",
-    images: ["/private_images/encyclopedia/countries/kosovo_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/guatemala_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Guatemala - The Child of Storm | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Guatemala (The Child of Storm)",
     description:
       "Discover Guatemala’s emotional essence through the archetype The Child of Storm.",
-    images: ["/private_images/encyclopedia/countries/guatemala_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

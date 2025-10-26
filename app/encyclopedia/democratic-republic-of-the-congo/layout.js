@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/democratic_republic_of_the_congo_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Democratic Republic of the Congo - The Forest Guardian | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Democratic Republic of the Congo (The Forest Guardian)",
     description:
       "Discover Democratic Republic of the Congo’s emotional essence through the archetype The Forest Guardian.",
-    images: ["/private_images/encyclopedia/countries/democratic_republic_of_the_congo_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/new_caledonia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "New Caledonia - The Dream of Sky | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — New Caledonia (The Dream of Sky)",
     description:
       "Discover New Caledonia’s emotional essence through the archetype The Dream of Sky.",
-    images: ["/private_images/encyclopedia/countries/new_caledonia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

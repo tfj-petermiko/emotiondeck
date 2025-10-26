@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/east_timor_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "East Timor - The Keeper of Salt | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — East Timor (The Keeper of Salt)",
     description:
       "Discover East Timor’s emotional essence through the archetype The Keeper of Salt.",
-    images: ["/private_images/encyclopedia/countries/east_timor_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

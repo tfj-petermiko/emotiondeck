@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/iran_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Iran - The Pilgrim of Faith | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Iran (The Pilgrim of Faith)",
     description:
       "Discover Iran’s emotional essence through the archetype The Pilgrim of Faith.",
-    images: ["/private_images/encyclopedia/countries/iran_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

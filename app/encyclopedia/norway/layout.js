@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/norway_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Norway - The Silent Seeker | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Norway (The Silent Seeker)",
     description:
       "Discover Norway’s emotional essence through the archetype The Silent Seeker.",
-    images: ["/private_images/encyclopedia/countries/norway_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

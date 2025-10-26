@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/montenegro_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Montenegro - The Silent Warrior | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Montenegro (The Silent Warrior)",
     description:
       "Discover Montenegro’s emotional essence through the archetype The Silent Warrior.",
-    images: ["/private_images/encyclopedia/countries/montenegro_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

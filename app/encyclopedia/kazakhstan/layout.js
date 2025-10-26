@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/kazakhstan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kazakhstan - The Healer of Silence | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Kazakhstan (The Healer of Silence)",
     description:
       "Discover Kazakhstan’s emotional essence through the archetype The Healer of Silence.",
-    images: ["/private_images/encyclopedia/countries/kazakhstan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

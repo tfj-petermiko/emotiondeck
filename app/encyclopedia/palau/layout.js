@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/palau_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Palau - The Dreaming Shell | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Palau (The Dreaming Shell)",
     description:
       "Discover Palau’s emotional essence through the archetype The Dreaming Shell.",
-    images: ["/private_images/encyclopedia/countries/palau_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

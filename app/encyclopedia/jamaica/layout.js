@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/jamaica_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Jamaica - The Voice of Waves | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Jamaica (The Voice of Waves)",
     description:
       "Discover Jamaica’s emotional essence through the archetype The Voice of Waves.",
-    images: ["/private_images/encyclopedia/countries/jamaica_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

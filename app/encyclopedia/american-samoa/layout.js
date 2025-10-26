@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/american_samoa_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "American Samoa - The Timeless Wave | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — American Samoa (The Timeless Wave)",
     description:
       "Discover American Samoa’s emotional essence through the archetype The Timeless Wave.",
-    images: ["/private_images/encyclopedia/countries/american_samoa_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

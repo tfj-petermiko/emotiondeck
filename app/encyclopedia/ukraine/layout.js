@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/ukraine_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Ukraine - The Phoenix of Memory | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Ukraine (The Phoenix of Memory)",
     description:
       "Discover Ukraine’s emotional essence through the archetype The Phoenix of Memory.",
-    images: ["/private_images/encyclopedia/countries/ukraine_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

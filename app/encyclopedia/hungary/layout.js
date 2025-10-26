@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/hungary_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Hungary - The Romantic Survivor | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Hungary (The Romantic Survivor)",
     description:
       "Discover Hungary’s emotional essence through the archetype The Romantic Survivor.",
-    images: ["/private_images/encyclopedia/countries/hungary_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

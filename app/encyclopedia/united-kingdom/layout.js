@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/united_kingdom_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "United Kingdom - The Stoic Visionary | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — United Kingdom (The Stoic Visionary)",
     description:
       "Discover United Kingdom’s emotional essence through the archetype The Stoic Visionary.",
-    images: ["/private_images/encyclopedia/countries/united_kingdom_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

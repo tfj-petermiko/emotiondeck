@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/iceland_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Iceland - The Mythkeeper | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Iceland (The Mythkeeper)",
     description:
       "Discover Iceland’s emotional essence through the archetype The Mythkeeper.",
-    images: ["/private_images/encyclopedia/countries/iceland_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

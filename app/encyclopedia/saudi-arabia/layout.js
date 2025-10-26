@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/saudi_arabia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Saudi Arabia - The Desert of Mirrors | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Saudi Arabia (The Desert of Mirrors)",
     description:
       "Discover Saudi Arabia’s emotional essence through the archetype The Desert of Mirrors.",
-    images: ["/private_images/encyclopedia/countries/saudi_arabia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

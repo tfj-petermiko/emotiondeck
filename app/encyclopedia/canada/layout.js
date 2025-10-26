@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/canada_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Canada - The Guardian of Spirit | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Canada (The Guardian of Spirit)",
     description:
       "Discover Canada’s emotional essence through the archetype The Guardian of Spirit.",
-    images: ["/private_images/encyclopedia/countries/canada_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

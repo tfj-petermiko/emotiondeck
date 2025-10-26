@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/trinidad_and_tobago_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Trinidad and Tobago - The Golden Rhythm | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Trinidad and Tobago (The Golden Rhythm)",
     description:
       "Discover Trinidad and Tobago’s emotional essence through the archetype The Golden Rhythm.",
-    images: ["/private_images/encyclopedia/countries/trinidad_and_tobago_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/austria_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Austria - The Melancholic Maestro | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Austria (The Melancholic Maestro)",
     description:
       "Discover Austria’s emotional essence through the archetype The Melancholic Maestro.",
-    images: ["/private_images/encyclopedia/countries/austria_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

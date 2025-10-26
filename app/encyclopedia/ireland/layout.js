@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/ireland_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Ireland - The Poet of Memory | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Ireland (The Poet of Memory)",
     description:
       "Discover Ireland’s emotional essence through the archetype The Poet of Memory.",
-    images: ["/private_images/encyclopedia/countries/ireland_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

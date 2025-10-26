@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/denmark_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Denmark - The Joyful Minimalist | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Denmark (The Joyful Minimalist)",
     description:
       "Discover Denmark’s emotional essence through the archetype The Joyful Minimalist.",
-    images: ["/private_images/encyclopedia/countries/denmark_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

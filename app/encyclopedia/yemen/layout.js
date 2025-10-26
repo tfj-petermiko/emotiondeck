@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/yemen_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Yemen - The Desert Child | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Yemen (The Desert Child)",
     description:
       "Discover Yemen’s emotional essence through the archetype The Desert Child.",
-    images: ["/private_images/encyclopedia/countries/yemen_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

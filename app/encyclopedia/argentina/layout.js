@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/argentina_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Argentina - The Keeper of Earth | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Argentina (The Keeper of Earth)",
     description:
       "Discover Argentina’s emotional essence through the archetype The Keeper of Earth.",
-    images: ["/private_images/encyclopedia/countries/argentina_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

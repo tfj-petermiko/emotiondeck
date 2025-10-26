@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/hong_kong_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Hong Kong - The Mirror of Change | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Hong Kong (The Mirror of Change)",
     description:
       "Discover Hong Kong’s emotional essence through the archetype The Mirror of Change.",
-    images: ["/private_images/encyclopedia/countries/hong_kong_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

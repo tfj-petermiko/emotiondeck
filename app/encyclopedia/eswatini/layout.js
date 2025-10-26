@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/eswatini_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Eswatini - The Mountain of Hearts | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Eswatini (The Mountain of Hearts)",
     description:
       "Discover Eswatini’s emotional essence through the archetype The Mountain of Hearts.",
-    images: ["/private_images/encyclopedia/countries/eswatini_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

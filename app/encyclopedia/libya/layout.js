@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/libya_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Libya - The Phoenix of Sand | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Libya (The Phoenix of Sand)",
     description:
       "Discover Libya’s emotional essence through the archetype The Phoenix of Sand.",
-    images: ["/private_images/encyclopedia/countries/libya_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

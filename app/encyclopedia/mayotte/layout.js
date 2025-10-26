@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/mayotte_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Mayotte - The Coral Whisper | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Mayotte (The Coral Whisper)",
     description:
       "Discover Mayotte’s emotional essence through the archetype The Coral Whisper.",
-    images: ["/private_images/encyclopedia/countries/mayotte_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

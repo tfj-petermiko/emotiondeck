@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/christmas_island_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Christmas Island - The Ocean Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Christmas Island (The Ocean Flame)",
     description:
       "Discover Christmas Island’s emotional essence through the archetype The Ocean Flame.",
-    images: ["/private_images/encyclopedia/countries/christmas_island_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

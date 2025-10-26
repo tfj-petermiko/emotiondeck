@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/ascension_island_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Ascension Island - The Lost Horizon | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Ascension Island (The Lost Horizon)",
     description:
       "Discover Ascension Island’s emotional essence through the archetype The Lost Horizon.",
-    images: ["/private_images/encyclopedia/countries/ascension_island_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

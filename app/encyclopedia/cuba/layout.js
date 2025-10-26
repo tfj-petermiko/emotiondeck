@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/cuba_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Cuba - The Sacred Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Cuba (The Sacred Flame)",
     description:
       "Discover Cuba’s emotional essence through the archetype The Sacred Flame.",
-    images: ["/private_images/encyclopedia/countries/cuba_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

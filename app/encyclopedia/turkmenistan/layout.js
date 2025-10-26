@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/turkmenistan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Turkmenistan - The Timeless Mirror | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Turkmenistan (The Timeless Mirror)",
     description:
       "Discover Turkmenistan’s emotional essence through the archetype The Timeless Mirror.",
-    images: ["/private_images/encyclopedia/countries/turkmenistan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/honduras_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Honduras - The Dream Walker | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Honduras (The Dream Walker)",
     description:
       "Discover Honduras’s emotional essence through the archetype The Dream Walker.",
-    images: ["/private_images/encyclopedia/countries/honduras_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

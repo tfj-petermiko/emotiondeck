@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/samoa_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Samoa - The Keeper of Tides | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Samoa (The Keeper of Tides)",
     description:
       "Discover Samoa’s emotional essence through the archetype The Keeper of Tides.",
-    images: ["/private_images/encyclopedia/countries/samoa_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

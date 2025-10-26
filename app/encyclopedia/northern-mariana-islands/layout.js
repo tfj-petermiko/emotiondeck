@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/northern_mariana_islands_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Northern Mariana Islands - The Voice of Dawn | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Northern Mariana Islands (The Voice of Dawn)",
     description:
       "Discover Northern Mariana Islands’s emotional essence through the archetype The Voice of Dawn.",
-    images: ["/private_images/encyclopedia/countries/northern_mariana_islands_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

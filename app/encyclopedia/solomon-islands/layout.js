@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/solomon_islands_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Solomon Islands - The Inner Ocean | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Solomon Islands (The Inner Ocean)",
     description:
       "Discover Solomon Islands’s emotional essence through the archetype The Inner Ocean.",
-    images: ["/private_images/encyclopedia/countries/solomon_islands_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/svalbard_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Svalbard - The Arctic Keeper | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Svalbard (The Arctic Keeper)",
     description:
       "Discover Svalbard’s emotional essence through the archetype The Arctic Keeper.",
-    images: ["/private_images/encyclopedia/countries/svalbard_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

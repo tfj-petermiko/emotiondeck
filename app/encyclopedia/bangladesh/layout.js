@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/bangladesh_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Bangladesh - The River Philosopher | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Bangladesh (The River Philosopher)",
     description:
       "Discover Bangladesh’s emotional essence through the archetype The River Philosopher.",
-    images: ["/private_images/encyclopedia/countries/bangladesh_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

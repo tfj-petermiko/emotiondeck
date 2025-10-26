@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/mozambique_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Mozambique - The Resilient Dancer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Mozambique (The Resilient Dancer)",
     description:
       "Discover Mozambique’s emotional essence through the archetype The Resilient Dancer.",
-    images: ["/private_images/encyclopedia/countries/mozambique_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

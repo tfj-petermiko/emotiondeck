@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/tuvalu_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Tuvalu - The Spirit of Coral | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Tuvalu (The Spirit of Coral)",
     description:
       "Discover Tuvalu’s emotional essence through the archetype The Spirit of Coral.",
-    images: ["/private_images/encyclopedia/countries/tuvalu_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

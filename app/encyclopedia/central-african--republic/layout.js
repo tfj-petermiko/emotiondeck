@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/central_african_republic_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Central African Republic - The Hidden Light | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Central African Republic (The Hidden Light)",
     description:
       "Discover Central African Republic’s emotional essence through the archetype The Hidden Light.",
-    images: ["/private_images/encyclopedia/countries/central_african_republic_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

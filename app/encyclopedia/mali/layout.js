@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/mali_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Mali - The Protector of Ancestors | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Mali (The Protector of Ancestors)",
     description:
       "Discover Mali’s emotional essence through the archetype The Protector of Ancestors.",
-    images: ["/private_images/encyclopedia/countries/mali_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

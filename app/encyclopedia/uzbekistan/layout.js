@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/uzbekistan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Uzbekistan - The Guardian of Dust | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Uzbekistan (The Guardian of Dust)",
     description:
       "Discover Uzbekistan’s emotional essence through the archetype The Guardian of Dust.",
-    images: ["/private_images/encyclopedia/countries/uzbekistan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

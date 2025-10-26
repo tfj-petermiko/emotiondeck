@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/nigeria_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Nigeria - The River Healer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Nigeria (The River Healer)",
     description:
       "Discover Nigeria’s emotional essence through the archetype The River Healer.",
-    images: ["/private_images/encyclopedia/countries/nigeria_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

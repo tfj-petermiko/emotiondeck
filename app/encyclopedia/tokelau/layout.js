@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/tokelau_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Tokelau - The Silent Ocean | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Tokelau (The Silent Ocean)",
     description:
       "Discover Tokelau’s emotional essence through the archetype The Silent Ocean.",
-    images: ["/private_images/encyclopedia/countries/tokelau_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

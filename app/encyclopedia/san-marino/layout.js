@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/san_marino_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "San Marino - The Timeless Custodian | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — San Marino (The Timeless Custodian)",
     description:
       "Discover San Marino’s emotional essence through the archetype The Timeless Custodian.",
-    images: ["/private_images/encyclopedia/countries/san_marino_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

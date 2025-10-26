@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/curacao_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Curacao - The Golden Wave | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Curacao (The Golden Wave)",
     description:
       "Discover Curacao’s emotional essence through the archetype The Golden Wave.",
-    images: ["/private_images/encyclopedia/countries/curacao_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

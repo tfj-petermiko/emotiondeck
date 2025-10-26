@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/qatar_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Qatar - The Song of Sands | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Qatar (The Song of Sands)",
     description:
       "Discover Qatar’s emotional essence through the archetype The Song of Sands.",
-    images: ["/private_images/encyclopedia/countries/qatar_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

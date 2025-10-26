@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/malawi_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Malawi - The Healer of Winds | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Malawi (The Healer of Winds)",
     description:
       "Discover Malawi’s emotional essence through the archetype The Healer of Winds.",
-    images: ["/private_images/encyclopedia/countries/malawi_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

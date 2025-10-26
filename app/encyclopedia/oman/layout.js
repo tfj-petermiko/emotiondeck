@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/oman_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Oman - The Desert Poet | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Oman (The Desert Poet)",
     description:
       "Discover Oman’s emotional essence through the archetype The Desert Poet.",
-    images: ["/private_images/encyclopedia/countries/oman_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/puerto_rico_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Puerto Rico - The Memory of Light | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Puerto Rico (The Memory of Light)",
     description:
       "Discover Puerto Rico’s emotional essence through the archetype The Memory of Light.",
-    images: ["/private_images/encyclopedia/countries/puerto_rico_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

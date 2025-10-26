@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/lithuania_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Lithuania - The Memory Keeper | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Lithuania (The Memory Keeper)",
     description:
       "Discover Lithuania’s emotional essence through the archetype The Memory Keeper.",
-    images: ["/private_images/encyclopedia/countries/lithuania_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

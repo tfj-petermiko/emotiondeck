@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/eritrea_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Eritrea - The Gentle Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Eritrea (The Gentle Flame)",
     description:
       "Discover Eritrea’s emotional essence through the archetype The Gentle Flame.",
-    images: ["/private_images/encyclopedia/countries/eritrea_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

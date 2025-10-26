@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/guinea_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Guinea - The Song of Roots | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Guinea (The Song of Roots)",
     description:
       "Discover Guinea’s emotional essence through the archetype The Song of Roots.",
-    images: ["/private_images/encyclopedia/countries/guinea_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

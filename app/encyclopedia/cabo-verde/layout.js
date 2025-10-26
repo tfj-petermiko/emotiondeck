@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/cabo_verde_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Cabo Verde - The Dream of Islands | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Cabo Verde (The Dream of Islands)",
     description:
       "Discover Cabo Verde’s emotional essence through the archetype The Dream of Islands.",
-    images: ["/private_images/encyclopedia/countries/cabo_verde_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

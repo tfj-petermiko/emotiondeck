@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/saint_martin_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Saint Martin - The Child of Sun | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Saint Martin (The Child of Sun)",
     description:
       "Discover Saint Martin’s emotional essence through the archetype The Child of Sun.",
-    images: ["/private_images/encyclopedia/countries/saint_martin_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

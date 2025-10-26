@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/rwanda_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Rwanda - The Mountain of Silence | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Rwanda (The Mountain of Silence)",
     description:
       "Discover Rwanda’s emotional essence through the archetype The Mountain of Silence.",
-    images: ["/private_images/encyclopedia/countries/rwanda_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

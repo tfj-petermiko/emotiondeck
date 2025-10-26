@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/north_korea_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "North Korea - The Soul of Fire | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — North Korea (The Soul of Fire)",
     description:
       "Discover North Korea’s emotional essence through the archetype The Soul of Fire.",
-    images: ["/private_images/encyclopedia/countries/north_korea_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

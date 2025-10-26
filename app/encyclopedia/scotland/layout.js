@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/scotland_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Scotland - The Guardian of Spirit | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Scotland (The Guardian of Spirit)",
     description:
       "Discover Scotland’s emotional essence through the archetype The Guardian of Spirit.",
-    images: ["/private_images/encyclopedia/countries/scotland_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

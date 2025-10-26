@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/saint_barthelemy_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Saint Barthelemy - The Whisper of Palm | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Saint Barthelemy (The Whisper of Palm)",
     description:
       "Discover Saint Barthelemy’s emotional essence through the archetype The Whisper of Palm.",
-    images: ["/private_images/encyclopedia/countries/saint_barthelemy_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

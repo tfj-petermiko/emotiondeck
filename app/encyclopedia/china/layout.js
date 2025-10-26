@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/china_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "China - The Philosopher of Harmony | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — China (The Philosopher of Harmony)",
     description:
       "Discover China’s emotional essence through the archetype The Philosopher of Harmony.",
-    images: ["/private_images/encyclopedia/countries/china_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/singapore_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Singapore - The Sky Dreamer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Singapore (The Sky Dreamer)",
     description:
       "Discover Singapore’s emotional essence through the archetype The Sky Dreamer.",
-    images: ["/private_images/encyclopedia/countries/singapore_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

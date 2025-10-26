@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/bhutan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Bhutan - The Soul of Dawn | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Bhutan (The Soul of Dawn)",
     description:
       "Discover Bhutan’s emotional essence through the archetype The Soul of Dawn.",
-    images: ["/private_images/encyclopedia/countries/bhutan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

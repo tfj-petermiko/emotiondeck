@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/france_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "France - The Aesthetic Rebel | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — France (The Aesthetic Rebel)",
     description:
       "Discover France’s emotional essence through the archetype The Aesthetic Rebel.",
-    images: ["/private_images/encyclopedia/countries/france_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/lebanon_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Lebanon - The Voice of Faith | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Lebanon (The Voice of Faith)",
     description:
       "Discover Lebanon’s emotional essence through the archetype The Voice of Faith.",
-    images: ["/private_images/encyclopedia/countries/lebanon_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

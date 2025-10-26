@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/djibouti_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Djibouti - The Desert Voice | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Djibouti (The Desert Voice)",
     description:
       "Discover Djibouti’s emotional essence through the archetype The Desert Voice.",
-    images: ["/private_images/encyclopedia/countries/djibouti_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

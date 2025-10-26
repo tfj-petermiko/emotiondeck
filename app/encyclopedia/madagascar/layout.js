@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/madagascar_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Madagascar - The Island of Rain | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Madagascar (The Island of Rain)",
     description:
       "Discover Madagascar’s emotional essence through the archetype The Island of Rain.",
-    images: ["/private_images/encyclopedia/countries/madagascar_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

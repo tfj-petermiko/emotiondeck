@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/mongolia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Mongolia - The Reflective Nomad | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Mongolia (The Reflective Nomad)",
     description:
       "Discover Mongolia’s emotional essence through the archetype The Reflective Nomad.",
-    images: ["/private_images/encyclopedia/countries/mongolia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

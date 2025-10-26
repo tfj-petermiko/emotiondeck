@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/united_arab_emirates_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "United Arab Emirates - The Spirit of Water | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — United Arab Emirates (The Spirit of Water)",
     description:
       "Discover United Arab Emirates’s emotional essence through the archetype The Spirit of Water.",
-    images: ["/private_images/encyclopedia/countries/united_arab_emirates_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

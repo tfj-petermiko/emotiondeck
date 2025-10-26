@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/switzerland_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Switzerland - The Inner Alchemist | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Switzerland (The Inner Alchemist)",
     description:
       "Discover Switzerland’s emotional essence through the archetype The Inner Alchemist.",
-    images: ["/private_images/encyclopedia/countries/switzerland_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

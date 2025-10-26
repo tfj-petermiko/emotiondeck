@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/aruba_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Aruba - The Phoenix of Tide | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Aruba (The Phoenix of Tide)",
     description:
       "Discover Aruba’s emotional essence through the archetype The Phoenix of Tide.",
-    images: ["/private_images/encyclopedia/countries/aruba_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

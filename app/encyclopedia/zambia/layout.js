@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/zambia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Zambia - The Dream Child | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Zambia (The Dream Child)",
     description:
       "Discover Zambia’s emotional essence through the archetype The Dream Child.",
-    images: ["/private_images/encyclopedia/countries/zambia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

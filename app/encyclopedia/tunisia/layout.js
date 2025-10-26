@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/tunisia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Tunisia - The Inner Oasis | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Tunisia (The Inner Oasis)",
     description:
       "Discover Tunisia’s emotional essence through the archetype The Inner Oasis.",
-    images: ["/private_images/encyclopedia/countries/tunisia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

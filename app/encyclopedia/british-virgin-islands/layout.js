@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/british_virgin_islands_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "British Virgin Islands - The Ocean Child | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — British Virgin Islands (The Ocean Child)",
     description:
       "Discover British Virgin Islands’s emotional essence through the archetype The Ocean Child.",
-    images: ["/private_images/encyclopedia/countries/british_virgin_islands_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

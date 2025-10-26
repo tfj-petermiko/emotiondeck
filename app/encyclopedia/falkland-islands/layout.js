@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/falkland_islands_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Falkland Islands - The Windborn Guardian | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Falkland Islands (The Windborn Guardian)",
     description:
       "Discover Falkland Islands’s emotional essence through the archetype The Windborn Guardian.",
-    images: ["/private_images/encyclopedia/countries/falkland_islands_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

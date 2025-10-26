@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/vietnam_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Vietnam - The Spirit of Flow | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Vietnam (The Spirit of Flow)",
     description:
       "Discover Vietnam’s emotional essence through the archetype The Spirit of Flow.",
-    images: ["/private_images/encyclopedia/countries/vietnam_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

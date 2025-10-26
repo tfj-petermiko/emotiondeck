@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/czechia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Czechia - The Iron Dreamer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Czechia (The Iron Dreamer)",
     description:
       "Discover Czechia’s emotional essence through the archetype The Iron Dreamer.",
-    images: ["/private_images/encyclopedia/countries/czechia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

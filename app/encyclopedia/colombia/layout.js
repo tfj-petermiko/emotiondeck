@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/colombia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Colombia - The Mountain Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Colombia (The Mountain Flame)",
     description:
       "Discover Colombia’s emotional essence through the archetype The Mountain Flame.",
-    images: ["/private_images/encyclopedia/countries/colombia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

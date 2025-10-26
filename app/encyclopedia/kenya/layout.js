@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/kenya_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kenya - The Visionary Drum | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Kenya (The Visionary Drum)",
     description:
       "Discover Kenya’s emotional essence through the archetype The Visionary Drum.",
-    images: ["/private_images/encyclopedia/countries/kenya_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

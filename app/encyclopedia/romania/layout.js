@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/romania_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Romania - The Visionary Dreamwalker | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Romania (The Visionary Dreamwalker)",
     description:
       "Discover Romania’s emotional essence through the archetype The Visionary Dreamwalker.",
-    images: ["/private_images/encyclopedia/countries/romania_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

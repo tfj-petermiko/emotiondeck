@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/angola_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Angola - The Whispering Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Angola (The Whispering Flame)",
     description:
       "Discover Angola’s emotional essence through the archetype The Whispering Flame.",
-    images: ["/private_images/encyclopedia/countries/angola_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/cyprus_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Cyprus - The Island of Longing | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Cyprus (The Island of Longing)",
     description:
       "Discover Cyprus’s emotional essence through the archetype The Island of Longing.",
-    images: ["/private_images/encyclopedia/countries/cyprus_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

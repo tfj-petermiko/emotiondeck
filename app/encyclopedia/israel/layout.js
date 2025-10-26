@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/israel_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Israel - The Rising Vision | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Israel (The Rising Vision)",
     description:
       "Discover Israel’s emotional essence through the archetype The Rising Vision.",
-    images: ["/private_images/encyclopedia/countries/israel_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/philippines_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Philippines - The Ocean of Stillness | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Philippines (The Ocean of Stillness)",
     description:
       "Discover Philippines’s emotional essence through the archetype The Ocean of Stillness.",
-    images: ["/private_images/encyclopedia/countries/philippines_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

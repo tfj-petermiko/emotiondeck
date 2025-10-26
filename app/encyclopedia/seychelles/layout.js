@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/seychelles_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Seychelles - The Song of Light | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Seychelles (The Song of Light)",
     description:
       "Discover Seychelles’s emotional essence through the archetype The Song of Light.",
-    images: ["/private_images/encyclopedia/countries/seychelles_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

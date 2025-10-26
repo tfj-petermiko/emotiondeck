@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/reunion_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Reunion - The Ocean Memory | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Reunion (The Ocean Memory)",
     description:
       "Discover Reunion’s emotional essence through the archetype The Ocean Memory.",
-    images: ["/private_images/encyclopedia/countries/reunion_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

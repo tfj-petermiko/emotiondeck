@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/fiji_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Fiji - The Island Guardian | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Fiji (The Island Guardian)",
     description:
       "Discover Fiji’s emotional essence through the archetype The Island Guardian.",
-    images: ["/private_images/encyclopedia/countries/fiji_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

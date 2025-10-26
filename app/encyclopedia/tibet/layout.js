@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/tibet_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Tibet - The Sacred Mountain | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Tibet (The Sacred Mountain)",
     description:
       "Discover Tibet’s emotional essence through the archetype The Sacred Mountain.",
-    images: ["/private_images/encyclopedia/countries/tibet_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

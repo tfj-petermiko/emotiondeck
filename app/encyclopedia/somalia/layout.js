@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/somalia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Somalia - The Silent Flame | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Somalia (The Silent Flame)",
     description:
       "Discover Somalia’s emotional essence through the archetype The Silent Flame.",
-    images: ["/private_images/encyclopedia/countries/somalia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

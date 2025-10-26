@@ -249,8 +249,8 @@ const continents = {
           <motion.div
             className="absolute z-20 text-center pointer-events-none"
             style={{
-              left: `${(hovered.coords[0] + 180) * 5.4}px`,
-              top: `${(90 - hovered.coords[1]) * 5.6 - 140}px`,
+              left: `${(hovered.coords[0] + 180) * 5.4 - 200}px`,
+              top: `${(90 - hovered.coords[1]) * 5.6 - 160}px`,
               transform: "translate(-50%, 0)",
             }}
             initial={{ opacity: 0, scale: 0.85, y: 10 }}

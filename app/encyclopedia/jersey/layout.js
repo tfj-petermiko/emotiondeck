@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/jersey_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Jersey - The Island Sentinel | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Jersey (The Island Sentinel)",
     description:
       "Discover Jersey’s emotional essence through the archetype The Island Sentinel.",
-    images: ["/private_images/encyclopedia/countries/jersey_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

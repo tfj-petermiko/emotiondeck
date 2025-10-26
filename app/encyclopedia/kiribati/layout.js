@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/kiribati_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kiribati - The Eternal Breeze | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Kiribati (The Eternal Breeze)",
     description:
       "Discover Kiribati’s emotional essence through the archetype The Eternal Breeze.",
-    images: ["/private_images/encyclopedia/countries/kiribati_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

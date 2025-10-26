@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/peru_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Peru - The Soul of Andes | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Peru (The Soul of Andes)",
     description:
       "Discover Peru’s emotional essence through the archetype The Soul of Andes.",
-    images: ["/private_images/encyclopedia/countries/peru_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

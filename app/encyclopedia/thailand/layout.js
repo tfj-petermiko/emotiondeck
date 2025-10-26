@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/thailand_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Thailand - The Golden Sage | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Thailand (The Golden Sage)",
     description:
       "Discover Thailand’s emotional essence through the archetype The Golden Sage.",
-    images: ["/private_images/encyclopedia/countries/thailand_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

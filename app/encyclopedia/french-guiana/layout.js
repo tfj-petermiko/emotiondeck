@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/french_guiana_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "French Guiana - The Mirror of Rain | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — French Guiana (The Mirror of Rain)",
     description:
       "Discover French Guiana’s emotional essence through the archetype The Mirror of Rain.",
-    images: ["/private_images/encyclopedia/countries/french_guiana_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

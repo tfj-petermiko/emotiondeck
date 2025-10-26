@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/monaco_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Monaco - The Elegant Performer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Monaco (The Elegant Performer)",
     description:
       "Discover Monaco’s emotional essence through the archetype The Elegant Performer.",
-    images: ["/private_images/encyclopedia/countries/monaco_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

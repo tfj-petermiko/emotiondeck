@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/nunavut_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Nunavut - The Spirit of North | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Nunavut (The Spirit of North)",
     description:
       "Discover Nunavut’s emotional essence through the archetype The Spirit of North.",
-    images: ["/private_images/encyclopedia/countries/nunavut_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

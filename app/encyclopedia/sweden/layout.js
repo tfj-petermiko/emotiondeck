@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/sweden_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Sweden - The Harmoniser | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Sweden (The Harmoniser)",
     description:
       "Discover Sweden’s emotional essence through the archetype The Harmoniser.",
-    images: ["/private_images/encyclopedia/countries/sweden_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

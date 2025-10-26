@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/gambia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Gambia - The River of Faith | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Gambia (The River of Faith)",
     description:
       "Discover Gambia’s emotional essence through the archetype The River of Faith.",
-    images: ["/private_images/encyclopedia/countries/gambia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

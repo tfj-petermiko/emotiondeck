@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/afghanistan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Afghanistan - The Eternal Compass | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Afghanistan (The Eternal Compass)",
     description:
       "Discover Afghanistan’s emotional essence through the archetype The Eternal Compass.",
-    images: ["/private_images/encyclopedia/countries/afghanistan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

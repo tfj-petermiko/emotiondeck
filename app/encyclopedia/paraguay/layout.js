@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/paraguay_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Paraguay - The River Philosopher | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Paraguay (The River Philosopher)",
     description:
       "Discover Paraguay’s emotional essence through the archetype The River Philosopher.",
-    images: ["/private_images/encyclopedia/countries/paraguay_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

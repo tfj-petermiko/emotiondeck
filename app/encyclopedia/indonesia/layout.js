@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/indonesia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Indonesia - The Celestial Weaver | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Indonesia (The Celestial Weaver)",
     description:
       "Discover Indonesia’s emotional essence through the archetype The Celestial Weaver.",
-    images: ["/private_images/encyclopedia/countries/indonesia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

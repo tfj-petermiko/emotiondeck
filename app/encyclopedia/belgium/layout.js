@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/belgium_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Belgium - The Dual Soul | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Belgium (The Dual Soul)",
     description:
       "Discover Belgium’s emotional essence through the archetype The Dual Soul.",
-    images: ["/private_images/encyclopedia/countries/belgium_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

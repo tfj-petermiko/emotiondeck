@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/cayman_islands_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Cayman Islands - The Silent Coral | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Cayman Islands (The Silent Coral)",
     description:
       "Discover Cayman Islands’s emotional essence through the archetype The Silent Coral.",
-    images: ["/private_images/encyclopedia/countries/cayman_islands_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

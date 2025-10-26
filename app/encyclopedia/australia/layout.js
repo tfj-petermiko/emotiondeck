@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/australia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Australia - The Ocean Dreamer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Australia (The Ocean Dreamer)",
     description:
       "Discover Australia’s emotional essence through the archetype The Ocean Dreamer.",
-    images: ["/private_images/encyclopedia/countries/australia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

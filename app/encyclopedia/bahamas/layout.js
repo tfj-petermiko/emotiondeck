@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/bahamas_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Bahamas - The Keeper of Coral | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Bahamas (The Keeper of Coral)",
     description:
       "Discover Bahamas’s emotional essence through the archetype The Keeper of Coral.",
-    images: ["/private_images/encyclopedia/countries/bahamas_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

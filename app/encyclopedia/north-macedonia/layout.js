@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/north_macedonia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "North Macedonia - The Keeper of Echoes | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — North Macedonia (The Keeper of Echoes)",
     description:
       "Discover North Macedonia’s emotional essence through the archetype The Keeper of Echoes.",
-    images: ["/private_images/encyclopedia/countries/north_macedonia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

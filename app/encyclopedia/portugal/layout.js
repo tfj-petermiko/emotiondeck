@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/portugal_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Portugal - The Dreaming Navigator | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Portugal (The Dreaming Navigator)",
     description:
       "Discover Portugal’s emotional essence through the archetype The Dreaming Navigator.",
-    images: ["/private_images/encyclopedia/countries/portugal_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

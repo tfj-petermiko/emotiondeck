@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/maldives_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Maldives - The Island of Serenity | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Maldives (The Island of Serenity)",
     description:
       "Discover Maldives’s emotional essence through the archetype The Island of Serenity.",
-    images: ["/private_images/encyclopedia/countries/maldives_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/mauritius_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Mauritius - The Ocean Healer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Mauritius (The Ocean Healer)",
     description:
       "Discover Mauritius’s emotional essence through the archetype The Ocean Healer.",
-    images: ["/private_images/encyclopedia/countries/mauritius_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

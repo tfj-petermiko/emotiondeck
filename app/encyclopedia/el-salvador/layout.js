@@ -16,7 +16,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/el_salvador_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "El Salvador - The Redeemed Flame | EmotionDeck Encyclopedia",
@@ -30,7 +30,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — El Salvador (The Redeemed Flame)",
     description:
       "Discover El Salvador’s emotional essence through the archetype The Redeemed Flame — a symbol of endurance and rebirth.",
-    images: ["/private_images/encyclopedia/countries/el_salvador_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/andorra_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Andorra - The Mountain Guardian | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Andorra (The Mountain Guardian)",
     description:
       "Discover Andorra’s emotional essence through the archetype The Mountain Guardian.",
-    images: ["/private_images/encyclopedia/countries/andorra_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/senegal_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Senegal - The Timeless Griot | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Senegal (The Timeless Griot)",
     description:
       "Discover Senegal’s emotional essence through the archetype The Timeless Griot.",
-    images: ["/private_images/encyclopedia/countries/senegal_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

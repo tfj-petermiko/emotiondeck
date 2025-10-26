@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/chile_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Chile - The Fire of Dawn | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Chile (The Fire of Dawn)",
     description:
       "Discover Chile’s emotional essence through the archetype The Fire of Dawn.",
-    images: ["/private_images/encyclopedia/countries/chile_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

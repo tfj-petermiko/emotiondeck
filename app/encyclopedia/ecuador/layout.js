@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/ecuador_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Ecuador - The Child of Rainforest | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Ecuador (The Child of Rainforest)",
     description:
       "Discover Ecuador’s emotional essence through the archetype The Child of Rainforest.",
-    images: ["/private_images/encyclopedia/countries/ecuador_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/haiti_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Haiti - The Resilient Islander | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Haiti (The Resilient Islander)",
     description:
       "Discover Haiti’s emotional essence through the archetype The Resilient Islander.",
-    images: ["/private_images/encyclopedia/countries/haiti_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

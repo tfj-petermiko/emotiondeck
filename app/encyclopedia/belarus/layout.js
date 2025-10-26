@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/belarus_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Belarus - The Silent Witness | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Belarus (The Silent Witness)",
     description:
       "Discover Belarus’s emotional essence through the archetype The Silent Witness.",
-    images: ["/private_images/encyclopedia/countries/belarus_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

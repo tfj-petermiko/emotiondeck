@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/croatia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Croatia - The Resilient Voyager | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Croatia (The Resilient Voyager)",
     description:
       "Discover Croatia’s emotional essence through the archetype The Resilient Voyager.",
-    images: ["/private_images/encyclopedia/countries/croatia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

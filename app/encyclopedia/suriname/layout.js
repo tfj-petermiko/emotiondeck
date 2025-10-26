@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/suriname_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Suriname - The Whispering Soul | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Suriname (The Whispering Soul)",
     description:
       "Discover Suriname’s emotional essence through the archetype The Whispering Soul.",
-    images: ["/private_images/encyclopedia/countries/suriname_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

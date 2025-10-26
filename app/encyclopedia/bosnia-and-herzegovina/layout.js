@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/bosnia_and_herzegovina_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Bosnia and Herzegovina - The Bridgekeeper | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Bosnia and Herzegovina (The Bridgekeeper)",
     description:
       "Discover Bosnia and Herzegovina’s emotional essence through the archetype The Bridgekeeper.",
-    images: ["/private_images/encyclopedia/countries/bosnia_and_herzegovina_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

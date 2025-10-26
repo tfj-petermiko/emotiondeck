@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/namibia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Namibia - The Eternal Horizon | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Namibia (The Eternal Horizon)",
     description:
       "Discover Namibia’s emotional essence through the archetype The Eternal Horizon.",
-    images: ["/private_images/encyclopedia/countries/namibia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

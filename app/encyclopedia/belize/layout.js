@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/belize_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Belize - The Silent Watcher | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Belize (The Silent Watcher)",
     description:
       "Discover Belize’s emotional essence through the archetype The Silent Watcher.",
-    images: ["/private_images/encyclopedia/countries/belize_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

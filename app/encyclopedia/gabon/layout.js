@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/gabon_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Gabon - The Hidden River | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Gabon (The Hidden River)",
     description:
       "Discover Gabon’s emotional essence through the archetype The Hidden River.",
-    images: ["/private_images/encyclopedia/countries/gabon_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

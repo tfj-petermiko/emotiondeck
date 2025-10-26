@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/kuwait_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kuwait - The Dream of Dawn | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Kuwait (The Dream of Dawn)",
     description:
       "Discover Kuwait’s emotional essence through the archetype The Dream of Dawn.",
-    images: ["/private_images/encyclopedia/countries/kuwait_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

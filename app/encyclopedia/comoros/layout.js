@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/comoros_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Comoros - The Ocean Memory | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Comoros (The Ocean Memory)",
     description:
       "Discover Comoros’s emotional essence through the archetype The Ocean Memory.",
-    images: ["/private_images/encyclopedia/countries/comoros_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

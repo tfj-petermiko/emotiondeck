@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/faroe_islands_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Faroe Islands - The Storm Whisperer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Faroe Islands (The Storm Whisperer)",
     description:
       "Discover Faroe Islands’s emotional essence through the archetype The Storm Whisperer.",
-    images: ["/private_images/encyclopedia/countries/faroe_islands_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

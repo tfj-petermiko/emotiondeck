@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/kyrgyzstan_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kyrgyzstan - The Keeper of Snow | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Kyrgyzstan (The Keeper of Snow)",
     description:
       "Discover Kyrgyzstan’s emotional essence through the archetype The Keeper of Snow.",
-    images: ["/private_images/encyclopedia/countries/kyrgyzstan_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

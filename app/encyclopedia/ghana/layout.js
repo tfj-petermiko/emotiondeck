@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/ghana_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Ghana - The Keeper of Rhythm | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Ghana (The Keeper of Rhythm)",
     description:
       "Discover Ghana’s emotional essence through the archetype The Keeper of Rhythm.",
-    images: ["/private_images/encyclopedia/countries/ghana_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

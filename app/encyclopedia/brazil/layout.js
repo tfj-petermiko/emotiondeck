@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/brazil_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Brazil - The Dreaming Jaguar | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Brazil (The Dreaming Jaguar)",
     description:
       "Discover Brazil’s emotional essence through the archetype The Dreaming Jaguar.",
-    images: ["/private_images/encyclopedia/countries/brazil_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

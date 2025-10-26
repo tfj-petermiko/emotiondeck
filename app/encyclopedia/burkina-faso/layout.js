@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/burkina_faso_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Burkina Faso - The Compassionate Nomad | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Burkina Faso (The Compassionate Nomad)",
     description:
       "Discover Burkina Faso’s emotional essence through the archetype The Compassionate Nomad.",
-    images: ["/private_images/encyclopedia/countries/burkina_faso_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

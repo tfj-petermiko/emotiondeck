@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/equatorial_guinea_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Equatorial Guinea - The Forgotten Song | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Equatorial Guinea (The Forgotten Song)",
     description:
       "Discover Equatorial Guinea’s emotional essence through the archetype The Forgotten Song.",
-    images: ["/private_images/encyclopedia/countries/equatorial_guinea_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

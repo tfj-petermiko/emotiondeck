@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/south_korea_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "South Korea - The Keeper of Serenity | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — South Korea (The Keeper of Serenity)",
     description:
       "Discover South Korea’s emotional essence through the archetype The Keeper of Serenity.",
-    images: ["/private_images/encyclopedia/countries/south_korea_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/germany_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Germany - The Architect of Order | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Germany (The Architect of Order)",
     description:
       "Discover Germany’s emotional essence through the archetype The Architect of Order.",
-    images: ["/private_images/encyclopedia/countries/germany_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/united_states_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "United States - The Frontier Dreamer | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — United States (The Frontier Dreamer)",
     description:
       "Discover United States’s emotional essence through the archetype The Frontier Dreamer.",
-    images: ["/private_images/encyclopedia/countries/united_states_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

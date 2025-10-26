@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/albania_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Albania - The Guardian of Honour | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Albania (The Guardian of Honour)",
     description:
       "Discover Albania’s emotional essence through the archetype The Guardian of Honour.",
-    images: ["/private_images/encyclopedia/countries/albania_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

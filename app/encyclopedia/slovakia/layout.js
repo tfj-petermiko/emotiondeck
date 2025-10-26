@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/slovakia_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Slovakia - The Loyal Heart | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Slovakia (The Loyal Heart)",
     description:
       "Discover Slovakia’s emotional essence through the archetype The Loyal Heart.",
-    images: ["/private_images/encyclopedia/countries/slovakia_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 

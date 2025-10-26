@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "EmotionDeck",
     images: [
       {
-        url: "/private_images/encyclopedia/countries/martinique_preview.webp",
+        url: "https://emotiondeck.com/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Martinique - The Song of Wind | EmotionDeck Encyclopedia",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "EmotionDeck Encyclopedia — Martinique (The Song of Wind)",
     description:
       "Discover Martinique’s emotional essence through the archetype The Song of Wind.",
-    images: ["/private_images/encyclopedia/countries/martinique_preview.webp"],
+    images: ["https://emotiondeck.com/preview.jpg"],
   },
 };
 
