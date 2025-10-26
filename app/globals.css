@@ -498,15 +498,6 @@ section.legal-table td:last-child {
   }
 }
 
-/* 🧩 Prevent freezing of dynamic numbers (global safe version) */
-.no-freeze-number {
-  translate: no !important;
-  unicode-bidi: isolate !important;
-  display: inline-block;
-}
-
-
-
 
 /* 🌙 Hide scrollbar but keep scroll functionality */
 html, body {

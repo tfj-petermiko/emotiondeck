@@ -20,7 +20,8 @@ export default function HomePage() {
     pro_title: "Experience the PRO Collection",
     pro_description:
       "Discover Deeper Complex Human Emotions Across Regions, Ages, and Genders. Perfect for Professionals, Educators, Law Enforcement Officers, Investigators, and Advanced Emotional Research.",
-    pro_note: "🔓 EmotionDeck - Exclusive Early Access for all Users.",
+    pro_note:
+      "🌍 Explore the EmotionDeck Encyclopedia Inspired by the Jungian Concept of the Collective Unconscious.",
   };
 
   return (
@@ -92,19 +93,21 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-gray-400 mb-2 max-w-xl mx-auto"
+          className="text-gray-400 mb-4 max-w-xl mx-auto"
         >
           {text.pro_description}
         </motion.p>
 
-        <motion.p
+        {/* 🌍 Encyclopedia Promo Link (no underline) */}
+        <motion.a
+          href="/encyclopedia"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-sm text-emerald-400 mb-8"
+          className="inline-block text-sm text-emerald-400 mb-8 hover:text-emerald-300 transition"
         >
           {text.pro_note}
-        </motion.p>
+        </motion.a>
       </section>
     </main>
   );
