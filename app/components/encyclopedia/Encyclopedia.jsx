@@ -145,10 +145,6 @@ const continents = {
   ]
 };
 
-
-
-
-
   return (
     <section className="relative w-screen min-h-screen overflow-hidden text-white bg-neutral-900">
       {/* 🏷️ Title */}
@@ -163,7 +159,7 @@ const continents = {
         </h3>
       </div>
 
-      {/* 🌍 Continent → Country Dropdowns */}
+      {/* 🌍 Continent → Territory Dropdowns */}
       <div className="flex justify-center items-center flex-wrap gap-4 mt-4 mb-10">
         {/* Continent Dropdown */}
         <select
@@ -179,7 +175,7 @@ const continents = {
           ))}
         </select>
 
-        {/* Country Dropdown */}
+        {/* Territory Dropdown */}
         <select
           disabled={!activeContinent}
           onChange={(e) => {
@@ -194,7 +190,7 @@ const continents = {
           }`}
         >
           <option value="">
-            {activeContinent ? "Select Country" : "Select a Continent First"}
+            {activeContinent ? "Select Territory" : "Select a Continent First"}
           </option>
           {activeContinent &&
             continents[activeContinent].map((country) => (
