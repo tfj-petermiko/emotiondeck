@@ -33,7 +33,7 @@ export default function CountryPageTemplate({ data }) {
       ],
       Africa: [
         "Algeria","Angola","Ascension Island","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
-        "Cameroon","Central African Republic","Chad","Comoros","Congo","Democratic Republic of the Congo",
+        "Cameroon","Chad","Comoros","Congo","Democratic Republic of the Congo",
         "Djibouti","Egypt","Equatorial Guinea","Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana",
         "Guinea","Guinea-Bissau","Kenya","Lesotho","Liberia","Libya","Madagascar","Malawi","Mali",
         "Mauritania","Mauritius","Mayotte","Morocco","Mozambique","Namibia","Niger","Nigeria","Reunion",
