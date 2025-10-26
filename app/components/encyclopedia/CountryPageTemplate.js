@@ -132,7 +132,7 @@ export default function CountryPageTemplate({ data }) {
                 </td>
                 <td className="p-3 w-[200px] text-center align-top">
                   <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <br />
+                    
                     <img
                       src={data.image}
                       alt={data.archetype}

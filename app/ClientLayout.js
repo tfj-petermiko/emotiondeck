@@ -22,12 +22,17 @@ export default function ClientLayout({ children }) {
     }
   }, [pathname]);
 
+  // ✅ Step 1: Prevent FOUC — show content only after styles are ready
+  useEffect(() => {
+    document.documentElement.classList.add("styled");
+    document.body.classList.add("styled");
+  }, []);
+
   // 🩶 SYSTEM OVERRIDE — force dark gray for any slate-blue background
   useEffect(() => {
     const style = document.createElement("style");
     style.id = "force-gray-style";
     style.innerHTML = `
-      /* Reset everything first */
       [class*="bg-slate-900"],
       section[class*="bg-slate-900"],
       div[class*="bg-slate-900"],
@@ -44,7 +49,6 @@ export default function ClientLayout({ children }) {
         color-scheme: dark !important;
       }
 
-      /* In case gradient or pseudo-element is used */
       [class*="bg-slate-900"]::before,
       [class*="bg-slate-900"]::after {
         background: none !important;
@@ -53,7 +57,6 @@ export default function ClientLayout({ children }) {
         border: none !important;
       }
 
-      /* Fallback: override computed background of any element with blue tint */
       * {
         background-color: rgba(26, 26, 26, var(--bg-opacity, 1)) !important;
       }

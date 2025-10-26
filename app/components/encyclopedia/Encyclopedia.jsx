@@ -13,15 +13,16 @@ export default function Encyclopedia() {
   const [activeContinent, setActiveContinent] = useState("");
   const router = useRouter();
 
-  // 🎨 Colour palettes
-  const palettes = {
-    northAmerica: ["#60a5fa", "#93c5fd", "#a5b4fc", "#fcd34d", "#38bdf8"],
-    southAmerica: ["#fbbf24", "#fb7185", "#f87171", "#fde047", "#facc15"],
-    europe: ["#34d399", "#a78bfa", "#4ade80", "#86efac", "#22d3ee"],
-    africa: ["#fbbf24", "#fcd34d", "#84cc16", "#f87171", "#10b981"],
-    asia: ["#34d399", "#f97316", "#84cc16", "#22d3ee", "#a78bfa"],
-    oceania: ["#c084fc", "#a855f7", "#9333ea", "#d8b4fe", "#e879f9"],
-  };
+// 🎨 All points white
+const palettes = {
+  northAmerica: ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  southAmerica: ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  europe: ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  africa: ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  asia: ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+  oceania: ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+};
+
 
   const pick = (palette, i) => palette[i % palette.length];
 
@@ -150,12 +151,12 @@ const continents = {
       {/* 🏷️ Title */}
       <div className="text-center pt-10 pb-4">
         <h1 className="text-4xl md:text-5xl font-semibold tracking-wide text-gray-100">
-          EmotionDeck - The First Global Emotion Encyclopedia 🌍
+          EmotionDeck - The First Global Emotion Encyclopedia
         </h1>
       </div>
       <div className="text-center pt-10 pb-4">
         <h3 className="text-4xl md:text-4xl font-semibold tracking-wide text-gray-100">
-          Exploring Jungian Archetypes Across Nations - The Emotional DNA of Humanity
+          Exploring Jungian Archetypes Across Nations
         </h3>
       </div>
 
@@ -243,40 +244,32 @@ const continents = {
             );
           })}
         </svg>
-
-        {/* Tooltip */}
+        {/* Tooltip - tylko kółko z obrazkiem */}
         {hovered && (
           <motion.div
-            className="absolute z-20 text-center pointer-events-none"
+            className="tooltip-container absolute z-20 pointer-events-none"
             style={{
-              left: `${(hovered.coords[0] + 180) * 5.4 - 200}px`,
-              top: `${(90 - hovered.coords[1]) * 5.6 - 160}px`,
+              left: `${(hovered.coords[0] + 180) * 5.4}px`,
+              top: `${(90 - hovered.coords[1]) * 5.6}px`,
               transform: "translate(-50%, 0)",
             }}
             initial={{ opacity: 0, scale: 0.85, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <div
-              className="rounded-full overflow-hidden shadow-xl border border-neutral-800 mx-auto"
+            <motion.img
+              src={hovered.image}
+              alt=""
+              className="rounded-full"
               style={{
                 width: "180px",
                 height: "180px",
-                background: "#111",
-                boxShadow: "0 0 15px rgba(255,255,255,0.08)",
+                objectFit: "cover",
               }}
-            >
-              <motion.img
-                src={hovered.image}
-                alt={hovered.name}
-                className="rounded-full"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-              />
-            </div>
-            <p className="text-gray-300 mt-2 font-semibold">{hovered.name}</p>
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            />
           </motion.div>
         )}
       </div>
