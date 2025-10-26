@@ -22,6 +22,46 @@ export default function ClientLayout({ children }) {
     }
   }, [pathname]);
 
+  // 🩶 SYSTEM OVERRIDE — force dark gray for any slate-blue background
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.id = "force-gray-style";
+    style.innerHTML = `
+      /* Reset everything first */
+      [class*="bg-slate-900"],
+      section[class*="bg-slate-900"],
+      div[class*="bg-slate-900"],
+      main[class*="bg-slate-900"],
+      article[class*="bg-slate-900"],
+      [style*="#0f172a"],
+      [style*="rgb(15, 23, 42)"] {
+        background-color: #1a1a1a !important;
+        background-image: none !important;
+        filter: none !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        border-color: #2b2b2b !important;
+        color-scheme: dark !important;
+      }
+
+      /* In case gradient or pseudo-element is used */
+      [class*="bg-slate-900"]::before,
+      [class*="bg-slate-900"]::after {
+        background: none !important;
+        box-shadow: none !important;
+        content: none !important;
+        border: none !important;
+      }
+
+      /* Fallback: override computed background of any element with blue tint */
+      * {
+        background-color: rgba(26, 26, 26, var(--bg-opacity, 1)) !important;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => style.remove();
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-neutral-900 text-white">
       <ClientProtector />

@@ -512,19 +512,80 @@ html, body {
 
 
 /* =========================================
-   🩶 Unify section backgrounds with legal-table
+   🔧 Final Global Fix — remove bottom line + shadow from all tables
    ========================================= */
 
-/* Nadpisuje Tailwindowe klasy dla kart faz */
-.bg-gray-900,
+/* Usuń dolną linię z każdej tabeli */
+table,
+table tr:last-child,
+table tr:last-child td,
+table tr:last-child th {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Usuń dolny cień z sekcji i tabel z klasami tła */
+section,
 .bg-neutral-900,
+.bg-gray-900,
 .bg-slate-900,
 .bg-zinc-900 {
-  background-color: #111 !important; /* identyczny kolor jak legal-table */
-  border: 1px solid #3a3a3a !important;
-  border-radius: 12px !important;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: none !important;
 }
+
+/* Dodatkowe zabezpieczenie: brak pseudo-cienia */
+section::after,
+.bg-neutral-900::after,
+.bg-gray-900::after,
+.bg-slate-900::after,
+.bg-zinc-900::after {
+  content: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* =========================================
+   🎨 Fix: Bright text in dropdown filter menus (Phase, Map, Collections)
+   ========================================= */
+select,
+option,
+.dropdown,
+.dropdown *,
+[role="menu"],
+[role="menu"] *,
+details,
+summary,
+details * {
+  color: #ffffff !important;
+  background-color: #1a1a1a !important;
+}
+
+/* Przycisk otwierający rozwijane menu */
+button[data-state="open"],
+button[aria-expanded="true"],
+button[class*="dropdown"],
+button[class*="select"],
+button[class*="filter"] {
+  color: #ffffff !important;
+}
+
+/* Hover i focus efekt */
+option:hover,
+.dropdown li:hover,
+[role="menu"] li:hover {
+  background-color: #222 !important;
+  color: #ffffff !important;
+}
+
+/* Dodatkowy cień dla lepszej czytelności tekstu */
+select,
+option,
+.dropdown *,
+[role="menu"] * {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+
 
 
 
