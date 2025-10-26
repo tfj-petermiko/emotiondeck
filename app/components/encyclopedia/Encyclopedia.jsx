@@ -138,7 +138,7 @@ const continents = {
   ],
 
   "Oceania": [
-    "Australia","American Samoa","Christmas Island","Cocos Islands","Cook Islands","Fiji",
+    "Australia","American Samoa","Cocos Islands","Cook Islands","Fiji",
     "Kiribati","Marshall Islands","Micronesia","New Caledonia","New Zealand","Niue","Norfolk Island",
     "Northern Mariana Islands","Palau","Papua New Guinea","Pitcairn Islands","Samoa","Solomon Islands",
     "Tokelau","Tonga","Tuvalu","Vanuatu"
