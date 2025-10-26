@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Macau",
-  description:
-    "Explore Macau’s emotional archetype - The Dream of Fortune. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Macau, Macau archetype, The Dream of Fortune, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Macau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Macau, The Dream of Fortune, Macau psyche, emotional culture Macau, symbolic Macau, Jungian archetypes Macau, fate and fortune, cultural symbolism, Macau identity, emotional empathy, ancient whispers, shimmering hopes, Macau national soul, symbolic essence, poetic symbolism, Macau emotional landscape, cultural psyche, Macau dreams",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/macau",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Macau",
-    description:
-      "Journey through Macau’s emotional identity — The Dream of Fortune, symbolising the nation’s inner psyche and emotional history.",
+    description: "Macau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/macau",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Macau (The Dream of Fortune)",
-    description:
-      "Discover Macau’s emotional essence through the archetype The Dream of Fortune.",
+    description: "Macau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

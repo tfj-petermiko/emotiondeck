@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Nicaragua",
-  description:
-    "Explore Nicaragua’s emotional archetype - The Inner Compass. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Nicaragua, Nicaragua archetype, The Inner Compass, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Nicaragua’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Nicaragua emotions, The Inner Compass psychology, Nicaraguan cultural empathy, emotion and identity Nicaragua, EmotionDeck emotional journey, The Inner Compass self-discovery, cultural psychology Nicaragua, empathy in Nicaraguan identity, EmotionDeck emotional wisdom, The Inner Compass emotional culture, Nicaraguan inner compass emotions, psychology of Nicaraguan identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/nicaragua",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Nicaragua",
-    description:
-      "Journey through Nicaragua’s emotional identity — The Inner Compass, symbolising the nation’s inner psyche and emotional history.",
+    description: "Nicaragua’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/nicaragua",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Nicaragua (The Inner Compass)",
-    description:
-      "Discover Nicaragua’s emotional essence through the archetype The Inner Compass.",
+    description: "Nicaragua’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

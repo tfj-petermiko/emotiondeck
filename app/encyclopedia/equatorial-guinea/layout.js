@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Equatorial Guinea",
-  description:
-    "Explore Equatorial Guinea’s emotional archetype - The Forgotten Song. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Equatorial Guinea, Equatorial Guinea archetype, The Forgotten Song, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Equatorial Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Equatorial Guinea, The Forgotten Song, Equatorial Guinea psyche, emotional culture, cultural shadows, unspoken truths, Jungian symbolism, national identity, African archetypes, poetic symbolism, empathy in culture, psychological roots, ancestral memory, symbolic melancholy, cultural empathy, emotional heritage, Equatorial Guinea soul",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/equatorial-guinea",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Equatorial Guinea",
-    description:
-      "Journey through Equatorial Guinea’s emotional identity — The Forgotten Song, symbolising the nation’s inner psyche and emotional history.",
+    description: "Equatorial Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/equatorial-guinea",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Equatorial Guinea (The Forgotten Song)",
-    description:
-      "Discover Equatorial Guinea’s emotional essence through the archetype The Forgotten Song.",
+    description: "Equatorial Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

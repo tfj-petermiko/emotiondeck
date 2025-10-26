@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mexico",
-  description:
-    "Explore Mexico’s emotional archetype - The Timeless Storyteller. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Mexico, Mexico archetype, The Timeless Storyteller, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Mexico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Mexico, The Timeless Storyteller, Mexican spirit, ancestral echoes, emotional culture, Jungian symbolism, cultural identity, Mexican psyche, symbolic storytelling, human emotion, empathy Mexico, vibrant heritage, collective memory, psychological roots, spiritual symbolism, national narrative, emotional resilience, cultural archetypes",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mexico",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mexico",
-    description:
-      "Journey through Mexico’s emotional identity — The Timeless Storyteller, symbolising the nation’s inner psyche and emotional history.",
+    description: "Mexico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/mexico",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mexico (The Timeless Storyteller)",
-    description:
-      "Discover Mexico’s emotional essence through the archetype The Timeless Storyteller.",
+    description: "Mexico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Haiti",
-  description:
-    "Explore Haiti’s emotional archetype - The Resilient Islander. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Haiti, Haiti archetype, The Resilient Islander, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Haiti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Haiti resilience, The Resilient Islander, Haitian endurance, emotional culture Haiti, Haitian psychology, national identity Haiti, Jungian archetypes Haiti, Haitian empathy, cultural symbolism Haiti, islander strength, Haitian spirit, symbolic resilience, emotional identity Haiti, Caribbean psychology, Haitian archetypes, poetic symbolism, Haitian emotional landscape",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/haiti",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Haiti",
-    description:
-      "Journey through Haiti’s emotional identity — The Resilient Islander, symbolising the nation’s inner psyche and emotional history.",
+    description: "Haiti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/haiti",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Haiti (The Resilient Islander)",
-    description:
-      "Discover Haiti’s emotional essence through the archetype The Resilient Islander.",
+    description: "Haiti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

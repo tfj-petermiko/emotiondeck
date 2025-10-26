@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Kiribati",
-  description:
-    "Explore Kiribati’s emotional archetype - The Eternal Breeze. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Kiribati, Kiribati archetype, The Eternal Breeze, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Kiribati’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Kiribati, The Eternal Breeze, ocean resilience, Kiribati culture, emotional currents, island empathy, Jungian archetypes, symbolic identity, Pacific connection, timeless resilience, emotional symbolism, national psyche, cultural emotionality, oceanic spirit, collective empathy, symbolic breeze, Kiribati psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/kiribati",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Kiribati",
-    description:
-      "Journey through Kiribati’s emotional identity — The Eternal Breeze, symbolising the nation’s inner psyche and emotional history.",
+    description: "Kiribati’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/kiribati",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Kiribati (The Eternal Breeze)",
-    description:
-      "Discover Kiribati’s emotional essence through the archetype The Eternal Breeze.",
+    description: "Kiribati’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

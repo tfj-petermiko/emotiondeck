@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Trinidad and Tobago",
-  description:
-    "Explore Trinidad and Tobago’s emotional archetype - The Golden Rhythm. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Trinidad and Tobago, Trinidad and Tobago archetype, The Golden Rhythm, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Trinidad and Tobago’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Trinidad and Tobago, The Golden Rhythm culture, emotion and identity, empathy in Trinidad, psychology of rhythm, Trinidad and Tobago emotion, cultural empathy EmotionDeck, psychology of identity, The Golden Rhythm emotion, emotion and culture Trinidad, Trinidad and Tobago empathy, EmotionDeck cultural psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/trinidad-and-tobago",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Trinidad and Tobago",
-    description:
-      "Journey through Trinidad and Tobago’s emotional identity — The Golden Rhythm, symbolising the nation’s inner psyche and emotional history.",
+    description: "Trinidad and Tobago’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/trinidad-and-tobago",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Trinidad and Tobago (The Golden Rhythm)",
-    description:
-      "Discover Trinidad and Tobago’s emotional essence through the archetype The Golden Rhythm.",
+    description: "Trinidad and Tobago’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

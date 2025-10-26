@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Jamaica",
-  description:
-    "Explore Jamaica’s emotional archetype - The Voice of Waves. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Jamaica, Jamaica archetype, The Voice of Waves, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Jamaica’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Jamaica, The Voice of Waves, Jamaican rhythm, cultural resilience, emotional identity, Jungian archetypes, national psyche, symbolic symbolism, Caribbean emotion, empathy in Jamaica, poetic symbolism, Jamaican cultural psyche, emotional waves, resilience symbolism, national identity Jamaica, psychological symbolism, Caribbean archetypes, emotional storytelling",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/jamaica",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Jamaica",
-    description:
-      "Journey through Jamaica’s emotional identity — The Voice of Waves, symbolising the nation’s inner psyche and emotional history.",
+    description: "Jamaica’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/jamaica",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Jamaica (The Voice of Waves)",
-    description:
-      "Discover Jamaica’s emotional essence through the archetype The Voice of Waves.",
+    description: "Jamaica’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

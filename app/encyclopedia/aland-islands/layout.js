@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Aland Islands",
-  description:
-    "Explore Aland Islands’s emotional archetype - The Silent Sailor. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Aland Islands, Aland Islands archetype, The Silent Sailor, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Aland Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Aland Islands, Silent Sailor, still waters, unspoken depths, emotional culture, Jungian archetypes, symbolic voyage, national identity, Scandinavian psyche, maritime symbolism, poetic symbolism, empathy in culture, Nordic emotionality, cultural introspection, psychological archetypes, quiet resilience, symbolic silence, emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/aland-islands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Aland Islands",
-    description:
-      "Journey through Aland Islands’s emotional identity — The Silent Sailor, symbolising the nation’s inner psyche and emotional history.",
+    description: "Aland Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/aland-islands",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Aland Islands (The Silent Sailor)",
-    description:
-      "Discover Aland Islands’s emotional essence through the archetype The Silent Sailor.",
+    description: "Aland Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

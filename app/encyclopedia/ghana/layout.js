@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Ghana",
-  description:
-    "Explore Ghana’s emotional archetype - The Keeper of Rhythm. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Ghana, Ghana archetype, The Keeper of Rhythm, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Ghana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Ghana, The Keeper of Rhythm, ancestral drums, Ghanaian soul, emotional culture, Jungian symbolism, national identity, vibrant soul, cultural empathy, African archetypes, rhythmic wisdom, emotional heritage, Ghana psychology, symbolic rhythm, timeless wisdom, cultural pulses, African emotional identity, poetic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/ghana",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Ghana",
-    description:
-      "Journey through Ghana’s emotional identity — The Keeper of Rhythm, symbolising the nation’s inner psyche and emotional history.",
+    description: "Ghana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/ghana",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Ghana (The Keeper of Rhythm)",
-    description:
-      "Discover Ghana’s emotional essence through the archetype The Keeper of Rhythm.",
+    description: "Ghana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

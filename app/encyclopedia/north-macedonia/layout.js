@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - North Macedonia",
-  description:
-    "Explore North Macedonia’s emotional archetype - The Keeper of Echoes. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck North Macedonia, North Macedonia archetype, The Keeper of Echoes, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "North Macedonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck North Macedonia, Keeper of Echoes emotion, North Macedonia culture empathy, emotional identity North Macedonia, psychology of emotions Macedonia, empathy and culture EmotionDeck, Keeper of Echoes psychology, North Macedonia emotional heritage, emotional identity Keeper of Echoes, EmotionDeck empathy culture, psychology culture North Macedonia, Keeper of Echoes emotional journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/north-macedonia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - North Macedonia",
-    description:
-      "Journey through North Macedonia’s emotional identity — The Keeper of Echoes, symbolising the nation’s inner psyche and emotional history.",
+    description: "North Macedonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/north-macedonia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — North Macedonia (The Keeper of Echoes)",
-    description:
-      "Discover North Macedonia’s emotional essence through the archetype The Keeper of Echoes.",
+    description: "North Macedonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

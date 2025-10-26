@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Kuwait",
-  description:
-    "Explore Kuwait’s emotional archetype - The Dream of Dawn. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Kuwait, Kuwait archetype, The Dream of Dawn, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Kuwait’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring spirit and cultural soul.",
+  keywords: "EmotionDeck Kuwait, The Dream of Dawn, Kuwaiti soul, emotional culture, ancient sands, promise of light, national identity, symbolic awakening, Jungian archetypes, empathy, cultural symbolism, quiet awakening, Arabian emotion, psyche of Kuwait, poetic symbolism, emotional heritage, Middle Eastern identity, dawn archetype",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/kuwait",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Kuwait",
-    description:
-      "Journey through Kuwait’s emotional identity — The Dream of Dawn, symbolising the nation’s inner psyche and emotional history.",
+    description: "Kuwait’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring spirit and cultural soul.",
     url: "https://emotiondeck.com/encyclopedia/kuwait",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Kuwait (The Dream of Dawn)",
-    description:
-      "Discover Kuwait’s emotional essence through the archetype The Dream of Dawn.",
+    description: "Kuwait’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring spirit and cultural soul.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

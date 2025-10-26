@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bolivia",
-  description:
-    "Explore Bolivia’s emotional archetype - The Voice of Wind. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Bolivia, Bolivia archetype, The Voice of Wind, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Bolivia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Bolivia, The Voice of Wind, Andean whispers, salt flats symbolism, emotional culture Bolivia, Jungian archetypes Bolivia, Bolivian empathy, national identity Bolivia, ancient echoes Andes, symbolic psychology Bolivia, cultural soul Bolivia, emotional landscapes, Andean spirit, Bolivia mythology, poetic symbolism, native emotional wisdom, wind archetype, Bolivian psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bolivia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bolivia",
-    description:
-      "Journey through Bolivia’s emotional identity — The Voice of Wind, symbolising the nation’s inner psyche and emotional history.",
+    description: "Bolivia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/bolivia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bolivia (The Voice of Wind)",
-    description:
-      "Discover Bolivia’s emotional essence through the archetype The Voice of Wind.",
+    description: "Bolivia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

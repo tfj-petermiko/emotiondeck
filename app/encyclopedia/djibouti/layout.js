@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Djibouti",
-  description:
-    "Explore Djibouti’s emotional archetype - The Desert Voice. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Djibouti, Djibouti archetype, The Desert Voice, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Djibouti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep-rooted spirit and timeless soul.",
+  keywords: "EmotionDeck Djibouti, The Desert Voice, Djibouti resilience, ancient sands symbolism, emotional culture Djibouti, Djibouti empathy, Jungian archetypes Djibouti, national identity Djibouti, symbolic strength, desert psychology, cultural symbolism, Djibouti spirit, emotional resilience, quiet strength, Djibouti mythology, poetic symbolism, Djibouti heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/djibouti",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Djibouti",
-    description:
-      "Journey through Djibouti’s emotional identity — The Desert Voice, symbolising the nation’s inner psyche and emotional history.",
+    description: "Djibouti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep-rooted spirit and timeless soul.",
     url: "https://emotiondeck.com/encyclopedia/djibouti",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Djibouti (The Desert Voice)",
-    description:
-      "Discover Djibouti’s emotional essence through the archetype The Desert Voice.",
+    description: "Djibouti’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep-rooted spirit and timeless soul.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

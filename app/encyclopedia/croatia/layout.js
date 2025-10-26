@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Croatia",
-  description:
-    "Explore Croatia’s emotional archetype - The Resilient Voyager. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Croatia, Croatia archetype, The Resilient Voyager, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Croatia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soulful voyage.",
+  keywords: "EmotionDeck Croatia, The Resilient Voyager, Croatian spirit, emotional culture, national identity, cultural resilience, Jungian archetypes, symbolic voyage, historical endurance, empathetic psyche, Slavic heritage, poetic symbolism, emotional landscape, psychological journey, cultural empathy, enduring grace, collective memory, identity symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/croatia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Croatia",
-    description:
-      "Journey through Croatia’s emotional identity — The Resilient Voyager, symbolising the nation’s inner psyche and emotional history.",
+    description: "Croatia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soulful voyage.",
     url: "https://emotiondeck.com/encyclopedia/croatia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Croatia (The Resilient Voyager)",
-    description:
-      "Discover Croatia’s emotional essence through the archetype The Resilient Voyager.",
+    description: "Croatia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soulful voyage.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bermuda",
-  description:
-    "Explore Bermuda’s emotional archetype - The Coral Guardian. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Bermuda, Bermuda archetype, The Coral Guardian, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Bermuda’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Bermuda, The Coral Guardian, Bermuda resilience, turquoise whispers, emotional culture Bermuda, Jungian archetypes Bermuda, symbolic sentinel, Bermuda empathy, national identity Bermuda, poetic symbolism, Bermuda psychology, cultural symbolism, emotional symbolism, British English archetypes, Bermuda soul, silent sentinel, resilience archetype, cultural empathy Bermuda",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bermuda",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bermuda",
-    description:
-      "Journey through Bermuda’s emotional identity — The Coral Guardian, symbolising the nation’s inner psyche and emotional history.",
+    description: "Bermuda’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/bermuda",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bermuda (The Coral Guardian)",
-    description:
-      "Discover Bermuda’s emotional essence through the archetype The Coral Guardian.",
+    description: "Bermuda’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

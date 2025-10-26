@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tunisia",
-  description:
-    "Explore Tunisia’s emotional archetype - The Inner Oasis. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Tunisia, Tunisia archetype, The Inner Oasis, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Tunisia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Tunisia journey, The Inner Oasis emotions, Tunisia cultural empathy, EmotionDeck psychology insights, identity and emotion Tunisia, The Inner Oasis psychology, EmotionDeck cultural identity, empathy in Tunisia, Tunisia emotion exploration, psychology of The Inner Oasis, cultural emotion decks, EmotionDeck identity journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tunisia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tunisia",
-    description:
-      "Journey through Tunisia’s emotional identity — The Inner Oasis, symbolising the nation’s inner psyche and emotional history.",
+    description: "Tunisia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/tunisia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tunisia (The Inner Oasis)",
-    description:
-      "Discover Tunisia’s emotional essence through the archetype The Inner Oasis.",
+    description: "Tunisia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

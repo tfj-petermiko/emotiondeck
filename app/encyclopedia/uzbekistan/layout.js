@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Uzbekistan",
-  description:
-    "Explore Uzbekistan’s emotional archetype - The Guardian of Dust. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Uzbekistan, Uzbekistan archetype, The Guardian of Dust, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Uzbekistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Uzbekistan, Guardian of Dust emotions, Uzbek culture empathy, psychology of identity Uzbekistan, EmotionDeck cultural emotions, Guardian of Dust psychology, empathy through Uzbek culture, emotion and identity in Uzbekistan, EmotionDeck emotional heritage, Guardian of Dust cultural identity, Uzbek emotion and empathy, psychology of emotions in Uzbekistan",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/uzbekistan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Uzbekistan",
-    description:
-      "Journey through Uzbekistan’s emotional identity — The Guardian of Dust, symbolising the nation’s inner psyche and emotional history.",
+    description: "Uzbekistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/uzbekistan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Uzbekistan (The Guardian of Dust)",
-    description:
-      "Discover Uzbekistan’s emotional essence through the archetype The Guardian of Dust.",
+    description: "Uzbekistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

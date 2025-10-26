@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tuvalu",
-  description:
-    "Explore Tuvalu’s emotional archetype - The Spirit of Coral. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Tuvalu, Tuvalu archetype, The Spirit of Coral, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Tuvalu’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Tuvalu, The Spirit of Coral emotions, Tuvaluan culture emotion, empathy and identity Tuvalu, EmotionDeck psychology Tuvalu, Spirit of Coral feelings, Tuvalu emotional identity, cultural empathy Tuvalu, EmotionDeck emotional psychology, Tuvalu spirit and emotion, empathy in Tuvalu culture, Spirit of Coral identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tuvalu",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tuvalu",
-    description:
-      "Journey through Tuvalu’s emotional identity — The Spirit of Coral, symbolising the nation’s inner psyche and emotional history.",
+    description: "Tuvalu’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/tuvalu",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tuvalu (The Spirit of Coral)",
-    description:
-      "Discover Tuvalu’s emotional essence through the archetype The Spirit of Coral.",
+    description: "Tuvalu’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

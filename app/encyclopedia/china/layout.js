@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - China",
-  description:
-    "Explore China’s emotional archetype - The Philosopher of Harmony. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck China, China archetype, The Philosopher of Harmony, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "China’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck China, Philosopher of Harmony, Chinese wisdom, emotional culture, national identity, cultural symbolism, Jungian archetypes, empathy in China, balance and harmony, ancient Chinese philosophy, modern Chinese psyche, symbolic essence China, emotional psychology, Taoist influence, Confucian values, cultural emotional nuance, China soul, poetic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/china",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - China",
-    description:
-      "Journey through China’s emotional identity — The Philosopher of Harmony, symbolising the nation’s inner psyche and emotional history.",
+    description: "China’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/china",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — China (The Philosopher of Harmony)",
-    description:
-      "Discover China’s emotional essence through the archetype The Philosopher of Harmony.",
+    description: "China’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

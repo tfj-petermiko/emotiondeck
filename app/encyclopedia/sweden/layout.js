@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Sweden",
-  description:
-    "Explore Sweden’s emotional archetype - The Harmoniser. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Sweden, Sweden archetype, The Harmoniser, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Sweden’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Sweden harmony, The Harmoniser emotion guide, Swedish culture empathy, EmotionDeck psychology insights, Sweden emotional identity, The Harmoniser cultural empathy, EmotionDeck emotional balance, Sweden identity and emotion, empathetic psychology Sweden, The Harmoniser emotional culture, Sweden emotion storytelling, EmotionDeck cultural harmony",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/sweden",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Sweden",
-    description:
-      "Journey through Sweden’s emotional identity — The Harmoniser, symbolising the nation’s inner psyche and emotional history.",
+    description: "Sweden’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/sweden",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Sweden (The Harmoniser)",
-    description:
-      "Discover Sweden’s emotional essence through the archetype The Harmoniser.",
+    description: "Sweden’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

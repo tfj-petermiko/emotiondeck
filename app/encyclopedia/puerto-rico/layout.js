@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Puerto Rico",
-  description:
-    "Explore Puerto Rico’s emotional archetype - The Memory of Light. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Puerto Rico, Puerto Rico archetype, The Memory of Light, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Puerto Rico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Puerto Rico, The Memory of Light emotions, Puerto Rico cultural identity, EmotionDeck empathy highlights, Puerto Rico psychology insights, Memory of Light and identity, EmotionDeck emotional culture, Puerto Rico emotional heritage, empathy in Puerto Rican culture, psychology of identity Puerto Rico, Memory of Light emotional journey, EmotionDeck cultural empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/puerto-rico",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Puerto Rico",
-    description:
-      "Journey through Puerto Rico’s emotional identity — The Memory of Light, symbolising the nation’s inner psyche and emotional history.",
+    description: "Puerto Rico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/puerto-rico",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Puerto Rico (The Memory of Light)",
-    description:
-      "Discover Puerto Rico’s emotional essence through the archetype The Memory of Light.",
+    description: "Puerto Rico’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

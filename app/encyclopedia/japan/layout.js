@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Japan",
-  description:
-    "Explore Japan’s emotional archetype - The Silent Creator. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Japan, Japan archetype, The Silent Creator, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Japan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Japan, The Silent Creator, Japanese artistry, shadow symbolism, light symbolism, emotional culture Japan, Japanese empathy, Jungian Japan, national identity Japan, cultural symbolism Japan, poetic Japanese culture, symbolic emotion Japan, subtle creativity Japan, emotional psychology Japan, Japanese archetypes, cultural nuance Japan, Japan emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/japan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Japan",
-    description:
-      "Journey through Japan’s emotional identity — The Silent Creator, symbolising the nation’s inner psyche and emotional history.",
+    description: "Japan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/japan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Japan (The Silent Creator)",
-    description:
-      "Discover Japan’s emotional essence through the archetype The Silent Creator.",
+    description: "Japan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Philippines",
-  description:
-    "Explore Philippines’s emotional archetype - The Ocean of Stillness. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Philippines, Philippines archetype, The Ocean of Stillness, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Philippines’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Philippines poetry, The Ocean of Stillness emotion, Filipino culture empathy, psychology of stillness, Philippine identity emotion, EmotionDeck cultural psychology, Ocean of Stillness and empathy, Filipino emotional identity, EmotionDeck psychological insight, Philippines emotional culture, Ocean of Stillness psychology, empathy in Philippine culture",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/philippines",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Philippines",
-    description:
-      "Journey through Philippines’s emotional identity — The Ocean of Stillness, symbolising the nation’s inner psyche and emotional history.",
+    description: "Philippines’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/philippines",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Philippines (The Ocean of Stillness)",
-    description:
-      "Discover Philippines’s emotional essence through the archetype The Ocean of Stillness.",
+    description: "Philippines’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

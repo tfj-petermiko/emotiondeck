@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Burkina Faso",
-  description:
-    "Explore Burkina Faso’s emotional archetype - The Compassionate Nomad. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Burkina Faso, Burkina Faso archetype, The Compassionate Nomad, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Burkina Faso’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Burkina Faso emotion, Compassionate Nomad, wandering heart, resilience spirit, profound empathy, emotional culture Burkina, Jungian archetypes Africa, symbolic identity, nomadic symbolism, cultural empathy, national psyche Burkina, emotional resilience, empathy psychology, poetic symbolism, African emotional landscape, Burkinabé identity, archetype psychology, symbolic nomadism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/burkina-faso",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Burkina Faso",
-    description:
-      "Journey through Burkina Faso’s emotional identity — The Compassionate Nomad, symbolising the nation’s inner psyche and emotional history.",
+    description: "Burkina Faso’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/burkina-faso",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Burkina Faso (The Compassionate Nomad)",
-    description:
-      "Discover Burkina Faso’s emotional essence through the archetype The Compassionate Nomad.",
+    description: "Burkina Faso’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

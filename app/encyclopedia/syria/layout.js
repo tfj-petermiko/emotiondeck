@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Syria",
-  description:
-    "Explore Syria’s emotional archetype - The Healer of Storms. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Syria, Syria archetype, The Healer of Storms, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Syria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Syria, The Healer of Storms emotion, Syrian culture empathy, psychology of Syria, emotion and identity Syria, Syrian emotional healing, cultural empathy Syria, EmotionDeck psychology, Healer of Storms identity, Syrian emotional psychology, empathy and culture Syria, EmotionDeck healing identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/syria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Syria",
-    description:
-      "Journey through Syria’s emotional identity — The Healer of Storms, symbolising the nation’s inner psyche and emotional history.",
+    description: "Syria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/syria",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Syria (The Healer of Storms)",
-    description:
-      "Discover Syria’s emotional essence through the archetype The Healer of Storms.",
+    description: "Syria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

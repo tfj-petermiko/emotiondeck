@@ -1,17 +1,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guinea-Bissau",
-  description:
-    "Explore Guinea-Bissau’s emotional archetype - The Whisper of Hope. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Guinea-Bissau, Guinea-Bissau archetype, The Whisper of Hope, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Guinea-Bissau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Guinea, The Whisper of Hope, Guinea resilience, emotional culture Guinea, Jungian archetypes, symbolic dawn, Guinea national identity, empathy in Guinea, poetic symbolism, cultural psychology, West African emotions, Guinea symbolism, emotional resilience, national psyche Guinea, hope archetype, cultural empathy, symbolic emotions, Guinea emotional identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guinea-bissau",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guinea-Bissau",
-    description:
-      "Journey through Guinea-Bissau’s emotional identity — The Whisper of Hope, symbolising the nation’s inner psyche and emotional history.",
+    description: "Guinea-Bissau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/guinea-bissau",
     siteName: "EmotionDeck",
     images: [
@@ -28,8 +25,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guinea-Bissau (The Whisper of Hope)",
-    description:
-      "Discover Guinea-Bissau’s emotional essence through the archetype The Whisper of Hope.",
+    description: "Guinea-Bissau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

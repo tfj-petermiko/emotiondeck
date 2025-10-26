@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - United Kingdom",
-  description:
-    "Explore United Kingdom’s emotional archetype - The Stoic Visionary. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck United Kingdom, United Kingdom archetype, The Stoic Visionary, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "United Kingdom’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck United Kingdom, The Stoic Visionary emotion, British culture empathy, United Kingdom psychology, Stoic Visionary identity, EmotionDeck empathy UK, UK cultural emotion, Stoic Visionary psychology UK, British identity emotion, EmotionDeck culture UK, United Kingdom empathy psychology, Stoic Visionary cultural identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/united-kingdom",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - United Kingdom",
-    description:
-      "Journey through United Kingdom’s emotional identity — The Stoic Visionary, symbolising the nation’s inner psyche and emotional history.",
+    description: "United Kingdom’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/united-kingdom",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — United Kingdom (The Stoic Visionary)",
-    description:
-      "Discover United Kingdom’s emotional essence through the archetype The Stoic Visionary.",
+    description: "United Kingdom’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

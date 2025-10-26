@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Arctic Circle",
-  description:
-    "Explore Arctic Circle’s emotional archetype - The Eternal Mirror. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Arctic Circle, Arctic Circle archetype, The Eternal Mirror, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Arctic Circle’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Arctic Circle, Eternal Mirror, emotional culture, Jungian archetypes, symbolic nature, identity reflection, national identity, silent depths, empathy, cultural symbolism, psychological depth, emotional identity, nature and self, poetic symbolism, British English style, emotional psyche, cultural empathy, symbolic archetype",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/arctic-circle",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Arctic Circle",
-    description:
-      "Journey through Arctic Circle’s emotional identity — The Eternal Mirror, symbolising the nation’s inner psyche and emotional history.",
+    description: "Arctic Circle’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/arctic-circle",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Arctic Circle (The Eternal Mirror)",
-    description:
-      "Discover Arctic Circle’s emotional essence through the archetype The Eternal Mirror.",
+    description: "Arctic Circle’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

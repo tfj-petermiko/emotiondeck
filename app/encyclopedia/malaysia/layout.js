@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Malaysia",
-  description:
-    "Explore Malaysia’s emotional archetype - The Horizon Seer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Malaysia, Malaysia archetype, The Horizon Seer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Malaysia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Malaysia, The Horizon Seer, Malaysian soul, emotional culture, Jungian archetypes, cultural symbolism, national identity, future dreams, ancient roots, empathetic psyche, symbolic Malaysia, emotional heritage, Malay symbolism, collective unconscious, psychological depth, cultural empathy, visionary archetype",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/malaysia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Malaysia",
-    description:
-      "Journey through Malaysia’s emotional identity — The Horizon Seer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Malaysia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/malaysia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Malaysia (The Horizon Seer)",
-    description:
-      "Discover Malaysia’s emotional essence through the archetype The Horizon Seer.",
+    description: "Malaysia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

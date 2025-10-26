@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bulgaria",
-  description:
-    "Explore Bulgaria’s emotional archetype - The Earth Mother. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Bulgaria, Bulgaria archetype, The Earth Mother, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Bulgaria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s profound emotional essence.",
+  keywords: "EmotionDeck Bulgaria, The Earth Mother, Bulgarian soul, emotional culture, empathy, Jungian archetypes, national identity, symbolic roots, cultural symbolism, ancient whispers, fertile dreams, nurturing spirit, collective unconscious, emotional heritage, Balkan psychology, spiritual archetypes, folk narratives, emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bulgaria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bulgaria",
-    description:
-      "Journey through Bulgaria’s emotional identity — The Earth Mother, symbolising the nation’s inner psyche and emotional history.",
+    description: "Bulgaria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s profound emotional essence.",
     url: "https://emotiondeck.com/encyclopedia/bulgaria",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bulgaria (The Earth Mother)",
-    description:
-      "Discover Bulgaria’s emotional essence through the archetype The Earth Mother.",
+    description: "Bulgaria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s profound emotional essence.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

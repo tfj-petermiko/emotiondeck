@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Saudi Arabia",
-  description:
-    "Explore Saudi Arabia’s emotional archetype - The Desert of Mirrors. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Saudi Arabia, Saudi Arabia archetype, The Desert of Mirrors, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Saudi Arabia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s intertwined soul of tradition and transformation.",
+  keywords: "EmotionDeck Saudi Arabia, The Desert of Mirrors emotion, Saudi culture empathy, emotion psychology Saudi Arabia, identity in Saudi Arabia, Desert of Mirrors emotion, Saudi Arabian emotion culture, empathy and identity Saudi, emotionDeck cultural psyche, Saudi Arabia psychological identity, Desert of Mirrors empathy, emotion and identity Saudi",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/saudi-arabia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Saudi Arabia",
-    description:
-      "Journey through Saudi Arabia’s emotional identity — The Desert of Mirrors, symbolising the nation’s inner psyche and emotional history.",
+    description: "Saudi Arabia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s intertwined soul of tradition and transformation.",
     url: "https://emotiondeck.com/encyclopedia/saudi-arabia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Saudi Arabia (The Desert of Mirrors)",
-    description:
-      "Discover Saudi Arabia’s emotional essence through the archetype The Desert of Mirrors.",
+    description: "Saudi Arabia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s intertwined soul of tradition and transformation.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

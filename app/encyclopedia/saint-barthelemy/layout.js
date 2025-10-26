@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Saint Barthelemy",
-  description:
-    "Explore Saint Barthelemy’s emotional archetype - The Whisper of Palm. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Saint Barthelemy, Saint Barthelemy archetype, The Whisper of Palm, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Saint Barthelemy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Saint Barthelemy whispers, The Whisper of Palm emotion, Saint Barthelemy culture and empathy, EmotionDeck psychology insights, identity and emotion Saint Barthelemy, empathy in Saint Barthelemy culture, The Whisper of Palm psychology, EmotionDeck cultural emotion, Saint Barthelemy emotional identity, Whisper of Palm empathy stories, EmotionDeck identity psychology, Saint Barthelemy emotional culture",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/saint-barthelemy",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Saint Barthelemy",
-    description:
-      "Journey through Saint Barthelemy’s emotional identity — The Whisper of Palm, symbolising the nation’s inner psyche and emotional history.",
+    description: "Saint Barthelemy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/saint-barthelemy",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Saint Barthelemy (The Whisper of Palm)",
-    description:
-      "Discover Saint Barthelemy’s emotional essence through the archetype The Whisper of Palm.",
+    description: "Saint Barthelemy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

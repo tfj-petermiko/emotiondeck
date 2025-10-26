@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Azerbaijan",
-  description:
-    "Explore Azerbaijan’s emotional archetype - The Sky Artisan. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Azerbaijan, Azerbaijan archetype, The Sky Artisan, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Azerbaijan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heartfelt interplay between tradition and infinite aspiration.",
+  keywords: "EmotionDeck Azerbaijan, The Sky Artisan, Azerbaijani soul, emotional culture, Jungian archetypes, cultural symbolism, national identity, boundless horizons, spiritual weaving, empathy in Azerbaijan, emotional symbolism, psyche and spirit, Azerbaijani heritage, symbolic artistry, emotional psychology, horizon imagery, cultural empathy, transcendent spirit",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/azerbaijan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Azerbaijan",
-    description:
-      "Journey through Azerbaijan’s emotional identity — The Sky Artisan, symbolising the nation’s inner psyche and emotional history.",
+    description: "Azerbaijan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heartfelt interplay between tradition and infinite aspiration.",
     url: "https://emotiondeck.com/encyclopedia/azerbaijan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Azerbaijan (The Sky Artisan)",
-    description:
-      "Discover Azerbaijan’s emotional essence through the archetype The Sky Artisan.",
+    description: "Azerbaijan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heartfelt interplay between tradition and infinite aspiration.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

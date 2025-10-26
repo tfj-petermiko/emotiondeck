@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Seychelles",
-  description:
-    "Explore Seychelles’s emotional archetype - The Song of Light. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Seychelles, Seychelles archetype, The Song of Light, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Seychelles’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Seychelles harmony, The Song of Light emotion, Seychelles cultural empathy, Emotional psychology Seychelles, Identity and emotion Seychelles, EmotionDeck cultural song, Seychelles empathy psychology, The Song of Light identity, EmotionDeck emotion culture, Seychelles emotional resonance, Psychology of Seychelles identity, EmotionDeck empathy journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/seychelles",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Seychelles",
-    description:
-      "Journey through Seychelles’s emotional identity — The Song of Light, symbolising the nation’s inner psyche and emotional history.",
+    description: "Seychelles’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/seychelles",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Seychelles (The Song of Light)",
-    description:
-      "Discover Seychelles’s emotional essence through the archetype The Song of Light.",
+    description: "Seychelles’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

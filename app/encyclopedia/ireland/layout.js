@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Ireland",
-  description:
-    "Explore Ireland’s emotional archetype - The Poet of Memory. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Ireland, Ireland archetype, The Poet of Memory, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Ireland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Ireland, The Poet of Memory, Irish soul, emotional culture, Jungian archetypes, national identity, ancient whispers, timeless longing, symbolic Ireland, poetic symbolism, Celtic memory, empathy Ireland, emotional heritage, Irish mythology, collective unconscious, cultural symbolism, emotional landscape, Irish psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/ireland",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Ireland",
-    description:
-      "Journey through Ireland’s emotional identity — The Poet of Memory, symbolising the nation’s inner psyche and emotional history.",
+    description: "Ireland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/ireland",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Ireland (The Poet of Memory)",
-    description:
-      "Discover Ireland’s emotional essence through the archetype The Poet of Memory.",
+    description: "Ireland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Lebanon",
-  description:
-    "Explore Lebanon’s emotional archetype - The Voice of Faith. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Lebanon, Lebanon archetype, The Voice of Faith, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Lebanon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Lebanon, The Voice of Faith, Lebanese resilience, ancient cedars symbolism, emotional culture Lebanon, Lebanese psychology, Jungian archetypes Lebanon, national identity Lebanon, poetic symbolism, Lebanese empathy, cultural symbolism, emotional heritage, Middle Eastern psyche, symbolic national identity, resilience in adversity, Lebanon emotional narrative, cedar tree symbolism, timeless hymn Lebanon",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/lebanon",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Lebanon",
-    description:
-      "Journey through Lebanon’s emotional identity — The Voice of Faith, symbolising the nation’s inner psyche and emotional history.",
+    description: "Lebanon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/lebanon",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Lebanon (The Voice of Faith)",
-    description:
-      "Discover Lebanon’s emotional essence through the archetype The Voice of Faith.",
+    description: "Lebanon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

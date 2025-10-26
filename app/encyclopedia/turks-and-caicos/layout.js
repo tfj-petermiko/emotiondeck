@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Turks and Caicos",
-  description:
-    "Explore Turks and Caicos’s emotional archetype - The Horizon Dancer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Turks and Caicos, Turks and Caicos archetype, The Horizon Dancer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Turks and Caicos’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where longing and liberation entwine beneath turquoise dreams.",
+  keywords: "EmotionDeck Turks and Caicos, The Horizon Dancer emotion, Turks and Caicos culture, emotion and psychology, empathy in Turks and Caicos, identity and emotion, Horizon Dancer empathy, EmotionDeck identity, psychology of emotion, culture and emotion, Turks and Caicos identity, Horizon Dancer psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/turks-and-caicos",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Turks and Caicos",
-    description:
-      "Journey through Turks and Caicos’s emotional identity — The Horizon Dancer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Turks and Caicos’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where longing and liberation entwine beneath turquoise dreams.",
     url: "https://emotiondeck.com/encyclopedia/turks-and-caicos",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Turks and Caicos (The Horizon Dancer)",
-    description:
-      "Discover Turks and Caicos’s emotional essence through the archetype The Horizon Dancer.",
+    description: "Turks and Caicos’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where longing and liberation entwine beneath turquoise dreams.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

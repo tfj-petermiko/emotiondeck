@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - France",
-  description:
-    "Explore France’s emotional archetype - The Aesthetic Rebel. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck France, France archetype, The Aesthetic Rebel, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "France’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck France, The Aesthetic Rebel, French passion, defiant beauty, emotional culture France, symbolic France, Jungian France, French empathy, French national identity, poetic symbolism, French emotional psychology, cultural shadows and light, French archetypes, timeless passion France, emotional depth France, symbolic rebellion, France emotional resonance",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/france",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - France",
-    description:
-      "Journey through France’s emotional identity — The Aesthetic Rebel, symbolising the nation’s inner psyche and emotional history.",
+    description: "France’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/france",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — France (The Aesthetic Rebel)",
-    description:
-      "Discover France’s emotional essence through the archetype The Aesthetic Rebel.",
+    description: "France’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

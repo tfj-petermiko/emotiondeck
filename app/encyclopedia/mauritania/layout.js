@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mauritania",
-  description:
-    "Explore Mauritania’s emotional archetype - The Desert Compass. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Mauritania, Mauritania archetype, The Desert Compass, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Mauritania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Mauritania, The Desert Compass, Mauritanian soul, desert symbolism, emotional culture Mauritania, Jungian archetypes, empathy in Mauritania, national identity, cultural psychology, timeless wisdom, solitude and emotion, Saharan symbolism, psychological landscapes, emotional navigation, Mauritanian heritage, symbolic archetypes, emotional resilience, cultural empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mauritania",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mauritania",
-    description:
-      "Journey through Mauritania’s emotional identity — The Desert Compass, symbolising the nation’s inner psyche and emotional history.",
+    description: "Mauritania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/mauritania",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mauritania (The Desert Compass)",
-    description:
-      "Discover Mauritania’s emotional essence through the archetype The Desert Compass.",
+    description: "Mauritania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

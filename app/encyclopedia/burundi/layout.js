@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Burundi",
-  description:
-    "Explore Burundi’s emotional archetype - The Mirror of Soil. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Burundi, Burundi archetype, The Mirror of Soil, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Burundi’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Burundi, The Mirror of Soil, ancestral earth, deep roots, emotional culture, national identity, Jungian archetypes, symbolic essence, cultural empathy, emotional landscape, silent pulse, Burundian psyche, soil symbolism, psychological roots, cultural symbolism, ancestral connection, emotional heritage, reflective archetype",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/burundi",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Burundi",
-    description:
-      "Journey through Burundi’s emotional identity — The Mirror of Soil, symbolising the nation’s inner psyche and emotional history.",
+    description: "Burundi’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/burundi",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Burundi (The Mirror of Soil)",
-    description:
-      "Discover Burundi’s emotional essence through the archetype The Mirror of Soil.",
+    description: "Burundi’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

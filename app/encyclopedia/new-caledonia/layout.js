@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - New Caledonia",
-  description:
-    "Explore New Caledonia’s emotional archetype - The Dream of Sky. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck New Caledonia, New Caledonia archetype, The Dream of Sky, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "New Caledonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck New Caledonia emotion, The Dream of Sky empathy, New Caledonia culture psychology, emotion identity New Caledonia, EmotionDeck cultural empathy, Dream of Sky emotional psychology, New Caledonia identity emotion, EmotionDeck empathy culture, psychology of Dream of Sky, New Caledonia emotional identity, empathy and culture EmotionDeck, The Dream of Sky psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/new-caledonia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - New Caledonia",
-    description:
-      "Journey through New Caledonia’s emotional identity — The Dream of Sky, symbolising the nation’s inner psyche and emotional history.",
+    description: "New Caledonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/new-caledonia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — New Caledonia (The Dream of Sky)",
-    description:
-      "Discover New Caledonia’s emotional essence through the archetype The Dream of Sky.",
+    description: "New Caledonia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

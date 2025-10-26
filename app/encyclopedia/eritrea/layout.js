@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Eritrea",
-  description:
-    "Explore Eritrea’s emotional archetype - The Gentle Flame. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Eritrea, Eritrea archetype, The Gentle Flame, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Eritrea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Eritrea, The Gentle Flame, Eritrean spirit, emotional resilience, cultural empathy, national identity, symbolic warmth, Jungian archetypes, tender ember, poetic symbolism, emotional culture, Eritrean psychology, enduring warmth, quiet strength, cultural symbolism, Eritrean soul, emotional depth, symbolic essence",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/eritrea",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Eritrea",
-    description:
-      "Journey through Eritrea’s emotional identity — The Gentle Flame, symbolising the nation’s inner psyche and emotional history.",
+    description: "Eritrea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/eritrea",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Eritrea (The Gentle Flame)",
-    description:
-      "Discover Eritrea’s emotional essence through the archetype The Gentle Flame.",
+    description: "Eritrea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

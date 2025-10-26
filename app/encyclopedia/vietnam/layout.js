@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Vietnam",
-  description:
-    "Explore Vietnam’s emotional archetype - The Spirit of Flow. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Vietnam, Vietnam archetype, The Spirit of Flow, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Vietnam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Vietnam flow, Spirit of Flow culture, Vietnam emotional identity, empathy in Vietnam, psychology of Vietnamese emotion, EmotionDeck empathy Vietnam, Spirit of Flow psychology, Vietnamese cultural emotion, EmotionDeck identity Vietnam, flow and emotion Vietnam, Spirit of Flow empathy, Vietnam emotion psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/vietnam",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Vietnam",
-    description:
-      "Journey through Vietnam’s emotional identity — The Spirit of Flow, symbolising the nation’s inner psyche and emotional history.",
+    description: "Vietnam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/vietnam",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Vietnam (The Spirit of Flow)",
-    description:
-      "Discover Vietnam’s emotional essence through the archetype The Spirit of Flow.",
+    description: "Vietnam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

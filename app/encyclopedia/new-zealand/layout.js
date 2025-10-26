@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - New Zealand",
-  description:
-    "Explore New Zealand’s emotional archetype - The Spirit of Waves. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck New Zealand, New Zealand archetype, The Spirit of Waves, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "New Zealand’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul beneath shifting horizons.",
+  keywords: "EmotionDeck New Zealand waves, The Spirit of Waves emotion, New Zealand cultural identity, emotion psychology New Zealand, Spirit of Waves empathy, EmotionDeck culture New Zealand, New Zealand emotion and identity, empathy in New Zealand waves, Spirit of Waves psychology, EmotionDeck New Zealand identity, New Zealand emotion culture, empathy emotion waves",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/new-zealand",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - New Zealand",
-    description:
-      "Journey through New Zealand’s emotional identity — The Spirit of Waves, symbolising the nation’s inner psyche and emotional history.",
+    description: "New Zealand’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul beneath shifting horizons.",
     url: "https://emotiondeck.com/encyclopedia/new-zealand",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — New Zealand (The Spirit of Waves)",
-    description:
-      "Discover New Zealand’s emotional essence through the archetype The Spirit of Waves.",
+    description: "New Zealand’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul beneath shifting horizons.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

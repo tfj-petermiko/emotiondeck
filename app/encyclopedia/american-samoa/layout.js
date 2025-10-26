@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - American Samoa",
-  description:
-    "Explore American Samoa’s emotional archetype - The Timeless Wave. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck American Samoa, American Samoa archetype, The Timeless Wave, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "American Samoa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck American Samoa, The Timeless Wave, ancestral memory, cultural tides, emotional culture, empathy, Jungian archetypes, symbolic identity, national psyche, Polynesian heritage, emotional symbolism, collective memory, cultural continuity, psychic currents, oceanic symbolism, indigenous psychology, emotional resilience, ancestral connection",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/american-samoa",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - American Samoa",
-    description:
-      "Journey through American Samoa’s emotional identity — The Timeless Wave, symbolising the nation’s inner psyche and emotional history.",
+    description: "American Samoa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/american-samoa",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — American Samoa (The Timeless Wave)",
-    description:
-      "Discover American Samoa’s emotional essence through the archetype The Timeless Wave.",
+    description: "American Samoa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

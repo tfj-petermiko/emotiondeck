@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Brazil",
-  description:
-    "Explore Brazil’s emotional archetype - The Dreaming Jaguar. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Brazil, Brazil archetype, The Dreaming Jaguar, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Brazil’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Brazil, The Dreaming Jaguar, Brazilian intuition, rainforest symbolism, shadowed dreams, emotional culture Brazil, Jungian Brazil, national identity Brazil, Brazilian empathy, symbolic archetypes, poetic Brazil, cultural psychology Brazil, Brazilian soul, fierce intuition, rainforest emotions, Brazilian symbolism, emotional landscape Brazil",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/brazil",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Brazil",
-    description:
-      "Journey through Brazil’s emotional identity — The Dreaming Jaguar, symbolising the nation’s inner psyche and emotional history.",
+    description: "Brazil’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/brazil",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Brazil (The Dreaming Jaguar)",
-    description:
-      "Discover Brazil’s emotional essence through the archetype The Dreaming Jaguar.",
+    description: "Brazil’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Norway",
-  description:
-    "Explore Norway’s emotional archetype - The Silent Seeker. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Norway, Norway archetype, The Silent Seeker, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Norway’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Norway emotions, The Silent Seeker psychology, Norwegian culture and empathy, emotion and identity Norway, Silent Seeker emotional journey, EmotionDeck cultural insight, empathy in Norwegian identity, psychology of The Silent Seeker, Norway emotion exploration, EmotionDeck emotional wisdom, culture and psychology Norway, Silent Seeker empathetic identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/norway",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Norway",
-    description:
-      "Journey through Norway’s emotional identity — The Silent Seeker, symbolising the nation’s inner psyche and emotional history.",
+    description: "Norway’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/norway",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Norway (The Silent Seeker)",
-    description:
-      "Discover Norway’s emotional essence through the archetype The Silent Seeker.",
+    description: "Norway’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

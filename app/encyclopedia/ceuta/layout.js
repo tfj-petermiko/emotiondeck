@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Ceuta",
-  description:
-    "Explore Ceuta’s emotional archetype - The Spirit of Solitude. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Ceuta, Ceuta archetype, The Spirit of Solitude, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Ceuta’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Ceuta, The Spirit of Solitude, Ceuta symbolism, emotional culture Ceuta, Jungian archetypes, Ceuta introspection, solitude and psyche, Ceuta emotional identity, symbolic isolation, Ceuta empathy, national identity Ceuta, poetic symbolism, Ceuta psychology, cultural solitude, Ceuta soul tapestry, British English symbolism, emotional resilience Ceuta, Ceuta cultural psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/ceuta",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Ceuta",
-    description:
-      "Journey through Ceuta’s emotional identity — The Spirit of Solitude, symbolising the nation’s inner psyche and emotional history.",
+    description: "Ceuta’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/ceuta",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Ceuta (The Spirit of Solitude)",
-    description:
-      "Discover Ceuta’s emotional essence through the archetype The Spirit of Solitude.",
+    description: "Ceuta’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

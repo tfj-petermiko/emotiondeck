@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Romania",
-  description:
-    "Explore Romania’s emotional archetype - The Visionary Dreamwalker. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Romania, Romania archetype, The Visionary Dreamwalker, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Romania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s collective psyche, where myths breathe and the spirit’s depth unfolds.",
+  keywords: "EmotionDeck Romania emotions, The Visionary Dreamwalker culture, Romanian empathy journey, emotion psychology Romania, cultural identity EmotionDeck, visionary dreamwalker emotions, Romanian emotional identity, empathy psychology culture, EmotionDeck cultural dreamwalker, psychology of Romanian emotion, empathy and identity Romania, visionary dreamwalker cultural psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/romania",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Romania",
-    description:
-      "Journey through Romania’s emotional identity — The Visionary Dreamwalker, symbolising the nation’s inner psyche and emotional history.",
+    description: "Romania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s collective psyche, where myths breathe and the spirit’s depth unfolds.",
     url: "https://emotiondeck.com/encyclopedia/romania",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Romania (The Visionary Dreamwalker)",
-    description:
-      "Discover Romania’s emotional essence through the archetype The Visionary Dreamwalker.",
+    description: "Romania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s collective psyche, where myths breathe and the spirit’s depth unfolds.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

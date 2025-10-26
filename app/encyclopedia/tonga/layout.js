@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tonga",
-  description:
-    "Explore Tonga’s emotional archetype - The Song of the Sea. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Tonga, Tonga archetype, The Song of the Sea, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Tonga’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing its deep currents of resilience and belonging.",
+  keywords: "EmotionDeck Tonga poetry, The Song of the Sea emotion, Tonga culture empathy, EmotionDeck psychology identity, sea song emotions Tonga, emotional identity Tonga, cultural empathy EmotionDeck, Tonga poetic psychology, The Song of the Sea culture, EmotionDeck emotional voyage, psychology of Tonga emotion, empathy in Tonga identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tonga",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tonga",
-    description:
-      "Journey through Tonga’s emotional identity — The Song of the Sea, symbolising the nation’s inner psyche and emotional history.",
+    description: "Tonga’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing its deep currents of resilience and belonging.",
     url: "https://emotiondeck.com/encyclopedia/tonga",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tonga (The Song of the Sea)",
-    description:
-      "Discover Tonga’s emotional essence through the archetype The Song of the Sea.",
+    description: "Tonga’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, revealing its deep currents of resilience and belonging.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

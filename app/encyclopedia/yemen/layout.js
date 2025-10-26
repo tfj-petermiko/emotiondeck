@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Yemen",
-  description:
-    "Explore Yemen’s emotional archetype - The Desert Child. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Yemen, Yemen archetype, The Desert Child, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Yemen’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s untamed spirit and timeless emotional landscape.",
+  keywords: "EmotionDeck Yemen, The Desert Child emotion, Yemen culture and empathy, Desert Child psychology, EmotionDeck identity Yemen, Yemen emotion exploration, Desert Child emotional journey, EmotionDeck cultural insight, Yemen empathy and identity, Desert Child emotional depth, EmotionDeck psychology Yemen, Yemen cultural emotion",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/yemen",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Yemen",
-    description:
-      "Journey through Yemen’s emotional identity — The Desert Child, symbolising the nation’s inner psyche and emotional history.",
+    description: "Yemen’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s untamed spirit and timeless emotional landscape.",
     url: "https://emotiondeck.com/encyclopedia/yemen",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Yemen (The Desert Child)",
-    description:
-      "Discover Yemen’s emotional essence through the archetype The Desert Child.",
+    description: "Yemen’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s untamed spirit and timeless emotional landscape.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

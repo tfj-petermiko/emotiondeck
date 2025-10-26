@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Costa Rica",
-  description:
-    "Explore Costa Rica’s emotional archetype - The Phoenix of Sea. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Costa Rica, Costa Rica archetype, The Phoenix of Sea, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Costa Rica’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Costa Rica, The Phoenix of Sea, Costa Rican spirit, emotional renewal, cultural empathy, Jungian symbolism, national rebirth, vibrant tides, psychological archetypes, emotional culture, symbolic identity, Central American psyche, enduring renewal, poetic symbolism, Costa Rican soul, cultural symbolism, emotional resilience, symbolic rebirth",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/costa-rica",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Costa Rica",
-    description:
-      "Journey through Costa Rica’s emotional identity — The Phoenix of Sea, symbolising the nation’s inner psyche and emotional history.",
+    description: "Costa Rica’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/costa-rica",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Costa Rica (The Phoenix of Sea)",
-    description:
-      "Discover Costa Rica’s emotional essence through the archetype The Phoenix of Sea.",
+    description: "Costa Rica’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

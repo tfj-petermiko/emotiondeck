@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Vatican City",
-  description:
-    "Explore Vatican City’s emotional archetype - The Spiritual Mirror. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Vatican City, Vatican City archetype, The Spiritual Mirror, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Vatican City’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Vatican City, The Spiritual Mirror spiritual journey, Vatican City culture and emotion, empathy in Vatican City, psychology of identity Vatican, EmotionDeck empathy exploration, Vatican City emotional insight, The Spiritual Mirror psychology, cultural identity Vatican City, EmotionDeck emotional culture, Vatican City empathy guide, psychology of Vatican identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/vatican-city",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Vatican City",
-    description:
-      "Journey through Vatican City’s emotional identity — The Spiritual Mirror, symbolising the nation’s inner psyche and emotional history.",
+    description: "Vatican City’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/vatican-city",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Vatican City (The Spiritual Mirror)",
-    description:
-      "Discover Vatican City’s emotional essence through the archetype The Spiritual Mirror.",
+    description: "Vatican City’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

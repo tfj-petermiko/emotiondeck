@@ -1,17 +1,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - El Salvador",
-  description:
-    "Explore El Salvador’s emotional archetype - The Redeemed Flame. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck El Salvador, El Salvador archetype, The Redeemed Flame, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "El Salvador’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck El Salvador, The Redeemed Flame, Salvadoran resilience, emotional culture, national identity, Jungian symbolism, cultural empathy, poetic symbolism, Salvadoran psychology, emotional healing, symbolic flame, shadow to light, El Salvador soul, collective psyche, cultural archetypes, empathic culture, psychological resilience, national symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/el-salvador",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - El Salvador",
-    description:
-      "Journey through El Salvador’s emotional identity — The Redeemed Flame, symbolising the nation’s spirit of endurance, transformation, and renewal.",
+    description: "El Salvador’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/el-salvador",
     siteName: "EmotionDeck",
     images: [
@@ -28,8 +25,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — El Salvador (The Redeemed Flame)",
-    description:
-      "Discover El Salvador’s emotional essence through the archetype The Redeemed Flame — a symbol of endurance and rebirth.",
+    description: "El Salvador’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

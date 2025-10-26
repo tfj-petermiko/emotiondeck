@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Honduras",
-  description:
-    "Explore Honduras’s emotional archetype - The Dream Walker. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Honduras, Honduras archetype, The Dream Walker, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Honduras’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul woven from ancient echoes and restless yearning.",
+  keywords: "EmotionDeck Honduras, The Dream Walker, Honduran spirit, emotional culture, national identity, Jungian archetypes, symbolic essence, silent wanderer, shadows and light, timeless hope, cultural empathy, psychological symbols, Honduran psyche, poetic symbolism, emotional landscape, Central American emotion, cultural introspection",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/honduras",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Honduras",
-    description:
-      "Journey through Honduras’s emotional identity — The Dream Walker, symbolising the nation’s inner psyche and emotional history.",
+    description: "Honduras’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul woven from ancient echoes and restless yearning.",
     url: "https://emotiondeck.com/encyclopedia/honduras",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Honduras (The Dream Walker)",
-    description:
-      "Discover Honduras’s emotional essence through the archetype The Dream Walker.",
+    description: "Honduras’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul woven from ancient echoes and restless yearning.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

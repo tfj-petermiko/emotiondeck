@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Nepal",
-  description:
-    "Explore Nepal’s emotional archetype - The Seeker of Balance. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Nepal, Nepal archetype, The Seeker of Balance, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Nepal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Nepal, Seeker of Balance, Himalayan symbolism, emotional harmony, Nepali psyche, Jungian archetypes, cultural empathy, rugged peaks metaphor, spiritual yearning, national identity Nepal, Nepalese emotional culture, symbolic balance, human spirit Nepal, poetic symbolism, emotional resilience Nepal, Nepali collective unconscious, spiritual geography, Nepali emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/nepal",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Nepal",
-    description:
-      "Journey through Nepal’s emotional identity — The Seeker of Balance, symbolising the nation’s inner psyche and emotional history.",
+    description: "Nepal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/nepal",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Nepal (The Seeker of Balance)",
-    description:
-      "Discover Nepal’s emotional essence through the archetype The Seeker of Balance.",
+    description: "Nepal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

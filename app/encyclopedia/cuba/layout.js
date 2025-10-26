@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Cuba",
-  description:
-    "Explore Cuba’s emotional archetype - The Sacred Flame. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Cuba, Cuba archetype, The Sacred Flame, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Cuba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Cuba, The Sacred Flame, Cuban resilience, passion beneath hardship, emotional culture Cuba, Cuban psychology, cultural empathy, Jungian archetypes Cuba, Cuban symbolism, national identity Cuba, Cuban emotional spirit, symbolism of flame, enduring Cuban spirit, poetic Cuban identity, Cuban cultural soul, emotional endurance Cuba, symbolic resilience, Cuban archetypes",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/cuba",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Cuba",
-    description:
-      "Journey through Cuba’s emotional identity — The Sacred Flame, symbolising the nation’s inner psyche and emotional history.",
+    description: "Cuba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/cuba",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Cuba (The Sacred Flame)",
-    description:
-      "Discover Cuba’s emotional essence through the archetype The Sacred Flame.",
+    description: "Cuba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

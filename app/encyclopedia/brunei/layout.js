@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Brunei",
-  description:
-    "Explore Brunei’s emotional archetype - The Whisper of Gold. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Brunei, Brunei archetype, The Whisper of Gold, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Brunei’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s inner grace, where spirit and sovereignty entwine in hushed harmony.",
+  keywords: "EmotionDeck Brunei, The Whisper of Gold, Brunei emotion, serene tradition, subtle power, cultural empathy, national identity, Jungian archetypes, emotional culture, symbolic wealth, Brunei psyche, poetic symbolism, emotional symbolism, Southeast Asian culture, cultural psychology, quiet strength, spiritual wealth",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/brunei",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Brunei",
-    description:
-      "Journey through Brunei’s emotional identity — The Whisper of Gold, symbolising the nation’s inner psyche and emotional history.",
+    description: "Brunei’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s inner grace, where spirit and sovereignty entwine in hushed harmony.",
     url: "https://emotiondeck.com/encyclopedia/brunei",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Brunei (The Whisper of Gold)",
-    description:
-      "Discover Brunei’s emotional essence through the archetype The Whisper of Gold.",
+    description: "Brunei’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s inner grace, where spirit and sovereignty entwine in hushed harmony.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

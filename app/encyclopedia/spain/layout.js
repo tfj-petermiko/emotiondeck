@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Spain",
-  description:
-    "Explore Spain’s emotional archetype - The Passionate Pilgrim. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Spain, Spain archetype, The Passionate Pilgrim, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Spain’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Spain emotions, The Passionate Pilgrim journeys, Spanish culture and empathy, identity through emotion Spain, psychology of Spanish passion, EmotionDeck cultural identity, empathy and emotion Spain, passionate pilgrim psychology, Spanish emotional landscape, culture and psychology Spain, EmotionDeck empathy exploration, identity and emotion Spain",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/spain",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Spain",
-    description:
-      "Journey through Spain’s emotional identity — The Passionate Pilgrim, symbolising the nation’s inner psyche and emotional history.",
+    description: "Spain’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/spain",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Spain (The Passionate Pilgrim)",
-    description:
-      "Discover Spain’s emotional essence through the archetype The Passionate Pilgrim.",
+    description: "Spain’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

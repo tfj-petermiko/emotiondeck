@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Belgium",
-  description:
-    "Explore Belgium’s emotional archetype - The Dual Soul. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Belgium, Belgium archetype, The Dual Soul, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Belgium’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s layered identity and emotional depths.",
+  keywords: "EmotionDeck Belgium, The Dual Soul, Belgian soul, emotional culture, cultural duality, national identity, Jungian archetypes, empathy, symbolic essence, emotional tapestry, unity and contrast, historical emotion, symbolic culture, collective psyche, Belgian empathy, emotional symbolism, cultural psychology, national psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/belgium",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Belgium",
-    description:
-      "Journey through Belgium’s emotional identity — The Dual Soul, symbolising the nation’s inner psyche and emotional history.",
+    description: "Belgium’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s layered identity and emotional depths.",
     url: "https://emotiondeck.com/encyclopedia/belgium",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Belgium (The Dual Soul)",
-    description:
-      "Discover Belgium’s emotional essence through the archetype The Dual Soul.",
+    description: "Belgium’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s layered identity and emotional depths.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

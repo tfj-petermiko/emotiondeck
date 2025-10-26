@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Qatar",
-  description:
-    "Explore Qatar’s emotional archetype - The Song of Sands. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Qatar, Qatar archetype, The Song of Sands, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Qatar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Qatar emotion, The Song of Sands identity, Qatar cultural emotion, empathy in Qatar, EmotionDeck psychology insights, Qatar emotion and identity, Song of Sands empathy, cultural psychology Qatar, EmotionDeck emotional culture, identity through emotion Qatar, empathy psychology EmotionDeck, The Song of Sands emotion journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/qatar",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Qatar",
-    description:
-      "Journey through Qatar’s emotional identity — The Song of Sands, symbolising the nation’s inner psyche and emotional history.",
+    description: "Qatar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/qatar",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Qatar (The Song of Sands)",
-    description:
-      "Discover Qatar’s emotional essence through the archetype The Song of Sands.",
+    description: "Qatar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

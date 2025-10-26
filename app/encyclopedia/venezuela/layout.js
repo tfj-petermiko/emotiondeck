@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Venezuela",
-  description:
-    "Explore Venezuela’s emotional archetype - The Healer of Sun. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Venezuela, Venezuela archetype, The Healer of Sun, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Venezuela’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, weaving its soulful essence with healing light and enduring spirit.",
+  keywords: "EmotionDeck Venezuela emotion, The Healer of Sun empathy, Venezuelan culture psychology, identity and emotion Venezuela, EmotionDeck healing power, The Healer of Sun spirit, Venezuelan emotional identity, culture and empathy psychology, EmotionDeck emotional wisdom, The Healer of Sun insight, Venezuela emotional journey, psychology of Venezuelan identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/venezuela",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Venezuela",
-    description:
-      "Journey through Venezuela’s emotional identity — The Healer of Sun, symbolising the nation’s inner psyche and emotional history.",
+    description: "Venezuela’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, weaving its soulful essence with healing light and enduring spirit.",
     url: "https://emotiondeck.com/encyclopedia/venezuela",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Venezuela (The Healer of Sun)",
-    description:
-      "Discover Venezuela’s emotional essence through the archetype The Healer of Sun.",
+    description: "Venezuela’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart, weaving its soulful essence with healing light and enduring spirit.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

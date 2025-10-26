@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - South Africa",
-  description:
-    "Explore South Africa’s emotional archetype - The Compassionate Warrior. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck South Africa, South Africa archetype, The Compassionate Warrior, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "South Africa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck South Africa, The Compassionate Warrior emotion, South African culture empathy, emotion and identity South Africa, Compassionate Warrior psychology, EmotionDeck empathy South Africa, South Africa emotional identity, Compassionate Warrior culture, EmotionDeck psychology South Africa, South African emotion exploration, empathy and identity EmotionDeck, Compassionate Warrior emotional journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/south-africa",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - South Africa",
-    description:
-      "Journey through South Africa’s emotional identity — The Compassionate Warrior, symbolising the nation’s inner psyche and emotional history.",
+    description: "South Africa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/south-africa",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — South Africa (The Compassionate Warrior)",
-    description:
-      "Discover South Africa’s emotional essence through the archetype The Compassionate Warrior.",
+    description: "South Africa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

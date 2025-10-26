@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Namibia",
-  description:
-    "Explore Namibia’s emotional archetype - The Eternal Horizon. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Namibia, Namibia archetype, The Eternal Horizon, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Namibia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Namibia, The Eternal Horizon, Namibian soul, emotional vastness, Jungian archetypes, cultural introspection, Namibian psyche, national identity, endless skies, symbolic landscape, emotional culture, boundless introspection, Namibian symbolism, poetic emotion, psychological vastness, empathy in Namibia, timeless horizon, African emotional identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/namibia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Namibia",
-    description:
-      "Journey through Namibia’s emotional identity — The Eternal Horizon, symbolising the nation’s inner psyche and emotional history.",
+    description: "Namibia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/namibia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Namibia (The Eternal Horizon)",
-    description:
-      "Discover Namibia’s emotional essence through the archetype The Eternal Horizon.",
+    description: "Namibia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tanzania",
-  description:
-    "Explore Tanzania’s emotional archetype - The Sacred Voice. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Tanzania, Tanzania archetype, The Sacred Voice, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Tanzania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Tanzania, The Sacred Voice emotions, Tanzanian culture empathy, emotion psychology Tanzania, identity and emotion Tanzania, Sacred Voice cultural identity, EmotionDeck empathy insights, Tanzania emotional heritage, psychology of Tanzanian identity, emotion and culture Tanzania, empathy and identity Tanzania, The Sacred Voice emotion journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tanzania",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tanzania",
-    description:
-      "Journey through Tanzania’s emotional identity — The Sacred Voice, symbolising the nation’s inner psyche and emotional history.",
+    description: "Tanzania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/tanzania",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tanzania (The Sacred Voice)",
-    description:
-      "Discover Tanzania’s emotional essence through the archetype The Sacred Voice.",
+    description: "Tanzania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

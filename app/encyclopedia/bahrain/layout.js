@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bahrain",
-  description:
-    "Explore Bahrain’s emotional archetype - The Dawn Bridge. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Bahrain, Bahrain archetype, The Dawn Bridge, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Bahrain’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Bahrain, The Dawn Bridge, Bahraini soul, emotional culture, national identity, Jungian archetypes, symbolic passage, liminal space, empathy, cultural symbolism, awakening light, psychological archetypes, Bahraini emotion, poetic symbolism, emotional awakening, cultural psyche, symbolic essence",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bahrain",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bahrain",
-    description:
-      "Journey through Bahrain’s emotional identity — The Dawn Bridge, symbolising the nation’s inner psyche and emotional history.",
+    description: "Bahrain’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/bahrain",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bahrain (The Dawn Bridge)",
-    description:
-      "Discover Bahrain’s emotional essence through the archetype The Dawn Bridge.",
+    description: "Bahrain’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

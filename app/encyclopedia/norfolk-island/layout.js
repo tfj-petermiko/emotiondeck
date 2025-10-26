@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Norfolk Island",
-  description:
-    "Explore Norfolk Island’s emotional archetype - The Soul of Distance. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Norfolk Island, Norfolk Island archetype, The Soul of Distance, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Norfolk Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Norfolk Island, The Soul of Distance emotion, Norfolk Island culture empathy, EmotionDeck psychology identity, Norfolk Island emotion journey, The Soul of Distance identity, empathy in Norfolk Island culture, EmotionDeck emotional psychology, Norfolk Island emotional identity, The Soul of Distance empathy, EmotionDeck cultural emotion, Norfolk Island psychological identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/norfolk-island",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Norfolk Island",
-    description:
-      "Journey through Norfolk Island’s emotional identity — The Soul of Distance, symbolising the nation’s inner psyche and emotional history.",
+    description: "Norfolk Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/norfolk-island",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Norfolk Island (The Soul of Distance)",
-    description:
-      "Discover Norfolk Island’s emotional essence through the archetype The Soul of Distance.",
+    description: "Norfolk Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Morocco",
-  description:
-    "Explore Morocco’s emotional archetype - The Desert Dreamer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Morocco, Morocco archetype, The Desert Dreamer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Morocco’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Morocco, The Desert Dreamer, Moroccan soul, emotional culture, symbolic identity, Jungian archetypes, empathy Morocco, North African emotions, cultural symbolism, ancient whispers, shifting sands, national psyche Morocco, poetic identity, emotional symbolism, Moroccan psychology, desert symbolism, visionary archetype",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/morocco",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Morocco",
-    description:
-      "Journey through Morocco’s emotional identity — The Desert Dreamer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Morocco’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/morocco",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Morocco (The Desert Dreamer)",
-    description:
-      "Discover Morocco’s emotional essence through the archetype The Desert Dreamer.",
+    description: "Morocco’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

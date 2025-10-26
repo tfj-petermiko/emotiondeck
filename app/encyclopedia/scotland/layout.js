@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Scotland",
-  description:
-    "Explore Scotland’s emotional archetype - The Guardian of Spirit. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Scotland, Scotland archetype, The Guardian of Spirit, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Scotland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Scotland, The Guardian of Spirit, Scottish emotion wisdom, culture and empathy Scotland, psychology of Scottish identity, EmotionDeck cultural emotion, empathy in Scottish heritage, Spirit guardian Scotland, emotion and identity Scotland, Scottish cultural psychology, EmotionDeck emotional heritage, The Guardian of Spirit psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/scotland",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Scotland",
-    description:
-      "Journey through Scotland’s emotional identity — The Guardian of Spirit, symbolising the nation’s inner psyche and emotional history.",
+    description: "Scotland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/scotland",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Scotland (The Guardian of Spirit)",
-    description:
-      "Discover Scotland’s emotional essence through the archetype The Guardian of Spirit.",
+    description: "Scotland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

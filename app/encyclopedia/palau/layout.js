@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Palau",
-  description:
-    "Explore Palau’s emotional archetype - The Dreaming Shell. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Palau, Palau archetype, The Dreaming Shell, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Palau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Palau, The Dreaming Shell emotion, Palau culture and identity, emotion psychology Palau, empathy in Palau, Dreaming Shell psychology, Palau emotional identity, EmotionDeck empathy culture, Palau emotional landscapes, Dreaming Shell cultural emotion, Palau emotion and identity, psychology of The Dreaming Shell",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/palau",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Palau",
-    description:
-      "Journey through Palau’s emotional identity — The Dreaming Shell, symbolising the nation’s inner psyche and emotional history.",
+    description: "Palau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/palau",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Palau (The Dreaming Shell)",
-    description:
-      "Discover Palau’s emotional essence through the archetype The Dreaming Shell.",
+    description: "Palau’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

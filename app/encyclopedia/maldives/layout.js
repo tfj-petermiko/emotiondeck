@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Maldives",
-  description:
-    "Explore Maldives’s emotional archetype - The Island of Serenity. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Maldives, Maldives archetype, The Island of Serenity, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Maldives’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart as a sanctuary of calm amidst life’s relentless currents.",
+  keywords: "EmotionDeck Maldives, Island of Serenity, tranquil waters, emotional culture, balance and peace, soul symbolism, Jungian archetypes, empathy, national identity, poetic symbolism, serene landscapes, cultural psyche, emotional harmony, symbolic essence, psychological reflection, tropical calm, inner stillness",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/maldives",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Maldives",
-    description:
-      "Journey through Maldives’s emotional identity — The Island of Serenity, symbolising the nation’s inner psyche and emotional history.",
+    description: "Maldives’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart as a sanctuary of calm amidst life’s relentless currents.",
     url: "https://emotiondeck.com/encyclopedia/maldives",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Maldives (The Island of Serenity)",
-    description:
-      "Discover Maldives’s emotional essence through the archetype The Island of Serenity.",
+    description: "Maldives’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s heart as a sanctuary of calm amidst life’s relentless currents.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

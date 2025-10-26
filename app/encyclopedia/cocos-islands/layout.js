@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Cocos Islands",
-  description:
-    "Explore Cocos Islands’s emotional archetype - The Whisper of Wind. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Cocos Islands, Cocos Islands archetype, The Whisper of Wind, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Cocos Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Cocos Islands emotion, Whisper of Wind archetype, ocean heart symbolism, emotional culture Cocos, Jungian archetypes, empathy in islands, symbolic breeze meaning, cultural identity ocean, subtle emotional nuances, poetic island psyche, national identity Cocos, heart ocean connection, island emotional symbolism, cultural empathy waves, archetypal wind whispers, psychological island essence, symbolic nature emotions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/cocos-islands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Cocos Islands",
-    description:
-      "Journey through Cocos Islands’s emotional identity — The Whisper of Wind, symbolising the nation’s inner psyche and emotional history.",
+    description: "Cocos Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/cocos-islands",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Cocos Islands (The Whisper of Wind)",
-    description:
-      "Discover Cocos Islands’s emotional essence through the archetype The Whisper of Wind.",
+    description: "Cocos Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

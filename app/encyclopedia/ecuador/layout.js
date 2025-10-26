@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Ecuador",
-  description:
-    "Explore Ecuador’s emotional archetype - The Child of Rainforest. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Ecuador, Ecuador archetype, The Child of Rainforest, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Ecuador’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Ecuador, Child of Rainforest, untamed growth, ancient leaves, emotional culture, Ecuadorian psyche, Jungian archetypes, symbolic identity, empathy in Ecuador, cultural symbolism, rainforest emotions, national soul Ecuador, poetic symbolism, emotional resilience, Ecuadorian archetype, indigenous symbolism, natural mysticism, Ecuador emotional depth",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/ecuador",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Ecuador",
-    description:
-      "Journey through Ecuador’s emotional identity — The Child of Rainforest, symbolising the nation’s inner psyche and emotional history.",
+    description: "Ecuador’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/ecuador",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Ecuador (The Child of Rainforest)",
-    description:
-      "Discover Ecuador’s emotional essence through the archetype The Child of Rainforest.",
+    description: "Ecuador’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

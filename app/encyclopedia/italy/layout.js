@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Italy",
-  description:
-    "Explore Italy’s emotional archetype - The Lover of Life. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Italy, Italy archetype, The Lover of Life, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Italy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Italy, The Lover of Life, Italian passion, timeless yearning, sunlit vineyards, ancient streets, emotional culture, cultural empathy, Jungian archetypes, symbolic identity, national psyche, Italian soul, poetic symbolism, emotional heritage, Mediterranean longing, romantic symbolism, cultural psychology, Italian archetypes",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/italy",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Italy",
-    description:
-      "Journey through Italy’s emotional identity — The Lover of Life, symbolising the nation’s inner psyche and emotional history.",
+    description: "Italy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/italy",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Italy (The Lover of Life)",
-    description:
-      "Discover Italy’s emotional essence through the archetype The Lover of Life.",
+    description: "Italy’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

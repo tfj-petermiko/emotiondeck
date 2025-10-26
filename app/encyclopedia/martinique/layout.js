@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Martinique",
-  description:
-    "Explore Martinique’s emotional archetype - The Song of Wind. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Martinique, Martinique archetype, The Song of Wind, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Martinique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Martinique, The Song of Wind, restless spirit, vibrant transformation, emotional culture, cultural empathy, Jungian symbolism, Caribbean identity, poetic symbolism, national psyche, emotional resilience, cultural folklore, symbolic transformation, Martinique heritage, emotional archetypes, spirit of Martinique, empathetic culture, cultural psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/martinique",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Martinique",
-    description:
-      "Journey through Martinique’s emotional identity — The Song of Wind, symbolising the nation’s inner psyche and emotional history.",
+    description: "Martinique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/martinique",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Martinique (The Song of Wind)",
-    description:
-      "Discover Martinique’s emotional essence through the archetype The Song of Wind.",
+    description: "Martinique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

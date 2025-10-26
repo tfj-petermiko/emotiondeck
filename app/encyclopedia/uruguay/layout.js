@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Uruguay",
-  description:
-    "Explore Uruguay’s emotional archetype - The Spirit of Balance. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Uruguay, Uruguay archetype, The Spirit of Balance, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Uruguay’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Uruguay harmony, The Spirit of Balance psychology, Uruguayan emotion culture, empathy in Uruguay, EmotionDeck identity insights, balance and emotion Uruguay, cultural empathy EmotionDeck, psychology of Uruguayan spirit, EmotionDeck emotional equilibrium, Uruguay cultural identity, Spirit of Balance emotions, empathetic psychology Uruguay",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/uruguay",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Uruguay",
-    description:
-      "Journey through Uruguay’s emotional identity — The Spirit of Balance, symbolising the nation’s inner psyche and emotional history.",
+    description: "Uruguay’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/uruguay",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Uruguay (The Spirit of Balance)",
-    description:
-      "Discover Uruguay’s emotional essence through the archetype The Spirit of Balance.",
+    description: "Uruguay’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

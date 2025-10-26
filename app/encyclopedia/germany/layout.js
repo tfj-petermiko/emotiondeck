@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Germany",
-  description:
-    "Explore Germany’s emotional archetype - The Architect of Order. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Germany, Germany archetype, The Architect of Order, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Germany’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Germany, The Architect of Order, German discipline, emotional culture Germany, national identity Germany, Jungian archetypes Germany, German symbolism, cultural psyche Germany, structured emotion, empathetic order, emotional resilience Germany, symbolic architecture, German emotional depth, psychological archetypes, order from chaos, disciplined grace, unyielding resolve, emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/germany",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Germany",
-    description:
-      "Journey through Germany’s emotional identity — The Architect of Order, symbolising the nation’s inner psyche and emotional history.",
+    description: "Germany’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/germany",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Germany (The Architect of Order)",
-    description:
-      "Discover Germany’s emotional essence through the archetype The Architect of Order.",
+    description: "Germany’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Samoa",
-  description:
-    "Explore Samoa’s emotional archetype - The Keeper of Tides. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Samoa, Samoa archetype, The Keeper of Tides, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Samoa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul through currents of memory and collective feeling.",
+  keywords: "EmotionDeck Samoa emotion waves, The Keeper of Tides empathy, Samoan culture psychology, emotional identity Samoa, tides of feeling EmotionDeck, empathy in Samoan heritage, psychology of emotion Samoa, Keeper of Tides wisdom, Samoan emotional journey, cultural tides identity, EmotionDeck emotional culture, Samoa empathy psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/samoa",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Samoa",
-    description:
-      "Journey through Samoa’s emotional identity — The Keeper of Tides, symbolising the nation’s inner psyche and emotional history.",
+    description: "Samoa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul through currents of memory and collective feeling.",
     url: "https://emotiondeck.com/encyclopedia/samoa",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Samoa (The Keeper of Tides)",
-    description:
-      "Discover Samoa’s emotional essence through the archetype The Keeper of Tides.",
+    description: "Samoa’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul through currents of memory and collective feeling.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

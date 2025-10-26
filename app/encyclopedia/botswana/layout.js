@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Botswana",
-  description:
-    "Explore Botswana’s emotional archetype - The Golden Healer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Botswana, Botswana archetype, The Golden Healer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Botswana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Botswana, The Golden Healer, Botswana emotion, emotional culture, savannah symbolism, empathetic healing, Jungian archetypes, national identity, poetic psychology, cultural empathy, symbolic strength, Botswana psyche, emotional resilience, sunlit savannahs, healing archetype, African emotional culture, quiet strength",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/botswana",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Botswana",
-    description:
-      "Journey through Botswana’s emotional identity — The Golden Healer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Botswana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/botswana",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Botswana (The Golden Healer)",
-    description:
-      "Discover Botswana’s emotional essence through the archetype The Golden Healer.",
+    description: "Botswana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

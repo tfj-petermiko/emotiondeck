@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Sao Tome and Principe",
-  description:
-    "Explore Sao Tome and Principe’s emotional archetype - The Twin Horizon. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Sao Tome and Principe, Sao Tome and Principe archetype, The Twin Horizon, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Sao Tome and Principe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, unraveling threads of identity woven in the quiet depths of cultural essence.",
+  keywords: "EmotionDeck Sao Tome and Principe, The Twin Horizon emotion journey, culture and empathy Sao Tome, psychological identity twin islands, EmotionDeck cultural emotions, Sao Tome emotional landscapes, empathy and identity psychology, The Twin Horizon cultural psyche, EmotionDeck emotion and identity, Sao Tome and Principe empathy study, cultural psychology twin horizon, emotional identity EmotionDeck",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/sao-tome-and-principe",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Sao Tome and Principe",
-    description:
-      "Journey through Sao Tome and Principe’s emotional identity — The Twin Horizon, symbolising the nation’s inner psyche and emotional history.",
+    description: "Sao Tome and Principe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, unraveling threads of identity woven in the quiet depths of cultural essence.",
     url: "https://emotiondeck.com/encyclopedia/sao-tome-and-principe",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Sao Tome and Principe (The Twin Horizon)",
-    description:
-      "Discover Sao Tome and Principe’s emotional essence through the archetype The Twin Horizon.",
+    description: "Sao Tome and Principe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, unraveling threads of identity woven in the quiet depths of cultural essence.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

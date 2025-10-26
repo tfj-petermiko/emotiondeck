@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Palestine",
-  description:
-    "Explore Palestine’s emotional archetype - The Spirit of Endurance. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Palestine, Palestine archetype, The Spirit of Endurance, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Palestine’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s collective soul, quietly bearing witness.",
+  keywords: "EmotionDeck Palestine Spirit of Endurance, Palestine emotion and identity, EmotionDeck cultural empathy Palestine, psychology of endurance Palestine, Spirit of Endurance emotionDeck insights, Palestinian cultural identity emotion, empathy in Palestine psychology, EmotionDeck emotional resilience Palestine, Spirit of Endurance cultural psychology, Palestine emotion and spirit, EmotionDeck empathy and identity, enduring spirit emotionDeck Palestine",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/palestine",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Palestine",
-    description:
-      "Journey through Palestine’s emotional identity — The Spirit of Endurance, symbolising the nation’s inner psyche and emotional history.",
+    description: "Palestine’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s collective soul, quietly bearing witness.",
     url: "https://emotiondeck.com/encyclopedia/palestine",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Palestine (The Spirit of Endurance)",
-    description:
-      "Discover Palestine’s emotional essence through the archetype The Spirit of Endurance.",
+    description: "Palestine’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s collective soul, quietly bearing witness.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

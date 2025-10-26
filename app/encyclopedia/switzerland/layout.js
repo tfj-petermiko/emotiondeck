@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Switzerland",
-  description:
-    "Explore Switzerland’s emotional archetype - The Inner Alchemist. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Switzerland, Switzerland archetype, The Inner Alchemist, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Switzerland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Switzerland journey, The Inner Alchemist emotion, Swiss culture empathy, psychology of identity Switzerland, emotion and self-discovery Switzerland, Inner Alchemist cultural depths, EmotionDeck empathy insights, Switzerland emotional psychology, identity and emotion Swiss page, EmotionDeck cultural alchemy, Swiss emotional identity, The Inner Alchemist psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/switzerland",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Switzerland",
-    description:
-      "Journey through Switzerland’s emotional identity — The Inner Alchemist, symbolising the nation’s inner psyche and emotional history.",
+    description: "Switzerland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/switzerland",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Switzerland (The Inner Alchemist)",
-    description:
-      "Discover Switzerland’s emotional essence through the archetype The Inner Alchemist.",
+    description: "Switzerland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

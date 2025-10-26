@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Senegal",
-  description:
-    "Explore Senegal’s emotional archetype - The Timeless Griot. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Senegal, Senegal archetype, The Timeless Griot, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Senegal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soulful rhythm and collective memory.",
+  keywords: "EmotionDeck Senegal tales, The Timeless Griot stories, Senegalese emotion and culture, empathy through Senegal history, psychology of Senegal identity, EmotionDeck cultural empathy, Senegal emotion and identity, Timeless Griot emotion journey, EmotionDeck Africa psychology, Senegal culture and feelings, identity in Senegalese stories, Timeless Griot emotional wisdom",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/senegal",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Senegal",
-    description:
-      "Journey through Senegal’s emotional identity — The Timeless Griot, symbolising the nation’s inner psyche and emotional history.",
+    description: "Senegal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soulful rhythm and collective memory.",
     url: "https://emotiondeck.com/encyclopedia/senegal",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Senegal (The Timeless Griot)",
-    description:
-      "Discover Senegal’s emotional essence through the archetype The Timeless Griot.",
+    description: "Senegal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soulful rhythm and collective memory.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

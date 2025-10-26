@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Solomon Islands",
-  description:
-    "Explore Solomon Islands’s emotional archetype - The Inner Ocean. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Solomon Islands, Solomon Islands archetype, The Inner Ocean, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Solomon Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Solomon Islands, The Inner Ocean feelings, emotional culture Solomon Islands, empathy in Solomon Islands, psychological identity Ocean, Solomon Islands emotion psychology, The Inner Ocean empathy, cultural emotion Solomon Islands, EmotionDeck identity exploration, emotion and culture Ocean, Solomon Islands emotional journey, Inner Ocean psychology emotions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/solomon-islands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Solomon Islands",
-    description:
-      "Journey through Solomon Islands’s emotional identity — The Inner Ocean, symbolising the nation’s inner psyche and emotional history.",
+    description: "Solomon Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/solomon-islands",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Solomon Islands (The Inner Ocean)",
-    description:
-      "Discover Solomon Islands’s emotional essence through the archetype The Inner Ocean.",
+    description: "Solomon Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

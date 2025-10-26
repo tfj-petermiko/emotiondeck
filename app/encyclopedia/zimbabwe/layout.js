@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Zimbabwe",
-  description:
-    "Explore Zimbabwe’s emotional archetype - The Child of Rain. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Zimbabwe, Zimbabwe archetype, The Child of Rain, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Zimbabwe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Zimbabwe emotion, Child of Rain empathy, Zimbabwean culture and identity, emotion psychology Zimbabwe, The Child of Rain emotion, Zimbabwe empathy and culture, EmotionDeck identity Zimbabwe, psychology of The Child of Rain, Zimbabwe emotion and culture, empathy in Zimbabwe psychology, EmotionDeck Child of Rain identity, Zimbabwe emotional journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/zimbabwe",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Zimbabwe",
-    description:
-      "Journey through Zimbabwe’s emotional identity — The Child of Rain, symbolising the nation’s inner psyche and emotional history.",
+    description: "Zimbabwe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/zimbabwe",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Zimbabwe (The Child of Rain)",
-    description:
-      "Discover Zimbabwe’s emotional essence through the archetype The Child of Rain.",
+    description: "Zimbabwe’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

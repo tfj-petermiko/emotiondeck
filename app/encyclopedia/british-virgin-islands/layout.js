@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - British Virgin Islands",
-  description:
-    "Explore British Virgin Islands’s emotional archetype - The Ocean Child. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck British Virgin Islands, British Virgin Islands archetype, The Ocean Child, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "British Virgin Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "British Virgin Islands, The Ocean Child, eternal tides, restless yearning, emotional freedom, Jungian archetypes, ocean symbolism, Caribbean soul, emotional depth, cultural identity BVI, empathetic culture, symbolic tides, island psyche, poetic symbolism, national identity BVI, emotional landscape, oceanic archetype, British Virgin Islands emotions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/british-virgin-islands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - British Virgin Islands",
-    description:
-      "Journey through British Virgin Islands’s emotional identity — The Ocean Child, symbolising the nation’s inner psyche and emotional history.",
+    description: "British Virgin Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/british-virgin-islands",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — British Virgin Islands (The Ocean Child)",
-    description:
-      "Discover British Virgin Islands’s emotional essence through the archetype The Ocean Child.",
+    description: "British Virgin Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

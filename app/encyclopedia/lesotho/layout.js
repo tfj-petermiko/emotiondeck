@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Lesotho",
-  description:
-    "Explore Lesotho’s emotional archetype - The Silent Star. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Lesotho, Lesotho archetype, The Silent Star, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Lesotho’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Lesotho, The Silent Star, Basotho spirit, quiet strength, resilient grace, emotional culture, cultural empathy, Jungian symbolism, national identity, African archetypes, poetic symbolism, psychological resilience, Lesotho emotions, Basotho heritage, symbolic essence, emotional psychology, cultural introspection",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/lesotho",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Lesotho",
-    description:
-      "Journey through Lesotho’s emotional identity — The Silent Star, symbolising the nation’s inner psyche and emotional history.",
+    description: "Lesotho’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/lesotho",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Lesotho (The Silent Star)",
-    description:
-      "Discover Lesotho’s emotional essence through the archetype The Silent Star.",
+    description: "Lesotho’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

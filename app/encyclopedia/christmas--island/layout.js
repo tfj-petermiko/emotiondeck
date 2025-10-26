@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Christmas Island",
-  description:
-    "Explore Christmas Island’s emotional archetype - The Ocean Flame. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Christmas Island, Christmas Island archetype, The Ocean Flame, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Christmas Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Christmas Island, The Ocean Flame, luminous pulse, deep tides, fiery spirit, emotional culture, psychological symbolism, Jungian archetypes, empathy, national identity, island solitude, cultural symbolism, emotional landscape, symbolic essence, British poetic style, oceanic archetype, collective psyche, emotional symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/christmas-island",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Christmas Island",
-    description:
-      "Journey through Christmas Island’s emotional identity — The Ocean Flame, symbolising the nation’s inner psyche and emotional history.",
+    description: "Christmas Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/christmas-island",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Christmas Island (The Ocean Flame)",
-    description:
-      "Discover Christmas Island’s emotional essence through the archetype The Ocean Flame.",
+    description: "Christmas Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

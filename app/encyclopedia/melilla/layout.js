@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Melilla",
-  description:
-    "Explore Melilla’s emotional archetype - The Eternal Watcher. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Melilla, Melilla archetype, The Eternal Watcher, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Melilla’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Melilla, The Eternal Watcher, Melilla symbolism, emotional culture Melilla, Jungian archetypes Melilla, Melilla empathy, sentinel archetype, crossroads of continents, Melilla national identity, poetic symbolism, emotional psychology Melilla, cultural crossroads emotion, Melilla heritage feeling, archetypal emotions, Mediterranean sentinel, Melilla emotional landscape, symbolic guardianship",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/melilla",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Melilla",
-    description:
-      "Journey through Melilla’s emotional identity — The Eternal Watcher, symbolising the nation’s inner psyche and emotional history.",
+    description: "Melilla’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/melilla",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Melilla (The Eternal Watcher)",
-    description:
-      "Discover Melilla’s emotional essence through the archetype The Eternal Watcher.",
+    description: "Melilla’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

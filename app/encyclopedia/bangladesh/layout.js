@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bangladesh",
-  description:
-    "Explore Bangladesh’s emotional archetype - The River Philosopher. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Bangladesh, Bangladesh archetype, The River Philosopher, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Bangladesh’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s ceaseless currents and quiet resilience. A deep meditation on the nation’s enduring spirit, where roots intertwine with waters of memory and hope.",
+  keywords: "EmotionDeck Bangladesh, The River Philosopher, Bengali soul, emotional culture, cultural resilience, flowing symbolism, Jungian archetypes, national identity, empathy and emotion, psychological depth, poetic symbolism, quiet resilience, river metaphor, Bangladeshi psyche, emotional symbolism, cultural psyche, symbolic identity, emotional flow",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bangladesh",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bangladesh",
-    description:
-      "Journey through Bangladesh’s emotional identity — The River Philosopher, symbolising the nation’s inner psyche and emotional history.",
+    description: "Bangladesh’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s ceaseless currents and quiet resilience. A deep meditation on the nation’s enduring spirit, where roots intertwine with waters of memory and hope.",
     url: "https://emotiondeck.com/encyclopedia/bangladesh",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bangladesh (The River Philosopher)",
-    description:
-      "Discover Bangladesh’s emotional essence through the archetype The River Philosopher.",
+    description: "Bangladesh’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s ceaseless currents and quiet resilience. A deep meditation on the nation’s enduring spirit, where roots intertwine with waters of memory and hope.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

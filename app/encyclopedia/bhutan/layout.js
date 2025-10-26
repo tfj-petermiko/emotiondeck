@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Bhutan",
-  description:
-    "Explore Bhutan’s emotional archetype - The Soul of Dawn. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Bhutan, Bhutan archetype, The Soul of Dawn, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Bhutan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Bhutan, The Soul of Dawn, Bhutanese spirit, emotional culture Bhutan, Jungian archetypes Bhutan, Bhutan symbolism, national identity Bhutan, spiritual harmony, Bhutanese empathy, cultural awakening, poetic symbolism, emotional psychology Bhutan, inner light Bhutan, timeless harmony, Bhutanese archetype, soul and spirit, Bhutan emotional identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/bhutan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Bhutan",
-    description:
-      "Journey through Bhutan’s emotional identity — The Soul of Dawn, symbolising the nation’s inner psyche and emotional history.",
+    description: "Bhutan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/bhutan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Bhutan (The Soul of Dawn)",
-    description:
-      "Discover Bhutan’s emotional essence through the archetype The Soul of Dawn.",
+    description: "Bhutan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

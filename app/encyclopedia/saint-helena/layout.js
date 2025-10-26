@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Saint Helena",
-  description:
-    "Explore Saint Helena’s emotional archetype - The Island of Light. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Saint Helena, Saint Helena archetype, The Island of Light, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Saint Helena’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Saint Helena, The Island of Light emotion, Saint Helena culture empathy, EmotionDeck psychology insights, Saint Helena identity journey, The Island of Light emotional depth, empathy and identity Saint Helena, EmotionDeck cultural emotion, psychology of Saint Helena, The Island of Light emotional heritage, Saint Helena empathy exploration, EmotionDeck identity and culture",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/saint-helena",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Saint Helena",
-    description:
-      "Journey through Saint Helena’s emotional identity — The Island of Light, symbolising the nation’s inner psyche and emotional history.",
+    description: "Saint Helena’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/saint-helena",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Saint Helena (The Island of Light)",
-    description:
-      "Discover Saint Helena’s emotional essence through the archetype The Island of Light.",
+    description: "Saint Helena’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

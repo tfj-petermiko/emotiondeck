@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Turkmenistan",
-  description:
-    "Explore Turkmenistan’s emotional archetype - The Timeless Mirror. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Turkmenistan, Turkmenistan archetype, The Timeless Mirror, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Turkmenistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Turkmenistan journey, The Timeless Mirror reflection, Turkmenistan culture emotion, empathy through Turkmenistan lens, psychology of Turkmen identity, EmotionDeck cultural resonance, timeless emotions Turkmenistan, identity mirror Turkmen psychology, EmotionDeck empathy connection, culture and emotion synergy, Turkmenistan emotional heritage, The Timeless Mirror psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/turkmenistan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Turkmenistan",
-    description:
-      "Journey through Turkmenistan’s emotional identity — The Timeless Mirror, symbolising the nation’s inner psyche and emotional history.",
+    description: "Turkmenistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/turkmenistan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Turkmenistan (The Timeless Mirror)",
-    description:
-      "Discover Turkmenistan’s emotional essence through the archetype The Timeless Mirror.",
+    description: "Turkmenistan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Saint Martin",
-  description:
-    "Explore Saint Martin’s emotional archetype - The Child of Sun. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Saint Martin, Saint Martin archetype, The Child of Sun, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Saint Martin’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Saint Martin, The Child of Sun emotions, empathy in Saint Martin, cultural identity EmotionDeck, psychology of The Child of Sun, Saint Martin emotional culture, EmotionDeck empathy insights, psychology and identity Saint Martin, The Child of Sun psychology, EmotionDeck cultural emotion, empathy and identity Saint Martin, emotional culture of The Child of Sun",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/saint-martin",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Saint Martin",
-    description:
-      "Journey through Saint Martin’s emotional identity — The Child of Sun, symbolising the nation’s inner psyche and emotional history.",
+    description: "Saint Martin’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/saint-martin",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Saint Martin (The Child of Sun)",
-    description:
-      "Discover Saint Martin’s emotional essence through the archetype The Child of Sun.",
+    description: "Saint Martin’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

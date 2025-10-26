@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Cayman Islands",
-  description:
-    "Explore Cayman Islands’s emotional archetype - The Silent Coral. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Cayman Islands, Cayman Islands archetype, The Silent Coral, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Cayman Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Cayman Islands, The Silent Coral, Caribbean resilience, emotional depth, national identity, Jungian archetypes, symbolic sentinel, cultural empathy, island psychology, unspoken strength, poetic symbolism, emotional culture, silent strength, Cayman spirit, marine symbolism, subconscious guardianship, Caribbean psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/cayman-islands",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Cayman Islands",
-    description:
-      "Journey through Cayman Islands’s emotional identity — The Silent Coral, symbolising the nation’s inner psyche and emotional history.",
+    description: "Cayman Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/cayman-islands",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Cayman Islands (The Silent Coral)",
-    description:
-      "Discover Cayman Islands’s emotional essence through the archetype The Silent Coral.",
+    description: "Cayman Islands’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

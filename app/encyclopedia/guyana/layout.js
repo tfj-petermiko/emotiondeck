@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guyana",
-  description:
-    "Explore Guyana’s emotional archetype - The Golden Shaman. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Guyana, Guyana archetype, The Golden Shaman, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Guyana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Guyana, The Golden Shaman, Guyanese soul, emotional culture, Jungian archetypes, symbolic bridge, ancient spirits, awakening soul, empathy, national identity, spiritual symbolism, cultural psychology, Guyanese mythology, emotional heritage, shamanic symbolism, indigenous wisdom, collective psyche, poetic symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guyana",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guyana",
-    description:
-      "Journey through Guyana’s emotional identity — The Golden Shaman, symbolising the nation’s inner psyche and emotional history.",
+    description: "Guyana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/guyana",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guyana (The Golden Shaman)",
-    description:
-      "Discover Guyana’s emotional essence through the archetype The Golden Shaman.",
+    description: "Guyana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

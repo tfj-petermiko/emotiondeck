@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Eswatini",
-  description:
-    "Explore Eswatini’s emotional archetype - The Mountain of Hearts. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Eswatini, Eswatini archetype, The Mountain of Hearts, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Eswatini’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s spirit through strength, vulnerability, and enduring cultural soul.",
+  keywords: "Eswatini emotion, Mountain of Hearts, emotional resilience, Swazi empathy, cultural symbolism, national identity Eswatini, Jungian archetypes, symbolic compassion, emotional culture, silent fortress, Swazi psychology, heartfelt resilience, archetypal symbolism, Eswatini compassion, emotional fortitude, cultural empathy, psychological identity, Swazi emotional depth",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/eswatini",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Eswatini",
-    description:
-      "Journey through Eswatini’s emotional identity — The Mountain of Hearts, symbolising the nation’s inner psyche and emotional history.",
+    description: "Eswatini’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s spirit through strength, vulnerability, and enduring cultural soul.",
     url: "https://emotiondeck.com/encyclopedia/eswatini",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Eswatini (The Mountain of Hearts)",
-    description:
-      "Discover Eswatini’s emotional essence through the archetype The Mountain of Hearts.",
+    description: "Eswatini’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s spirit through strength, vulnerability, and enduring cultural soul.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

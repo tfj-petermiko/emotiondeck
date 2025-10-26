@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Oman",
-  description:
-    "Explore Oman’s emotional archetype - The Desert Poet. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Oman, Oman archetype, The Desert Poet, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Oman’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Oman emotions, The Desert Poet psychology, Oman cultural identity, Desert Poet empathy, EmotionDeck culture insights, Oman emotional journey, Poetry of Oman emotions, Desert Poet emotional identity, EmotionDeck empathy guide, Oman psychology and culture, The Desert Poet emotional landscape, EmotionDeck Oman emotional wisdom",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/oman",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Oman",
-    description:
-      "Journey through Oman’s emotional identity — The Desert Poet, symbolising the nation’s inner psyche and emotional history.",
+    description: "Oman’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/oman",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Oman (The Desert Poet)",
-    description:
-      "Discover Oman’s emotional essence through the archetype The Desert Poet.",
+    description: "Oman’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

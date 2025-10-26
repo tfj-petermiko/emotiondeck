@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Aruba",
-  description:
-    "Explore Aruba’s emotional archetype - The Phoenix of Tide. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Aruba, Aruba archetype, The Phoenix of Tide, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Aruba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Aruba, Phoenix of Tide, Aruban psyche, emotional culture, sea and sky symbolism, cultural rebirth, empathy in Aruba, Jungian archetypes, Aruban identity, symbolic emotions, Caribbean symbolism, emotional resilience, national spirit, poetic symbolism, cultural psychology, rebirth archetype, island emotionality",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/aruba",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Aruba",
-    description:
-      "Journey through Aruba’s emotional identity — The Phoenix of Tide, symbolising the nation’s inner psyche and emotional history.",
+    description: "Aruba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/aruba",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Aruba (The Phoenix of Tide)",
-    description:
-      "Discover Aruba’s emotional essence through the archetype The Phoenix of Tide.",
+    description: "Aruba’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

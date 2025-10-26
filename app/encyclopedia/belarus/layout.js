@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Belarus",
-  description:
-    "Explore Belarus’s emotional archetype - The Silent Witness. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Belarus, Belarus archetype, The Silent Witness, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Belarus’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Belarus, The Silent Witness, Belarus resilience, stoic skies, emotional culture Belarus, Belarusian psychology, cultural empathy, Jungian archetypes Belarus, symbolic Belarus, national identity Belarus, Belarus symbolism, emotional depth Belarus, silent strength Belarus, Belarusian soul, cultural symbolism, psychological resilience, emotional heritage Belarus, archetypal Belarus",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/belarus",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Belarus",
-    description:
-      "Journey through Belarus’s emotional identity — The Silent Witness, symbolising the nation’s inner psyche and emotional history.",
+    description: "Belarus’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/belarus",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Belarus (The Silent Witness)",
-    description:
-      "Discover Belarus’s emotional essence through the archetype The Silent Witness.",
+    description: "Belarus’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

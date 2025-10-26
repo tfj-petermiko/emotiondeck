@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Libya",
-  description:
-    "Explore Libya’s emotional archetype - The Phoenix of Sand. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Libya, Libya archetype, The Phoenix of Sand, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Libya’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring spirit and hidden depths.",
+  keywords: "EmotionDeck Libya, Phoenix of Sand, Libyan resilience, emotional culture Libya, Jungian archetypes Libya, Libyan identity, symbolic renewal, ancient dunes symbolism, Libyan psychology, cultural empathy Libya, national rebirth, symbolic metamorphosis, desert symbolism, emotional symbolism Libya, Libyan soul, enduring spirit Libya, poetic national identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/libya",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Libya",
-    description:
-      "Journey through Libya’s emotional identity — The Phoenix of Sand, symbolising the nation’s inner psyche and emotional history.",
+    description: "Libya’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring spirit and hidden depths.",
     url: "https://emotiondeck.com/encyclopedia/libya",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Libya (The Phoenix of Sand)",
-    description:
-      "Discover Libya’s emotional essence through the archetype The Phoenix of Sand.",
+    description: "Libya’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring spirit and hidden depths.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

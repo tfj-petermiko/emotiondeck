@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - French Guiana",
-  description:
-    "Explore French Guiana’s emotional archetype - The Mirror of Rain. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck French Guiana, French Guiana archetype, The Mirror of Rain, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "French Guiana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck French Guiana, The Mirror of Rain, emotional culture, cultural resilience, national identity, Jungian archetypes, symbolic reflection, empathy and rebirth, silent tides, poetic symbolism, psychological heritage, collective spirit, symbolic essence, emotional landscape, French Guiana psyche, cultural symbolism, resilience archetype, rebirth motif",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/french-guiana",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - French Guiana",
-    description:
-      "Journey through French Guiana’s emotional identity — The Mirror of Rain, symbolising the nation’s inner psyche and emotional history.",
+    description: "French Guiana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/french-guiana",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — French Guiana (The Mirror of Rain)",
-    description:
-      "Discover French Guiana’s emotional essence through the archetype The Mirror of Rain.",
+    description: "French Guiana’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

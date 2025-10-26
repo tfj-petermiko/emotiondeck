@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Rwanda",
-  description:
-    "Explore Rwanda’s emotional archetype - The Mountain of Silence. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Rwanda, Rwanda archetype, The Mountain of Silence, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Rwanda’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Rwanda emotion, The Mountain of Silence poetry, Rwandan culture and empathy, psychology of Rwanda, identity in The Mountain of Silence, emotion and culture Rwanda, Rwanda emotional heritage, The Mountain of Silence identity, empathy in Rwandan psychology, Rwanda emotion and identity, EmotionDeck cultural psychology, The Mountain of Silence emotion journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/rwanda",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Rwanda",
-    description:
-      "Journey through Rwanda’s emotional identity — The Mountain of Silence, symbolising the nation’s inner psyche and emotional history.",
+    description: "Rwanda’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/rwanda",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Rwanda (The Mountain of Silence)",
-    description:
-      "Discover Rwanda’s emotional essence through the archetype The Mountain of Silence.",
+    description: "Rwanda’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

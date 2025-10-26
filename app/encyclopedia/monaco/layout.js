@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Monaco",
-  description:
-    "Explore Monaco’s emotional archetype - The Elegant Performer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Monaco, Monaco archetype, The Elegant Performer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Monaco’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Monaco emotion, Elegant Performer archetype, Mediterranean grace, poised passion, emotional culture Monaco, Jungian archetypes Monaco, symbolic identity, national psyche Monaco, cultural empathy Monaco, poetic symbolism, emotional elegance, Monaco psychology, Mediterranean symbolism, Monaco cultural identity, empathetic expression, passionate grace, symbolic dance, emotional national identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/monaco",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Monaco",
-    description:
-      "Journey through Monaco’s emotional identity — The Elegant Performer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Monaco’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/monaco",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Monaco (The Elegant Performer)",
-    description:
-      "Discover Monaco’s emotional essence through the archetype The Elegant Performer.",
+    description: "Monaco’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

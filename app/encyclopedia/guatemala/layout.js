@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guatemala",
-  description:
-    "Explore Guatemala’s emotional archetype - The Child of Storm. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Guatemala, Guatemala archetype, The Child of Storm, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Guatemala’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Guatemala, The Child of Storm, restless spirit, emotional culture, national identity, Jungian archetypes, symbolic essence, cultural empathy, tempest symbolism, poetic psychology, Central American psyche, emotional resilience, Guatemalan soul, storm symbolism, symbolic narrative, emotional symbolism, emotional tempest, Guatemalan identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guatemala",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guatemala",
-    description:
-      "Journey through Guatemala’s emotional identity — The Child of Storm, symbolising the nation’s inner psyche and emotional history.",
+    description: "Guatemala’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/guatemala",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guatemala (The Child of Storm)",
-    description:
-      "Discover Guatemala’s emotional essence through the archetype The Child of Storm.",
+    description: "Guatemala’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

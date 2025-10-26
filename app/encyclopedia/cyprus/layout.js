@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Cyprus",
-  description:
-    "Explore Cyprus’s emotional archetype - The Island of Longing. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Cyprus, Cyprus archetype, The Island of Longing, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Cyprus’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Cyprus, The Island of Longing, Cypriot soul, emotional culture, ancient shores, yearning, sunlit skies, Jungian archetypes, symbolic identity, national psyche, cultural symbolism, emotional empathy, Mediterranean emotion, poetic identity, collective longing, archetypal island, psychological symbolism",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/cyprus",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Cyprus",
-    description:
-      "Journey through Cyprus’s emotional identity — The Island of Longing, symbolising the nation’s inner psyche and emotional history.",
+    description: "Cyprus’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/cyprus",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Cyprus (The Island of Longing)",
-    description:
-      "Discover Cyprus’s emotional essence through the archetype The Island of Longing.",
+    description: "Cyprus’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

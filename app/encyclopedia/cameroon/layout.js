@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Cameroon",
-  description:
-    "Explore Cameroon’s emotional archetype - The Keeper of Rain. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Cameroon, Cameroon archetype, The Keeper of Rain, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Cameroon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul with deep cultural tides.",
+  keywords: "EmotionDeck Cameroon, The Keeper of Rain, Cameroonian emotion, emotional renewal, cultural empathy, Jungian archetypes, symbolic storms, national identity, emotional psychology, African symbolism, quiet strength, cultural renewal, lush skies symbolism, guardian archetype, emotional landscape, symbolic guardianship, Cameroonian psyche",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/cameroon",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Cameroon",
-    description:
-      "Journey through Cameroon’s emotional identity — The Keeper of Rain, symbolising the nation’s inner psyche and emotional history.",
+    description: "Cameroon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul with deep cultural tides.",
     url: "https://emotiondeck.com/encyclopedia/cameroon",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Cameroon (The Keeper of Rain)",
-    description:
-      "Discover Cameroon’s emotional essence through the archetype The Keeper of Rain.",
+    description: "Cameroon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul with deep cultural tides.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Greenland",
-  description:
-    "Explore Greenland’s emotional archetype - The Spirit of Calm. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Greenland, Greenland archetype, The Spirit of Calm, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Greenland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s profound emotional pulse.",
+  keywords: "EmotionDeck Greenland, The Spirit of Calm, icy stillness, serene expanse, emotional culture, soul’s quiet depths, Jungian archetypes, empathy, symbolic essence, national identity, Arctic symbolism, psychological calm, cultural psyche, emotional symbolism, tranquil spirit, Nordic emotional tone, reflective solitude",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/greenland",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Greenland",
-    description:
-      "Journey through Greenland’s emotional identity — The Spirit of Calm, symbolising the nation’s inner psyche and emotional history.",
+    description: "Greenland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s profound emotional pulse.",
     url: "https://emotiondeck.com/encyclopedia/greenland",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Greenland (The Spirit of Calm)",
-    description:
-      "Discover Greenland’s emotional essence through the archetype The Spirit of Calm.",
+    description: "Greenland’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s profound emotional pulse.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

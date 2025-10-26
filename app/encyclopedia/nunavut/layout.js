@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Nunavut",
-  description:
-    "Explore Nunavut’s emotional archetype - The Spirit of North. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Nunavut, Nunavut archetype, The Spirit of North, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Nunavut’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Nunavut emotions, The Spirit of North culture, Nunavut identity psychology, empathy in Nunavut, Spirit of North emotiondeck, Northern culture and emotion, Nunavut emotional identity, Spirit of North empathy, emotion psychology Nunavut, The Spirit of North feelings, empathy culture Nunavut, EmotionDeck northern identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/nunavut",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Nunavut",
-    description:
-      "Journey through Nunavut’s emotional identity — The Spirit of North, symbolising the nation’s inner psyche and emotional history.",
+    description: "Nunavut’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/nunavut",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Nunavut (The Spirit of North)",
-    description:
-      "Discover Nunavut’s emotional essence through the archetype The Spirit of North.",
+    description: "Nunavut’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

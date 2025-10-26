@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Paraguay",
-  description:
-    "Explore Paraguay’s emotional archetype - The River Philosopher. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Paraguay, Paraguay archetype, The River Philosopher, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Paraguay’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep, flowing soul and timeless introspection.",
+  keywords: "EmotionDeck Paraguay insights, The River Philosopher emotions, Paraguayan cultural empathy, emotion and identity Paraguay, psychology of Paraguay culture, EmotionDeck emotional journey, The River Philosopher inner reflection, Paraguay emotion and psychology, culture and empathy Paraguay, EmotionDeck identity exploration, emotional depth Paraguay, psychology of The River Philosopher",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/paraguay",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Paraguay",
-    description:
-      "Journey through Paraguay’s emotional identity — The River Philosopher, symbolising the nation’s inner psyche and emotional history.",
+    description: "Paraguay’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep, flowing soul and timeless introspection.",
     url: "https://emotiondeck.com/encyclopedia/paraguay",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Paraguay (The River Philosopher)",
-    description:
-      "Discover Paraguay’s emotional essence through the archetype The River Philosopher.",
+    description: "Paraguay’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep, flowing soul and timeless introspection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

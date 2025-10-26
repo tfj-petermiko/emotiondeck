@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Serbia",
-  description:
-    "Explore Serbia’s emotional archetype - The Defiant Spirit. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Serbia, Serbia archetype, The Defiant Spirit, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Serbia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Serbia, The Defiant Spirit emotion, Serbian culture psychology, empathy in Serbia, emotional identity Serbia, Defiant Spirit psychology, EmotionDeck cultural identity, Serbia emotional heritage, empathy and identity Serbia, psychology of Defiant Spirit, EmotionDeck Serbia culture, Serbian emotional psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/serbia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Serbia",
-    description:
-      "Journey through Serbia’s emotional identity — The Defiant Spirit, symbolising the nation’s inner psyche and emotional history.",
+    description: "Serbia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/serbia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Serbia (The Defiant Spirit)",
-    description:
-      "Discover Serbia’s emotional essence through the archetype The Defiant Spirit.",
+    description: "Serbia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Turkey",
-  description:
-    "Explore Turkey’s emotional archetype - The Bridge of Empires. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Turkey, Turkey archetype, The Bridge of Empires, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Turkey’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Turkey culture, The Bridge of Empires emotion, Turkish cultural empathy, emotion psychology Turkey, Identity and emotion in Turkey, EmotionDeck empathy bridge, Turkish cultural identity, psychology of empathy Turkey, The Bridge of Empires identity, EmotionDeck cultural psychology, Turkey emotion connection, empathy and identity Turkey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/turkey",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Turkey",
-    description:
-      "Journey through Turkey’s emotional identity — The Bridge of Empires, symbolising the nation’s inner psyche and emotional history.",
+    description: "Turkey’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/turkey",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Turkey (The Bridge of Empires)",
-    description:
-      "Discover Turkey’s emotional essence through the archetype The Bridge of Empires.",
+    description: "Turkey’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Zambia",
-  description:
-    "Explore Zambia’s emotional archetype - The Dream Child. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Zambia, Zambia archetype, The Dream Child, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Zambia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Zambia dreams, The Dream Child emotion, Zambia culture empathy, emotional identity Zambia, psychology of dreams Zambia, emotion and culture EmotionDeck, Zambia empathy insight, Dream Child psychology, EmotionDeck identity Zambia, cultural emotion psychology, empathy in Zambia, Zambia emotional heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/zambia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Zambia",
-    description:
-      "Journey through Zambia’s emotional identity — The Dream Child, symbolising the nation’s inner psyche and emotional history.",
+    description: "Zambia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/zambia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Zambia (The Dream Child)",
-    description:
-      "Discover Zambia’s emotional essence through the archetype The Dream Child.",
+    description: "Zambia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

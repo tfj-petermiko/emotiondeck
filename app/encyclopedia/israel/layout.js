@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Israel",
-  description:
-    "Explore Israel’s emotional archetype - The Rising Vision. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Israel, Israel archetype, The Rising Vision, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Israel’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s luminous soul and enduring spirit.",
+  keywords: "EmotionDeck Israel, The Rising Vision, Israeli soul, emotional culture, national identity, Jungian symbolism, cultural empathy, ancient dreams, modern hopes, symbolic tapestry, collective psyche, emotional resilience, spiritual heritage, Middle Eastern archetypes, visionary symbolism, national psyche, emotional narrative",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/israel",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Israel",
-    description:
-      "Journey through Israel’s emotional identity — The Rising Vision, symbolising the nation’s inner psyche and emotional history.",
+    description: "Israel’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s luminous soul and enduring spirit.",
     url: "https://emotiondeck.com/encyclopedia/israel",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Israel (The Rising Vision)",
-    description:
-      "Discover Israel’s emotional essence through the archetype The Rising Vision.",
+    description: "Israel’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s luminous soul and enduring spirit.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

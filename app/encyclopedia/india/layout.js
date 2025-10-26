@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - India",
-  description:
-    "Explore India’s emotional archetype - The Eternal Lotus. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck India, India archetype, The Eternal Lotus, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "India’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck India, The Eternal Lotus, Indian spirituality, timeless wisdom, cultural symbolism, emotional culture India, Jungian archetypes India, spiritual awakening, Indian empathy, national identity India, symbolic essence India, emotional psychology India, lotus symbolism, Indian cultural psyche, profound introspection, poetic Indian spirit, emotional resonance India",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/india",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - India",
-    description:
-      "Journey through India’s emotional identity — The Eternal Lotus, symbolising the nation’s inner psyche and emotional history.",
+    description: "India’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/india",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — India (The Eternal Lotus)",
-    description:
-      "Discover India’s emotional essence through the archetype The Eternal Lotus.",
+    description: "India’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

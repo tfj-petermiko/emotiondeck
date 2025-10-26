@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mozambique",
-  description:
-    "Explore Mozambique’s emotional archetype - The Resilient Dancer. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Mozambique, Mozambique archetype, The Resilient Dancer, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Mozambique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Mozambique, The Resilient Dancer, Mozambican spirit, cultural resilience, emotional rhythm, national identity, symbolic grace, empathy in Mozambique, Jungian archetypes, emotional culture, Mozambican psychology, dance and emotion, cultural symbolism, inner strength, facing adversity, collective resilience, poetic identity, emotional heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mozambique",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mozambique",
-    description:
-      "Journey through Mozambique’s emotional identity — The Resilient Dancer, symbolising the nation’s inner psyche and emotional history.",
+    description: "Mozambique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/mozambique",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mozambique (The Resilient Dancer)",
-    description:
-      "Discover Mozambique’s emotional essence through the archetype The Resilient Dancer.",
+    description: "Mozambique’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Algeria",
-  description:
-    "Explore Algeria’s emotional archetype - The Wise Nomad. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Algeria, Algeria archetype, The Wise Nomad, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Algeria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Algeria, The Wise Nomad, Algerian soul, desert wisdom, ancient paths, emotional culture, psychological symbolism, Jungian archetypes, national identity, silent wisdom, cultural empathy, Sahara symbolism, nomadic heritage, emotional resilience, symbolic identity, Algerian psychology, poetic symbolism, emotional landscape",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/algeria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Algeria",
-    description:
-      "Journey through Algeria’s emotional identity — The Wise Nomad, symbolising the nation’s inner psyche and emotional history.",
+    description: "Algeria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/algeria",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Algeria (The Wise Nomad)",
-    description:
-      "Discover Algeria’s emotional essence through the archetype The Wise Nomad.",
+    description: "Algeria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

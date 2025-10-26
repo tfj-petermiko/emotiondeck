@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Sudan",
-  description:
-    "Explore Sudan’s emotional archetype - The Guardian of the Nile. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Sudan, Sudan archetype, The Guardian of the Nile, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Sudan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring soul, where legacy and hope intertwine beneath a timeless sky.",
+  keywords: "EmotionDeck Sudan emotions, The Guardian of the Nile culture, Sudan empathy psychology, EmotionDeck identity Sudan, Sudan emotional heritage, Guardian of the Nile emotions, psychology of Sudan identity, Sudan culture and emotion, EmotionDeck empathy Sudan, emotional identity Sudan, psychology and emotion Sudan, Guardian of the Nile emotional journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/sudan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Sudan",
-    description:
-      "Journey through Sudan’s emotional identity — The Guardian of the Nile, symbolising the nation’s inner psyche and emotional history.",
+    description: "Sudan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring soul, where legacy and hope intertwine beneath a timeless sky.",
     url: "https://emotiondeck.com/encyclopedia/sudan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Sudan (The Guardian of the Nile)",
-    description:
-      "Discover Sudan’s emotional essence through the archetype The Guardian of the Nile.",
+    description: "Sudan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring soul, where legacy and hope intertwine beneath a timeless sky.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Tibet",
-  description:
-    "Explore Tibet’s emotional archetype - The Sacred Mountain. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Tibet, Tibet archetype, The Sacred Mountain, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Tibet’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Tibet, The Sacred Mountain emotions, Tibetan culture empathy, psychology of Tibet, EmotionDeck sacred identity, Tibetan emotional heritage, mountain spirituality emotion, empathy in Tibetan culture, EmotionDeck psychology Tibet, sacred mountain identity, Tibetan emotional landscape, EmotionDeck cultural psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/tibet",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Tibet",
-    description:
-      "Journey through Tibet’s emotional identity — The Sacred Mountain, symbolising the nation’s inner psyche and emotional history.",
+    description: "Tibet’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/tibet",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Tibet (The Sacred Mountain)",
-    description:
-      "Discover Tibet’s emotional essence through the archetype The Sacred Mountain.",
+    description: "Tibet’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

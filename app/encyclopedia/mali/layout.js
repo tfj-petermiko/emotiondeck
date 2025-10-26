@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mali",
-  description:
-    "Explore Mali’s emotional archetype - The Protector of Ancestors. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Mali, Mali archetype, The Protector of Ancestors, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Mali’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring soul.",
+  keywords: "EmotionDeck Mali, Protector of Ancestors, ancestral guardian, Malian heritage, emotional culture, Jungian archetypes, ancestral echoes, symbolic identity, Malian psychology, cultural empathy, national spirit, emotional symbolism, guardian archetype, Malian soul, collective memory, ancestral weaving, emotional legacy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mali",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mali",
-    description:
-      "Journey through Mali’s emotional identity — The Protector of Ancestors, symbolising the nation’s inner psyche and emotional history.",
+    description: "Mali’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring soul.",
     url: "https://emotiondeck.com/encyclopedia/mali",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mali (The Protector of Ancestors)",
-    description:
-      "Discover Mali’s emotional essence through the archetype The Protector of Ancestors.",
+    description: "Mali’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s enduring soul.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Slovakia",
-  description:
-    "Explore Slovakia’s emotional archetype - The Loyal Heart. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Slovakia, Slovakia archetype, The Loyal Heart, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Slovakia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Slovakia emotion, The Loyal Heart psychology, Slovakia culture empathy, EmotionDeck identity Slovakia, Loyal Heart emotion guide, Slovakia empathy and identity, EmotionDeck emotional psychology, The Loyal Heart cultural identity, Slovakia emotional heritage, EmotionDeck empathy psychology, Loyal Heart emotion exploration, Slovakia emotion and culture",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/slovakia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Slovakia",
-    description:
-      "Journey through Slovakia’s emotional identity — The Loyal Heart, symbolising the nation’s inner psyche and emotional history.",
+    description: "Slovakia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/slovakia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Slovakia (The Loyal Heart)",
-    description:
-      "Discover Slovakia’s emotional essence through the archetype The Loyal Heart.",
+    description: "Slovakia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -82,3 +82,9 @@ scripts/generate-robots.js
 public/sitemap.xml
 public/robots.txt
 
+
+scripts/
+*.csv
+*.bat
+
+

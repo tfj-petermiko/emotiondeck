@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Albania",
-  description:
-    "Explore Albania’s emotional archetype - The Guardian of Honour. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Albania, Albania archetype, The Guardian of Honour, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Albania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Albania, Guardian of Honour, Albanian ethos, ancestral pride, emotional culture, Jungian archetypes, national identity, symbolic sentinel, cultural symbolism, emotional integrity, Albanian psychology, empathy in Albania, poetic symbolism, Balkan heritage, steadfast guardianship, cultural guardianship, emotional resilience, honour and pride",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/albania",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Albania",
-    description:
-      "Journey through Albania’s emotional identity — The Guardian of Honour, symbolising the nation’s inner psyche and emotional history.",
+    description: "Albania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/albania",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Albania (The Guardian of Honour)",
-    description:
-      "Discover Albania’s emotional essence through the archetype The Guardian of Honour.",
+    description: "Albania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

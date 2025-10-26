@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Mongolia",
-  description:
-    "Explore Mongolia’s emotional archetype - The Reflective Nomad. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Mongolia, Mongolia archetype, The Reflective Nomad, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Mongolia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Mongolia, The Reflective Nomad, Mongolian soul, emotional landscape, cultural introspection, Jungian archetypes, symbolic nomadism, empathy in Mongolia, vast horizons, silent reflection, nomadic identity, emotional culture, Mongolian symbolism, psychological wanderer, national psyche, spiritual journey, cultural empathy",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/mongolia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Mongolia",
-    description:
-      "Journey through Mongolia’s emotional identity — The Reflective Nomad, symbolising the nation’s inner psyche and emotional history.",
+    description: "Mongolia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/mongolia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Mongolia (The Reflective Nomad)",
-    description:
-      "Discover Mongolia’s emotional essence through the archetype The Reflective Nomad.",
+    description: "Mongolia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

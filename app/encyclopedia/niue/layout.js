@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Niue",
-  description:
-    "Explore Niue’s emotional archetype - The Spirit of Shells. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Niue, Niue archetype, The Spirit of Shells, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Niue’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Niue, The Spirit of Shells poetry, Niuean culture and emotion, empathy in Niue identity, psychology of The Spirit of Shells, Niue emotion exploration, Spirit of Shells emotiondeck, cultural empathy Niue, Niue identity psychology, emotion and culture Niue, Spirit of Shells empathy, Niue emotion psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/niue",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Niue",
-    description:
-      "Journey through Niue’s emotional identity — The Spirit of Shells, symbolising the nation’s inner psyche and emotional history.",
+    description: "Niue’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/niue",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Niue (The Spirit of Shells)",
-    description:
-      "Discover Niue’s emotional essence through the archetype The Spirit of Shells.",
+    description: "Niue’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

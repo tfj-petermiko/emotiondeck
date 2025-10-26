@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Gambia",
-  description:
-    "Explore Gambia’s emotional archetype - The River of Faith. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Gambia, Gambia archetype, The River of Faith, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Gambia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where belief and heritage intertwine in timeless harmony.",
+  keywords: "EmotionDeck Gambia, The River of Faith, Gambian soul, ancestral ties, emotional culture, Jungian archetypes, symbolic identity, quiet conviction, cultural empathy, national psyche, African archetypes, traditional symbolism, emotional resilience, spiritual flow, collective memory, heritage psychology, symbolic river, empathetic identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/gambia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Gambia",
-    description:
-      "Journey through Gambia’s emotional identity — The River of Faith, symbolising the nation’s inner psyche and emotional history.",
+    description: "Gambia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where belief and heritage intertwine in timeless harmony.",
     url: "https://emotiondeck.com/encyclopedia/gambia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Gambia (The River of Faith)",
-    description:
-      "Discover Gambia’s emotional essence through the archetype The River of Faith.",
+    description: "Gambia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where belief and heritage intertwine in timeless harmony.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

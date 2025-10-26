@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Iran",
-  description:
-    "Explore Iran’s emotional archetype - The Pilgrim of Faith. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Iran, Iran archetype, The Pilgrim of Faith, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Iran’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Iran, The Pilgrim of Faith, Iranian soul, sacred journey, ancient whispers, eternal longing, emotional culture Iran, Iranian empathy, national identity Iran, Jungian archetypes Iran, symbolism Iran, Persian psyche, spiritual symbolism, cultural psychology Iran, poetic identity, Middle Eastern emotion, archetypal journey",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/iran",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Iran",
-    description:
-      "Journey through Iran’s emotional identity — The Pilgrim of Faith, symbolising the nation’s inner psyche and emotional history.",
+    description: "Iran’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/iran",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Iran (The Pilgrim of Faith)",
-    description:
-      "Discover Iran’s emotional essence through the archetype The Pilgrim of Faith.",
+    description: "Iran’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

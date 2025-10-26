@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Suriname",
-  description:
-    "Explore Suriname’s emotional archetype - The Whispering Soul. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Suriname, Suriname archetype, The Whispering Soul, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Suriname’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep cultural soul and enduring emotional identities.",
+  keywords: "EmotionDeck Suriname emotions, The Whispering Soul identity, Suriname cultural empathy, EmotionDeck psychology Suriname, The Whispering Soul emotions, Suriname emotional culture, empathy in Suriname identity, EmotionDeck psychological journey, Suriname soulful emotion, The Whispering Soul empathy, cultural identity EmotionDeck, Suriname emotion psychology",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/suriname",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Suriname",
-    description:
-      "Journey through Suriname’s emotional identity — The Whispering Soul, symbolising the nation’s inner psyche and emotional history.",
+    description: "Suriname’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep cultural soul and enduring emotional identities.",
     url: "https://emotiondeck.com/encyclopedia/suriname",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Suriname (The Whispering Soul)",
-    description:
-      "Discover Suriname’s emotional essence through the archetype The Whispering Soul.",
+    description: "Suriname’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s deep cultural soul and enduring emotional identities.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

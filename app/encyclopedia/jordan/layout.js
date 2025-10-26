@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Jordan",
-  description:
-    "Explore Jordan’s emotional archetype - The Bridge of Light. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Jordan, Jordan archetype, The Bridge of Light, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Jordan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Jordan, The Bridge of Light, emotional culture Jordan, Jordanian identity, Jungian archetypes, symbolic passage, hope and shadows, empathy in Jordan, cultural symbolism, emotional psychology, luminous connection, Jordan national psyche, archetypal symbolism, poetic emotion, Middle Eastern identity, emotional resilience, symbolic hope, Jordanian emotional landscape",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/jordan",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Jordan",
-    description:
-      "Journey through Jordan’s emotional identity — The Bridge of Light, symbolising the nation’s inner psyche and emotional history.",
+    description: "Jordan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/jordan",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Jordan (The Bridge of Light)",
-    description:
-      "Discover Jordan’s emotional essence through the archetype The Bridge of Light.",
+    description: "Jordan’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

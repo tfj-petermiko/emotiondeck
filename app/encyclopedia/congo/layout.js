@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Congo",
-  description:
-    "Explore Congo’s emotional archetype - The Eternal Drum. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Congo, Congo archetype, The Eternal Drum, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Congo’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Congo, The Eternal Drum, Congolese spirit, emotional resilience, cultural symbolism, Jungian archetypes, African identity, poetic emotion, national psyche, rhythmic heritage, collective empathy, soul of Congo, symbolic rhythms, emotional culture, psychological depth, cultural empathy, ancestral spirit, timeless resilience",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/congo",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Congo",
-    description:
-      "Journey through Congo’s emotional identity — The Eternal Drum, symbolising the nation’s inner psyche and emotional history.",
+    description: "Congo’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/congo",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Congo (The Eternal Drum)",
-    description:
-      "Discover Congo’s emotional essence through the archetype The Eternal Drum.",
+    description: "Congo’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

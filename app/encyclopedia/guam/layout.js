@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guam",
-  description:
-    "Explore Guam’s emotional archetype - The Coral Keeper. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Guam, Guam archetype, The Coral Keeper, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Guam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Guam, The Coral Keeper, island guardian, ancient tides, whispered dreams, emotional culture, Pacific psyche, Jungian archetypes, cultural symbolism, island identity, empathy in Guam, ancestral spirit, oceanic symbolism, tribal psychology, national emotion, coral symbolism, Chamorro heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guam",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guam",
-    description:
-      "Journey through Guam’s emotional identity — The Coral Keeper, symbolising the nation’s inner psyche and emotional history.",
+    description: "Guam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/guam",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guam (The Coral Keeper)",
-    description:
-      "Discover Guam’s emotional essence through the archetype The Coral Keeper.",
+    description: "Guam’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

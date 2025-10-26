@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - United Arab Emirates",
-  description:
-    "Explore United Arab Emirates’s emotional archetype - The Spirit of Water. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck United Arab Emirates, United Arab Emirates archetype, The Spirit of Water, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "United Arab Emirates’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where tradition and transformation merge in harmonious fluidity.",
+  keywords: "EmotionDeck United Arab Emirates, The Spirit of Water emotion, UAE cultural empathy, water spirit psychology, EmotionDeck identity UAE, emotional culture United Arab Emirates, Spirit of Water psychology, UAE emotion and identity, empathy in Emirati culture, EmotionDeck water archetype, United Arab Emirates emotional journey, Spirit of Water emotional identity",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/united-arab-emirates",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - United Arab Emirates",
-    description:
-      "Journey through United Arab Emirates’s emotional identity — The Spirit of Water, symbolising the nation’s inner psyche and emotional history.",
+    description: "United Arab Emirates’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where tradition and transformation merge in harmonious fluidity.",
     url: "https://emotiondeck.com/encyclopedia/united-arab-emirates",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — United Arab Emirates (The Spirit of Water)",
-    description:
-      "Discover United Arab Emirates’s emotional essence through the archetype The Spirit of Water.",
+    description: "United Arab Emirates’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection."s soul, where tradition and transformation merge in harmonious fluidity.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

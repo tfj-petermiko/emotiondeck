@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Iraq",
-  description:
-    "Explore Iraq’s emotional archetype - The Light of Unity. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Iraq, Iraq archetype, The Light of Unity, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Iraq’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Iraq, The Light of Unity, Iraqi spirit, ancient symbolism, emotional culture, national identity, Jungian archetypes, empathy in Iraq, Middle Eastern psyche, cultural unity, symbolic heritage, shared dawn, collective consciousness, poetic symbolism, Iraqi emotional landscape, spiritual archetypes, cultural empathy, identity weaving",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/iraq",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Iraq",
-    description:
-      "Journey through Iraq’s emotional identity — The Light of Unity, symbolising the nation’s inner psyche and emotional history.",
+    description: "Iraq’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/iraq",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Iraq (The Light of Unity)",
-    description:
-      "Discover Iraq’s emotional essence through the archetype The Light of Unity.",
+    description: "Iraq’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

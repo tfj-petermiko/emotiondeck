@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Austria",
-  description:
-    "Explore Austria’s emotional archetype - The Melancholic Maestro. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Austria, Austria archetype, The Melancholic Maestro, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Austria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Austria, Melancholic Maestro, Austrian soul, introspective symphony, refined sorrow, emotional culture, Jungian archetypes, cultural empathy, national identity, symbolic melancholy, poetic symbolism, Austrian psychology, emotional introspection, musical longing, archetypal emotions, cultural symbolism, tragic beauty, emotional heritage",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/austria",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Austria",
-    description:
-      "Journey through Austria’s emotional identity — The Melancholic Maestro, symbolising the nation’s inner psyche and emotional history.",
+    description: "Austria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/austria",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Austria (The Melancholic Maestro)",
-    description:
-      "Discover Austria’s emotional essence through the archetype The Melancholic Maestro.",
+    description: "Austria’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

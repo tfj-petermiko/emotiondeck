@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Ascension Island",
-  description:
-    "Explore Ascension Island’s emotional archetype - The Lost Horizon. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Ascension Island, Ascension Island archetype, The Lost Horizon, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Ascension Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "Ascension Island, The Lost Horizon, timeless realm, solitude symbolism, uncharted skies, emotional culture, Jungian archetypes, empathetic identity, mystical isolation, poetic symbolism, British Isles emotion, national psyche, island solitude, psychological landscape, cultural symbolism, symbolic nature, emotional archetype, mystery and solitude",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/ascension-island",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Ascension Island",
-    description:
-      "Journey through Ascension Island’s emotional identity — The Lost Horizon, symbolising the nation’s inner psyche and emotional history.",
+    description: "Ascension Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/ascension-island",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Ascension Island (The Lost Horizon)",
-    description:
-      "Discover Ascension Island’s emotional essence through the archetype The Lost Horizon.",
+    description: "Ascension Island’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

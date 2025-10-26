@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Micronesia",
-  description:
-    "Explore Micronesia’s emotional archetype - The Voice of Light. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Micronesia, Micronesia archetype, The Voice of Light, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Micronesia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Micronesia, The Voice of Light, Micronesian soul, emotional culture, gentle clarity, soulful resonance, Jungian archetypes, symbolic identity, cultural empathy, national psyche, island emotional depth, Pacific symbolism, archetypal illumination, emotional symbolism, Micronesian psychology, poetic empathy, cultural depths",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/micronesia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Micronesia",
-    description:
-      "Journey through Micronesia’s emotional identity — The Voice of Light, symbolising the nation’s inner psyche and emotional history.",
+    description: "Micronesia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/micronesia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Micronesia (The Voice of Light)",
-    description:
-      "Discover Micronesia’s emotional essence through the archetype The Voice of Light.",
+    description: "Micronesia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

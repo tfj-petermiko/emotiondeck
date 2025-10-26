@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Gabon",
-  description:
-    "Explore Gabon’s emotional archetype - The Hidden River. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Gabon, Gabon archetype, The Hidden River, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Gabon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Gabon, The Hidden River, Gabonese soul, silent current, forest symbolism, emotional culture Gabon, Jungian archetypes Gabon, Gabon empathy, national identity Gabon, symbolic essence Gabon, cultural psyche Gabon, emotional symbolism, African archetypes, psychological landscape Gabon, Gabonese emotions, symbolic storytelling, nature and emotion, hidden depths Gabon",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/gabon",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Gabon",
-    description:
-      "Journey through Gabon’s emotional identity — The Hidden River, symbolising the nation’s inner psyche and emotional history.",
+    description: "Gabon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/gabon",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Gabon (The Hidden River)",
-    description:
-      "Discover Gabon’s emotional essence through the archetype The Hidden River.",
+    description: "Gabon’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

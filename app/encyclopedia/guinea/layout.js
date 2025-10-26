@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Guinea",
-  description:
-    "Explore Guinea’s emotional archetype - The Song of Roots. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Guinea, Guinea archetype, The Song of Roots, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Guinea, The Song of Roots, ancestral echoes, earthbound ties, emotional culture, cultural symbolism, Jungian archetypes, national identity, Guinean empathy, poetic symbolism, emotional psychology, heritage connection, collective memory, indigenous wisdom, symbolic essence, cultural psyche, emotional resilience, African traditions",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/guinea",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Guinea",
-    description:
-      "Journey through Guinea’s emotional identity — The Song of Roots, symbolising the nation’s inner psyche and emotional history.",
+    description: "Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/guinea",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Guinea (The Song of Roots)",
-    description:
-      "Discover Guinea’s emotional essence through the archetype The Song of Roots.",
+    description: "Guinea’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

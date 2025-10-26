@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Lithuania",
-  description:
-    "Explore Lithuania’s emotional archetype - The Memory Keeper. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Lithuania, Lithuania archetype, The Memory Keeper, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Lithuania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Lithuania, The Memory Keeper, Lithuanian soul, ancestral whispers, emotional culture, cultural resilience, national identity, Jungian archetypes, symbolic tapestry, empathetic spirit, Baltic heritage, emotional symbolism, psychological depth, resilient spirit, cultural memory, collective psyche, poetic identity, symbolic essence",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/lithuania",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Lithuania",
-    description:
-      "Journey through Lithuania’s emotional identity — The Memory Keeper, symbolising the nation’s inner psyche and emotional history.",
+    description: "Lithuania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/lithuania",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Lithuania (The Memory Keeper)",
-    description:
-      "Discover Lithuania’s emotional essence through the archetype The Memory Keeper.",
+    description: "Lithuania’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Indonesia",
-  description:
-    "Explore Indonesia’s emotional archetype - The Celestial Weaver. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Indonesia, Indonesia archetype, The Celestial Weaver, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Indonesia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Indonesia, The Celestial Weaver, Indonesian mysticism, archipelagic dreams, ancient tides, emotional culture, national identity, Jungian archetypes, symbolism Indonesia, Indonesian empathy, cultural symbolism, tribal emotion, spiritual psychology, mythic narratives, Southeast Asian psyche, emotional heritage, collective unconscious, Indonesian soul",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/indonesia",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Indonesia",
-    description:
-      "Journey through Indonesia’s emotional identity — The Celestial Weaver, symbolising the nation’s inner psyche and emotional history.",
+    description: "Indonesia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/indonesia",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Indonesia (The Celestial Weaver)",
-    description:
-      "Discover Indonesia’s emotional essence through the archetype The Celestial Weaver.",
+    description: "Indonesia’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

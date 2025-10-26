@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Portugal",
-  description:
-    "Explore Portugal’s emotional archetype - The Dreaming Navigator. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Portugal, Portugal archetype, The Dreaming Navigator, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Portugal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Portugal, The Dreaming Navigator emotions, Portuguese culture and empathy, EmotionDeck psychology Portugal, Dreaming Navigator identity, emotional journey Portugal, cultural empathy Portugal, EmotionDeck psychological insight, dreaming navigation emotion, Portugal identity psychology, empathetic culture Portugal, emotional navigation Dreaming Navigator",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/portugal",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Portugal",
-    description:
-      "Journey through Portugal’s emotional identity — The Dreaming Navigator, symbolising the nation’s inner psyche and emotional history.",
+    description: "Portugal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/portugal",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Portugal (The Dreaming Navigator)",
-    description:
-      "Discover Portugal’s emotional essence through the archetype The Dreaming Navigator.",
+    description: "Portugal’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

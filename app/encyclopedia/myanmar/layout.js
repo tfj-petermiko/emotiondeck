@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Myanmar",
-  description:
-    "Explore Myanmar’s emotional archetype - The Whisper of Rain. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Myanmar, Myanmar archetype, The Whisper of Rain, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Myanmar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Myanmar, The Whisper of Rain, Burmese resilience, emotional culture Myanmar, Jungian archetypes Myanmar, Myanmar symbolism, ancient landscapes Myanmar, national identity Myanmar, Burmese empathy, cultural psychology Myanmar, symbolic archetypes, Myanmar soul, emotional heritage Myanmar, poetic symbolism, Myanmar emotional nuance, resilience symbolism, Burmese collective unconscious",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/myanmar",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Myanmar",
-    description:
-      "Journey through Myanmar’s emotional identity — The Whisper of Rain, symbolising the nation’s inner psyche and emotional history.",
+    description: "Myanmar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/myanmar",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Myanmar (The Whisper of Rain)",
-    description:
-      "Discover Myanmar’s emotional essence through the archetype The Whisper of Rain.",
+    description: "Myanmar’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -2,17 +2,14 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
   title: "EmotionDeck Encyclopedia - Canada",
-  description:
-    "Explore Canada’s emotional archetype - The Guardian of Spirit. Discover its cultural essence and psychological meaning in the global emotional landscape.",
-  keywords:
-    "EmotionDeck Canada, Canada archetype, The Guardian of Spirit, Jungian archetypes, emotional culture, psychology, empathy, cultural identity",
+  description: "Canada’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
+  keywords: "EmotionDeck Canada, The Guardian of Spirit, Canadian wilderness, national identity, emotional culture, Jungian archetypes, symbolic essence, Canadian psyche, empathy in Canada, cultural symbolism, inner landscapes, timeless watchfulness, Canadian spirit, emotional resilience, psychological symbolism, nature and emotion, cultural empathy, Canadian soul",
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia/canada",
   },
   openGraph: {
     title: "EmotionDeck Encyclopedia - Canada",
-    description:
-      "Journey through Canada’s emotional identity — The Guardian of Spirit, symbolising the nation’s inner psyche and emotional history.",
+    description: "Canada’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     url: "https://emotiondeck.com/encyclopedia/canada",
     siteName: "EmotionDeck",
     images: [
@@ -29,8 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EmotionDeck Encyclopedia — Canada (The Guardian of Spirit)",
-    description:
-      "Discover Canada’s emotional essence through the archetype The Guardian of Spirit.",
+    description: "Canada’s archetype — The Unknown Soul, symbolising the nation’s emotional identity and cultural soul. A reflection of resilience, memory, and human connection.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
 };

@@ -1,6 +1,7 @@
 {
   "name": "emotiondeck_landing",
   "version": "0.1.1",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,7 +20,7 @@
     "lucide-react": "^0.546.0",
     "mime": "^4.1.0",
     "next": "^15.0.3",
-    "openai": "^6.5.0",
+    "openai": "^6.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^3.3.0"
