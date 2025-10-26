@@ -159,7 +159,7 @@ const continents = {
       </div>
       <div className="text-center pt-10 pb-4">
         <h3 className="text-4xl md:text-4xl font-semibold tracking-wide text-gray-100">
-          Exploring Jungian Archetypes Across Nations – The Emotional DNA of Humanity
+          Exploring Jungian Archetypes Across Nations - The Emotional DNA of Humanity
         </h3>
       </div>
 
