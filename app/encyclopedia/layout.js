@@ -27,7 +27,7 @@ export const metadata = {
     locale: "en_GB",
     images: [
       {
-        url: "https://emotiondeck.com/preview.jpg",
+        url: "https://emotiondeck.com/private_images/meta/encyclopedia_preview.webp",
         width: 1200,
         height: 630,
         alt: "EmotionDeck - The First Global Emotion Encyclopedia Preview",
@@ -39,10 +39,12 @@ export const metadata = {
     title: "EmotionDeck - The First Global Emotion Encyclopedia 🌍",
     description:
       "Discover the emotional essence of nations – explore archetypes and cultural identity in the EmotionDeck Global Encyclopedia.",
-    images: ["https://emotiondeck.com/preview.jpg"],
+    images: [
+      "https://emotiondeck.com/private_images/meta/encyclopedia_preview.webp",
+    ],
   },
 };
 
-export default function GlobalMapLayout({ children }) {
+export default function EncyclopediaLayout({ children }) {
   return <>{children}</>;
 }
