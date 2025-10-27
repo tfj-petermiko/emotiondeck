@@ -77,18 +77,14 @@ const renderButton = (href, label, id) => (
             <tbody>
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Phase 1 - Free Collection</p>
-                  <p className="text-gray-400 mb-2">
-                    Explore 144 foundational emotional expressions - open and free for learning, research, and education.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                <td className="w-2/4 p-3 text-white"> 
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
                     This phase establishes a neutral and consistent foundation for studying emotion across different faces, genders, and ethnicities.
                     It emphasises clarity, balance, and universality - allowing observers to focus purely on the emotional signal, free from external distraction.
                     Designed as a baseline for comparison, it helps users recognise emotional nuances and build perceptual accuracy.
                     It also serves as a psychological mirror - reminding us that emotion transcends cultural boundaries.
                     Every face becomes a lesson in empathy and shared humanity, where emotion is a language understood by all.
-                    Through this openness, Phase 1 invites us to observe emotion as both art and science - simple, honest, and profoundly human.
+                    Through this openness, Phase 1 invites us to observe emotion as both art and science: simple, honest, and profoundly human.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("/free/phase-1", "Free Access", "p1")}
@@ -108,32 +104,32 @@ const renderButton = (href, label, id) => (
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   144 black-and-white portraits
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Emotions Included</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Joy, Calmness, Compassion, Anger, Sadness, Surprise, Disgust, Fear, Trust, Anticipation, Pride, Love, Relief,
                   Contempt, Boredom, Confusion, Interest, Determination, Shame, Hope, Guilt, Serenity, Anxiety, Curiosity.
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   3 ethnic groups × 2 genders × 1 age group (Adult)
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 high-resolution portraits
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Neutral grey background, soft lighting, identical shirt style
                 </td>
               </tr>
@@ -165,16 +161,12 @@ const renderButton = (href, label, id) => (
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Phase 2 - Advanced Emotional Expressions</p>
-                  <p className="text-gray-400 mb-2">
-                    Expands the dataset with deeper, more complex expressions drawn from a wide range of individuals and backgrounds.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    This phase examines subtler states such as empathy, gratitude and awe, encouraging observers to perceive emotional gradation and authenticity.
-                    It captures the warmth of human connection - bridging cultural differences and revealing shared psychological patterns that define humanity.
-                    It offers a deeper encounter with authenticity, where emotion becomes a reflection of inner truth rather than social performance.
-                    By observing these micro-moments of sincerity, viewers train their sensitivity to emotional detail and psychological realism.
-                    The result is a growing ability to recognise emotion as a spectrum, not a label, creating a richer, more humanised understanding of what we feel.
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
+                    This phase explores subtler states such as empathy, gratitude, and awe, encouraging observers to perceive emotional nuance and authenticity.
+It captures the warmth of human connection, bridging cultural differences and revealing the shared psychological patterns that define humanity.
+It offers a deeper encounter with authenticity, where emotion becomes a reflection of inner truth rather than a social performance.
+By observing these micro-moments of sincerity, viewers cultivate a heightened sensitivity to emotional detail and psychological realism.
+The result is an evolving ability to recognise emotion as a spectrum rather than a label, fostering a richer and more human understanding of what we feel.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("/free/phase-2", "Free Access", "p2")}
@@ -194,13 +186,13 @@ const renderButton = (href, label, id) => (
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   288 black-and-white portraits
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Emotions Included</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Anxiety, Nostalgia, Confidence, Tension, Empathy, Desire, Awe, Fatigue, Positive Surprise, Negative Surprise,
                   Contemplation, Euphoria, Irritation, Tranquillity, Guilt, Jealousy, Gratitude, Excitement, Affection, Disbelief,
                   Inspiration, Longing, Disappointment, Neutral.
@@ -208,19 +200,19 @@ const renderButton = (href, label, id) => (
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   3 ethnic groups × 2 genders × 2 age groups (Adult, Senior)
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 ultra-realistic portraits
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Consistent neutral background, balanced lighting, identical clothing
                 </td>
               </tr>
@@ -252,16 +244,12 @@ const renderButton = (href, label, id) => (
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Phase 3 - Young Adults</p>
-                  <p className="text-gray-400 mb-2">
-                    Features diverse young adults expressing nuanced emotions - blending energy, focus, and emerging self-awareness.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
                     This phase bridges the transition between adolescence and maturity, where emotion meets reflection.
-                    It highlights mindfulness, emotional regulation, and inner harmony - key traits of developing empathy and balanced perception.
-                    Each portrait captures the moment between impulse and understanding, between reaction and wisdom.
-                    The subtlety of these expressions invites slower observation, helping the viewer perceive not just emotion but its direction and intention.
-                    It reminds us that emotional intelligence grows not from expression alone, but from awareness of what lies beneath.
+It highlights mindfulness, emotional regulation, and inner harmony – key traits in developing empathy and balanced perception.
+Each portrait captures the moment between impulse and understanding, between reaction and wisdom.
+The subtlety of these expressions invites slower observation, helping the viewer to perceive not just emotion, but also its direction and intention.
+It reminds us that emotional intelligence grows not from expression alone, but from an awareness of what lies beneath.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("/free/phase-3", "Free Access", "p3")}
@@ -281,32 +269,32 @@ const renderButton = (href, label, id) => (
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   144 high-resolution portraits
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Emotions Included</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Joy, Anger, Fear, Sadness, Surprise, Disgust, Love, Pride, Confusion, Hope, Trust, Curiosity, Desire, Nostalgia, Anxiety,
                   Excitement, Determination, Compassion, Tranquillity, Guilt, Contempt, Inspiration, Affection, Disbelief.
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   3 ethnic groups × 2 genders × 1 age group (Young Adult)
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 ultra-realistic portraits
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Neutral background, uniform shirt style, precision lighting, balanced tonal range
                 </td>
               </tr>
@@ -330,7 +318,7 @@ const renderButton = (href, label, id) => (
           <center><h2 className="text-2xl font-semibold text-center mx-auto w-fit">
             Phase 4 - Children Collection
           </h2></center>
-          <p className="text-center text-gray-400 italic mb-6">
+          <p className="text-center text-gray-300 italic mb-6">
             Innocence & Emotional Growth
           </p>
           <table className="w-full text-sm md:text-base border-collapse">
@@ -338,16 +326,12 @@ const renderButton = (href, label, id) => (
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Phase 4 - Children Collection</p>
-                  <p className="text-gray-400 mb-2">
-                    90 portraits of children (6–7 years old) capturing pure, genuine emotions - the roots of empathy and connection.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
                     This phase explores emotional development at its earliest stage, where expression is spontaneous and unfiltered.
-                    It reflects universal traits such as curiosity, wonder and joy that shape emotional intelligence from a young age.
-                    These portraits remind us how authenticity precedes complexity - a face that feels before it understands.
-                    By observing them, educators and psychologists can trace how empathy, confidence and trust emerge.
-                    It closes the circle of human expression - returning to the beginning, where emotion is still free, honest, and pure.
+It reflects universal traits such as curiosity, wonder, and joy that shape emotional intelligence from a young age.
+These portraits remind us that authenticity precedes complexity – a face that feels before it understands.
+By observing them, educators and psychologists can trace the emergence of empathy, confidence, and trust.
+It completes the circle of human expression, returning to the beginning – where emotion remains free, honest, and pure.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("/free/phase-4", "Free Access", "p4")}
@@ -362,37 +346,37 @@ const renderButton = (href, label, id) => (
                       loading="lazy"
                     />
                   </div>
-                  <p className="text-gray-400 text-xs mt-2">Pride - Child Female</p>
+                  <p className="text-gray-300 text-xs mt-2">Pride - Child Female</p>
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   90 black-and-white portraits
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Emotions Included</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Joy, Love, Pride, Hope, Gratitude, Affection, Wonder, Interest, Playfulness, Serenity,
                   Tranquillity, Trust, Admiration, Inspiration, Confidence.
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   3 ethnic groups × 2 genders × 1 age group (Children ~6–7 years)
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 high-resolution portraits
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Neutral grey background, soft lighting, uniform shirt style, educational tone
                 </td>
               </tr>
@@ -416,7 +400,7 @@ const renderButton = (href, label, id) => (
           <center><h2 className="text-2xl font-semibold text-center mx-auto w-fit">
             Phase 5 - Seniors Collection
           </h2></center>
-          <p className="text-center text-gray-400 italic mb-6">
+          <p className="text-center text-gray-300 italic mb-6">
             Wisdom & Emotional Depth
           </p>
 
@@ -425,16 +409,12 @@ const renderButton = (href, label, id) => (
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Phase 5 - Seniors Collection</p>
-                  <p className="text-gray-400 mb-2">
-                    Discover 300 portraits of seniors expressing 50 emotions - a visual study of wisdom, grace, and emotional depth.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
                     This phase explores the emotional richness of later life, where expression is shaped by reflection, experience, and inner balance.
-                    It highlights how empathy, patience, and resilience mature with age, revealing faces that carry both peace and depth.
-                    Through these portraits, psychologists, educators, and artists can observe the dialogue between wisdom and emotion -
-                    where every wrinkle tells a story of understanding. It reminds us that emotion does not fade with time, but transforms
-                    into something deeper and more meaningful.
+It highlights how empathy, patience, and resilience mature with age, revealing faces that carry both peace and depth.
+Through these portraits, psychologists, educators, and artists can observe the dialogue between wisdom and emotion –
+where every wrinkle tells a story of understanding. It reminds us that emotion does not fade with time, but transforms
+into something deeper and more meaningful.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("/free/phase-5", "Free Access", "p5")}
@@ -449,18 +429,18 @@ const renderButton = (href, label, id) => (
                       loading="lazy"
                     />
                   </div>
-                  <p className="text-gray-400 text-xs mt-2">Kindness - African Senior Male</p>
+                  <p className="text-gray-300 text-xs mt-2">Kindness - African Senior Male</p>
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Total Expressions</td>
+                <td className="p-3 text-gray-300">Total Expressions</td>
                 <td className="p-3 text-white" colSpan={2}>
                   300 black-and-white portraits
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Emotions Included</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-300">Emotions Included</td>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Acceptance, Admiration, Affection, Calmness, Compassion, Contentment, Curiosity, Determination, Dignity, Empathy, Forgiveness,
                   Gratitude, Hope, Joy, Longing, Melancholy, Nostalgia, Peace, Pride, Reflection, Regret, Relief, Sadness, Serenity, Tranquillity,
                   Resilience, Faith, Love, Tenderness, Understanding, Kindness, Trust, Patience, Inspiration, Enthusiasm, Friendship, Support,
@@ -470,19 +450,19 @@ const renderButton = (href, label, id) => (
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   3 ethnic groups × 2 genders × 1 age group (Seniors - approximately 70–80 years old)
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 high-resolution portraits
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Neutral grey background, soft lighting, consistent attire, timeless emotional tone
                 </td>
               </tr>
@@ -514,16 +494,12 @@ const renderButton = (href, label, id) => (
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Phase 6 - Evolution Collection</p>
-                  <p className="text-gray-400 mb-2">
-                    120 portraits illustrating the emotional evolution of humanity - from infancy to old age, captured across 12 world regions.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    The Evolution Collection explores how emotion matures and transforms through time and culture.
-                    Each portrait traces the human journey - from the openness of childhood to the serenity of age.
-                    This phase unites psychology, anthropology, and art into one visual continuum, revealing the shared emotional DNA that connects us all.
-                    By observing diverse cultures and life stages, we discover how feelings such as love, pride, calmness, and gratitude define our growth as human beings.
-                    A story of transformation - of emotion evolving through life.
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
+                    The Evolution Collection explores how emotion matures and transforms across time and culture.
+Each portrait traces the human journey – from the openness of childhood to the serenity of age.
+This phase unites psychology, anthropology, and art into a single visual continuum, revealing the shared emotional DNA that connects us all.
+By observing diverse cultures and life stages, we uncover how feelings such as love, pride, calmness, and gratitude define our growth as human beings.
+It is a story of transformation – of emotion evolving throughout life.
                   </p>
                   <div className="flex justify-end">
                     {renderButton("/free/phase-6", "Free Access", "p6")}
@@ -543,31 +519,31 @@ const renderButton = (href, label, id) => (
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Expressions</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   120 ultra-realistic black-and-white portraits
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Emotions Included</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Love, Joy, Pride, Calmness, Serenity, Gratitude, Delight - representing emotional continuity across life.
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   12 world regions × 10 life stages (Infant → Elderly)
                 </td>
               </tr>
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 high-resolution portraits
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Neutral grey background, consistent shirt style, soft lighting, cohesive scientific-artistic tone
                 </td>
               </tr>
@@ -577,7 +553,7 @@ const renderButton = (href, label, id) => (
       </motion.section>
 
       {/* 🟢 Return to Home Page button */}
-      <br /><br />
+
       <div className="text-center mt-16">
         <button
           onClick={handleBackClick}

@@ -99,13 +99,7 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">Dark Spectrum - Part I Collection</p>
-                  <p className="text-gray-400 mb-2">
-                    48 ultra-realistic portraits exploring the hidden dimensions of emotion:
-                    Deception Masks, Hidden States, Inner Conflict, Pain & Loss, Power & Control,
-                    and Reflection & Redemption.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
                     This collection delves into the concealed emotions that define human depth.
                     It reflects moments of tension, irony, grief, and redemption - the silent
                     language of inner transformation. Each portrait reveals psychological nuance
@@ -134,14 +128,14 @@ export default function ProCollectionPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Portraits</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   48 black-and-white emotional portraits
                 </td>
               </tr>
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Subcategories</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   <br /><strong>Deception Masks</strong> (Cunning, Cynicism, Duplicity, Facade, Hypocrisy, Irony, Mockery, Sarcasm)<br /><br />
                   <strong>Hidden States</strong> (Apathy, Calculation, Coldness, Containment, Detachment, Indifference, Numbness, Restraint)<br /><br />
                   <strong>Inner Conflict</strong> (Guilt, Hopelessness, Insecurity, Regret, Remorse, Resentment, Self-Doubt, Shame)<br /><br />
@@ -153,7 +147,7 @@ export default function ProCollectionPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Cultural Diversity</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   European, African, East Asian, South Asian, Middle Eastern, Latin American,
                   Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, North American.
                 </td>
@@ -161,21 +155,21 @@ export default function ProCollectionPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   3 age groups × 2 genders (balanced representation)
                 </td>
               </tr>
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 - high-definition monochrome format
                 </td>
               </tr>
 
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Neutral grey background, soft lighting, identical framing and shirt style
                 </td>
               </tr>
@@ -210,14 +204,7 @@ export default function ProCollectionPage() {
               <tr className="border-b border-gray-800 align-top">
                 <td className="w-1/4" />
                 <td className="w-2/4 p-3 text-white">
-                  <p className="font-semibold mb-1">
-                    Dark Spectrum - Part II Collection
-                  </p>
-                  <p className="text-gray-400 mb-2">
-                    48 black-and-white portraits exploring the boundary between despair and awakening - 
-                    emotions such as Decay, Despair, Nihilism, Fury, Isolation, and Vengeance.
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
+                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
                     Dark Spectrum - Part II continues the exploration into the shadowed layers of human 
                     emotion. Each portrait captures the quiet breakdown and resilience within collapse. 
                     Through the language of microexpression and minimal monochrome composition, this 
@@ -247,14 +234,14 @@ export default function ProCollectionPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Total Portraits</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   48 black-and-white emotional portraits
                 </td>
               </tr>
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Emotions</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Abandonment, Aging, Anxiety, Betrayal, Bitterness, Claustrophobia, Collapse, Contempt, 
                   Cruelty, Death Acceptance, Decay, Deception, Despair, Destruction, Detachment, 
                   Disconnection, Disintegration, Dominance, Dread, Emptiness, Estrangement, Fatalism, 
@@ -266,7 +253,7 @@ export default function ProCollectionPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Cultural Diversity</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   European, African, East Asian, South Asian, Middle Eastern, Latin American, 
                   Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, 
                   North American.
@@ -275,21 +262,21 @@ export default function ProCollectionPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   One portrait per emotion - diverse regional, age, and gender representation
                 </td>
               </tr>
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   1024 × 1536 - high-definition monochrome format
                 </td>
               </tr>
 
               <tr>
                 <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Soft neutral lighting, consistent grey background, unified portrait framing
                 </td>
               </tr>
@@ -299,7 +286,7 @@ export default function ProCollectionPage() {
       </motion.section>
 
       {/* 🟢 Return to Home Page button */}
-      <br /><br />
+   
       <div className="text-center mt-16">
         <button
           onClick={handleBackClick}
@@ -311,7 +298,7 @@ export default function ProCollectionPage() {
           {loadingBack ? "Loading..." : "← Back"}
         </button>
       </div>
-      <br /><br />
+     <br /><br />
     </main>
   );
 }

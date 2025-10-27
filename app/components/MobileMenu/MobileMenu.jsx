@@ -47,36 +47,37 @@ const tabs = [
         }}
       >
         <button
-          onClick={toggleMenu}
-          style={{
-            background: open
-              ? "linear-gradient(145deg, #1a1a1a, #0e0e0e)"
-              : "linear-gradient(145deg, #0d0d0d, #181818)",
-            color: "#f5f5f5",
-            border: open ? "1px solid #666" : "1px solid #333",
-            padding: "1rem",
-            borderRadius: "1.2rem",
-            cursor: "pointer",
-            boxShadow: open
-              ? "0 0 18px rgba(255,255,255,0.18)"
-              : "0 0 12px rgba(255,255,255,0.05)",
-            transition: "all 0.25s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.boxShadow = "0 0 22px rgba(255,255,255,0.25)";
-            e.currentTarget.style.border = "1px solid #777";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.boxShadow = open
-              ? "0 0 18px rgba(255,255,255,0.18)"
-              : "0 0 12px rgba(255,255,255,0.05)";
-            e.currentTarget.style.border = open
-              ? "1px solid #666"
-              : "1px solid #333";
-          }}
-        >
-          {open ? <X size={38} strokeWidth={1.6} /> : <Menu size={38} strokeWidth={1.6} />}
-        </button>
+  onClick={toggleMenu}
+  style={{
+    backgroundColor: "#141414",
+    color: "#f5f5f5",
+    border: open ? "1px solid #555" : "1px solid #2a2a2a",
+    padding: "1rem",
+    borderRadius: "1.2rem",
+    cursor: "pointer",
+    boxShadow: open
+      ? "0 0 12px rgba(255,255,255,0.15)"
+      : "0 0 6px rgba(0,0,0,0.5)",
+    transition: "all 0.25s ease",
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.backgroundColor = "#181818";
+    e.currentTarget.style.border = "1px solid #666";
+    e.currentTarget.style.boxShadow = "0 0 14px rgba(255,255,255,0.2)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.backgroundColor = "#141414";
+    e.currentTarget.style.border = open
+      ? "1px solid #555"
+      : "1px solid #2a2a2a";
+    e.currentTarget.style.boxShadow = open
+      ? "0 0 12px rgba(255,255,255,0.15)"
+      : "0 0 6px rgba(0,0,0,0.5)";
+  }}
+>
+  {open ? <X size={38} strokeWidth={1.6} /> : <Menu size={38} strokeWidth={1.6} />}
+</button>
+
 
         <div
           style={{
@@ -125,17 +126,20 @@ const tabs = [
               overflowY: "auto",
             }}
           >
-            <h2
-              style={{
-                marginBottom: "2rem",
-                fontSize: "1.45rem",
-                color: "#aaa",
-              }}
-            >
-              Menu
-            </h2>
+<h2
+  style={{
+    marginBottom: "1rem",
+    fontSize: "1.45rem",
+    color: "#aaa",
+  }}
+>
+  Menu
+</h2>
 
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
+<div style={{ height: "2.8rem" }}></div>
+
+<table style={{ width: "100%", borderCollapse: "collapse" }}>
+
               <tbody>
                 {tabs.map((tab, i) => (
                   <tr
@@ -199,14 +203,20 @@ const tabs = [
 </div>
 
 <p style={{ marginBottom: "1rem", color: "#ccc", lineHeight: "1.75" }}>
-  Launched in October 2025 and developed by <strong>Peter Miko</strong>, EmotionDeck is a long-term
-  psychological and cultural project. It explores how emotion, culture, history, upbringing, and
-  ethnicity shape the way humanity feels and expresses itself. EmotionDeck bridges psychology, art, and anthropology to create a visual atlas of human emotion -
-  revealing how traditions, values, and social contexts influence the way we express and perceive
-  feelings. Drawing inspiration from the analytical psychology of <strong>Carl Gustav Jung</strong> and
-  the emotional research of <strong>Paul Ekman</strong>, the project seeks to integrate both depth and
-  science - exploring the emotional patterns that define and connect humanity.
+  Created in October 2025 by <strong>Peter Miko</strong>, EmotionDeck is a long-term psychological
+  and cultural project exploring how emotion, culture, history, upbringing, and ethnicity shape the
+  way humanity feels and expresses itself. It bridges psychology, art, and anthropology to form a
+  visual atlas of human emotion, revealing how traditions, values, and social contexts influence the
+  way we express and perceive feelings.
+  <br /><br />
+  Inspired by the analytical psychology of <strong>Carl Gustav Jung</strong> and the emotional
+  research of <strong>Paul Ekman</strong>, EmotionDeck combines depth and science to explore the
+  emotional patterns that define and connect humanity. It also introduces the world’s first
+  encyclopedia of emotional archetypes, mapping the psychological and cultural essence of every
+  nation through its symbolic emotional identity.
 </p>
+
+<br />
 
 <p style={{ color: "#aaa", fontStyle: "italic", marginBottom: "1.2rem" }}>
   “To see emotion is to understand humanity.”

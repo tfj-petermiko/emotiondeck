@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://emotiondeck.com/",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/learn",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/learn/quizzes/quiz-1",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/pro",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/pro/phase-1",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/encyclopedia/afghanistan",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/facs-analyzer",
+    "status": 404,
+    "visible": false,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/legal/privacy",
+    "status": 200,
+    "visible": true,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/worldmap",
+    "status": 404,
+    "visible": false,
+    "hasTitle": true,
+    "hasDescription": true
+  },
+  {
+    "url": "https://emotiondeck.com/generator",
+    "status": 404,
+    "visible": false,
+    "hasTitle": true,
+    "hasDescription": true
+  }
+]

@@ -12,57 +12,58 @@ export default function HomePage() {
   ];
 
   const text = {
-    hero_title: "Train Your Perception. Understand Human Emotion.",
+    hero_title: "Train Your Perception. See. Feel. Understand.",
     hero_paragraph1:
-      "EmotionDeck Helps You Perceive and Understand Human Emotion through Subtle Expression, Mindful Observation, and Guided Visual Learning.",
+      "EmotionDeck Helps You Perceive and Understand Human Emotion Through Subtle Expression, Mindful Observation, and Guided Visual Learning.",
     hero_paragraph2:
-      "Explore 1000+ Emotional Expressions - For Personal Learning, Research, and Education.",
+      "Explore 1000+ Emotional Expressions Designed for Personal Growth, Professional Training, and Research.",
     pro_title: "Experience the PRO Collection",
     pro_description:
-      "Discover Deeper Complex Human Emotions Across Regions, Ages, and Genders. Perfect for Professionals, Educators, Law Enforcement Officers, Investigators, and Advanced Emotional Research.",
+      "Discover Complex Human Emotions Across Regions, Ages, and Genders. Ideal for Professionals, Educators, Law Enforcement, Investigators, and Emotional Research.",
     pro_note:
-      "🌍 Explore the EmotionDeck Encyclopedia Inspired by the Jungian Concept of the Collective Unconscious.",
+      "Explore the EmotionDeck Encyclopedia Inspired by Jungian Archetypes.",
   };
 
   return (
     <main className="flex flex-col flex-grow bg-neutral-900 text-white font-sans">
-      {/* 🎯 HERO + CTA */}
-      <section className="text-center mt-20 px-6">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-bold mb-6"
-        >
-          {text.hero_title}
-        </motion.h1>
+{/* 🟢 Hero Section */}
+<section className="text-center mt-24 px-6">
+  <motion.h1
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="text-6xl md:text-7xl font-extrabold mb-10 leading-tight"
+  >
+    {text.hero_title}
+  </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-6"
-        >
-          {text.hero_paragraph1}
-        </motion.p>
+  <motion.p
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.4, duration: 1 }}
+    className="text-xl md:text-4xl text-gray-300 max-w-4xl mx-auto mb-8 leading-loose"
+  >
+    {text.hero_paragraph1}
+  </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9, duration: 1 }}
-          className="text-gray-400 mb-12 max-w-xl mx-auto"
-        >
-          {text.hero_paragraph2}
-        </motion.p>
-      </section>
+  <motion.p
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.9, duration: 1 }}
+    className="text-xl md:text-2xl text-gray-300 mb-14 max-w-4xl mx-auto leading-relaxed"
+  >
+    {text.hero_paragraph2}
+  </motion.p>
+</section>
 
-      {/* 🖼️ EMOTIONS GALLERY */}
-      <section id="emotions" className="mt-12 mb-20 text-center px-0">
+
+      {/* 🖼️ Emotion Gallery */}
+      <section id="emotions" className="mt-12 mb-24 text-center px-0">
         <div className="flex justify-between items-end w-full gap-0 flex-wrap md:flex-nowrap">
           {emotions.map((emotion) => (
             <motion.div
               key={emotion.name}
-              whileHover={{ scale: 1.04 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className="flex-1 overflow-hidden rounded-none shadow-none hover:shadow-lg transition"
               style={{ aspectRatio: "2 / 3" }}
@@ -78,13 +79,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 🚀 PRO COLLECTION PROMO */}
-      <section className="mt-auto text-center px-6 pb-20">
+      {/* 🧠 PRO Section */}
+      <section className="mt-auto text-center px-6 pb-24">
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl font-semibold mb-4"
+          className="text-4xl md:text-5xl font-semibold mb-6 text-emerald-400"
         >
           {text.pro_title}
         </motion.h3>
@@ -93,18 +94,17 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-gray-400 mb-4 max-w-xl mx-auto"
+          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
           {text.pro_description}
         </motion.p>
 
-        {/* 🌍 Encyclopedia Promo Link (no underline) */}
         <motion.a
           href="/encyclopedia"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="inline-block text-sm text-emerald-400 mb-8 hover:text-emerald-300 transition"
+          className="inline-block text-lg md:text-xl text-emerald-400 mb-8 hover:text-emerald-300 transition"
         >
           {text.pro_note}
         </motion.a>

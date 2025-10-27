@@ -33,7 +33,7 @@ const palettes = {
     { name: "USA", coords: [-95, 30], color: pick(palettes.northAmerica, 1), image: "/private_images/worldmap/OneEmotion_Determination_USA_Female_Adult.webp" },
     { name: "Mexico", coords: [-102, 12], color: pick(palettes.northAmerica, 2), image: "/private_images/worldmap/OneEmotion_Joy_Mexico_Female_YoungAdult.webp" },
     { name: "Cuba", coords: [-78, 12], color: pick(palettes.northAmerica, 3), image: "/private_images/worldmap/OneEmotion_Hope_Cuba_Male_Senior.webp" },
-    { name: "Greenland", coords: [-35, 63], color: pick(palettes.northAmerica, 4), image: "/private_images/worldmap/OneEmotion_Calmness_Greenland_Male_Adult.webp" },
+    { name: "Greenland", coords: [-35, 60], color: pick(palettes.northAmerica, 4), image: "/private_images/worldmap/OneEmotion_Calmness_Greenland_Male_Adult.webp" },
 
     // 🌎 SOUTH AMERICA
     { name: "Brazil", coords: [-50, -30], color: pick(palettes.southAmerica, 0), image: "/private_images/worldmap/OneEmotion_Passion_Brazil_Male_YoungAdult.webp" },
@@ -54,7 +54,7 @@ const palettes = {
     { name: "Turkey", coords: [40, 33], color: pick(palettes.europe, 2), image: "/private_images/worldmap/OneEmotion_Hospitality_Turkey_Male_Adult.webp" },
     { name: "Norway", coords: [9, 57], color: pick(palettes.europe, 3), image: "/private_images/worldmap/OneEmotion_Serenity_Norway_Female_Senior.webp" },
     { name: "Finland", coords: [23, 60], color: pick(palettes.europe, 4), image: "/private_images/worldmap/OneEmotion_Focus_Finland_Male_Adult.webp" },
-    { name: "Iceland", coords: [-10, 62], color: pick(palettes.europe, 0), image: "/private_images/worldmap/OneEmotion_Freedom_Iceland_Male_Senior.webp" },
+    { name: "Iceland", coords: [-11, 60], color: pick(palettes.europe, 0), image: "/private_images/worldmap/OneEmotion_Freedom_Iceland_Male_Senior.webp" },
 
     // 🌍 AFRICA
     { name: "Morocco", coords: [-7, 25], color: pick(palettes.africa, 0), image: "/private_images/worldmap/OneEmotion_Mystery_Morocco_Female_Adult.webp" },
@@ -82,7 +82,7 @@ const palettes = {
     { name: "Mongolia", coords: [95, 40], color: pick(palettes.asia, 0), image: "/private_images/worldmap/OneEmotion_Freedom_Mongolia_Male_Adult.webp" },
 
     // 🦘 AUSTRALIA + OCEANIA
-    { name: "Australia", coords: [135, -40], color: pick(palettes.oceania, 0), image: "/private_images/worldmap/OneEmotion_Calmness_Australia_Female_Adult.webp" },
+    { name: "Australia", coords: [140, -30], color: pick(palettes.oceania, 0), image: "/private_images/worldmap/OneEmotion_Calmness_Australia_Female_Adult.webp" },
   ];
 
   const project = ([lon, lat]) => [(lon + 180) * 5.4, (90 - lat) * 5.6];

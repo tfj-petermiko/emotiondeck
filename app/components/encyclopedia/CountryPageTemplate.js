@@ -102,89 +102,120 @@ export default function CountryPageTemplate({ data }) {
         </motion.p>
       </section>
 
-      {/* Archetype Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <center>
-            <h2 className="text-2xl font-semibold">{data.archetype}</h2>
-          </center>
-          <p className="text-center text-gray-400 italic mb-6">{data.quote}</p>
-          <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
-            {data.intro}
-          </p>
+{/* Archetype Section */}
+<motion.section
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.8, duration: 0.6 }}
+  className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
+>
+  <div className="bg-gray-900 p-6 md:p-10">
+    <center>
+      <h2 className="text-2xl font-semibold">{data.archetype}</h2>
+    </center>
+    <p className="text-center text-gray-300 italic mb-6">{data.quote}</p>
+    <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
+      {data.intro}
+    </p>
 
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="text-gray-400 mb-1 leading-relaxed text-justify max-w-xl">
-                    {data.overview1}
-                  </p>
-                  <p className="text-gray-400 mt-4 mb-4 leading-relaxed text-justify max-w-xl">
-                    {data.overview2}
-                  </p>
-                </td>
-                <td className="p-3 w-[200px] text-center align-top">
-                  <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    
-                    <img
-                      src={data.image}
-                      alt={data.archetype}
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">{data.archetype}</p>
-                </td>
-              </tr>
+    <table className="w-full text-sm md:text-base border-collapse">
+      <tbody>
+        <tr className="border-b border-gray-800 align-middle">
+          {/* Left spacer column */}
+          <td className="w-[20%]" />
 
-              {data.sections.map((section, index) => (
-                <tr key={index} className="border-b border-gray-800">
-                  <td className="p-3 text-gray-400">{section.label}</td>
-                  <td className="p-3 text-white text-justify leading-relaxed" colSpan={2}>
-                    {section.value}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
-<br /><br />
-      {/* Navigation Links */}
-      <div className="text-center mt-20 mb-24 relative z-10">
-        {prevCountry && (
-          <a
-            href={`/encyclopedia/${prevSlug}`}
-            className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 block mb-3"
-          >
-            ← Previous: {prevCountry}
-          </a>
-        )}
-        {nextCountry && (
-          <a
-            href={`/encyclopedia/${nextSlug}`}
-            className="text-emerald-400 hover:text-emerald-300 transition-colors duration-300 block mb-6"
-          >
-            Discover the Next Story →
-            <br />
-            <span className="text-gray-400 text-sm">Next: {nextCountry}</span>
-          </a>
-        )}
+          {/* Middle column — enlarged for text */}
+          <td className="w-[55%] p-3 text-white">
+            <p className="text-gray-300 mb-1 leading-relaxed text-justify max-w-3xl">
+              {data.overview1}
+            </p>
+            <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify max-w-3xl">
+              {data.overview2}
+            </p>
+          </td>
 
-        <a
-          href="/encyclopedia"
-          className="text-gray-500 hover:text-emerald-400 transition-colors duration-300 inline-block text-sm mt-2"
-        >
-          ← Return to Menu
-        </a>
-      </div><br /><br />
-    </main>
-  );
+          {/* Right column — image vertically centered */}
+          <td className="p-3 w-[250px] text-center align-middle">
+            <div className="flex items-center justify-center h-full">
+              <div className="w-[250px] rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-transform duration-300 hover:scale-105">
+                <img
+                  src={data.image}
+                  alt={data.archetype}
+                  className="object-cover w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <p className="text-gray-300 text-xs mt-2">{data.archetype}</p>
+          </td>
+        </tr>
+
+        {data.sections.map((section, index) => (
+          <tr key={index} className="border-b border-gray-800">
+            <td className="p-3 text-gray-300">{section.label}</td>
+            <td className="p-3 text-gray-300 text-justify leading-relaxed" colSpan={2}>
+              {section.value}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</motion.section>
+
+
+
+{/* Navigation Buttons */}
+<div className="text-center mt-20 mb-24 relative z-10">
+  {prevCountry && (
+    <button
+      onClick={() => (window.location.href = `/encyclopedia/${prevSlug}`)}
+      style={{
+        backgroundColor: "#10B981",
+        color: "#fff",
+        border: "none",
+        padding: "10px 24px",
+        borderRadius: "9999px",
+        fontWeight: "600",
+        fontSize: "0.9rem",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
+        transition: "background-color 0.2s ease, transform 0.2s ease",
+        cursor: "pointer",
+        marginRight: "10px",
+      }}
+      onMouseEnter={(e) => (e.target.style.backgroundColor = "#34D399")}
+      onMouseLeave={(e) => (e.target.style.backgroundColor = "#10B981")}
+    >
+      ← Previous Story ({prevCountry})
+    </button>
+  )}
+
+  {nextCountry && (
+    <button
+      onClick={() => (window.location.href = `/encyclopedia/${nextSlug}`)}
+      style={{
+        backgroundColor: "#10B981",
+        color: "#fff",
+        border: "none",
+        padding: "10px 24px",
+        borderRadius: "9999px",
+        fontWeight: "600",
+        fontSize: "0.9rem",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
+        transition: "background-color 0.2s ease, transform 0.2s ease",
+        cursor: "pointer",
+        marginLeft: "10px",
+      }}
+      onMouseEnter={(e) => (e.target.style.backgroundColor = "#34D399")}
+      onMouseLeave={(e) => (e.target.style.backgroundColor = "#10B981")}
+    >
+      Next Story ({nextCountry}) →
+    </button>
+  )}
+</div>
+
+
+</main>
+);
 }
+

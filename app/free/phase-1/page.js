@@ -189,7 +189,7 @@ export default function FreeCollection() {
         </p>
       </section>
 
-      <br />
+
 
       {/* 🟢 RETURN BUTTON */}
       <div className="text-center mt-16 mb-20">
@@ -212,7 +212,7 @@ export default function FreeCollection() {
         onClose={() => setSelectedImage(null)}
       />
 
-      <br />
+
     </main>
   );
 }

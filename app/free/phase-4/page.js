@@ -139,7 +139,7 @@ export default function ProCollectionPhase4() {
       {/* 🔍 MODAL */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      <br />
+
 
 {/* 🟢 RETURN BUTTON */}
 <div className="text-center mt-16 mb-20">
@@ -158,7 +158,7 @@ export default function ProCollectionPhase4() {
 
 {/* 🔍 Global Image Modal */}
 <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-<br />
+
 </main>
 );
 }

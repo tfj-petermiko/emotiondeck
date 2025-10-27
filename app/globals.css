@@ -3,50 +3,40 @@
 @tailwind utilities;
 
 /* =========================================
-   ⚙️ Prevent FOUC (Flash of Unstyled Content)
+   EmotionDeck - Instant dark start and prevent stale CSS
    ========================================= */
+
+/* 1. Dark background before Tailwind loads */
 html,
 body {
-  background-color: #101010;
-  color: #eeeeee;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0b0b0b !important; /* Uniform dark grey background from 0 ms */
+  color: #eeeeee !important;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
-/* Ukryj zawartość, dopóki JS nie ustawi klasy `.styled` */
+/* 2. Hide old styles until new CSS is ready */
 html:not(.styled),
 body:not(.styled) {
-  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.25s ease-in-out;
+  visibility: hidden;
 }
 
-/* Gdy klasa `.styled` jest aktywna — pokaż stronę */
+/* 3. Reveal content when React adds the .styled class */
 html.styled,
 body.styled {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
   transition: opacity 0.25s ease-in-out;
 }
 
-/* =========================================
-   ✨ Fade-in animation when styles are ready
-   ========================================= */
-html.styled body,
-body.styled {
-  animation: fadeIn 0.35s ease-out forwards;
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 
 
@@ -55,7 +45,7 @@ body.styled {
    ========================================= */
 html,
 body {
-  background: linear-gradient(to bottom, #101010, #1a1a1a, #101010);
+  background: linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b);
   color: #ffffff;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   scroll-behavior: smooth;
@@ -75,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: #b0b0b0;
+  color: #d1d5db;
 }
 
 a:visited {
@@ -124,7 +114,7 @@ a:visited {
   border-radius: 0.125rem;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
   opacity: 0.9;
-  background-color: #1c1c1c;
+  background-color: #1a1a1a;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -235,10 +225,10 @@ body {
    🩶 Table and border styles
    ========================================= */
 section.border {
-  border-left: 1px solid #2e2e2e !important;
-  border-right: 1px solid #2e2e2e !important;
-  border-top: 1px solid #2e2e2e !important;
-  border-bottom: 0px solid #2e2e2e !important;
+  border-left: 1px solid #3a3a3a !important;
+  border-right: 1px solid #3a3a3a !important;
+  border-top: 1px solid #3a3a3a !important;
+  border-bottom: 0px solid #3a3a3a !important;
   border-radius: 12px !important;
   overflow: hidden !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -252,7 +242,7 @@ table {
 }
 
 tr {
-  border-bottom: 1px solid #2e2e2e !important;
+  border-bottom: 1px solid #3a3a3a !important;
 }
 
 td,
@@ -262,7 +252,7 @@ th {
 }
 
 footer {
-  border-top: 1px solid #2e2e2e !important;
+  border-top: 1px solid #3a3a3a !important;
 }
 
 div[class*="border-gray-700"] {
@@ -291,8 +281,8 @@ body {
   overflow-x: hidden;
   overscroll-behavior: none;
   scroll-behavior: smooth;
-  background-color: #101010;
-  color: #eeeeee;
+  background-color: #0a0a0a;
+  color: white;
 }
 
 /* Default state - allow vertical scrolling */
@@ -308,7 +298,7 @@ body.no-scroll {
 /* Dark scrollbar styling */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #2e2e2e #101010;
+  scrollbar-color: #3a3a3a #0a0a0a;
 }
 
 ::-webkit-scrollbar {
@@ -316,16 +306,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #101010;
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2e2e2e;
+  background: #3a3a3a;
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444444;
+  background: #5a5a5a;
 }
 
 /* =========================================
@@ -357,6 +347,7 @@ html, body, #__next {
   perspective: none !important;
 }
 
+
 /* =========================================
    🌍 Global Layout & Scroll Logic
    ========================================= */
@@ -367,8 +358,8 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #101010, #1a1a1a, #101010);
-  color: #eeeeee;
+  background: linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b);
+  color: #ffffff;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   scroll-behavior: smooth;
   overflow: hidden; /* 🚫 no scroll by default */
@@ -395,29 +386,34 @@ footer {
   position: sticky;
   bottom: 0;
   z-index: 40;
-  border-top: 1px solid #2e2e2e;
-  background-color: #101010;
+  border-top: 1px solid #3a3a3a;
+  background-color: #0a0a0a;
 }
 
 /* =========================================
    🧩 Remove Google Translate Blue Bar
    ========================================= */
+
+/* Hide the top blue bar */
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
 
+/* Fix body top offset when bar is hidden */
 body {
   top: 0px !important;
 }
 
+/* Optional: remove white background that flashes */
 .goog-logo-link,
 .goog-te-gadget span,
 .goog-te-gadget-simple {
   background-color: transparent !important;
   border: none !important;
-  color: #eeeeee !important;
+  color: #f5f5f5 !important;
 }
 
+/* Fix position so widget stays visible */
 #google_translate_element {
   z-index: 100000 !important;
 }
@@ -430,12 +426,12 @@ body {
 }
 
 .goog-te-gadget-simple {
-  background-color: rgba(28,28,28,0.95) !important;
-  border: 1px solid #2e2e2e !important;
+  background-color: rgba(15, 15, 15, 0.9) !important;
+  border: 1px solid #333 !important;
   border-radius: 8px !important;
   padding: 2px 6px !important;
   font-size: 10px !important;
-  color: #eeeeee !important;
+  color: #f5f5f5 !important;
   cursor: pointer !important;
   transition: all 0.2s ease-in-out;
   display: inline-flex !important;
@@ -443,45 +439,51 @@ body {
 }
 
 .goog-te-gadget-simple:hover {
-  background-color: rgba(40,40,40,0.95) !important;
-  border-color: #444444 !important;
+  background-color: rgba(35, 35, 35, 0.95) !important;
+  border-color: #00bcd4 !important;
 }
 
+/* Hide Google’s icon and text “Select Language” */
 .goog-te-gadget span,
 .goog-te-gadget img {
   display: none !important;
 }
 
+/* Scale down dropdown */
 .goog-te-menu-value {
   font-size: 12px !important;
-  color: #eeeeee !important;
+  color: #f5f5f5 !important;
 }
 
 /* =========================================
    ⚖️ Legal Table Styles (EmotionDeck)
    ========================================= */
+
 section.legal-table {
   width: 80%;
   margin: 2rem auto;
-  background-color: #1c1c1c;
-  border-left: 1px solid #2e2e2e;
-  border-right: 1px solid #2e2e2e;
-  border-top: 1px solid #2e2e2e;
+  background-color: #111;
+  border-left: 1px solid #3a3a3a;
+  border-right: 1px solid #3a3a3a;
+  border-top: 1px solid #3a3a3a;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Table layout */
 section.legal-table table {
   width: 100%;
   border-collapse: collapse;
-  color: #eeeeee;
+  color: #fff;
 }
 
+/* Row dividers */
 section.legal-table tr {
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 1px solid #3a3a3a;
 }
 
+/* Table cells */
 section.legal-table td,
 section.legal-table th {
   padding: 10px 14px;
@@ -490,16 +492,19 @@ section.legal-table th {
   border: none;
 }
 
+/* Label column */
 section.legal-table td:first-child {
   width: 30%;
-  color: #b0b0b0;
+  color: #aaa;
   font-weight: 500;
 }
 
+/* Value column */
 section.legal-table td:last-child {
-  color: #eeeeee;
+  color: #fff;
 }
 
+/* Responsive behaviour */
 @media (max-width: 768px) {
   section.legal-table,
   section.legal-table table,
@@ -520,21 +525,22 @@ section.legal-table td:last-child {
   }
 
   section.legal-table td:first-child {
-    color: #b0b0b0;
+    color: #bbb;
     font-weight: 600;
     margin-bottom: 0.25rem;
   }
 
   section.legal-table td:last-child {
-    color: #eeeeee;
+    color: #fff;
     margin-bottom: 0.75rem;
   }
 }
 
+
 /* 🌙 Hide scrollbar but keep scroll functionality */
 html, body {
-  overflow: auto;
-  scrollbar-width: none;
+  overflow: auto;            /* scroll działa normalnie */
+  scrollbar-width: none;     /* Firefox */
 }
 
 ::-webkit-scrollbar {
@@ -542,94 +548,130 @@ html, body {
   height: 0;
 }
 
-/* =========================================
-   🔧 Final Global Fix — remove bottom line + shadow from all tables
-   ========================================= */
-table,
-table tr:last-child,
-table tr:last-child td,
-table tr:last-child th {
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-section,
-.bg-neutral-900,
-.bg-gray-900,
-.bg-slate-900,
-.bg-zinc-900 {
-  box-shadow: none !important;
-}
-
-section::after,
-.bg-neutral-900::after,
-.bg-gray-900::after,
-.bg-slate-900::after,
-.bg-zinc-900::after {
-  content: none !important;
-  box-shadow: none !important;
-  border-bottom: none !important;
-}
 
 /* =========================================
-   🎨 Fix: Bright text in dropdown filter menus (Phase, Map, Collections)
+   🎨 Fix: Bright text in dropdown, filter, and menu elements
    ========================================= */
+
+/* Base dropdowns and select menus */
 select,
 option,
 .dropdown,
-.dropdown * ,
+.dropdown *,
 [role="menu"],
-[role="menu"] * ,
+[role="menu"] *,
 details,
 summary,
 details * {
   color: #eeeeee !important;
   background-color: #1c1c1c !important;
+  border-color: #2e2e2e !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
 }
 
+/* Opened buttons or expanded menus */
 button[data-state="open"],
 button[aria-expanded="true"],
 button[class*="dropdown"],
 button[class*="select"],
 button[class*="filter"] {
   color: #eeeeee !important;
+  background-color: #222 !important;
+  border-color: #2e2e2e !important;
 }
 
+/* Hover states */
 option:hover,
 .dropdown li:hover,
-[role="menu"] li:hover {
-  background-color: #222 !important;
-  color: #eeeeee !important;
+[role="menu"] li:hover,
+summary:hover {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
 }
 
+/* Disabled or inactive options */
+option:disabled,
+.dropdown li:disabled {
+  color: #666666 !important;
+  background-color: #1a1a1a !important;
+}
+
+/* Active / selected item */
+option:checked,
+.dropdown li[aria-selected="true"] {
+  background-color: #2e2e2e !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Subtle shadow and rounded corners */
 select,
+.dropdown,
+[role="menu"] {
+  border-radius: 6px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Prevent text clipping in dropdowns */
 option,
-.dropdown * ,
-[role="menu"],
-[role="menu"] * {
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+.dropdown li {
+  padding: 6px 10px;
+  line-height: 1.4;
 }
 
 
-/* ✅ FIX — restore complete frame borders for collection sections and tables */
+/* =========================================
+   🩶 Table Bottom Borders — Final Unified Style
+   ========================================= */
+
+/* All tables keep a visible bottom border */
+table,
+table tr,
+table td,
+table th {
+  border-bottom: 1px solid #2e2e2e !important;
+  box-shadow: none !important;
+}
+
+/* Remove duplicate shadows or lines */
+table tr:last-child td,
+table tr:last-child th {
+  border-bottom: 1px solid #2e2e2e !important;
+}
+
+/* Legal tables and bordered sections — consistent frame */
 section.border,
 section.border-gray-800,
-section.border-gray-700,
 section.border-gray-900,
+section.legal-table,
 .w-\[80\%\].mx-auto.border.border-gray-800 {
-  border-bottom: 1px solid #2e2e2e !important;
   border-top: 1px solid #2e2e2e !important;
   border-left: 1px solid #2e2e2e !important;
   border-right: 1px solid #2e2e2e !important;
+  border-bottom: 1px solid #2e2e2e !important;
   border-radius: 12px !important;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25) !important;
   overflow: hidden !important;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) !important;
+  background-color: #1c1c1c !important;
 }
 
-/* ✅ restore last table row border inside these sections */
+/* Fix for nested tables inside bordered sections */
 section.border table tr:last-child td,
 section.border-gray-800 table tr:last-child td,
-.w-\[80\%\].mx-auto.border.border-gray-800 table tr:last-child td {
+section.legal-table table tr:last-child td {
   border-bottom: 1px solid #2e2e2e !important;
 }
+
+/* Make hover rows subtle but visible */
+table tr:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
+
+
 

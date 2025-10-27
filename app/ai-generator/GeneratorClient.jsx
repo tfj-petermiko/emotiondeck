@@ -153,7 +153,7 @@ export default function GeneratorClient() {
         ⚙️ EmotionDeck - AI Portrait Generator
       </h1>
 
-      <p className="text-gray-400 mb-8 text-center max-w-lg">
+      <p className="text-gray-300 mb-8 text-center max-w-lg">
         Create Black & White Portraits in the Official EmotionDeck Style.<br />
         Choose Ethnicity, Emotion, Age Group, and Gender.
       </p>
@@ -254,7 +254,7 @@ export default function GeneratorClient() {
             : hovered
             ? "#34D399"
             : "#10B981",
-          color: remaining <= 0 ? "#000" : "#fff",
+          color: remaining <= 0 ? "#fff" : "#fff",
           cursor: loading ? "not-allowed" : "pointer",
         }}
       >

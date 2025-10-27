@@ -23,6 +23,7 @@ export default function EmotionQuiz1() {
     border: "none",
     transition: "all 0.3s ease",
     boxShadow: "0 0 12px rgba(16,185,129,0.2)",
+
   };
 
   const baseGreen = "#10B981";
@@ -182,7 +183,7 @@ export default function EmotionQuiz1() {
             </motion.p>
           )}
 
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-gray-300">
             Question {index + 1} of {questions.length}
           </p>
         </div>
@@ -192,7 +193,7 @@ export default function EmotionQuiz1() {
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
           </h2><br />
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-300 mb-8">
             Great job! You've completed Quiz 1.
           </p><br />
 
@@ -219,7 +220,7 @@ export default function EmotionQuiz1() {
       )}
 
       {/* 🌿 Footer link */}
-      <div className="mt-16 text-center text-gray-500 text-sm">
+      <div className="mt-16 text-center text-gray-300 text-sm">
         <p>
           Want to continue learning?{" "}
           <a

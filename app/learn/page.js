@@ -54,7 +54,7 @@ export default function LearnPage() {
         Learn & Grow - The Science of Emotion
       </motion.h1>
 
-      <p className="text-gray-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+      <p className="text-gray-300 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
         Explore human emotions through science, psychology, and AI. The{" "}
         <span className="text-emerald-400 font-medium">Learn & Grow</span> section
         reveals how emotions are expressed and shared across cultures - with interactive tools and quizzes.
@@ -73,7 +73,7 @@ export default function LearnPage() {
           <h2 className="text-2xl font-semibold text-center mb-2">
             Emotion Recognition Quizzes - Test Your Understanding
           </h2>
-          <p className="text-center text-gray-400 italic mb-6">
+          <p className="text-center text-gray-300 italic mb-6">
             Identify emotions from AI portraits - based on the Free Collection
           </p>
 
@@ -85,14 +85,14 @@ export default function LearnPage() {
                   <p className="font-semibold mb-1">
                     Learn to recognise emotional expressions through practice.
                   </p>
-                  <p className="text-gray-400 mb-3 text-justify">
+                  <p className="text-gray-300 mb-3 text-justify">
                     EmotionDeck Quizzes let you identify which emotion is shown
                     in portraits from the{" "}
                     <strong>Free Basic Collection</strong>. Each quiz offers
                     multiple-choice questions designed to strengthen your visual
                     emotional intelligence.
                   </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+                  <p className="text-gray-300 leading-relaxed text-justify mb-4 max-w-xl">
                     Each image presents a real human-like expression from different
                     cultures and backgrounds. Test yourself and see how well you
                     understand universal emotional cues.
@@ -128,13 +128,13 @@ export default function LearnPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Learning Focus</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Emotion recognition, empathy, and visual pattern understanding
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Free - Available in Learn & Grow
                 </td>
               </tr>
@@ -158,7 +158,7 @@ export default function LearnPage() {
           <h2 className="text-2xl font-semibold text-center mb-2">
             FACS Emotion Analyzer - Learn Human Expression
           </h2>
-          <p className="text-center text-gray-400 italic mb-6">
+          <p className="text-center text-gray-300 italic mb-6">
             Facial Action Coding System (FACS) - AI Meets Psychology
           </p>
 
@@ -170,11 +170,11 @@ export default function LearnPage() {
                   <p className="font-semibold mb-1">
                     Real-Time Facial Expression Analysis
                   </p>
-                  <p className="text-gray-400 mb-3 text-justify">
+                  <p className="text-gray-300 mb-3 text-justify">
                     Observe how emotions manifest through facial muscle movements (Action Units)
                     using EmotionDeck’s live FACS module.
                   </p>
-                  <p className="text-gray-400 leading-relaxed text-justify mb-4 max-w-xl">
+                  <p className="text-gray-300 leading-relaxed text-justify mb-4 max-w-xl">
                     Developed with the <strong>Facial Action Coding System (FACS)</strong>,
                     this tool connects emotion science with real-time learning.
                     It visualises muscle activations that correspond to each emotion,
@@ -211,13 +211,13 @@ export default function LearnPage() {
 
               <tr className="border-b border-gray-800">
                 <td className="p-3 text-gray-400">Learning Focus</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Real-time facial analysis, emotion science, microexpressions
                 </td>
               </tr>
               <tr>
                 <td className="p-3 text-gray-400">Access Type</td>
-                <td className="p-3 text-white" colSpan={2}>
+                <td className="p-3 text-gray-400" colSpan={2}>
                   Free - Available in Learn & Grow
                 </td>
               </tr>
@@ -240,8 +240,7 @@ export default function LearnPage() {
           {loadingBack ? "Loading..." : "← Back"}
         </button>
       </div>
-      <br />
-      <br />
+
     </main>
   );
 }

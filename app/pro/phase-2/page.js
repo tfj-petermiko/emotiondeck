@@ -175,8 +175,7 @@ export default function ProCollectionPhase2() {
       {/* Modal */}
       <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
 
-      <br />
-      <br />
+
 
       {/* Return Button */}
       <div className="text-center mt-16 mb-20">
@@ -193,8 +192,7 @@ export default function ProCollectionPhase2() {
         </button>
       </div>
 
-      <br />
-      <br />
+
     </main>
   );
 }

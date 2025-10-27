@@ -1,20 +1,18 @@
 "use client";
+
 import { useEffect } from "react";
 
 export default function ClientProtector() {
   useEffect(() => {
-    // Disable right-click
     const handleContextMenu = (e) => e.preventDefault();
 
-    // Disable common dev shortcuts
     const handleKeyDown = (e) => {
-      if (
+      const blocked =
         (e.ctrlKey && ["s", "S", "u", "U", "c", "C"].includes(e.key)) ||
         (e.ctrlKey && e.shiftKey && ["I", "i", "J", "j"].includes(e.key)) ||
-        e.key === "F12"
-      ) {
-        e.preventDefault();
-      }
+        e.key === "F12";
+
+      if (blocked) e.preventDefault();
     };
 
     document.addEventListener("contextmenu", handleContextMenu);
@@ -26,5 +24,5 @@ export default function ClientProtector() {
     };
   }, []);
 
-  return null; // invisible, only runs effects
+  return null;
 }

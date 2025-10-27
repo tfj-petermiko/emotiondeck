@@ -209,8 +209,7 @@ export default function ProCollectionPhase1() {
           onClose={() => setSelectedImage(null)}
         />
 
-        <br />
-        <br />
+
 
         {/* Return button */}
         <div className="text-center mt-16 mb-20">
@@ -225,8 +224,7 @@ export default function ProCollectionPhase1() {
           </button>
         </div>
 
-        <br />
-        <br />
+
       </main>
     );
   }

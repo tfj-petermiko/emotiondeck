@@ -190,7 +190,7 @@ export default function EmotionQuiz3() {
             </motion.p>
           )}
 
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-gray-300">
             Question {index + 1} of {questions.length}
           </p>
         </div>
@@ -200,7 +200,7 @@ export default function EmotionQuiz3() {
           <h2 className="text-3xl font-semibold text-white mb-4">
             Your score: {score} / {questions.length}
           </h2><br />
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-300 mb-8">
             Great work! You’ve completed the Young Adults - Phase 3 emotion recognition quiz.
           </p><br />
 
@@ -225,9 +225,10 @@ export default function EmotionQuiz3() {
         </div>
       )}
 
-      <div className="mt-16 text-center text-gray-500 text-sm">
+       {/* 🌿 Footer link */}
+      <div className="mt-16 text-center text-gray-300 text-sm">
         <p>
-          Want to keep learning?{" "}
+          Want to continue learning?{" "}
           <a
             href="/learn/quizzes"
             className="text-emerald-400 hover:text-emerald-300 font-medium transition"
