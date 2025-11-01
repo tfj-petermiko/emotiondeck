@@ -40,6 +40,11 @@ export const metadata = {
       "Explore complex emotional states in EmotionDeck Phase 2 - a visual study of human expression designed for researchers, educators, and advanced learners.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase2Layout({ children }) {

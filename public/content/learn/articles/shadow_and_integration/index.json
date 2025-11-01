@@ -1,0 +1,46 @@
+{
+  "page_title": "Shadow and Integration",
+  "page_intro": "Through Awareness the Hidden Becomes Light and Darkness Turns to Understanding on Jung’s Path of Healing and Balance.",
+  "articles": [
+    {
+
+      "slug": "understanding-the-shadow",
+      "title": "Understanding the Shadow",
+      "subtitle": "Exploring the hidden side of the human psyche.",
+      "main_paragraph_bold": "The shadow is not our enemy but the part of us waiting to be understood.",
+      "paragraph_1": "This article introduces Jung’s concept of the shadow as the unconscious part of the psyche containing repressed emotions, instincts and desires.",
+      "paragraph_2": "Learning to recognise the shadow allows for deeper emotional honesty, transforming rejection into self acceptance.",
+      "focus": "Jung shadow unconscious self awareness psychology emotion",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Understanding the Shadow",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "integration-and-healing",
+      "title": "Integration and Healing",
+      "subtitle": "The art of transforming darkness into awareness.",
+      "main_paragraph_bold": "Integration begins when we stop fighting what we fear and start understanding it.",
+      "paragraph_1": "This article explores the process of integrating shadow aspects through awareness, reflection and compassion.",
+      "paragraph_2": "It shows how accepting difficult emotions creates balance and restores the integrity of the self.",
+      "focus": "Jung integration awareness healing transformation emotional growth",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Integration and Healing",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "emotional-transformation",
+      "title": "Emotional Transformation",
+      "subtitle": "How facing emotion leads to self knowledge.",
+      "main_paragraph_bold": "Transformation happens when emotion is felt fully and expressed with awareness.",
+      "paragraph_1": "This article discusses how repressed emotions like anger or envy can become sources of strength when acknowledged and integrated.",
+      "paragraph_2": "Through reflection and honesty, emotional conflict becomes the catalyst for maturity and self understanding.",
+      "focus": "emotional transformation Jung integration self awareness healing",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Emotional Transformation",
+      "button_text": "Read Article"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "page_title": "Learn & Grow",
+  "page_intro": "Explore Human Emotions Through Science, Psychology, AI, and The Learn & Grow Section Revealing Expression Across Cultures.",
+
+  "modules": [
+    {
+      "id": "quizzes",
+      "title": "Emotion Recognition Quizzes Test Your Emotional Understanding and Awareness",
+      "subtitle": "Identify emotions from AI portraits based on the Free Collection.",
+      "main_paragraph_bold": "Learn to recognise emotional expressions through practice and repetition.",
+      "paragraph_1": "EmotionDeck Quizzes let you identify which emotion is shown in portraits from the Free Basic Collection. Each quiz offers multiple-choice questions designed to strengthen your visual emotional intelligence.",
+      "paragraph_2": "Each image presents a real human-like expression from different cultures and backgrounds. Test yourself and see how well you understand universal emotional cues.",
+      "focus": "emotion recognition empathy visual perception training self-awareness",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/quizzes",
+      "image": "/private_images/images/quizzes.webp",
+      "image_caption": "Recognise the Emotion",
+      "button_text": "Go to Quizzes"
+    },
+{
+  "id": "zener",
+  "title": "Zener Quiz Test Your Intuition and Perception",
+  "subtitle": "Discover the classic Zener Card experiment reinvented through EmotionDeck.",
+  "main_paragraph_bold": "Challenge Your Intuition with the EmotionDeck Zener Quiz.",
+  "paragraph_1": "Step into the timeless world of intuition testing with the EmotionDeck Zener Quiz, inspired by the historic experiment created by psychologist Karl Zener and parapsychologist J. B. Rhine. This digital reimagining combines scientific curiosity with aesthetic precision, inviting you to explore the mysterious boundary between perception and chance. Through 25 interactive rounds, you will experience how intuition unfolds under focus, attention, and emotional resonance.",
+  "paragraph_2": "Each round presents five universal symbols Circle, Plus, Waves, Square, and Star designed to test the subtle dynamics of perception beyond logic. Your task is simple yet profound predict the hidden symbol, trust your first instinct, and see whether your awareness can rise above statistical probability. The results visualise your intuitive rhythm and reveal how focus, emotion, and mental clarity interact in real time. What begins as a simple guessing game evolves into a reflection on consciousness, pattern recognition, and the fine balance between knowledge and intuition.",
+  "focus": "Zener cards intuition perception ESP psychology extrasensory test emotion learning consciousness focus",
+  "access": "Free Available in Learn and Grow",
+  "url": "/learn/quizzes/zener-quiz",
+  "image": "/private_images/images/zener_quiz.webp",
+  "image_caption": "Zener Quiz - Intuition & Perception",
+  "button_text": "Start Zener Quiz"
+},
+
+{
+  "id": "articles",
+  "title": "EmotionDeck Articles Psychology Culture and Emotional Awareness",
+  "subtitle": "Explore insights from psychology emotion science culture and self reflection.",
+  "main_paragraph_bold": "Articles that deepen understanding of the human mind emotional growth and everyday self awareness.",
+  "paragraph_1": "The EmotionDeck Articles collection brings together reflections and studies on emotional intelligence cultural psychology and human behaviour. Each text invites you to explore how emotion shapes decision making relationships and personal evolution.",
+  "paragraph_2": "From Jungian typology and empathy research to mindfulness creativity and cognitive balance these writings help you connect science with inner awareness and emotional depth.",
+  "focus": "psychology emotion culture cognition self awareness personal growth",
+  "access": "Free Available in Learn and Grow",
+  "url": "/learn/articles",
+  "image": "/private_images/images/articles.webp",
+  "image_caption": "Psychology, Culture and Emotion",
+  "button_text": "Read Articles"
+},
+    {
+      "id": "facs",
+      "title": "FACS Emotion Analyzer Learn the Science Behind Human Expression",
+      "subtitle": "Facial Action Coding System (FACS) AI Meets Psychology and Emotion Science.",
+      "main_paragraph_bold": "Real-Time Facial Expression Analysis Using AI and Psychology.",
+      "paragraph_1": "Observe how emotions manifest through facial muscle movements (Action Units) using EmotionDeck’s live FACS module.",
+      "paragraph_2": "Developed with the Facial Action Coding System (FACS), this tool connects emotion science with real-time learning. It visualises muscle activations that correspond to each emotion helping users recognise subtle emotional cues.",
+      "focus": "real-time facial analysis emotion science microexpressions action units",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/facs",
+      "image": "/private_images/images/facs.webp",
+      "image_caption": "FACS Analyzer - Science of Expression",
+      "button_text": "Start FACS Analyzer"
+    }
+  ],
+
+  "back_button": {
+    "text": "Back",
+    "target": "/"
+  }
+}

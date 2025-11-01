@@ -1,0 +1,46 @@
+{
+  "page_title": "Empathy Psyche and Science",
+  "page_intro": "Where Empathy Bridges Emotion and Reason through Jung’s Symbolic Mind and Ekman’s Science of Expression.",
+  "articles": [
+    {
+
+      "slug": "bridge-of-empathy",
+      "title": "The Bridge of Empathy",
+      "subtitle": "Connecting emotion and reason across the human psyche.",
+      "main_paragraph_bold": "Empathy unites feeling and understanding through emotional resonance.",
+      "paragraph_1": "This article explores empathy as both a psychological and biological capacity that allows humans to sense the emotions of others.",
+      "paragraph_2": "It reflects on how empathy forms the meeting point between Jung’s symbolic understanding of the psyche and Ekman’s measurable science of emotion.",
+      "focus": "empathy connection psyche Jung Ekman emotional understanding psychology",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Bridge of Empathy",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "science-of-compassion",
+      "title": "The Science of Compassion",
+      "subtitle": "Understanding the biological roots of empathy and care.",
+      "main_paragraph_bold": "Compassion is the science of connection and the heart of human morality.",
+      "paragraph_1": "This article explores how facial expression, tone and physiology reflect empathic processes, linking neuroscience and psychology.",
+      "paragraph_2": "It highlights how awareness of emotion deepens compassion and supports healthy human relationships.",
+      "focus": "compassion empathy neuroscience psychology emotion regulation humanity",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Science of Compassion",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "intuition-and-emotion",
+      "title": "Intuition and Emotion in Understanding Others",
+      "subtitle": "Exploring the balance between intuition and analysis in empathy.",
+      "main_paragraph_bold": "Empathy lives where intuition meets insight.",
+      "paragraph_1": "This article explores how intuition interprets emotion beyond logic, forming a natural bridge between feeling and perception.",
+      "paragraph_2": "It shows how Jung’s idea of symbolic intuition aligns with Ekman’s study of microexpressions as complementary paths to emotional understanding.",
+      "focus": "intuition empathy perception Jung Ekman microexpressions awareness",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Intuition and Emotion in Understanding Others",
+      "button_text": "Read Article"
+    }
+  ]
+}

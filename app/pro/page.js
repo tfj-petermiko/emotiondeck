@@ -1,22 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { baseButtonStyle } from "../styles/buttonStyle";
+import Image from "next/image";
+import { baseButtonStyle } from "../styles/buttonStyle.js";
+import "../styles/proCollection.css";
+
 
 export default function ProCollectionPage() {
+  const [data, setData] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
   const [hoveredBack, setHoveredBack] = useState(false);
   const [loadingBack, setLoadingBack] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    fetch("/content/pro/index.json")
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch((err) => console.error("Error loading PRO data:", err));
+  }, []);
 
   const handleBackClick = () => {
     setLoadingBack(true);
     setTimeout(() => router.push("/"), 800);
   };
 
-  // 🔓 Smart button logic - checks access or redirects to checkout
   const handleAccessClick = (phase, title, price) => {
     const key = `emotiondeck_${phase}_access`;
     const raw = localStorage.getItem(key);
@@ -45,249 +55,163 @@ export default function ProCollectionPage() {
       onMouseEnter={() => setHoveredButton(id)}
       onMouseLeave={() => setHoveredButton(null)}
       style={baseButtonStyle(hoveredButton === id)}
-      className="inline-block hover:scale-105 transition-transform"
+      className="pro-button"
     >
       {label}
     </button>
   );
 
+  if (!data) {
+    return (
+      <main className="pro-loading">
+        Loading EmotionDeck PRO...
+      </main>
+    );
+  }
+
   return (
-    <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
+    <main className="pro-main-page">
       {/* 🧠 HEADER */}
-      <section className="text-center mt-20 px-6">
+      <section className="pro-main-header">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-bold mb-4"
+          className="pro-main-title"
         >
-          EmotionDeck - PRO Collection 🔓
+          {data.page_title}
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-12"
+          className="pro-main-intro"
         >
-          Explore the deeper side of human emotion - where depth, contrast, and subtlety reveal the unseen. 
-          This limited EmotionDeck PRO collection unveils the intricate layers of emotional complexity beyond surface expression.
+          {data.page_intro}
         </motion.p>
       </section>
 
-      {/* ========================== */}
-      {/* 📊 DARK SPECTRUM PART I */}
-      {/* ========================== */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <center>
-            <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
-              Dark Spectrum - Part I
-            </h2>
-          </center>
-          <p className="text-center text-gray-400 italic mb-6">
-            The Shadow Side of Human Emotion
-          </p>
+      {/* Render each phase */}
+      {data.phases.map((phase, index) => (
+        <motion.section
+          key={phase.id}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 + index * 0.3, duration: 0.6 }}
+          whileHover={{
+            scale: 1.02,
+            boxShadow: "0px 0px 20px rgba(255,255,255,0.08)",
+          }}
+          className="pro-phase-section"
+        >
+<div className="free-phase-inner">
+  <center>
+    <h2 className="pro-phase-title">{phase.title}</h2>
+  </center>
+  <p className="pro-phase-subtitle">{phase.subtitle}</p>
 
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
-                    This collection delves into the concealed emotions that define human depth.
-                    It reflects moments of tension, irony, grief, and redemption - the silent
-                    language of inner transformation. Each portrait reveals psychological nuance
-                    through subtle microexpressions and timeless monochrome composition.
-                    Dark Spectrum - Part I bridges art and psychology, showing that even within
-                    darkness lies clarity, strength, and meaning. Designed for professional
-                    research, education, and visual training, it exposes the delicate boundary
-                    between control and vulnerability - emotion as truth beneath disguise.
-                  </p>
-                  <div className="flex justify-end">
-                    {renderButton("phase-1", "Dark Spectrum I", "4.99", "Unlock via PayPal 🔓", "p1")}
-                  </div>
-                </td>
-                <td className="p-3 w-[200px] text-center align-top">
-                  <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <img
-                      src="/private_images/pro/phase_1/DarkSpectrum_DeceptionMasks_Cunning_SouthAsian_YoungAdult_Female.webp"
-                      alt="Cunning - SouthAsian YoungAdult Female"
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">Cunning - SouthAsian YoungAdult Female</p>
-                </td>
-              </tr>
+            <table className="pro-phase-table">
+              <tbody>
+                <tr className="pro-phase-divider">
+                  <td className="w-1/4" />
+                  <td className="w-2/4 pro-phase-text">
+                    <p>{phase.description}</p>
+                    <div className="flex justify-end mt-4">
+                      {renderButton(
+                        phase.id,
+                        phase.title,
+                        phase.price,
+                        phase.button_label,
+                        phase.id
+                      )}
+                    </div>
+                  </td>
 
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Total Portraits</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  48 black-and-white emotional portraits
-                </td>
-              </tr>
+<td className="w-[200px] text-center align-top">
+  <div className="pro-phase-image">
+    <img
+      src={phase.image}
+      alt={phase.caption}
+      className="object-cover max-w-[180px] h-auto mx-auto rounded-lg"
+      loading="lazy"
+    />
+  </div>
+  <p className="pro-phase-caption">{phase.caption}</p>
+</td>
 
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Subcategories</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  <br /><strong>Deception Masks</strong> (Cunning, Cynicism, Duplicity, Facade, Hypocrisy, Irony, Mockery, Sarcasm)<br /><br />
-                  <strong>Hidden States</strong> (Apathy, Calculation, Coldness, Containment, Detachment, Indifference, Numbness, Restraint)<br /><br />
-                  <strong>Inner Conflict</strong> (Guilt, Hopelessness, Insecurity, Regret, Remorse, Resentment, Self-Doubt, Shame)<br /><br />
-                  <strong>Pain & Loss</strong> (Abandonment, Betrayal, Bitterness, Despair, Fear Resigned, Loneliness, Melancholy, Sorrow)<br /><br />
-                  <strong>Power & Control</strong> (Arrogance, Contempt, Control, Dominance, Intimidation, Manipulation, Pride Corrupted, Superiority)<br /><br />
-                  <strong>Reflection & Redemption</strong> (Acceptance of Flaws, Catharsis, Darkness Within, Disillusionment, Forgiving Self, Redemption, Regretful Pride, Sorrowed Wisdom)<br /><br />
-                </td>
-              </tr>
+                </tr>
 
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Cultural Diversity</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  European, African, East Asian, South Asian, Middle Eastern, Latin American,
-                  Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, North American.
-                </td>
-              </tr>
+                <tr className="pro-phase-divider">
+                  <td className="pro-phase-label">Total Portraits</td>
+                  <td className="pro-phase-text" colSpan={2}>
+                    {phase.total_portraits}
+                  </td>
+                </tr>
 
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  3 age groups × 2 genders (balanced representation)
-                </td>
-              </tr>
+                {phase.subcategories && (
+                  <tr className="pro-phase-divider">
+                    <td className="pro-phase-label">Subcategories</td>
+                    <td className="pro-phase-text" colSpan={2}>
+                      {Object.entries(phase.subcategories).map(
+                        ([key, value]) => (
+                          <div key={key}>
+                            <br />
+                            <strong>{key}</strong>
+                            <br />
+                            ({value})
+                            <br />
+                          </div>
+                        )
+                      )}
+                    </td>
+                  </tr>
+                )}
 
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  1024 × 1536 - high-definition monochrome format
-                </td>
-              </tr>
+                {phase.emotions && (
+                  <tr className="pro-phase-divider">
+                    <td className="pro-phase-label">Emotions</td>
+                    <td className="pro-phase-text" colSpan={2}>
+                      {phase.emotions}
+                    </td>
+                  </tr>
+                )}
 
-              <tr>
-                <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  Neutral grey background, soft lighting, identical framing and shirt style
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
+                <tr className="pro-phase-divider">
+                  <td className="pro-phase-label">Cultural Diversity</td>
+                  <td className="pro-phase-text" colSpan={2}>
+                    {phase.cultural_diversity}
+                  </td>
+                </tr>
 
-      <br />
+                <tr className="pro-phase-divider">
+                  <td className="pro-phase-label">Demographics</td>
+                  <td className="pro-phase-text" colSpan={2}>
+                    {phase.demographics}
+                  </td>
+                </tr>
 
-      {/* ========================== */}
-      {/* 📊 DARK SPECTRUM PART II */}
-      {/* ========================== */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
-      >
-        <div className="bg-gray-900 p-6 md:p-10">
-          <center>
-            <h2 className="text-2xl font-semibold text-center mx-auto w-fit">
-              Dark Spectrum - Part II
-            </h2>
-          </center>
-          <p className="text-center text-gray-400 italic mb-6">
-            Descent, Collapse, and Emotional Rebirth
-          </p>
+                <tr className="pro-phase-divider">
+                  <td className="pro-phase-label">Resolution</td>
+                  <td className="pro-phase-text" colSpan={2}>
+                    {phase.resolution}
+                  </td>
+                </tr>
 
-          <table className="w-full text-sm md:text-base border-collapse">
-            <tbody>
-              <tr className="border-b border-gray-800 align-top">
-                <td className="w-1/4" />
-                <td className="w-2/4 p-3 text-white">
-                  <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify">
-                    Dark Spectrum - Part II continues the exploration into the shadowed layers of human 
-                    emotion. Each portrait captures the quiet breakdown and resilience within collapse. 
-                    Through the language of microexpression and minimal monochrome composition, this 
-                    collection embodies loss, rage, dread, and silent rebirth. It serves as a reflection 
-                    of moral pain, self-confrontation, and existential transformation. Designed for 
-                    professionals, educators, and emotional researchers, it portrays the tension between 
-                    destruction and reconstruction - emotion as the process of surviving darkness.
-                  </p>
-                  <div className="flex justify-end">
-                    {renderButton("phase-2", "Dark Spectrum II", "4.99", "Unlock via PayPal 🔓", "p2")}
-                  </div>
-                </td>
-                <td className="p-3 w-[200px] text-center align-top">
-                  <div className="w-[200px] mx-auto rounded-lg overflow-hidden border border-gray-700 shadow-md">
-                    <img
-                      src="/private_images/pro/phase_2/DarkSpectrum2_Despair_MiddleEastern_MatureAdult_Male.webp"
-                      alt="Despair - MiddleEastern MatureAdult Male"
-                      className="object-cover w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                  <p className="text-gray-400 text-xs mt-2">
-                    Despair - MiddleEastern MatureAdult Male
-                  </p>
-                </td>
-              </tr>
+                <tr>
+                  <td className="pro-phase-label">Lighting and Style</td>
+                  <td className="pro-phase-text" colSpan={2}>
+                    {phase.lighting_style}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </motion.section>
+      ))}
 
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Total Portraits</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  48 black-and-white emotional portraits
-                </td>
-              </tr>
-
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Emotions</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  Abandonment, Aging, Anxiety, Betrayal, Bitterness, Claustrophobia, Collapse, Contempt, 
-                  Cruelty, Death Acceptance, Decay, Deception, Despair, Destruction, Detachment, 
-                  Disconnection, Disintegration, Dominance, Dread, Emptiness, Estrangement, Fatalism, 
-                  Fury, Grief, Guilt, Hatred, Horror, Isolation, Loneliness, Loss, Moral Pain, Mourning, 
-                  Narcissism, Neglect, Nihilism, Numbness, Obsession, Panic, Paranoia, Powerlessness, 
-                  Regret, Rejection, Remorse, Repression, Resentment, Self-Disgust, Shame, Sorrow.
-                </td>
-              </tr>
-
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Cultural Diversity</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  European, African, East Asian, South Asian, Middle Eastern, Latin American, 
-                  Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, 
-                  North American.
-                </td>
-              </tr>
-
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Demographics</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  One portrait per emotion - diverse regional, age, and gender representation
-                </td>
-              </tr>
-
-              <tr className="border-b border-gray-800">
-                <td className="p-3 text-gray-400">Resolution</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  1024 × 1536 - high-definition monochrome format
-                </td>
-              </tr>
-
-              <tr>
-                <td className="p-3 text-gray-400">Lighting & Style</td>
-                <td className="p-3 text-gray-400" colSpan={2}>
-                  Soft neutral lighting, consistent grey background, unified portrait framing
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </motion.section>
-
-      {/* 🟢 Return to Home Page button */}
-   
-      <div className="text-center mt-16">
+      {/* 🟢 Return button */}
+      <div className="pro-main-back">
         <button
           onClick={handleBackClick}
           disabled={loadingBack}
@@ -295,10 +219,9 @@ export default function ProCollectionPage() {
           onMouseLeave={() => setHoveredBack(false)}
           style={baseButtonStyle(hoveredBack)}
         >
-          {loadingBack ? "Loading..." : "← Back"}
+          {loadingBack ? "Loading..." : "Back"}
         </button>
-      </div>
-     <br /><br />
+      </div><br /><br />
     </main>
   );
 }

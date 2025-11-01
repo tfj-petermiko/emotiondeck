@@ -1,0 +1,45 @@
+{
+  "page_title": "The Emotional Self in Dreams",
+  "page_intro": "Explore How Dreams Speak the Language of Emotion. Discover Symbols, Shadows and Feelings Hidden Within the Unconscious Mind.",
+  "articles": [
+    {
+      "slug": "language-of-dreams",
+      "title": "The Language of Dreams",
+      "subtitle": "How the unconscious mind communicates through emotion and imagery.",
+      "main_paragraph_bold": "Dreams speak in the emotional language of the soul.",
+      "paragraph_1": "This article explores how symbols and emotions form the language of dreams. Each image expresses feelings that words cannot capture.",
+      "paragraph_2": "It shows how understanding this language helps reveal hidden motives, desires and the path to emotional growth.",
+      "focus": "Jungian psychology dreams symbols unconscious emotion interpretation",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Language of Dreams",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "emotional-symbols",
+      "title": "Emotional Symbols in the Unconscious",
+      "subtitle": "Decoding emotional meaning within dream imagery.",
+      "main_paragraph_bold": "Every dream symbol reflects an emotional truth seeking awareness.",
+      "paragraph_1": "This article explores how recurring symbols represent emotions such as fear, love, loss and hope in metaphorical form.",
+      "paragraph_2": "Understanding these symbols reveals the emotional structure of the psyche and encourages integration of hidden feelings.",
+      "focus": "emotion symbols psyche Jung unconscious dream analysis",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Emotional Symbols in the Unconscious",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "shadow-in-dreams",
+      "title": "The Shadow in Dreams",
+      "subtitle": "Facing hidden emotions that arise during the night mind.",
+      "main_paragraph_bold": "Dreams bring to light the emotions we avoid during waking life.",
+      "paragraph_1": "This article examines how the shadow manifests in dreams through fear or conflict, representing the repressed parts of personality.",
+      "paragraph_2": "By recognising these emotional symbols, we begin the process of integrating and healing the self through awareness.",
+      "focus": "shadow integration emotion healing Jungian dream analysis unconscious",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Shadow in Dreams",
+      "button_text": "Read Article"
+    }
+  ]
+}

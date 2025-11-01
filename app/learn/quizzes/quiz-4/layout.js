@@ -39,6 +39,12 @@ export const metadata = {
     description:
       "Train your perception with EmotionDeck Quiz 4 - recognise 120 emotions across 10 categories and discover emotional diversity around the world.",
     images: ["https://emotiondeck.com/preview.jpg"],
+ },
+
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 

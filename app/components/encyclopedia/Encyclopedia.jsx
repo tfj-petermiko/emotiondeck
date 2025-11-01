@@ -117,7 +117,7 @@ const continents = {
 
   "Africa": [
     "Algeria","Angola","Ascension Island","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
-    "Cameroon","Chad","Comoros","Congo","Democratic Republic of the Congo",
+    "Cameroon","Chad","Comoros","Congo","Central African Republic","Democratic Republic of the Congo",
     "Djibouti","Egypt","Equatorial Guinea","Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana",
     "Guinea","Guinea-Bissau","Kenya","Lesotho","Liberia","Libya","Madagascar","Malawi","Mali",
     "Mauritania","Mauritius","Mayotte","Morocco","Mozambique","Namibia","Niger","Nigeria","Reunion",
@@ -148,17 +148,21 @@ const continents = {
 
   return (
     <section className="relative w-screen min-h-screen overflow-hidden text-white bg-neutral-900">
-      {/* 🏷️ Title */}
-      <div className="text-center pt-10 pb-4">
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-wide text-gray-100">
-          EmotionDeck - The First Global Emotion Encyclopedia
-        </h1>
-      </div>
-      <div className="text-center pt-10 pb-4">
-        <h3 className="text-4xl md:text-4xl font-semibold tracking-wide text-gray-100">
-          Exploring Jungian Archetypes Across Nations
-        </h3>
-      </div>
+{/* 🏷️ Title */}
+<div className="text-center pt-10 pb-4">
+  <h1 className="text-4xl md:text-5xl font-semibold tracking-wide text-gray-100">
+    The First Global Emotion Encyclopedia
+  </h1>
+</div>
+
+<div className="text-center pt-4 pb-10">
+  <h3
+    className="text-3xl md:text-4xl font-semibold tracking-wide text-emerald-400 hover:text-emerald-300 transition-colors duration-300"
+  >
+    Exploring Jungian Archetypes Across Nations
+  </h3>
+</div>
+
 
       {/* 🌍 Continent → Territory Dropdowns */}
       <div className="flex justify-center items-center flex-wrap gap-4 mt-4 mb-10">
@@ -244,34 +248,35 @@ const continents = {
             );
           })}
         </svg>
-        {/* Tooltip - tylko kółko z obrazkiem */}
-        {hovered && (
-          <motion.div
-            className="tooltip-container absolute z-20 pointer-events-none"
-            style={{
-              left: `${(hovered.coords[0] + 180) * 5.4}px`,
-              top: `${(90 - hovered.coords[1]) * 5.6}px`,
-              transform: "translate(-50%, 0)",
-            }}
-            initial={{ opacity: 0, scale: 0.85, y: 10 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-          >
-            <motion.img
-              src={hovered.image}
-              alt=""
-              className="rounded-full"
-              style={{
-                width: "180px",
-                height: "180px",
-                objectFit: "cover",
-              }}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-            />
-          </motion.div>
-        )}
+{/* Tooltip */}
+{hovered && (
+  <motion.div
+    className="tooltip-container absolute z-20 pointer-events-none"
+    style={{
+      left: `${(hovered.coords[0] + 180) * 5.4}px`,
+      top: `${(90 - hovered.coords[1]) * 5.6}px`,
+      transform: "translate(12px, -50%)", // 📍 przesunięcie nieco w prawo i wyśrodkowanie w pionie
+    }}
+    initial={{ opacity: 0, scale: 0.85, x: 10 }}
+    animate={{ opacity: 1, scale: 1, x: 0 }}
+    transition={{ duration: 0.3, ease: "easeOut" }}
+  >
+    <motion.img
+      src={hovered.image}
+      alt=""
+      className="rounded-full border-2 border-emerald-400 shadow-lg"
+      style={{
+        width: "140px", // możesz zmienić np. na 120px, 180px itd.
+        height: "140px",
+        objectFit: "cover",
+      }}
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    />
+  </motion.div>
+)}
+
       </div>
     </section>
   );

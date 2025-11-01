@@ -42,6 +42,11 @@ export const metadata = {
       "https://emotiondeck.com/private_images/meta/darkspectrum_phase1_preview.webp",
     ],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase1Layout({ children }) {

@@ -3,6 +3,23 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import { baseButtonStyle } from "../../styles/buttonStyle.js";
+import "../../globals.css";
+
+function HoverButton({ label, onClick }) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <button
+      onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={baseButtonStyle(hovered, false)}
+    >
+      {label}
+    </button>
+  );
+}
 
 export default function CountryPageTemplate({ data }) {
   const router = useRouter();
@@ -33,7 +50,7 @@ export default function CountryPageTemplate({ data }) {
       ],
       Africa: [
         "Algeria","Angola","Ascension Island","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
-        "Cameroon","Chad","Comoros","Congo","Democratic Republic of the Congo",
+        "Cameroon","Chad","Comoros","Congo","Central African Republic","Democratic Republic of the Congo",
         "Djibouti","Egypt","Equatorial Guinea","Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana",
         "Guinea","Guinea-Bissau","Kenya","Lesotho","Liberia","Libya","Madagascar","Malawi","Mali",
         "Mauritania","Mauritius","Mayotte","Morocco","Mozambique","Namibia","Niger","Nigeria","Reunion",
@@ -65,7 +82,9 @@ export default function CountryPageTemplate({ data }) {
     );
 
     if (typeof window !== "undefined") {
-      const currentSlug = decodeURIComponent(window.location.pathname.split("/").pop().toLowerCase());
+      const currentSlug = decodeURIComponent(
+        window.location.pathname.split("/").pop().toLowerCase()
+      );
       const currentIndex = slugs.indexOf(currentSlug);
       const index = currentIndex >= 0 ? currentIndex : 0;
 
@@ -80,142 +99,104 @@ export default function CountryPageTemplate({ data }) {
   }, []);
 
   return (
-    <main className="min-h-screen bg-neutral-900 text-white font-sans relative">
+    <main className="country-page">
       {/* Header */}
-      <section className="text-center mt-20 px-6">
+      <section className="country-header">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-bold mb-4"
+          className="country-title"
         >
-          EmotionDeck Encyclopedia {data.country}
+          EmotionDeck Encyclopedia
+          <br />
+          <span className="country-subtitle">{data.country}</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-12"
+          className="country-intro"
         >
           {data.subtitle}
         </motion.p>
       </section>
 
-{/* Archetype Section */}
-<motion.section
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.8, duration: 0.6 }}
-  className="mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden"
->
-  <div className="bg-gray-900 p-6 md:p-10">
-    <center>
-      <h2 className="text-2xl font-semibold">{data.archetype}</h2>
-    </center>
-    <p className="text-center text-gray-300 italic mb-6">{data.quote}</p>
-    <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
-      {data.intro}
-    </p>
+      {/* Archetype Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 0.6 }}
+        whileHover={{
+          scale: 1.02,
+          boxShadow: "0px 0px 20px rgba(255,255,255,0.08)",
+        }}
+        className="country-archetype-section"
+      >
+        <div className="country-archetype-card">
+          <center>
+            <h2 className="country-archetype-title">{data.archetype}</h2>
+          </center>
+          <p className="country-archetype-quote">{data.quote}</p>
+          <p className="country-archetype-intro">{data.intro}</p>
 
-    <table className="w-full text-sm md:text-base border-collapse">
-      <tbody>
-        <tr className="border-b border-gray-800 align-middle">
-          {/* Left spacer column */}
-          <td className="w-[20%]" />
+          <table className="country-table">
+            <tbody>
+              <tr className="country-table-row">
+                <td className="w-[20%]" />
+                <td className="country-table-cell">
+                  <p className="country-table-text">{data.overview1}</p>
+                  <p className="country-table-text2">{data.overview2}</p>
+                </td>
 
-          {/* Middle column — enlarged for text */}
-          <td className="w-[55%] p-3 text-white">
-            <p className="text-gray-300 mb-1 leading-relaxed text-justify max-w-3xl">
-              {data.overview1}
-            </p>
-            <p className="text-gray-300 mt-4 mb-4 leading-relaxed text-justify max-w-3xl">
-              {data.overview2}
-            </p>
-          </td>
+                <td className="p-3 w-[250px] text-center align-middle">
+                  <div className="country-image-wrapper">
+                    <div className="country-image-card">
+                      <img
+                        src={data.image}
+                        alt={data.archetype}
+                        className="country-image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <p className="country-image-caption">{data.archetype}</p>
+                </td>
+              </tr>
 
-          {/* Right column — image vertically centered */}
-          <td className="p-3 w-[250px] text-center align-middle">
-            <div className="flex items-center justify-center h-full">
-              <div className="w-[250px] rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-transform duration-300 hover:scale-105">
-                <img
-                  src={data.image}
-                  alt={data.archetype}
-                  className="object-cover w-full h-auto"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <p className="text-gray-300 text-xs mt-2">{data.archetype}</p>
-          </td>
-        </tr>
+              {data.sections.map((section, index) => (
+                <tr key={index} className="country-table-row">
+                  <td className="country-section-label">{section.label}</td>
+                  <td className="country-section-text" colSpan={2}>
+                    {section.value}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </motion.section>
 
-        {data.sections.map((section, index) => (
-          <tr key={index} className="border-b border-gray-800">
-            <td className="p-3 text-gray-300">{section.label}</td>
-            <td className="p-3 text-gray-300 text-justify leading-relaxed" colSpan={2}>
-              {section.value}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</motion.section>
-
-
-
-{/* Navigation Buttons */}
-<div className="text-center mt-20 mb-24 relative z-10">
-  {prevCountry && (
-    <button
-      onClick={() => (window.location.href = `/encyclopedia/${prevSlug}`)}
-      style={{
-        backgroundColor: "#10B981",
-        color: "#fff",
-        border: "none",
-        padding: "10px 24px",
-        borderRadius: "9999px",
-        fontWeight: "600",
-        fontSize: "0.9rem",
-        boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
-        transition: "background-color 0.2s ease, transform 0.2s ease",
-        cursor: "pointer",
-        marginRight: "10px",
-      }}
-      onMouseEnter={(e) => (e.target.style.backgroundColor = "#34D399")}
-      onMouseLeave={(e) => (e.target.style.backgroundColor = "#10B981")}
-    >
-      ← Previous Story ({prevCountry})
-    </button>
-  )}
-
-  {nextCountry && (
-    <button
-      onClick={() => (window.location.href = `/encyclopedia/${nextSlug}`)}
-      style={{
-        backgroundColor: "#10B981",
-        color: "#fff",
-        border: "none",
-        padding: "10px 24px",
-        borderRadius: "9999px",
-        fontWeight: "600",
-        fontSize: "0.9rem",
-        boxShadow: "0 2px 6px rgba(0,0,0,0.25)",
-        transition: "background-color 0.2s ease, transform 0.2s ease",
-        cursor: "pointer",
-        marginLeft: "10px",
-      }}
-      onMouseEnter={(e) => (e.target.style.backgroundColor = "#34D399")}
-      onMouseLeave={(e) => (e.target.style.backgroundColor = "#10B981")}
-    >
-      Next Story ({nextCountry}) →
-    </button>
-  )}
-</div>
-
-
-</main>
-);
+      {/* Navigation Buttons */}
+      <div className="country-nav">
+        {prevCountry && (
+          <HoverButton
+            label={prevCountry}
+            onClick={() =>
+              (window.location.href = `/encyclopedia/${prevSlug}`)
+            }
+          />
+        )}
+        {nextCountry && (
+          <HoverButton
+            label={nextCountry}
+            onClick={() =>
+              (window.location.href = `/encyclopedia/${nextSlug}`)
+            }
+          />
+        )}
+      </div>
+    </main>
+  );
 }
-

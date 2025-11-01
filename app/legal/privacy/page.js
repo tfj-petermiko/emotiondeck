@@ -2,70 +2,92 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Table from "../../components/Table/Table";
-import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ shared button style
+import { motion } from "framer-motion";
+import { baseButtonStyle } from "../../styles/buttonStyle";
 
-export default function CookiesPolicyPage() {
+export default function PrivacyPolicyPage() {
   const [hovered, setHovered] = useState(false);
 
-
   const data = [
-    { label: "Purpose", value: "Explains how EmotionDeck handles and protects user data." },
-    { label: "Data Collected", value: "Contact information, payment details (via PayPal), and basic technical analytics." },
-    { label: "Legal Basis", value: "All data is processed in compliance with GDPR and UK Data Protection Law, based on consent and legitimate interest." },
-    { label: "Data Retention", value: "Information is retained only as long as necessary to operate and improve the service." },
-    { label: "Third Parties", value: "EmotionDeck integrates with PayPal for payments, Google Analytics for anonymous statistics, and Vercel for hosting." },
-    { label: "Security", value: "Data is transmitted securely via HTTPS with strict access control and no local storage of personal details." },
+    {
+      label: "Purpose",
+      value: "Explains how EmotionDeck handles and protects user data.",
+    },
+    {
+      label: "Data Collected",
+      value:
+        "Contact information, payment details (via PayPal), and basic technical analytics.",
+    },
+    {
+      label: "Legal Basis",
+      value:
+        "All data is processed in compliance with GDPR and UK Data Protection Law, based on consent and legitimate interest.",
+    },
+    {
+      label: "Data Retention",
+      value:
+        "Information is retained only as long as necessary to operate and improve the service.",
+    },
+    {
+      label: "Third Parties",
+      value:
+        "EmotionDeck integrates with PayPal for payments, Google Analytics for anonymous statistics, and Vercel for hosting.",
+    },
+    {
+      label: "Security",
+      value:
+        "Data is transmitted securely via HTTPS with strict access control and no local storage of personal details.",
+    },
   ];
 
   return (
-    <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
-      {/* 🧾 Header */}
-      <section className="text-center w-[80%] mx-auto mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Privacy Policy - EmotionDeck
-        </h1>
-        <p className="text-gray-400 mb-4">
+    <main className="ed-legal-page">
+      {/* Header */}
+      <section className="ed-legal-header">
+        <h1 className="ed-legal-title">Privacy Policy</h1>
+        <p className="ed-legal-updated">
           Last updated: <strong>October 2025</strong>
         </p>
-        <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p className="ed-legal-intro">
           EmotionDeck values your privacy. This policy outlines how we collect,
           use, and protect personal information in accordance with GDPR and UK
           Data Protection regulations.
         </p>
       </section>
 
-      {/* 🩶 Legal Table */}
-      <section className="legal-table w-[80%] mx-auto">
-        <table className="w-full border-collapse border border-neutral-800 rounded-2xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
+      {/* Legal Table */}
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        whileHover={{
+          scale: 1.02,
+          boxShadow: "0px 0px 20px rgba(255,255,255,0.08)",
+        }}
+        className="ed-legal-table"
+      >
+        <table>
           <tbody>
             {data.map((row, index) => (
-              <tr
-                key={index}
-                className="border-b border-neutral-800 hover:bg-neutral-800/40 transition-all"
-              >
-                <td className="p-4 font-semibold text-blue-400 w-1/3 text-left">
-                  {row.label}
-                </td>
-                <td className="p-4 text-gray-300 leading-relaxed text-left">
-                  {row.value}
-                </td>
+              <tr key={index} className="ed-legal-row">
+                <td className="ed-legal-label">{row.label}</td>
+                <td className="ed-legal-value">{row.value}</td>
               </tr>
             ))}
           </tbody>
         </table>
-      </section>
+      </motion.section>
 
-      {/* 🟢 Return Button */}
-      <div className="text-center mt-16 mb-20">
+      {/* Return Button */}
+      <div className="ed-legal-return">
         <Link
           href="/legal"
-          style={baseButtonStyle(hovered)} // ✅ shared style from app/styles/buttonStyle.js
+          style={baseButtonStyle(hovered)}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"
         >
-          ← Back
+          Back
         </Link>
       </div>
     </main>

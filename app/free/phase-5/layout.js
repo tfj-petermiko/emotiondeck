@@ -40,8 +40,14 @@ export const metadata = {
       "EmotionDeck Phase 5 presents 300 portraits of seniors expressing wisdom, serenity, and emotional strength - a visual study in empathy and human understanding.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase5Layout({ children }) {
   return <>{children}</>;
 }
+

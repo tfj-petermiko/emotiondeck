@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { baseButtonStyle } from "../styles/buttonStyle";
 
 export default function LegalClient() {
@@ -10,14 +11,12 @@ export default function LegalClient() {
   const legalLinks = [
     {
       label: "Privacy Policy",
-      value:
-        "How EmotionDeck collects, stores, and protects your personal data.",
+      value: "How EmotionDeck collects, stores, and protects your personal data.",
       href: "/legal/privacy",
     },
     {
       label: "Terms of Use",
-      value:
-        "Understand your rights and responsibilities when using EmotionDeck.",
+      value: "Understand your rights and responsibilities when using EmotionDeck.",
       href: "/legal/terms",
     },
     {
@@ -27,8 +26,7 @@ export default function LegalClient() {
     },
     {
       label: "Payments & Security",
-      value:
-        "Learn how EmotionDeck handles transactions securely through PayPal.",
+      value: "Learn how EmotionDeck handles transactions securely through PayPal.",
       href: "/legal/payments",
     },
   ];
@@ -51,72 +49,74 @@ export default function LegalClient() {
   ];
 
   return (
-    <main className="min-h-screen bg-neutral-900 text-gray-300 font-sans py-16">
-      <section className="text-center w-[80%] mx-auto mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Legal Information - EmotionDeck
-        </h1>
-        <p className="text-gray-400 mb-4">
+    <main className="ed-legal-page">
+      <section className="ed-legal-header">
+        <h1 className="ed-legal-title">Legal Information</h1>
+        <p className="ed-legal-updated">
           Last updated: <strong>October 2025</strong>
         </p>
-        <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Welcome to the legal section of EmotionDeck.
-          <br />
-          Here you can access our Privacy Policy, Terms of Use, Cookies Policy,
-          and Payments & Security information - all written transparently in
+        <p className="ed-legal-intro">
+          Welcome to the legal section of EmotionDeck. Access our Privacy
+          Policy, Terms, Cookies, and Payment details written transparently in
           compliance with UK and EU law.
         </p>
       </section>
 
       {/* 📜 Legal Links Table */}
-      <section className="legal-table w-[80%] mx-auto mb-20">
-        <table className="w-full border-collapse border border-neutral-800 rounded-2xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        whileHover={{
+          scale: 1.02,
+          boxShadow: "0px 0px 20px rgba(255,255,255,0.08)",
+        }}
+        className="ed-legal-table"
+      >
+        <table>
           <tbody>
             {legalLinks.map((item, index) => (
-              <tr
-                key={index}
-                className="border-b border-neutral-800 hover:bg-neutral-800/40 transition-all"
-              >
-                <td className="p-4 font-semibold text-blue-400 w-1/3 text-left">
+              <tr key={index} className="ed-legal-row">
+                <td className="ed-legal-label">
                   <Link
                     href={item.href}
-                    className="hover:text-blue-300 transition-colors"
+                    className="hover:text-emerald-400 transition-colors"
                   >
                     {item.label}
                   </Link>
                 </td>
-                <td className="p-4 text-gray-300 leading-relaxed text-left">
-                  {item.value}
-                </td>
+                <td className="ed-legal-value">{item.value}</td>
               </tr>
             ))}
           </tbody>
         </table>
-      </section>
+      </motion.section>
 
       {/* 🩶 General Legal Info */}
-      <section className="legal-table w-[80%] mx-auto mb-16">
-        <table className="w-full border-collapse border border-neutral-800 rounded-2xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+        whileHover={{
+          scale: 1.02,
+          boxShadow: "0px 0px 20px rgba(255,255,255,0.08)",
+        }}
+        className="ed-legal-table"
+      >
+        <table>
           <tbody>
             {data.map((row, index) => (
-              <tr
-                key={index}
-                className="border-b border-neutral-800 hover:bg-neutral-800/40 transition-all"
-              >
-                <td className="p-4 font-semibold text-blue-400 w-1/3 text-left">
-                  {row.label}
-                </td>
-                <td className="p-4 text-gray-300 leading-relaxed text-left">
-                  {row.value}
-                </td>
+              <tr key={index} className="ed-legal-row">
+                <td className="ed-legal-label">{row.label}</td>
+                <td className="ed-legal-value">{row.value}</td>
               </tr>
             ))}
           </tbody>
         </table>
-      </section>
+      </motion.section>
 
       {/* 🟢 Return Button */}
-      <div className="text-center mt-16 mb-20">
+      <div className="ed-legal-return">
         <Link
           href="/"
           style={baseButtonStyle(hovered)}
@@ -124,7 +124,7 @@ export default function LegalClient() {
           onMouseLeave={() => setHovered(false)}
           className="inline-block hover:scale-105 transition-transform"
         >
-          ← Back
+          Back
         </Link>
       </div>
     </main>

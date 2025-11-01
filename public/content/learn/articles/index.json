@@ -1,0 +1,162 @@
+{
+  "page_title": "EmotionDeck Articles - Jungian Psychology and the Science of Emotion",
+  "page_intro": "Explore Where Jung’s Depth Psychology and Ekman’s Science of Emotion Meet.",
+
+
+  "modules": [
+    {
+      "id": "archetypes_within_us",
+      "title": "The Archetypes Within Us",
+      "subtitle": "Universal patterns that shape our emotions and behaviour.",
+      "main_paragraph_bold": "Explore how ancient archetypes guide human feeling thought and imagination.",
+      "paragraph_1": "Archetypes are timeless forces that influence how we love fear create and react. They reveal the hidden emotional architecture of the psyche showing how collective symbols express personal experience.",
+      "paragraph_2": "By recognising your inner archetypes you gain emotional insight and self understanding discovering how myth and psychology mirror each other in everyday life.",
+      "focus": "Jung archetypes collective unconscious emotion symbolism identity",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/archetypes-within-us",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Archetypes Within Us",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "shadow_and_integration",
+      "title": "The Shadow and Emotional Integration",
+      "subtitle": "Facing the parts of ourselves we try to hide.",
+      "main_paragraph_bold": "Healing begins where rejection ends learning to embrace the emotions we once feared.",
+      "paragraph_1": "The shadow represents the aspects of our personality that we deny or repress. In these hidden feelings lies great energy for transformation if we dare to face them with honesty and compassion.",
+      "paragraph_2": "Integrating the shadow means accepting anger fear or envy as natural parts of being human turning darkness into understanding and fragmentation into wholeness.",
+      "focus": "Jung shadow integration self acceptance transformation emotion",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/shadow-and-integration",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Shadow and Emotional Integration",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "science_of_facial_expression",
+      "title": "The Science of Facial Expression",
+      "subtitle": "Understanding how emotions are expressed through the face.",
+      "main_paragraph_bold": "Every emotion has a signature expression that reveals the truth of human feeling.",
+      "paragraph_1": "Paul Ekman’s Facial Action Coding System FACS decodes the muscle movements that form universal emotional expressions such as joy anger sadness fear disgust and surprise.",
+      "paragraph_2": "Through learning these micro movements we gain insight into empathy authenticity and the shared language of emotion across cultures.",
+      "focus": "Ekman FACS facial expressions emotion recognition psychology",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/science-of-facial-expression",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Science of Facial Expression",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "reading_faces",
+      "title": "Reading Faces and Hidden Emotions",
+      "subtitle": "How to recognise truth empathy and unspoken feeling.",
+      "main_paragraph_bold": "The face is a mirror of the soul revealing emotions before words can appear.",
+      "paragraph_1": "Microexpressions last less than a second yet they reveal authentic emotions we try to conceal. Learning to observe them deepens empathy and emotional understanding.",
+      "paragraph_2": "These articles teach how to read subtle facial cues without judgement recognising sincerity fear or compassion beneath social masks.",
+      "focus": "Ekman microexpressions empathy emotion perception authenticity",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/reading-faces",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Reading Faces and Hidden Emotions",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "individuation_and_wholeness",
+      "title": "Individuation and Emotional Wholeness",
+      "subtitle": "The Jungian journey toward integration and balance.",
+      "main_paragraph_bold": "True emotional growth begins when we unite thought feeling and instinct into one self.",
+      "paragraph_1": "Individuation is the process of becoming whole by reconciling the conscious and the unconscious mind. It transforms emotion into wisdom and conflict into harmony.",
+      "paragraph_2": "These reflections show how understanding our emotions leads to deeper identity and inner peace linking Jung’s psychology with modern emotional science.",
+      "focus": "Jung individuation self development emotion balance integration",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/individuation-and-wholeness",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Individuation and Emotional Wholeness",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "universal_emotions",
+      "title": "Universal Emotions and Cultural Faces",
+      "subtitle": "Exploring how emotion connects all people across cultures.",
+      "main_paragraph_bold": "Despite our differences every human shares the same emotional language.",
+      "paragraph_1": "Ekman’s research proved that core emotions are universal yet each culture adds unique patterns of expression and restraint shaped by history and values.",
+      "paragraph_2": "Understanding these nuances builds global empathy and reveals how emotion unites humanity beyond borders and traditions.",
+      "focus": "Ekman culture emotion universality anthropology global empathy",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/universal-emotions",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Universal Emotions and Cultural Faces",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "alchemy_of_emotion",
+      "title": "The Alchemy of Emotion",
+      "subtitle": "Transforming pain into awareness and shadow into light.",
+      "main_paragraph_bold": "Emotion is energy in motion capable of healing when understood and expressed.",
+      "paragraph_1": "Jung viewed emotional struggle as a form of alchemy turning inner chaos into self knowledge. Ekman’s studies show how awareness of emotion changes physiological and mental states.",
+      "paragraph_2": "By uniting scientific insight with symbolic understanding this section explores emotion as both a biological and spiritual force of transformation.",
+      "focus": "Jung Ekman transformation healing emotional awareness psychology",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/alchemy-of-emotion",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Alchemy of Emotion",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "truth_and_emotion",
+      "title": "Truth Lies and Emotional Leakage",
+      "subtitle": "How hidden emotions reveal authenticity and deception.",
+      "main_paragraph_bold": "Even when words deceive the body tells the truth.",
+      "paragraph_1": "Ekman’s research on deception shows that suppressed emotions leak through facial microexpressions and body language. Learning to notice these signs enhances self awareness and empathy.",
+      "paragraph_2": "This category explores emotional honesty in communication teaching how to recognise the subtle signs of inner conflict and truth.",
+      "focus": "Ekman truth deception microexpressions empathy honesty psychology",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/truth-and-emotion",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Truth Lies and Emotional Leakage",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "emotional_self_in_dreams",
+      "title": "The Emotional Self in Dreams and Symbols",
+      "subtitle": "How the unconscious expresses feeling through imagery.",
+      "main_paragraph_bold": "Dreams are emotional messages from the hidden mind.",
+      "paragraph_1": "For Jung dreams reveal the emotional truths that the conscious self ignores. Symbols in dreams express fear desire and transformation through images rather than words.",
+      "paragraph_2": "This section explores how to interpret emotional symbolism to understand the psyche’s messages and promote self awareness.",
+      "focus": "Jung dreams symbols unconscious emotion self awareness psychology",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/emotional-self-in-dreams",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Emotional Self in Dreams and Symbols",
+      "button_text": "Next"
+    },
+
+    {
+      "id": "empathy_psyche_and_science",
+      "title": "Empathy Between Psyche and Science",
+      "subtitle": "Connecting Jung’s intuition with Ekman’s research.",
+      "main_paragraph_bold": "Empathy is where the symbolic meets the scientific the heart meets the mind.",
+      "paragraph_1": "Both Jung and Ekman saw empathy as central to human understanding one through symbolic resonance the other through scientific observation. Together they form a complete vision of emotional intelligence.",
+      "paragraph_2": "These articles explore empathy as the bridge between feeling and reason showing how understanding emotion can unite psychology science and humanity.",
+      "focus": "Jung Ekman empathy psychology science emotion understanding",
+      "access": "Free Available in Learn and Grow",
+      "url": "/learn/articles/empathy-psyche-and-science",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Empathy Between Psyche and Science",
+      "button_text": "Next"
+    }
+  ],
+
+  "back_button": {
+    "text": "Back",
+    "target": "/learn"
+  }
+}

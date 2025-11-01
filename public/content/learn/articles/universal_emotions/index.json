@@ -1,0 +1,46 @@
+{
+  "page_title": "Universal Emotions",
+  "page_intro": "Across Every Culture Emotion Unites Humanity Beyond Words through Expression, Empathy, and the Shared Language of Feeling.",
+  "articles": [
+    {
+
+      "slug": "shared-language-of-feeling",
+      "title": "The Shared Language of Feeling",
+      "subtitle": "How facial expression unites humanity.",
+      "main_paragraph_bold": "Emotion speaks a language that all humans understand.",
+      "paragraph_1": "This article explores Ekman’s discovery of universal emotions expressed through the face, showing how joy, fear and anger transcend culture.",
+      "paragraph_2": "It reveals how emotional expression forms the foundation of empathy and global human connection.",
+      "focus": "Ekman universal emotion empathy psychology expression culture",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Shared Language of Feeling",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "emotion-and-culture",
+      "title": "Emotion and Culture",
+      "subtitle": "Understanding cultural nuances in expression.",
+      "main_paragraph_bold": "Culture shapes how emotion is expressed, not what is felt.",
+      "paragraph_1": "This article explores how emotional display rules vary across societies, influencing how universal emotions are shown or suppressed.",
+      "paragraph_2": "It connects anthropology and psychology, revealing how emotion is both universal and culturally unique.",
+      "focus": "culture emotion anthropology Ekman psychology global diversity",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Emotion and Culture",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "global-empathy",
+      "title": "Global Empathy",
+      "subtitle": "Connecting emotion across borders.",
+      "main_paragraph_bold": "Empathy is the universal bridge of human connection.",
+      "paragraph_1": "This article examines how understanding emotion beyond language builds compassion between individuals and nations.",
+      "paragraph_2": "It reflects on the role of emotion as a global force of unity in human communication and awareness.",
+      "focus": "empathy emotion humanity communication psychology culture",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Global Empathy",
+      "button_text": "Read Article"
+    }
+  ]
+}

@@ -40,6 +40,11 @@ export const metadata = {
       "Study authentic emotional expressions of young adults with EmotionDeck Phase 3 - a realistic visual resource for education and emotional research.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase3Layout({ children }) {

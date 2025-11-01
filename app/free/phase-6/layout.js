@@ -40,8 +40,14 @@ export const metadata = {
       "EmotionDeck Phase 6: Evolution explores how emotions evolve across culture, age, and gender - over 300 portraits capturing the shared depth of human feeling.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase6Layout({ children }) {
   return <>{children}</>;
 }
+

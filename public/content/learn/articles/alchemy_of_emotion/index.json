@@ -1,0 +1,46 @@
+{
+  "page_title": "The Alchemy of Emotion",
+  "page_intro": "In the Crucible of Experience Emotion Turns Struggle into Awareness, Blending Jung’s Depth Psychology with Ekman’s Insight into Feeling.",
+  "articles": [
+    {
+
+      "slug": "emotional-transformation",
+      "title": "Emotional Transformation and Inner Balance",
+      "subtitle": "Turning struggle into awareness through emotional insight.",
+      "main_paragraph_bold": "Emotion is a process of transformation that connects pain with understanding.",
+      "paragraph_1": "This article explores how emotional suffering becomes a catalyst for self awareness and resilience when met with reflection rather than avoidance.",
+      "paragraph_2": "Drawing from Jung’s psychology and Ekman’s research, it explains how emotion transforms consciousness and deepens empathy.",
+      "focus": "emotional transformation, self awareness, resilience, Jungian psychology, Paul Ekman",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Emotional Transformation and Inner Balance",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "healing-through-awareness",
+      "title": "Healing Through Awareness",
+      "subtitle": "Integrating shadow and emotion to achieve harmony.",
+      "main_paragraph_bold": "Awareness is the bridge between suffering and peace.",
+      "paragraph_1": "This article explores how emotional awareness allows integration of hidden feelings and shadow aspects of personality, leading to inner healing.",
+      "paragraph_2": "It combines Jung’s symbolic understanding of psyche with modern emotional science to show how awareness restores balance.",
+      "focus": "shadow integration, emotional healing, self reflection, Jung, awareness",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Healing Through Awareness",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "alchemy-of-feeling",
+      "title": "The Alchemy of Feeling",
+      "subtitle": "Turning emotion into wisdom through reflection.",
+      "main_paragraph_bold": "Every emotion contains potential for transformation and insight.",
+      "paragraph_1": "This article shows how emotional energy changes form when observed consciously, turning reaction into understanding and tension into meaning.",
+      "paragraph_2": "It explores the meeting point between science and symbolism, where emotion becomes a creative force for personal evolution.",
+      "focus": "alchemy, transformation, emotional insight, personal growth, emotional evolution",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Alchemy of Feeling",
+      "button_text": "Read Article"
+    }
+  ]
+}

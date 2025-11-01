@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 /**
  * 🎥 EmotionDeck CameraCheck Component
  * -------------------------------------
- * Detects camera availability and permissions.
- * Displays friendly messages when:
- *  - The camera is available ✅
- *  - The user has blocked access ⚠️
- *  - No camera is detected ❌
+ * Checks camera availability and permissions.
+ * Displays friendly messages for:
+ *  - ✅ Camera ready
+ *  - ⚠️ Access denied
+ *  - ❌ No camera found
  */
 export default function CameraCheck({ onCameraReady }) {
   const [status, setStatus] = useState("checking"); // checking | ok | denied | notfound
@@ -17,7 +17,7 @@ export default function CameraCheck({ onCameraReady }) {
   useEffect(() => {
     const checkCamera = async () => {
       try {
-        // 🔍 1. Check available video input devices
+        // 1️⃣ Check available video devices
         const devices = await navigator.mediaDevices.enumerateDevices();
         const hasCamera = devices.some((d) => d.kind === "videoinput");
 
@@ -26,7 +26,7 @@ export default function CameraCheck({ onCameraReady }) {
           return;
         }
 
-        // 🔒 2. Request permission to use the camera
+        // 2️⃣ Request permission to use camera
         const stream = await navigator.mediaDevices.getUserMedia({ video: true });
         setStatus("ok");
         onCameraReady?.(stream);
@@ -44,29 +44,27 @@ export default function CameraCheck({ onCameraReady }) {
   }, [onCameraReady]);
 
   return (
-    <div className="w-full text-center my-6">
+    <div className="w-full text-center my-8">
       {status === "checking" && (
-        <p className="text-gray-400 animate-pulse">🔍 Checking camera availability...</p>
+        <p className="text-gray-400 animate-pulse">Checking camera availability...</p>
       )}
 
       {status === "ok" && (
-        <p className="text-emerald-400 font-semibold">
-          ✅ Camera detected - ready for FACS analysis.
-        </p>
+        <p className="text-emerald-400 font-semibold">Camera detected – ready for FACS analysis.</p>
       )}
 
       {status === "denied" && (
         <div className="text-amber-400 font-medium max-w-lg mx-auto">
-          ⚠️ Camera access is currently blocked.<br />
-          Please click the 🔒 icon in your browser’s address bar and choose{" "}
-          <span className="text-white font-semibold">“Allow”</span> to enable the camera.
+          Camera access is blocked.<br />
+          Click the lock icon in your browser’s address bar and select{" "}
+          <span className="text-white font-semibold">Allow</span> to enable the camera.
         </div>
       )}
 
       {status === "notfound" && (
         <div className="text-red-400 font-medium max-w-lg mx-auto">
-          ❌ No camera detected.<br />
-          Please connect a webcam and refresh this page.
+          No camera detected.<br />
+          Connect a webcam and refresh this page.
         </div>
       )}
     </div>

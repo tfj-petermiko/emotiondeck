@@ -40,6 +40,12 @@ export const metadata = {
       "Analyse facial expressions in real time with EmotionDeck’s FACS Analyzer - learn how emotions are formed and revealed through subtle facial movements.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function LearnFacsLayout({ children }) {

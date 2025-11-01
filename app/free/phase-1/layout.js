@@ -40,6 +40,11 @@ export const metadata = {
       "Learn to recognise and interpret 144 foundational emotions with the EmotionDeck Phase 1 Free Basic Collection - ideal for education, research, and personal growth.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase1Layout({ children }) {

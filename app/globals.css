@@ -1,3 +1,5 @@
+/* ===== ✅ FINAL UNIFIED globals.css ===== */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +15,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: #0b0b0b !important; /* Uniform dark grey background from 0 ms */
+  background-color: #0b0b0b !important;
   color: #eeeeee !important;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   scroll-behavior: smooth;
@@ -23,22 +25,26 @@ body {
 /* 2. Hide old styles until new CSS is ready */
 html:not(.styled),
 body:not(.styled) {
-  opacity: 0;
-  visibility: hidden;
+  background-color: #0b0b0b !important;
+  color: #eeeeee !important;
+  opacity: 1;
+  visibility: visible;
 }
 
-/* 3. Reveal content when React adds the .styled class */
+/* =========================================
+   🌑 Smooth Layout Fade-in (Final Fix)
+   ========================================= */
+html,
+body {
+  opacity: 0;
+  background-color: #0b0b0b !important;
+  color: #eeeeee !important;
+  transition: opacity 0.4s ease-in-out;
+}
 html.styled,
 body.styled {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 0.25s ease-in-out;
 }
-
-
-
-
-
 
 /* =========================================
    🌍 Global Base Styles
@@ -63,11 +69,9 @@ a {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
-
 a:hover {
   color: #d1d5db;
 }
-
 a:visited {
   color: #ffffff;
 }
@@ -83,19 +87,16 @@ a:visited {
   margin-inline: auto;
   grid-template-columns: repeat(2, 1fr);
 }
-
 @media (min-width: 640px) {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (min-width: 768px) {
   .gallery-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 @media (min-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(6, 1fr);
@@ -117,19 +118,9 @@ a:visited {
   background-color: #1a1a1a;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 .gallery-image:hover {
   opacity: 1;
   transform: scale(1.01);
-}
-
-/* =========================================
-   🪄 Modal Helper
-   ========================================= */
-.emotiondeck-modal {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
 }
 
 /* =========================================
@@ -140,12 +131,13 @@ img {
   user-drag: none;
   pointer-events: none;
 }
-
 * {
   -webkit-user-select: none;
   user-select: none;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 body {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
@@ -213,7 +205,6 @@ body {
     padding-top: calc(env(safe-area-inset-top) + 0.5rem);
   }
 }
-
 @media (max-width: 768px) {
   header,
   section:first-of-type {
@@ -233,28 +224,23 @@ section.border {
   overflow: hidden !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
   box-sizing: border-box;
   border: none !important;
 }
-
 tr {
   border-bottom: 1px solid #3a3a3a !important;
 }
-
 td,
 th {
   border: none !important;
   padding: 8px 12px;
 }
-
 footer {
   border-top: 1px solid #3a3a3a !important;
 }
-
 div[class*="border-gray-700"] {
   border: none !important;
   box-shadow: none !important;
@@ -262,58 +248,35 @@ div[class*="border-gray-700"] {
 }
 
 /* =========================================
-   🧩 Visual stability and rendering tweaks - FIXED
-   ========================================= */
-* {
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* =========================================
    🚀 EmotionDeck Scroll Logic - FINAL FIXED
    ========================================= */
 html,
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   overflow-x: hidden;
-  overscroll-behavior: none;
-  scroll-behavior: smooth;
   background-color: #0a0a0a;
   color: white;
 }
-
-/* Default state - allow vertical scrolling */
 body {
   overflow-y: auto;
 }
-
-/* Optional “no-scroll” mode if needed later */
 body.no-scroll {
   overflow-y: hidden !important;
 }
-
-/* Dark scrollbar styling */
 html {
   scrollbar-width: thin;
   scrollbar-color: #3a3a3a #0a0a0a;
 }
-
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #3a3a3a;
   border-radius: 8px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
 }
@@ -340,48 +303,34 @@ html, body, #__next {
   height: auto !important;
   min-height: 100vh !important;
 }
-
 #__next {
   transform: none !important;
   contain: none !important;
   perspective: none !important;
 }
 
-
 /* =========================================
    🌍 Global Layout & Scroll Logic
    ========================================= */
 html,
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b);
-  color: #ffffff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  scroll-behavior: smooth;
-  overflow: hidden; /* 🚫 no scroll by default */
+  overflow: hidden;
 }
-
-/* ✅ Allow scroll only when JS adds this class */
 body.allow-scroll {
   overflow-y: auto !important;
 }
-
 #__next {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 header {
   position: sticky;
   top: 0;
   z-index: 50;
 }
-
 footer {
   position: sticky;
   bottom: 0;
@@ -393,18 +342,12 @@ footer {
 /* =========================================
    🧩 Remove Google Translate Blue Bar
    ========================================= */
-
-/* Hide the top blue bar */
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
-
-/* Fix body top offset when bar is hidden */
 body {
   top: 0px !important;
 }
-
-/* Optional: remove white background that flashes */
 .goog-logo-link,
 .goog-te-gadget span,
 .goog-te-gadget-simple {
@@ -412,8 +355,6 @@ body {
   border: none !important;
   color: #f5f5f5 !important;
 }
-
-/* Fix position so widget stays visible */
 #google_translate_element {
   z-index: 100000 !important;
 }
@@ -424,7 +365,6 @@ body {
 .goog-te-gadget {
   font-size: 0 !important;
 }
-
 .goog-te-gadget-simple {
   background-color: rgba(15, 15, 15, 0.9) !important;
   border: 1px solid #333 !important;
@@ -437,129 +377,27 @@ body {
   display: inline-flex !important;
   align-items: center;
 }
-
 .goog-te-gadget-simple:hover {
   background-color: rgba(35, 35, 35, 0.95) !important;
   border-color: #00bcd4 !important;
 }
-
-/* Hide Google’s icon and text “Select Language” */
 .goog-te-gadget span,
 .goog-te-gadget img {
   display: none !important;
 }
-
-/* Scale down dropdown */
 .goog-te-menu-value {
   font-size: 12px !important;
   color: #f5f5f5 !important;
 }
 
 /* =========================================
-   ⚖️ Legal Table Styles (EmotionDeck)
-   ========================================= */
-
-section.legal-table {
-  width: 80%;
-  margin: 2rem auto;
-  background-color: #111;
-  border-left: 1px solid #3a3a3a;
-  border-right: 1px solid #3a3a3a;
-  border-top: 1px solid #3a3a3a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Table layout */
-section.legal-table table {
-  width: 100%;
-  border-collapse: collapse;
-  color: #fff;
-}
-
-/* Row dividers */
-section.legal-table tr {
-  border-bottom: 1px solid #3a3a3a;
-}
-
-/* Table cells */
-section.legal-table td,
-section.legal-table th {
-  padding: 10px 14px;
-  text-align: left;
-  vertical-align: top;
-  border: none;
-}
-
-/* Label column */
-section.legal-table td:first-child {
-  width: 30%;
-  color: #aaa;
-  font-weight: 500;
-}
-
-/* Value column */
-section.legal-table td:last-child {
-  color: #fff;
-}
-
-/* Responsive behaviour */
-@media (max-width: 768px) {
-  section.legal-table,
-  section.legal-table table,
-  section.legal-table tbody,
-  section.legal-table tr,
-  section.legal-table td {
-    display: block;
-    width: 100%;
-  }
-
-  section.legal-table tr {
-    margin-bottom: 1.5rem;
-    border: none;
-  }
-
-  section.legal-table td {
-    padding: 0.4rem 0;
-  }
-
-  section.legal-table td:first-child {
-    color: #bbb;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-
-  section.legal-table td:last-child {
-    color: #fff;
-    margin-bottom: 0.75rem;
-  }
-}
-
-
-/* 🌙 Hide scrollbar but keep scroll functionality */
-html, body {
-  overflow: auto;            /* scroll działa normalnie */
-  scrollbar-width: none;     /* Firefox */
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-
-/* =========================================
    🎨 Fix: Bright text in dropdown, filter, and menu elements
    ========================================= */
-
-/* Base dropdowns and select menus */
 select,
 option,
 .dropdown,
 .dropdown *,
 [role="menu"],
-[role="menu"] *,
 details,
 summary,
 details * {
@@ -569,19 +407,6 @@ details * {
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   font-weight: 500;
 }
-
-/* Opened buttons or expanded menus */
-button[data-state="open"],
-button[aria-expanded="true"],
-button[class*="dropdown"],
-button[class*="select"],
-button[class*="filter"] {
-  color: #eeeeee !important;
-  background-color: #222 !important;
-  border-color: #2e2e2e !important;
-}
-
-/* Hover states */
 option:hover,
 .dropdown li:hover,
 [role="menu"] li:hover,
@@ -589,89 +414,1093 @@ summary:hover {
   background-color: #2a2a2a !important;
   color: #ffffff !important;
 }
-
-/* Disabled or inactive options */
-option:disabled,
-.dropdown li:disabled {
+option:disabled {
   color: #666666 !important;
   background-color: #1a1a1a !important;
 }
-
-/* Active / selected item */
-option:checked,
-.dropdown li[aria-selected="true"] {
+option:checked {
   background-color: #2e2e2e !important;
   color: #ffffff !important;
   font-weight: 600;
 }
-
-/* Subtle shadow and rounded corners */
 select,
 .dropdown,
 [role="menu"] {
   border-radius: 6px !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-
-/* Prevent text clipping in dropdowns */
 option,
 .dropdown li {
   padding: 6px 10px;
   line-height: 1.4;
 }
 
+/* =========================================
+   🌕 EmotionDeck Encyclopedia Tooltip – Static White Glow
+   ========================================= */
+.tooltip-container {
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  border: none !important;
+}
+.tooltip-container img {
+  border-radius: 50% !important;
+  background: transparent !important;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+  filter: brightness(1.05) contrast(1.1);
+  transition: none !important;
+}
+.tooltip-container::before,
+.tooltip-container::after {
+  content: none !important;
+  background: transparent !important;
+}
+
+/* ===========================
+   🌍 EmotionDeck Global Styles
+   =========================== */
+:root {
+  --bg-main: #0b0b0b;
+  --bg-card: #1C1C1C;
+  --border-color: #2a2a2a;
+  --text-color: #ffffff;
+  --text-muted: #9ca3af;
+  --accent-emerald: #10B981;
+  --accent-yellow: #fbbf24;
+  --accent-error: #ef4444;
+}
+body {
+  @apply min-h-screen bg-[var(--bg-main)] text-[var(--text-color)] font-sans;
+}
+.ed-page {
+  @apply flex items-center justify-center min-h-screen bg-[var(--bg-main)] text-[var(--text-color)] px-6;
+}
+.ed-card {
+  @apply bg-[var(--bg-card)] border border-[var(--border-color)] rounded-2xl shadow-2xl p-10 text-center;
+}
+.ed-title {
+  @apply text-3xl font-bold text-[var(--accent-yellow)] mb-4;
+}
+.ed-title-emerald {
+  @apply text-3xl font-bold text-[var(--accent-emerald)] mb-4;
+}
+.ed-text {
+  @apply text-[var(--text-muted)] mb-8 leading-relaxed;
+}
+.ed-text-light {
+  @apply text-gray-300 mb-4 leading-relaxed;
+}
+.ed-text-muted {
+  @apply text-[var(--text-muted)] mb-8 leading-relaxed;
+}
+
+/* ===========================
+   🏠 EmotionDeck Home Page Layout
+   =========================== */
+.ed-home-page {
+  @apply flex flex-col flex-grow bg-[var(--bg-main)] text-[var(--text-color)] font-sans;
+}
+.ed-hero {
+  @apply text-center mt-24 px-6;
+}
+.ed-hero-title {
+  @apply text-6xl md:text-7xl font-extrabold mb-10 leading-tight;
+}
+.ed-hero-description {
+  @apply text-xl md:text-4xl text-[var(--text-muted)] max-w-4xl mx-auto mb-8 leading-loose;
+}
+.ed-hero-subtext {
+  @apply text-xl md:text-2xl text-[var(--text-muted)] mb-14 max-w-4xl mx-auto leading-relaxed;
+}
+.ed-gallery {
+  @apply mt-12 mb-24 text-center px-0;
+}
+.ed-gallery-img {
+  @apply w-full h-full object-cover object-center opacity-90 hover:opacity-100 transition duration-300;
+}
+.ed-pro {
+  @apply mt-auto text-center px-6 pb-24;
+}
+.ed-pro-title {
+  @apply text-4xl md:text-5xl font-semibold mb-6 text-[var(--accent-emerald)];
+}
+.ed-pro-text {
+  @apply text-xl md:text-2xl text-[var(--text-muted)] mb-8 max-w-3xl mx-auto leading-relaxed;
+}
+.ed-pro-link {
+  @apply inline-block text-lg md:text-xl text-[var(--accent-emerald)] mb-8 hover:text-emerald-300 transition;
+}
+
+/* ===========================
+   🧩 EmotionDeck Layout System
+   =========================== */
+.ed-layout {
+  @apply flex flex-col min-h-screen text-[var(--text-color)] bg-[var(--bg-main)];
+  background: linear-gradient(to bottom, #0b0b0b, #111111, #0b0b0b);
+  transition: opacity 0.25s ease-in-out;
+}
+.ed-header {
+  @apply sticky top-0 z-50 backdrop-blur-md border-b border-gray-800 shadow-[0_4px_8px_rgba(0,0,0,0.4)] py-2;
+  background-color: rgba(23, 23, 23, 0.9);
+}
+.ed-header-inner {
+  @apply max-w-7xl mx-auto px-4;
+}
+.ed-main {
+  @apply flex-1;
+}
+.ed-footer {
+  @apply sticky bottom-0 z-40 border-t border-gray-800 backdrop-blur-md py-5 text-center text-gray-400 text-sm leading-relaxed shadow-[0_-4px_8px_rgba(0,0,0,0.4)];
+  background-color: rgba(10, 10, 10, 0.95);
+}
+.ed-footer-inner {
+  @apply max-w-4xl mx-auto px-6;
+}
+.ed-translate {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 100000;
+  background-color: rgba(20, 20, 20, 0.95);
+  color: #f5f5f5;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ===========================
+   ⚖️ EmotionDeck Legal Section
+   =========================== */
+
+/* Main page container */
+.ed-legal-page {
+  @apply min-h-screen bg-[var(--bg-main)] text-[var(--text-muted)] font-sans py-16;
+}
+
+/* Title section */
+.ed-legal-header {
+  @apply text-center w-[80%] mx-auto mb-12;
+}
+.ed-legal-title {
+  @apply text-3xl md:text-4xl font-bold text-[var(--text-color)] mb-4;
+}
+.ed-legal-updated {
+  @apply text-[var(--text-muted)] mb-4;
+}
+.ed-legal-intro {
+  @apply text-[var(--text-color)] max-w-2xl mx-auto leading-relaxed;
+}
+
+/* Legal table wrapper */
+.ed-legal-table {
+  @apply w-[80%] mx-auto mb-20 border border-[var(--border-color)] rounded-2xl overflow-hidden transition-transform duration-300;
+}
+.ed-legal-table table {
+  @apply w-full border-collapse rounded-2xl overflow-hidden;
+}
+.ed-legal-row {
+  @apply border-b border-[var(--border-color)] hover:bg-[rgba(255,255,255,0.04)] transition-all;
+}
+.ed-legal-label {
+  @apply p-4 font-semibold text-[var(--text-color)] w-1/3 text-left;
+}
+.ed-legal-value {
+  @apply p-4 text-[var(--text-color)] leading-relaxed text-left;
+}
+
+/* Return button container */
+.ed-legal-return {
+  @apply text-center mt-16 mb-20;
+}
+
+/* ===========================
+   🧠 EmotionDeck Quiz System
+   =========================== */
+
+/* Quiz page base */
+.ed-quiz-page {
+  @apply min-h-screen flex flex-col items-center py-16 text-[var(--text-color)];
+  background-color: var(--bg-main);
+}
+.ed-quiz-header {
+  @apply text-center mb-8;
+}
+.ed-quiz-title {
+  @apply text-4xl font-bold mb-6 text-[var(--text-color)];
+}
+.ed-quiz-subtitle {
+  @apply text-xl md:text-2xl text-[var(--text-color)] mb-8 max-w-2xl mx-auto leading-relaxed;
+}
+.ed-quiz-card {
+  @apply w-[85%] md:w-[70%] mx-auto border rounded-2xl overflow-hidden;
+  border-color: var(--border-color);
+  background-color: var(--bg-card);
+}
+.ed-quiz-grid {
+  @apply grid grid-cols-2 md:grid-cols-5 gap-6 mb-8;
+}
+.ed-quiz-symbol {
+  @apply cursor-pointer rounded-2xl p-4 flex justify-center items-center border transition-all duration-300;
+  border-color: var(--border-color);
+  background-color: var(--bg-card);
+}
+.ed-quiz-result {
+  @apply border rounded-2xl p-6 text-[var(--text-muted)] text-left max-w-md mx-auto mb-6;
+  border-color: var(--border-color);
+  background-color: var(--bg-card);
+}
+.ed-quiz-footer {
+  @apply mt-16 text-center text-[var(--text-muted)] text-lg;
+}
 
 /* =========================================
-   🩶 Table Bottom Borders — Final Unified Style
+   🎓 EmotionDeck Learn Quizzes Page Styles
+   ========================================= */
+.learn-quizzes-page {
+  @apply min-h-screen bg-neutral-900 text-white py-16;
+}
+.learn-quizzes-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-6;
+}
+.learn-quizzes-intro {
+  @apply text-2xl text-gray-400 text-center max-w-3xl mx-auto mb-12;
+}
+.learn-quiz-section {
+  @apply mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden transition-transform duration-300;
+}
+.learn-quiz-card {
+  @apply bg-gray-900 p-6 md:p-10 rounded-2xl;
+}
+.learn-quiz-title {
+  @apply text-2xl font-semibold text-center mb-2;
+}
+.learn-quiz-subtitle {
+  @apply text-center text-gray-300 italic mb-6;
+}
+.learn-quiz-table {
+  @apply w-full text-sm md:text-base border-collapse;
+}
+.learn-quiz-row {
+  @apply border-b border-gray-800 align-top;
+}
+.learn-quiz-text {
+  @apply text-gray-300 mb-3 text-justify leading-relaxed;
+}
+.learn-quiz-image-wrapper {
+  @apply w-[220px] mx-auto rounded-lg overflow-hidden;
+}
+.learn-quiz-image-caption {
+  @apply text-gray-400 text-xs mt-2;
+}
+.learn-quiz-meta {
+  @apply p-3 text-gray-400;
+}
+.learn-back-button {
+  @apply text-center mt-16;
+}
+
+/* =========================================
+   📘 EmotionDeck Learn Page Styles
+   ========================================= */
+.learnpage-container {
+  @apply min-h-screen bg-[#1C1C1C] text-white py-16;
+}
+.learnpage-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-6;
+}
+.learnpage-intro {
+  @apply text-2xl text-gray-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed;
+}
+.learnpage-section {
+  @apply mt-12 w-[80%] mx-auto border border-[#2a2a2a] rounded-2xl overflow-hidden transition-transform duration-300;
+}
+.learnpage-card {
+  @apply bg-[#1C1C1C] p-6 md:p-10 rounded-2xl;
+}
+.learnpage-subtitle {
+  @apply text-2xl font-semibold text-center mb-2 whitespace-pre-line break-words leading-snug;
+}
+.learnpage-subsubtitle {
+  @apply text-center text-gray-300 italic mb-6;
+}
+.learnpage-table {
+  @apply w-full text-sm md:text-base border-collapse;
+}
+.learnpage-row {
+  @apply border-b border-[#2a2a2a] align-top;
+}
+.learnpage-emptycell {
+  @apply w-1/4;
+}
+.learnpage-maincell {
+  @apply w-2/4 p-3 text-white;
+}
+.learnpage-text {
+  @apply text-gray-300 mb-3 text-justify leading-relaxed;
+}
+.learnpage-buttonwrap {
+  @apply flex justify-end mt-6;
+}
+.learnpage-imagecell {
+  @apply p-3 w-[240px] text-center align-top;
+}
+.learnpage-imagewrapper {
+  @apply w-[220px] mx-auto rounded-lg overflow-hidden border border-[#2a2a2a] shadow-md;
+}
+.learnpage-image {
+  @apply object-cover w-full h-auto;
+}
+.learnpage-imagecaption {
+  @apply text-gray-400 text-xs mt-2;
+}
+.learnpage-meta {
+  @apply p-3 text-gray-400;
+}
+.learnpage-backwrap {
+  @apply text-center mt-16;
+}
+
+/* =========================================
+   📗 EmotionDeck Learn Main Page Styles
+   ========================================= */
+.learn-page {
+  @apply min-h-screen bg-[#1C1C1C] text-white py-16;
+}
+.learn-header-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-6;
+}
+.learn-header-intro {
+  @apply text-2xl text-gray-400 text-center max-w-3xl mx-auto mb-6 leading-relaxed;
+}
+.learn-module-section {
+  @apply mt-12 w-[80%] mx-auto border border-[#2a2a2a] rounded-2xl overflow-hidden transition-transform duration-300;
+}
+.learn-module-card {
+  @apply bg-[#1C1C1C] p-6 md:p-10 rounded-2xl;
+}
+.learn-module-title {
+  @apply text-2xl font-semibold text-center mb-2;
+}
+.learn-module-subtitle {
+  @apply text-center text-gray-300 italic mb-6;
+}
+.learn-module-table {
+  @apply w-full text-sm md:text-base border-collapse;
+}
+.learn-module-row {
+  @apply border-b border-[#2a2a2a] align-top;
+}
+.learn-module-cell-main {
+  @apply w-2/4 p-3 text-white;
+}
+.learn-module-text {
+  @apply text-gray-300 mb-3 text-justify leading-relaxed;
+}
+.learn-module-image-cell {
+  @apply p-3 w-[240px] text-center align-top;
+}
+.learn-module-image-wrapper {
+  @apply w-[220px] mx-auto overflow-hidden;
+}
+.learn-module-image {
+  @apply object-cover w-full h-auto;
+}
+.learn-module-image-caption {
+  @apply text-gray-400 text-xs mt-2;
+}
+.learn-module-meta {
+  @apply p-3 text-gray-400;
+}
+.learn-module-buttonwrap {
+  @apply flex justify-end mt-6;
+}
+.learn-backwrap {
+  @apply text-center mt-16;
+}
+
+/* =========================================
+   🧠 EmotionDeck Learn FACS Page Styles
+   ========================================= */
+.learn-facs-page {
+  @apply min-h-screen bg-[#1C1C1C] text-gray-300 py-16 flex flex-col items-center;
+}
+.learn-facs-title {
+  @apply text-4xl font-bold mb-6 text-white text-center;
+}
+.learn-facs-highlight {
+  @apply text-2xl text-emerald-400 hover:text-emerald-300 transition-colors duration-300 max-w-3xl mx-auto mb-6 text-center;
+}
+.learn-facs-intro {
+  @apply text-gray-400 text-center max-w-2xl mx-auto mb-10 leading-relaxed;
+}
+.learn-facs-section {
+  @apply w-[85%] md:w-[70%] mx-auto border border-[#2a2a2a] rounded-2xl overflow-hidden;
+  background-color: #1C1C1C;
+}
+.learn-facs-card {
+  @apply text-center px-8 pb-10 pt-8;
+  background-color: #1C1C1C;
+}
+.learn-facs-overlay {
+  @apply relative w-full h-[540px] rounded-2xl overflow-hidden border border-[#2a2a2a] bg-black;
+}
+.learn-facs-description {
+  @apply text-gray-300 mt-8 max-w-2xl mx-auto leading-relaxed;
+}
+.learn-facs-footer {
+  @apply mt-16 text-center text-gray-300 text-lg;
+}
+.learn-facs-footer a {
+  @apply text-emerald-400 hover:text-emerald-300 font-semibold transition;
+}
+.learn-facs-backwrap {
+  @apply text-center mt-16 mb-4;
+}
+
+/* ================================
+   🌍 EmotionDeck Encyclopedia Page
+   ================================ */
+
+/* Layout */
+.country-page {
+  @apply min-h-screen bg-neutral-900 text-white font-sans relative;
+}
+
+/* Header */
+.country-header {
+  @apply text-center mt-20 px-6;
+}
+.country-title {
+  @apply text-5xl md:text-6xl font-bold mb-4;
+}
+.country-subtitle {
+  @apply text-3xl md:text-4xl text-white font-semibold;
+}
+.country-intro {
+  @apply text-lg text-emerald-400 hover:text-emerald-300 transition-colors duration-300 max-w-2xl mx-auto mb-12;
+}
+
+/* Archetype Section */
+.country-archetype-section {
+  @apply mt-8 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden transition-transform duration-300;
+}
+.country-archetype-card {
+  @apply bg-gray-900 p-6 md:p-10 rounded-2xl;
+}
+.country-archetype-title {
+  @apply text-2xl font-semibold text-center;
+}
+.country-archetype-quote {
+  @apply text-center text-gray-300 italic mb-6;
+}
+.country-archetype-intro {
+  @apply text-gray-300 text-center mb-8 max-w-3xl mx-auto leading-relaxed;
+}
+
+/* Table */
+.country-table {
+  @apply w-full text-sm md:text-base border-collapse;
+}
+.country-table-row {
+  @apply border-b border-gray-800 align-middle;
+}
+.country-table-cell {
+  @apply w-[55%] p-3 text-white;
+}
+.country-table-text {
+  @apply text-gray-300 mb-1 leading-relaxed text-justify max-w-3xl;
+}
+.country-table-text2 {
+  @apply text-gray-300 mt-4 mb-4 leading-relaxed text-justify max-w-3xl;
+}
+
+/* Image */
+.country-image-wrapper {
+  @apply flex items-center justify-center h-full;
+}
+.country-image-card {
+  @apply w-[250px] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md;
+  border: none !important;
+}
+
+
+.country-image {
+  @apply object-cover w-full h-auto;
+}
+.country-image-caption {
+  @apply text-gray-300 text-xs mt-2;
+}
+
+/* Section rows */
+.country-section-label {
+  @apply p-3 text-gray-300;
+}
+.country-section-text {
+  @apply p-3 text-gray-300 text-justify leading-relaxed;
+}
+
+/* Navigation */
+.country-nav {
+  @apply text-center mt-20 mb-24 relative z-10 flex justify-center gap-24;
+}
+
+
+/* =========================================
+   🩶 Table and border styles
+   ========================================= */
+section.border {
+  border-left: 1px solid #3a3a3a !important;
+  border-right: 1px solid #3a3a3a !important;
+  border-top: 1px solid #3a3a3a !important;
+  border-bottom: 1px solid #3a3a3a !important; /* ✅ Added bottom line */
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border: none !important;
+}
+
+tr {
+  border-bottom: 1px solid #3a3a3a !important;
+}
+
+/* ✅ Ensure table has a visible bottom border even if last <tr> is missing one */
+table:last-of-type {
+  border-bottom: 1px solid #3a3a3a !important;
+}
+
+td,
+th {
+  border: none !important;
+  padding: 8px 12px;
+}
+
+footer {
+  border-top: 1px solid #3a3a3a !important;
+}
+
+/* =========================================
+   🧭 Header Top Margin Fix (Removes tiny gap above header)
+   ========================================= */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#__next {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header {
+  margin-top: 0 !important;
+  top: 0 !important;
+}
+
+/* Prevent accidental scroll gap or ghost space */
+body {
+  overflow-x: hidden !important;
+  background-color: #0b0b0b !important;
+}
+
+
+/* =========================================
+   EmotionDeck - Free Collections Page
    ========================================= */
 
-/* All tables keep a visible bottom border */
-table,
-table tr,
-table td,
-table th {
-  border-bottom: 1px solid #2e2e2e !important;
+.free-page {
+  @apply min-h-screen bg-neutral-900 text-white font-sans relative;
+}
+
+.free-header {
+  @apply text-center mt-20 px-6;
+}
+
+.free-title {
+  @apply text-5xl md:text-6xl font-bold mb-4;
+}
+
+.free-intro {
+  @apply text-2xl text-gray-400 text-center max-w-3xl mx-auto mb-6;
+}
+
+/* Phases */
+.free-phase {
+  @apply mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden transition-transform duration-300;
+}
+.free-phase-inner {
+  @apply bg-gray-900 p-6 md:p-10 rounded-2xl;
+}
+.free-phase-title {
+  @apply text-2xl font-semibold text-center mx-auto w-fit;
+}
+.free-phase-subtitle {
+  @apply text-center text-gray-400 italic mb-6;
+}
+.free-phase-desc {
+  @apply text-gray-300 mt-4 mb-4 leading-relaxed text-justify;
+}
+
+/* Table */
+.free-table {
+  @apply w-full text-sm md:text-base border-collapse;
+}
+.free-table-row {
+  @apply border-b border-gray-800 align-top;
+}
+.free-table-cell {
+  @apply p-3 text-gray-400;
+}
+
+/* Image */
+.free-img-wrapper {
+  @apply w-[200px] mx-auto rounded-lg overflow-hidden;
+  border: none !important;
   box-shadow: none !important;
+  background: transparent !important;
 }
 
-/* Remove duplicate shadows or lines */
-table tr:last-child td,
-table tr:last-child th {
-  border-bottom: 1px solid #2e2e2e !important;
+.free-img-caption {
+  @apply text-gray-400 text-xs mt-2;
 }
 
-/* Legal tables and bordered sections — consistent frame */
-section.border,
-section.border-gray-800,
-section.border-gray-900,
-section.legal-table,
-.w-\[80\%\].mx-auto.border.border-gray-800 {
-  border-top: 1px solid #2e2e2e !important;
-  border-left: 1px solid #2e2e2e !important;
-  border-right: 1px solid #2e2e2e !important;
-  border-bottom: 1px solid #2e2e2e !important;
-  border-radius: 12px !important;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25) !important;
+
+
+/* =========================================
+   EmotionDeck – Free Collection (Phase 1)
+   ========================================= */
+
+/* ====== Base Page ====== */
+.free-page {
+  @apply min-h-screen bg-neutral-900 text-white font-sans relative;
+}
+
+/* ====== Hero Section ====== */
+.free-hero {
+  @apply text-center mt-20 px-6;
+}
+
+.free-hero-title {
+  @apply text-5xl md:text-6xl font-bold mb-4;
+}
+
+.free-hero-paragraph {
+  @apply text-2xl text-emerald-400 hover:text-emerald-300 transition-colors duration-300 max-w-3xl mx-auto mb-6;
+}
+
+.free-hero-subtext {
+  @apply text-base text-gray-400 max-w-2xl mx-auto;
+}
+
+/* ====== Filter Bar ====== */
+.free-filter {
+  @apply flex flex-wrap justify-center gap-4 mt-16 text-neutral-900;
+}
+
+.free-select {
+  @apply px-4 py-2 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all duration-200;
+}
+
+/* ====== Gallery Section ====== */
+.free-gallery {
+  @apply w-full mt-16;
+}
+
+.free-gallery-grid {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-0 px-0;
+}
+
+/* ✅ Clean gallery cards – no borders, no backgrounds */
+.free-gallery-card {
+  @apply overflow-hidden cursor-pointer transition-transform duration-300;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.free-gallery-card:hover {
+  @apply scale-105;
+  box-shadow: none !important;
+  filter: brightness(1.05);
+}
+
+/* ✅ Image – clean edges */
+.gallery-image {
+  @apply w-full h-auto object-cover;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* ====== Info Section ====== */
+.free-info {
+  @apply text-center mt-20 mb-20 px-6;
+}
+
+.free-info-title {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.free-info-text {
+  @apply text-gray-300 max-w-2xl mx-auto leading-relaxed;
+}
+
+/* ====== Back Button Section ====== */
+.free-back {
+  @apply text-center mt-16 mb-20;
+}
+
+.free-back button {
+  @apply inline-block hover:scale-105 transition-transform duration-300;
+}
+
+
+
+/* =========================================
+   💎 EmotionDeck PRO – Main Index Page
+   ========================================= */
+
+.pro-main-page {
+  @apply min-h-screen bg-neutral-900 text-white font-sans relative;
+}
+
+.pro-main-header {
+  @apply text-center mt-20 px-6;
+}
+
+.pro-main-title {
+  @apply text-5xl md:text-6xl font-bold mb-4;
+}
+
+.pro-main-intro {
+  @apply text-2xl text-gray-400 text-center max-w-3xl mx-auto mb-6;
+}
+
+/* ====== PHASE CARDS ====== */
+.pro-phase-section {
+  @apply mt-12 w-[80%] mx-auto border border-gray-800 rounded-2xl overflow-hidden transition-transform duration-300;
+}
+
+.pro-phase-card {
+  @apply bg-gray-900 p-6 md:p-10 rounded-2xl;
+}
+
+.pro-phase-title {
+  @apply text-2xl font-semibold text-center mx-auto w-fit;
+}
+
+.pro-phase-subtitle {
+  @apply text-center text-gray-400 italic mb-6;
+}
+
+/* ====== TABLE ====== */
+.pro-phase-table {
+  @apply w-full text-sm md:text-base border-collapse;
+}
+
+.pro-phase-table td {
+  @apply p-3;
+}
+
+.pro-phase-label {
+  @apply p-3 text-gray-400 align-top;
+}
+
+.pro-phase-text {
+  @apply text-gray-400 leading-relaxed text-justify;
+}
+
+.pro-phase-divider {
+  @apply border-b border-gray-800;
+}
+
+/* ====== IMAGE BLOCK ====== */
+.pro-phase-image {
+  @apply w-[200px] mx-auto overflow-hidden rounded-lg;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+
+.pro-phase-caption {
+  @apply text-gray-400 text-xs mt-2 text-center;
+}
+
+/* ====== RETURN BUTTON ====== */
+.pro-main-back {
+  @apply text-center mt-16;
+}
+
+
+/* =========================================
+   💳 EmotionDeck PRO – Checkout Page
+   ========================================= */
+
+.pro-checkout-page {
+  @apply min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6;
+}
+
+.pro-checkout-card {
+  @apply bg-gray-800 rounded-2xl p-10 max-w-md w-full text-center shadow-2xl;
+}
+
+.pro-checkout-title {
+  @apply text-3xl font-bold text-yellow-400 mb-4;
+}
+
+.pro-checkout-text {
+  @apply text-gray-400 mb-8 leading-relaxed;
+}
+
+.pro-checkout-paypal {
+  @apply w-full flex justify-center;
+}
+
+.pro-checkout-container {
+  @apply w-[340px] flex justify-center;
+}
+
+/* =========================================
+   🎉 EmotionDeck PRO – Thank You Page
+   ========================================= */
+
+.pro-thankyou-page {
+  @apply min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6;
+}
+
+.pro-thankyou-card {
+  @apply bg-gray-800 rounded-2xl shadow-2xl p-10 text-center max-w-lg;
+}
+
+.pro-thankyou-title {
+  @apply text-3xl font-bold text-emerald-400 mb-4;
+}
+
+.pro-thankyou-text {
+  @apply text-gray-300 mb-4 leading-relaxed;
+}
+
+.pro-thankyou-subtext {
+  @apply text-gray-400 mb-8 leading-relaxed;
+}
+
+.pro-thankyou-button {
+  @apply inline-block hover:scale-105 transition-transform;
+}
+
+
+
+/* Gallery items – clean, no borders, straight corners */
+.pro-phase-image-wrapper {
+  @apply overflow-hidden cursor-pointer transition-transform duration-300;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.pro-phase-image {
+  @apply w-full h-auto object-cover;
+  display: block;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  transition: transform 0.3s ease;
+}
+
+.pro-phase-image-wrapper:hover .pro-phase-image {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+/* Modal (generic) */
+.pro-phase-modal {
+  @apply fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50;
+}
+
+/* Return button */
+.pro-phase-back {
+  @apply text-center mt-16 mb-20;
+}
+
+.pro-phase-button {
+  @apply inline-block hover:scale-105 transition-transform;
+}
+
+
+/* =========================================
+   🔧 FIX – PRO main page images (no border, soft rounded)
+   ========================================= */
+
+/* =========================================
+   🎯 Rounded thumbnails only on PRO main page
+   ========================================= */
+
+.pro-main-page .pro-phase-image {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+  border-radius: 0.75rem !important; /* rounded-lg */
   overflow: hidden !important;
-  background-color: #1c1c1c !important;
 }
 
-/* Fix for nested tables inside bordered sections */
-section.border table tr:last-child td,
-section.border-gray-800 table tr:last-child td,
-section.legal-table table tr:last-child td {
-  border-bottom: 1px solid #2e2e2e !important;
-}
-
-/* Make hover rows subtle but visible */
-table tr:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-  transition: background-color 0.2s ease-in-out;
+/* ✅ Flat images in all phase galleries */
+.pro-phase-gallery .pro-phase-image {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
 }
 
 
+.pro-phase-caption {
+  text-align: center !important;
+  color: #9ca3af !important; /* gray-400 */
+  font-size: 0.75rem !important;
+  margin-top: 0.5rem !important;
+}
+
+/* =========================================
+   EmotionDeck - Global Rounded Image Style
+   (applies to all pages except Home)
+   ========================================= */
 
 
+
+/* Ensure wrappers also have rounded corners and no border */
+body:not(.home-page) .learn-module-image-wrapper,
+body:not(.home-page) .free-phase-image-wrapper,
+body:not(.home-page) .pro-phase-image-wrapper,
+body:not(.home-page) .country-archetype-card,
+body:not(.home-page) .worldmap-image-container {
+  border: none !important;
+  outline: none !important;
+  border-radius: 1rem !important;
+  overflow: hidden;
+}
+
+
+/* ========================================= 
+💳 Unified glow for all EmotionDeck Checkout cards
+   ========================================= */
+
+
+.ed-card,
+.pro-checkout-card {
+  background-color: #111111;
+  color: #e5e5e5;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 28rem;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.ed-card:hover,
+.pro-checkout-card:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
+}
+
+/* Force any loading text to be centered on screen */
+*[id*="loading"],
+*[class*="loading"] {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  text-align: center !important;
+  color: #fff !important;
+  font-size: 1.2rem !important;
+  z-index: 9999 !important;
+}
+
+/* =========================================
+   🌿 FINAL FIX — Force Emerald Colour on All Intro Texts
+   ========================================= */
+:root :is(
+  .page-intro,
+  .learn-header-intro,
+  .learnpage-intro,
+  .free-intro,
+  .free-hero-paragraph,
+  .pro-main-intro,
+  .pro-phase-subtitle,
+  .article-intro,
+  .articles-header-intro,
+  .articles-page-intro,
+  .quiz-intro,
+  .quiz-header-intro,
+  .quizpage-intro,
+  .quiz-page-intro,
+  .quiz-hero-paragraph,
+  .quiz-section-intro,
+  .learn-quizzes-intro,
+  .ed-quiz-subtitle,
+  .facs-intro,
+  .facs-header-intro,
+
+  .generator-intro,
+  .generator-header-intro,
+  .encyclopedia-intro,
+  .encyclopedia-header-intro,
+  .legal-intro,
+  .worldmap-intro
+) {
+  color: #34d399 !important; /* emerald-400 */
+  transition: color 0.3s ease;
+}
+
+:root :is(
+  .page-intro:hover,
+  .learn-header-intro:hover,
+  .learnpage-intro:hover,
+  .free-intro:hover,
+  .free-hero-paragraph:hover,
+  .pro-main-intro:hover,
+  .pro-phase-subtitle:hover,
+  .article-intro:hover,
+  .articles-header-intro:hover,
+  .articles-page-intro:hover,
+  .quiz-intro:hover,
+  .quiz-header-intro:hover,
+  .quizpage-intro:hover,
+  .quiz-page-intro:hover,
+  .quiz-hero-paragraph:hover,
+  .quiz-section-intro:hover,
+  .learn-quizzes-intro:hover,
+  .ed-quiz-subtitle:hover,
+  .facs-intro:hover,
+  .facs-header-intro:hover,
+  .learn-facs-intro:hover,
+  .generator-intro:hover,
+  .generator-header-intro:hover,
+  .encyclopedia-intro:hover,
+  .encyclopedia-header-intro:hover,
+  .legal-intro:hover,
+  .worldmap-intro:hover
+) {
+  color: #6ee7b7 !important; /* emerald-300 */
+}
 
 
 

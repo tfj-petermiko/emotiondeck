@@ -1,0 +1,46 @@
+{
+  "page_title": "The Science of Facial Expression",
+  "page_intro": "Through the Human Face Emotion Becomes Visible as Ekman’s Research Reveals the Universal Language of Expression and Truth.",
+  "articles": [
+    {
+
+      "slug": "understanding-facs",
+      "title": "Understanding the Facial Action Coding System",
+      "subtitle": "The universal science of human expression.",
+      "main_paragraph_bold": "Facial expression is the direct reflection of emotion across all cultures.",
+      "paragraph_1": "This article explains Paul Ekman’s Facial Action Coding System, which categorises every visible movement of the human face into distinct action units.",
+      "paragraph_2": "Learning FACS helps decode emotions like joy, anger or fear with precision, linking psychology and biology through expression.",
+      "focus": "Ekman FACS facial expression psychology emotion recognition science",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Understanding the Facial Action Coding System",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "universal-expressions",
+      "title": "Universal Expressions of Emotion",
+      "subtitle": "How emotion is recognised across every human culture.",
+      "main_paragraph_bold": "Despite language and tradition, emotion speaks the same visual language everywhere.",
+      "paragraph_1": "This article explores Ekman’s cross-cultural research proving that basic emotions are recognised universally from happiness to disgust.",
+      "paragraph_2": "It shows how evolution shaped the face as a global communication tool of emotional truth.",
+      "focus": "Ekman universal emotion expression psychology anthropology communication",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Universal Expressions of Emotion",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "microexpressions-and-truth",
+      "title": "Microexpressions and Emotional Truth",
+      "subtitle": "Decoding emotion in a fraction of a second.",
+      "main_paragraph_bold": "Microexpressions reveal hidden emotion faster than words can form.",
+      "paragraph_1": "This article introduces Ekman’s discovery of microexpressions involuntary facial movements lasting less than a second.",
+      "paragraph_2": "They reveal suppressed emotion and authenticity, providing insight into the complexity of human communication.",
+      "focus": "Ekman microexpressions emotion psychology communication awareness",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Microexpressions and Emotional Truth",
+      "button_text": "Read Article"
+    }
+  ]
+}

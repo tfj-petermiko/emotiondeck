@@ -1,28 +1,94 @@
 "use client";
 
+import { motion } from "framer-motion";
 import FACSRealtimeOverlay from "../../components/FACS/FACSRealtimeOverlay";
-
+import { baseButtonStyle } from "../../styles/buttonStyle.js";
 
 export default function LearnFACSPage() {
   return (
-    <main className="min-h-screen bg-neutral-900 text-gray-300 py-16">
-      <section className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-white mb-3">
-          Learn & Grow - Facial Action Coding System (FACS)
-        </h1>
-        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-          Discover how your face expresses emotions in real time.  
-          The FACS system reveals which muscles activate during each emotion.
-        </p>
-      </section>
+    <main className="learn-facs-page">
+      {/* HEADER */}
+      <motion.h1
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="learn-facs-title"
+      >
+        Facial Action Coding System (FACS)
+      </motion.h1>
 
-      <FACSRealtimeOverlay />
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="learn-facs-highlight"
+      >
+        See How Your Face Reflects Emotion in Real Time and Motion as FACS
+        Reveals The Muscles Behind Each Feeling.
+      </motion.p>
 
-      <section className="mt-16 text-center text-gray-300 text-sm">
+      <p className="learn-facs-intro">
+        The FACS Analyzer identifies Action Units (AUs) in real time, capturing
+        subtle facial movements that express emotional states. Watch how your
+        microexpressions become data, helping you understand emotion through
+        science.
+      </p>
+
+      {/* MAIN CARD */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="learn-facs-section"
+      >
+        <div className="learn-facs-card">
+          {/* FACS Realtime Overlay */}
+          <div className="learn-facs-overlay">
+            <FACSRealtimeOverlay />
+          </div>
+
+          {/* Info Text */}
+          <p className="learn-facs-description">
+            The system analyses your facial expressions in real time and detects
+            Action Units (AUs), measurable muscle activations defined by the
+            Facial Action Coding System. Each AU corresponds to an emotion or
+            subtle affective signal.
+          </p>
+        </div>
+      </motion.section>
+
+      {/* FOOTER */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="learn-facs-footer"
+      >
         <p>
-          Learn how emotions move the human face - part of EmotionDeck Learn & Grow.
+          Want to continue learning?{" "}
+          <a href="/learn/quizzes">
+            <br />
+            Try EmotionDeck Quizzes
+          </a>
         </p>
-      </section>
+      </motion.div>
+
+      {/* BACK BUTTON */}
+      <div className="learn-facs-backwrap">
+        <a
+          href="/learn/"
+          onMouseEnter={(e) => (e.target.style.backgroundColor = "#34D399")}
+          onMouseLeave={(e) => (e.target.style.backgroundColor = "#10B981")}
+          style={{
+            ...baseButtonStyle(false),
+            backgroundColor: "#10B981",
+            color: "#fff",
+            cursor: "pointer",
+          }}
+        >
+          Back
+        </a>
+      </div>
     </main>
   );
 }

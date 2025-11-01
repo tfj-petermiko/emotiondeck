@@ -1,0 +1,76 @@
+{
+  "page_title": "EmotionDeck Quizzes",
+  "page_intro": "Discover Genuine Emotions Through AI Portraits and Deepen Your Emotional Awareness.",
+
+  "quizzes": [
+    {
+      "id": "quiz-1",
+      "title": "Recognise the Emotion (Quiz 1)",
+      "subtitle": "Identify emotions from portraits based on the Free Basic Collection",
+      "paragraph_bold": "How well can you recognise emotions?",
+      "paragraph_1": "In this quiz you will explore portraits from the EmotionDeck Free Basic Collection. Your task is to choose which emotion you believe each portrait expresses.",
+      "paragraph_2": "Each question offers four possible emotions to select from. The portraits reflect genuine diversity in culture and age, allowing you to understand how emotions appear across humanity.",
+      "focus": "Emotion recognition, visual empathy, cross-cultural understanding",
+      "questions": "10 randomised questions with 4 options each",
+      "emotions_used": "Joy, Calmness, Compassion, Anger, Sadness, Surprise, Disgust, Fear, Trust, Anticipation, Pride, Love, Relief, Contempt, Boredom, Confusion, Interest, Determination, Shame, Hope, Guilt, Serenity, Anxiety, Curiosity",
+      "access": "Free Part of EmotionDeck Learn",
+      "image": "/private_images/images/quiz-1.webp",
+      "image_caption": "EmotionDeck Quiz 1 Recognise the Emotion",
+      "button_text": "Start Quiz 1",
+      "path": "/learn/quizzes/quiz-1"
+    },
+    {
+      "id": "quiz-2",
+      "title": "Recognise the Emotion (Quiz 2)",
+      "subtitle": "Identify emotions from the Advanced Emotional Expressions Collection",
+      "paragraph_bold": "How deep is your emotional intuition?",
+      "paragraph_1": "In this second interactive quiz you will explore emotions from EmotionDeck Phase 2 Advanced Emotional Expressions. Emotions such as Anxiety, Nostalgia, Confidence, and Tranquillity appear through different cultures and age groups.",
+      "paragraph_2": "Select the emotion that best represents each portrait. The challenge increases as the expressions become subtler and more complex, revealing the depth of human emotion.",
+      "focus": "Advanced emotion recognition, subtle expressions, psychological insight",
+      "questions": "10 randomised questions with 4 emotion choices",
+      "emotions_used": "Anxiety, Nostalgia, Confidence, Tension, Empathy, Desire, Awe, Fatigue, Positive Surprise, Negative Surprise, Contemplation, Euphoria, Irritation, Tranquillity, Guilt, Jealousy, Gratitude, Excitement, Affection, Disbelief, Inspiration, Longing, Disappointment, Neutral",
+      "access": "Free Part of EmotionDeck Learn",
+      "image": "/private_images/images/quiz-2.webp",
+      "image_caption": "EmotionDeck Quiz 2 Advanced Emotional Expressions",
+      "button_text": "Start Quiz 2",
+      "path": "/learn/quizzes/quiz-2"
+    },
+    {
+      "id": "quiz-3",
+      "title": "Recognise the Emotion (Quiz 3)",
+      "subtitle": "Identify emotions from the EmotionDeck Phase 3 Young Adults Collection",
+      "paragraph_bold": "How well can you read the emotions of the next generation?",
+      "paragraph_1": "This third quiz takes you into EmotionDeck Phase 3 Young Adults where emotions are vivid, expressive, and full of curiosity and determination. You will encounter feelings such as Joy, Anger, Fear, and Sadness represented through diverse faces and cultures.",
+      "paragraph_2": "Each portrait captures emotional realism in high-resolution black and white. Test your perception and see how accurately you can recognise each feeling.",
+      "focus": "Emotion recognition in young adults expressive, curious, and evolving",
+      "questions": "10 randomised questions with 4 emotion choices",
+      "emotions_used": "Joy, Anger, Fear, Sadness, Surprise, Disgust, Love, Pride, Confusion, Hope, Trust, Curiosity, Desire, Nostalgia, Anxiety, Excitement, Determination, Compassion, Tranquillity, Guilt, Contempt, Inspiration, Affection, Disbelief",
+      "access": "Free Part of EmotionDeck Learn",
+      "image": "/private_images/images/quiz-3.webp",
+      "image_caption": "EmotionDeck Quiz 3 Young Adults Phase 3",
+      "button_text": "Start Quiz 3",
+      "path": "/learn/quizzes/quiz-3"
+    },
+    {
+      "id": "quiz-4",
+      "title": "Recognise the Emotion (Quiz 4)",
+      "subtitle": "Explore 120 emotions across 10 global categories the ultimate EmotionDeck Learn experience",
+      "paragraph_bold": "The full emotional atlas in one interactive quiz.",
+      "paragraph_1": "This fourth quiz introduces the EmotionDeck Learn Spectrum combining 10 global emotional categories and 120 portraits. Each emotion reflects the richness of expression across cultures, genders, and age groups forming a global emotional atlas.",
+      "paragraph_2": "Recognise the emotion shown in each portrait and test your ability to perceive feelings across humanity. This experience connects empathy, culture, and psychology through immersive visual learning.",
+      "focus": "Emotional intelligence, cross-cultural empathy, and advanced emotion recognition",
+      "questions": "10 randomised questions with 4 emotion choices",
+      "emotions_used": "120 total emotions grouped into 10 main categories: Joy & Vitality, Calm & Harmony, Empathy & Connection, Curiosity & Wonder, Confidence & Power, Sadness & Reflection, Fear & Vulnerability, Anger & Resistance, Surprise & Transition, Acceptance & Transcendence.",
+      "access": "Free Part of EmotionDeck Learn",
+      "image": "/private_images/images/quiz-4.webp",
+      "image_caption": "EmotionDeck Quiz 4 Global Emotional Spectrum",
+      "button_text": "Start Quiz 4",
+      "path": "/learn/quizzes/quiz-4"
+    }
+  ],
+
+  "back_button": {
+    "text": "Back",
+    "target": "/learn"
+  }
+}

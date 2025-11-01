@@ -40,6 +40,12 @@ export const metadata = {
       "Challenge your perception with EmotionDeck Quiz 1 - recognise emotions in portraits and discover how people express feelings across cultures.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Quiz1Layout({ children }) {

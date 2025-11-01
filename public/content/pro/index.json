@@ -1,0 +1,47 @@
+{
+  "page_title": "EmotionDeck PRO Collection 🔒",
+  "page_intro": "Explore The Deeper Side of Emotion with EmotionDeck PRO, Where Contrast and Subtlety Reveal The Unseen.",
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "Dark Spectrum Part I",
+      "subtitle": "The Shadow Side of Human Emotion",
+"description": "This collection explores the hidden dimensions of emotion that shape the complexity of the human psyche. It reveals moments of tension, irony, sorrow and redemption, expressed through a silent language of transformation. Each portrait captures a psychological narrative in fine detail, where subtle microexpressions become windows into truth. Presented in timeless monochrome, Dark Spectrum Part I unites art and psychology, demonstrating that within darkness there is always clarity, resilience and meaning. Created for professionals in research, education and visual training, it invites the observer to contemplate the fragile boundary between control and vulnerability, where emotion emerges as the most authentic form of honesty.",
+"image": "/private_images/pro/phase_1/DarkSpectrum_DeceptionMasks_Cunning_SouthAsian_YoungAdult_Female.webp",
+
+      "caption": "Cunning SouthAsian YoungAdult Female",
+      "price": "4.99",
+      "button_label": "Unlock via PayPal 🔓",
+      "total_portraits": "48 black and white emotional portraits",
+      "subcategories": {
+        "Deception Masks": "Cunning, Cynicism, Duplicity, Facade, Hypocrisy, Irony, Mockery, Sarcasm",
+        "Hidden States": "Apathy, Calculation, Coldness, Containment, Detachment, Indifference, Numbness, Restraint",
+        "Inner Conflict": "Guilt, Hopelessness, Insecurity, Regret, Remorse, Resentment, Self Doubt, Shame",
+        "Pain and Loss": "Abandonment, Betrayal, Bitterness, Despair, Fear Resigned, Loneliness, Melancholy, Sorrow",
+        "Power and Control": "Arrogance, Contempt, Control, Dominance, Intimidation, Manipulation, Pride Corrupted, Superiority",
+        "Reflection and Redemption": "Acceptance of Flaws, Catharsis, Darkness Within, Disillusionment, Forgiving Self, Redemption, Regretful Pride, Sorrowed Wisdom"
+      },
+      "cultural_diversity": "European, African, East Asian, South Asian, Middle Eastern, Latin American, Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, North American.",
+      "demographics": "3 age groups × 2 genders, balanced representation",
+      "resolution": "1024 × 1536, high definition monochrome format",
+      "lighting_style": "Neutral grey background, soft lighting, identical framing and shirt style"
+    },
+    {
+      "id": "phase-2",
+      "title": "Dark Spectrum Part II",
+      "subtitle": "Descent, Collapse and Emotional Rebirth",
+"description": "Dark Spectrum Part II deepens the journey into the shadowed dimensions of human emotion. Each portrait reveals the silent fracture between despair and endurance, portraying how the mind reconstructs itself in moments of collapse. Through the subtle language of microexpression and the purity of monochrome composition, this collection evokes the essence of loss, rage, dread and the quiet rebirth that follows. It stands as a meditation on moral suffering, inner confrontation and the slow transformation of the soul. Created for professionals, educators and emotional researchers, it illuminates the delicate balance between destruction and renewal, showing emotion as the act of surviving darkness with grace and awareness.",
+"image": "/private_images/pro/phase_2/DarkSpectrum2_Despair_MiddleEastern_MatureAdult_Male.webp",
+
+      "caption": "Despair MiddleEastern MatureAdult Male",
+      "price": "4.99",
+      "button_label": "Unlock via PayPal 🔓",
+      "total_portraits": "48 black and white emotional portraits",
+      "emotions": "Abandonment, Aging, Anxiety, Betrayal, Bitterness, Claustrophobia, Collapse, Contempt, Cruelty, Death Acceptance, Decay, Deception, Despair, Destruction, Detachment, Disconnection, Disintegration, Dominance, Dread, Emptiness, Estrangement, Fatalism, Fury, Grief, Guilt, Hatred, Horror, Isolation, Loneliness, Loss, Moral Pain, Mourning, Narcissism, Neglect, Nihilism, Numbness, Obsession, Panic, Paranoia, Powerlessness, Regret, Rejection, Remorse, Repression, Resentment, Self Disgust, Shame, Sorrow.",
+      "cultural_diversity": "European, African, East Asian, South Asian, Middle Eastern, Latin American, Pacific Islander, Central Asian, Native American, Australian Aboriginal, Arctic, North American.",
+      "demographics": "One portrait per emotion, diverse regional, age and gender representation",
+      "resolution": "1024 × 1536, high definition monochrome format",
+      "lighting_style": "Soft neutral lighting, consistent grey background, unified portrait framing"
+    }
+  ]
+}

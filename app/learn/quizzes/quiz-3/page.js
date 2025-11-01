@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import baseButtonStyle from "../../../styles/buttonStyleA.js";
 
 export default function EmotionQuiz3() {
   const [questions, setQuestions] = useState([]);
@@ -14,24 +15,6 @@ export default function EmotionQuiz3() {
   const [hoveredPlay, setHoveredPlay] = useState(false);
   const [loadingPlay, setLoadingPlay] = useState(false);
 
-  // 🎨 Button base style
-  const baseButtonStyle = {
-    padding: "10px 22px",
-    borderRadius: "0.75rem",
-    fontWeight: 600,
-    fontSize: "0.95rem",
-    border: "none",
-    transition: "all 0.3s ease",
-    boxShadow: "0 0 12px rgba(16,185,129,0.2)",
-  };
-
-  const baseGreen = "#10B981";
-  const hoverGreen = "#34D399";
-  const disabledGray = "#374151";
-  const correctGreen = "#34D399";
-  const wrongRed = "#F87171";
-
-  // 🧠 All emotions from Phase 3 - Young Adults Collection
   const allEmotions = [
     "Joy", "Anger", "Fear", "Sadness", "Surprise", "Disgust", "Love",
     "Pride", "Confusion", "Hope", "Trust", "Curiosity", "Desire",
@@ -40,20 +23,16 @@ export default function EmotionQuiz3() {
     "Affection", "Disbelief",
   ];
 
-  // 🎲 Random question generator
   useEffect(() => {
     const selected = [];
     const used = new Set();
 
     while (selected.length < 10) {
-      const emotion =
-        allEmotions[Math.floor(Math.random() * allEmotions.length)];
+      const emotion = allEmotions[Math.floor(Math.random() * allEmotions.length)];
       if (used.has(emotion)) continue;
 
       const region = ["European", "African", "EastAsian"][Math.floor(Math.random() * 3)];
       const gender = ["Male", "Female"][Math.floor(Math.random() * 2)];
-
-      // ✅ Correct path for Phase 3 .webp images
       const file = `/private_images/free/phase_3/${emotion}_YoungAdult_${region}_${gender}.webp`;
 
       const incorrect = allEmotions
@@ -72,7 +51,6 @@ export default function EmotionQuiz3() {
   if (questions.length === 0) return null;
   const current = questions[index];
 
-  // 🧩 Answer logic
   function handleAnswer(choice) {
     if (selected) return;
     setSelected(choice);
@@ -94,146 +72,134 @@ export default function EmotionQuiz3() {
     }, 1000);
   }
 
-  // 🔄 Restart
   function restartQuiz() {
     setLoadingPlay(true);
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
+    setTimeout(() => window.location.reload(), 500);
   }
 
-  // ============================================
-  // 🧠 MAIN COMPONENT
-  // ============================================
   return (
-    <main className="min-h-screen bg-neutral-900 text-gray-200 py-16 flex flex-col items-center">
-      <h1 className="text-4xl font-bold mb-6 text-white text-center">
-        🎓 EmotionDeck Quiz 3 - Recognise the Emotion (Young Adults - Phase 3)
-      </h1>
-      <p className="text-gray-400 mb-8 text-center max-w-lg">
-        Observe each black and white portrait carefully and choose the correct emotion from the options below.
-      </p>
+    <main className="ed-quiz-page">
+      {/* HEADER */}
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="ed-quiz-title text-center"
+      >
+        EmotionDeck Quiz <br />
+        Recognise the Emotion – Phase 3
+      </motion.h1>
 
-      {!finished ? (
-        <div className="text-center">
-          {/* 🖼️ Emotion Image */}
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="relative w-[300px] h-[400px] mx-auto mb-6 rounded-2xl overflow-hidden border border-gray-700"
-          >
-            <Image
-              src={current.image}
-              alt={current.correct}
-              fill
-              className="object-cover"
-              priority
-            />
-          </motion.div>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="ed-quiz-subtitle text-center"
+      >
+        Observe Each Portrait Carefully and Select The Matching Emotion Below.
+      </motion.p>
 
-          {/* 🧩 Four options */}
-          <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
-            {current.options.map((opt) => {
-              const isCorrect = opt === current.correct;
-              const isSelected = selected === opt;
-
-              let backgroundColor = baseGreen;
-              let textColor = "#fff";
-
-              if (selected) {
-                if (isSelected && isCorrect) {
-                  backgroundColor = correctGreen;
-                  textColor = "#000";
-                } else if (isSelected && !isCorrect) {
-                  backgroundColor = wrongRed;
-                  textColor = "#000";
-                } else {
-                  backgroundColor = disabledGray;
-                  textColor = "#888";
-                }
-              }
-
-              return (
-                <motion.button
-                  key={opt}
-                  whileTap={{ scale: 0.9 }}
-                  onClick={() => handleAnswer(opt)}
-                  className="px-4 py-2 rounded-lg font-medium border border-gray-700 transition-all duration-200"
-                  style={{
-                    backgroundColor,
-                    color: textColor,
-                    boxShadow: "0 0 12px rgba(16,185,129,0.2)",
-                    cursor: selected ? "default" : "pointer",
-                  }}
-                >
-                  {opt}
-                </motion.button>
-              );
-            })}
-          </div>
-
-          {/* Feedback */}
-          {feedback && (
-            <motion.p
-              key={feedback}
+      {/* QUIZ CARD */}
+      <section key={index} className="ed-quiz-card mt-12">
+        {!finished ? (
+          <div className="text-center px-8 pb-8 pt-6">
+            {/* IMAGE */}
+            <motion.div
+              key={index}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className={`mt-4 text-lg font-semibold ${
-                feedback.includes("Correct")
-                  ? "text-emerald-400"
-                  : "text-red-400"
-              }`}
+              transition={{ duration: 0.5 }}
+              className="relative w-[320px] h-[420px] mx-auto mb-6 rounded-2xl overflow-hidden"
             >
-              {feedback}
-            </motion.p>
-          )}
+              <Image
+                src={current.image}
+                alt={current.correct}
+                fill
+                className="object-cover"
+                priority
+              />
+            </motion.div>
 
-          <p className="mt-4 text-gray-300">
-            Question {index + 1} of {questions.length}
-          </p>
-        </div>
-      ) : (
-        // 🏁 Results
-        <div className="text-center">
-          <h2 className="text-3xl font-semibold text-white mb-4">
-            Your score: {score} / {questions.length}
-          </h2><br />
-          <p className="text-gray-300 mb-8">
-            Great work! You’ve completed the Young Adults - Phase 3 emotion recognition quiz.
-          </p><br />
+            {/* OPTIONS */}
+            <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
+              {current.options.map((opt) => {
+                const isCorrect = opt === current.correct;
+                const isSelected = selected === opt;
 
-          <button
-            onClick={restartQuiz}
-            disabled={loadingPlay}
-            onMouseEnter={() => setHoveredPlay(true)}
-            onMouseLeave={() => setHoveredPlay(false)}
-            style={{
-              ...baseButtonStyle,
-              backgroundColor: loadingPlay
-                ? "#374151"
-                : hoveredPlay
-                ? "#34D399"
-                : "#10B981",
-              color: "#fff",
-              cursor: loadingPlay ? "not-allowed" : "pointer",
-            }}
-          >
-            {loadingPlay ? "Loading..." : "Play Again"}
-          </button>
-        </div>
-      )}
+                return (
+                  <button
+                    key={opt}
+                    onClick={() => handleAnswer(opt)}
+                    onMouseEnter={() => setHoveredPlay(opt)}
+                    onMouseLeave={() => setHoveredPlay(null)}
+                    className="px-4 py-2 rounded-lg font-medium transition-all duration-200"
+                    style={baseButtonStyle({
+                      hovered: hoveredPlay === opt && !selected,
+                      disabled: !!selected,
+                      correct: selected && isSelected && isCorrect,
+                      wrong: selected && isSelected && !isCorrect,
+                    })}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
 
-       {/* 🌿 Footer link */}
-      <div className="mt-16 text-center text-gray-300 text-sm">
+            {/* FEEDBACK */}
+            {feedback && (
+              <p
+                key={feedback}
+                className={`mt-4 text-lg font-semibold ${
+                  feedback.includes("Correct") ? "text-emerald-400" : "text-red-400"
+                }`}
+              >
+                {feedback}
+              </p>
+            )}
+
+            <p className="mt-4 text-gray-300">
+              Question {index + 1} of {questions.length}
+            </p>
+          </div>
+        ) : (
+          <div className="text-center px-8 pb-8 pt-6">
+            <h2 className="text-3xl font-semibold text-white mb-4">
+              Your score: {score} / {questions.length}
+            </h2>
+            <p className="text-gray-300 mb-8">
+              Great work! You’ve completed the Young Adults – Phase 3 recognition quiz.
+            </p>
+
+            <button
+              onClick={restartQuiz}
+              disabled={loadingPlay}
+              onMouseEnter={() => setHoveredPlay(true)}
+              onMouseLeave={() => setHoveredPlay(false)}
+              style={{
+                ...baseButtonStyle({
+                  hovered: hoveredPlay && !loadingPlay,
+                  disabled: loadingPlay,
+                }),
+                marginTop: "1.5rem",
+                minWidth: "160px",
+              }}
+            >
+              {loadingPlay ? "Loading..." : "Play Again"}
+            </button>
+          </div>
+        )}
+      </section>
+
+      {/* FOOTER */}
+      <div className="ed-quiz-footer">
         <p>
           Want to continue learning?{" "}
           <a
             href="/learn/quizzes"
-            className="text-emerald-400 hover:text-emerald-300 font-medium transition"
+            className="text-emerald-400 hover:text-emerald-300 font-semibold transition"
           >
-            Try more EmotionDeck Quizzes →
+            <br />Try more EmotionDeck Quizzes
           </a>
         </p>
       </div>

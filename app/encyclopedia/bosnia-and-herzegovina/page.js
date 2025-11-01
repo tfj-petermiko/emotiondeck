@@ -1,8 +1,16 @@
-
-import countryData from "../../content/countries/bosnia_and_herzegovina.json";
+import fs from "fs";
+import path from "path";
 import CountryPageTemplate from "../../components/encyclopedia/CountryPageTemplate";
 import { baseButtonStyle } from "../../styles/buttonStyle";
 
-export default function BosniaandHerzegovinaPage() {
+export default function BosniaAndHerzegovinaPage() {
+  const filePath = path.join(
+    process.cwd(),
+    "public/content/encyclopedia/countries/bosnia_and_herzegovina.json"
+  );
+
+  const jsonData = fs.readFileSync(filePath, "utf8");
+  const countryData = JSON.parse(jsonData);
+
   return <CountryPageTemplate data={countryData} />;
 }

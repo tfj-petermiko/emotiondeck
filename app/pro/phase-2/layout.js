@@ -42,6 +42,11 @@ export const metadata = {
       "https://emotiondeck.com/preview.jpg",
     ],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase2Layout({ children }) {

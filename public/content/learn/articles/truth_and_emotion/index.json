@@ -1,0 +1,46 @@
+{
+  "page_title": "Truth and Emotion",
+  "page_intro": "Within Emotion Lies the Hidden Truth Beneath Words, Where Authenticity and Awareness Shape the Subtle Language of Feeling.",
+  "articles": [
+    {
+
+      "slug": "emotional-authenticity",
+      "title": "Emotional Authenticity",
+      "subtitle": "The courage to express truth through emotion.",
+      "main_paragraph_bold": "Authenticity begins when emotion aligns with truth.",
+      "paragraph_1": "This article explores how expressing real emotion builds trust and emotional connection, both in personal and professional life.",
+      "paragraph_2": "It reflects on how recognising true emotion beneath social masks enhances empathy and self understanding.",
+      "focus": "authenticity emotion empathy truth self awareness psychology",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Emotional Authenticity",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "hidden-emotions",
+      "title": "Hidden Emotions and the Face",
+      "subtitle": "Revealing suppressed truth through microexpressions.",
+      "main_paragraph_bold": "Even the smallest movement can expose hidden emotion.",
+      "paragraph_1": "This article discusses Ekman’s research on microexpressions as involuntary signals of concealed emotions.",
+      "paragraph_2": "Learning to observe these cues helps distinguish sincerity from suppression, deepening awareness and empathy.",
+      "focus": "Ekman microexpressions hidden emotion psychology facial cues empathy",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Hidden Emotions and the Face",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "truth-in-communication",
+      "title": "Truth in Communication",
+      "subtitle": "How emotion reveals what words conceal.",
+      "main_paragraph_bold": "Truth is felt before it is spoken.",
+      "paragraph_1": "This article explores how tone, rhythm and expression reveal emotional truth even when words hide it.",
+      "paragraph_2": "By becoming sensitive to emotional signals, communication becomes more authentic, fostering understanding and trust.",
+      "focus": "truth communication emotion empathy nonverbal cues authenticity",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Truth in Communication",
+      "button_text": "Read Article"
+    }
+  ]
+}

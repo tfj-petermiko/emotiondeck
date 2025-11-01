@@ -1,0 +1,49 @@
+{
+  "hero_title": "Train Your Perception. See. Feel. Understand.",
+  "hero_description": "EmotionDeck Helps You Perceive and Understand Human Emotion Through Subtle Expression, Mindful Observation, and Guided Visual Learning.",
+  "hero_subtext": "Explore 1000+ Emotional Expressions Designed for Personal Growth, Professional Training, and Research.",
+  "hero_image": "/private_images/images/hero_emotiondeck.webp",
+
+  "hero_paragraph1": "EmotionDeck Helps You Perceive and Understand Human Emotion Through Subtle Expression, Mindful Observation, and Guided Visual Learning.",
+  "hero_paragraph2": "Explore 1000+ Emotional Expressions Designed for Personal Growth, Professional Training, and Research.",
+
+  "gallery_title": "Explore the Spectrum of Emotion",
+  "gallery_text": "Each Portrait Reveals an Emotion Expressed Through Age, Culture, and Identity. Observe the Nuances, the Energy, and the Beauty of Feeling.",
+
+  "gallery": [
+    {
+      "emotion": "Joy",
+      "image": "/private_images/images/joy.webp"
+    },
+    {
+      "emotion": "Desire",
+      "image": "/private_images/images/desire.webp"
+    },
+    {
+      "emotion": "Hope",
+      "image": "/private_images/images/hope.webp"
+    },
+    {
+      "emotion": "Excitement",
+      "image": "/private_images/images/excitement.webp"
+    },
+    {
+      "emotion": "Surprise",
+      "image": "/private_images/images/surprise.webp"
+    },
+    {
+      "emotion": "Love",
+      "image": "/private_images/images/love.webp"
+    }
+  ],
+
+  "pro_section_title": "Experience the PRO Collection",
+  "pro_section_text": "Discover Complex Human Emotions Across Regions, Ages, and Genders. Ideal for Professionals, Educators, Law Enforcement, Investigators, and Emotional Research.",
+
+  "pro_title": "Experience the PRO Collection",
+  "pro_description": "Discover Complex Human Emotions Across Regions, Ages, and Genders. Ideal for Professionals, Educators, Law Enforcement, Investigators, and Emotional Research.",
+  "pro_note": "Explore the EmotionDeck Encyclopedia Inspired by Jungian Archetypes.",
+
+  "call_to_action": "Explore the EmotionDeck Encyclopedia",
+  "call_to_action_link": "/encyclopedia"
+}

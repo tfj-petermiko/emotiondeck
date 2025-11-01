@@ -5,16 +5,14 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// 🌍 Base URL of your website
+// 🌍 Base URL
 const baseUrl = process.env.BASE_URL || "https://emotiondeck.com";
 
-// 📁 App directory to scan
+// 📁 Directories
 const appDir = path.join(process.cwd(), "app");
-
-// 📄 Output file
 const output = path.join(process.cwd(), "public", "sitemap.xml");
 
-// 🚫 Excluded (non-public) routes
+// 🚫 Excluded routes
 const excludedRoutes = [
   "/ai-generator/checkout",
   "/ai-generator/thank-you",
@@ -27,7 +25,12 @@ const excludedRoutes = [
   "/page.js",
 ];
 
-// 🔍 Recursive scan of app/ directory to find all page.js or page.jsx files
+// 🕒 Timestamp of script execution
+const runTimestamp = new Date();
+const runISO = runTimestamp.toISOString();
+console.log(`🕒 Sitemap generation started at: ${runISO}`);
+
+// 🔍 Recursive scan
 function getAllRoutes(dir, parentPath = "") {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   let routes = [];
@@ -43,36 +46,33 @@ function getAllRoutes(dir, parentPath = "") {
         .replace(/\\/g, "/")
         .replace(/\/page\.jsx?$/, "")
         .replace(/index$/, "");
-
       routes.push(url === "" ? "/" : `/${url}`);
     }
   }
-
   return routes;
 }
 
-// 🧩 Collect and clean routes
+// 🧩 Collect routes
 let allRoutes = getAllRoutes(appDir);
-
 const uniqueRoutes = [...new Set(allRoutes)]
   .filter((route) => !excludedRoutes.includes(route))
   .sort();
 
-// ✅ Always include homepage
 if (!uniqueRoutes.includes("/")) uniqueRoutes.unshift("/");
 
-// 🕓 Get last modified date of each page
+// 🕓 Get last modified date or fallback to run time
 function getLastModified(route) {
   const filePath = path.join(appDir, route, "page.js");
   try {
     const stats = fs.statSync(filePath);
-    return stats.mtime.toISOString();
+    // If the file was modified before the current run, use script time for freshness
+    return stats.mtime > runTimestamp ? stats.mtime.toISOString() : runISO;
   } catch {
-    return new Date().toISOString();
+    return runISO;
   }
 }
 
-// 🧭 Priority logic (SEO-optimised)
+// 🧭 Priority logic
 function getPriority(route) {
   if (route === "/") return "1.0";
   if (
@@ -85,7 +85,7 @@ function getPriority(route) {
   return "0.7";
 }
 
-// 🧾 Generate XML sitemap content
+// 🧾 Generate sitemap
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${uniqueRoutes
@@ -104,12 +104,14 @@ ${uniqueRoutes
   .join("\n")}
 </urlset>`;
 
-// 💾 Write the XML file
+// 💾 Write file
 fs.writeFileSync(output, sitemap);
 
 console.log("==============================================");
 console.log("✅ EmotionDeck Sitemap successfully generated!");
 console.log(`🌍 Total routes: ${uniqueRoutes.length}`);
+console.log(`🕓 Run timestamp used as freshness marker: ${runISO}`);
 console.log(`📦 Output file: ${output}`);
 console.log("==============================================");
-if (uniqueRoutes.includes("/")) console.log("🏠 Added homepage: https://emotiondeck.com/");
+if (uniqueRoutes.includes("/"))
+  console.log("🏠 Added homepage: https://emotiondeck.com/");

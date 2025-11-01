@@ -1,0 +1,46 @@
+{
+  "page_title": "Individuation and Wholeness",
+  "page_intro": "When Self Awareness Unites Emotion and Reason through Jung’s Path of Integration toward Balance and Inner Harmony.",
+  "articles": [
+    {
+
+      "slug": "path-to-integration",
+      "title": "The Path to Integration",
+      "subtitle": "How self awareness unites emotion and reason.",
+      "main_paragraph_bold": "Individuation is the journey of integrating every part of the self into harmony.",
+      "paragraph_1": "This article explores Jung’s idea of individuation as the process of reconciling opposites within the psyche, turning conflict into balance.",
+      "paragraph_2": "It shows how emotional awareness transforms inner division into unity, leading to authenticity and stability.",
+      "focus": "individuation integration balance Jungian psychology emotional awareness",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Path to Integration",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "wholeness-of-being",
+      "title": "The Wholeness of Being",
+      "subtitle": "Understanding self development through emotional unity.",
+      "main_paragraph_bold": "Wholeness arises when every emotion finds its place in the self.",
+      "paragraph_1": "This article explains how the conscious and unconscious mind communicate through emotion, guiding the path toward maturity and balance.",
+      "paragraph_2": "It shows how recognising emotions without judgement leads to acceptance and psychological wholeness.",
+      "focus": "emotional wholeness Jung self development acceptance balance",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Wholeness of Being",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "unity-of-opposites",
+      "title": "The Unity of Opposites",
+      "subtitle": "Balancing conflict and harmony in the emotional self.",
+      "main_paragraph_bold": "The psyche seeks balance between light and shadow, emotion and thought.",
+      "paragraph_1": "This article explores how inner tension leads to integration when both positive and negative emotions are embraced as part of the whole self.",
+      "paragraph_2": "It illustrates how emotional conflict, once understood, becomes the foundation of personal strength and resilience.",
+      "focus": "unity of opposites Jung shadow integration emotional resilience",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Unity of Opposites",
+      "button_text": "Read Article"
+    }
+  ]
+}

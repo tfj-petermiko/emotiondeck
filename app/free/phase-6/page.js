@@ -1,13 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
 import ImageModal from "../../components/ImageModal";
-import { baseButtonStyle } from "../../styles/buttonStyle"; // ✅ global shared button style
+import { baseButtonStyle } from "../../styles/buttonStyle.js";
+import "../../styles/freeCollection.css";
 
-export default function ProCollectionPhase6() {
-  // 🌍 Regions and ages (gender not used as a filter)
+export default function FreeCollectionPhase6() {
+  const [content, setContent] = useState(null);
+  const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
+  const [selectedEmotion, setSelectedEmotion] = useState("Delight");
+  const [selectedAge, setSelectedAge] = useState("All");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState(false);
+
   const regions = [
     "European",
     "African",
@@ -20,7 +27,7 @@ export default function ProCollectionPhase6() {
     "NativeAmerican",
     "AustralianAboriginal",
     "Arctic",
-    "NorthAmerican",
+    "NorthAmerican"
   ];
 
   const ages = [
@@ -33,151 +40,133 @@ export default function ProCollectionPhase6() {
     "Adult",
     "MatureAdult",
     "Senior",
-    "Elderly",
+    "Elderly"
   ];
 
-  // Default selection (start from SouthAsian)
-  const [selectedRegion, setSelectedRegion] = useState("SouthAsian");
-  const [selectedAge, setSelectedAge] = useState("All");
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [hovered, setHovered] = useState(false);
+  // region → emotion
+const emotionRegionMap = {
+  European: "Joy",
+  African: "Joy",
+  EastAsian: "Serenity",
+  SouthAsian: "Delight",
+  MiddleEastern: "Pride",
+  LatinAmerican: "Love",
+  PacificIslander: "Gratitude",
+  CentralAsian: "Love",
+  NativeAmerican: "Love",
+  AustralianAboriginal: "Calmness",
+  Arctic: "Calmness",
+  NorthAmerican: "Pride"
+};
 
-  // 🧩 Real dataset (based on actual file structure)
-  const realImages = [
-    ...ages.map((age) => ({
-      emotion: "Joy",
-      region: "European",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Joy_European_${age}_Female.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Serenity",
-      region: "EastAsian",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Serenity_EastAsian_${age}_Female.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Pride",
-      region: "MiddleEastern",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Pride_MiddleEastern_${age}_Female.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Love",
-      region: "LatinAmerican",
-      gender: "Male",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Love_LatinAmerican_${age}_Male.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Gratitude",
-      region: "PacificIslander",
-      gender: "Male",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Gratitude_PacificIslander_${age}_Male.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Calmness",
-      region: "Arctic",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Calmness_Arctic_${age}_Female.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Joy",
-      region: "African",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Joy_African_${age}_Female.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Pride",
-      region: "NorthAmerican",
-      gender: "Male",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Pride_NorthAmerican_${age}_Male.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Love",
-      region: "CentralAsian",
-      gender: "Male",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Love_CentralAsian_${age}_Male.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Love",
-      region: "NativeAmerican",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Love_NativeAmerican_${age}_Female.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Calmness",
-      region: "AustralianAboriginal",
-      gender: "Male",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Calmness_AustralianAboriginal_${age}_Male.webp`,
-    })),
-    ...ages.map((age) => ({
-      emotion: "Delight",
-      region: "SouthAsian",
-      gender: "Female",
-      age,
-      src: `/private_images/free/phase_6/Evolution_Delight_SouthAsian_${age}_Female.webp`,
-    })),
-  ];
+  // region → gender
+  const genderRegionMap = {
+    European: "Female",
+    African: "Female",
+    EastAsian: "Female",
+    SouthAsian: "Female",
+    MiddleEastern: "Female",
+    LatinAmerican: "Male",
+    PacificIslander: "Male",
+    CentralAsian: "Male",
+    NativeAmerican: "Female",
+    AustralianAboriginal: "Male",
+    Arctic: "Female",
+    NorthAmerican: "Male"
+  };
 
-  // 🔎 Filter logic: region + age (supports "All")
-  const filtered = realImages.filter(
-    (img) =>
-      (selectedRegion === "All" || img.region === selectedRegion) &&
-      (selectedAge === "All" || img.age === selectedAge)
+  useEffect(() => {
+    async function loadHeader() {
+      try {
+        const res = await fetch("/content/free/phase_6/index.json");
+        const json = await res.json();
+        setContent(json);
+      } catch (err) {
+        console.error("Error loading header.json:", err);
+      }
+    }
+    loadHeader();
+  }, []);
+
+  // Update emotion automatically when region changes
+  useEffect(() => {
+    const emotion = emotionRegionMap[selectedRegion] || "Unknown";
+    setSelectedEmotion(emotion);
+  }, [selectedRegion]);
+
+  // Get gender based on selected region
+  const gender = genderRegionMap[selectedRegion] || "Female";
+
+  // Build image paths dynamically
+  const images = ages.map((age) => ({
+    emotion: selectedEmotion,
+    region: selectedRegion,
+    gender,
+    age,
+    src: `/private_images/free/phase_6/Evolution_${selectedEmotion}_${selectedRegion}_${age}_${gender}.webp`
+  }));
+
+  const filtered = images.filter(
+    (img) => selectedAge === "All" || img.age === selectedAge
   );
 
+  if (!content) return <main className="free-loading">Loading...</main>;
+
   return (
-    <main className="min-h-screen bg-neutral-900 text-white font-sans relative overflow-visible">
+    <main className="free-page">
       {/* 🧠 HEADER */}
-      <section className="text-center mt-20 px-6">
+      <section className="free-hero">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-6xl font-bold mb-4"
+          className="free-hero-title"
         >
-          EmotionDeck PRO - Phase 6: Evolution 🌍
+          {content.hero_title}
+          <br />
+          {content.hero_subtitle}
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto mb-8"
+          className="free-hero-paragraph-1"
         >
-          The Evolution Collection explores emotional growth across cultures and ages -  
-          from infancy to wisdom. A visual atlas of universal human emotion.
+          {content.hero_paragraph1}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+          className="free-hero-paragraph-2"
+        >
+          {content.hero_paragraph2}
         </motion.p>
       </section>
 
-      {/* 🎛 FILTERS */}
-      <section className="flex flex-wrap justify-center gap-4 mt-16 text-neutral-900">
+      {/* 🎚️ MENU */}
+      <section className="free-menu">
+        {/* Ethnicity / Region selector */}
         <select
           value={selectedRegion}
           onChange={(e) => setSelectedRegion(e.target.value)}
-          className="px-4 py-2 rounded-md bg-white text-sm"
         >
-          <option value="All">All Regions</option>
           {regions.map((region) => (
             <option key={region}>{region}</option>
           ))}
         </select>
 
+        {/* Emotion (locked) */}
+        <select value={selectedEmotion} disabled>
+          <option>{selectedEmotion}</option>
+        </select>
+
+        {/* Age selector */}
         <select
           value={selectedAge}
           onChange={(e) => setSelectedAge(e.target.value)}
-          className="px-4 py-2 rounded-md bg-white text-sm"
         >
           <option value="All">All Ages</option>
           {ages.map((age) => (
@@ -186,56 +175,68 @@ export default function ProCollectionPhase6() {
         </select>
       </section>
 
-      <br />
+      {/* 🖼️ GALLERY */}
+      <div className="free-gallery">
+        {filtered.map((img, index) => (
+          <motion.div
+            key={img.src}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.05 }}
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0 0 25px rgba(255,255,255,0.08)"
+            }}
+            className="free-card"
+            onClick={() => setSelectedImage(img.src)}
+          >
+            <Image
+              src={img.src}
+              alt={`${img.emotion} - ${img.region} (${img.age})`}
+              width={400}
+              height={600}
+              className="rounded-lg"
+              unoptimized
+              onError={() => console.warn("Missing:", img.src)}
+            />
+          </motion.div>
+        ))}
+      </div>
 
-      {/* 🖼 GALLERY */}
-      <section id="gallery" className="w-full mt-16">
-        <div className="gallery-grid">
-          {filtered.map((img) => (
-            <motion.div
-              key={img.src}
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.3 }}
-              className="overflow-hidden cursor-pointer"
-              onClick={() => setSelectedImage(img.src)}
-            >
-              <img
-                src={img.src}
-                alt={`${img.emotion} - ${img.region} (${img.age})`}
-                className="gallery-image"
-                loading="lazy"
-                onError={(e) => {
-                  console.warn("❌ Missing file:", e.target.src);
-                  e.target.style.display = "none";
-                }}
-              />
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      <ImageModal
+        imageSrc={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
 
-      {/* 🔍 IMAGE MODAL */}
-      <ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
+      {/* 📘 INFO SECTION */}
+      {content && (
+        <section className="free-info">
+          <h2 className="free-info-title">{content.info_title}</h2>
+          <p className="free-info-paragraph">{content.info_paragraph}</p>
+        </section>
+      )}
 
+      {/* 🧾 FOOTER */}
+      {content && content.footer_text && (
+        <div className="free-footer">{content.footer_text}</div>
+      )}
 
-{/* 🟢 RETURN BUTTON */}
-<div className="text-center mt-16 mb-20">
-  <button
-    onClick={() => {
-      window.location.href = "/free";
-    }}
-    onMouseEnter={() => setHovered(true)}
-    onMouseLeave={() => setHovered(false)}
-    style={baseButtonStyle(hovered)}
-    className="inline-block hover:scale-105 transition-transform"
-  >
-    ← Back
-  </button>
-</div>
-
-{/* 🔍 Global Image Modal */}
-<ImageModal imageSrc={selectedImage} onClose={() => setSelectedImage(null)} />
-
-</main>
-);
+      {/* 🟢 RETURN BUTTON */}
+      <div className="free-return">
+        <button
+          onClick={() => {
+            const currentPath = window.location.pathname;
+            const parentPath =
+              currentPath.substring(0, currentPath.lastIndexOf("/")) || "/";
+            window.location.href = parentPath;
+          }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          style={baseButtonStyle(hovered)}
+        >
+          Back
+        </button>
+      </div>
+    </main>
+  );
 }

@@ -40,6 +40,11 @@ export const metadata = {
       "EmotionDeck Phase 4 features 84 portraits of children aged 6–7 expressing core emotions - a resource for education, psychology, and empathy research.",
     images: ["https://emotiondeck.com/preview.jpg"],
   },
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Phase4Layout({ children }) {

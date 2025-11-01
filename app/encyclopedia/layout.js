@@ -8,15 +8,6 @@ export const metadata = {
   alternates: {
     canonical: "https://emotiondeck.com/encyclopedia",
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-    other: [
-      { rel: "android-chrome", url: "/android-chrome-192x192.png" },
-      { rel: "android-chrome", url: "/android-chrome-512x512.png" },
-    ],
-  },
   openGraph: {
     title: "EmotionDeck - The First Global Emotion Encyclopedia 🌍",
     description:
@@ -43,6 +34,6 @@ export const metadata = {
   },
 };
 
-export default function GlobalMapLayout({ children }) {
+export default function EncyclopediaLayout({ children }) {
   return <>{children}</>;
 }

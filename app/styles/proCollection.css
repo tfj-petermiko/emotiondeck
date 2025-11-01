@@ -1,0 +1,84 @@
+/* ===============================
+   EmotionDeck PRO Collection Phase
+   =============================== */
+
+/* Layout */
+
+.pro-page {
+  @apply min-h-screen bg-neutral-900 text-gray-300 font-sans relative;
+}
+
+.pro-hero {
+  @apply text-center mt-20 px-6;
+}
+
+.pro-hero-title {
+  @apply text-5xl md:text-6xl font-bold text-white mb-6;
+}
+
+.pro-hero-paragraph-1 {
+  @apply text-lg md:text-3xl text-emerald-400 hover:text-emerald-300 transition-colors duration-300 leading-relaxed max-w-3xl mx-auto mb-6;
+}
+
+
+.pro-hero-paragraph-2 {
+  @apply text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto;
+}
+
+.pro-menu {
+  @apply flex justify-center space-x-4 mt-10 mb-10;
+}
+
+.pro-gallery {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6;
+}
+
+.pro-card {
+  @apply bg-[#1C1C1C] border border-[#2a2a2a] rounded-2xl p-6 text-center transition-transform duration-300 cursor-pointer;
+}
+
+.pro-card img {
+  @apply w-full h-auto rounded-xl mb-4;
+}
+
+.pro-card h3 {
+  @apply text-white text-lg font-semibold mb-2;
+}
+
+.pro-card p {
+  @apply text-gray-400 text-sm mb-1;
+}
+
+.pro-info {
+  @apply text-center mt-16 px-6;
+}
+
+.pro-info-title {
+  @apply text-2xl font-bold text-white mb-4;
+}
+
+.pro-info-paragraph {
+  @apply text-gray-300 leading-relaxed max-w-3xl mx-auto;
+}
+
+.pro-footer {
+  @apply text-center text-gray-500 mt-12;
+}
+
+.pro-return {
+  @apply text-center mt-10 mb-20;
+}
+
+
+/* ===============================
+   EmotionDeck PRO – Phase Titles
+   =============================== */
+
+.pro-phase-title {
+  @apply text-xl md:text-xl font-semibold text-white mb-3 leading-tight;
+}
+
+.pro-phase-subtitle {
+  @apply text-base md:text-lg text-gray-400 italic mb-6;
+}
+

@@ -1,8 +1,16 @@
-
-import countryData from "../../content/countries/saint_martin.json";
+import fs from "fs";
+import path from "path";
 import CountryPageTemplate from "../../components/encyclopedia/CountryPageTemplate";
 import { baseButtonStyle } from "../../styles/buttonStyle";
 
 export default function SaintMartinPage() {
+  const filePath = path.join(
+    process.cwd(),
+    "public/content/encyclopedia/countries/saint_martin.json"
+  );
+
+  const jsonData = fs.readFileSync(filePath, "utf8");
+  const countryData = JSON.parse(jsonData);
+
   return <CountryPageTemplate data={countryData} />;
 }

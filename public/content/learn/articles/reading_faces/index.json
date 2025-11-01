@@ -1,0 +1,46 @@
+{
+  "page_title": "Reading Faces",
+  "page_intro": "How Faces Reveal the Language of Emotion through Expression, Truth, and Empathy within the Art of Human Perception.",
+  "articles": [
+    {
+
+      "slug": "language-of-the-face",
+      "title": "The Language of the Face",
+      "subtitle": "How expression becomes the mirror of emotion.",
+      "main_paragraph_bold": "Every movement of the face carries emotional meaning.",
+      "paragraph_1": "This article explores how facial muscles reveal hidden emotional states. From joy to fear, expressions form a universal language of feeling.",
+      "paragraph_2": "Understanding this language improves empathy and connection, showing how perception deepens emotional intelligence.",
+      "focus": "facial expression emotion empathy Ekman psychology perception",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Language of the Face",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "truth-and-deception",
+      "title": "Truth and Deception in Expression",
+      "subtitle": "Recognising sincerity and emotional leakage.",
+      "main_paragraph_bold": "Even the smallest movement can reveal the truth of emotion.",
+      "paragraph_1": "This article examines how microexpressions uncover suppressed feelings and emotional leakage. It teaches awareness beyond spoken language.",
+      "paragraph_2": "By learning these cues, we become better observers of authenticity, understanding both honesty and hidden emotion.",
+      "focus": "microexpressions authenticity truth Ekman facial cues emotion",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Truth and Deception in Expression",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "empathy-through-observation",
+      "title": "Empathy Through Observation",
+      "subtitle": "How seeing emotion creates emotional understanding.",
+      "main_paragraph_bold": "Observation transforms perception into empathy.",
+      "paragraph_1": "This article shows how attentive observation of faces builds emotional resonance. By seeing others clearly, we understand ourselves more deeply.",
+      "paragraph_2": "It connects the science of facial analysis with the art of compassion, uniting empathy with awareness.",
+      "focus": "empathy observation emotion recognition psychology human connection",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "Empathy Through Observation",
+      "button_text": "Read Article"
+    }
+  ]
+}

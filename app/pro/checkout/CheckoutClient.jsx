@@ -1,29 +1,17 @@
-// /app/pro/checkout/CheckoutClient.jsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-
-/**
- * Universal Checkout client for EmotionDeck PRO.
- * - Reads phase, title and price from URL search params
- * - Loads PayPal SDK dynamically (safe for first load)
- * - Renders PayPal buttons once SDK and window.paypal are ready
- * - On success stores `{ active: true, expires: <timestamp> }` in localStorage
- *   under key `emotiondeck_{phase}_access` (e.g. emotiondeck_phase-2_access)
- */
 
 export default function CheckoutClient() {
   const [sdkReady, setSdkReady] = useState(false);
   const redirected = useRef(false);
   const params = useSearchParams();
 
-  // Read params (safe defaults)
   const phase = params.get("phase") || "phase-1";
   const title = params.get("title") || "EmotionDeck PRO";
   const price = params.get("price") || "4.99";
 
-  // 🧠 Load PayPal SDK once
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -41,7 +29,6 @@ export default function CheckoutClient() {
     document.body.appendChild(script);
   }, []);
 
-  // 🕓 Wait until SDK is fully ready, then render PayPal Buttons
   useEffect(() => {
     if (!sdkReady || typeof window === "undefined") return;
 
@@ -58,7 +45,6 @@ export default function CheckoutClient() {
                 height: 48,
                 tagline: false,
               },
-
               createOrder: (data, actions) =>
                 actions.order.create({
                   purchase_units: [
@@ -68,21 +54,17 @@ export default function CheckoutClient() {
                     },
                   ],
                 }),
-
               onApprove: async (data, actions) => {
                 if (redirected.current) return;
                 redirected.current = true;
 
                 try {
                   await actions.order.capture();
-
-                  // Set 7-day expiry
                   const expiresAt = Date.now() + 7 * 24 * 60 * 60 * 1000;
                   const key = `emotiondeck_${phase}_access`;
                   const payload = { active: true, expires: expiresAt };
                   localStorage.setItem(key, JSON.stringify(payload));
 
-                  // Redirect to shared thank-you page
                   const redirectUrl = `/pro/thank-you?phase=${encodeURIComponent(
                     phase
                   )}&title=${encodeURIComponent(title)}`;
@@ -92,7 +74,6 @@ export default function CheckoutClient() {
                   redirected.current = false;
                 }
               },
-
               onError: (err) => {
                 console.error("PayPal Buttons error:", err);
               },
@@ -102,7 +83,6 @@ export default function CheckoutClient() {
           console.error("Failed to render PayPal Buttons:", err);
         }
       } else {
-        // Retry every 300 ms until PayPal is ready
         setTimeout(tryRender, 300);
       }
     };
@@ -111,18 +91,17 @@ export default function CheckoutClient() {
   }, [sdkReady, phase, price, title]);
 
   return (
-    <main className="min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6">
-      <div className="bg-gray-800 rounded-2xl p-10 max-w-md w-full text-center shadow-2xl">
-        <h1 className="text-3xl font-bold text-yellow-400 mb-4">💳 {title}</h1>
+    <main className="pro-checkout-page">
+      <div className="pro-checkout-card">
+        <h1 className="pro-checkout-title">💳 {title}</h1>
 
-        <p className="text-gray-400 mb-8">
-          Secure access to <strong>{title}</strong>.
-          <br />
-          Pay just <strong>£{price}</strong> for a 7-day access to this EmotionDeck PRO Phase.
+        <p className="pro-checkout-text">
+          Secure access to <strong>{title}</strong>.<br />
+          Pay just <strong>£{price}</strong> for 7-day access to this EmotionDeck PRO Phase.
         </p>
 
-        <div className="w-full flex justify-center">
-          <div id="paypal-button-container" className="w-[340px] flex justify-center" />
+        <div className="pro-checkout-paypal">
+          <div id="paypal-button-container" className="pro-checkout-container" />
         </div>
       </div>
     </main>

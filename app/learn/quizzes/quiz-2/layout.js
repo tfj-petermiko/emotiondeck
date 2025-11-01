@@ -39,9 +39,15 @@ export const metadata = {
     description:
       "Explore advanced human emotions in EmotionDeck Quiz 2 - identify subtle expressions like Tranquillity, Nostalgia, and Confidence across cultures.",
     images: ["https://emotiondeck.com/preview.jpg"],
+ },
+
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
-export default function Quiz2Layout({ children }) {
+export default function Quiz22Layout({ children }) {
   return <>{children}</>;
 }

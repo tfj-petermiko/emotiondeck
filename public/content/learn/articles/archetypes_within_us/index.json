@@ -1,0 +1,45 @@
+{
+  "page_title": "Archetypes Within Us",
+  "page_intro": "Explore How Ancient Archetypes Reflect Modern Emotion. Discover Courage, Empathy and Creativity as Mirrors of the Inner Self.",
+  "articles": [
+    {
+      "slug": "hero-and-journey",
+      "title": "The Hero and The Journey of Emotion",
+      "subtitle": "Courage and Transformation Through the Emotional Path of the Self.",
+      "main_paragraph_bold": "The Hero represents the emotional quest for wholeness and self understanding.",
+      "paragraph_1": "This article explores how courage, challenge and transformation define the archetypal journey of emotion where struggle becomes growth.",
+      "paragraph_2": "Learn how the Hero’s path mirrors psychological integration and emotional resilience across all cultures.",
+      "focus": "Jungian archetypes hero self discovery transformation emotional growth",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Hero and The Journey of Emotion",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "caregiver-and-empathy",
+      "title": "The Caregiver and The Heart of Empathy",
+      "subtitle": "Compassion as the Foundation of Emotional Connection.",
+      "main_paragraph_bold": "The Caregiver embodies empathy, healing and nurturing strength.",
+      "paragraph_1": "This article explores how compassion bridges emotional distance and restores balance between caring for others and the self.",
+      "paragraph_2": "Learn how empathy deepens emotional intelligence and strengthens human connection.",
+      "focus": "Jungian archetypes empathy compassion healing emotional intelligence",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Caregiver and The Heart of Empathy",
+      "button_text": "Read Article"
+    },
+    {
+      "slug": "shadow-of-creator",
+      "title": "The Shadow of The Creator",
+      "subtitle": "When Creativity Faces Perfectionism and Doubt.",
+      "main_paragraph_bold": "The Creator’s shadow reveals the emotional cost of perfectionism and self doubt.",
+      "paragraph_1": "This article examines how fear of failure suppresses creativity and how embracing imperfection restores emotional authenticity.",
+      "paragraph_2": "Learn how to balance artistic expression with acceptance and emotional freedom.",
+      "focus": "Jungian archetypes creativity perfectionism authenticity emotional freedom",
+      "access": "Free Available in Learn and Grow",
+      "image": "/private_images/images/articles.png",
+      "image_caption": "The Shadow of The Creator",
+      "button_text": "Read Article"
+    }
+  ]
+}

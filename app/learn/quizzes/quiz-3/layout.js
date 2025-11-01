@@ -39,6 +39,12 @@ export const metadata = {
     description:
       "Discover how well you recognise emotions in portraits of young adults - continue your learning journey with EmotionDeck Quiz 3.",
     images: ["https://emotiondeck.com/preview.jpg"],
+ },
+
+  // 🚫 Prevent indexing
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
