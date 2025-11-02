@@ -21,6 +21,7 @@ const tabs = [
   { icon: "🎓", name: "Learn & Grow", desc: "Boost Emotional Intelligence through Practice", href: "/learn" },
   { icon: "🌍", name: "Encyclopedia", desc: "The First Global Emotion Encyclopedia", href: "/encyclopedia" },
   { icon: "🔒", name: "EmotionDeck PRO", desc: "Exclusive Collection - Access Required", href: "/pro" },
+  { icon: "🧘", name: "Focus Rooms", desc: "Shared Presence and Deep Focus", href: "/focus-rooms" },
   { icon: "⚙️", name: "AI Generator", desc: "Create Portraits with the EmotionDeck Generator", href: "/ai-generator" },
   { icon: "📜", name: "Legal", desc: "Privacy Policy, Terms of Use, and Cookies", href: "/legal" },
 ];
@@ -241,7 +242,7 @@ const tabs = [
               >
                 <span>Connect with the creator on </span>
                 <a
-                  href="https://www.facebook.com/tfj.petermiko"
+                  href="https://www.facebook.com/infj.petermiko"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: "#60a5fa", textDecoration: "none" }}

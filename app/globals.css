@@ -1503,4 +1503,188 @@ body:not(.home-page) .worldmap-image-container {
 }
 
 
+/* =========================================
+   🧠 EmotionDeck Learn – FACS Page (Final Unified Motion Variant)
+   ========================================= */
+
+.learn-facs-page {
+  @apply min-h-screen bg-[#1C1C1C] text-white py-16 flex flex-col items-center;
+}
+
+/* ===== HEADER ===== */
+.learn-facs-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-4 text-white;
+}
+
+.learn-facs-highlight {
+  @apply text-3xl font-semibold text-emerald-400 text-center mb-8;
+}
+
+/* ===== INTRO ===== */
+.learn-facs-intro {
+  @apply text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12 leading-relaxed;
+}
+
+/* ===== MAIN CARD ===== */
+.learn-facs-section {
+  @apply bg-[#1C1C1C] border border-[#2A2A2A] rounded-2xl p-10 text-center max-w-4xl mx-auto mt-10 transition-all duration-300;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+  will-change: transform;
+}
+
+/* Subtle hover lift effect */
+.learn-facs-section:hover {
+  transform: translateY(-4px) scale(1.005);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.12);
+}
+
+/* ===== IMAGE ===== */
+.learn-facs-section img {
+  @apply rounded-2xl border-0 shadow-none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* ===== BUTTON GRID ===== */
+.learn-facs-grid {
+  @apply grid gap-2 mb-10;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (min-width: 640px) {
+  .learn-facs-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .learn-facs-grid {
+    grid-template-columns: repeat(11, 1fr);
+  }
+}
+
+.learn-facs-grid button {
+  background-color: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-facs-grid button:hover {
+  color: #e5e7eb;
+  border-color: #3b3b3b;
+  transform: translateY(-1px);
+}
+
+.learn-facs-grid button.active {
+  background-color: #2a2a2a;
+  border-color: #10b981;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+/* ===== DESCRIPTION BOX ===== */
+.learn-facs-description {
+  @apply bg-[#1C1C1C] border border-[#2A2A2A] rounded-2xl p-6 text-justify leading-relaxed max-w-2xl mx-auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-facs-description h2 {
+  @apply text-2xl font-semibold text-emerald-400 mb-3 text-center;
+}
+
+.learn-facs-description p {
+  @apply text-gray-300 mb-2 leading-relaxed;
+}
+
+.learn-facs-description strong {
+  @apply text-white;
+}
+
+/* ===== FOOTER ===== */
+.learn-facs-footer {
+  @apply mt-16 text-center text-gray-300 text-lg;
+}
+
+.learn-facs-footer a {
+  @apply text-emerald-400 font-semibold transition-colors duration-300;
+}
+
+.learn-facs-footer a:hover {
+  @apply text-emerald-300;
+}
+
+/* ===== BACK BUTTON ===== */
+.learn-facs-backwrap {
+  @apply text-center mt-16 mb-4;
+}
+
+/* Grid button layout tweak */
+.learn-facs-grid {
+  @apply grid gap-2;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 640px) {
+  .learn-facs-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .learn-facs-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.learn-facs-grid button {
+  background-color: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-facs-grid button:hover {
+  color: #e5e7eb;
+  border-color: #3b3b3b;
+  transform: translateY(-1px);
+}
+
+.learn-facs-grid button.active {
+  background-color: #2a2a2a;
+  border-color: #10b981;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+
+
+/* =========================================
+   🧠 EmotionDeck Learn – FACS Intro Fix
+   ========================================= */
+
+.learn-facs-intro {
+  @apply text-gray-300 text-center max-w-3xl mx-auto mb-10 leading-relaxed;
+  color: #d1d5db !important; /* stały szary */
+  transition: none !important;
+  pointer-events: none;
+}
+
+.learn-facs-intro:hover {
+  color: #d1d5db !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
 

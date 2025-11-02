@@ -1,6 +1,6 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck - Articles Reading Faces and Hidden Emotions",
+  title: "EmotionDeck Articles - Reading Faces and Hidden Emotions",
   description:
     "Learn how to read human emotion through facial microexpressions. Discover empathy through the science of expression and the psychology of perception.",
   keywords:

@@ -3,6 +3,20 @@
   "page_intro": "Explore Human Emotions Through Science, Psychology, AI, and The Learn & Grow Section Revealing Expression Across Cultures.",
 
   "modules": [
+{
+  "id": "facs",
+  "title": "Facial Action Coding System Explore the Hidden Language of Emotion",
+  "subtitle": "Understand how 44 Action Units reveal the microstructure of human expression.",
+  "main_paragraph_bold": "Learn the anatomy of emotion through Paul Ekman’s Facial Action Coding System and discover how the face becomes a living map of feeling.",
+  "paragraph_1": "The FACS module introduces you to the scientific study of facial movement. Each Action Unit represents a specific muscular change that contributes to expressions recognised across all cultures. This framework, developed through decades of research, bridges psychology, anatomy, and emotional intelligence.",
+  "paragraph_2": "By exploring individual AUs, you learn to see emotion as both biology and art. The ability to interpret these subtle movements enhances empathy, perception, and understanding of human connection. EmotionDeck transforms scientific knowledge into an accessible and engaging learning experience.",
+  "focus": "Paul Ekman, FACS, facial expression analysis, microexpressions, emotion science, psychology education, human behaviour",
+  "access": "Free Available in Learn and Grow",
+  "url": "/learn/facs",
+  "image": "/private_images/images/facs.webp",
+  "image_caption": "Facial Action Coding System",
+  "button_text": "Explore FACS"
+},
     {
       "id": "quizzes",
       "title": "Emotion Recognition Quizzes Test Your Emotional Understanding and Awareness",
@@ -47,7 +61,7 @@
   "button_text": "Read Articles"
 },
     {
-      "id": "facs",
+      "id": "facs-analyzer",
       "title": "FACS Emotion Analyzer Learn the Science Behind Human Expression",
       "subtitle": "Facial Action Coding System (FACS) AI Meets Psychology and Emotion Science.",
       "main_paragraph_bold": "Real-Time Facial Expression Analysis Using AI and Psychology.",
@@ -55,8 +69,8 @@
       "paragraph_2": "Developed with the Facial Action Coding System (FACS), this tool connects emotion science with real-time learning. It visualises muscle activations that correspond to each emotion helping users recognise subtle emotional cues.",
       "focus": "real-time facial analysis emotion science microexpressions action units",
       "access": "Free Available in Learn and Grow",
-      "url": "/learn/facs",
-      "image": "/private_images/images/facs.webp",
+      "url": "/learn/facs-analyzer",
+      "image": "/private_images/images/facs-analyzer.webp",
       "image_caption": "FACS Analyzer - Science of Expression",
       "button_text": "Start FACS Analyzer"
     }

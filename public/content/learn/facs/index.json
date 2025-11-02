@@ -1,0 +1,322 @@
+{
+  "header": {
+    "title": "Facial Action Coding System (FACS)",
+    "subtitle": "Inspired by Paul Ekman Explore 44 Action Units That Reveal The Subtle Muscles of Emotion.",
+    "intro": "Each Action Unit (AU) represents an individual facial muscle movement. Alone it does not express an emotion, but when combined with other units it creates recognisable emotional expressions that form the foundation of human communication."
+  },
+
+  "action_units": [
+    {
+      "id": "AU0",
+      "name": "Neutral Face",
+      "muscles": "None",
+      "description": "Each Action Unit (AU) represents an individual facial muscle movement. Alone it does not express an emotion, but when combined with other units it creates recognisable emotional expressions that form the foundation of human communication.",
+      "associated_emotions": "Neutral state"
+    },
+    {
+      "id": "AU1",
+      "name": "Inner Brow Raiser",
+      "muscles": "Frontalis pars medialis",
+      "description": "The inner brow raiser lifts the inner part of the eyebrows and creates soft vertical tension across the forehead. It often appears in sadness empathy or emotional concern. The movement signals vulnerability and emotional resonance between people. When combined with other actions such as the lip depressor it amplifies compassion and sincerity. This subtle upward motion is one of the clearest reflections of human sensitivity.",
+      "associated_emotions": "Sadness, Fear, Sympathy"
+    },
+
+  {
+    "id": "AU2",
+    "name": "Outer Brow Raiser",
+    "muscles": "Frontalis pars lateralis",
+    "description": "The outer brow raiser elevates the outer edge of the eyebrows and widens the eyes. This movement reflects attentiveness curiosity and the readiness to observe. It expands the field of vision and expresses openness to external stimuli. When seen with the upper lid raiser it conveys surprise or fascination. It represents the mind awakening to something new and unexpected.",
+    "associated_emotions": "Surprise, Interest"
+  },
+  {
+    "id": "AU4",
+    "name": "Brow Lowerer",
+    "muscles": "Corrugator supercilii, Depressor supercilii",
+    "description": "The brow lowerer pulls the eyebrows downward and toward each other forming visible lines above the nose. It appears during anger frustration or intense focus. The contraction protects the eyes and strengthens concentration in moments of challenge. This movement embodies determination and emotional tension. It is one of the most recognisable indicators of mental or emotional effort.",
+    "associated_emotions": "Anger, Determination, Concentration"
+  },
+  {
+    "id": "AU5",
+    "name": "Upper Lid Raiser",
+    "muscles": "Levator palpebrae superioris",
+    "description": "The upper lid raiser lifts the upper eyelids and exposes more of the white part of the eyes. It is associated with sudden awareness surprise or fear. The movement widens the gaze and enhances visual perception in preparation for action. In subtle form it expresses interest or heightened attention. It shows how emotion and perception meet in a single reflex of alertness.",
+    "associated_emotions": "Fear, Surprise, Interest"
+  },
+  {
+    "id": "AU6",
+    "name": "Cheek Raiser",
+    "muscles": "Orbicularis oculi pars orbitalis",
+    "description": "The cheek raiser lifts the upper cheeks and creates fine wrinkles at the corners of the eyes. When combined with the lip corner puller it produces the genuine Duchenne smile of real joy. This movement is involuntary and appears only in authentic emotion. It reflects warmth empathy and inner pleasure. The cheek raiser transforms simple smiling into the visible language of happiness.",
+    "associated_emotions": "Happiness, Enjoyment"
+  },
+  {
+    "id": "AU7",
+    "name": "Lid Tightener",
+    "muscles": "Orbicularis oculi pars palpebralis",
+    "description": "The lid tightener narrows the eyes by tensing the muscles of the eyelids without raising or lowering them. It often appears in concentration irritation or determination. This micro movement gives the face a focused and alert appearance. In emotion research it reflects defensive readiness or the effort to assess a situation precisely. The tightening of the eyelids subtly conveys vigilance and resolve.",
+    "associated_emotions": "Anger, Fear, Determination"
+  },
+  {
+    "id": "AU8",
+    "name": "Lips Towards Each Other",
+    "muscles": "Orbicularis oris",
+    "description": "This movement narrows the lips and brings them gently closer together without sealing them tightly. It expresses concentration hesitation or restraint. The subtle pressure between the lips often accompanies mental activity or thoughtful silence. It symbolises the control of expression and the containment of words not yet spoken. In subtle analysis it marks the balance between expression and introspection.",
+    "associated_emotions": "Concentration, Determination"
+  },
+  {
+    "id": "AU9",
+    "name": "Nose Wrinkler",
+    "muscles": "Levator labii superioris alaeque nasi",
+    "description": "The nose wrinkler contracts the area beside the nose and raises the upper lip. It is one of the most distinct indicators of disgust. The face reacts as if rejecting a physical or moral stimulus. It is a protective reflex inherited from early survival responses. This brief and instinctive action captures the essence of aversion in a single frame of movement.",
+    "associated_emotions": "Disgust"
+  },
+  {
+    "id": "AU10",
+    "name": "Upper Lip Raiser",
+    "muscles": "Levator labii superioris",
+    "description": "The upper lip raiser lifts the upper lip and exposes the upper teeth. It often appears together with the nose wrinkler in expressions of contempt or repulsion. The exposure of the teeth intensifies the feeling of separation from the unpleasant object. When softened it can also indicate controlled self assurance. The movement defines the fine boundary between distaste and superiority.",
+    "associated_emotions": "Disgust, Contempt"
+  },
+  {
+    "id": "AU11",
+    "name": "Nasolabial Deepener",
+    "muscles": "Zygomaticus minor",
+    "description": "The nasolabial deepener accentuates the natural fold that runs from the side of the nose to the corner of the mouth. It strengthens the impression of sadness effort or quiet endurance. The deeper the line the more tension it communicates. This small shift in facial anatomy transforms calm into visible emotional depth. It is a mark of silent determination and inner resilience.",
+    "associated_emotions": "Sadness, Effort"
+  },
+  {
+    "id": "AU12",
+    "name": "Lip Corner Puller",
+    "muscles": "Zygomaticus major",
+    "description": "The lip corner puller raises the corners of the mouth forming the familiar human smile. When it occurs together with the cheek raiser it creates the genuine Duchenne smile that reflects true happiness. Alone it may be a social gesture or a polite response. Its authenticity depends on harmony with other muscles around the eyes. The smile is the universal language of joy trust and connection.",
+    "associated_emotions": "Happiness, Amusement"
+  },
+  {
+    "id": "AU13",
+    "name": "Cheek Puffer",
+    "muscles": "Buccinator",
+    "description": "The cheek puffer expands the cheeks by tightening the buccinator muscles or by holding air inside the mouth. It conveys playfulness effort or mild frustration. The gesture can appear in children as spontaneous amusement or in adults as a sign of controlled tension. It is a movement that bridges physical exertion and emotional containment. The cheek puffer adds a light hearted rhythm to the emotional vocabulary of the face.",
+    "associated_emotions": "Playfulness, Effort"
+  },
+  {
+    "id": "AU14",
+    "name": "Dimpler",
+    "muscles": "Buccinator",
+    "description": "The dimpler pulls the corners of the lips laterally and creates small indentations or dimples on the cheeks. It is often a controlled form of smiling that reflects amusement irony or subtle contempt. The expression can appear one sided producing asymmetry that hints at complexity or self awareness. The dimpler represents both playfulness and restrained superiority. It reminds the observer that even humour can carry a shade of judgement.",
+    "associated_emotions": "Contempt, Controlled Smile"
+  },
+  {
+    "id": "AU15",
+    "name": "Lip Corner Depressor",
+    "muscles": "Depressor anguli oris",
+    "description": "The lip corner depressor draws the corners of the mouth downward forming the recognisable frown of sadness regret or disappointment. The downward motion lengthens the face and creates a visual signal of emotional weight. When combined with raised inner brows it deepens the expression of sorrow. This movement gives visible form to emotional descent and communicates empathy or shared grief. It is a universal sign of emotional heaviness and reflection.",
+    "associated_emotions": "Sadness, Regret"
+  },
+  {
+    "id": "AU16",
+    "name": "Lower Lip Depressor",
+    "muscles": "Depressor labii inferioris",
+    "description": "The lower lip depressor pulls the lower lip down exposing the lower teeth. It may signal uncertainty mild sadness or emotional hesitation. This gesture softens the face and often precedes speech or apology. In emotional analysis it shows vulnerability and the wish to be understood. The lower lip depressor bridges the space between silence and emotional confession.",
+    "associated_emotions": "Sadness, Uncertainty"
+  },
+  {
+    "id": "AU17",
+    "name": "Chin Raiser",
+    "muscles": "Mentalis",
+    "description": "The chin raiser lifts the chin and pushes the lower lip upward creating slight tension in the centre of the mouth. It can express doubt pride or restrained emotion. This movement strengthens the visual line of the jaw and adds depth to facial expression. In moments of sadness it appears when tears are held back and in determination it signals emotional endurance. The chin raiser embodies quiet strength under emotional pressure.",
+    "associated_emotions": "Doubt, Sadness"
+  },
+  {
+    "id": "AU18",
+    "name": "Lip Pucker",
+    "muscles": "Orbicularis oris",
+    "description": "The lip pucker draws the lips together and forward into a rounded shape. It is used in whistling kissing or expressing disapproval. The gesture can symbolise concentration affection or emotional distance depending on context. When subtle it reflects inner reflection and the containment of emotion. The lip pucker demonstrates how communication and emotion converge in the expressive precision of the mouth.",
+    "associated_emotions": "Disgust, Disapproval, Kiss"
+  },
+  {
+    "id": "AU19",
+    "name": "Tongue Show",
+    "muscles": "Intrinsic tongue muscles",
+    "description": "The tongue show extends the tongue slightly beyond the lips making it visible between them. It often appears as a playful or self conscious gesture. In emotional analysis it may reveal teasing embarrassment or mild disgust. This action breaks the symmetry of the face and momentarily exposes vulnerability. The tongue show connects instinct with expression creating a glimpse of honesty within spontaneity.",
+    "associated_emotions": "Playfulness, Disgust"
+  },
+  {
+    "id": "AU20",
+    "name": "Lip Stretcher",
+    "muscles": "Risorius",
+    "description": "The lip stretcher draws the lips sideways tightening the mouth and revealing the teeth. It communicates fear tension or nervousness depending on intensity. The horizontal movement of the lips contrasts with vertical emotional patterns such as smiling or frowning. This gesture exposes the fragility between control and anxiety. The lip stretcher symbolises the effort to maintain composure when emotion rises beneath the surface.",
+    "associated_emotions": "Fear, Tension, Nervousness"
+  },
+  {
+    "id": "AU21",
+    "name": "Neck Tightener",
+    "muscles": "Platysma",
+    "description": "The neck tightener activates the thin platysma muscle that stretches across the front of the neck. It is often associated with fear stress or physical effort. The tightening of the neck creates visible tension that reflects physiological arousal. This subtle movement connects emotional experience with bodily readiness. It mirrors the instinctive preparation of the body for defence or endurance and serves as a reminder that emotion is not only seen in the face but felt throughout the body.",
+    "associated_emotions": "Fear, Effort"
+  },
+  {
+    "id": "AU22",
+    "name": "Lip Funneler",
+    "muscles": "Orbicularis oris",
+    "description": "The lip funneler shapes the lips into a rounded form suitable for whistling speaking or expressing surprise. It focuses both air and attention through the mouth and symbolises preparation or anticipation. When spontaneous it may reflect amazement or an urge to vocalise emotion. This movement demonstrates the way speech and feeling share a common muscular origin. The lips become the channel through which emotion begins to find voice.",
+    "associated_emotions": "Surprise, Speech Preparation"
+  },
+  {
+    "id": "AU23",
+    "name": "Lip Tightener",
+    "muscles": "Orbicularis oris",
+    "description": "The lip tightener presses and tenses the lips together without closing them fully. It is a gesture of emotional control that communicates restraint anger or determination. This micro expression often appears when an individual is holding back words or feelings. The tension in the lips expresses inner struggle and the conscious choice not to release emotion. It is the visible mark of composure forged through self discipline.",
+    "associated_emotions": "Anger, Determination, Suppression"
+  },
+  {
+    "id": "AU24",
+    "name": "Lip Pressor",
+    "muscles": "Orbicularis oris",
+    "description": "The lip pressor brings the lips together firmly and conceals the mouth behind controlled pressure. It can express frustration resistance or the effort to stay silent. This motion symbolises the closing of emotional boundaries. The mouth becomes the barrier between inner truth and outer expression. The lip pressor represents the moment of emotional containment where strength meets silence.",
+    "associated_emotions": "Frustration, Control, Suppression"
+  },
+  {
+    "id": "AU25",
+    "name": "Lips Part",
+    "muscles": "Orbicularis oris",
+    "description": "The lips part slightly when the muscles of the mouth relax. It may occur in surprise interest or readiness to speak. This gentle opening invites communication and reduces the tension of restraint. The parted lips reveal a state of openness and curiosity toward the world. It is often the first sign of emotional engagement and a silent prelude to expression.",
+    "associated_emotions": "Surprise, Speech"
+  },
+  {
+    "id": "AU26",
+    "name": "Jaw Drop",
+    "muscles": "Masseter, Temporalis",
+    "description": "The jaw drop lowers the jaw and opens the mouth by releasing muscular tension. It is one of the most recognisable signals of astonishment shock or disbelief. This spontaneous movement reflects the loss of conscious control and the body’s reaction to unexpected stimuli. The open mouth becomes a symbol of emotional surrender and wonder. The jaw drop marks the moment when surprise interrupts the rhythm of thought.",
+    "associated_emotions": "Surprise, Shock"
+  },
+  {
+    "id": "AU27",
+    "name": "Mouth Stretch",
+    "muscles": "Pterygoids, Digastric",
+    "description": "The mouth stretch extends the jaw to its maximum range creating a wide vertical opening. It may appear during yawning extreme fear or powerful exhalation. The action enlarges the airway and expresses both physical and emotional release. In psychology it symbolises the threshold between control and instinct. The mouth stretch transforms the act of breathing into a visible sign of human intensity.",
+    "associated_emotions": "Astonishment, Intense Fear"
+  },
+  {
+    "id": "AU28",
+    "name": "Lip Suck",
+    "muscles": "Orbicularis oris",
+    "description": "The lip suck draws the lips gently inward between the teeth creating a subtle inward pressure. It reflects uncertainty nervousness or a moment of self calming. This gesture often appears when someone is reflecting on words left unsaid or emotions that need control. It acts as a micro signal of emotional regulation revealing both vulnerability and restraint. The lip suck is a quiet act of inward focus that maintains balance under tension.",
+    "associated_emotions": "Uncertainty, Nervousness"
+  },
+  {
+    "id": "AU29",
+    "name": "Jaw Thrust",
+    "muscles": "Masseter, Pterygoid",
+    "description": "The jaw thrust pushes the lower jaw forward tightening the muscles around the mouth and chin. It conveys defiance determination or a readiness to confront. The forward motion creates an impression of strength and assertiveness. This movement is often observed in moments of conflict or intense effort. It reflects the transformation of inner force into outward intention and represents physical confidence rooted in emotional drive.",
+    "associated_emotions": "Aggression, Effort"
+  },
+  {
+    "id": "AU30",
+    "name": "Jaw Sideways",
+    "muscles": "Pterygoids",
+    "description": "The jaw sideways movement shifts the jaw laterally producing asymmetry in the mouth. It can express scepticism doubt or irritation. The motion gives the face a reflective yet guarded quality as if weighing opposing thoughts. It is often seen when someone is analysing or withholding judgement. This subtle shift of the jaw illustrates the body’s capacity to mirror the mind’s hesitation.",
+    "associated_emotions": "Scepticism, Annoyance"
+  },
+  {
+    "id": "AU31",
+    "name": "Jaw Clencher",
+    "muscles": "Masseter, Temporalis",
+    "description": "The jaw clencher tightens the muscles along the jawline and locks the teeth together. It signifies determination anger or suppressed emotion. The tension in the jaw becomes the physical boundary between control and release. In prolonged form it can indicate chronic stress or emotional strain. The jaw clencher shows the strength of will held silently within the structure of the face.",
+    "associated_emotions": "Anger, Determination"
+  },
+  {
+    "id": "AU32",
+    "name": "Lip Bite",
+    "muscles": "Masseter, Orbicularis oris",
+    "description": "The lip bite brings the teeth to the lips either gently or firmly depending on emotional intensity. It can reveal nervousness hesitation or the struggle between desire and restraint. The movement draws attention to the mouth emphasising inner tension or sensual focus. It is a micro expression that unites vulnerability and intent. The lip bite speaks in the silent language of self control and hidden thought.",
+    "associated_emotions": "Nervousness, Seduction"
+  },
+  {
+    "id": "AU33",
+    "name": "Cheek Blow",
+    "muscles": "Buccinator",
+    "description": "The cheek blow inflates one or both cheeks with air creating visible roundness and tension. It can express playfulness relief or the physical release of effort. The act of holding and releasing air mirrors the rhythm of emotional energy. It is often a spontaneous expression following concentration or stress. The cheek blow reflects the body’s way of exhaling emotion and returning to balance.",
+    "associated_emotions": "Playfulness, Exertion"
+  },
+  {
+    "id": "AU34",
+    "name": "Puff Out Cheeks",
+    "muscles": "Buccinator",
+    "description": "The puff out cheeks movement fills both cheeks completely with air exaggerating their size. It conveys amusement mischief or the playful restraint of laughter. In some contexts it signals a moment of physical or emotional readiness as if building internal pressure before action. This simple expression is deeply human combining humour with instinct. It demonstrates how air and muscle together sculpt the language of emotion.",
+    "associated_emotions": "Playfulness, Amusement"
+  },
+  {
+    "id": "AU35",
+    "name": "Cheek Suck",
+    "muscles": "Buccinator",
+    "description": "The cheek suck draws the cheeks inward creating a hollow beneath the cheekbones. It can signify sadness fatigue or inner contemplation. This movement narrows the face and conveys emotional withdrawal. When subtle it reflects deep thought or quiet endurance. The cheek suck reminds us that emotion is not always outward but can be drawn inward like breath held in silence. It symbolises reflection within the physical form of the face.",
+    "associated_emotions": "Sadness, Contemplation"
+  },
+  {
+    "id": "AU36",
+    "name": "Tongue Bulge",
+    "muscles": "Intrinsic tongue muscles",
+    "description": "The tongue bulge occurs when the tongue presses against the inner cheek or lip producing a soft outward curve. It may indicate thinking annoyance or suppressed frustration. The action adds a quiet layer of expression to the face often unnoticed yet meaningful. It reveals tension that is intellectual rather than emotional a bodily reflection of mental processing. The tongue bulge shows how thought itself can have a physical trace within the face.",
+    "associated_emotions": "Thinking, Annoyance"
+  },
+  {
+    "id": "AU37",
+    "name": "Lip Wipe",
+    "muscles": "Orbicularis oris",
+    "description": "The lip wipe moves the lips together laterally as if cleaning or resetting them. It may follow speaking eating or a moment of emotional strain. This action often signals a need to regain composure after discomfort. The lips move as if to erase a trace of tension or hesitation. The gesture is both practical and psychological marking the transition between one emotional state and another. The lip wipe symbolises restoration and readiness to continue.",
+    "associated_emotions": "Annoyance, Disgust"
+  },
+  {
+    "id": "AU38",
+    "name": "Nostril Dilator",
+    "muscles": "Nasalis",
+    "description": "The nostril dilator expands the nostrils and increases airflow through the nose. It accompanies anger exertion or intense focus. This physiological response prepares the body for action by maximising oxygen intake. The expansion also gives the face a look of alert power. The nostril dilator bridges physical readiness and emotional activation showing how breath becomes the pulse of expression.",
+    "associated_emotions": "Anger, Effort"
+  },
+  {
+    "id": "AU39",
+    "name": "Nostril Compressor",
+    "muscles": "Nasalis (transverse part)",
+    "description": "The nostril compressor narrows the nostrils reducing airflow and sharpening the appearance of the nose. It can accompany disgust anger or irritation. This action physically rejects unpleasant stimuli and mirrors psychological aversion. The subtle compression conveys control and restraint rather than explosive reaction. The nostril compressor demonstrates how the smallest contraction of muscle can convey deep emotional evaluation.",
+    "associated_emotions": "Disgust, Anger"
+  },
+  {
+    "id": "AU40",
+    "name": "Eyes Closed",
+    "muscles": "Orbicularis oculi",
+    "description": "The eyes closed movement gently lowers the eyelids to separate vision from the external world. It can represent calm reflection fear or avoidance depending on surrounding tension. The act of closing the eyes is both protective and introspective. It allows the individual to withdraw momentarily into inner experience. The eyes closed expression becomes a veil between self and world balancing sensitivity and retreat.",
+    "associated_emotions": "Relaxation, Fear, Anger"
+  },
+  {
+    "id": "AU41",
+    "name": "Lid Droop",
+    "muscles": "Levator palpebrae superioris (relaxation)",
+    "description": "The lid droop results from the partial relaxation of the muscles that lift the upper eyelids. It gives the eyes a heavy appearance suggesting fatigue boredom or detachment. This expression softens emotional intensity and slows the tempo of interaction. The drooping lids symbolise withdrawal from alert engagement and the quiet passage toward rest or indifference. The lid droop marks the fading of energy from the emotional landscape of the face.",
+    "associated_emotions": "Sleepiness, Boredom"
+  },
+  {
+    "id": "AU42",
+    "name": "Slit",
+    "muscles": "Orbicularis oculi",
+    "description": "The slit movement narrows the eyes until they form a fine opening that directs vision with precision and intensity. This action often occurs in suspicion concentration or restrained anger. By reducing the visual field the individual sharpens focus and limits distraction. The slit gaze carries psychological weight suggesting evaluation or critical attention. It represents the instinct to protect through scrutiny and to perceive through control. In human expression it is both defensive and analytical combining awareness with emotional tension.",
+    "associated_emotions": "Suspicion, Anger"
+  },
+  {
+    "id": "AU43",
+    "name": "Eyes Closed Tight",
+    "muscles": "Orbicularis oculi",
+    "description": "The eyes closed tight expression involves forceful contraction of the muscles around the eyes pulling the eyelids together with strength. It appears in moments of pain fear or emotional overload. This physical withdrawal isolates the senses and shields the self from overwhelming stimuli. The tension radiates through the upper face revealing the body’s instinctive response to threat or distress. It is both a protective reflex and an emotional cry without words. In this moment the face turns inward closing the world out.",
+    "associated_emotions": "Pain, Intense Fear"
+  },
+  {
+    "id": "AU44",
+    "name": "Blink",
+    "muscles": "Orbicularis oculi",
+    "description": "The blink is a rapid closing and opening of the eyelids that maintains eye moisture and clarity. Beyond its biological function it carries subtle emotional information. The frequency and rhythm of blinking shift with arousal stress or surprise. A single slow blink can express disbelief while a rapid sequence may reveal nervousness. In microexpression analysis the blink is the punctuation of feeling a brief interruption that resets attention and emotional focus. It is the smallest yet most constant gesture linking thought sensation and presence.",
+    "associated_emotions": "Reflex, Surprise"
+ }
+  ]
+}
+
+
+

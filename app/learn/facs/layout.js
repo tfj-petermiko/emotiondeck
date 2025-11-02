@@ -1,10 +1,10 @@
 export const metadata = {
   metadataBase: new URL("https://emotiondeck.com"),
-  title: "EmotionDeck Learn & Grow - FACS Emotion Analyzer",
+  title: "EmotionDeck Learn & Grow - Facial Action Coding System (FACS)",
   description:
-    "Discover how facial muscles reveal emotions in real time with EmotionDeck’s FACS Analyzer - learn the science of expressions, smiles, frowns, and microexpressions.",
+    "Explore the science of facial expression with EmotionDeck’s FACS guide inspired by Paul Ekman. Learn how 44 Action Units reveal the hidden architecture of emotion and human expression.",
   keywords:
-    "EmotionDeck FACS analyzer, facial action coding system, emotion recognition, microexpressions, facial analysis, psychology education, AI emotion detection, emotion learning, facial expression science, emotional intelligence",
+    "EmotionDeck FACS, Paul Ekman, facial action coding system, emotion learning, microexpressions, psychology education, facial analysis, emotion recognition, human expression, emotional intelligence",
   alternates: {
     canonical: "https://emotiondeck.com/learn/facs",
   },
@@ -18,33 +18,31 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "EmotionDeck Learn & Grow - FACS Emotion Analyzer",
+    title: "EmotionDeck Learn & Grow - Facial Action Coding System (FACS)",
     description:
-      "Explore human emotion through the Facial Action Coding System - understand how subtle muscle movements create expressions with EmotionDeck Learn & Grow.",
+      "Discover how subtle muscle movements form the universal language of emotion. EmotionDeck’s FACS guide explores Paul Ekman’s research and the anatomy of 44 Action Units.",
     url: "https://emotiondeck.com/learn/facs",
     siteName: "EmotionDeck",
     type: "website",
     images: [
       {
-        url: "https://emotiondeck.com/preview.jpg",
+        url: "https://emotiondeck.com/preview/facs.jpg",
         width: 1200,
         height: 630,
-        alt: "EmotionDeck FACS Emotion Analyzer Preview",
+        alt: "EmotionDeck FACS Learning Page Preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmotionDeck Learn & Grow - FACS Emotion Analyzer",
+    title: "EmotionDeck Learn & Grow - Facial Action Coding System (FACS)",
     description:
-      "Analyse facial expressions in real time with EmotionDeck’s FACS Analyzer - learn how emotions are formed and revealed through subtle facial movements.",
-    images: ["https://emotiondeck.com/preview.jpg"],
+      "Learn the microexpressions that shape emotion with EmotionDeck’s FACS guide inspired by Paul Ekman. Explore the 44 Action Units that define the human face of feeling.",
+    images: ["https://emotiondeck.com/preview/facs.jpg"],
   },
-
-  // 🚫 Prevent indexing
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
