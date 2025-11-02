@@ -14,17 +14,20 @@ export default function RoomView({ room, userName, onLeave }) {
   const [token, setToken] = useState(null);
   const [hovered, setHovered] = useState(false);
 
-  // Fetch LiveKit token for the current user and room
+  // Fetch LiveKit token for this user and room
   useEffect(() => {
     const getToken = async () => {
-      const resp = await fetch(`/api/livekit?room=${room.name}&user=${userName}`);
-      const data = await resp.json();
-      setToken(data.token);
+      try {
+        const resp = await fetch(`/api/livekit?room=${room.name}&user=${userName}`);
+        const data = await resp.json();
+        if (data?.token) setToken(data.token);
+      } catch (err) {
+        console.error("Error fetching LiveKit token:", err);
+      }
     };
     getToken();
   }, [room, userName]);
 
-  // Loading screen while connecting
   if (!token) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen text-gray-400">
@@ -51,7 +54,7 @@ export default function RoomView({ room, userName, onLeave }) {
         <p className="text-gray-400">Connected as {userName}</p>
       </motion.div>
 
-      {/* Camera Section */}
+      {/* Video Area */}
       <motion.div
         initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -63,14 +66,14 @@ export default function RoomView({ room, userName, onLeave }) {
           audio
           token={token}
           serverUrl={process.env.NEXT_PUBLIC_LIVEKIT_URL}
-          connect={true}
+          connect
         >
-          <ParticipantsDisplay onLeave={onLeave} />
+          <ParticipantsLimit onLeave={onLeave} />
           <VideoConference />
         </LiveKitRoom>
       </motion.div>
 
-      {/* Leave Button */}
+      {/* Leave button */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -90,15 +93,13 @@ export default function RoomView({ room, userName, onLeave }) {
   );
 }
 
-/* ===== PARTICIPANTS DISPLAY (max 4 people) ===== */
-function ParticipantsDisplay({ onLeave }) {
+/* ===== PARTICIPANT LIMIT CHECK (max 4) ===== */
+function ParticipantsLimit({ onLeave }) {
   const participants = useParticipants();
-
   const participantNames = participants
     .map((p) => p.name)
     .filter((name) => name && name !== "User");
 
-  // If the room already has 4 participants, block entry
   if (participantNames.length >= 4) {
     return (
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0B0B0B]/95 text-center px-6 rounded-2xl z-50">
@@ -116,17 +117,5 @@ function ParticipantsDisplay({ onLeave }) {
     );
   }
 
-  // If there are participants, display names only (no numbers or boxes)
-  if (participantNames.length > 0) {
-    return (
-      <div className="absolute top-24 right-10 bg-transparent border-none px-5 py-2 text-right z-20">
-        <span className="text-gray-300 text-sm">
-          {participantNames.join(" • ")}
-        </span>
-      </div>
-    );
-  }
-
-  // Nothing displayed if the user is alone
   return null;
 }
